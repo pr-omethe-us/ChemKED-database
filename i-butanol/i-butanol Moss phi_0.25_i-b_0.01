@@ -1,0 +1,70 @@
+file-author: 
+    name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
+file-version: (0,1)
+chemked-version: 0.0.1
+reference: 
+    doi: 10.1021/jp806464p
+    authors: 
+        - name: Jeffrey T. Moss
+        - name: Andrew M. Berkowitz
+        - name: Matthew A. Oehlschlaeger
+        - name: Joffrey Biet
+        - name: Valerie Warth
+        - name: Pierre-Alexandre Glaude
+        - name: Frederique Battin-Leclerc
+    journal: The Journal of Physical Chemistry A
+    year: 2009
+    volume: 112
+    pages: 10843–10855
+    detail: phi_0.25_i-b_0.01
+experiment-type: ignition delay
+apparatus: 
+    kind:  shock tube
+    institution: Rensselaer Polytechnic Institute
+    facility: stainless steel shock tube
+common-properties: 
+    composition: &comp
+        - species-name: i-butanol
+          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+          mole-fraction: 0.01
+        - species-name: O2
+          InChI:  1S/O2/c1-2
+          mole-fraction: 0.24
+        - species-name: Ar
+          InChI:  1S/Ar
+          mole-fraction: 0.75
+    ignition-type:  &ign
+        target: OH star concentration
+        type: d/dt max
+datapoints: 
+    - temperature: 1196 kelvin
+      ignition-delay: 1508 us
+      pressure: 1.39 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature: 1285 kelvin
+      ignition-delay: 424 us
+      pressure: 1.32 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature: 1331 kelvin
+      ignition-delay: 296 us
+      pressure: 1.32 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature: 1361 kelvin
+      ignition-delay: 216 us
+      pressure: 1.26 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature: 1464 kelvin
+      ignition-delay: 91 us
+      pressure: 1.21 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
