@@ -2,7 +2,7 @@
 file-author:
     name: Morgan Mayer
     ORCID: 0000-0001-7137-5721
-file-version: (1, 0)
+file-version: 0
 chemked-version: 0.0.1
 reference:
     doi: 10.1016/j.combustflame.2011.08.014
@@ -25,40 +25,57 @@ apparatus:
     facility: stainless steel shock tube
 common-properties:
     composition: &comp
+      kind: mole fraction
+      species:
         - species-name: n-butanol
           InChI: 1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3
-          mole-fraction: 0.0075
+          amount:
+            - 0.0075
         - species-name: O2
           InChI: 1S/O2/c1-2
-          mole-fraction: 0.045
+          amount:
+            - 0.045
         - species-name: Ar
           InChI: 1S/Ar
-          mole-fraction: 0.9475
+          amount:
+            - 0.9475
     ignition-type: &ign
         target: OH*
         type: 1/2 max
 datapoints:
-    - temperature: 1230 kelvin
-      ignition-delay: 1560 us
-      pressure: 0.95 atm
+    - temperature:
+        - 1230 kelvin
+      ignition-delay:
+        - 1560 us
+      pressure:
+        - 0.95 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 1
-    - temperature: 1388 kelvin
-      ignition-delay: 293 us
-      pressure: 0.93 atm
+    - temperature:
+        - 1388 kelvin
+      ignition-delay:
+        - 293 us
+      pressure:
+        - 0.93 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 1
-    - temperature: 1312 kelvin
-      ignition-delay: 653 us
-      pressure: 0.96 atm
+    - temperature:
+        - 1312 kelvin
+      ignition-delay:
+        - 653 us
+      pressure:
+        - 0.96 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 1
-    - temperature: 1534 kelvin
-      ignition-delay: 90 us
-      pressure: 0.91 atm
+    - temperature:
+        - 1534 kelvin
+      ignition-delay:
+        - 90 us
+      pressure:
+        - 0.91 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 1
