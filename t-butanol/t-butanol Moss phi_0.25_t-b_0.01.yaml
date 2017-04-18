@@ -1,12 +1,12 @@
 ---
-file-author: 
+file-author:
     name: Morgan Mayer
     ORCID: 0000-0001-7137-5721
-file-version: (0,1)
+file-version: 0
 chemked-version: 0.0.1
-reference: 
+reference:
     doi: 10.1021/jp806464p
-    authors: 
+    authors:
         - name: Jeffrey T. Moss
         - name: Andrew M. Berkowitz
         - name: Matthew A. Oehlschlaeger
@@ -15,63 +15,86 @@ reference:
         - name: Pierre-Alexandre Glaude
         - name: Frederique Battin-Leclerc
     journal: The Journal of Physical Chemistry A
-    year: 2009
+    year: 2008
     volume: 112
-    pages: 10843–10855
+    pages: 10843-10855
     detail: phi_1.0_t-b_0.0025
 experiment-type: ignition delay
-apparatus: 
+apparatus:
     kind:  shock tube
     institution: Rensselaer Polytechnic Institute
     facility: stainless steel shock tube
-common-properties: 
+common-properties:
     composition: &comp
+      kind: mole fraction
+      species:
         - species-name: t-butanol
           InChI: 1S/C4H10O/c1-4(2,3)5/h5H,1-3H3
-          mole-fraction: 0.0025
+          amount:
+            - 0.0025
         - species-name: O2
           InChI:  1S/O2/c1-2
-          mole-fraction: 0.015
+          amount:
+            - 0.015
         - species-name: Ar
           InChI:  1S/Ar
-          mole-fraction: 0.9825
+          amount:
+            - 0.9825
     ignition-type:  &ign
-        target: OH star concentration
+        target: OH*
         type: d/dt max
-datapoints: 
-    - temperature: 1263 kelvin
-      ignition-delay: 1314 us
-      pressure: 1.36 bar
+datapoints:
+    - temperature:
+        - 1263 kelvin
+      ignition-delay:
+        - 1314 us
+      pressure:
+        - 1.36 bar
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 0.25
-    - temperature: 1328 kelvin
-      ignition-delay: 835 us
-      pressure: 1.39 bar
+    - temperature:
+        - 1328 kelvin
+      ignition-delay:
+        - 835 us
+      pressure:
+        - 1.39 bar
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 0.25
-    - temperature: 1358 kelvin
-      ignition-delay: 528 us
-      pressure: 1.35 bar
+    - temperature:
+        - 1358 kelvin
+      ignition-delay:
+        - 528 us
+      pressure:
+        - 1.35 bar
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 0.25
-    - temperature: 1397 kelvin
-      ignition-delay: 316 us
-      pressure: 1.31 bar
+    - temperature:
+        - 1397 kelvin
+      ignition-delay:
+        - 316 us
+      pressure:
+        - 1.31 bar
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 0.25
-    - temperature: 1447 kelvin
-      ignition-delay: 206 us
-      pressure: 1.28 bar
+    - temperature:
+        - 1447 kelvin
+      ignition-delay:
+        - 206 us
+      pressure:
+        - 1.28 bar
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 0.25
-    - temperature: 1498 kelvin
-      ignition-delay: 156 us
-      pressure: 1.25 bar
+    - temperature:
+        - 1498 kelvin
+      ignition-delay:
+        - 156 us
+      pressure:
+        - 1.25 bar
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 0.25
