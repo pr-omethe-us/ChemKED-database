@@ -18,7 +18,7 @@ reference:
     year: 2008
     volume: 112
     pages: 10843-10855
-    detail: phi_0.25_1-b_0.01
+    detail: phi_1.0_2-b_0.0025
 experiment-type: ignition delay
 apparatus:
     kind:  shock tube
@@ -28,65 +28,55 @@ common-properties:
     composition: &comp
       kind: mole fraction
       species:
-        - species-name: n-butanol
-          InChI: 1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3
+        - species-name: 2-butanol
+          InChI: 1S/C4H10O/c1-3-4(2)5/h4-5H,3H2,1-2H3
           amount:
-            - 0.01
+            - 0.0025
         - species-name: O2
           InChI:  1S/O2/c1-2
           amount:
-            - 0.24
+            - 0.015
         - species-name: Ar
           InChI:  1S/Ar
           amount:
-            - 0.75
-    ignition-type: &ign
+            - 0.9825
+    ignition-type:  &ign
         target: OH*
         type: d/dt max
 datapoints:
     - temperature:
-        - 1225 kelvin
+        - 1313 kelvin
       ignition-delay:
-        - 890 us
+        - 1187 us
       pressure:
-        - 1.42 bar
+        - 3.92 bar
       composition: *comp
       ignition-type: *ign
-      equivalence-ratio: 0.25
+      equivalence-ratio: 1
     - temperature:
-        - 1250 kelvin
+        - 1341 kelvin
       ignition-delay:
-        - 679 us
+        - 873 us
       pressure:
-        - 1.22 bar
+        - 3.88 bar
       composition: *comp
       ignition-type: *ign
-      equivalence-ratio: 0.25
+      equivalence-ratio: 1
     - temperature:
-        - 1284 kelvin
+        - 1418 kelvin
       ignition-delay:
-        - 401 us
+        - 397 us
       pressure:
-        - 1.37 bar
+        - 4.06 bar
       composition: *comp
       ignition-type: *ign
-      equivalence-ratio: 0.25
+      equivalence-ratio: 1
     - temperature:
-        - 1333 kelvin
+        - 1471 kelvin
       ignition-delay:
-        - 256 us
+        - 258 us
       pressure:
-        - 1.34 bar
+        - 3.94 bar
       composition: *comp
       ignition-type: *ign
-      equivalence-ratio: 0.25
-    - temperature:
-        - 1379 kelvin
-      ignition-delay:
-        - 153 us
-      pressure:
-        - 1.29 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 0.25
-...
+      equivalence-ratio: 1
