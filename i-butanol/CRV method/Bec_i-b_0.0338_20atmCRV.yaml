@@ -2,7 +2,7 @@
 file-author:
     name: Morgan Mayer
     ORCID: 0000-0001-7137-5721
-file-version: (0,1)
+file-version: 1
 chemked-version: 0.0.1
 reference:
     doi: 10.1002/kin.20859
@@ -22,188 +22,283 @@ apparatus:
     institution: Department of Mechanical Engineering, Stanford University
     facility: stainless steel shock tube
 common-properties:
-    composition: &comp
     ignition-type:  &ign
         target: OH*
         type: d/dt max
 datapoints:
-    - temperature: 844 kelvin
-      ignition-delay: 11209 us
-      pressure: 16.8 atm
+    - temperature:
+        - 844 kelvin
+      ignition-delay:
+        - 11209 us
+      pressure:
+        - 16.8 atm
       composition:
-        - species-name: i-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          mole-fraction: 0.0303
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          mole-fraction: 0.128
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          mole-fraction: 0.8417
+        kind: mole fraction
+        species:
+          - species-name: i-butanol
+            InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+            amount:
+              - 0.0303
+          - species-name: O2
+            InChI:  1S/O2/c1-2
+            amount:
+              - 0.128
+          - species-name: N2
+            InChI: 1S/N2/c1-2
+            amount:
+              - 0.8417
       ignition-type: *ign
       equivalence-ratio: 1.42
-    - temperature: 845 kelvin
-      ignition-delay: 11262 us
-      pressure: 16.0 atm
+    - temperature:
+        - 845 kelvin
+      ignition-delay:
+        - 11262 us
+      pressure:
+        - 16.0 atm
       composition:
-        - species-name: i-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          mole-fraction: 0.0282
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          mole-fraction: 0.116
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          mole-fraction: 0.8558
+        kind: mole fraction
+        species:
+          - species-name: i-butanol
+            InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+            amount:
+              - 0.0282
+          - species-name: O2
+            InChI:  1S/O2/c1-2
+            amount:
+              - 0.116
+          - species-name: N2
+            InChI: 1S/N2/c1-2
+            amount:
+              - 0.8558
       ignition-type: *ign
       equivalence-ratio: 1.46
-    - temperature: 846 kelvin
-      ignition-delay: 11611 us
-      pressure: 16.8 atm
+    - temperature:
+        - 846 kelvin
+      ignition-delay:
+        - 11611 us
+      pressure:
+        - 16.8 atm
       composition:
-        - species-name: i-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          mole-fraction: 0.0284
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          mole-fraction: 0.114
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          mole-fraction: 0.8576
+        kind: mole fraction
+        species:
+          - species-name: i-butanol
+            InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+            amount:
+              - 0.0284
+          - species-name: O2
+            InChI:  1S/O2/c1-2
+            amount:
+              - 0.114
+          - species-name: N2
+            InChI: 1S/N2/c1-2
+            amount:
+              - 0.8576
       ignition-type: *ign
       equivalence-ratio: 1.5
-    - temperature: 861 kelvin
-      ignition-delay: 7721 us
-      pressure: 15.9 atm
+    - temperature:
+        - 861 kelvin
+      ignition-delay:
+        - 7721 us
+      pressure:
+        - 15.9 atm
       composition:
-        - species-name: i-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          mole-fraction: 0.0297
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          mole-fraction: 0.126
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          mole-fraction: 0.8443
+        kind: mole fraction
+        species:
+          - species-name: i-butanol
+            InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+            amount:
+              - 0.0297
+          - species-name: O2
+            InChI:  1S/O2/c1-2
+            amount:
+              - 0.126
+          - species-name: N2
+            InChI: 1S/N2/c1-2
+            amount:
+              - 0.8443
       ignition-type: *ign
       equivalence-ratio: 1.42
-    - temperature: 875 kelvin
-      ignition-delay: 6160 us
-      pressure: 15.5 atm
+    - temperature:
+        - 875 kelvin
+      ignition-delay:
+        - 6160 us
+      pressure:
+        - 15.5 atm
       composition:
-        - species-name: i-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          mole-fraction: 0.031
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          mole-fraction: 0.128
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          mole-fraction: 0.841
+        kind: mole fraction
+        species:
+          - species-name: i-butanol
+            InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+            amount:
+              - 0.031
+          - species-name: O2
+            InChI:  1S/O2/c1-2
+            amount:
+              - 0.128
+          - species-name: N2
+            InChI: 1S/N2/c1-2
+            amount:
+              - 0.841
       ignition-type: *ign
       equivalence-ratio: 1.45
-    - temperature: 900 kelvin
-      ignition-delay: 4957 us
-      pressure: 15.5 atm
+    - temperature:
+        - 900 kelvin
+      ignition-delay:
+        - 4957 us
+      pressure:
+        - 15.5 atm
       composition:
-        - species-name: i-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          mole-fraction: 0.0326
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          mole-fraction: 0.14
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          mole-fraction: 0.8274
+        kind: mole fraction
+        species:
+          - species-name: i-butanol
+            InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+            amount:
+              - 0.0326
+          - species-name: O2
+            InChI:  1S/O2/c1-2
+            amount:
+              - 0.14
+          - species-name: N2
+            InChI: 1S/N2/c1-2
+            amount:
+              - 0.8274
       ignition-type: *ign
       equivalence-ratio: 1.4
-    - temperature: 922 kelvin
-      ignition-delay: 3502 us
-      pressure: 15.0 atm
+    - temperature:
+        - 922 kelvin
+      ignition-delay:
+        - 3502 us
+      pressure:
+        - 15.0 atm
       composition:
-        - species-name: i-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          mole-fraction: 0.0347
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          mole-fraction: 0.144
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          mole-fraction: 0.8213
+        kind: mole fraction
+        species:
+          - species-name: i-butanol
+            InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+            amount:
+              - 0.0347
+          - species-name: O2
+            InChI:  1S/O2/c1-2
+            amount:
+              - 0.144
+          - species-name: N2
+            InChI: 1S/N2/c1-2
+            amount:
+              - 0.8213
       ignition-type: *ign
       equivalence-ratio: 1.45
-    - temperature: 969 kelvin
-      ignition-delay: 1750 us
-      pressure: 22.4 atm
+    - temperature:
+        - 969 kelvin
+      ignition-delay:
+        - 1750 us
+      pressure:
+        - 22.4 atm
       composition:
-        - species-name: i-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          mole-fraction: 0.0336
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          mole-fraction: 0.138
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          mole-fraction: 0.8284
+        kind: mole fraction
+        species:
+          - species-name: i-butanol
+            InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+            amount:
+              - 0.0336
+          - species-name: O2
+            InChI:  1S/O2/c1-2
+            amount:
+              - 0.138
+          - species-name: N2
+            InChI: 1S/N2/c1-2
+            amount:
+              - 0.8284
       ignition-type: *ign
       equivalence-ratio: 1.46
-    - temperature: 994 kelvin
-      ignition-delay: 1378 us
-      pressure: 19.4 atm
+    - temperature:
+        - 994 kelvin
+      ignition-delay:
+        - 1378 us
+      pressure:
+        - 19.4 atm
       composition:
-        - species-name: i-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          mole-fraction: 0.0332
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          mole-fraction: 0.158
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          mole-fraction: 0.8088
+        kind: mole fraction
+        species:
+          - species-name: i-butanol
+            InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+            amount:
+              - 0.0332
+          - species-name: O2
+            InChI:  1S/O2/c1-2
+            amount:
+              - 0.158
+          - species-name: N2
+            InChI: 1S/N2/c1-2
+            amount:
+              - 0.8088
       ignition-type: *ign
       equivalence-ratio: 1.26
-    - temperature: 997 kelvin
-      ignition-delay: 1407 us
-      pressure: 20.1 atm
+    - temperature:
+        - 997 kelvin
+      ignition-delay:
+        - 1407 us
+      pressure:
+        - 20.1 atm
       composition:
-        - species-name: i-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          mole-fraction: 0.0318
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          mole-fraction: 0.152
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          mole-fraction: 0.8162
+        kind: mole fraction
+        species:
+          - species-name: i-butanol
+            InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+            amount:
+              - 0.0318
+          - species-name: O2
+            InChI:  1S/O2/c1-2
+            amount:
+              - 0.152
+          - species-name: N2
+            InChI: 1S/N2/c1-2
+            amount:
+              - 0.8162
       ignition-type: *ign
       equivalence-ratio: 1.25
-    - temperature: 1016 kelvin
-      ignition-delay: 931 us
-      pressure: 18.5 atm
+    - temperature:
+        - 1016 kelvin
+      ignition-delay:
+        - 931 us
+      pressure:
+        - 18.5 atm
       composition:
-        - species-name: i-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          mole-fraction: 0.033
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          mole-fraction: 0.185
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          mole-fraction: 0.782
+        kind: mole fraction
+        species:
+          - species-name: i-butanol
+            InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+            amount:
+              - 0.033
+          - species-name: O2
+            InChI:  1S/O2/c1-2
+            amount:
+              - 0.185
+          - species-name: N2
+            InChI: 1S/N2/c1-2
+            amount:
+              - 0.782
       ignition-type: *ign
       equivalence-ratio: 1.07
-    - temperature: 1051 kelvin
-      ignition-delay: 538 us
-      pressure: 18.2 atm
+    - temperature:
+        - 1051 kelvin
+      ignition-delay:
+        - 538 us
+      pressure:
+        - 18.2 atm
       composition:
-        - species-name: i-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          mole-fraction: 0.0338
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          mole-fraction: 0.193
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          mole-fraction: 0.7732
+        kind: mole fraction
+        species:
+          - species-name: i-butanol
+            InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+            amount:
+              - 0.0338
+          - species-name: O2
+            InChI:  1S/O2/c1-2
+            amount:
+              - 0.193
+          - species-name: N2
+            InChI: 1S/N2/c1-2
+            amount:
+              - 0.7732
       ignition-type: *ign
       equivalence-ratio: 1.05
