@@ -1,0 +1,132 @@
+---
+file-author:
+    name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
+file-version: 0
+chemked-version: 0.0.1
+reference:
+    doi: 10.1016/j.proci.2008.05.004
+    authors:
+        - name: Hsi-Ping S. Shen
+        - name: Jeremy Vanderover
+        - name: Matthew A. Oehlschlaeger
+    journal: Proceedings of the Combustion Institute
+    year: 2009
+    volume: 32
+    pages: 165-172
+    detail: Shen_toluene_phi0.25_50atm
+experiment-type: ignition delay
+apparatus:
+    kind:  shock tube
+    institution: Department of Mechanical, Aerospace, and Nuclear Engineering, Rensselaer Polytechnic Institute
+    facility: stainless steel shock tube
+common-properties:
+    composition: &comp
+      kind: mole fraction
+      species:
+        - species-name: toluene
+          InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
+          amount:
+            - 0.005802
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.2089
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.7853
+    ignition-type:  &ign
+        target: OH*
+        type: d/dt max
+datapoints:
+    - temperature:
+        - 1085.0 kelvin
+      ignition-delay:
+        - 1280.0 us
+      pressure:
+        - 43.7 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature:
+        - 1092.0 kelvin
+      ignition-delay:
+        - 1181.0 us
+      pressure:
+        - 46.9 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature:
+        - 1152.0 kelvin
+      ignition-delay:
+        - 767.0 us
+      pressure:
+        - 43.6 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature:
+        - 1153.0 kelvin
+      ignition-delay:
+        - 662.0 us
+      pressure:
+        - 46.7 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature:
+        - 1165.0 kelvin
+      ignition-delay:
+        - 604.0 us
+      pressure:
+        - 45.7 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature:
+        - 1171.0 kelvin
+      ignition-delay:
+        - 559.0 us
+      pressure:
+        - 42.8 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature:
+        - 1190.0 kelvin
+      ignition-delay:
+        - 399.0 us
+      pressure:
+        - 41.5 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature:
+        - 1241.0 kelvin
+      ignition-delay:
+        - 280.0 us
+      pressure:
+        - 43.8 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature:
+        - 1261.0 kelvin
+      ignition-delay:
+        - 224.0 us
+      pressure:
+        - 41.7 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25
+    - temperature:
+        - 1302.0 kelvin
+      ignition-delay:
+        - 171.0 us
+      pressure:
+        - 40.7 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.25

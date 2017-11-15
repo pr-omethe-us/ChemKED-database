@@ -1,0 +1,87 @@
+---
+file-author:
+    name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
+file-version: 0
+chemked-version: 0.0.1
+reference:
+    doi: 10.1016/j.proci.2004.07.039
+    authors:
+        - name: V. Vasudevan
+        - name: D. F. Davidson
+        - name: R. K. Hanson
+    journal: Proceedings of the Combustion Institute
+    year: 2005
+    volume: 30
+    pages: 1155-1163
+    detail: Vasudevan_phi_0.5
+experiment-type: ignition delay
+apparatus:
+    kind: shock tube
+    institution: High Temperature Gas dynamics Laboratory, Mechanical Engineering Department, Stanford University
+    facility: stainless steel shock tube
+common-properties:
+    composition: &comp
+      kind: mole fraction
+      species:
+        - species-name: toluene
+          InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
+          amount:
+            - 0.001
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.018
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.981
+    ignition-type:  &ign
+        target: OH
+        type: 1/2 max
+datapoints:
+    - temperature:
+        - 1458.0 K
+      ignition-delay:
+        - 1123.0 us
+      pressure:
+        - 1.99 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.5
+    - temperature:
+        - 1504.0 K
+      ignition-delay:
+        - 725.0 us
+      pressure:
+        - 1.98 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.5
+    - temperature:
+        - 1540.0 K
+      ignition-delay:
+        - 501.0 us
+      pressure:
+        - 1.96 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.5
+    - temperature:
+        - 1550.0 K
+      ignition-delay:
+        - 386.0 us
+      pressure:
+        - 1.94 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.5
+    - temperature:
+        - 1666.0 K
+      ignition-delay:
+        - 153.0 us
+      pressure:
+        - 1.92 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.5

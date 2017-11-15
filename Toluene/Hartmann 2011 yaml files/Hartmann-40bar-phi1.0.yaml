@@ -1,0 +1,117 @@
+---
+file-author:
+    name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
+file-version: 0
+chemked-version: 0.0.1
+reference:
+    doi: 10.1016/j.combustflame.2010.08.005
+    authors:
+        - name: M. Hartmann
+        - name: I. Gushterova
+        - name: M. Fikri
+        - name: C. Schulz
+        - name: R. Schießl
+        - name: U. Maas
+    journal: Combustion and Flame
+    year: 2011
+    volume: 158
+    pages: 172-178
+    detail: Hartmann-40bar-phi1.0
+experiment-type: ignition delay
+apparatus:
+    kind: shock tube
+    institution: Institute for Combustion and Gasdynamics, University of Duisburg-Essen
+    facility: stainless steel shock tube
+common-properties:
+    composition: &comp
+      kind: mole fraction
+      species:
+        - species-name: toluene
+          InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
+          amount:
+            - 0.02281
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.20529
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.77190
+    ignition-type:  &ign
+        target: CH*
+        type: d/dt max
+datapoints:
+    - temperature:
+        - 859.0 kelvin
+      ignition-delay:
+        - 4911.0 us
+      pressure:
+        - 42.3 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 882.0 kelvin
+      ignition-delay:
+        - 3214.0 us
+      pressure:
+        - 41.6 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 911.0 kelvin
+      ignition-delay:
+        - 3375.0 us
+      pressure:
+        - 41.7 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 954.0 kelvin
+      ignition-delay:
+        - 2276.0 us
+      pressure:
+        - 43.4 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 996.0 kelvin
+      ignition-delay:
+        - 1529.0 us
+      pressure:
+        - 44.0 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1034.0 kelvin
+      ignition-delay:
+        - 1256.0 us
+      pressure:
+        - 42.9 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1100.0 kelvin
+      ignition-delay:
+        - 639.0 us
+      pressure:
+        - 40.2 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1149.0 kelvin
+      ignition-delay:
+        - 342.0 us
+      pressure:
+        - 39.0 bar
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0

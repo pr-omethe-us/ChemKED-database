@@ -1,0 +1,149 @@
+---
+file-author:
+    name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
+file-version: 0
+chemked-version: 0.0.1
+reference:
+    doi: 
+    authors:
+        - name: Alexander Burcat
+        - name: Christopher Snyder
+        - name: Theodore Brabbs
+    journal: NASA Technical Memorandum
+    year: 1986
+    pages: 87312
+    detail: "The ignition delay time was defined as the time from the onset of the reflected shock wave to the beginning of the pressure rise at ignition"
+experiment-type: ignition delay
+apparatus:
+    kind: shock tube
+    institution: NASA Lewis Research Center; Cleveland, OH
+    facility: stainless steel shock tube
+common-properties:
+    composition: &comp
+      kind: mole fraction
+      species:
+        - species-name: toluene
+          InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
+          amount:
+            - 0.01495
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.1345
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.85055
+    ignition-type:  &ign
+        target: pressure
+        type: d/dt max
+datapoints:
+    - temperature:
+        - 1429.0 kelvin
+      ignition-delay:
+        - 356.0 us
+      pressure:
+        - 2.54 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1368.0 kelvin
+      ignition-delay:
+        - 975.0 us
+      pressure:
+        - 2.36 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1358.0 kelvin
+      ignition-delay:
+        - 1030.0 us
+      pressure:
+        - 2.33 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1447.0 kelvin
+      ignition-delay:
+        - 328.0 us
+      pressure:
+        - 2.6 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1489.0 kelvin
+      ignition-delay:
+        - 185.0 us
+      pressure:
+        - 2.73 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1540.0 kelvin
+      ignition-delay:
+        - 100.0 us
+      pressure:
+        - 2.89 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1574.0 kelvin
+      ignition-delay:
+        - 62.0 us
+      pressure:
+        - 3.0 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1629.0 kelvin
+      ignition-delay:
+        - 42.0 us
+      pressure:
+        - 3.18 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1552.0 kelvin
+      ignition-delay:
+        - 80.0 us
+      pressure:
+        - 2.94 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1651.0 kelvin
+      ignition-delay:
+        - 29.0 us
+      pressure:
+        - 3.26 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1758.0 kelvin
+      ignition-delay:
+        - 8.0 us
+      pressure:
+        - 3.61 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0
+    - temperature:
+        - 1394.0 kelvin
+      ignition-delay:
+        - 596.0 us
+      pressure:
+        - 2.44 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 1.0

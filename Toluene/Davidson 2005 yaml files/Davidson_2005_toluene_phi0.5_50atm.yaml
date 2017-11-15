@@ -1,0 +1,78 @@
+---
+file-author:
+    name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
+file-version: 0
+chemked-version: 0.0.1
+reference:
+    doi: 10.1016/j.proci.2004.08.004
+    authors:
+        - name: D.F. Davidson
+        - name: B.M. Gauthier
+        - name: R.K. Hanson
+    journal: Proceedings of the Combustion Institute
+    year: 2005
+    volume: 30
+    pages: 1175-1182
+    detail: Davidson_2005_toluene_phi0.5_50atm
+experiment-type: ignition delay
+apparatus:
+    kind:  shock tube
+    institution: Stanford University
+    facility: stainless steel shock tube
+common-properties:
+    composition: &comp
+      kind: mole fraction
+      species:
+        - species-name: toluene
+          InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
+          amount:
+            - 0.01154
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.20766
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.78080
+    ignition-type:  &ign
+        target: OH*
+        type: d/dt max
+datapoints:
+    - temperature:
+        - 1091.0 kelvin
+      ignition-delay:
+        - 1186.0 us
+      pressure:
+        - 50.5 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.5
+    - temperature:
+        - 1135.0 kelvin
+      ignition-delay:
+        - 669.0 us
+      pressure:
+        - 46.5 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.5
+    - temperature:
+        - 1149.0 kelvin
+      ignition-delay:
+        - 579.0 us
+      pressure:
+        - 44.4 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.5
+    - temperature:
+        - 1211.0 kelvin
+      ignition-delay:
+        - 250.0 us
+      pressure:
+        - 44.4 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 0.5
