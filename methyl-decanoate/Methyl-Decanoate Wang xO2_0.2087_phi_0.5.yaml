@@ -2,7 +2,7 @@
 file-author:
     name: Bradley Carrano
     ORCID: 0000-0003-3700-4155
-file-version: 0
+file-version: 1
 chemked-version: 0.3.0
 reference:
     doi: 10.1016/j.combustflame.2011.07.019
@@ -37,7 +37,7 @@ common-properties:
             - 0.78457
     ignition-type: &ign
         target: OH*
-        type: d/dt max
+        type: d/dt max extrapolated
 datapoints: 
     - temperature:
         - 720 kelvin
@@ -120,7 +120,7 @@ datapoints:
         - uncertainty-type: relative
           uncertainty: 0.02
       pressure-rise:
-        - 3 1/ms
+        - 3.0 1/ms
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 0.5
@@ -137,7 +137,7 @@ datapoints:
         - uncertainty-type: relative
           uncertainty: 0.02
       pressure-rise:
-        - 3 1/ms
+        - 3.0 1/ms
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 0.5
@@ -218,7 +218,7 @@ datapoints:
         - uncertainty-type: relative
           uncertainty: 0.25
       pressure:
-        - 16 atm
+        - 16.0 atm
         - uncertainty-type: relative
           uncertainty: 0.02
       pressure-rise:
