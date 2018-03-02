@@ -38,12 +38,16 @@ common-properties:
             - 0.78080
     ignition-type:  &ign
         target: OH*
-        type: d/dt max
+        type: d/dt max extrapolated
 datapoints:
     - temperature:
         - 1091.0 kelvin
+        - uncertainty-type: relative
+          uncertainty: 0.018
       ignition-delay:
         - 1186.0 us
+        - uncertainty-type: relative
+          uncertainty: 0.15
       pressure:
         - 50.5 atm
       composition: *comp
@@ -51,8 +55,12 @@ datapoints:
       equivalence-ratio: 0.5
     - temperature:
         - 1135.0 kelvin
+        - uncertainty-type: relative
+          uncertainty: 0.018
       ignition-delay:
         - 669.0 us
+        - uncertainty-type: relative
+          uncertainty: 0.15
       pressure:
         - 46.5 atm
       composition: *comp
@@ -60,8 +68,12 @@ datapoints:
       equivalence-ratio: 0.5
     - temperature:
         - 1149.0 kelvin
+        - uncertainty-type: relative
+          uncertainty: 0.018
       ignition-delay:
         - 579.0 us
+        - uncertainty-type: relative
+          uncertainty: 0.15
       pressure:
         - 44.4 atm
       composition: *comp
@@ -69,8 +81,12 @@ datapoints:
       equivalence-ratio: 0.5
     - temperature:
         - 1211.0 kelvin
+        - uncertainty-type: relative
+          uncertainty: 0.018
       ignition-delay:
         - 250.0 us
+        - uncertainty-type: relative
+          uncertainty: 0.15
       pressure:
         - 44.4 atm
       composition: *comp

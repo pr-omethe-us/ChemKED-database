@@ -14,7 +14,7 @@ reference:
     year: 2005
     volume: 30
     pages: 1155-1163
-    detail: Vasudevan_phi_1.0_250ppm
+    detail: Vasudevan_phi_1.5
 experiment-type: ignition delay
 apparatus:
     kind: shock tube
@@ -27,52 +27,68 @@ common-properties:
         - species-name: toluene
           InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
           amount:
-            - 0.00025
+            - 0.001
         - species-name: O2
           InChI: 1S/O2/c1-2
           amount:
-            - 0.00225
+            - 0.006
         - species-name: Ar
           InChI: 1S/Ar
           amount:
-            - 0.9975
+            - 0.993
     ignition-type:  &ign
         target: OH
         type: 1/2 max
 datapoints:
     - temperature:
-        - 1607.0 K
+        - 1616.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.01
       ignition-delay:
-        - 949.0 us
+        - 1090.0 us
+        - uncertainty-type: relative
+          uncertainty: 0.1
       pressure:
-        - 2.03 atm
+        - 1.82 atm
       composition: *comp
       ignition-type: *ign
-      equivalence-ratio: 1.0
+      equivalence-ratio: 1.5
     - temperature:
-        - 1648.0 K
+        - 1627.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.01
       ignition-delay:
-        - 608.0 us
+        - 922.0 us
+        - uncertainty-type: relative
+          uncertainty: 0.1
       pressure:
-        - 2.03 atm
+        - 1.92 atm
       composition: *comp
       ignition-type: *ign
-      equivalence-ratio: 1.0
+      equivalence-ratio: 1.5
     - temperature:
-        - 1700.0 K
+        - 1714.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.01
       ignition-delay:
-        - 369.0 us
+        - 384.0 us
+        - uncertainty-type: relative
+          uncertainty: 0.1
       pressure:
-        - 1.89 atm
+        - 1.77 atm
       composition: *comp
       ignition-type: *ign
-      equivalence-ratio: 1.0
+      equivalence-ratio: 1.5
     - temperature:
-        - 1783.0 K
+        - 1847.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.01
       ignition-delay:
-        - 136.0 us
+        - 143.0 us
+        - uncertainty-type: relative
+          uncertainty: 0.1
       pressure:
-        - 1.84 atm
+        - 1.75 atm
       composition: *comp
       ignition-type: *ign
-      equivalence-ratio: 1.0
+      equivalence-ratio: 1.5
