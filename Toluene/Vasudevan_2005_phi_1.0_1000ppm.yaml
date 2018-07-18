@@ -1,133 +1,135 @@
 ---
 file-authors:
-    - name: Morgan Mayer
-      ORCID: 0000-0001-7137-5721
+  - name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
 file-version: 0
 chemked-version: 0.4.1
 reference:
-    doi: 10.1016/j.proci.2004.07.039
-    authors:
-        - name: V. Vasudevan
-        - name: D. F. Davidson
-        - name: R. K. Hanson
-    journal: Proceedings of the Combustion Institute
-    year: 2005
-    volume: 30
-    pages: 1155-1163
-    detail: Vasudevan_phi_1.0_1000ppm
+  doi: 10.1016/j.proci.2004.07.039
+  authors:
+    - name: V. Vasudevan
+    - name: D. F. Davidson
+    - name: R. K. Hanson
+  journal: Proceedings of the Combustion Institute
+  year: 2005
+  volume: 30
+  pages: 1155-1163
+  detail: Vasudevan_phi_1.0_1000ppm
 experiment-type: ignition delay
 apparatus:
-    kind: shock tube
-    institution: High Temperature Gas dynamics Laboratory, Mechanical Engineering Department, Stanford University
-    facility: stainless steel shock tube
+  kind: shock tube
+  institution: High Temperature Gas dynamics Laboratory, Mechanical Engineering Department,
+    Stanford University
+  facility: stainless steel shock tube
 common-properties:
-    composition: &comp
-      kind: mole fraction
-      species:
-        - species-name: toluene
-          InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
-          amount:
-            - 0.001
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 0.009
-        - species-name: Ar
-          InChI: 1S/Ar
-          amount:
-            - 0.99
-    ignition-type:  &ign
-        target: OH
-        type: 1/2 max
+  composition: &comp
+    kind: mole fraction
+    species:
+      - species-name: toluene
+        InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
+        amount:
+          - 0.001
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.009
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.99
+  ignition-type: &ign
+    target: OH
+    type: 1/2 max
 datapoints:
-    - temperature:
-        - 1564.0 K
-        - uncertainty-type: relative
-          uncertainty: 0.01
-      ignition-delay:
-        - 1068.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.1
-      pressure:
-        - 1.95 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1586.0 K
-        - uncertainty-type: relative
-          uncertainty: 0.01
-      ignition-delay:
-        - 702.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.1
-      pressure:
-        - 1.9 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1614.0 K
-        - uncertainty-type: relative
-          uncertainty: 0.01
-      ignition-delay:
-        - 389.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.1
-      pressure:
-        - 1.8 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1689.0 K
-        - uncertainty-type: relative
-          uncertainty: 0.01
-      ignition-delay:
-        - 209.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.1
-      pressure:
-        - 1.79 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1527.0 K
-        - uncertainty-type: relative
-          uncertainty: 0.01
-      ignition-delay:
-        - 798.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.1
-      pressure:
-        - 4.54 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1541.0 K
-        - uncertainty-type: relative
-          uncertainty: 0.01
-      ignition-delay:
-        - 651.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.1
-      pressure:
-        - 4.43 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1697.0 K
-        - uncertainty-type: relative
-          uncertainty: 0.01
-      ignition-delay:
-        - 150.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.1
-      pressure:
-        - 4.26 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
+  - temperature:
+      - 1564.0 K
+      - uncertainty-type: relative
+        uncertainty: 0.01
+    ignition-delay:
+      - 1068.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.1
+    pressure:
+      - 1.95 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1586.0 K
+      - uncertainty-type: relative
+        uncertainty: 0.01
+    ignition-delay:
+      - 702.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.1
+    pressure:
+      - 1.9 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1614.0 K
+      - uncertainty-type: relative
+        uncertainty: 0.01
+    ignition-delay:
+      - 389.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.1
+    pressure:
+      - 1.8 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1689.0 K
+      - uncertainty-type: relative
+        uncertainty: 0.01
+    ignition-delay:
+      - 209.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.1
+    pressure:
+      - 1.79 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1527.0 K
+      - uncertainty-type: relative
+        uncertainty: 0.01
+    ignition-delay:
+      - 798.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.1
+    pressure:
+      - 4.54 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1541.0 K
+      - uncertainty-type: relative
+        uncertainty: 0.01
+    ignition-delay:
+      - 651.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.1
+    pressure:
+      - 4.43 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1697.0 K
+      - uncertainty-type: relative
+        uncertainty: 0.01
+    ignition-delay:
+      - 150.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.1
+    pressure:
+      - 4.26 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+...

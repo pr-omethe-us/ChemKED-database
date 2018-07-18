@@ -1,159 +1,160 @@
 ---
 file-authors:
-    - name: Morgan Mayer
-      ORCID: 0000-0001-7137-5721
+  - name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
 file-version: 0
 chemked-version: 0.4.1
 reference:
-    doi: 10.1016/j.proci.2004.08.004
-    authors:
-        - name: D.F. Davidson
-        - name: B.M. Gauthier
-        - name: R.K. Hanson
-    journal: Proceedings of the Combustion Institute
-    year: 2005
-    volume: 30
-    pages: 1175-1182
-    detail: Davidson_2005_toluene_phi1.0_50atm
+  doi: 10.1016/j.proci.2004.08.004
+  authors:
+    - name: D.F. Davidson
+    - name: B.M. Gauthier
+    - name: R.K. Hanson
+  journal: Proceedings of the Combustion Institute
+  year: 2005
+  volume: 30
+  pages: 1175-1182
+  detail: Davidson_2005_toluene_phi1.0_50atm
 experiment-type: ignition delay
 apparatus:
-    kind:  shock tube
-    institution: Stanford University
-    facility: stainless steel shock tube
+  kind: shock tube
+  institution: Stanford University
+  facility: stainless steel shock tube
 common-properties:
-    composition: &comp
-      kind: mole fraction
-      species:
-        - species-name: toluene
-          InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
-          amount:
-            - 0.02281
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 0.20529
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          amount:
-            - 0.77190
-    ignition-type:  &ign
-        target: OH*
-        type: d/dt max extrapolated
+  composition: &comp
+    kind: mole fraction
+    species:
+      - species-name: toluene
+        InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
+        amount:
+          - 0.02281
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.20529
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.77190
+  ignition-type: &ign
+    target: OH*
+    type: d/dt max extrapolated
 datapoints:
-    - temperature:
-        - 977.0 kelvin
-        - uncertainty-type: relative
-          uncertainty: 0.018
-      ignition-delay:
-        - 1173.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.15
-      pressure:
-        - 54.3 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 990.0 kelvin
-        - uncertainty-type: relative
-          uncertainty: 0.018
-      ignition-delay:
-        - 952.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.15
-      pressure:
-        - 50.5 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1005.0 kelvin
-        - uncertainty-type: relative
-          uncertainty: 0.018
-      ignition-delay:
-        - 870.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.15
-      pressure:
-        - 50.4 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1068.0 kelvin
-        - uncertainty-type: relative
-          uncertainty: 0.018
-      ignition-delay:
-        - 605.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.15
-      pressure:
-        - 48.0 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1111.0 kelvin
-        - uncertainty-type: relative
-          uncertainty: 0.018
-      ignition-delay:
-        - 397.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.15
-      pressure:
-        - 46.7 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1166.0 kelvin
-        - uncertainty-type: relative
-          uncertainty: 0.018
-      ignition-delay:
-        - 276.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.15
-      pressure:
-        - 44.6 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1179.0 kelvin
-        - uncertainty-type: relative
-          uncertainty: 0.018
-      ignition-delay:
-        - 273.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.15
-      pressure:
-        - 41.5 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1183.0 kelvin
-        - uncertainty-type: relative
-          uncertainty: 0.018
-      ignition-delay:
-        - 191.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.15
-      pressure:
-        - 46.2 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
-    - temperature:
-        - 1242.0 kelvin
-        - uncertainty-type: relative
-          uncertainty: 0.018
-      ignition-delay:
-        - 121.0 us
-        - uncertainty-type: relative
-          uncertainty: 0.15
-      pressure:
-        - 42.4 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1.0
+  - temperature:
+      - 977.0 kelvin
+      - uncertainty-type: relative
+        uncertainty: 0.018
+    ignition-delay:
+      - 1173.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 54.3 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 990.0 kelvin
+      - uncertainty-type: relative
+        uncertainty: 0.018
+    ignition-delay:
+      - 952.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 50.5 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1005.0 kelvin
+      - uncertainty-type: relative
+        uncertainty: 0.018
+    ignition-delay:
+      - 870.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 50.4 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1068.0 kelvin
+      - uncertainty-type: relative
+        uncertainty: 0.018
+    ignition-delay:
+      - 605.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 48.0 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1111.0 kelvin
+      - uncertainty-type: relative
+        uncertainty: 0.018
+    ignition-delay:
+      - 397.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 46.7 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1166.0 kelvin
+      - uncertainty-type: relative
+        uncertainty: 0.018
+    ignition-delay:
+      - 276.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 44.6 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1179.0 kelvin
+      - uncertainty-type: relative
+        uncertainty: 0.018
+    ignition-delay:
+      - 273.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 41.5 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1183.0 kelvin
+      - uncertainty-type: relative
+        uncertainty: 0.018
+    ignition-delay:
+      - 191.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 46.2 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1242.0 kelvin
+      - uncertainty-type: relative
+        uncertainty: 0.018
+    ignition-delay:
+      - 121.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 42.4 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+...

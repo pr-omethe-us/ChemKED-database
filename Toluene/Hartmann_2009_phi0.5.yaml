@@ -1,107 +1,108 @@
 ---
 file-authors:
-    - name: Morgan Mayer
-      ORCID: 0000-0001-7137-5721
+  - name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
 file-version: 0
 chemked-version: 0.4.1
 reference:
-    doi: 10.1016/j.combustflame.2010.08.005
-    authors:
-        - name: M. Hartmann
-        - name: I. Gushterova
-        - name: M. Fikri
-        - name: C. Schulz
-        - name: R. Schießl
-        - name: U. Maas
-    journal: Combustion and Flame
-    year: 2011
-    volume: 158
-    pages: 172-178
-    detail: Hartmann-40bar-phi0.5
+  doi: 10.1016/j.combustflame.2010.08.005
+  authors:
+    - name: M. Hartmann
+    - name: I. Gushterova
+    - name: M. Fikri
+    - name: C. Schulz
+    - name: R. Schießl
+    - name: U. Maas
+  journal: Combustion and Flame
+  year: 2011
+  volume: 158
+  pages: 172-178
+  detail: Hartmann-40bar-phi0.5
 experiment-type: ignition delay
 apparatus:
-    kind:  shock tube
-    institution: Institute for Combustion and Gasdynamics, University of Duisburg-Essen
-    facility: stainless steel shock tube
+  kind: shock tube
+  institution: Institute for Combustion and Gasdynamics, University of Duisburg-Essen
+  facility: stainless steel shock tube
 common-properties:
-    composition: &comp
-      kind: mole fraction
-      species:
-        - species-name: toluene
-          InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
-          amount:
-            - 0.01154
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 0.20766
-        - species-name: N2
-          InChI: 1S/N2/c1-2
-          amount:
-            - 0.78080
-    ignition-type:  &ign
-        target: CH*
-        type: d/dt max
+  composition: &comp
+    kind: mole fraction
+    species:
+      - species-name: toluene
+        InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
+        amount:
+          - 0.01154
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.20766
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.78080
+  ignition-type: &ign
+    target: CH*
+    type: d/dt max
 datapoints:
-    - temperature:
-        - 942.0 kelvin
-      ignition-delay:
-        - 8815.0 us
-      pressure:
-        - 40.4 bar
-        - uncertainty-type: absolute
-          uncertainty: 2 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 0.5
-    - temperature:
-        - 967.0 kelvin
-      ignition-delay:
-        - 5144.0 us
-      pressure:
-        - 39.0 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 0.5
-    - temperature:
-        - 1029.0 kelvin
-      ignition-delay:
-        - 1998.0 us
-      pressure:
-        - 40.5 bar
-        - uncertainty-type: absolute
-          uncertainty: 2 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 0.5
-    - temperature:
-        - 1069.0 kelvin
-      ignition-delay:
-        - 1300.0 us
-      pressure:
-        - 39.9 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 0.5
-    - temperature:
-        - 1115.0 kelvin
-      ignition-delay:
-        - 783.0 us
-      pressure:
-        - 39.6 bar
-        - uncertainty-type: absolute
-          uncertainty: 2 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 0.5
-    - temperature:
-        - 1140.0 kelvin
-      ignition-delay:
-        - 545.0 us
-      pressure:
-        - 36.5 bar
-        - uncertainty-type: absolute
-          uncertainty: 2 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 0.5
+  - temperature:
+      - 942.0 kelvin
+    ignition-delay:
+      - 8815.0 us
+    pressure:
+      - 40.4 bar
+      - uncertainty-type: absolute
+        uncertainty: 2 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.5
+  - temperature:
+      - 967.0 kelvin
+    ignition-delay:
+      - 5144.0 us
+    pressure:
+      - 39.0 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.5
+  - temperature:
+      - 1029.0 kelvin
+    ignition-delay:
+      - 1998.0 us
+    pressure:
+      - 40.5 bar
+      - uncertainty-type: absolute
+        uncertainty: 2 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.5
+  - temperature:
+      - 1069.0 kelvin
+    ignition-delay:
+      - 1300.0 us
+    pressure:
+      - 39.9 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.5
+  - temperature:
+      - 1115.0 kelvin
+    ignition-delay:
+      - 783.0 us
+    pressure:
+      - 39.6 bar
+      - uncertainty-type: absolute
+        uncertainty: 2 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.5
+  - temperature:
+      - 1140.0 kelvin
+    ignition-delay:
+      - 545.0 us
+    pressure:
+      - 36.5 bar
+      - uncertainty-type: absolute
+        uncertainty: 2 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.5
+...
