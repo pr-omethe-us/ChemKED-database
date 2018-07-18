@@ -1,0 +1,92 @@
+---
+file-authors:
+  - name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1021/jp806464p
+  authors:
+    - name: Jeffrey T. Moss
+    - name: Andrew M. Berkowitz
+    - name: Matthew A. Oehlschlaeger
+    - name: Joffrey Biet
+    - name: Valerie Warth
+    - name: Pierre-Alexandre Glaude
+    - name: Frederique Battin-Leclerc
+  journal: The Journal of Physical Chemistry A
+  year: 2008
+  volume: 112
+  pages: 10843-10855
+  detail: phi_1.0_1-b_0.0025
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: Rensselaer Polytechnic Institute
+  facility: stainless steel shock tube
+common-properties:
+  composition: &comp
+    kind: mole fraction
+    species:
+      - species-name: n-butanol
+        InChI: 1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3
+        amount:
+          - 0.0025
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.015
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.9825
+  ignition-type: &ign
+    target: OH*
+    type: d/dt max
+datapoints:
+  - temperature:
+      - 1279 kelvin
+    ignition-delay:
+      - 693 us
+    pressure:
+      - 4.07 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1298 kelvin
+    ignition-delay:
+      - 537 us
+    pressure:
+      - 3.85 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1388 kelvin
+    ignition-delay:
+      - 233 us
+    pressure:
+      - 3.94 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1435 kelvin
+    ignition-delay:
+      - 155 us
+    pressure:
+      - 3.81 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1451 kelvin
+    ignition-delay:
+      - 143 us
+    pressure:
+      - 3.53 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+...

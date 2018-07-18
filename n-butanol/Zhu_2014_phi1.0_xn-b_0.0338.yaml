@@ -1,0 +1,107 @@
+---
+file-authors:
+  - name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.combustflame.2013.06.028
+  authors:
+    - name: Yangye Zhu
+    - name: David Frank Davidson
+    - name: Ronald K. Hanson
+  journal: Combustion and Flame
+  year: 2014
+  volume: 161
+  pages: 634-643
+  detail: n-b_0.0338_xO2=0.203_phi=1.0
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: High Temperature Gasdynamics Laboratory, Department of Mechanical Engineering,
+    Stanford University
+  facility: stainless steel shock tube
+common-properties:
+  composition: &comp
+    kind: mole fraction
+    species:
+      - species-name: n-butanol
+        InChI: 1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3
+        amount:
+          - 0.0338
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.203
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.7632
+  ignition-type: &ign
+    target: OH*
+    type: d/dt max
+datapoints:
+  - temperature:
+      - 945 kelvin
+    ignition-delay:
+      - 825 us
+    pressure:
+      - 34.1 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 883 kelvin
+    ignition-delay:
+      - 1670 us
+    pressure:
+      - 34.3 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 815 kelvin
+    ignition-delay:
+      - 3113 us
+    pressure:
+      - 34.8 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 798 kelvin
+    ignition-delay:
+      - 4841 us
+    pressure:
+      - 38.3 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 762 kelvin
+    ignition-delay:
+      - 8704 us
+    pressure:
+      - 41.6 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 728 kelvin
+    ignition-delay:
+      - 8571 us
+    pressure:
+      - 41.0 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 716 kelvin
+    ignition-delay:
+      - 9385 us
+    pressure:
+      - 45.0 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+...

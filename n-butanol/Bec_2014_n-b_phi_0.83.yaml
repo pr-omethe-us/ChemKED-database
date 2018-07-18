@@ -1,0 +1,80 @@
+---
+file-authors:
+  - name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1002/kin.20859
+  authors:
+    - name: I. L. R. BEC
+    - name: Y. ZHU
+    - name: D. F. DAVIDSON
+    - name: R. K. HANSON
+  journal: International Journal of Chemical Kinetics
+  year: 2014
+  volume: 46
+  pages: 433-442
+  detail: phi_0.83_n-b_0.0338_xO2_0.244
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: Department of Mechanical Engineering, Stanford University
+  facility: stainless steel shock tube
+common-properties:
+  composition: &comp
+    kind: mole fraction
+    species:
+      - species-name: n-butanol
+        InChI: 1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3
+        amount:
+          - 0.0338
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.244
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.7222
+  ignition-type: &ign
+    target: OH*
+    type: d/dt max
+datapoints:
+  - temperature:
+      - 833 kelvin
+    ignition-delay:
+      - 3890 us
+    pressure:
+      - 16.4 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.83
+  - temperature:
+      - 822 kelvin
+    ignition-delay:
+      - 4960 us
+    pressure:
+      - 19.0 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.83
+  - temperature:
+      - 800 kelvin
+    ignition-delay:
+      - 6259 us
+    pressure:
+      - 19.9 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.83
+  - temperature:
+      - 833 kelvin
+    ignition-delay:
+      - 3890 us
+    pressure:
+      - 16.4 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.83
+...
