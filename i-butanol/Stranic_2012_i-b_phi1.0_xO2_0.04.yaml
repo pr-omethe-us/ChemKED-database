@@ -1,252 +1,253 @@
 ---
 file-authors:
-    - name: Morgan Mayer
-      ORCID: 0000-0001-7137-5721
+  - name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
 file-version: 0
 chemked-version: 0.4.1
 reference:
-    doi: 10.1016/j.combustflame.2011.08.014
-    authors:
-        - name: Ivo Stranic
-        - name: Deanna P. Chase
-        - name: Joseph T. Harmon
-        - name: Sheng Yang
-        - name: David F. Davidson
-        - name: Ronald K. Hanson
-    journal: Combustion and Flame
-    year: 2012
-    volume: 159
-    pages: 516-527
-    detail: xO2_0.04_phi_1.0
+  doi: 10.1016/j.combustflame.2011.08.014
+  authors:
+    - name: Ivo Stranic
+    - name: Deanna P. Chase
+    - name: Joseph T. Harmon
+    - name: Sheng Yang
+    - name: David F. Davidson
+    - name: Ronald K. Hanson
+  journal: Combustion and Flame
+  year: 2012
+  volume: 159
+  pages: 516-527
+  detail: xO2_0.04_phi_1.0
 experiment-type: ignition delay
 apparatus:
-    kind:  shock tube
-    institution: High Temperature Gasdynamics Laboratory, Stanford University
-    facility: stainless steel shock tube
+  kind: shock tube
+  institution: High Temperature Gasdynamics Laboratory, Stanford University
+  facility: stainless steel shock tube
 common-properties:
-    composition: &comp
-        kind: mole fraction
-        species:
-        - species-name: iso-butanol
-          InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
-          amount:
-           - 0.006666667
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          amount:
-           - 0.04
-        - species-name: Ar
-          InChI:  1S/Ar
-          amount:
-           - 0.953333333
-    ignition-type:  &ign
-        target: OH*
-        type: 1/2 max
+  composition: &comp
+    kind: mole fraction
+    species:
+      - species-name: iso-butanol
+        InChI: 1S/C4H10O/c1-4(2)3-5/h4-5H,3H2,1-2H3
+        amount:
+          - 0.006666667
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.04
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.953333333
+  ignition-type: &ign
+    target: OH*
+    type: 1/2 max
 datapoints:
-    - temperature:
-        - 1433 kelvin
-      ignition-delay:
-        - 322 us
-      pressure:
-        - 1.41 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1381 kelvin
-      ignition-delay:
-        - 501 us
-      pressure:
-        - 1.51 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1284 kelvin
-      ignition-delay:
-        - 1210 us
-      pressure:
-        - 1.56 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1319 kelvin
-      ignition-delay:
-        - 898 us
-      pressure:
-        - 1.49 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1349 kelvin
-      ignition-delay:
-        - 675 us
-      pressure:
-        - 1.50 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1519 kelvin
-      ignition-delay:
-        - 142 us
-      pressure:
-        - 1.37 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1483 kelvin
-      ignition-delay:
-        - 189 us
-      pressure:
-        - 1.41 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1486 kelvin
-      ignition-delay:
-        - 190 us
-      pressure:
-        - 1.49 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1485 kelvin
-      ignition-delay:
-        - 178 us
-      pressure:
-        - 1.51 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1588 kelvin
-      ignition-delay:
-        - 87 us
-      pressure:
-        - 1.38 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1376 kelvin
-      ignition-delay:
-        - 452 us
-      pressure:
-        - 1.69 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1372 kelvin
-      ignition-delay:
-        - 497 us
-      pressure:
-        - 1.60 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1401 kelvin
-      ignition-delay:
-        - 371 us
-      pressure:
-        - 1.56 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1437 kelvin
-      ignition-delay:
-        - 167 us
-      pressure:
-        - 3.38 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1363 kelvin
-      ignition-delay:
-        - 348 us
-      pressure:
-        - 3.27 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1367 kelvin
-      ignition-delay:
-        - 343 us
-      pressure:
-        - 3.42 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1343 kelvin
-      ignition-delay:
-        - 406 us
-      pressure:
-        - 3.42 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1286 kelvin
-      ignition-delay:
-        - 792 us
-      pressure:
-        - 3.30 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1310 kelvin
-      ignition-delay:
-        - 528 us
-      pressure:
-        - 3.49 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1493 kelvin
-      ignition-delay:
-        - 107 us
-      pressure:
-        - 3.22 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1271 kelvin
-      ignition-delay:
-        - 805 us
-      pressure:
-        - 3.41 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1278 kelvin
-      ignition-delay:
-        - 751 us
-      pressure:
-        - 3.54 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1240 kelvin
-      ignition-delay:
-        - 1032 us
-      pressure:
-        - 3.55 atm
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
+  - temperature:
+      - 1433 kelvin
+    ignition-delay:
+      - 322 us
+    pressure:
+      - 1.41 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1381 kelvin
+    ignition-delay:
+      - 501 us
+    pressure:
+      - 1.51 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1284 kelvin
+    ignition-delay:
+      - 1210 us
+    pressure:
+      - 1.56 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1319 kelvin
+    ignition-delay:
+      - 898 us
+    pressure:
+      - 1.49 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1349 kelvin
+    ignition-delay:
+      - 675 us
+    pressure:
+      - 1.50 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1519 kelvin
+    ignition-delay:
+      - 142 us
+    pressure:
+      - 1.37 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1483 kelvin
+    ignition-delay:
+      - 189 us
+    pressure:
+      - 1.41 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1486 kelvin
+    ignition-delay:
+      - 190 us
+    pressure:
+      - 1.49 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1485 kelvin
+    ignition-delay:
+      - 178 us
+    pressure:
+      - 1.51 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1588 kelvin
+    ignition-delay:
+      - 87 us
+    pressure:
+      - 1.38 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1376 kelvin
+    ignition-delay:
+      - 452 us
+    pressure:
+      - 1.69 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1372 kelvin
+    ignition-delay:
+      - 497 us
+    pressure:
+      - 1.60 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1401 kelvin
+    ignition-delay:
+      - 371 us
+    pressure:
+      - 1.56 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1437 kelvin
+    ignition-delay:
+      - 167 us
+    pressure:
+      - 3.38 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1363 kelvin
+    ignition-delay:
+      - 348 us
+    pressure:
+      - 3.27 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1367 kelvin
+    ignition-delay:
+      - 343 us
+    pressure:
+      - 3.42 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1343 kelvin
+    ignition-delay:
+      - 406 us
+    pressure:
+      - 3.42 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1286 kelvin
+    ignition-delay:
+      - 792 us
+    pressure:
+      - 3.30 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1310 kelvin
+    ignition-delay:
+      - 528 us
+    pressure:
+      - 3.49 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1493 kelvin
+    ignition-delay:
+      - 107 us
+    pressure:
+      - 3.22 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1271 kelvin
+    ignition-delay:
+      - 805 us
+    pressure:
+      - 3.41 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1278 kelvin
+    ignition-delay:
+      - 751 us
+    pressure:
+      - 3.54 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1240 kelvin
+    ignition-delay:
+      - 1032 us
+    pressure:
+      - 3.55 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+...

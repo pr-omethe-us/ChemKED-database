@@ -1,118 +1,119 @@
 ---
 file-authors:
-    - name: Morgan Mayer
-      ORCID: 0000-0001-7137-5721
+  - name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
 file-version: 0
 chemked-version: 0.4.1
 reference:
-    doi: 10.1021/jp806464p
-    authors:
-        - name: Jeffrey T. Moss
-        - name: Andrew M. Berkowitz
-        - name: Matthew A. Oehlschlaeger
-        - name: Joffrey Biet
-        - name: Valerie Warth
-        - name: Pierre-Alexandre Glaude
-        - name: Frederique Battin-Leclerc
-    journal: The Journal of Physical Chemistry A
-    year: 2008
-    volume: 112
-    pages: 10843-10855
-    detail: phi_1.0_t-b_0.0025
+  doi: 10.1021/jp806464p
+  authors:
+    - name: Jeffrey T. Moss
+    - name: Andrew M. Berkowitz
+    - name: Matthew A. Oehlschlaeger
+    - name: Joffrey Biet
+    - name: Valerie Warth
+    - name: Pierre-Alexandre Glaude
+    - name: Frederique Battin-Leclerc
+  journal: The Journal of Physical Chemistry A
+  year: 2008
+  volume: 112
+  pages: 10843-10855
+  detail: phi_1.0_t-b_0.0025
 experiment-type: ignition delay
 apparatus:
-    kind:  shock tube
-    institution: Rensselaer Polytechnic Institute
-    facility: stainless steel shock tube
+  kind: shock tube
+  institution: Rensselaer Polytechnic Institute
+  facility: stainless steel shock tube
 common-properties:
-    composition: &comp
-      kind: mole fraction
-      species:
-        - species-name: t-butanol
-          InChI: 1S/C4H10O/c1-4(2,3)5/h5H,1-3H3
-          amount:
-            - 0.0025
-        - species-name: O2
-          InChI:  1S/O2/c1-2
-          amount:
-            - 0.015
-        - species-name: Ar
-          InChI:  1S/Ar
-          amount:
-            - 0.9825
-    ignition-type:  &ign
-        target: OH*
-        type: d/dt max
+  composition: &comp
+    kind: mole fraction
+    species:
+      - species-name: t-butanol
+        InChI: 1S/C4H10O/c1-4(2,3)5/h5H,1-3H3
+        amount:
+          - 0.0025
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.015
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.9825
+  ignition-type: &ign
+    target: OH*
+    type: d/dt max
 datapoints:
-    - temperature:
-        - 1499 kelvin
-      ignition-delay:
-        - 717 us
-      pressure:
-        - 1.34 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1503 kelvin
-      ignition-delay:
-        - 754 us
-      pressure:
-        - 1.29 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1602 kelvin
-      ignition-delay:
-        - 307 us
-      pressure:
-        - 1.21 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1612 kelvin
-      ignition-delay:
-        - 280 us
-      pressure:
-        - 1.25 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1628 kelvin
-      ignition-delay:
-        - 254 us
-      pressure:
-        - 1.29 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1702 kelvin
-      ignition-delay:
-        - 161 us
-      pressure:
-        - 1.28 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1732 kelvin
-      ignition-delay:
-        - 137 us
-      pressure:
-        - 1.26 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
-    - temperature:
-        - 1825 kelvin
-      ignition-delay:
-        - 93 us
-      pressure:
-        - 1.21 bar
-      composition: *comp
-      ignition-type: *ign
-      equivalence-ratio: 1
+  - temperature:
+      - 1499 kelvin
+    ignition-delay:
+      - 717 us
+    pressure:
+      - 1.34 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1503 kelvin
+    ignition-delay:
+      - 754 us
+    pressure:
+      - 1.29 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1602 kelvin
+    ignition-delay:
+      - 307 us
+    pressure:
+      - 1.21 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1612 kelvin
+    ignition-delay:
+      - 280 us
+    pressure:
+      - 1.25 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1628 kelvin
+    ignition-delay:
+      - 254 us
+    pressure:
+      - 1.29 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1702 kelvin
+    ignition-delay:
+      - 161 us
+    pressure:
+      - 1.28 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1732 kelvin
+    ignition-delay:
+      - 137 us
+    pressure:
+      - 1.26 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+  - temperature:
+      - 1825 kelvin
+    ignition-delay:
+      - 93 us
+    pressure:
+      - 1.21 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1
+...
