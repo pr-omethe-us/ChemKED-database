@@ -1,0 +1,82 @@
+file-authors:
+    - name: Kyle Niemeyer
+    - name: Bradley Carrano
+    - name: Nathan Harms
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  authors:
+  - name: B.M. Gauthier
+  - name: D.F. Davidson
+  - name: R.K. Hanson
+  detail: Converted from ReSpecTh XML file st_gauthier_2004-3.xml
+  doi: 10.1016/j.combustflame.2004.08.015
+  journal: Combustion and Flame
+  pages: 300-311
+  volume: 139
+  year: 2004
+experiment-type: ignition delay
+apparatus:
+  facility: ''
+  institution: ''
+  kind: shock tube
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - InChI: 1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3
+      amount:
+      - 0.01874
+      species-name: nC7H16
+    - InChI: 1S/O2/c1-2
+      amount:
+      - 0.20615
+      species-name: O2
+    - InChI: 1S/N2/c1-2
+      amount:
+      - 0.77511
+      species-name: N2
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+- composition: *id001
+  ignition-delay:
+  - 1.3770e+03 us
+  ignition-type: *id002
+  pressure:
+  - 2.0000e+01 atm
+  temperature:
+  - 8.0600e+02 K
+- composition: *id001
+  ignition-delay:
+  - 1.6530e+03 us
+  ignition-type: *id002
+  pressure:
+  - 1.9900e+01 atm
+  temperature:
+  - 8.5000e+02 K
+- composition: *id001
+  ignition-delay:
+  - 1.8360e+03 us
+  ignition-type: *id002
+  pressure:
+  - 1.9800e+01 atm
+  temperature:
+  - 9.0600e+02 K
+- composition: *id001
+  ignition-delay:
+  - 9.4400e+02 us
+  ignition-type: *id002
+  pressure:
+  - 1.8100e+01 atm
+  temperature:
+  - 1.0120e+03 K
+- composition: *id001
+  ignition-delay:
+  - 8.5400e+02 us
+  ignition-type: *id002
+  pressure:
+  - 1.6700e+01 atm
+  temperature:
+  - 1.0480e+03 K

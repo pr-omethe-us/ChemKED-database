@@ -1,0 +1,89 @@
+file-authors:
+    - name: Kyle Niemeyer
+    - name: Bradley Carrano
+    - name: Nathan Harms
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  authors:
+  - name: R. Di Sante
+  detail: Converted from ReSpecTh XML file rcm_disante_2012-2.xml
+  doi: 10.1016/j.combustflame.2011.05.020
+  journal: Combustion and Flame
+  pages: 55-63
+  volume: 159
+  year: 2012
+experiment-type: ignition delay
+apparatus:
+  facility: ''
+  institution: ''
+  kind: rapid compression machine
+chemked-version: 0.3.0
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - InChI: 1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3
+      amount:
+      - 0.01869
+      species-name: nC7H16
+    - InChI: 1S/O2/c1-2
+      amount:
+      - 0.2056
+      species-name: O2
+    - InChI: 1S/N2/c1-2
+      amount:
+      - 0.7757
+      species-name: N2
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+- composition: *id001
+  ignition-delay:
+  - 3.75 ms
+  ignition-type: *id002
+  pressure:
+  - 7.99 bar
+  temperature:
+  - 718 K
+- composition: *id001
+  ignition-delay:
+  - 3.2 ms
+  ignition-type: *id002
+  pressure:
+  - 8.21 bar
+  temperature:
+  - 729 K
+- composition: *id001
+  ignition-delay:
+  - 3.4 ms
+  ignition-type: *id002
+  pressure:
+  - 8.46 bar
+  temperature:
+  - 749 K
+- composition: *id001
+  ignition-delay:
+  - 3.66 ms
+  ignition-type: *id002
+  pressure:
+  - 8.67 bar
+  temperature:
+  - 769 K
+- composition: *id001
+  ignition-delay:
+  - 2.6 ms
+  ignition-type: *id002
+  pressure:
+  - 8.91 bar
+  temperature:
+  - 782 K
+- composition: *id001
+  ignition-delay:
+  - 1.86 ms
+  ignition-type: *id002
+  pressure:
+  - 9.16 bar
+  temperature:
+  - 800 K
