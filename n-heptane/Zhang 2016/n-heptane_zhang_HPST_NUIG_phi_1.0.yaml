@@ -1,0 +1,114 @@
+---
+file-authors:
+    - name: Anthony Stohr
+      ORCID: 0000-0002-2388-1723
+file-version: 0
+chemked-version: 0.4.1
+reference:
+    doi: 10.1016/j.combustflame.2016.06.028
+    authors:
+           - name: Kuiwen Zhang
+           - name: Colin Banyon
+           - name: John Bugler
+           - name: Henry J. Curran
+           - name: Anne Rodriguez
+           - name: Olivier Herbinet
+           - name: Frederique Battin-Leclerc
+           - name: Christine B'Chir
+           - name: Karl Alexander Heufer
+    journal: Combustion and Flame
+    year: 2016
+    volume: 172
+    pages: 116-135
+    detail: hpst_NUIG_phi=1.0
+experiment-type: ignition delay
+apparatus:
+    kind: shock tube
+    institution: National University of Ireland Galway
+    facility: high pressure shock tube
+common-properties:
+    composition: &comp
+      kind: mole fraction
+      species:
+        - species-name: n-heptane
+          InChI: IMNFDUFMRHMDMM-UHFFFAOYSA-N
+          amount:
+            - 0.01874 
+        - species-name: O2
+          InChI:  1S/O2/c1-2
+          amount:
+            - 0.2060646
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.7751954 
+    ignition-type: &ign 
+      target: OH*
+      type: d/dt max
+datapoints:
+  - temperature:
+      - 1058.0 kelvin
+    ignition-delay:
+      - 1041 ms
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 15 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1108.1 kelvin
+    ignition-delay:
+      - 667.2 ms
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 15 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1155.8 kelvin
+    ignition-delay:
+      - 412.8 ms
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 15 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1209.5 kelvin
+    ignition-delay:
+      - 252.97 ms
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 15 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1253.4 kelvin
+    ignition-delay:
+      - 149.796 ms
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 15 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1297.5 kelvin
+    ignition-delay:
+      - 90.997 ms
+      - uncertainty-type: relative
+        uncertainty: 0.15
+    pressure:
+      - 15 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
