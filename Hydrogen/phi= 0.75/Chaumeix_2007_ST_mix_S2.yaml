@@ -1,0 +1,97 @@
+---
+file-authors:
+    - name: Maria Politi
+      ORCID: 0000-0002-5815-3371
+file-version: 0
+chemked-version: 0.4.1
+reference:
+    doi: 10.1016/j.ijhydene.2007.04.008
+    authors:
+        - name: N. Chaumeix
+        - name: S. Pichon
+        - name: F. Lafosse
+        - name: C. Paillard
+    journal: International Journal of Hydrogen Energy
+    year: 2007
+    volume: 32
+    pages: 2216-2226
+    detail: Fig.12, *, open diamond
+experiment-type: ignition delay
+apparatus:
+    kind: shock tube
+    institution: University of Orleans, France
+    facility: stainless steel shock tube
+common-properties:
+    composition: &comp
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.006
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.004
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.99
+    pressure: &pres
+      - 213 kPa
+      - uncertainty-type: absolute
+        uncertainty: 17 kPa
+    ignition-type: &ign
+        target: OH
+        type: 1/2 max
+datapoints:
+    - temperature:
+        - 1184.03 K
+        - uncertainty-type: relative 
+          uncertainty: 0.01 
+      ignition-delay:
+        - 474.88 us
+      composition: *comp
+      pressure: *pres
+      ignition-type: *ign
+      equivalence-ratio: 0.75
+    - temperature:
+        - 1192.46 K
+        - uncertainty-type: relative 
+          uncertainty: 0.01 
+      ignition-delay:
+        - 464.16 us
+      composition: *comp
+      pressure: *pres
+      ignition-type: *ign
+      equivalence-ratio: 0.75
+    - temperature:
+        - 1215.44 K
+        - uncertainty-type: relative 
+          uncertainty: 0.01 
+      ignition-delay:
+        - 415.96 us
+      composition: *comp
+      pressure: *pres
+      ignition-type: *ign
+      equivalence-ratio: 0.75
+    - temperature:
+        - 1252.51 K
+        - uncertainty-type: relative 
+          uncertainty: 0.01 
+      ignition-delay:
+        - 331.01 us
+      composition: *comp
+      pressure: *pres
+      ignition-type: *ign
+      equivalence-ratio: 0.75
+    - temperature:
+        - 1359.29 K
+        - uncertainty-type: relative 
+          uncertainty: 0.01 
+      ignition-delay:
+        - 199.34 us
+      composition: *comp
+      pressure: *pres
+      ignition-type: *ign
+      equivalence-ratio: 0.75

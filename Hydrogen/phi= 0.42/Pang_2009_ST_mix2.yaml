@@ -1,0 +1,233 @@
+---
+file-authors:
+    - name: Maria Politi
+      ORCID: 0000-0002-5815-3371
+file-version: 0
+chemked-version: 0.4.1
+reference:
+    doi: 10.1016/j.proci.2008.06.014
+    authors:
+        - name: G. A. Pang
+        - name: D. F. Davidson
+        - name: R. K. Hanson
+    journal: Proceedings of the Combustion Institute
+    year: 2009
+    volume: 32
+    pages: 181-188
+experiment-type: ignition delay
+apparatus:
+    kind: shock tube
+    institution: Dept. of Mechanical Engineering, Stanford University
+    facility: stainless steel shock tube
+common-properties:
+    composition: &comp
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.15
+            - uncertainty-type: absolute
+              uncertainty: 0.02 
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.18
+            - uncertainty-type: absolute
+              uncertainty: 0.02 
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.67
+            - uncertainty-type: absolute
+              uncertainty: 0.02 
+    pressure-rise: &pres-rise
+      - 0.02 1/ms
+      - uncertainty-type: relative
+        uncertainty: 0.005      
+    ignition-type: &ign
+        target: OH*
+        type: d/dt max extrapolated
+datapoints:
+    - temperature:
+        - 906.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 9130.0 us
+      pressure:
+        - 3.5 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
+    - temperature:
+        - 908.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 6210.0 us
+      pressure:
+        - 3.4 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
+    - temperature:
+        - 909.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 6185.0 us
+      pressure:
+        - 3.4 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
+    - temperature:
+        - 919.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 6645.0 us
+      pressure:
+        - 3.4 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
+    - temperature:
+        - 928.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 3595.0 us
+      pressure:
+        - 3.4 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
+    - temperature:
+        - 943.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 3280.0 us
+      pressure:
+        - 3.4 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
+    - temperature:
+        - 951.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 2810.0 us
+      pressure:
+        - 3.3 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
+    - temperature:
+        - 963.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 1614.0 us
+      pressure:
+        - 3.3 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
+    - temperature:
+        - 969.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 1268.0 us
+      pressure:
+        - 3.2 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
+    - temperature:
+        - 992.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 581.5 us
+      pressure:
+        - 3.2 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
+    - temperature:
+        - 999.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 352.0 us
+      pressure:
+        - 3.1 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
+    - temperature:
+        - 1027.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 82.0 us
+      pressure:
+        - 3.1 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
+    - temperature:
+        - 1049.0 K
+        - uncertainty-type: relative
+          uncertainty: 0.007
+      ignition-delay:
+        - 46.55 us
+      pressure:
+        - 3.0 atm
+        - uncertainty-type: relative
+          uncertainty: 0.01
+      composition: *comp
+      pressure-rise: *pres-rise
+      ignition-type: *ign
+      equivalence-ratio: 0.42
