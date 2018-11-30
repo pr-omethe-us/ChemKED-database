@@ -1,0 +1,96 @@
+---
+file-authors:
+  - name: Morgan Mayer
+    ORCID: 0000-0001-7137-5721
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.proci.2004.07.039
+  authors:
+    - name: V. Vasudevan
+    - name: D. F. Davidson
+    - name: R. K. Hanson
+  journal: Proceedings of the Combustion Institute
+  year: 2005
+  volume: 30
+  pages: 1155-1163
+  detail: Vasudevan_phi_1.0_5000ppm
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: High Temperature Gas dynamics Laboratory, Mechanical Engineering Department,
+    Stanford University
+  facility: stainless steel shock tube
+common-properties:
+  composition: &comp
+    kind: mole fraction
+    species:
+      - species-name: toluene
+        InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
+        amount:
+          - 0.005
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.045
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.95
+  ignition-type: &ign
+    target: OH
+    type: 1/2 max
+datapoints:
+  - temperature:
+      - 1434.0 K
+      - uncertainty-type: relative
+        uncertainty: 0.01
+    ignition-delay:
+      - 1070.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.1
+    pressure:
+      - 2.03 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1454.0 K
+      - uncertainty-type: relative
+        uncertainty: 0.01
+    ignition-delay:
+      - 750.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.1
+    pressure:
+      - 1.66 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1618.0 K
+      - uncertainty-type: relative
+        uncertainty: 0.01
+    ignition-delay:
+      - 130.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.1
+    pressure:
+      - 1.88 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+  - temperature:
+      - 1635.0 K
+      - uncertainty-type: relative
+        uncertainty: 0.01
+    ignition-delay:
+      - 107.0 us
+      - uncertainty-type: relative
+        uncertainty: 0.1
+    pressure:
+      - 1.83 atm
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 1.0
+...
