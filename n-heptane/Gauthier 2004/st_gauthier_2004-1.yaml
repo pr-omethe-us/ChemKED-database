@@ -1,0 +1,95 @@
+file-authors:
+  - name: Bradley Carrano
+    ORCID: 0000-0003-3700-4155
+  - name: Kyle Niemeyer
+    ORCID: 0000-0003-4425-7097
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  authors:
+    - name: B. M. Gauthier
+    - name: D. F. Davidson
+    - name: R. K. Hanson
+  journal: Combustion and Flame
+  year: 2004
+  volume: 139
+  pages: 300-311
+  doi: 10.1016/j.combustflame.2004.08.015
+  detail: Converted from ReSpecTh XML file st_gauthier_2004-1.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: Stanford University
+  facility: low pressure shock tube
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - InChI: 1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3
+      amount:
+      - 0.01874
+      species-name: nC7H16
+    - InChI: 1S/O2/c1-2
+      amount:
+      - 0.20615
+      species-name: O2
+    - InChI: 1S/N2/c1-2
+      amount:
+      - 0.77511
+      species-name: N2
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints: 
+- composition: *id001
+  ignition-delay:
+  - 529 us
+  - uncertainty-type: relative
+    uncertainty: 0.15
+  ignition-type: *id002
+  temperature:
+  - 1249 kelvin
+  - uncertainty-type: relative
+    uncertainty: 0.018
+  pressure:
+  - 1.97 bar
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 311 us
+  - uncertainty-type: relative
+    uncertainty: 0.15
+  ignition-type: *id002
+  temperature:
+  - 1299 kelvin
+  - uncertainty-type: relative
+    uncertainty: 0.018
+  pressure:
+  - 1.89 bar
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 152 us
+  - uncertainty-type: relative
+    uncertainty: 0.15
+  ignition-type: *id002
+  temperature:
+  - 1358 kelvin
+  - uncertainty-type: relative
+    uncertainty: 0.018
+  pressure:
+  - 1.85 bar
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 117 us
+  - uncertainty-type: relative
+    uncertainty: 0.15
+  ignition-type: *id002
+  temperature:
+  - 1378 kelvin
+  - uncertainty-type: relative
+    uncertainty: 0.018
+  pressure:
+  - 1.99 bar
+  equivalence-ratio: 1

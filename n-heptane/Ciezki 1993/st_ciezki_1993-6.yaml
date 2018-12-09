@@ -1,0 +1,78 @@
+file-authors:
+  - name: Bradley Carrano
+    ORCID: 0000-0003-3700-4155
+  - name: Kyle Niemeyer
+    ORCID: 0000-0003-4425-7097
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  authors:
+    - name: H.K. Ciezki
+    - name: G. Adomeit
+  journal: Combustion and Flame
+  year: 1993
+  volume: 93
+  pages: 421-433
+  doi: 10.1016/0010-2180(93)90142-P
+  detail: Converted from ReSpecTh XML file st_ciezki_1993-1.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: RWTH Aachen University
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - InChI: 1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3
+      amount:
+      - 0.01874
+      species-name: nC7H16
+    - InChI: 1S/O2/c1-2
+      amount:
+      - 0.20615
+      species-name: O2
+    - InChI: 1S/N2/c1-2
+      amount:
+      - 0.77511
+      species-name: N2
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints: 
+- composition: *id001
+  ignition-delay:
+  - 487 us
+  ignition-type: *id002
+  temperature:
+  - 1062.2 kelvin
+  pressure:
+  - 30 bar
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 1045 us
+  ignition-type: *id002
+  temperature:
+  - 952.74 kelvin
+  pressure:
+  - 30 bar
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 737 us
+  ignition-type: *id002
+  temperature:
+  - 845.72 kelvin
+  pressure:
+  - 30 bar
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 1742 us
+  ignition-type: *id002
+  temperature:
+  - 735.76 kelvin
+  pressure:
+  - 30 bar
+  equivalence-ratio: 1

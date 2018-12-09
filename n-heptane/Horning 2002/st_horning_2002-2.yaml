@@ -1,0 +1,70 @@
+file-authors:
+  - name: Bradley Carrano
+    ORCID: 0000-0003-3700-4155
+  - name: Kyle Niemeyer
+    ORCID: 0000-0003-4425-7097
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  authors:
+  - name: D. C. Horning
+  - name: D. F. Davidson
+  - name: R. K. Hanson
+  detail: Converted from ReSpecTh XML file st_horning_2002-1.xml
+  doi: 10.2514/2.5942
+  journal: Journal of Propulsion and Power
+  pages: 363-371
+  volume: 18
+  year: 2002
+experiment-type: ignition delay
+apparatus:
+  facility: helium-driven high purity shock tube
+  institution: Stanford University
+  kind: shock tube
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - InChI: 1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3
+      amount:
+      - 0.0036
+      species-name: nC7H16
+    - InChI: 1S/O2/c1-2
+      amount:
+      - 0.044
+      species-name: O2
+    - InChI: 1S/Ar
+      amount:
+      - 0.9524
+      species-name: Ar
+  ignition-type: &id002
+    target: CH*
+    type: max
+datapoints:
+- composition: *id001
+  ignition-delay:
+  - 1.410e+02 us
+  ignition-type: *id002
+  pressure:
+  - 1.2200e+00 atm
+  temperature:
+  - 1.4920e+03 K
+  equivalence-ratio: 0.9
+- composition: *id001
+  ignition-delay:
+  - 1.250e+02 us
+  ignition-type: *id002
+  pressure:
+  - 1.2500e+00 atm
+  temperature:
+  - 1.5010e+03 K
+  equivalence-ratio: 0.9
+- composition: *id001
+  ignition-delay:
+  - 1.630e+02 us
+  ignition-type: *id002
+  pressure:
+  - 1.2500e+00 atm
+  temperature:
+  - 1.4760e+03 K
+  equivalence-ratio: 0.9

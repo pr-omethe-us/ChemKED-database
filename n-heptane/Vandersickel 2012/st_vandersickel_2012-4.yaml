@@ -1,0 +1,108 @@
+file-authors:
+  - name: Bradley Carrano
+    ORCID: 0000-0003-3700-4155
+  - name: Kyle Niemeyer
+    ORCID: 0000-0003-4425-7097
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  authors:
+    - name: A. Vandersickel
+    - name: M. Hartmann
+    - name: K. Vogel
+    - name: Y. M. Wright
+    - name: M. Fikri
+    - name: R. Starke
+    - name: C. Schulz
+    - name: K. Boulouchos
+  journal: Fuel
+  year: 2012
+  volume: 93
+  pages: 492-501
+  doi: 10.1016/j.fuel.2011.10.062
+  detail: Converted from ReSpecTh XML file st_vandersickel_2012-4.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: Institute of Energy Technology, Zürich
+  facility: high pressure shock tube
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - InChI: 1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3
+      amount:
+      - 0.0066375
+      species-name: nC7H16
+    - InChI: 1S/O2/c1-2
+      amount:
+      - 0.1460243
+      species-name: O2
+    - InChI: 1S/N2/c1-2
+      amount:
+      - 0.8473382
+      species-name: N2
+  ignition-type: &id002
+    target: CH*
+    type: d/dt max
+datapoints: 
+- composition: *id001
+  ignition-delay:
+  - 3590 us
+  ignition-type: *id002
+  temperature:
+  - 716 kelvin
+  - uncertainty-type: relative
+    uncertainty: 0.02
+  pressure:
+  - 40.4 bar
+  - uncertainty-type: relative
+    uncertainty: 0.02
+  pressure-rise:
+  - 0.03 1/ms
+  equivalence-ratio: 0.5
+- composition: *id001
+  ignition-delay:
+  - 1713 us
+  ignition-type: *id002
+  temperature:
+  - 796 kelvin
+  - uncertainty-type: relative
+    uncertainty: 0.02
+  pressure:
+  - 41 bar
+  - uncertainty-type: relative
+    uncertainty: 0.02
+  pressure-rise:
+  - 0.03 1/ms
+  equivalence-ratio: 0.5
+- composition: *id001
+  ignition-delay:
+  - 1596 us
+  ignition-type: *id002
+  temperature:
+  - 913 kelvin
+  - uncertainty-type: relative
+    uncertainty: 0.02
+  pressure:
+  - 40.2 bar
+  - uncertainty-type: relative
+    uncertainty: 0.02
+  pressure-rise:
+  - 0.03 1/ms
+  equivalence-ratio: 0.5
+- composition: *id001
+  ignition-delay:
+  - 880 us
+  ignition-type: *id002
+  temperature:
+  - 1002 kelvin
+  - uncertainty-type: relative
+    uncertainty: 0.02
+  pressure:
+  - 42.8 bar
+  - uncertainty-type: relative
+    uncertainty: 0.02
+  pressure-rise:
+  - 0.03 1/ms
+  equivalence-ratio: 0.5

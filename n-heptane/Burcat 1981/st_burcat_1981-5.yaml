@@ -1,0 +1,68 @@
+file-authors:
+  - name: Bradley Carrano
+    ORCID: 0000-0003-3700-4155
+  - name: Kyle Niemeyer
+    ORCID: 0000-0003-4425-7097
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  authors:
+    - name: A. Burcat
+    - name: R. F. Farmer
+    - name: A. Matula
+  journal: Proc 13th Int Symp Shock Tubes Waves
+  year: 1981
+  pages: 826-833
+  detail: Shock initiated ignition in heptane-oxygen-argon mixtures 
+experiment-type: ignition delay
+apparatus:
+  facility: ''
+  institution: RWTH Aachen University
+  kind: shock tube
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - InChI: 1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3
+      amount:
+      - 0.03
+      species-name: nC7H16
+    - InChI: 1S/O2/c1-2
+      amount:
+      - 0.331
+      species-name: O2
+    - InChI: 1S/Ar
+      amount:
+      - 0.639
+      species-name: Ar
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+- composition: *id001
+  ignition-delay:
+  - 3.9000e+01 us
+  ignition-type: *id002
+  pressure:
+  - 4.4200e+00 atm
+  temperature:
+  - 1.3420e+03 K
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 4.9000e+02 us
+  ignition-type: *id002
+  pressure:
+  - 3.2500e+00 atm
+  temperature:
+  - 1.1370e+03 K
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 1.4200e+02 us
+  ignition-type: *id002
+  pressure:
+  - 3.7000e+00 atm
+  temperature:
+  - 1.2540e+03 K
+  equivalence-ratio: 1

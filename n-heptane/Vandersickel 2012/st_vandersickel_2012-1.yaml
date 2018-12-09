@@ -1,0 +1,78 @@
+file-authors:
+  - name: Bradley Carrano
+    ORCID: 0000-0003-3700-4155
+  - name: Kyle Niemeyer
+    ORCID: 0000-0003-4425-7097
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  authors:
+    - name: A. Vandersickel
+    - name: M. Hartmann
+    - name: K. Vogel
+    - name: Y. M. Wright
+    - name: M. Fikri
+    - name: R. Starke
+    - name: C. Schulz
+    - name: K. Boulouchos
+  journal: Fuel
+  year: 2012
+  volume: 93
+  pages: 492-501
+  doi: 10.1016/j.fuel.2011.10.062
+  detail: Converted from ReSpecTh XML file st_vandersickel_2012-1.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: Institute of Energy Technology, Zürich
+  facility: high pressure shock tube
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - InChI: 1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3
+      amount:
+      - 0.00887
+      species-name: nC7H16
+    - InChI: 1S/O2/c1-2
+      amount:
+      - 0.1457
+      species-name: O2
+    - InChI: 1S/N2/c1-2
+      amount:
+      - 0.84543
+      species-name: N2
+  ignition-type: &id002
+    target: CH*
+    type: d/dt max
+datapoints: 
+- composition: *id001
+  ignition-delay:
+  - 4685 us
+  ignition-type: *id002
+  temperature:
+  - 714 kelvin
+  - uncertainty-type: relative
+    uncertainty: 0.02
+  pressure:
+  - 20.3 bar
+  - uncertainty-type: relative
+    uncertainty: 0.02
+  pressure-rise:
+  - 0.03 1/ms
+  equivalence-ratio: 0.67
+- composition: *id001
+  ignition-delay:
+  - 3628 us
+  ignition-type: *id002
+  temperature:
+  - 759 kelvin
+  - uncertainty-type: relative
+    uncertainty: 0.02
+  pressure:
+  - 17 bar
+  - uncertainty-type: relative
+    uncertainty: 0.02
+  pressure-rise:
+  - 0.03 1/ms
+  equivalence-ratio: 0.67

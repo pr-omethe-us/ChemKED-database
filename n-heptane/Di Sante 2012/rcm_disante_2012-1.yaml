@@ -1,0 +1,109 @@
+file-authors:
+  - name: Bradley Carrano
+    ORCID: 0000-0003-3700-4155
+  - name: Kyle Niemeyer
+    ORCID: 0000-0003-4425-7097
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  authors:
+  - name: R. Di Sante
+  detail: Converted from ReSpecTh XML file rcm_disante_2012-1.xml
+  doi: 10.1016/j.combustflame.2011.05.020
+  journal: Combustion and Flame
+  pages: 55-63
+  volume: 159
+  year: 2012
+experiment-type: ignition delay
+apparatus:
+  facility: MIT RCM
+  institution: Sloan Automotive Laboratory, M.I.T.
+  kind: rapid compression machine
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - InChI: 1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3
+      amount:
+      - 0.01869
+      species-name: nC7H16
+    - InChI: 1S/O2/c1-2
+      amount:
+      - 0.2056
+      species-name: O2
+    - InChI: 1S/N2/c1-2
+      amount:
+      - 0.7757
+      species-name: N2
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+- composition: *id001
+  ignition-delay:
+  - 4.2 ms
+  - uncertainty-type: absolute
+    uncertainty: 0.15 ms
+  ignition-type: *id002
+  pressure:
+  - 9.57 bar
+  temperature:
+  - 711 K
+  equivalence-ratio: 1.0
+- composition: *id001
+  ignition-delay:
+  - 2.38 ms
+  - uncertainty-type: absolute
+    uncertainty: 0.15 ms
+  ignition-type: *id002
+  pressure:
+  - 10.03 bar
+  temperature:
+  - 732 K
+  equivalence-ratio: 1.0
+- composition: *id001
+  ignition-delay:
+  - 2. ms
+  - uncertainty-type: absolute
+    uncertainty: 0.15 ms
+  ignition-type: *id002
+  pressure:
+  - 10.12 bar
+  temperature:
+  - 751 K
+  equivalence-ratio: 1.0
+- composition: *id001
+  ignition-delay:
+  - 1.83 ms
+  - uncertainty-type: absolute
+    uncertainty: 0.15 ms
+  ignition-type: *id002
+  pressure:
+  - 10.4 bar
+  temperature:
+  - 770 K
+  equivalence-ratio: 1.0
+- composition: *id001
+  ignition-delay:
+  - 1.6 ms
+  - uncertainty-type: absolute
+    uncertainty: 0.15 ms
+  ignition-type: *id002
+  pressure:
+  - 10.67 bar
+  temperature:
+  - 780 K
+  equivalence-ratio: 1.0
+- composition: *id001
+  ignition-delay:
+  - 1.33 ms
+  - uncertainty-type: absolute
+    uncertainty: 0.15 ms
+  ignition-type: *id002
+  pressure:
+  - 10.90 bar
+  temperature:
+  - 811 K
+  equivalence-ratio: 1.0
+
+

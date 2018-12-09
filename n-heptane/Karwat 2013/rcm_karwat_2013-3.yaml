@@ -1,0 +1,57 @@
+file-authors:
+  - name: Bradley Carrano
+    ORCID: 0000-0003-3700-4155
+  - name: Kyle Niemeyer
+    ORCID: 0000-0003-4425-7097
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  authors:
+  - name: Darshan M.A. Karwat
+  - name: Scott W. Wagnon
+  - name: Margaret S. Wooldridge
+  - name: Charles K. Westbrook
+  detail: Converted from ReSpecTh XML file rcm_karwat_2013-1.xml
+  doi: 10.1016/j.combustflame.2013.06.029
+  journal: Combustion and Flame
+  pages: 2693-2706
+  volume: 160
+  year: 2013
+experiment-type: ignition delay
+apparatus:
+  facility: UM RCF
+  institution: University of Michigan
+  kind: rapid compression machine
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - InChI: 1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3
+      amount:
+      - 0.013433
+      species-name: nC7H16
+    - InChI: 1S/O2/c1-2
+      amount:
+      - 0.1491
+      species-name: O2
+    - InChI: 1S/N2/c1-2
+      amount:
+      - 0.1337
+      species-name: N2
+    - InChI: 1S/CO2/c2-1-3
+      amount:
+      - 0.703767
+      species-name: CO2
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+- composition: *id001
+  ignition-delay:
+  - 11.65 ms
+  ignition-type: *id002
+  pressure:
+  - 9.44 atm
+  temperature:
+  - 686. K
+  equivalence-ratio: 1.0

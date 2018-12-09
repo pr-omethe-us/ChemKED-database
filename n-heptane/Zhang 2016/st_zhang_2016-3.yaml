@@ -1,0 +1,129 @@
+file-authors:
+  - name: Bradley Carrano
+    ORCID: 0000-0003-3700-4155
+  - name: Kyle Niemeyer
+    ORCID: 0000-0003-4425-7097
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  authors:
+    - name: Kuiwen Zhang
+      ORCID: 0000-0002-2460-2036 
+    - name: Colin Banyon
+    - name: John Bugler
+    - name: Henry J. Curran
+      ORCID: 0000-0002-5124-8562
+    - name: Anne Rodriguez
+    - name: Oliver Herbinet
+    - name: Frederique Battin-Leclerc
+    - name: Christine B'Chir
+    - name: Karl Alexander Heufer
+  journal: Combustion and Flame
+  year: 2016
+  volume: 172
+  pages: 116-135
+  doi: 10.1016/j.combustflame.2016.06.028
+  detail: Data from xlsx file experimental data.xlsx
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: NUI Galway
+  facility: high pressure shock tube
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - InChI: 1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3
+      amount:
+      - 0.0179
+      species-name: nC7H16
+    - InChI: 1S/O2/c1-2
+      amount:
+      - 0.2063
+      species-name: O2
+    - InChI: 1S/N2/c1-2
+      amount:
+      - 0.7758
+      species-name: N2
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints: 
+- composition: *id001
+  ignition-delay:
+  - 1041 ms
+  ignition-type: *id002
+  temperature:
+  - 1058 kelvin
+  - uncertainty-type: absolute
+    uncertainty: 2 kelvin
+  pressure:
+  - 15 bar
+  - uncertainty-type: absolute
+    uncertainty: 0.0015 bar
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 667.2 ms
+  ignition-type: *id002
+  temperature:
+  - 1108.1 kelvin
+  - uncertainty-type: absolute
+    uncertainty: 2 kelvin
+  pressure:
+  - 15 bar
+  - uncertainty-type: absolute
+    uncertainty: 0.0015 bar
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 412.8 ms
+  ignition-type: *id002
+  temperature:
+  - 1155.8 kelvin
+  - uncertainty-type: absolute
+    uncertainty: 2 kelvin
+  pressure:
+  - 15 bar
+  - uncertainty-type: absolute
+    uncertainty: 0.0015 bar
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 252.97 ms
+  ignition-type: *id002
+  temperature:
+  - 1209.5 kelvin
+  - uncertainty-type: absolute
+    uncertainty: 2 kelvin
+  pressure:
+  - 15 bar
+  - uncertainty-type: absolute
+    uncertainty: 0.0015 bar
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 149.796 ms
+  ignition-type: *id002
+  temperature:
+  - 1253.4 kelvin
+  - uncertainty-type: absolute
+    uncertainty: 2 kelvin
+  pressure:
+  - 15 bar
+  - uncertainty-type: absolute
+    uncertainty: 0.0015 bar
+  equivalence-ratio: 1
+- composition: *id001
+  ignition-delay:
+  - 90.997 ms
+  ignition-type: *id002
+  temperature:
+  - 1297.5 kelvin
+  - uncertainty-type: absolute
+    uncertainty: 2 kelvin
+  pressure:
+  - 15 bar
+  - uncertainty-type: absolute
+    uncertainty: 0.0015 bar
+  equivalence-ratio: 1
