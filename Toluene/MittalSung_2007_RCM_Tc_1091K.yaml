@@ -21,7 +21,7 @@ apparatus:
   facility: CWRU RCM
 datapoints:
   - temperature:
-      - 297 kelvin
+      - 297.15 kelvin
       - uncertainty-type: absolute
         uncertainty: 0.5 kelvin
     ignition-delay:
@@ -30,6 +30,8 @@ datapoints:
         uncertainty: 0.11
     pressure:
       - 751 torr
+      - uncertainty type: relative
+        uncertainty: 0.005
     composition:
       kind: mole fraction
       species:
@@ -56,9 +58,13 @@ datapoints:
       compression-time:
         - 0.03 s
       compressed-temperature:
-        - 1091 kelvin
+        - 1091.5 kelvin
         - uncertainty-type: absolute
           uncertainty: 3 kelvin
+      compressed-pressure:
+        - 45.1 bar
+        - uncertainty type: relative
+          uncertainty: 0.005
     time-histories:
       - type: volume
         time:
