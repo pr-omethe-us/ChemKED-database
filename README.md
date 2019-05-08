@@ -1,4 +1,8 @@
 # ChemKED-database
+
+[![DOI](https://zenodo.org/badge/84258934.svg)](https://zenodo.org/badge/latestdoi/84258934)
+[![Code of Conduct](https://img.shields.io/badge/code%20of%20conduct-contributor%20covenant-green.svg)](http://contributor-covenant.org/version/1/4/)
+
 Database of ChemKED files for fundamental combustion experiments
 
 License
