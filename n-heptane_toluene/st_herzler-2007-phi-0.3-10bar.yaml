@@ -1,0 +1,101 @@
+file-authors:
+  - name: Bradley Carrano
+    ORCID: 0000-0003-3700-4155
+  - name: Kyle Niemeyer
+    ORCID: 0000-0003-4425-7097
+file-version: 0
+chemked-version: 0.4.1
+
+reference:
+  authors:
+  - name: J.Herzler
+  - name: M.Fikri
+  - name: K.Hitzbleck
+  - name: R.starke
+  detail: Experimental data captured from figures in literature
+  doi:10.1016/J.COMBUSTFLAME.2006.12.015
+  journal: Combustion and Flame
+  pages: 25-31
+  volume: 149
+  year: 2007
+experiment-type: ignition delay
+apparatus:
+  facility: IVG ST
+  institution: Universität Duisburg-Essen
+  kind: shock tube
+                             
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - InChI: 1S/C7H16/c1-3-5-7-6-4-2/h3-7H2,1-2H3
+      amount:
+      - 0.010644203
+      species-name: Heptane
+    - InChI: 1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3
+      amount:
+      - 0.009793735
+      species-name: Toluene
+    - InChI: 1S/O2/c1-2
+      amount:
+      - 0.205229847
+      species-name: O2
+    - InChI: 1S/N2/c1-2
+      amount:
+      - 0.774332215
+      species-name: N2
+  ignition-type: &id002
+    target:  CH*
+    type:   max
+datapoints:
+
+- composition: *id001
+  ignition-delay:
+  - 4.7210 ms
+  ignition-type: *id002
+  pressure:
+  - 11.85 atm
+  temperature:
+  - 791.939 K
+  equivalence-ratio: 1.0
+
+- composition: *id001
+  ignition-delay:
+  - 7.1838 ms
+  ignition-type: *id002
+  pressure:
+  - 11.54 atm
+  temperature:
+  - 770.998 K
+  equivalence-ratio: 1.0
+
+- composition: *id001
+  ignition-delay:
+  - 7.7536 ms
+  ignition-type: *id002
+  pressure:
+  - 11.22 atm
+  temperature:
+  - 749.615 K
+  equivalence-ratio: 1.0
+
+- composition: *id001
+  ignition-delay:
+  - 10.1280 ms
+  ignition-type: *id002
+  pressure:
+  - 10.92 atm
+  temperature:
+  - 729.344 K
+  equivalence-ratio: 1.0
+
+- composition: *id001
+  ignition-delay:
+  - 10.9314 ms
+  ignition-type: *id002
+  pressure:
+  - 10.78 atm
+  temperature:
+  - 720.363 K
+  equivalence-ratio: 1.0
+
