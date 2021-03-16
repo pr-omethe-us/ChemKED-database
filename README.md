@@ -11,7 +11,7 @@ Submissions: Sine qua none
 1. All yaml files require a permanent link, prefereably a DOI, although arXiv identifiers should also be sufficient. These identifiers must be present in each and every file.
 2. Each file requires at least one identified person in the `"file-authors"` field, preferable with ORCID to establish a corresponding author for the dataset. This is to ensure that missing or malformed information may be corrected in the future.
 3.  Blank fields are not permitted. In the example of a preprint/just accepted article, with no page or volume numbers available, do not include these fields. They may be appended at a later date.
-4.  Sanitize strings, especially SMILES identifiers SMILES: '[O][O]' or SMILES: 'N#N' clearly identifies the code as a string, while SMILES: [O][O] or SMILES: N#N do not and may (read: all but assuredly) lead to errors.
+4.  Sanitize strings, especially SMILES identifiers, by enclosing them in quotes. `SMILES: '[O][O]'` or `SMILES: 'N#N'` clearly identifies the code as a string, while `SMILES: [O][O]` or `SMILES: N#N` (note the missing quote marks, `'`) will not be identified as strings and will lead to errors.
 
 Thank you
 ---------
