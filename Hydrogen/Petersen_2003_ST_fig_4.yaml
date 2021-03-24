@@ -1,0 +1,70 @@
+---
+file-authors:
+  - name: Maria Politi
+      ORCID: 0000-0002-5815-3371
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.2514/6.2003-4493
+  authors: 
+    - name: E.L. Petersen
+    - name: D.M. Kalitan
+    - name: M.J.A. Rickard
+  journal: 39th AIAA/ASME/SAE/ASEE Joint Propulsion Conference and Exhibit
+  year: 2003
+  detail: Fig.4.-full triangle [Converted from ReSpecTh XML file x10000016.xml]
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: University of Florida
+  facility: stainless steel shock tube
+common-properties:
+  composition: &comp
+    kind: mole fraction
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.0336
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0114
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.955
+  pressure: &pres
+    - 1 atm 
+  ignition-type: &ign
+      target: OH*
+      type: d/dt max
+datapoints:
+  - temperature:
+      - 1511 K
+    ignition-delay:
+      - 120.2 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
+  - temperature:
+      - 1305 K
+    ignition-delay:
+      - 201.9 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
+  - temperature:
+      - 1225 K
+    ignition-delay:
+      - 274.5 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
+  - temperature:
+      - 1111 K
+    ignition-delay:
+      - 571.8 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
