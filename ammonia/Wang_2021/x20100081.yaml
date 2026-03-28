@@ -1,0 +1,71 @@
+file-authors:
+- name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+    ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.ijhydene.2021.07.063
+  authors:
+  - name: Ning Wang
+  - name: Shuai Huang
+  - name: Zhifei Zhang
+  - name: Tie Li
+  - name: Ping Yi
+  - name: Dawei Wu
+  - name: Gen Chen
+  journal: International Journal of Hydrogen Energy
+  year: 2021
+  volume: 46
+  pages: 31879–31893
+  detail: Converted from ReSpecTh XML file x20100081.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: outwardly propagating spherical flame
+  institution: ''
+  facility: ''
+  mode: constant volume combustion chamber
+common-properties:
+  temperature: &id001
+  - 360 K
+  equivalence-ratio: 1.0
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: NH3
+      InChI: 1S/H3N/h1H3
+      amount:
+      - 0.184615
+    - species-name: H2
+      InChI: 1S/H2/h1H
+      amount:
+      - 0.046154
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.161538
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.607692
+datapoints:
+- pressure:
+  - 0.1 MPa
+  laminar-burning-velocity:
+  - 17.7 cm/s
+  temperature: *id001
+  equivalence-ratio: 1.0
+  composition: *id002
+- pressure:
+  - 0.3 MPa
+  laminar-burning-velocity:
+  - 10.5 cm/s
+  temperature: *id001
+  equivalence-ratio: 1.0
+  composition: *id002
+- pressure:
+  - 0.5 MPa
+  laminar-burning-velocity:
+  - 8.8 cm/s
+  temperature: *id001
+  equivalence-ratio: 1.0
+  composition: *id002

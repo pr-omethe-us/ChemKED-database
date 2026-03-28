@@ -1,0 +1,108 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.proci.2012.05.067
+  authors:
+  - name: O. Mathieu
+  - name: A. Levacque
+  - name: E. L. Petersen
+  journal: Proceedings of the Combustion Institute
+  year: 2013
+  volume: 34
+  pages: 633--640
+  detail: Converted from ReSpecTh XML file x10300012.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: H2
+      InChI: 1S/H2/h1H
+      amount:
+      - 0.01
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.01
+    - species-name: NO2
+      InChI: 1S/NO2/c2-1-3
+      amount:
+      - 0.0004
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.9796
+  ignition-type: &id002
+    target: OH*
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1227 K
+  ignition-delay:
+  - 57 us
+  pressure:
+  - 32.5 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1180 K
+  ignition-delay:
+  - 102 us
+  pressure:
+  - 34.6 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1173 K
+  ignition-delay:
+  - 103 us
+  pressure:
+  - 32.4 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1149 K
+  ignition-delay:
+  - 149.5 us
+  pressure:
+  - 35.9 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1135 K
+  ignition-delay:
+  - 184.5 us
+  pressure:
+  - 33.5 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1079 K
+  ignition-delay:
+  - 273 us
+  pressure:
+  - 33.4 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1064 K
+  ignition-delay:
+  - 363 us
+  pressure:
+  - 34.1 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1022 K
+  ignition-delay:
+  - 450 us
+  pressure:
+  - 34.3 atm
+  composition: *id001
+  ignition-type: *id002

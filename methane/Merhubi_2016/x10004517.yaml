@@ -1,0 +1,94 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.fuel.2016.03.016
+  authors:
+  - name: A. Kéromnès, G. Catalano, B. Lefort, L. Le Moyne H. El Merhubi
+  journal: Fuel
+  year: 2016
+  volume: 177
+  pages: 164--172
+  detail: Converted from ReSpecTh XML file x10004517.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected
+common-properties:
+  equivalence-ratio: 2.0
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.04
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.04
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.92
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+- pressure:
+  - 10.4 bar
+  temperature:
+  - 1707 K
+  ignition-delay:
+  - 155 us
+  equivalence-ratio: 2.0
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 10.4 bar
+  temperature:
+  - 1720 K
+  ignition-delay:
+  - 96 us
+  equivalence-ratio: 2.0
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 9.9 bar
+  temperature:
+  - 1656 K
+  ignition-delay:
+  - 246 us
+  equivalence-ratio: 2.0
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 10.0 bar
+  temperature:
+  - 1618 K
+  ignition-delay:
+  - 399 us
+  equivalence-ratio: 2.0
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 10.3 bar
+  temperature:
+  - 1565 K
+  ignition-delay:
+  - 494 us
+  equivalence-ratio: 2.0
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 10.0 bar
+  temperature:
+  - 1753 K
+  ignition-delay:
+  - 85 us
+  equivalence-ratio: 2.0
+  composition: *id001
+  ignition-type: *id002

@@ -1,0 +1,99 @@
+file-authors:
+- name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+    ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/0010-2180(94)00228-K
+  authors:
+  - name: J Roesler
+  journal: Combustion and Flame
+  year: 1995
+  volume: 100
+  pages: 495–504
+  detail: Converted from ReSpecTh XML file x30201048.xml
+experiment-type: concentration time profile measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+  - 1 atm
+  temperature: &id002
+  - 1007 K
+  equivalence-ratio: 0.93
+  composition: &id003
+    kind: mole fraction
+    species:
+    - species-name: CO
+      InChI: 1S/CO/c1-2
+      amount:
+      - 0.0097
+    - species-name: H2O
+      InChI: 1S/H2O/h1H2
+      amount:
+      - 0.0059
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.0052
+    - species-name: 'NO'
+      InChI: 1S/NO/c1-2
+      amount:
+      - 0.00016999999999999999
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.97903
+datapoints:
+- concentration-profiles:
+  - species-name: CO
+    InChI: 1S/CO/c1-2
+    quantity:
+      units: percent
+    time:
+      units: ms
+    values:
+    - - 5.1
+      - 0.737
+    - - 8.2
+      - 0.639
+    - - 12.6
+      - 0.556
+    - - 17.6
+      - 0.485
+    - - 22.9
+      - 0.421
+    - - 28.1
+      - 0.361
+    - - 33.2
+      - 0.31
+    - - 38.0
+      - 0.265
+    - - 43.3
+      - 0.23
+    - - 48.1
+      - 0.199
+    - - 53.4
+      - 0.172
+    - - 58.2
+      - 0.154
+    - - 63.2
+      - 0.133
+    - - 68.0
+      - 0.119
+    - - 73.1
+      - 0.107
+    - - 78.1
+      - 0.097
+    - - 83.6
+      - 0.088
+    - - 88.6
+      - 0.08
+    - - 93.2
+      - 0.076
+  pressure: *id001
+  temperature: *id002
+  equivalence-ratio: 0.93
+  composition: *id003

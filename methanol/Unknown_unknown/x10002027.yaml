@@ -1,0 +1,57 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  detail: U. Burke (2012), unpublished data from NUI Galway, Case No. 10 Converted
+    from ReSpecTh XML file x10002027.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH3OH
+      InChI: 1S/CH4O/c1-2/h2H,1H3
+      amount:
+      - 0.065
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.195
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.74
+  ignition-type: &id002
+    target: p;
+    type: d/dt max
+datapoints:
+- temperature:
+  - 0991.82 K
+  ignition-delay:
+  - 1672 us
+  pressure:
+  - 19.62 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1104.32 K
+  ignition-delay:
+  - 0376 us
+  pressure:
+  - 20.18 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1185.31 K
+  ignition-delay:
+  - 0155 us
+  pressure:
+  - 19.48 atm
+  composition: *id001
+  ignition-type: *id002

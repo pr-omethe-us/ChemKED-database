@@ -1,0 +1,84 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.combustflame.2015.11.004
+  authors:
+  - name: Ultan Burke
+  - name: Wayne K Metcalfe
+  - name: Sinéad M Burke
+  - name: K Alexander Heufer
+  - name: Philippe Dagaut
+  - name: Henry J Curran
+  journal: Combust Flame
+  year: 2016
+  volume: 165
+  pages: 125--136
+  detail: Converted from ReSpecTh XML file x10002073.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH3OH
+      InChI: 1S/CH4O/c1-2/h2H,1H3
+      amount:
+      - 0.1228
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.1843
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.6929
+  ignition-type: &id002
+    target: p;
+    type: d/dt max
+datapoints:
+- temperature:
+  - 0988.7 K
+  ignition-delay:
+  - 683.777 us
+  pressure:
+  - 48.139 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1089.1 K
+  ignition-delay:
+  - 138.979 us
+  pressure:
+  - 48.344 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1214.0 K
+  ignition-delay:
+  - 029.219 us
+  pressure:
+  - 48.979 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1053.2 K
+  ignition-delay:
+  - 253.049 us
+  pressure:
+  - 49.930 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1164.0 K
+  ignition-delay:
+  - 044.255 us
+  pressure:
+  - 50.962 atm
+  composition: *id001
+  ignition-type: *id002

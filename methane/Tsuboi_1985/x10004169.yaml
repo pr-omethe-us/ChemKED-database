@@ -1,0 +1,63 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1143/jjap.24.1697
+  authors:
+  - name: Takao Tsuboi
+  - name: Masataka Katoh
+  journal: Japanese Journal of Applied Physics
+  year: 1985
+  volume: 24
+  pages: 1697--1702
+  detail: Converted from ReSpecTh XML file x10004169.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.05
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.5
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.45
+  ignition-type: &id002
+    target: CH4
+    type: baseline max intercept from d/dt
+datapoints:
+- temperature:
+  - 1700 K
+  ignition-delay:
+  - 21.20 us
+  pressure:
+  - 4.004 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1700 K
+  ignition-delay:
+  - 27.67 us
+  pressure:
+  - 2.164 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1700 K
+  ignition-delay:
+  - 65.62 us
+  pressure:
+  - 1.170 atm
+  composition: *id001
+  ignition-type: *id002

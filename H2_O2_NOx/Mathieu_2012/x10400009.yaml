@@ -1,0 +1,100 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.ijhydene.2012.07.071
+  authors:
+  - name: O. Mathieu
+  - name: A. Levacque
+  - name: E. L. Petersen
+  journal: International Journal of Hydrogen Energy
+  year: 2012
+  volume: 37
+  pages: 15393--15405
+  detail: Converted from ReSpecTh XML file x10400009.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: H2
+      InChI: 1S/H2/h1H
+      amount:
+      - 0.01
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.01
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.9796
+    - species-name: N2O
+      InChI: 1S/N2O/c1-2-3
+      amount:
+      - 0.0004
+  ignition-type: &id002
+    target: OH*
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1216 K
+  ignition-delay:
+  - 70 us
+  pressure:
+  - 12.7 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1193 K
+  ignition-delay:
+  - 81 us
+  pressure:
+  - 12.4 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1155 K
+  ignition-delay:
+  - 163 us
+  pressure:
+  - 12.7 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1129 K
+  ignition-delay:
+  - 241 us
+  pressure:
+  - 13.0 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1124 K
+  ignition-delay:
+  - 464 us
+  pressure:
+  - 13.3 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1093 K
+  ignition-delay:
+  - 1003 us
+  pressure:
+  - 13.0 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1076 K
+  ignition-delay:
+  - 1611 us
+  pressure:
+  - 11.8 atm
+  composition: *id001
+  ignition-type: *id002

@@ -1,0 +1,82 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.jare.2014.01.003
+  authors:
+  - name: Wen., Ma, Hongan., Liang, Yuntao., Hu, Erjiang. Zeng
+  journal: Journal of Advanced Research
+  year: 2015
+  volume: 6
+  pages: 189--201
+  detail: Converted from ReSpecTh XML file x10004485.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+  - 1.0 MPa
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.076
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.152
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.772
+  ignition-type: &id003
+    target: CH*
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1624 K
+  ignition-delay:
+  - 84 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1609 K
+  ignition-delay:
+  - 123 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1553 K
+  ignition-delay:
+  - 200 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1466 K
+  ignition-delay:
+  - 439 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1440 K
+  ignition-delay:
+  - 505 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1386 K
+  ignition-delay:
+  - 867 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003

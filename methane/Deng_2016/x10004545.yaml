@@ -1,0 +1,95 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1021/acs.energyfuels.5b02581
+  authors:
+  - name: Feiyu Yang, Peng Zhang, Youshun Pan, Yingjia Zhang, Zuohua Huang Fuquan
+      Deng
+  journal: Energy Fuels
+  year: 2016
+  volume: 30
+  pages: 1415--1427
+  detail: Converted from ReSpecTh XML file x10004545.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected
+common-properties:
+  equivalence-ratio: 0.5
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.01137
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.04549
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.94314
+  ignition-type: &id002
+    target: OH*
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1430 K
+  pressure:
+  - 4.40 atm
+  ignition-delay:
+  - 2277 us
+  equivalence-ratio: 0.5
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1523 K
+  pressure:
+  - 4.20 atm
+  ignition-delay:
+  - 1381 us
+  equivalence-ratio: 0.5
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1602 K
+  pressure:
+  - 4.65 atm
+  ignition-delay:
+  - 521 us
+  equivalence-ratio: 0.5
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1652 K
+  pressure:
+  - 4.59 atm
+  ignition-delay:
+  - 423 us
+  equivalence-ratio: 0.5
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1793 K
+  pressure:
+  - 4.59 atm
+  ignition-delay:
+  - 147 us
+  equivalence-ratio: 0.5
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1874 K
+  pressure:
+  - 4.12 atm
+  ignition-delay:
+  - 89 us
+  equivalence-ratio: 0.5
+  composition: *id001
+  ignition-type: *id002

@@ -1,0 +1,50 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/s0082-0784(96)80289-x
+  authors:
+  - name: E L Petersen
+  - name: M Röhrig
+  - name: D F Davidson
+  - name: R K Hanson
+  - name: C T Bowman
+  journal: Symp (Int) Combust
+  year: 1996
+  volume: 26
+  pages: 799--806
+  detail: Converted from ReSpecTh XML file x10004367.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.005
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.0025
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.9925
+  ignition-type: &id002
+    target: CH4
+    type: baseline max intercept from d/dt
+datapoints:
+- temperature:
+  - 1690 K
+  ignition-delay:
+  - 177 us
+  pressure:
+  - 85.7 atm
+  composition: *id001
+  ignition-type: *id002

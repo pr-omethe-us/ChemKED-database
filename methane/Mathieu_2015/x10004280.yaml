@@ -1,0 +1,81 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.combustflame.2015.03.024
+  authors:
+  - name: Olivier Mathieu
+  - name: John M Pemelton
+  - name: Gilles Bourque
+  - name: Eric L Petersen
+  journal: Combust Flame
+  year: 2015
+  volume: 162
+  pages: 3053--3070
+  detail: Converted from ReSpecTh XML file x10004280.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.05
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.2
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.75
+  ignition-type: &id002
+    target: pressure
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1616 K
+  ignition-delay:
+  - 82 us
+  pressure:
+  - 9.0 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1507 K
+  ignition-delay:
+  - 223 us
+  pressure:
+  - 9.0 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1447 K
+  ignition-delay:
+  - 373 us
+  pressure:
+  - 11.1 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1390 K
+  ignition-delay:
+  - 630 us
+  pressure:
+  - 11.1 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1335 K
+  ignition-delay:
+  - 1011 us
+  pressure:
+  - 11.8 atm
+  composition: *id001
+  ignition-type: *id002

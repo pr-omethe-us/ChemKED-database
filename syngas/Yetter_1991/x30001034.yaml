@@ -1,0 +1,87 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1080/00102209108951760
+  authors:
+  - name: R A Yetter
+  - name: F L Dryer
+  - name: H Rabitz
+  journal: Combust Sci Technol
+  year: 1991
+  volume: 79
+  pages: 129--140
+  detail: Converted from ReSpecTh XML file x30001034.xml
+experiment-type: concentration time profile measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+  mode: turbulent
+common-properties:
+  temperature: &id001
+  - 1126 K
+  pressure: &id002
+  - 1 atm
+  composition: &id003
+    kind: mole fraction
+    species:
+    - species-name: CO
+      InChI: 1S/CO/c1-2
+      amount:
+      - 0.0039
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.0191
+    - species-name: H2O
+      InChI: 1S/H2O/h1H2
+      amount:
+      - 0.0144
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.9626
+datapoints:
+- concentration-profiles:
+  - species-name: CO
+    InChI: 1S/CO/c1-2
+    quantity:
+      units: mole fraction
+    time:
+      units: s
+    values:
+    - - 0.094405
+      - 0.00054094
+    - - 0.11024
+      - 0.00026416
+    - - 0.12715
+      - 0.00012779
+    - - 0.14784
+      - 7.1026e-05
+    - - 0.16852
+      - 4.2918e-05
+    - - 0.18917
+      - 2.926e-05
+    - - 0.20927
+      - 2.1688e-05
+    - - 0.22666
+      - 1.669e-05
+    - - 0.24729
+      - 1.3574e-05
+    - - 0.26683
+      - 1.1248e-05
+    - - 0.28691
+      - 9.4068e-06
+    - - 0.3059
+      - 8.242e-06
+    - - 0.32544
+      - 7.221e-06
+    - - 0.34226
+      - 6.3285e-06
+    - - 0.36287
+      - 5.8072e-06
+  temperature: *id001
+  pressure: *id002
+  composition: *id003

@@ -1,0 +1,93 @@
+file-authors:
+- name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+    ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.fuel.2020.119563
+  authors:
+  - name: Jundie Chen
+  - name: Xue Jiang
+  - name: Xiaokang Qin
+  - name: Zuohua Huang
+  journal: Fuel
+  year: 2021
+  volume: 287
+  pages: '119563'
+  detail: Converted from ReSpecTh XML file x10100007.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: NH3
+      InChI: 1S/H3N/h1H3
+      amount:
+      - 0.01605
+    - species-name: H2
+      InChI: 1S/H2/h1H
+      amount:
+      - 0.037450000000000004
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.03076
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.91574
+  equivalence-ratio: 1.0
+  ignition-type: &id002
+    target: OH*
+    type: baseline min intercept from d/dt
+datapoints:
+- pressure:
+  - 1.17 atm
+  temperature:
+  - 1600.60 K
+  ignition-delay:
+  - 110.07 us
+  composition: *id001
+  equivalence-ratio: 1.0
+  ignition-type: *id002
+- pressure:
+  - 1.09 atm
+  temperature:
+  - 1409.10 K
+  ignition-delay:
+  - 183.50 us
+  composition: *id001
+  equivalence-ratio: 1.0
+  ignition-type: *id002
+- pressure:
+  - 1.25 atm
+  temperature:
+  - 1252.20 K
+  ignition-delay:
+  - 412.25 us
+  composition: *id001
+  equivalence-ratio: 1.0
+  ignition-type: *id002
+- pressure:
+  - 1.26 atm
+  temperature:
+  - 1144.60 K
+  ignition-delay:
+  - 624.63 us
+  composition: *id001
+  equivalence-ratio: 1.0
+  ignition-type: *id002
+- pressure:
+  - 1.19 atm
+  temperature:
+  - 1022.70 K
+  ignition-delay:
+  - 1778.01 us
+  composition: *id001
+  equivalence-ratio: 1.0
+  ignition-type: *id002

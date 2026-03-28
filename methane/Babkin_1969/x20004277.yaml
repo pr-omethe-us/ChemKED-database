@@ -1,0 +1,57 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1007/BF00749026
+  authors:
+  - name: V. S. Babkin
+  - name: L. S. Kozachenko
+  journal: Combustion, Explosion and Shock Waves
+  year: 1969
+  volume: 2
+  pages: 46--52
+  detail: Converted from ReSpecTh XML file x20004277.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: flame
+  institution: ''
+  facility: ''
+  mode: premixed
+common-properties:
+  temperature: &id001
+  - 423 K
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.095
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.19005
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.71495
+datapoints:
+- pressure:
+  - 1.014051e+000 atm
+  laminar-burning-velocity:
+  - 5.535540e+001 cm/s
+  temperature: *id001
+  composition: *id002
+- pressure:
+  - 2.308235e+001 atm
+  laminar-burning-velocity:
+  - 1.977152e+001 cm/s
+  temperature: *id001
+  composition: *id002
+- pressure:
+  - 7.030723e+001 atm
+  laminar-burning-velocity:
+  - 1.246637e+001 cm/s
+  temperature: *id001
+  composition: *id002

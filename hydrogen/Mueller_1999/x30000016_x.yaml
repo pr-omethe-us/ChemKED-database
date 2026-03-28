@@ -1,0 +1,73 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1002/(SICI)1097-4601(1999)31:2%3C113::AID-KIN5%3E3.0.CO;2-0
+  authors:
+  - name: M A Mueller
+  - name: T J Kim
+  - name: R A Yetter
+  - name: F L Dryer
+  journal: Int J Chem Kinet
+  year: 1999
+  volume: 31
+  pages: 113--125
+  detail: Converted from ReSpecTh XML file x30000016_x.xml
+experiment-type: concentration time profile measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  temperature: &id001
+  - 896 K
+  pressure: &id002
+  - 0.6 atm
+  composition: &id003
+    kind: mole fraction
+    species:
+    - species-name: H2
+      InChI: 1S/H2/h1H
+      amount:
+      - 0.005
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.0076
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.9874
+datapoints:
+- concentration-profiles:
+  - species-name: H2
+    InChI: 1S/H2/h1H
+    quantity:
+      units: mole fraction
+    time:
+      units: s
+    values:
+    - - 0.0
+      - 0.005
+    - - 0.00366
+      - 0.0049893
+    - - 0.00504
+      - 0.0039228
+    - - 0.00685
+      - 0.0028988
+    - - 0.0092
+      - 0.0017026
+    - - 0.01221
+      - 0.0008315
+    - - 0.01582
+      - 0.0003605
+    - - 0.01994
+      - 0.0001915
+    - - 0.02426
+      - 0.0001302
+    - - 0.02869
+      - 0.0001017
+  temperature: *id001
+  pressure: *id002
+  composition: *id003

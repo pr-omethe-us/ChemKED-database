@@ -1,0 +1,83 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/0010-2180(75)90154-6
+  authors:
+  - name: D F Cooke
+  - name: A Williams
+  journal: Combust Flame
+  year: 1975
+  volume: 24
+  pages: 245--256
+  detail: Converted from ReSpecTh XML file x10004100.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+  - 0.329 atm
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.0333
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.0667
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.9
+  ignition-type: &id003
+    target: pressure
+    type: d/dt max
+datapoints:
+- temperature:
+  - 2017.34 K
+  ignition-delay:
+  - 150.12 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1900.25 K
+  ignition-delay:
+  - 291.87 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1850.95 K
+  ignition-delay:
+  - 268.36 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1849.76 K
+  ignition-delay:
+  - 352.22 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1826.11 K
+  ignition-delay:
+  - 364.58 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1763.23 K
+  ignition-delay:
+  - 425.42 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003

@@ -1,0 +1,94 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.combustflame.2015.11.011
+  authors:
+  - name: Batikan Koroglu
+  - name: Owen M Pryor
+  - name: Joseph Lopez
+  - name: Leigh Nash
+  - name: Subith S Vasu
+  journal: Combust Flame
+  year: 2016
+  volume: 164
+  pages: 152--163
+  detail: Converted from ReSpecTh XML file x10004466.xml
+experiment-type: ignition delay
+apparatus:
+  kind: ''
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.0175
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.07
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.6125
+    - species-name: CO2
+      InChI: 1S/CO2/c2-1-3
+      amount:
+      - 0.3
+  ignition-type: &id002
+    target: CH*
+    type: baseline min intercept from d/dt
+datapoints:
+- pressure:
+  - 4.104 atm
+  temperature:
+  - 1610 K
+  ignition-delay:
+  - 396.9 us
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 4.410 atm
+  temperature:
+  - 1613 K
+  ignition-delay:
+  - 391.7 us
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 4.035 atm
+  temperature:
+  - 1696 K
+  ignition-delay:
+  - 169.3 us
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 3.688 atm
+  temperature:
+  - 1760 K
+  ignition-delay:
+  - 105.5 us
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 3.722 atm
+  temperature:
+  - 1848 K
+  ignition-delay:
+  - 57.1 us
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 3.565 atm
+  temperature:
+  - 1881 K
+  ignition-delay:
+  - 40.5 us
+  composition: *id001
+  ignition-type: *id002

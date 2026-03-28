@@ -1,0 +1,63 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1299/jsmeb.48.603
+  authors:
+  - name: Yasuhiro OGAMI
+  - name: Hideaki KOBAYASHI
+  journal: JSME International Journal Series B Fluids and Thermal Engineering
+  year: 2005
+  volume: 48
+  pages: 603--609
+  detail: Converted from ReSpecTh XML file x20004084.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: flame
+  institution: ''
+  facility: ''
+  mode: premixed
+common-properties:
+  temperature: &id001
+  - 298 K
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.09589
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.19178
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.71233
+datapoints:
+- pressure:
+  - 9.943000e+004 Pa
+  laminar-burning-velocity:
+  - 3.504589e+001 cm/s
+  temperature: *id001
+  composition: *id002
+- pressure:
+  - 1.493300e+005 Pa
+  laminar-burning-velocity:
+  - 3.101593e+001 cm/s
+  temperature: *id001
+  composition: *id002
+- pressure:
+  - 1.997800e+005 Pa
+  laminar-burning-velocity:
+  - 2.807996e+001 cm/s
+  temperature: *id001
+  composition: *id002
+- pressure:
+  - 2.996300e+005 Pa
+  laminar-burning-velocity:
+  - 2.501429e+001 cm/s
+  temperature: *id001
+  composition: *id002

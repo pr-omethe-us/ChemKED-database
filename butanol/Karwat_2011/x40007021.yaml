@@ -1,0 +1,100 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1021/jp200905n
+  authors:
+  - name: D M A Karwat
+  - name: S W Wagnon
+  - name: P D Teini
+  - name: M S Wooldridge
+  journal: J Phys Chem A
+  year: 2011
+  volume: 115
+  pages: 4909--4921
+  detail: Converted from ReSpecTh XML file x40007021.xml
+experiment-type: ignition delay
+apparatus:
+  kind: rapid compression machine
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: nC4H9OH
+      InChI: 1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3
+      amount:
+      - 0.02449
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.14698
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.54089
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.28764
+  ignition-type: &id002
+    target: p;
+    type: d/dt max
+datapoints:
+- pressure:
+  - 0.03692 atm
+  temperature:
+  - 294.41 K
+  ignition-delay:
+  - 16.02 ms
+  time-histories:
+  - time:
+      units: ms
+      column: 0
+    quantity:
+      units: cm3
+      column: 1
+    type: volume
+    values:
+    - - 0.0
+      - 1.0
+    - - 1.48678
+      - 0.95029
+    - - 5.81638
+      - 0.76237
+    - - 7.89614
+      - 0.68093
+    - - 9.90779
+      - 0.61224
+    - - 11.96769
+      - 0.55218
+    - - 14.12928
+      - 0.49924
+    - - 16.43906
+      - 0.45238
+    - - 19.59683
+      - 0.40008
+    - - 24.06774
+      - 0.30867
+    - - 26.60669
+      - 0.26579
+    - - 29.53677
+      - 0.22762
+    - - 32.87797
+      - 0.16687
+    - - 35.44935
+      - 0.13539
+    - - 37.1261
+      - 0.10849
+    - - 41.53853
+      - 0.05037
+    - - 42.83882
+      - 0.03653
+    - - 62.83575
+      - 0.0408
+    - - 101.6634
+      - 0.04488
+  composition: *id001
+  ignition-type: *id002

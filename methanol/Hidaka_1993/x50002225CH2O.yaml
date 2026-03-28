@@ -1,0 +1,73 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1002/kin.550250409
+  authors:
+  - name: Yoshiaki Hidaka
+  - name: Takashi Taniguchi
+  - name: Takashi Kamesawa
+  - name: Hiromitsu Masaoka
+  - name: Koji Inami
+  - name: Hiroyuki Kawano
+  journal: Int J Chem Kinet
+  year: 1993
+  volume: 25
+  pages: 305--322
+  detail: Converted from ReSpecTh XML file x50002225CH2O.xml
+experiment-type: concentration time profile measurement
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+  - 2.00 atm
+  temperature: &id002
+  - 1419 K
+  composition: &id003
+    kind: mole fraction
+    species:
+    - species-name: CH2O
+      InChI: 1S/CH2O/c1-2/h1H2
+      amount:
+      - 0.02
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.01
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.97
+datapoints:
+- concentration-profiles:
+  - species-name: CH2O
+    InChI: 1S/CH2O/c1-2/h1H2
+    quantity:
+      units: mole fraction
+    time:
+      units: us
+    values:
+    - - 0.0
+      - 0.02
+    - - 25.0
+      - 0.02
+    - - 50.0
+      - 0.02
+    - - 75.0
+      - 0.019556
+    - - 100.0
+      - 0.017577
+    - - 125.0
+      - 0.010608
+    - - 150.0
+      - 0.0024176
+    - - 175.0
+      - 0.0008698
+    - - 200.0
+      - 0.0004802
+  pressure: *id001
+  temperature: *id002
+  composition: *id003

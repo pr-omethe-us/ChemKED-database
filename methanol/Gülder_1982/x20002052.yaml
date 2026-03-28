@@ -1,0 +1,60 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/S0082-0784(82)80198-7
+  authors:
+  - name: Ömer L Gülder
+  journal: Symp (Int) Combust
+  year: 1982
+  volume: 19
+  pages: 275--281
+  detail: Converted from ReSpecTh XML file x20002052.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: flame
+  institution: ''
+  facility: ''
+  mode: premixed
+common-properties:
+  pressure: &id001
+  - 6 bar
+  equivalence-ratio: 0.8
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: CH3OH
+      InChI: 1S/CH4O/c1-2/h2H,1H3
+      amount:
+      - 0.100288
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18804
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.711672
+datapoints:
+- temperature:
+  - 350 K
+  laminar-burning-velocity:
+  - 28.74 cm/s
+  pressure: *id001
+  equivalence-ratio: 0.8
+  composition: *id002
+- temperature:
+  - 400 K
+  laminar-burning-velocity:
+  - 34.80 cm/s
+  pressure: *id001
+  equivalence-ratio: 0.8
+  composition: *id002
+- temperature:
+  - 500 K
+  laminar-burning-velocity:
+  - 51.42 cm/s
+  pressure: *id001
+  equivalence-ratio: 0.8
+  composition: *id002

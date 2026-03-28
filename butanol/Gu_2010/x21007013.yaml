@@ -1,0 +1,65 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.combustflame.2010.07.003
+  authors:
+  - name: X Gu
+  - name: Z Huang
+  - name: S Wu
+  - name: Q Li
+  journal: Combust Flame
+  year: 2010
+  volume: 157
+  pages: 2318--2325
+  detail: Converted from ReSpecTh XML file x21007013.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: flame
+  institution: ''
+  facility: ''
+  mode: premixed
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: SC4H9OH
+      InChI: 1S/C4H10O/c1-3-4(2)5/h4-5H,3H2,1-2H3
+      amount:
+      - 0.033661
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.201965
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.764374
+  temperature: &id002
+  - 428 K
+datapoints:
+- pressure:
+  - 1.0 bar
+  laminar-burning-velocity:
+  - 54.01 cm/s
+  composition: *id001
+  temperature: *id002
+- pressure:
+  - 2.5 bar
+  laminar-burning-velocity:
+  - 52.46 cm/s
+  composition: *id001
+  temperature: *id002
+- pressure:
+  - 5.0 bar
+  laminar-burning-velocity:
+  - 49.78 cm/s
+  composition: *id001
+  temperature: *id002
+- pressure:
+  - 7.5 bar
+  laminar-burning-velocity:
+  - 40.50 cm/s
+  composition: *id001
+  temperature: *id002

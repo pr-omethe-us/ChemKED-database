@@ -1,0 +1,90 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.combustflame.2014.08.014
+  authors:
+  - name: U., Somers, K.P., OToole, P., Zinner, C.M., Marquet, N., Bourque, G., Petersen,
+      E.L., Metcalfe, W.K., Serinyel, Z., Curran, H.J. Burke
+  journal: Combust Flame
+  year: 2015
+  volume: 162
+  pages: 315--330
+  detail: Converted from ReSpecTh XML file x10004241.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+  - 25 atm
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.09506
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.19011
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.71483
+  ignition-type: &id003
+    target: pressure
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1462.8 K
+  ignition-delay:
+  - 162.5 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1441.5 K
+  ignition-delay:
+  - 198.5 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1418.8 K
+  ignition-delay:
+  - 296.0 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1380.6 K
+  ignition-delay:
+  - 504.4 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1362.2 K
+  ignition-delay:
+  - 589.4 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1343.8 K
+  ignition-delay:
+  - 752.6 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1326.8 K
+  ignition-delay:
+  - 787.2 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003

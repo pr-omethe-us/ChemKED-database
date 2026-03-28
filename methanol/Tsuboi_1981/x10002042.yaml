@@ -1,0 +1,56 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/0010-2180(81)90142-5
+  authors:
+  - name: Takao Tsuboi
+  - name: Kazunobu Hashimoto
+  journal: Combust Flame
+  year: 1981
+  volume: 42
+  pages: 61--76
+  detail: Converted from ReSpecTh XML file x10002042.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  temperature: &id001
+  - 1500 K
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: CH3OH
+      InChI: 1S/CH4O/c1-2/h2H,1H3
+      amount:
+      - 0.02
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.15
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.83
+  ignition-type: &id003
+    target: CH3OH;
+    type: baseline max intercept from d/dt
+datapoints:
+- pressure:
+  - 01.058 atm
+  ignition-delay:
+  - 0114 us
+  temperature: *id001
+  composition: *id002
+  ignition-type: *id003
+- pressure:
+  - 03.891 atm
+  ignition-delay:
+  - 0025 us
+  temperature: *id001
+  composition: *id002
+  ignition-type: *id003

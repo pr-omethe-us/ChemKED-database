@@ -1,0 +1,58 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  authors:
+  - name: E J Chang
+  year: 1995
+  detail: Converted from ReSpecTh XML file x10004505.xml
+experiment-type: ignition delay
+apparatus:
+  kind: ''
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.001
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.002011
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.996989
+  ignition-type: &id002
+    target: CH3
+    type: max
+datapoints:
+- temperature:
+  - 1942 K
+  pressure:
+  - 1.092 atm
+  ignition-delay:
+  - 625 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 2169 K
+  pressure:
+  - 0.990 atm
+  ignition-delay:
+  - 129 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 2503 K
+  pressure:
+  - 0.924 atm
+  ignition-delay:
+  - 35 us
+  composition: *id001
+  ignition-type: *id002

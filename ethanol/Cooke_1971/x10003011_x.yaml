@@ -1,0 +1,84 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/S0010-2180(71)80093-7
+  authors:
+  - name: D F Cooke
+  - name: M G Dodson
+  - name: Alan Williams
+  journal: Combust Flame
+  year: 1971
+  volume: 16
+  pages: 233--236
+  detail: Converted from ReSpecTh XML file x10003011_x.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+  - 0.33 atm
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: C2H5OH
+      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+      amount:
+      - 0.0375
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.0125
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.95
+  ignition-type: &id003
+    target: CH*;
+    type: relative concentration
+datapoints:
+- temperature:
+  - 1.475000e+003 K
+  ignition-delay:
+  - 5.260000e+002 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1.483000e+003 K
+  ignition-delay:
+  - 5.010000e+002 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1.535000e+003 K
+  ignition-delay:
+  - 3.260000e+002 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1.542000e+003 K
+  ignition-delay:
+  - 3.120000e+002 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1.573000e+003 K
+  ignition-delay:
+  - 2.440000e+002 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1.613000e+003 K
+  ignition-delay:
+  - 1.890000e+002 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003

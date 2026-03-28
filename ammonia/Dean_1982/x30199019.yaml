@@ -1,0 +1,76 @@
+file-authors:
+- name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+    ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/S0082-0784(82)80182-3
+  authors:
+  - name: A.M. Dean
+  - name: J.E. Hardy
+  - name: R.K. Lyon
+  journal: Symposium (International) on Combustion
+  year: 1982
+  volume: 19
+  pages: 97–105
+  detail: Converted from ReSpecTh XML file x30199019.xml
+experiment-type: concentration time profile measurement
+apparatus:
+  kind: flow reactor (quartz)
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+  - 120 kPa
+  temperature: &id002
+  - 1279 K
+  composition: &id003
+    kind: mole fraction
+    species:
+    - species-name: NH3
+      InChI: 1S/H3N/h1H3
+      amount:
+      - 0.0009
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.04
+    - species-name: He
+      InChI: 1S/He
+      amount:
+      - 0.9591
+datapoints:
+- concentration-profiles:
+  - species-name: NH3
+    InChI: 1S/H3N/h1H3
+    quantity:
+      units: ppm
+    time:
+      units: ms
+    values:
+    - - 48.0
+      - 786.0
+    - - 99.0
+      - 716.0
+    - - 192.0
+      - 476.0
+    - - 295.0
+      - 277.0
+  - species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    quantity:
+      units: ppm
+    time:
+      units: ms
+    values:
+    - - 48.0
+      - 8.0
+    - - 99.0
+      - 9.0
+    - - 192.0
+      - 11.0
+    - - 295.0
+      - 13.0
+  pressure: *id001
+  temperature: *id002
+  composition: *id003

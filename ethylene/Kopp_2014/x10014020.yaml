@@ -1,0 +1,92 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.2514/1.B34890
+  authors:
+  - name: Madeleine M. Kopp
+  - name: Nicole S. Donato
+  - name: Eric L. Petersen
+  - name: Wayne K. Metcalfe
+  - name: Sinéad M. Burke
+  - name: Henry J. Curran
+  journal: Journal of Propulsion and Power
+  year: 2014
+  volume: 30
+  pages: 790--798
+  detail: Converted from ReSpecTh XML file x10014020.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.0338
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.203
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.7632
+  ignition-type: &id002
+    target: p;
+    type: baseline min intercept from d/dt
+datapoints:
+- pressure:
+  - 12.2 atm
+  temperature:
+  - 1176 K
+  ignition-delay:
+  - 278 us
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 12.8 atm
+  temperature:
+  - 1178 K
+  ignition-delay:
+  - 271 us
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 12.1 atm
+  temperature:
+  - 1213 K
+  ignition-delay:
+  - 164 us
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 12.1 atm
+  temperature:
+  - 1240 K
+  ignition-delay:
+  - 75 us
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 11.5 atm
+  temperature:
+  - 1275 K
+  ignition-delay:
+  - 51 us
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 11.5 atm
+  temperature:
+  - 1289 K
+  ignition-delay:
+  - 39 us
+  composition: *id001
+  ignition-type: *id002

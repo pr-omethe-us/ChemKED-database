@@ -1,0 +1,96 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/s0010-2180(71)80102-5
+  authors:
+  - name: A Lifshitz
+  - name: K Scheller
+  - name: A Burcat
+  - name: G B Skinner
+  journal: Combust Flame
+  year: 1971
+  volume: 16
+  pages: 311--321
+  detail: Converted from ReSpecTh XML file x10004142.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+  - 10.39 atm
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.035
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.07
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.89427
+    - species-name: H2
+      InChI: 1S/H2/h1H
+      amount:
+      - 0.00073
+  ignition-type: &id003
+    target: pressure
+    type: d/dt max
+datapoints:
+- temperature:
+  - 1803.5 K
+  ignition-delay:
+  - 56.19 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1783.2 K
+  ignition-delay:
+  - 58.62 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1756.8 K
+  ignition-delay:
+  - 78.09 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1720.1 K
+  ignition-delay:
+  - 83.96 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1694.8 K
+  ignition-delay:
+  - 127.10 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1645.6 K
+  ignition-delay:
+  - 200.80 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1630.7 K
+  ignition-delay:
+  - 186.50 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003

@@ -1,0 +1,100 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.combustflame.2011.08.014
+  authors:
+  - name: Ivo Stranic
+  - name: Deanna P Chase
+  - name: Joseph T Harmon
+  - name: Sheng Yang
+  - name: David F Davidson
+  - name: Ronald K Hanson
+  journal: Combust Flame
+  year: 2012
+  volume: 159
+  pages: 516--527
+  detail: Converted from ReSpecTh XML file x10007045b.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: nC4H9OH
+      InChI: 1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3
+      amount:
+      - 0.006667
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.04
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.953333
+  ignition-type: &id002
+    target: OH*;
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1199 K
+  ignition-delay:
+  - 1.382 ms
+  pressure:
+  - 03.18 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1217 K
+  ignition-delay:
+  - 1.133 ms
+  pressure:
+  - 03.15 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1247 K
+  ignition-delay:
+  - 0.832 ms
+  pressure:
+  - 03.19 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1291 K
+  ignition-delay:
+  - 0.506 ms
+  pressure:
+  - 03.05 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1336 K
+  ignition-delay:
+  - 0.312 ms
+  pressure:
+  - 02.78 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1374 K
+  ignition-delay:
+  - 0.213 ms
+  pressure:
+  - 02.97 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1425 K
+  ignition-delay:
+  - 0.128 ms
+  pressure:
+  - 02.88 atm
+  composition: *id001
+  ignition-type: *id002

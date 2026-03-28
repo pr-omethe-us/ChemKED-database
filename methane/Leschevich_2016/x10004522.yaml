@@ -1,0 +1,67 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1007/s00193-016-0665-9
+  authors:
+  - name: V.V. Martynenko, O.G. Penyazkov, K.L. Sevrouk, S.I. Shabunya V.V. Leschevich
+  journal: Shock Waves
+  year: 2016
+  volume: 26
+  pages: 657--672
+  detail: Converted from ReSpecTh XML file x10004522.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected
+common-properties:
+  equivalence-ratio: 1.0
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.095
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.19
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.7149
+  ignition-type: &id002
+    target: C2
+    type: relative concentration
+datapoints:
+- pressure:
+  - 8.01 atm
+  temperature:
+  - 1479 K
+  ignition-delay:
+  - 9 us
+  equivalence-ratio: 1.0
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 7.94 atm
+  temperature:
+  - 1364 K
+  ignition-delay:
+  - 21 us
+  equivalence-ratio: 1.0
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 7.36 atm
+  temperature:
+  - 1312 K
+  ignition-delay:
+  - 47 us
+  equivalence-ratio: 1.0
+  composition: *id001
+  ignition-type: *id002

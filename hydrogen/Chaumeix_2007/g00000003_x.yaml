@@ -1,0 +1,78 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.ijhydene.2007.04.008
+  authors:
+  - name: N Chaumeix
+  - name: S Pichon
+  - name: F Lafosse
+  - name: C E Paillard
+  journal: Int J Hydrogen Energy
+  year: 2007
+  volume: 32
+  pages: 2216--2226
+  detail: Converted from ReSpecTh XML file g00000003_x.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+  - 221 kPa
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: H2
+      InChI: 1S/H2/h1H
+      amount:
+      - 0.00444
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.00556
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.99
+  ignition-type: &id003
+    target: OHEX;
+    type: relative concentration
+datapoints:
+- temperature:
+  - 1164.48 K
+  ignition-delay:
+  - 471.54 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1164.97 K
+  ignition-delay:
+  - 448.03 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1264.20 K
+  ignition-delay:
+  - 291.57 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1332.57 K
+  ignition-delay:
+  - 205.93 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1519.18 K
+  ignition-delay:
+  - 88.11 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003

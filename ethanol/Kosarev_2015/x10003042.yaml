@@ -1,0 +1,89 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.combustflame.2014.07.014
+  authors:
+  - name: I N Kosarev
+  - name: S V Kindysheva
+  - name: N L Aleksandrov
+  - name: AYu Starikovskiy
+  journal: Combust Flame
+  year: 2015
+  volume: 162
+  pages: 50--59
+  detail: Converted from ReSpecTh XML file x10003042.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: C2H5OH
+      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+      amount:
+      - 0.025
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.075
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.9
+  ignition-type: &id002
+    target: CH;
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1360 K
+  pressure:
+  - 0.53 atm
+  ignition-delay:
+  - 400 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1400 K
+  pressure:
+  - 0.48 atm
+  ignition-delay:
+  - 257 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1500 K
+  pressure:
+  - 0.39 atm
+  ignition-delay:
+  - 132 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1600 K
+  pressure:
+  - 0.32 atm
+  ignition-delay:
+  - 99 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1670 K
+  pressure:
+  - 0.23 atm
+  ignition-delay:
+  - 68 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1920 K
+  pressure:
+  - 0.17 atm
+  ignition-delay:
+  - 45 us
+  composition: *id001
+  ignition-type: *id002

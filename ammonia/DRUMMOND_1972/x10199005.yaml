@@ -1,0 +1,90 @@
+file-authors:
+- name: Bence Horvath; ELTE Chemical Kinetics Laboratory
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1080/00102207208952518
+  authors:
+  - name: L. J. DRUMMOND
+  journal: Combustion Science and Technology
+  year: 1972
+  volume: 5
+  pages: 175-182
+  detail: Converted from ReSpecTh XML file x10199005.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: NH3
+      InChI: 1S/H3N/h1H3
+      amount:
+      - 0.01
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.02
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.97
+  pressure: &id002
+  - 35.8 atm
+  ignition-type: &id003
+    target: OH*
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 2066.16 K
+  ignition-delay:
+  - 22.1 us
+  composition: *id001
+  pressure: *id002
+  ignition-type: *id003
+- temperature:
+  - 1968.29 K
+  ignition-delay:
+  - 37.8 us
+  composition: *id001
+  pressure: *id002
+  ignition-type: *id003
+- temperature:
+  - 1903.02 K
+  ignition-delay:
+  - 51.14 us
+  composition: *id001
+  pressure: *id002
+  ignition-type: *id003
+- temperature:
+  - 1782.14 K
+  ignition-delay:
+  - 102.75 us
+  composition: *id001
+  pressure: *id002
+  ignition-type: *id003
+- temperature:
+  - 1655.31 K
+  ignition-delay:
+  - 134.6 us
+  composition: *id001
+  pressure: *id002
+  ignition-type: *id003
+- temperature:
+  - 2399.9 K
+  ignition-delay:
+  - 2.35 us
+  composition: *id001
+  pressure: *id002
+  ignition-type: *id003
+- temperature:
+  - 2357.74 K
+  ignition-delay:
+  - 3.46 us
+  composition: *id001
+  pressure: *id002
+  ignition-type: *id003

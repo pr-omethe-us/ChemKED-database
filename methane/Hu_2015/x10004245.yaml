@@ -1,0 +1,88 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.fuel.2015.05.010
+  authors:
+  - name: Erjiang Hu
+  - name: Xiaotian Li
+  - name: Xin Meng
+  - name: Yizhen Chen
+  - name: Yu Cheng
+  - name: Yongliang Xie
+  - name: Zuohua Huang
+  journal: Fuel
+  year: 2015
+  volume: 158
+  pages: 1--10
+  detail: Converted from ReSpecTh XML file x10004245.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+  - 10 atm
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.17355
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.17355
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.6529
+  ignition-type: &id003
+    target: CH*
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1664.1 K
+  ignition-delay:
+  - 42.85 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1623.0 K
+  ignition-delay:
+  - 56.65 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1536.9 K
+  ignition-delay:
+  - 143.10 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1478.6 K
+  ignition-delay:
+  - 257.70 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1366.9 K
+  ignition-delay:
+  - 644.90 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1366.9 K
+  ignition-delay:
+  - 698.40 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003

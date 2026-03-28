@@ -1,0 +1,68 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.proci.2012.06.065
+  authors:
+  - name: Jeffrey Santner
+  - name: Frederick L Dryer
+  - name: Yiguang Ju
+  journal: Proc Combust Inst
+  year: 2013
+  volume: 34
+  pages: 719--726
+  detail: Converted from ReSpecTh XML file x20000077.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: flame
+  institution: ''
+  facility: ''
+  mode: spherical
+common-properties:
+  temperature: &id001
+  - 393 K
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: H2
+      InChI: 1S/H2/h1H
+      amount:
+      - 0.12567
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.07392
+    - species-name: He
+      InChI: 1S/He
+      amount:
+      - 0.65041
+    - species-name: H2O
+      InChI: 1S/H2O/h1H2
+      amount:
+      - 0.15
+datapoints:
+- pressure:
+  - 1.0 atm
+  laminar-burning-velocity:
+  - 93.88 cm/s
+  temperature: *id001
+  composition: *id002
+- pressure:
+  - 2.0 atm
+  laminar-burning-velocity:
+  - 82.91 cm/s
+  temperature: *id001
+  composition: *id002
+- pressure:
+  - 3.0 atm
+  laminar-burning-velocity:
+  - 62.54 cm/s
+  temperature: *id001
+  composition: *id002
+- pressure:
+  - 4.0 atm
+  laminar-burning-velocity:
+  - 55.23 cm/s
+  temperature: *id001
+  composition: *id002

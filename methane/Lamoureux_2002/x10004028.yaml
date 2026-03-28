@@ -1,0 +1,72 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1007/s001930100108
+  authors:
+  - name: N Lamoureux
+  - name: C E Paillard
+  - name: V Vaslier
+  journal: Shock Waves
+  year: 2002
+  volume: 11
+  pages: 309--322
+  detail: Converted from ReSpecTh XML file x10004028.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.066667
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.033333
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.9
+  ignition-type: &id002
+    target: OH;
+    type: relative concentration
+datapoints:
+- temperature:
+  - 1748 K
+  pressure:
+  - 1.057e+006 Pa
+  ignition-delay:
+  - 46 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1669 K
+  pressure:
+  - 9.920e+005 Pa
+  ignition-delay:
+  - 77 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1693 K
+  pressure:
+  - 1.004e+006 Pa
+  ignition-delay:
+  - 92 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1526 K
+  pressure:
+  - 8.440e+005 Pa
+  ignition-delay:
+  - 605 us
+  composition: *id001
+  ignition-type: *id002

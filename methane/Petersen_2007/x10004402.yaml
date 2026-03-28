@@ -1,0 +1,99 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1115/1.2720543
+  authors:
+  - name: E L Petersen
+  - name: J M Hall
+  - name: Sch D Smith
+  - name: J de Vries
+  - name: A R Amadio
+  - name: M W Crofton
+  journal: J Eng Gas Turbines Power
+  year: 2007
+  volume: 129
+  pages: 937--944
+  detail: Converted from ReSpecTh XML file x10004402.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.0525
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.2098
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.7377
+  ignition-type: &id002
+    target: CH*
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1431 K
+  pressure:
+  - 0.92 atm
+  ignition-delay:
+  - 2369 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1451 K
+  pressure:
+  - 0.80 atm
+  ignition-delay:
+  - 1951 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1526 K
+  pressure:
+  - 0.74 atm
+  ignition-delay:
+  - 978 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1611 K
+  pressure:
+  - 0.79 atm
+  ignition-delay:
+  - 430 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1673 K
+  pressure:
+  - 0.73 atm
+  ignition-delay:
+  - 284 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1854 K
+  pressure:
+  - 0.55 atm
+  ignition-delay:
+  - 106 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 2001 K
+  pressure:
+  - 0.54 atm
+  ignition-delay:
+  - 56 us
+  composition: *id001
+  ignition-type: *id002

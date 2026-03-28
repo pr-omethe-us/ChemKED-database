@@ -1,0 +1,85 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1021/ef3005042
+  authors:
+  - name: J Zhang
+  - name: L Wei
+  - name: X Man
+  - name: X Jiang
+  - name: Y Zhang
+  - name: E Hu
+  - name: Z Huang
+  journal: Energy Fuels
+  year: 2012
+  volume: 26
+  pages: 3368--3380
+  detail: Converted from ReSpecTh XML file x10007080.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: nC4H9OH
+      InChI: 1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3
+      amount:
+      - 0.006
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.036
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.958
+  ignition-type: &id002
+    target: p;
+    type: d/dt max
+datapoints:
+- temperature:
+  - 1284 K
+  ignition-delay:
+  - 0545 us
+  pressure:
+  - 02.48 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1307 K
+  ignition-delay:
+  - 0442 us
+  pressure:
+  - 02.67 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1349 K
+  ignition-delay:
+  - 0305 us
+  pressure:
+  - 02.65 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1358 K
+  ignition-delay:
+  - 0260 us
+  pressure:
+  - 02.49 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1375 K
+  ignition-delay:
+  - 0230 us
+  pressure:
+  - 02.48 atm
+  composition: *id001
+  ignition-type: *id002

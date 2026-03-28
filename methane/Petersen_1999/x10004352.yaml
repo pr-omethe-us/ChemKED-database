@@ -1,0 +1,68 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.2514/2.5394
+  authors:
+  - name: E L Petersen
+  - name: D F Davidson
+  - name: R K Hanson
+  journal: J Propul Power
+  year: 1999
+  volume: 15
+  pages: 82--91
+  detail: Converted from ReSpecTh XML file x10004352.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.1766
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.1177
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.2355
+    - species-name: He
+      InChI: 1S/He
+      amount:
+      - 0.4702
+  ignition-type: &id002
+    target: CH*
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1338 K
+  ignition-delay:
+  - 651 us
+  pressure:
+  - 29.5 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1398 K
+  ignition-delay:
+  - 425 us
+  pressure:
+  - 28.9 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1458 K
+  ignition-delay:
+  - 269 us
+  pressure:
+  - 27.0 atm
+  composition: *id001
+  ignition-type: *id002

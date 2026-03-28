@@ -1,0 +1,92 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/S0010-2180(97)00049-7
+  authors:
+  - name: K Fieweger
+  - name: R Blumenthal
+  - name: G Adomeit
+  journal: Combust Flame
+  year: 1997
+  volume: 109
+  pages: 599--619
+  detail: Converted from ReSpecTh XML file x10002010.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  pressure: &id001
+  - 13 bar
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: CH3OH
+      InChI: 1S/CH4O/c1-2/h2H,1H3
+      amount:
+      - 0.12285
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18428
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.69287
+  ignition-type: &id003
+    target: p;
+    type: d/dt max
+datapoints:
+- temperature:
+  - 1208 K
+  ignition-delay:
+  - 0063 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1136 K
+  ignition-delay:
+  - 0174 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1122 K
+  ignition-delay:
+  - 0237 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 1037 K
+  ignition-delay:
+  - 0909 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 0962 K
+  ignition-delay:
+  - 1990 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 0942 K
+  ignition-delay:
+  - 3029 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 0899 K
+  ignition-delay:
+  - 4177 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003

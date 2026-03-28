@@ -1,0 +1,117 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.fuel.2017.06.005
+  authors:
+  - name: K. Zhang, A. Dhongde, L. Virnich, H. Sankhla, H. Curran, A. Heufer A. Ramalingam
+  journal: Fuel
+  year: 2017
+  volume: 206
+  pages: 325–-333
+  detail: Converted from ReSpecTh XML file x40004028.xml
+experiment-type: ignition delay
+apparatus:
+  kind: rapid compression machine
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.066346
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.133093
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.560392
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.240168
+  ignition-type: &id002
+    target: p;
+    type: d/dt max
+datapoints:
+- pressure:
+  - 2.953 atm
+  temperature:
+  - 296.40 K
+  ignition-delay:
+  - 14.15 ms
+  time-histories:
+  - time:
+      units: s
+      column: 0
+    quantity:
+      units: cm3
+      column: 1
+    type: volume
+    values:
+    - - 0.0
+      - 1.0
+    - - 0.00179653
+      - 0.9040859
+    - - 0.00229175
+      - 0.8661712
+    - - 0.00402343
+      - 0.7344792
+    - - 0.00553745
+      - 0.6083319
+    - - 0.00619157
+      - 0.5583948
+    - - 0.00721765
+      - 0.4595026
+    - - 0.00836152
+      - 0.3572539
+    - - 0.01002222
+      - 0.2145154
+    - - 0.01122223
+      - 0.1188085
+    - - 0.01185134
+      - 0.08243799
+    - - 0.01389279
+      - 0.05893723
+    - - 0.01458512
+      - 0.05868453
+    - - 0.01920787
+      - 0.061277
+    - - 0.02223426
+      - 0.06253693
+    - - 0.02877877
+      - 0.064627
+    - - 0.03414028
+      - 0.06601298
+    - - 0.04209802
+      - 0.06770896
+    - - 0.05256156
+      - 0.06950573
+    - - 0.06317656
+      - 0.07100362
+    - - 0.07510526
+      - 0.07246702
+    - - 0.09324396
+      - 0.0743447
+    - - 0.1171795
+      - 0.07642133
+    - - 0.1471426
+      - 0.07869335
+    - - 0.1621665
+      - 0.07970362
+  composition: *id001
+  ignition-type: *id002
+- pressure:
+  - 2.953 atm
+  temperature:
+  - 296.40 K
+  ignition-delay:
+  - 13.16 ms
+  composition: *id001
+  ignition-type: *id002

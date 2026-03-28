@@ -1,0 +1,85 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1021/jp806464p
+  authors:
+  - name: J T Moss
+  - name: A M Berkowitz
+  - name: M A Oehlschlaeger
+  - name: J Biet
+  - name: V Warth
+  - name: P-A Glaude
+  - name: F Battin-Leclerc
+  journal: J Phys Chem A
+  year: 2008
+  volume: 112
+  pages: 10843--10855
+  detail: Converted from ReSpecTh XML file x10007012.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: nC4H9OH
+      InChI: 1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3
+      amount:
+      - 0.005
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.12
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.875
+  ignition-type: &id002
+    target: OHEX;
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1196 K
+  ignition-delay:
+  - 1755 us
+  pressure:
+  - 1.08 bar
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1284 K
+  ignition-delay:
+  - 0747 us
+  pressure:
+  - 1.16 bar
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1330 K
+  ignition-delay:
+  - 0491 us
+  pressure:
+  - 1.11 bar
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1365 K
+  ignition-delay:
+  - 0327 us
+  pressure:
+  - 1.03 bar
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1479 K
+  ignition-delay:
+  - 0116 us
+  pressure:
+  - 1.04 bar
+  composition: *id001
+  ignition-type: *id002

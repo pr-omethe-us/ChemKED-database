@@ -1,0 +1,98 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.proci.2008.06.194
+  authors:
+  - name: O.G. Penyazkov
+  - name: K.L. Sevrouk
+  - name: V. Tangirala
+  - name: N. Joshi
+  journal: Proceedings of the Combustion Institute
+  year: 2009
+  volume: 32
+  pages: 2421-2428
+  detail: Converted from ReSpecTh XML file x10014051.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.0338
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.203
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.7631999999999999
+  ignition-type: &id002
+    target: CH;
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1430 K
+  pressure:
+  - 8.24 atm
+  ignition-delay:
+  - 12 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1375.5 K
+  pressure:
+  - 7.9 atm
+  ignition-delay:
+  - 16.5 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1325 K
+  pressure:
+  - 7.59 atm
+  ignition-delay:
+  - 27.5 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1264 K
+  pressure:
+  - 6.71 atm
+  ignition-delay:
+  - 72 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1223 K
+  pressure:
+  - 7.1 atm
+  ignition-delay:
+  - 212 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1180 K
+  pressure:
+  - 6.98 atm
+  ignition-delay:
+  - 600 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1167.5 K
+  pressure:
+  - 6.83 atm
+  ignition-delay:
+  - 1044 us
+  composition: *id001
+  ignition-type: *id002

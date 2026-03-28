@@ -1,0 +1,55 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/s0082-0784(75)80355-9
+  authors:
+  - name: T Tsuboi
+  - name: H Gg Wagner
+  journal: Symp (Int) Combust
+  year: 1974
+  volume: 15
+  pages: 883--890
+  detail: Converted from ReSpecTh XML file x10004162.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.02
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.02
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.96
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+- temperature:
+  - 1426.3 K
+  ignition-delay:
+  - 12.240 us
+  pressure:
+  - 2.691 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1653.6 K
+  ignition-delay:
+  - 1.289 us
+  pressure:
+  - 3.120 atm
+  composition: *id001
+  ignition-type: *id002

@@ -1,0 +1,94 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/0010-2180(78)90140-2
+  authors:
+  - name: M SLACK
+  - name: A GRILLO
+  journal: Combustion and Flame
+  year: 1978
+  volume: 31
+  pages: 275--283
+  detail: Converted from ReSpecTh XML file x10300018.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+  - 4 atm
+  composition: &id002
+    kind: mole fraction
+    species:
+    - species-name: H2
+      InChI: 1S/H2/h1H
+      amount:
+      - 0.2853
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.1427
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.5364
+    - species-name: NO2
+      InChI: 1S/NO2/c2-1-3
+      amount:
+      - 0.0356
+  ignition-type: &id003
+    target: pressure
+    type: d/dt max
+datapoints:
+- temperature:
+  - 840 K
+  ignition-delay:
+  - 950 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 855 K
+  ignition-delay:
+  - 720 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 860 K
+  ignition-delay:
+  - 560 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 900 K
+  ignition-delay:
+  - 320 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 910 K
+  ignition-delay:
+  - 240 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 917 K
+  ignition-delay:
+  - 220 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003
+- temperature:
+  - 956 K
+  ignition-delay:
+  - 90 us
+  pressure: *id001
+  composition: *id002
+  ignition-type: *id003

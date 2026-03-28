@@ -1,0 +1,90 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.2514/6.2004-1323
+  authors:
+  - name: Danielle M. Kalitan
+  - name: Matthew J.A. Rickard
+  - name: Joel M. Hall
+  - name: Eric L. Petersen
+  journal: Journal of Propulsion and Power
+  year: 2005
+  volume: 21
+  pages: 10641--10667
+  detail: Converted from ReSpecTh XML file x10014081.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.003
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.017
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.98
+  ignition-type: &id002
+    target: OH*;
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1343 K
+  pressure:
+  - 1.3 atm
+  ignition-delay:
+  - 361 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1461 K
+  pressure:
+  - 1.12 atm
+  ignition-delay:
+  - 202 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1525 K
+  pressure:
+  - 1.0 atm
+  ignition-delay:
+  - 160 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1404 K
+  pressure:
+  - 1.23 atm
+  ignition-delay:
+  - 270 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1314 K
+  pressure:
+  - 1.16 atm
+  ignition-delay:
+  - 529 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1330 K
+  pressure:
+  - 1.28 atm
+  ignition-delay:
+  - 396 us
+  composition: *id001
+  ignition-type: *id002

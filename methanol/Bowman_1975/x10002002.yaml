@@ -1,0 +1,87 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/0010-2180(75)90106-6
+  authors:
+  - name: C T Bowman
+  journal: Combust Flame
+  year: 1975
+  volume: 25
+  pages: 343--354
+  detail: Converted from ReSpecTh XML file x10002002.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: CH3OH
+      InChI: 1S/CH4O/c1-2/h2H,1H3
+      amount:
+      - 0.01
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.02
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.97
+  ignition-type: &id002
+    target: CO;O;
+    type: max
+datapoints:
+- temperature:
+  - 1545 K
+  ignition-delay:
+  - 225 us
+  pressure:
+  - 2.903 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1690 K
+  ignition-delay:
+  - 062 us
+  pressure:
+  - 3.106 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1800 K
+  ignition-delay:
+  - 040 us
+  pressure:
+  - 3.161 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1935 K
+  ignition-delay:
+  - 020 us
+  pressure:
+  - 3.207 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 2005 K
+  ignition-delay:
+  - 013 us
+  pressure:
+  - 3.406 atm
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 2125 K
+  ignition-delay:
+  - 009 us
+  pressure:
+  - 3.644 atm
+  composition: *id001
+  ignition-type: *id002

@@ -1,0 +1,93 @@
+file-authors:
+- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.fuel.2018.03.146
+  authors:
+  - name: Jiankun Shao
+  - name: David F. Davidson
+  - name: Ronald K. Hanson
+  journal: Fuel
+  year: 2018
+  volume: 225
+  pages: 370--380
+  detail: Converted from ReSpecTh XML file x10014067.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+  mode: reflected shock
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.0096
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.0394
+    - species-name: Ar
+      InChI: 1S/Ar
+      amount:
+      - 0.9456
+    - species-name: CH4
+      InChI: 1S/CH4/h1H4
+      amount:
+      - 0.0054
+  ignition-type: &id002
+    target: OH*;
+    type: baseline min intercept from d/dt
+datapoints:
+- temperature:
+  - 1340 K
+  pressure:
+  - 15.3 atm
+  ignition-delay:
+  - 108 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1276 K
+  pressure:
+  - 15.2 atm
+  ignition-delay:
+  - 258 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1212 K
+  pressure:
+  - 15.7 atm
+  ignition-delay:
+  - 600 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1165 K
+  pressure:
+  - 16.1 atm
+  ignition-delay:
+  - 1073 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1133 K
+  pressure:
+  - 16.3 atm
+  ignition-delay:
+  - 1669 us
+  composition: *id001
+  ignition-type: *id002
+- temperature:
+  - 1238 K
+  pressure:
+  - 15.4 atm
+  ignition-delay:
+  - 425 us
+  composition: *id001
+  ignition-type: *id002
