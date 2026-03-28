@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -36,14 +37,7 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.455818
-  evaluated-standard-deviation: &id002
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: generic uncertainty
-    value:
-    - 0.1 unitless
-  ignition-type: &id003
+  ignition-type: &id002
     target: p;
     type: d/dt max
 datapoints:
@@ -53,6 +47,10 @@ datapoints:
   - 294.7 K
   ignition-delay:
   - 39.86 ms
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   time-histories:
   - time:
       units: s
@@ -62,90 +60,63 @@ datapoints:
       column: 1
     type: volume
     values:
-    - - 0.0
-      - 1.0
-    - - 0.0027434
-      - 0.8347598
-    - - 0.00408429
-      - 0.7368988
-    - - 0.00557573
-      - 0.6326095
-    - - 0.00726563
-      - 0.5012781
-    - - 0.0089957
-      - 0.3728074
-    - - 0.01001068
-      - 0.3034988
-    - - 0.01096053
-      - 0.2371184
-    - - 0.01198566
-      - 0.1689155
-    - - 0.01287553
-      - 0.1177506
-    - - 0.01338591
-      - 0.0994999
-    - - 0.01377642
-      - 0.09064845
-    - - 0.01591779
-      - 0.07961678
-    - - 0.01659854
-      - 0.08024592
-    - - 0.01869193
-      - 0.08157591
-    - - 0.02038369
-      - 0.08250247
-    - - 0.02239412
-      - 0.08345283
-    - - 0.02553146
-      - 0.08462241
-    - - 0.03024147
-      - 0.08612012
-    - - 0.03559144
-      - 0.08748322
-    - - 0.04168226
-      - 0.08878022
-    - - 0.04688526
-      - 0.08972997
-    - - 0.05342706
-      - 0.09081147
-    - - 0.05965306
-      - 0.09169404
-    - - 0.06875526
-      - 0.09285685
-    - - 0.07733026
-      - 0.0938424
-    - - 0.08884316
-      - 0.09502878
-    - - 0.1028997
-      - 0.09632366
-    - - 0.1179149
-      - 0.09758577
-    - - 0.1373631
-      - 0.09907773
-    - - 0.1576661
-      - 0.1005299
-    - - 0.185377
-      - 0.1024024
-    - - 0.21371
-      - 0.1042694
+    - [0.0, 1.0]
+    - [0.0027434, 0.8347598]
+    - [0.00408429, 0.7368988]
+    - [0.00557573, 0.6326095]
+    - [0.00726563, 0.5012781]
+    - [0.0089957, 0.3728074]
+    - [0.01001068, 0.3034988]
+    - [0.01096053, 0.2371184]
+    - [0.01198566, 0.1689155]
+    - [0.01287553, 0.1177506]
+    - [0.01338591, 0.0994999]
+    - [0.01377642, 0.09064845]
+    - [0.01591779, 0.07961678]
+    - [0.01659854, 0.08024592]
+    - [0.01869193, 0.08157591]
+    - [0.02038369, 0.08250247]
+    - [0.02239412, 0.08345283]
+    - [0.02553146, 0.08462241]
+    - [0.03024147, 0.08612012]
+    - [0.03559144, 0.08748322]
+    - [0.04168226, 0.08878022]
+    - [0.04688526, 0.08972997]
+    - [0.05342706, 0.09081147]
+    - [0.05965306, 0.09169404]
+    - [0.06875526, 0.09285685]
+    - [0.07733026, 0.0938424]
+    - [0.08884316, 0.09502878]
+    - [0.1028997, 0.09632366]
+    - [0.1179149, 0.09758577]
+    - [0.1373631, 0.09907773]
+    - [0.1576661, 0.1005299]
+    - [0.185377, 0.1024024]
+    - [0.21371, 0.1042694]
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 2.684 atm
   temperature:
   - 294.7 K
   ignition-delay:
   - 37.94 ms
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 2.684 atm
   temperature:
   - 294.7 K
   ignition-delay:
   - 35.72 ms
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
+...

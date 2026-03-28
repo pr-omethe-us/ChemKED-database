@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -19,63 +20,6 @@ apparatus:
 common-properties:
   pressure: &id001
   - 1 atm
-  evaluated-standard-deviation: &id002
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2
-    InChI: 1S/H2/h1H
-    value:
-    - 2.01e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 5.98e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO2
-    InChI: 1S/CO2/c2-1-3
-    value:
-    - 4.87e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CH2O
-    InChI: 1S/CH2O/c1-2/h1H2
-    value:
-    - 4.7e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CH3OH
-    InChI: 1S/CH4O/c1-2/h2H,1H3
-    value:
-    - 1.99e-05 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 4.49e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 9.79e-07 mole fraction
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -84,10 +28,18 @@ datapoints:
       InChI: 1S/H2/h1H
       amount:
       - 2.358e-06
+      - evaluated-standard-deviation: 2.01e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO
       InChI: 1S/CO/c1-2
       amount:
       - 1.97e-06
+      - evaluated-standard-deviation: 5.98e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH3OH
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
@@ -100,14 +52,26 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 8.51e-05
+      - evaluated-standard-deviation: 4.49e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO2
       InChI: 1S/CO2/c2-1-3
       amount:
       - 2.617e-06
+      - evaluated-standard-deviation: 4.87e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH2O
       InChI: 1S/CH2O/c1-2/h1H2
       amount:
       - 7.882e-06
+      - evaluated-standard-deviation: 4.7e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition:
     kind: mole fraction
     species:
@@ -115,6 +79,10 @@ datapoints:
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
       - 0.00045
+      - evaluated-standard-deviation: 1.99e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -123,6 +91,10 @@ datapoints:
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0001
+      - evaluated-standard-deviation: 9.79e-07
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
@@ -132,7 +104,6 @@ datapoints:
   residence-time:
   - 2.93 s
   pressure: *id001
-  evaluated-standard-deviation: *id002
 - measured-composition:
     kind: mole fraction
     species:
@@ -140,10 +111,18 @@ datapoints:
       InChI: 1S/H2/h1H
       amount:
       - 8.255e-06
+      - evaluated-standard-deviation: 2.01e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO
       InChI: 1S/CO/c1-2
       amount:
       - 2.167e-05
+      - evaluated-standard-deviation: 5.98e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH3OH
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
@@ -156,14 +135,26 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 8.942e-05
+      - evaluated-standard-deviation: 4.49e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO2
       InChI: 1S/CO2/c2-1-3
       amount:
       - 1.243e-05
+      - evaluated-standard-deviation: 4.87e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH2O
       InChI: 1S/CH2O/c1-2/h1H2
       amount:
       - 4.532e-05
+      - evaluated-standard-deviation: 4.7e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition:
     kind: mole fraction
     species:
@@ -171,6 +162,10 @@ datapoints:
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
       - 0.00045
+      - evaluated-standard-deviation: 1.99e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -179,6 +174,10 @@ datapoints:
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0001
+      - evaluated-standard-deviation: 9.79e-07
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
@@ -188,7 +187,6 @@ datapoints:
   residence-time:
   - 2.93 s
   pressure: *id001
-  evaluated-standard-deviation: *id002
 - measured-composition:
     kind: mole fraction
     species:
@@ -196,10 +194,18 @@ datapoints:
       InChI: 1S/H2/h1H
       amount:
       - 1.179e-05
+      - evaluated-standard-deviation: 2.01e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO
       InChI: 1S/CO/c1-2
       amount:
       - 3.941e-05
+      - evaluated-standard-deviation: 5.98e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH3OH
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
@@ -212,14 +218,26 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 8.654e-05
+      - evaluated-standard-deviation: 4.49e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO2
       InChI: 1S/CO2/c2-1-3
       amount:
       - 1.766e-05
+      - evaluated-standard-deviation: 4.87e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH2O
       InChI: 1S/CH2O/c1-2/h1H2
       amount:
       - 6.03e-05
+      - evaluated-standard-deviation: 4.7e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition:
     kind: mole fraction
     species:
@@ -227,6 +245,10 @@ datapoints:
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
       - 0.00045
+      - evaluated-standard-deviation: 1.99e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -235,6 +257,10 @@ datapoints:
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0001
+      - evaluated-standard-deviation: 9.79e-07
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
@@ -244,7 +270,6 @@ datapoints:
   residence-time:
   - 2.93 s
   pressure: *id001
-  evaluated-standard-deviation: *id002
 - measured-composition:
     kind: mole fraction
     species:
@@ -252,10 +277,18 @@ datapoints:
       InChI: 1S/H2/h1H
       amount:
       - 9.434e-06
+      - evaluated-standard-deviation: 2.01e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO
       InChI: 1S/CO/c1-2
       amount:
       - 6.7e-05
+      - evaluated-standard-deviation: 5.98e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH3OH
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
@@ -268,14 +301,26 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 8.654e-05
+      - evaluated-standard-deviation: 4.49e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO2
       InChI: 1S/CO2/c2-1-3
       amount:
       - 2.028e-05
+      - evaluated-standard-deviation: 4.87e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH2O
       InChI: 1S/CH2O/c1-2/h1H2
       amount:
       - 6.502e-05
+      - evaluated-standard-deviation: 4.7e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition:
     kind: mole fraction
     species:
@@ -283,6 +328,10 @@ datapoints:
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
       - 0.00045
+      - evaluated-standard-deviation: 1.99e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -291,6 +340,10 @@ datapoints:
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0001
+      - evaluated-standard-deviation: 9.79e-07
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
@@ -300,7 +353,6 @@ datapoints:
   residence-time:
   - 2.93 s
   pressure: *id001
-  evaluated-standard-deviation: *id002
 - measured-composition:
     kind: mole fraction
     species:
@@ -308,10 +360,18 @@ datapoints:
       InChI: 1S/H2/h1H
       amount:
       - 1.533e-05
+      - evaluated-standard-deviation: 2.01e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO
       InChI: 1S/CO/c1-2
       amount:
       - 9.655e-05
+      - evaluated-standard-deviation: 5.98e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH3OH
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
@@ -324,14 +384,26 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 8.606e-05
+      - evaluated-standard-deviation: 4.49e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO2
       InChI: 1S/CO2/c2-1-3
       amount:
       - 2.617e-05
+      - evaluated-standard-deviation: 4.87e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH2O
       InChI: 1S/CH2O/c1-2/h1H2
       amount:
       - 6.108e-05
+      - evaluated-standard-deviation: 4.7e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition:
     kind: mole fraction
     species:
@@ -339,6 +411,10 @@ datapoints:
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
       - 0.00045
+      - evaluated-standard-deviation: 1.99e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -347,6 +423,10 @@ datapoints:
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0001
+      - evaluated-standard-deviation: 9.79e-07
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
@@ -356,7 +436,6 @@ datapoints:
   residence-time:
   - 2.93 s
   pressure: *id001
-  evaluated-standard-deviation: *id002
 - measured-composition:
     kind: mole fraction
     species:
@@ -364,10 +443,18 @@ datapoints:
       InChI: 1S/H2/h1H
       amount:
       - 1.415e-05
+      - evaluated-standard-deviation: 2.01e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO
       InChI: 1S/CO/c1-2
       amount:
       - 0.0001202
+      - evaluated-standard-deviation: 5.98e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH3OH
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
@@ -380,14 +467,26 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 8.654e-05
+      - evaluated-standard-deviation: 4.49e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO2
       InChI: 1S/CO2/c2-1-3
       amount:
       - 2.617e-05
+      - evaluated-standard-deviation: 4.87e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH2O
       InChI: 1S/CH2O/c1-2/h1H2
       amount:
       - 5.399e-05
+      - evaluated-standard-deviation: 4.7e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition:
     kind: mole fraction
     species:
@@ -395,6 +494,10 @@ datapoints:
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
       - 0.00045
+      - evaluated-standard-deviation: 1.99e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -403,6 +506,10 @@ datapoints:
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0001
+      - evaluated-standard-deviation: 9.79e-07
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
@@ -412,7 +519,6 @@ datapoints:
   residence-time:
   - 2.93 s
   pressure: *id001
-  evaluated-standard-deviation: *id002
 - measured-composition:
     kind: mole fraction
     species:
@@ -420,10 +526,18 @@ datapoints:
       InChI: 1S/H2/h1H
       amount:
       - 1.297e-05
+      - evaluated-standard-deviation: 2.01e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO
       InChI: 1S/CO/c1-2
       amount:
       - 0.0001655
+      - evaluated-standard-deviation: 5.98e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH3OH
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
@@ -436,14 +550,26 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 8.125e-05
+      - evaluated-standard-deviation: 4.49e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO2
       InChI: 1S/CO2/c2-1-3
       amount:
       - 3.402e-05
+      - evaluated-standard-deviation: 4.87e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH2O
       InChI: 1S/CH2O/c1-2/h1H2
       amount:
       - 2.995e-05
+      - evaluated-standard-deviation: 4.7e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition:
     kind: mole fraction
     species:
@@ -451,6 +577,10 @@ datapoints:
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
       - 0.00045
+      - evaluated-standard-deviation: 1.99e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -459,6 +589,10 @@ datapoints:
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0001
+      - evaluated-standard-deviation: 9.79e-07
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
@@ -468,7 +602,6 @@ datapoints:
   residence-time:
   - 2.93 s
   pressure: *id001
-  evaluated-standard-deviation: *id002
 - measured-composition:
     kind: mole fraction
     species:
@@ -476,10 +609,18 @@ datapoints:
       InChI: 1S/H2/h1H
       amount:
       - 9.434e-06
+      - evaluated-standard-deviation: 2.01e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO
       InChI: 1S/CO/c1-2
       amount:
       - 0.0002069
+      - evaluated-standard-deviation: 5.98e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH3OH
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
@@ -492,14 +633,26 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 8.029e-05
+      - evaluated-standard-deviation: 4.49e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO2
       InChI: 1S/CO2/c2-1-3
       amount:
       - 6.019e-05
+      - evaluated-standard-deviation: 4.87e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH2O
       InChI: 1S/CH2O/c1-2/h1H2
       amount:
       - 0.0
+      - evaluated-standard-deviation: 4.7e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition:
     kind: mole fraction
     species:
@@ -507,6 +660,10 @@ datapoints:
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
       - 0.00045
+      - evaluated-standard-deviation: 1.99e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -515,6 +672,10 @@ datapoints:
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0001
+      - evaluated-standard-deviation: 9.79e-07
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
@@ -524,7 +685,6 @@ datapoints:
   residence-time:
   - 2.93 s
   pressure: *id001
-  evaluated-standard-deviation: *id002
 - measured-composition:
     kind: mole fraction
     species:
@@ -532,10 +692,18 @@ datapoints:
       InChI: 1S/H2/h1H
       amount:
       - 4.717e-06
+      - evaluated-standard-deviation: 2.01e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO
       InChI: 1S/CO/c1-2
       amount:
       - 0.0002325
+      - evaluated-standard-deviation: 5.98e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH3OH
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
@@ -548,14 +716,26 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 6.875e-05
+      - evaluated-standard-deviation: 4.49e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO2
       InChI: 1S/CO2/c2-1-3
       amount:
       - 6.869e-05
+      - evaluated-standard-deviation: 4.87e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CH2O
       InChI: 1S/CH2O/c1-2/h1H2
       amount:
       - 0.0
+      - evaluated-standard-deviation: 4.7e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition:
     kind: mole fraction
     species:
@@ -563,6 +743,10 @@ datapoints:
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
       - 0.00045
+      - evaluated-standard-deviation: 1.99e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -571,6 +755,10 @@ datapoints:
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0001
+      - evaluated-standard-deviation: 9.79e-07
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
@@ -580,4 +768,4 @@ datapoints:
   residence-time:
   - 2.93 s
   pressure: *id001
-  evaluated-standard-deviation: *id002
+...

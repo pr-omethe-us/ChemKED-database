@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -31,39 +32,22 @@ common-properties:
       InChI: 1S/H2/h1H
       amount:
       - 0.0101
+      - evaluated-standard-deviation: 0.00454
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
       - 0.0052
+      - evaluated-standard-deviation: 0.00223
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
       - 0.9847
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: H2
-    InChI: 1S/H2/h1H
-    value:
-    - 0.00454 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.00466 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: O2
-    InChI: 1S/O2/c1-2
-    value:
-    - 0.00223 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: H2
@@ -73,16 +57,11 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.01409
-      - 0.0097225
-    - - 0.01945
-      - 0.0095529
-    - - 0.02621
-      - 4.59e-05
-    - - 0.03478
-      - 0.0
-    - - 0.04593
-      - 0.0
+    - [0.01409, 0.0097225]
+    - [0.01945, 0.0095529]
+    - [0.02621, 4.59e-05]
+    - [0.03478, 0.0]
+    - [0.04593, 0.0]
   - species-name: H2O
     InChI: 1S/H2O/h1H2
     quantity:
@@ -90,16 +69,11 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.01409
-      - 1.91443e-06
-    - - 0.01945
-      - 0.0002594
-    - - 0.02621
-      - 0.0100762
-    - - 0.03478
-      - 0.0101358
-    - - 0.04593
-      - 0.0101763
+    - [0.01409, 1.91443e-06]
+    - [0.01945, 0.0002594]
+    - [0.02621, 0.0100762]
+    - [0.03478, 0.0101358]
+    - [0.04593, 0.0101763]
   - species-name: O2
     InChI: 1S/O2/c1-2
     quantity:
@@ -107,17 +81,12 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.01409
-      - 0.0049392
-    - - 0.01945
-      - 0.004881
-    - - 0.02621
-      - 0.0002248
-    - - 0.03478
-      - 0.0001721
-    - - 0.04593
-      - 0.000124
+    - [0.01409, 0.0049392]
+    - [0.01945, 0.004881]
+    - [0.02621, 0.0002248]
+    - [0.03478, 0.0001721]
+    - [0.04593, 0.000124]
   temperature: *id001
   pressure: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

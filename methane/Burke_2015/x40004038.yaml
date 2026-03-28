@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -33,14 +34,7 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.75062344
-  evaluated-standard-deviation: &id002
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: statistical scatter
-    value:
-    - 0.236 unitless
-  ignition-type: &id003
+  ignition-type: &id002
     target: p;
     type: d/dt max
 datapoints:
@@ -50,6 +44,10 @@ datapoints:
   - 339.4 K
   ignition-delay:
   - 219.5 ms
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   time-histories:
   - time:
       units: s
@@ -59,243 +57,207 @@ datapoints:
       column: 1
     type: volume
     values:
-    - - 0.0
-      - 1.0
-    - - 0.0013807
-      - 0.9873208
-    - - 0.00176702
-      - 0.9747537
-    - - 0.00276439
-      - 0.9530319
-    - - 0.00361736
-      - 0.9203387
-    - - 0.00426587
-      - 0.8935025
-    - - 0.00521814
-      - 0.8515884
-    - - 0.00596567
-      - 0.8080528
-    - - 0.00656388
-      - 0.7685131
-    - - 0.00696885
-      - 0.7394348
-    - - 0.00776511
-      - 0.6787387
-    - - 0.00836394
-      - 0.6327429
-    - - 0.00906957
-      - 0.580397
-    - - 0.0096171
-      - 0.5389133
-    - - 0.01026754
-      - 0.4892265
-    - - 0.01061694
-      - 0.463247
-    - - 0.01086666
-      - 0.444078
-    - - 0.0111677
-      - 0.4211304
-    - - 0.01141757
-      - 0.401342
-    - - 0.01176773
-      - 0.373349
-    - - 0.01211747
-      - 0.3467566
-    - - 0.01241771
-      - 0.3226819
-    - - 0.01266726
-      - 0.3029362
-    - - 0.0129174
-      - 0.2829197
-    - - 0.01306716
-      - 0.2704503
-    - - 0.01326701
-      - 0.2541804
-    - - 0.01351748
-      - 0.2345423
-    - - 0.01376707
-      - 0.2164168
-    - - 0.01416631
-      - 0.1895969
-    - - 0.01446716
-      - 0.1722169
-    - - 0.01466701
-      - 0.161456
-    - - 0.01491699
-      - 0.1490071
-    - - 0.01541506
-      - 0.1283673
-    - - 0.01561584
-      - 0.1226785
-    - - 0.01581664
-      - 0.1188427
-    - - 0.01596523
-      - 0.1172305
-    - - 0.01736789
-      - 0.1115053
-    - - 0.01757974
-      - 0.1111158
-    - - 0.01796986
-      - 0.1118008
-    - - 0.01823016
-      - 0.1114712
-    - - 0.01867119
-      - 0.1126387
-    - - 0.01938912
-      - 0.1137552
-    - - 0.02102519
-      - 0.115509
-    - - 0.02226571
-      - 0.1161312
-    - - 0.02307553
-      - 0.1171778
-    - - 0.02475481
-      - 0.1203546
-    - - 0.02609086
-      - 0.1214442
-    - - 0.02880104
-      - 0.122433
-    - - 0.02993029
-      - 0.1235161
-    - - 0.03106148
-      - 0.1261766
-    - - 0.03151458
-      - 0.1265451
-    - - 0.03327039
-      - 0.1261919
-    - - 0.03603314
-      - 0.1275958
-    - - 0.03769452
-      - 0.1294754
-    - - 0.04283689
-      - 0.1312264
-    - - 0.04382388
-      - 0.1324973
-    - - 0.05816053
-      - 0.1376024
-    - - 0.06645163
-      - 0.1400526
-    - - 0.07926173
-      - 0.1430313
-    - - 0.09321713
-      - 0.1454947
-    - - 0.1039161
-      - 0.1471224
-    - - 0.119358
-      - 0.1490775
-    - - 0.1583274
-      - 0.1534469
-    - - 0.2454323
-      - 0.1627859
-    - - 0.3198165
-      - 0.1726786
-    - - 0.3523942
-      - 0.1769893
-    - - 0.3970152
-      - 0.1829641
-    - - 0.4428443
-      - 0.1884032
-    - - 0.4499649
-      - 0.189
+    - [0.0, 1.0]
+    - [0.0013807, 0.9873208]
+    - [0.00176702, 0.9747537]
+    - [0.00276439, 0.9530319]
+    - [0.00361736, 0.9203387]
+    - [0.00426587, 0.8935025]
+    - [0.00521814, 0.8515884]
+    - [0.00596567, 0.8080528]
+    - [0.00656388, 0.7685131]
+    - [0.00696885, 0.7394348]
+    - [0.00776511, 0.6787387]
+    - [0.00836394, 0.6327429]
+    - [0.00906957, 0.580397]
+    - [0.0096171, 0.5389133]
+    - [0.01026754, 0.4892265]
+    - [0.01061694, 0.463247]
+    - [0.01086666, 0.444078]
+    - [0.0111677, 0.4211304]
+    - [0.01141757, 0.401342]
+    - [0.01176773, 0.373349]
+    - [0.01211747, 0.3467566]
+    - [0.01241771, 0.3226819]
+    - [0.01266726, 0.3029362]
+    - [0.0129174, 0.2829197]
+    - [0.01306716, 0.2704503]
+    - [0.01326701, 0.2541804]
+    - [0.01351748, 0.2345423]
+    - [0.01376707, 0.2164168]
+    - [0.01416631, 0.1895969]
+    - [0.01446716, 0.1722169]
+    - [0.01466701, 0.161456]
+    - [0.01491699, 0.1490071]
+    - [0.01541506, 0.1283673]
+    - [0.01561584, 0.1226785]
+    - [0.01581664, 0.1188427]
+    - [0.01596523, 0.1172305]
+    - [0.01736789, 0.1115053]
+    - [0.01757974, 0.1111158]
+    - [0.01796986, 0.1118008]
+    - [0.01823016, 0.1114712]
+    - [0.01867119, 0.1126387]
+    - [0.01938912, 0.1137552]
+    - [0.02102519, 0.115509]
+    - [0.02226571, 0.1161312]
+    - [0.02307553, 0.1171778]
+    - [0.02475481, 0.1203546]
+    - [0.02609086, 0.1214442]
+    - [0.02880104, 0.122433]
+    - [0.02993029, 0.1235161]
+    - [0.03106148, 0.1261766]
+    - [0.03151458, 0.1265451]
+    - [0.03327039, 0.1261919]
+    - [0.03603314, 0.1275958]
+    - [0.03769452, 0.1294754]
+    - [0.04283689, 0.1312264]
+    - [0.04382388, 0.1324973]
+    - [0.05816053, 0.1376024]
+    - [0.06645163, 0.1400526]
+    - [0.07926173, 0.1430313]
+    - [0.09321713, 0.1454947]
+    - [0.1039161, 0.1471224]
+    - [0.119358, 0.1490775]
+    - [0.1583274, 0.1534469]
+    - [0.2454323, 0.1627859]
+    - [0.3198165, 0.1726786]
+    - [0.3523942, 0.1769893]
+    - [0.3970152, 0.1829641]
+    - [0.4428443, 0.1884032]
+    - [0.4499649, 0.189]
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 0.386 atm
   temperature:
   - 339.3 K
   ignition-delay:
   - 196.7 ms
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 0.3872 atm
   temperature:
   - 347.2 K
   ignition-delay:
   - 86.5 ms
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 0.3874 atm
   temperature:
   - 347.8 K
   ignition-delay:
   - 91.2 ms
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 0.3891 atm
   temperature:
   - 358.2 K
   ignition-delay:
   - 61.3 ms
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 0.3893 atm
   temperature:
   - 358.4 K
   ignition-delay:
   - 58.2 ms
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 0.3903 atm
   temperature:
   - 365 K
   ignition-delay:
   - 34.3 ms
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 0.3902 atm
   temperature:
   - 364 K
   ignition-delay:
   - 34.7 ms
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 0.3929 atm
   temperature:
   - 380 K
   ignition-delay:
   - 21.8 ms
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 0.3934 atm
   temperature:
   - 382.8 K
   ignition-delay:
   - 19.1 ms
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 0.3945 atm
   temperature:
   - 389.5 K
   ignition-delay:
   - 11 ms
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 0.3946 atm
   temperature:
   - 389.7 K
   ignition-delay:
   - 11 ms
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
+...

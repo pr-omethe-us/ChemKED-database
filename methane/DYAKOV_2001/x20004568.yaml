@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -27,17 +28,12 @@ common-properties:
   - 298 K
   - uncertainty-type: absolute
     uncertainty: 2 K
+    uncertainty-sourcetype: reported
   pressure: &id002
   - 1 bar
   - uncertainty-type: absolute
     uncertainty: 100 Pa
-  evaluated-standard-deviation: &id003
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    value:
-    - 0.5 cm/s
+    uncertainty-sourcetype: reported
 datapoints:
 - composition:
     kind: mole fraction
@@ -56,9 +52,12 @@ datapoints:
       - 0.78067
   laminar-burning-velocity:
   - 13.2 cm/s
+  - evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   pressure: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -76,9 +75,12 @@ datapoints:
       - 0.77778
   laminar-burning-velocity:
   - 14.4 cm/s
+  - evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   pressure: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -96,9 +98,12 @@ datapoints:
       - 0.77491
   laminar-burning-velocity:
   - 15.29 cm/s
+  - evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   pressure: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -116,9 +121,12 @@ datapoints:
       - 0.77206
   laminar-burning-velocity:
   - 15.31 cm/s
+  - evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   pressure: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -136,9 +144,12 @@ datapoints:
       - 0.76923
   laminar-burning-velocity:
   - 13.99 cm/s
+  - evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   pressure: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -156,6 +167,10 @@ datapoints:
       - 0.76642
   laminar-burning-velocity:
   - 11.8 cm/s
+  - evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   pressure: *id002
-  evaluated-standard-deviation: *id003
+...

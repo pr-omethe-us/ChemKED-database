@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -31,6 +32,10 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 0.000146
+      - evaluated-standard-deviation: 1.621e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -43,15 +48,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.971254
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 1.621e-06 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -61,37 +57,22 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.099819
-      - 9.9528e-05
-    - - 0.11502
-      - 8.1511e-05
-    - - 0.13185
-      - 6.5496e-05
-    - - 0.1476
-      - 5.3132e-05
-    - - 0.16606
-      - 4.3507e-05
-    - - 0.18343
-      - 3.5966e-05
-    - - 0.2019
-      - 3.1174e-05
-    - - 0.21765
-      - 2.7023e-05
-    - - 0.23612
-      - 2.3422e-05
-    - - 0.2535
-      - 2.0888e-05
-    - - 0.27197
-      - 1.8104e-05
-    - - 0.28935
-      - 1.6769e-05
-    - - 0.30619
-      - 1.5386e-05
-    - - 0.3214
-      - 1.4118e-05
-    - - 0.33987
-      - 1.2589e-05
+    - [0.099819, 9.9528e-05]
+    - [0.11502, 8.1511e-05]
+    - [0.13185, 6.5496e-05]
+    - [0.1476, 5.3132e-05]
+    - [0.16606, 4.3507e-05]
+    - [0.18343, 3.5966e-05]
+    - [0.2019, 3.1174e-05]
+    - [0.21765, 2.7023e-05]
+    - [0.23612, 2.3422e-05]
+    - [0.2535, 2.0888e-05]
+    - [0.27197, 1.8104e-05]
+    - [0.28935, 1.6769e-05]
+    - [0.30619, 1.5386e-05]
+    - [0.3214, 1.4118e-05]
+    - [0.33987, 1.2589e-05]
   temperature: *id001
   pressure: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

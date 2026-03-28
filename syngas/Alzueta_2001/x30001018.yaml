@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -28,6 +29,10 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 0.000891
+      - evaluated-standard-deviation: 0.0001291
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -40,15 +45,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.963962
-  evaluated-standard-deviation: &id003
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.0001291 mole fraction
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -63,7 +59,6 @@ datapoints:
   - 1380.8 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -77,7 +72,6 @@ datapoints:
   - 1283.4 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -91,7 +85,6 @@ datapoints:
   - 1177.8 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -105,7 +98,6 @@ datapoints:
   - 1077.7 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -119,7 +111,6 @@ datapoints:
   - 1070.9 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -133,7 +124,6 @@ datapoints:
   - 1061.4 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -147,7 +137,6 @@ datapoints:
   - 1053.3 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -161,7 +150,6 @@ datapoints:
   - 1043.8 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -175,7 +163,6 @@ datapoints:
   - 1016.8 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -189,7 +176,6 @@ datapoints:
   - 980.2 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -203,4 +189,4 @@ datapoints:
   - 874.7 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
+...

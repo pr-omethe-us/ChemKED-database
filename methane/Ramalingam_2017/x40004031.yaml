@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -36,14 +37,7 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.180126
-  evaluated-standard-deviation: &id002
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: generic uncertainty
-    value:
-    - 0.1 unitless
-  ignition-type: &id003
+  ignition-type: &id002
     target: p;
     type: d/dt max
 datapoints:
@@ -53,6 +47,10 @@ datapoints:
   - 296.9 K
   ignition-delay:
   - 28.77 ms
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   time-histories:
   - time:
       units: s
@@ -62,73 +60,47 @@ datapoints:
       column: 1
     type: volume
     values:
-    - - 0.0
-      - 1.0
-    - - 0.0021368
-      - 0.9153116
-    - - 0.00365756
-      - 0.8137596
-    - - 0.00421186
-      - 0.7655787
-    - - 0.00598768
-      - 0.6149679
-    - - 0.00689306
-      - 0.5360355
-    - - 0.00816783
-      - 0.4202611
-    - - 0.00934379
-      - 0.3166923
-    - - 0.01069818
-      - 0.2015629
-    - - 0.01174749
-      - 0.1180541
-    - - 0.01386624
-      - 0.05946526
-    - - 0.0144432
-      - 0.05840134
-    - - 0.01519134
-      - 0.05810936
-    - - 0.01979356
-      - 0.06054597
-    - - 0.02274044
-      - 0.06172881
-    - - 0.02817201
-      - 0.06342666
-    - - 0.03174509
-      - 0.0644135
-    - - 0.03613275
-      - 0.06543762
-    - - 0.04283458
-      - 0.06681038
-    - - 0.05280218
-      - 0.06844749
-    - - 0.06330048
-      - 0.06987477
-    - - 0.07436028
-      - 0.07116162
-    - - 0.08648688
-      - 0.07238798
-    - - 0.09889628
-      - 0.073493
-    - - 0.1172248
-      - 0.07493701
-    - - 0.140015
-      - 0.07654851
-    - - 0.1624114
-      - 0.07797636
-    - - 0.1828038
-      - 0.07921898
-    - - 0.1828867
-      - 0.07921264
+    - [0.0, 1.0]
+    - [0.0021368, 0.9153116]
+    - [0.00365756, 0.8137596]
+    - [0.00421186, 0.7655787]
+    - [0.00598768, 0.6149679]
+    - [0.00689306, 0.5360355]
+    - [0.00816783, 0.4202611]
+    - [0.00934379, 0.3166923]
+    - [0.01069818, 0.2015629]
+    - [0.01174749, 0.1180541]
+    - [0.01386624, 0.05946526]
+    - [0.0144432, 0.05840134]
+    - [0.01519134, 0.05810936]
+    - [0.01979356, 0.06054597]
+    - [0.02274044, 0.06172881]
+    - [0.02817201, 0.06342666]
+    - [0.03174509, 0.0644135]
+    - [0.03613275, 0.06543762]
+    - [0.04283458, 0.06681038]
+    - [0.05280218, 0.06844749]
+    - [0.06330048, 0.06987477]
+    - [0.07436028, 0.07116162]
+    - [0.08648688, 0.07238798]
+    - [0.09889628, 0.073493]
+    - [0.1172248, 0.07493701]
+    - [0.140015, 0.07654851]
+    - [0.1624114, 0.07797636]
+    - [0.1828038, 0.07921898]
+    - [0.1828867, 0.07921264]
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - pressure:
   - 3.02 atm
   temperature:
   - 296.9 K
   ignition-delay:
   - 28.24 ms
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
+...

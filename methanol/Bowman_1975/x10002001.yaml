@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -33,14 +34,7 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.94
-  evaluated-standard-deviation: &id002
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: generic uncertainty
-    value:
-    - 0.2 unitless
-  ignition-type: &id003
+  ignition-type: &id002
     target: CO;O;
     type: max
 datapoints:
@@ -48,53 +42,72 @@ datapoints:
   - 1570 K
   ignition-delay:
   - 190 us
+  - evaluated-standard-deviation: '0.2'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   pressure:
   - 1.185 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - temperature:
   - 1595 K
   ignition-delay:
   - 150 us
+  - evaluated-standard-deviation: '0.2'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   pressure:
   - 1.322 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - temperature:
   - 1675 K
   ignition-delay:
   - 76 us
+  - evaluated-standard-deviation: '0.2'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   pressure:
   - 1.471 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - temperature:
   - 1790 K
   ignition-delay:
   - 45 us
+  - evaluated-standard-deviation: '0.2'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   pressure:
   - 1.616 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - temperature:
   - 1860 K
   ignition-delay:
   - 28 us
+  - evaluated-standard-deviation: '0.2'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   pressure:
   - 1.648 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - temperature:
   - 1925 K
   ignition-delay:
   - 18 us
+  - evaluated-standard-deviation: '0.2'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   pressure:
   - 1.738 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
+...

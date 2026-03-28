@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -30,10 +31,18 @@ common-properties:
       InChI: 1S/H2/h1H
       amount:
       - 0.0053
+      - evaluated-standard-deviation: 0.000245
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0106
+      - evaluated-standard-deviation: 0.000517
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
@@ -42,31 +51,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.98395
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: H2
-    InChI: 1S/H2/h1H
-    value:
-    - 0.000245 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.000124 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.000517 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: N2O
@@ -76,22 +60,14 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.13
-      - 0.01034
-    - - 0.169
-      - 0.01012
-    - - 0.213
-      - 0.00997
-    - - 0.258
-      - 0.00982
-    - - 0.302
-      - 0.00971
-    - - 0.348
-      - 0.00961
-    - - 0.392
-      - 0.00947
-    - - 0.438
-      - 0.00931
+    - [0.13, 0.01034]
+    - [0.169, 0.01012]
+    - [0.213, 0.00997]
+    - [0.258, 0.00982]
+    - [0.302, 0.00971]
+    - [0.348, 0.00961]
+    - [0.392, 0.00947]
+    - [0.438, 0.00931]
   - species-name: H2
     InChI: 1S/H2/h1H
     quantity:
@@ -99,22 +75,14 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.13
-      - 0.0049
-    - - 0.169
-      - 0.0048
-    - - 0.213
-      - 0.00474
-    - - 0.258
-      - 0.0046
-    - - 0.302
-      - 0.00449
-    - - 0.348
-      - 0.00442
-    - - 0.392
-      - 0.00432
-    - - 0.438
-      - 0.00412
+    - [0.13, 0.0049]
+    - [0.169, 0.0048]
+    - [0.213, 0.00474]
+    - [0.258, 0.0046]
+    - [0.302, 0.00449]
+    - [0.348, 0.00442]
+    - [0.392, 0.00432]
+    - [0.438, 0.00412]
   - species-name: H2O
     InChI: 1S/H2O/h1H2
     quantity:
@@ -122,23 +90,15 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.13
-      - 0.000423
-    - - 0.169
-      - 0.000542
-    - - 0.213
-      - 0.000644
-    - - 0.258
-      - 0.000745
-    - - 0.302
-      - 0.000864
-    - - 0.348
-      - 0.000899
-    - - 0.392
-      - 0.001118
-    - - 0.438
-      - 0.001237
+    - [0.13, 0.000423]
+    - [0.169, 0.000542]
+    - [0.213, 0.000644]
+    - [0.258, 0.000745]
+    - [0.302, 0.000864]
+    - [0.348, 0.000899]
+    - [0.392, 0.001118]
+    - [0.438, 0.001237]
   pressure: *id001
   temperature: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

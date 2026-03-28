@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -22,14 +23,19 @@ common-properties:
   - 1 atm
   temperature: &id002
   - 1000 K
-  equivalence-ratio: 0.1
-  composition: &id003
+  equivalence-ratio: &id003
+  - 0.1 dimensionless
+  composition: &id004
     kind: mole percent
     species:
     - species-name: CO
       InChI: 1S/CO/c1-2
       amount:
       - 0.96
+      - evaluated-standard-deviation: 0.028743794
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
@@ -46,15 +52,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.934325
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.028743794 unitless
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -64,46 +61,27 @@ datapoints:
     time:
       units: ms
     values:
-    - - 5.3
-      - 0.786
-    - - 8.2
-      - 0.717
-    - - 12.4
-      - 0.65
-    - - 17.7
-      - 0.589
-    - - 23.0
-      - 0.526
-    - - 28.4
-      - 0.478
-    - - 33.7
-      - 0.428
-    - - 38.6
-      - 0.375
-    - - 43.7
-      - 0.335
-    - - 48.8
-      - 0.293
-    - - 53.9
-      - 0.254
-    - - 58.9
-      - 0.226
-    - - 63.8
-      - 0.197
-    - - 68.7
-      - 0.172
-    - - 73.6
-      - 0.155
-    - - 78.9
-      - 0.136
-    - - 84.2
-      - 0.125
-    - - 89.3
-      - 0.111
-    - - 94.2
-      - 0.102
+    - [5.3, 0.786]
+    - [8.2, 0.717]
+    - [12.4, 0.65]
+    - [17.7, 0.589]
+    - [23.0, 0.526]
+    - [28.4, 0.478]
+    - [33.7, 0.428]
+    - [38.6, 0.375]
+    - [43.7, 0.335]
+    - [48.8, 0.293]
+    - [53.9, 0.254]
+    - [58.9, 0.226]
+    - [63.8, 0.197]
+    - [68.7, 0.172]
+    - [73.6, 0.155]
+    - [78.9, 0.136]
+    - [84.2, 0.125]
+    - [89.3, 0.111]
+    - [94.2, 0.102]
   pressure: *id001
   temperature: *id002
-  equivalence-ratio: 0.1
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id003
+  composition: *id004
+...

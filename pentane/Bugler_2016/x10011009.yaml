@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: P. Wang and T. Nagy
 file-version: 0
@@ -19,8 +20,9 @@ apparatus:
   facility: ''
   mode: reflected shock
 common-properties:
-  equivalence-ratio: 2.0
-  composition: &id001
+  equivalence-ratio: &id001
+  - 2 dimensionless
+  composition: &id002
     kind: mole fraction
     species:
     - species-name: NC5H12
@@ -35,13 +37,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.750593824
-  evaluated-standard-deviation: &id002
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: generic uncertainty
-    value:
-    - 0.1 unitless
   ignition-type: &id003
     target: p;
     type: d/dt max
@@ -52,9 +47,12 @@ datapoints:
   - 1080 K
   ignition-delay:
   - 1419 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 9.9 atm
@@ -62,9 +60,12 @@ datapoints:
   - 1108 K
   ignition-delay:
   - 917 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 9.85 atm
@@ -72,9 +73,12 @@ datapoints:
   - 1123 K
   ignition-delay:
   - 848 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 9.27 atm
@@ -82,9 +86,12 @@ datapoints:
   - 1198 K
   ignition-delay:
   - 429 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 8.71 atm
@@ -92,9 +99,12 @@ datapoints:
   - 1212 K
   ignition-delay:
   - 380 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 8.63 atm
@@ -102,9 +112,12 @@ datapoints:
   - 1216 K
   ignition-delay:
   - 335 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 8.65 atm
@@ -112,9 +125,12 @@ datapoints:
   - 1218 K
   ignition-delay:
   - 360 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 8.68 atm
@@ -122,9 +138,12 @@ datapoints:
   - 1221 K
   ignition-delay:
   - 334 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 8.37 atm
@@ -132,9 +151,12 @@ datapoints:
   - 1248 K
   ignition-delay:
   - 280 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 8.25 atm
@@ -142,9 +164,12 @@ datapoints:
   - 1280 K
   ignition-delay:
   - 195 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 7.82 atm
@@ -152,7 +177,11 @@ datapoints:
   - 1324 K
   ignition-delay:
   - 137 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
+...

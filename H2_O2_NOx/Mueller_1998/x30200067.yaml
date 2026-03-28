@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -30,6 +31,10 @@ common-properties:
       InChI: 1S/H2/h1H
       amount:
       - 0.01
+      - evaluated-standard-deviation: 0.000468
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -42,15 +47,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.969893
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: H2
-    InChI: 1S/H2/h1H
-    value:
-    - 0.000468 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: H2
@@ -60,43 +56,25 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.09
-      - 0.009363
-    - - 0.122
-      - 0.009351
-    - - 0.166
-      - 0.009236
-    - - 0.223
-      - 0.009186
-    - - 0.297
-      - 0.009046
-    - - 0.386
-      - 0.00874
-    - - 0.487
-      - 0.00846
-    - - 0.593
-      - 0.008051
-    - - 0.7
-      - 0.007886
-    - - 0.809
-      - 0.007696
-    - - 0.914
-      - 0.007288
-    - - 1.021
-      - 0.006495
-    - - 1.128
-      - 0.006125
-    - - 1.235
-      - 0.005423
-    - - 1.34
-      - 0.004848
-    - - 1.445
-      - 0.004171
-    - - 1.552
-      - 0.003084
-    - - 1.66
-      - 0.001984
+    - [0.09, 0.009363]
+    - [0.122, 0.009351]
+    - [0.166, 0.009236]
+    - [0.223, 0.009186]
+    - [0.297, 0.009046]
+    - [0.386, 0.00874]
+    - [0.487, 0.00846]
+    - [0.593, 0.008051]
+    - [0.7, 0.007886]
+    - [0.809, 0.007696]
+    - [0.914, 0.007288]
+    - [1.021, 0.006495]
+    - [1.128, 0.006125]
+    - [1.235, 0.005423]
+    - [1.34, 0.004848]
+    - [1.445, 0.004171]
+    - [1.552, 0.003084]
+    - [1.66, 0.001984]
   pressure: *id001
   temperature: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

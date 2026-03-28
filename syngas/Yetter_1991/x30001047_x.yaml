@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -31,6 +32,10 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 0.00895
+      - evaluated-standard-deviation: 8.914e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -43,15 +48,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.97432
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 8.914e-05 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -61,37 +57,22 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.10223
-      - 0.0086417
-    - - 0.12078
-      - 0.0078832
-    - - 0.14269
-      - 0.0065563
-    - - 0.16602
-      - 0.0048951
-    - - 0.1889
-      - 0.0034122
-    - - 0.21191
-      - 0.0023527
-    - - 0.23349
-      - 0.0015606
-    - - 0.25617
-      - 0.0010582
-    - - 0.27841
-      - 0.00074525
-    - - 0.30017
-      - 0.00054373
-    - - 0.32197
-      - 0.00044248
-    - - 0.34681
-      - 0.00034109
-    - - 0.36558
-      - 0.00029569
-    - - 0.38688
-      - 0.00025017
-    - - 0.40869
-      - 0.00020463
+    - [0.10223, 0.0086417]
+    - [0.12078, 0.0078832]
+    - [0.14269, 0.0065563]
+    - [0.16602, 0.0048951]
+    - [0.1889, 0.0034122]
+    - [0.21191, 0.0023527]
+    - [0.23349, 0.0015606]
+    - [0.25617, 0.0010582]
+    - [0.27841, 0.00074525]
+    - [0.30017, 0.00054373]
+    - [0.32197, 0.00044248]
+    - [0.34681, 0.00034109]
+    - [0.36558, 0.00029569]
+    - [0.38688, 0.00025017]
+    - [0.40869, 0.00020463]
   temperature: *id001
   pressure: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

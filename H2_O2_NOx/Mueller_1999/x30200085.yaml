@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -29,6 +30,10 @@ common-properties:
       InChI: 1S/H2/h1H
       amount:
       - 0.01
+      - evaluated-standard-deviation: 0.000484
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -41,15 +46,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.96979
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: H2
-    InChI: 1S/H2/h1H
-    value:
-    - 0.000484 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: H2
@@ -59,37 +55,22 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.162
-      - 0.009273
-    - - 0.179
-      - 0.008597
-    - - 0.201
-      - 0.007922
-    - - 0.227
-      - 0.007271
-    - - 0.264
-      - 0.006545
-    - - 0.307
-      - 0.005519
-    - - 0.355
-      - 0.004619
-    - - 0.406
-      - 0.003643
-    - - 0.456
-      - 0.002842
-    - - 0.507
-      - 0.002067
-    - - 0.557
-      - 0.001567
-    - - 0.609
-      - 0.001293
-    - - 0.658
-      - 0.001194
-    - - 0.709
-      - 0.00107
-    - - 0.759
-      - 0.001021
+    - [0.162, 0.009273]
+    - [0.179, 0.008597]
+    - [0.201, 0.007922]
+    - [0.227, 0.007271]
+    - [0.264, 0.006545]
+    - [0.307, 0.005519]
+    - [0.355, 0.004619]
+    - [0.406, 0.003643]
+    - [0.456, 0.002842]
+    - [0.507, 0.002067]
+    - [0.557, 0.001567]
+    - [0.609, 0.001293]
+    - [0.658, 0.001194]
+    - [0.709, 0.00107]
+    - [0.759, 0.001021]
   pressure: *id001
   temperature: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -31,6 +32,10 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 0.01
+      - evaluated-standard-deviation: 0.0001
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -43,15 +48,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.9785
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.0001 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -61,43 +57,25 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.0
-      - 0.01
-    - - 0.043126
-      - 0.0098749
-    - - 0.073898
-      - 0.009658
-    - - 0.097273
-      - 0.0094407
-    - - 0.12804
-      - 0.0092055
-    - - 0.16744
-      - 0.0089527
-    - - 0.20929
-      - 0.0086818
-    - - 0.25487
-      - 0.0084839
-    - - 0.30167
-      - 0.0082496
-    - - 0.34601
-      - 0.0080517
-    - - 0.39282
-      - 0.0078903
-    - - 0.44084
-      - 0.0076197
-    - - 0.48519
-      - 0.0074582
-    - - 0.53077
-      - 0.0072786
-    - - 0.57758
-      - 0.0070807
-    - - 0.62441
-      - 0.006974
-    - - 0.67121
-      - 0.0067398
-    - - 0.71794
-      - 0.0062323
+    - [0.0, 0.01]
+    - [0.043126, 0.0098749]
+    - [0.073898, 0.009658]
+    - [0.097273, 0.0094407]
+    - [0.12804, 0.0092055]
+    - [0.16744, 0.0089527]
+    - [0.20929, 0.0086818]
+    - [0.25487, 0.0084839]
+    - [0.30167, 0.0082496]
+    - [0.34601, 0.0080517]
+    - [0.39282, 0.0078903]
+    - [0.44084, 0.0076197]
+    - [0.48519, 0.0074582]
+    - [0.53077, 0.0072786]
+    - [0.57758, 0.0070807]
+    - [0.62441, 0.006974]
+    - [0.67121, 0.0067398]
+    - [0.71794, 0.0062323]
   temperature: *id001
   pressure: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

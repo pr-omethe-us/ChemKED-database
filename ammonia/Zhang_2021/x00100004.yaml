@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -28,8 +29,9 @@ common-properties:
   - 1 atm
   residence-time: &id003
   - 1 s
-  equivalence-ratio: 1.0
-  composition: &id004
+  equivalence-ratio: &id004
+  - 1 dimensionless
+  composition: &id005
     kind: mole fraction
     species:
     - species-name: NH3
@@ -48,23 +50,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 99.565
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 5e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 5e-06 mole fraction
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -75,48 +60,43 @@ datapoints:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 5.0e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: NH3
       InChI: 1S/H3N/h1H3
       amount:
       - 0.001833
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 9.3e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   temperature:
   - 900 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 5e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 9.3e-05 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
-  equivalence-ratio: 1.0
-  composition: *id004
+  equivalence-ratio: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -126,48 +106,43 @@ datapoints:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 5.0e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: NH3
       InChI: 1S/H3N/h1H3
       amount:
       - 0.001829
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 9.2e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   temperature:
   - 952 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 5e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 9.2e-05 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
-  equivalence-ratio: 1.0
-  composition: *id004
+  equivalence-ratio: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -177,48 +152,43 @@ datapoints:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 5.0e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: NH3
       InChI: 1S/H3N/h1H3
       amount:
       - 0.001783
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 9.0e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   temperature:
   - 1000 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 5e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 9e-05 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
-  equivalence-ratio: 1.0
-  composition: *id004
+  equivalence-ratio: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -228,48 +198,43 @@ datapoints:
       - 7.2e-05
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 5.0e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: NH3
       InChI: 1S/H3N/h1H3
       amount:
       - 0.001737
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 8.8e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   temperature:
   - 1060 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 5e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 8.8e-05 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
-  equivalence-ratio: 1.0
-  composition: *id004
+  equivalence-ratio: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -279,48 +244,43 @@ datapoints:
       - 0.000241
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 1.5e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: NH3
       InChI: 1S/H3N/h1H3
       amount:
       - 0.001717
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 8.7e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 1.0e-06
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   temperature:
   - 1100 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 1.5e-05 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 8.7e-05 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
-  equivalence-ratio: 1.0
-  composition: *id004
+  equivalence-ratio: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -330,48 +290,43 @@ datapoints:
       - 0.000651
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 4.1e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: NH3
       InChI: 1S/H3N/h1H3
       amount:
       - 0.001527
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 7.7e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 3.0e-06
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   temperature:
   - 1150 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 4.1e-05 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 7.7e-05 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
-  equivalence-ratio: 1.0
-  composition: *id004
+  equivalence-ratio: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -381,48 +336,43 @@ datapoints:
       - 0.001
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 6.3e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: NH3
       InChI: 1S/H3N/h1H3
       amount:
       - 0.001183
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 6.0e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.0
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 5.0e-06
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   temperature:
   - 1180 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 6.3e-05 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 6e-05 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
-  equivalence-ratio: 1.0
-  composition: *id004
+  equivalence-ratio: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -432,48 +382,43 @@ datapoints:
       - 0.00161
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 0.000102
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: NH3
       InChI: 1S/H3N/h1H3
       amount:
       - 0.000743
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 3.8e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 3.0e-06
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 1.2e-05
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   temperature:
   - 1210 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.000102 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 3.8e-05 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
-  equivalence-ratio: 1.0
-  composition: *id004
+  equivalence-ratio: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -483,48 +428,43 @@ datapoints:
       - 0.00224
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 0.000142
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: NH3
       InChI: 1S/H3N/h1H3
       amount:
       - 0.000289
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 1.5e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 6.0e-06
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 2.4e-05
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   temperature:
   - 1240 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.000142 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 1.5e-05 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
-  equivalence-ratio: 1.0
-  composition: *id004
+  equivalence-ratio: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -534,45 +474,41 @@ datapoints:
       - 0.00255
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 0.000162
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: NH3
       InChI: 1S/H3N/h1H3
       amount:
       - 4.6e-05
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 5.0e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 1.6e-05
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 3.5e-05
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   temperature:
   - 1281 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.000162 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 5e-06 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
-  equivalence-ratio: 1.0
-  composition: *id004
+  equivalence-ratio: *id004
+  composition: *id005
+...

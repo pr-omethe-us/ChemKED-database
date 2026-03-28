@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -36,15 +37,10 @@ common-properties:
       InChI: 1S/NO/c1-2
       amount:
       - 0.5
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.0244 mole fraction
+      - evaluated-standard-deviation: 0.0244
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -60,7 +56,6 @@ datapoints:
   pressure: *id001
   flow-rate: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -75,7 +70,6 @@ datapoints:
   pressure: *id001
   flow-rate: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -90,7 +84,6 @@ datapoints:
   pressure: *id001
   flow-rate: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -105,7 +98,6 @@ datapoints:
   pressure: *id001
   flow-rate: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -120,7 +112,6 @@ datapoints:
   pressure: *id001
   flow-rate: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -135,7 +126,6 @@ datapoints:
   pressure: *id001
   flow-rate: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -150,7 +140,6 @@ datapoints:
   pressure: *id001
   flow-rate: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -165,7 +154,6 @@ datapoints:
   pressure: *id001
   flow-rate: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -180,4 +168,4 @@ datapoints:
   pressure: *id001
   flow-rate: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

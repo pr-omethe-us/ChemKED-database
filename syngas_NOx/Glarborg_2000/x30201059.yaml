@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -32,10 +33,18 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 5.0
+      - evaluated-standard-deviation: 0.029154759
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.0009
+      - evaluated-standard-deviation: 0.025
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -48,23 +57,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 87.91
-  evaluated-standard-deviation: &id003
-  - reference: composition
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.029154759 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.025 unitless
 datapoints:
 - measured-composition:
     kind: mole percent
@@ -75,21 +67,23 @@ datapoints:
       - 1.8113
       - uncertainty-type: absolute
         uncertainty: 0.0543
+        uncertainty-sourcetype: calculated
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.00078
       - uncertainty-type: absolute
         uncertainty: 2.3e-05
+        uncertainty-sourcetype: calculated
   temperature:
   - 1473 K
   - uncertainty-type: absolute
     uncertainty: 20 K
+    uncertainty-sourcetype: reported
   residence-time:
   - 0.1901 s
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole percent
     species:
@@ -99,21 +93,23 @@ datapoints:
       - 1.88
       - uncertainty-type: absolute
         uncertainty: 0.0564
+        uncertainty-sourcetype: calculated
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.000761
       - uncertainty-type: absolute
         uncertainty: 2.3e-05
+        uncertainty-sourcetype: calculated
   temperature:
   - 1573 K
   - uncertainty-type: absolute
     uncertainty: 20 K
+    uncertainty-sourcetype: reported
   residence-time:
   - 0.178 s
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole percent
     species:
@@ -123,21 +119,23 @@ datapoints:
       - 1.9539
       - uncertainty-type: absolute
         uncertainty: 0.0586
+        uncertainty-sourcetype: calculated
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.000751
       - uncertainty-type: absolute
         uncertainty: 2.3e-05
+        uncertainty-sourcetype: calculated
   temperature:
   - 1673 K
   - uncertainty-type: absolute
     uncertainty: 20 K
+    uncertainty-sourcetype: reported
   residence-time:
   - 0.1674 s
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole percent
     species:
@@ -147,18 +145,21 @@ datapoints:
       - 2.9574
       - uncertainty-type: absolute
         uncertainty: 0.0887
+        uncertainty-sourcetype: calculated
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.000746
       - uncertainty-type: absolute
         uncertainty: 2.2e-05
+        uncertainty-sourcetype: calculated
   temperature:
   - 1773 K
   - uncertainty-type: absolute
     uncertainty: 20 K
+    uncertainty-sourcetype: reported
   residence-time:
   - 0.1579 s
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
+...

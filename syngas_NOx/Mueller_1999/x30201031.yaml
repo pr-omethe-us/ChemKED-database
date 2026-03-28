@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -26,6 +27,7 @@ common-properties:
   - 950 K
   - uncertainty-type: absolute
     uncertainty: 3 K
+    uncertainty-sourcetype: reported
   composition: &id003
     kind: mole percent
     species:
@@ -33,6 +35,10 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 0.54
+      - evaluated-standard-deviation: 0.025
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -45,27 +51,14 @@ common-properties:
       InChI: 1S/NO/c1-2
       amount:
       - 4.1e-05
+      - evaluated-standard-deviation: 5.0e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
       - 0.982359
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.025 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 5e-06 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -75,44 +68,25 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.064
-      - 0.005071
-    - - 0.09
-      - 0.004997
-    - - 0.119
-      - 0.004923
-    - - 0.162
-      - 0.004824
-    - - 0.215
-      - 0.004786
-    - - 0.279
-      - 0.004736
-    - - 0.351
-      - 0.004613
-    - - 0.43
-      - 0.004513
-    - - 0.508
-      - 0.004426
-    - - 0.585
-      - 0.004315
-    - - 0.664
-      - 0.004203
-    - - 0.742
-      - 0.004079
-    - - 0.819
-      - 0.003968
-    - - 0.899
-      - 0.003807
-    - - 0.977
-      - 0.003782
-    - - 1.055
-      - 0.003546
-    - - 1.135
-      - 0.003447
-    - - 1.212
-      - 0.003274
-    - - 1.291
-      - 0.003175
+    - [0.064, 0.005071]
+    - [0.09, 0.004997]
+    - [0.119, 0.004923]
+    - [0.162, 0.004824]
+    - [0.215, 0.004786]
+    - [0.279, 0.004736]
+    - [0.351, 0.004613]
+    - [0.43, 0.004513]
+    - [0.508, 0.004426]
+    - [0.585, 0.004315]
+    - [0.664, 0.004203]
+    - [0.742, 0.004079]
+    - [0.819, 0.003968]
+    - [0.899, 0.003807]
+    - [0.977, 0.003782]
+    - [1.055, 0.003546]
+    - [1.135, 0.003447]
+    - [1.212, 0.003274]
+    - [1.291, 0.003175]
   - species-name: 'NO'
     InChI: 1S/NO/c1-2
     quantity:
@@ -120,45 +94,26 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.064
-      - 1.4e-05
-    - - 0.09
-      - 1.4e-05
-    - - 0.119
-      - 1.4e-05
-    - - 0.162
-      - 1.4e-05
-    - - 0.215
-      - 1.4e-05
-    - - 0.279
-      - 1.4e-05
-    - - 0.351
-      - 1.5e-05
-    - - 0.43
-      - 1.5e-05
-    - - 0.508
-      - 1.5e-05
-    - - 0.585
-      - 1.6e-05
-    - - 0.664
-      - 1.5e-05
-    - - 0.742
-      - 1.6e-05
-    - - 0.819
-      - 1.6e-05
-    - - 0.899
-      - 1.6e-05
-    - - 0.977
-      - 1.6e-05
-    - - 1.055
-      - 1.7e-05
-    - - 1.135
-      - 1.7e-05
-    - - 1.212
-      - 1.8e-05
-    - - 1.291
-      - 1.8e-05
+    - [0.064, 1.4e-05]
+    - [0.09, 1.4e-05]
+    - [0.119, 1.4e-05]
+    - [0.162, 1.4e-05]
+    - [0.215, 1.4e-05]
+    - [0.279, 1.4e-05]
+    - [0.351, 1.5e-05]
+    - [0.43, 1.5e-05]
+    - [0.508, 1.5e-05]
+    - [0.585, 1.6e-05]
+    - [0.664, 1.5e-05]
+    - [0.742, 1.6e-05]
+    - [0.819, 1.6e-05]
+    - [0.899, 1.6e-05]
+    - [0.977, 1.6e-05]
+    - [1.055, 1.7e-05]
+    - [1.135, 1.7e-05]
+    - [1.212, 1.8e-05]
+    - [1.291, 1.8e-05]
   pressure: *id001
   temperature: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

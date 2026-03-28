@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -33,27 +34,14 @@ common-properties:
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.00074
+      - evaluated-standard-deviation: 2.8e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
       - 0.99376
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 3.6e-05 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2.8e-05 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: 'NO'
@@ -63,30 +51,18 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.175
-      - 0.0001936
-    - - 0.191
-      - 0.0002502
-    - - 0.213
-      - 0.0002931
-    - - 0.24
-      - 0.0003377
-    - - 0.276
-      - 0.0004011
-    - - 0.321
-      - 0.0004645
-    - - 0.37
-      - 0.0005245
-    - - 0.423
-      - 0.0005879
-    - - 0.476
-      - 0.0006307
-    - - 0.529
-      - 0.0006701
-    - - 0.583
-      - 0.0006923
-    - - 0.637
-      - 0.0007128
+    - [0.175, 0.0001936]
+    - [0.191, 0.0002502]
+    - [0.213, 0.0002931]
+    - [0.24, 0.0003377]
+    - [0.276, 0.0004011]
+    - [0.321, 0.0004645]
+    - [0.37, 0.0005245]
+    - [0.423, 0.0005879]
+    - [0.476, 0.0006307]
+    - [0.529, 0.0006701]
+    - [0.583, 0.0006923]
+    - [0.637, 0.0007128]
   - species-name: NO2
     InChI: 1S/NO2/c2-1-3
     quantity:
@@ -94,31 +70,19 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.175
-      - 0.0005661
-    - - 0.191
-      - 0.0004992
-    - - 0.213
-      - 0.0004545
-    - - 0.24
-      - 0.0004115
-    - - 0.276
-      - 0.0003428
-    - - 0.321
-      - 0.0002757
-    - - 0.37
-      - 0.0002138
-    - - 0.423
-      - 0.0001484
-    - - 0.476
-      - 0.0001106
-    - - 0.529
-      - 6.58e-05
-    - - 0.583
-      - 4.17e-05
-    - - 0.637
-      - 2.1e-05
+    - [0.175, 0.0005661]
+    - [0.191, 0.0004992]
+    - [0.213, 0.0004545]
+    - [0.24, 0.0004115]
+    - [0.276, 0.0003428]
+    - [0.321, 0.0002757]
+    - [0.37, 0.0002138]
+    - [0.423, 0.0001484]
+    - [0.476, 0.0001106]
+    - [0.529, 6.58e-05]
+    - [0.583, 4.17e-05]
+    - [0.637, 2.1e-05]
   pressure: *id001
   temperature: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

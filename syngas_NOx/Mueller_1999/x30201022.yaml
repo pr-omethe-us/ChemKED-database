@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -26,6 +27,7 @@ common-properties:
   - 950 K
   - uncertainty-type: absolute
     uncertainty: 3 K
+    uncertainty-sourcetype: reported
   composition: &id003
     kind: mole percent
     species:
@@ -33,6 +35,10 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 0.52
+      - evaluated-standard-deviation: 0.025
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -45,35 +51,14 @@ common-properties:
       InChI: 1S/NO/c1-2
       amount:
       - 0.000107
+      - evaluated-standard-deviation: 5.0e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
       - 0.982293
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.025 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 5e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 5e-06 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -83,42 +68,24 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.061
-      - 0.00512
-    - - 0.086
-      - 0.005
-    - - 0.118
-      - 0.0049
-    - - 0.16
-      - 0.0047
-    - - 0.213
-      - 0.00451
-    - - 0.28
-      - 0.00425
-    - - 0.356
-      - 0.00408
-    - - 0.434
-      - 0.00387
-    - - 0.514
-      - 0.00366
-    - - 0.59
-      - 0.00353
-    - - 0.67
-      - 0.00329
-    - - 0.748
-      - 0.00299
-    - - 0.827
-      - 0.00286
-    - - 0.907
-      - 0.00266
-    - - 0.985
-      - 0.00253
-    - - 1.064
-      - 0.00237
-    - - 1.144
-      - 0.00224
-    - - 1.223
-      - 0.00203
+    - [0.061, 0.00512]
+    - [0.086, 0.005]
+    - [0.118, 0.0049]
+    - [0.16, 0.0047]
+    - [0.213, 0.00451]
+    - [0.28, 0.00425]
+    - [0.356, 0.00408]
+    - [0.434, 0.00387]
+    - [0.514, 0.00366]
+    - [0.59, 0.00353]
+    - [0.67, 0.00329]
+    - [0.748, 0.00299]
+    - [0.827, 0.00286]
+    - [0.907, 0.00266]
+    - [0.985, 0.00253]
+    - [1.064, 0.00237]
+    - [1.144, 0.00224]
+    - [1.223, 0.00203]
   - species-name: 'NO'
     InChI: 1S/NO/c1-2
     quantity:
@@ -126,42 +93,24 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.061
-      - 8.1e-05
-    - - 0.086
-      - 7.8e-05
-    - - 0.118
-      - 7.8e-05
-    - - 0.16
-      - 7.6e-05
-    - - 0.213
-      - 7.7e-05
-    - - 0.28
-      - 7.7e-05
-    - - 0.356
-      - 7.6e-05
-    - - 0.434
-      - 7.7e-05
-    - - 0.514
-      - 7.7e-05
-    - - 0.59
-      - 7.8e-05
-    - - 0.67
-      - 8.1e-05
-    - - 0.748
-      - 8.1e-05
-    - - 0.827
-      - 7.8e-05
-    - - 0.907
-      - 7.9e-05
-    - - 0.985
-      - 8.0e-05
-    - - 1.064
-      - 8.1e-05
-    - - 1.144
-      - 8.0e-05
-    - - 1.223
-      - 8.1e-05
+    - [0.061, 8.1e-05]
+    - [0.086, 7.8e-05]
+    - [0.118, 7.8e-05]
+    - [0.16, 7.6e-05]
+    - [0.213, 7.7e-05]
+    - [0.28, 7.7e-05]
+    - [0.356, 7.6e-05]
+    - [0.434, 7.7e-05]
+    - [0.514, 7.7e-05]
+    - [0.59, 7.8e-05]
+    - [0.67, 8.1e-05]
+    - [0.748, 8.1e-05]
+    - [0.827, 7.8e-05]
+    - [0.907, 7.9e-05]
+    - [0.985, 8.0e-05]
+    - [1.064, 8.1e-05]
+    - [1.144, 8.0e-05]
+    - [1.223, 8.1e-05]
   - species-name: NO2
     InChI: 1S/NO2/c2-1-3
     quantity:
@@ -169,43 +118,25 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.061
-      - 2.8e-05
-    - - 0.086
-      - 3.1e-05
-    - - 0.118
-      - 3.2e-05
-    - - 0.16
-      - 3.2e-05
-    - - 0.213
-      - 3.2e-05
-    - - 0.28
-      - 3.0e-05
-    - - 0.356
-      - 3.1e-05
-    - - 0.434
-      - 2.9e-05
-    - - 0.514
-      - 3.0e-05
-    - - 0.59
-      - 2.9e-05
-    - - 0.67
-      - 2.8e-05
-    - - 0.748
-      - 2.6e-05
-    - - 0.827
-      - 2.7e-05
-    - - 0.907
-      - 2.6e-05
-    - - 0.985
-      - 2.6e-05
-    - - 1.064
-      - 2.6e-05
-    - - 1.144
-      - 2.5e-05
-    - - 1.223
-      - 2.5e-05
+    - [0.061, 2.8e-05]
+    - [0.086, 3.1e-05]
+    - [0.118, 3.2e-05]
+    - [0.16, 3.2e-05]
+    - [0.213, 3.2e-05]
+    - [0.28, 3.0e-05]
+    - [0.356, 3.1e-05]
+    - [0.434, 2.9e-05]
+    - [0.514, 3.0e-05]
+    - [0.59, 2.9e-05]
+    - [0.67, 2.8e-05]
+    - [0.748, 2.6e-05]
+    - [0.827, 2.7e-05]
+    - [0.907, 2.6e-05]
+    - [0.985, 2.6e-05]
+    - [1.064, 2.6e-05]
+    - [1.144, 2.5e-05]
+    - [1.223, 2.5e-05]
   pressure: *id001
   temperature: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

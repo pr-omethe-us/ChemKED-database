@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -37,18 +38,15 @@ common-properties:
       InChI: 1S/He
       amount:
       - 0.6519
-  evaluated-standard-deviation: &id003
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    value:
-    - 2 cm/s
 datapoints:
 - laminar-burning-velocity:
   - 58.2 cm/s
+  - evaluated-standard-deviation: 2 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   pressure:
   - 5 atm
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
+...

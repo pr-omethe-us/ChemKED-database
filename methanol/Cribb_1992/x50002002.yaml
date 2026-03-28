@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -30,6 +31,10 @@ common-properties:
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
       - 0.002
+      - evaluated-standard-deviation: 0.00166
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: reported
+        evaluated-standard-deviation-method: reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -42,47 +47,6 @@ common-properties:
       InChI: 1S/Ne
       amount:
       - 0.99
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    method: reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.000713 mole faction
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    method: reported uncertainty
-    species-name: CH3OH
-    InChI: 1S/CH4O/c1-2/h2H,1H3
-    value:
-    - 0.00166 mole faction
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    method: reported uncertainty
-    species-name: CH2O
-    InChI: 1S/CH2O/c1-2/h1H2
-    value:
-    - 0.000219 mole faction
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    method: reported uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.000586 mole faction
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    method: reported uncertainty
-    species-name: CO2
-    InChI: 1S/CO2/c2-1-3
-    value:
-    - 3.67e-05 mole faction
 datapoints:
 - concentration-profiles:
   - species-name: CH3OH
@@ -92,34 +56,20 @@ datapoints:
     time:
       units: us
     values:
-    - - 10.0
-      - 3.32805e-09
-    - - 20.0
-      - 3.02377e-09
-    - - 30.0
-      - 2.70048e-09
-    - - 40.0
-      - 2.43423e-09
-    - - 50.0
-      - 2.12995e-09
-    - - 60.0
-      - 1.93978e-09
-    - - 70.0
-      - 1.67353e-09
-    - - 80.0
-      - 1.42631e-09
-    - - 90.0
-      - 1.36926e-09
-    - - 100.0
-      - 1.16006e-09
-    - - 110.0
-      - 1.02694e-09
-    - - 120.0
-      - 9.12837e-10
-    - - 130.0
-      - 8.1775e-10
-    - - 140.0
-      - 7.03645e-10
+    - [10.0, 3.32805e-09]
+    - [20.0, 3.02377e-09]
+    - [30.0, 2.70048e-09]
+    - [40.0, 2.43423e-09]
+    - [50.0, 2.12995e-09]
+    - [60.0, 1.93978e-09]
+    - [70.0, 1.67353e-09]
+    - [80.0, 1.42631e-09]
+    - [90.0, 1.36926e-09]
+    - [100.0, 1.16006e-09]
+    - [110.0, 1.02694e-09]
+    - [120.0, 9.12837e-10]
+    - [130.0, 8.1775e-10]
+    - [140.0, 7.03645e-10]
   - species-name: H2O
     InChI: 1S/H2O/h1H2
     quantity:
@@ -127,34 +77,20 @@ datapoints:
     time:
       units: us
     values:
-    - - 10.0
-      - 1.33122e-10
-    - - 20.0
-      - 3.80349e-10
-    - - 30.0
-      - 6.27575e-10
-    - - 40.0
-      - 9.31854e-10
-    - - 50.0
-      - 1.23613e-09
-    - - 60.0
-      - 1.44532e-09
-    - - 70.0
-      - 1.71157e-09
-    - - 80.0
-      - 1.84469e-09
-    - - 90.0
-      - 1.9588e-09
-    - - 100.0
-      - 2.0729e-09
-    - - 110.0
-      - 2.0729e-09
-    - - 120.0
-      - 2.03487e-09
-    - - 130.0
-      - 2.16799e-09
-    - - 140.0
-      - 2.37718e-09
+    - [10.0, 1.33122e-10]
+    - [20.0, 3.80349e-10]
+    - [30.0, 6.27575e-10]
+    - [40.0, 9.31854e-10]
+    - [50.0, 1.23613e-09]
+    - [60.0, 1.44532e-09]
+    - [70.0, 1.71157e-09]
+    - [80.0, 1.84469e-09]
+    - [90.0, 1.9588e-09]
+    - [100.0, 2.0729e-09]
+    - [110.0, 2.0729e-09]
+    - [120.0, 2.03487e-09]
+    - [130.0, 2.16799e-09]
+    - [140.0, 2.37718e-09]
   - species-name: CH2O
     InChI: 1S/CH2O/c1-2/h1H2
     quantity:
@@ -162,34 +98,20 @@ datapoints:
     time:
       units: us
     values:
-    - - 10.0
-      - 3.80349e-11
-    - - 20.0
-      - 1.14105e-10
-    - - 30.0
-      - 2.28209e-10
-    - - 40.0
-      - 3.23296e-10
-    - - 50.0
-      - 3.99366e-10
-    - - 60.0
-      - 4.18384e-10
-    - - 70.0
-      - 4.37401e-10
-    - - 80.0
-      - 4.18384e-10
-    - - 90.0
-      - 4.37401e-10
-    - - 100.0
-      - 3.99366e-10
-    - - 110.0
-      - 3.61331e-10
-    - - 120.0
-      - 2.66244e-10
-    - - 130.0
-      - 2.66244e-10
-    - - 140.0
-      - 2.09192e-10
+    - [10.0, 3.80349e-11]
+    - [20.0, 1.14105e-10]
+    - [30.0, 2.28209e-10]
+    - [40.0, 3.23296e-10]
+    - [50.0, 3.99366e-10]
+    - [60.0, 4.18384e-10]
+    - [70.0, 4.37401e-10]
+    - [80.0, 4.18384e-10]
+    - [90.0, 4.37401e-10]
+    - [100.0, 3.99366e-10]
+    - [110.0, 3.61331e-10]
+    - [120.0, 2.66244e-10]
+    - [130.0, 2.66244e-10]
+    - [140.0, 2.09192e-10]
   - species-name: CO
     InChI: 1S/CO/c1-2
     quantity:
@@ -197,34 +119,20 @@ datapoints:
     time:
       units: us
     values:
-    - - 10.0
-      - 6.38037e-11
-    - - 20.0
-      - 2.22711e-10
-    - - 30.0
-      - 3.81635e-10
-    - - 40.0
-      - 6.03991e-10
-    - - 50.0
-      - 8.26234e-10
-    - - 60.0
-      - 1.11189e-09
-    - - 70.0
-      - 1.31518e-09
-    - - 80.0
-      - 1.61357e-09
-    - - 90.0
-      - 1.81688e-09
-    - - 100.0
-      - 2.13428e-09
-    - - 110.0
-      - 2.32483e-09
-    - - 120.0
-      - 2.52811e-09
-    - - 130.0
-      - 2.72507e-09
-    - - 140.0
-      - 2.92828e-09
+    - [10.0, 6.38037e-11]
+    - [20.0, 2.22711e-10]
+    - [30.0, 3.81635e-10]
+    - [40.0, 6.03991e-10]
+    - [50.0, 8.26234e-10]
+    - [60.0, 1.11189e-09]
+    - [70.0, 1.31518e-09]
+    - [80.0, 1.61357e-09]
+    - [90.0, 1.81688e-09]
+    - [100.0, 2.13428e-09]
+    - [110.0, 2.32483e-09]
+    - [120.0, 2.52811e-09]
+    - [130.0, 2.72507e-09]
+    - [140.0, 2.92828e-09]
   - species-name: CO2
     InChI: 1S/CO2/c2-1-3
     quantity:
@@ -232,35 +140,21 @@ datapoints:
     time:
       units: us
     values:
-    - - 10.0
-      - 0.0
-    - - 20.0
-      - 0.0
-    - - 30.0
-      - 0.0
-    - - 40.0
-      - 0.0
-    - - 50.0
-      - 0.0
-    - - 60.0
-      - 5.95964e-11
-    - - 70.0
-      - 6.00486e-11
-    - - 80.0
-      - 7.95668e-11
-    - - 90.0
-      - 8.64228e-11
-    - - 100.0
-      - 9.93435e-11
-    - - 110.0
-      - 9.97795e-11
-    - - 120.0
-      - 1.06539e-10
-    - - 130.0
-      - 1.51292e-10
-    - - 140.0
-      - 1.834e-10
+    - [10.0, 0.0]
+    - [20.0, 0.0]
+    - [30.0, 0.0]
+    - [40.0, 0.0]
+    - [50.0, 0.0]
+    - [60.0, 5.95964e-11]
+    - [70.0, 6.00486e-11]
+    - [80.0, 7.95668e-11]
+    - [90.0, 8.64228e-11]
+    - [100.0, 9.93435e-11]
+    - [110.0, 9.97795e-11]
+    - [120.0, 1.06539e-10]
+    - [130.0, 1.51292e-10]
+    - [140.0, 1.834e-10]
   temperature: *id001
   pressure: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

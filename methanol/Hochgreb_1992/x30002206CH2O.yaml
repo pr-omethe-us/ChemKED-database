@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -30,6 +31,10 @@ common-properties:
       InChI: 1S/CH2O/c1-2/h1H2
       amount:
       - 0.00239
+      - evaluated-standard-deviation: 0.00024
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -38,23 +43,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.994196
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CH2O
-    InChI: 1S/CH2O/c1-2/h1H2
-    value:
-    - 0.00024 mole faction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: H2
-    InChI: 1S/H2/h1H
-    value:
-    - 9.16e-05 mole faction
 datapoints:
 - concentration-profiles:
   - species-name: CH2O
@@ -64,32 +52,19 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.0052
-      - 0.0024
-    - - 0.0069
-      - 0.00226
-    - - 0.0099
-      - 0.00215
-    - - 0.0144
-      - 0.00198
-    - - 0.0188
-      - 0.00178
-    - - 0.0245
-      - 0.00152
-    - - 0.0301
-      - 0.00124
-    - - 0.0352
-      - 0.000965
-    - - 0.041
-      - 0.0006943
-    - - 0.0469
-      - 0.0005105
-    - - 0.0525
-      - 0.0003037
-    - - 0.0574
-      - 0.0001525
-    - - 0.0625
-      - 0.0001045
+    - [0.0052, 0.0024]
+    - [0.0069, 0.00226]
+    - [0.0099, 0.00215]
+    - [0.0144, 0.00198]
+    - [0.0188, 0.00178]
+    - [0.0245, 0.00152]
+    - [0.0301, 0.00124]
+    - [0.0352, 0.000965]
+    - [0.041, 0.0006943]
+    - [0.0469, 0.0005105]
+    - [0.0525, 0.0003037]
+    - [0.0574, 0.0001525]
+    - [0.0625, 0.0001045]
   - species-name: H2
     InChI: 1S/H2/h1H
     quantity:
@@ -97,33 +72,20 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.0052
-      - 8.935e-05
-    - - 0.0069
-      - 0.0001367
-    - - 0.0099
-      - 0.0002148
-    - - 0.0144
-      - 0.000222
-    - - 0.0188
-      - 0.0003508
-    - - 0.0245
-      - 0.0004682
-    - - 0.0301
-      - 0.0005462
-    - - 0.0352
-      - 0.0006709
-    - - 0.041
-      - 0.0007603
-    - - 0.0469
-      - 0.0008229
-    - - 0.0525
-      - 0.0009089
-    - - 0.0574
-      - 0.0009161
-    - - 0.0625
-      - 0.0008378
+    - [0.0052, 8.935e-05]
+    - [0.0069, 0.0001367]
+    - [0.0099, 0.0002148]
+    - [0.0144, 0.000222]
+    - [0.0188, 0.0003508]
+    - [0.0245, 0.0004682]
+    - [0.0301, 0.0005462]
+    - [0.0352, 0.0006709]
+    - [0.041, 0.0007603]
+    - [0.0469, 0.0008229]
+    - [0.0525, 0.0009089]
+    - [0.0574, 0.0009161]
+    - [0.0625, 0.0008378]
   pressure: *id001
   temperature: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

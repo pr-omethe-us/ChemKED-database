@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -26,13 +27,6 @@ common-properties:
   - 1 atm
   temperature: &id002
   - 298 K
-  evaluated-standard-deviation: &id003
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.5 cm/s
 datapoints:
 - composition:
     kind: mole fraction
@@ -57,14 +51,19 @@ datapoints:
       InChI: 1S/N2/c1-2
       amount:
       - 0.612567
-  equivalence-ratio: 1.0
+  equivalence-ratio:
+  - 1 dimensionless
   laminar-burning-velocity:
   - 8.504 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.054 cm/s
+    uncertainty-sourcetype: reported
+    evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   pressure: *id001
   temperature: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -88,14 +87,19 @@ datapoints:
       InChI: 1S/N2/c1-2
       amount:
       - 0.599111
-  equivalence-ratio: 1.1
+  equivalence-ratio:
+  - 1.1 dimensionless
   laminar-burning-velocity:
   - 9.749 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.054 cm/s
+    uncertainty-sourcetype: reported
+    evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   pressure: *id001
   temperature: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -119,11 +123,17 @@ datapoints:
       InChI: 1S/N2/c1-2
       amount:
       - 0.586233
-  equivalence-ratio: 1.2
+  equivalence-ratio:
+  - 1.2 dimensionless
   laminar-burning-velocity:
   - 9.24 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.754 cm/s
+    uncertainty-sourcetype: reported
+    evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   pressure: *id001
   temperature: *id002
-  evaluated-standard-deviation: *id003
+...

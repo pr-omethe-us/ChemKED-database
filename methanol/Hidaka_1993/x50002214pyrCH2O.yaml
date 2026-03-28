@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -33,19 +34,14 @@ common-properties:
       InChI: 1S/CH2O/c1-2/h1H2
       amount:
       - 0.001
+      - evaluated-standard-deviation: 4.88e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
     - species-name: Ar
       InChI: 1S/Ar
       amount:
       - 0.999
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CH2O
-    InChI: 1S/CH2O/c1-2/h1H2
-    value:
-    - 4.88e-05 mole faction
 datapoints:
 - concentration-profiles:
   - species-name: CH2O
@@ -55,23 +51,15 @@ datapoints:
     time:
       units: us
     values:
-    - - 50.0
-      - 0.00097605
-    - - 100.0
-      - 0.00096942
-    - - 150.0
-      - 0.0009299
-    - - 200.0
-      - 0.00088891
-    - - 300.0
-      - 0.00079812
-    - - 400.0
-      - 0.00070028
-    - - 500.0
-      - 0.00059921
-    - - 600.0
-      - 0.00050518
+    - [50.0, 0.00097605]
+    - [100.0, 0.00096942]
+    - [150.0, 0.0009299]
+    - [200.0, 0.00088891]
+    - [300.0, 0.00079812]
+    - [400.0, 0.00070028]
+    - [500.0, 0.00059921]
+    - [600.0, 0.00050518]
   pressure: *id001
   temperature: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

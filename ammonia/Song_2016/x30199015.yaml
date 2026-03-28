@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -42,6 +43,7 @@ common-properties:
       - 0.000789
       - uncertainty-type: relative
         uncertainty: 0.06
+        uncertainty-sourcetype: reported
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -58,19 +60,12 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 7.8e-05
-      - uncertainty-type: relative
-        uncertainty: 0.06
+      - evaluated-standard-deviation: 5.0e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   temperature:
   - 826 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 5e-06 mole fraction
   pressure-in-reference-state: *id001
   temperature-in-reference-state: *id002
   reactor-length: *id003
@@ -84,19 +79,12 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.000176
-      - uncertainty-type: relative
-        uncertainty: 0.06
+      - evaluated-standard-deviation: 1.0e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   temperature:
   - 852 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 1e-05 mole fraction
   pressure-in-reference-state: *id001
   temperature-in-reference-state: *id002
   reactor-length: *id003
@@ -110,19 +98,12 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.000167
-      - uncertainty-type: relative
-        uncertainty: 0.06
+      - evaluated-standard-deviation: 1.0e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   temperature:
   - 876 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 1e-05 mole fraction
   pressure-in-reference-state: *id001
   temperature-in-reference-state: *id002
   reactor-length: *id003
@@ -136,22 +117,16 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.000165
-      - uncertainty-type: relative
-        uncertainty: 0.06
+      - evaluated-standard-deviation: 1.0e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   temperature:
   - 902 K
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 1e-05 mole fraction
   pressure-in-reference-state: *id001
   temperature-in-reference-state: *id002
   reactor-length: *id003
   reactor-diameter: *id004
   pressure: *id005
   composition: *id006
+...

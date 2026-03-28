@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -21,14 +22,15 @@ apparatus:
   facility: ''
   mode: burner-stabilized
 common-properties:
-  equivalence-ratio: 0.45
+  equivalence-ratio: &id001
+  - 0.45 dimensionless
   temperature:
   - 300 K
-  pressure: &id001
+  pressure: &id002
   - 1 atm
-  flow-rate: &id002
+  flow-rate: &id003
   - 0.3569 kg m-2 s-1
-  composition: &id003
+  composition: &id004
     kind: mole fraction
     species:
     - species-name: H2
@@ -43,15 +45,6 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.625
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.004579 mole fraction
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -62,15 +55,15 @@ datapoints:
       - 0.04579
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   distance:
   - 0.798 mm
   temperature:
   - 1892 K
-  equivalence-ratio: 0.45
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -80,15 +73,15 @@ datapoints:
       - 0.04211
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   distance:
   - 0.848 mm
   temperature:
   - 1901 K
-  equivalence-ratio: 0.45
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -98,15 +91,15 @@ datapoints:
       - 0.03947
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   distance:
   - 1.047 mm
   temperature:
   - 1922 K
-  equivalence-ratio: 0.45
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -116,15 +109,15 @@ datapoints:
       - 0.04211
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   distance:
   - 1.272 mm
   temperature:
   - 1931 K
-  equivalence-ratio: 0.45
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -134,15 +127,15 @@ datapoints:
       - 0.04316
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   distance:
   - 1.746 mm
   temperature:
   - 1951 K
-  equivalence-ratio: 0.45
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -152,15 +145,15 @@ datapoints:
       - 0.04105
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   distance:
   - 2.319 mm
   temperature:
   - 1956 K
-  equivalence-ratio: 0.45
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -170,15 +163,15 @@ datapoints:
       - 0.04474
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   distance:
   - 2.793 mm
   temperature:
   - 1956 K
-  equivalence-ratio: 0.45
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -188,15 +181,15 @@ datapoints:
       - 0.04421
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   distance:
   - 3.292 mm
   temperature:
   - 1956 K
-  equivalence-ratio: 0.45
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -206,15 +199,15 @@ datapoints:
       - 0.04211
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   distance:
   - 4.339 mm
   temperature:
   - 1948 K
-  equivalence-ratio: 0.45
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -224,15 +217,15 @@ datapoints:
       - 0.04
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   distance:
   - 6.284 mm
   temperature:
   - 1922 K
-  equivalence-ratio: 0.45
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -242,15 +235,15 @@ datapoints:
       - 0.03842
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   distance:
   - 8.329 mm
   temperature:
   - 1884 K
-  equivalence-ratio: 0.45
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -260,12 +253,13 @@ datapoints:
       - 0.04
       - uncertainty-type: relative
         uncertainty: 0.1
+        uncertainty-sourcetype: reported
   distance:
   - 10.32 mm
   temperature:
   - 1855 K
-  equivalence-ratio: 0.45
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
+...

@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -31,6 +32,10 @@ common-properties:
       InChI: 1S/H2/h1H
       amount:
       - 0.0118
+      - evaluated-standard-deviation: 0.00116
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -39,15 +44,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.9821
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: H2
-    InChI: 1S/H2/h1H
-    value:
-    - 0.00116 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: H2
@@ -57,37 +53,22 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.09277
-      - 0.0107653
-    - - 0.12698
-      - 0.0097322
-    - - 0.17424
-      - 0.0089244
-    - - 0.2328
-      - 0.0078651
-    - - 0.30934
-      - 0.0065052
-    - - 0.40066
-      - 0.0055955
-    - - 0.50329
-      - 0.0045918
-    - - 0.61229
-      - 0.0038852
-    - - 0.71985
-      - 0.0032594
-    - - 0.82741
-      - 0.0025527
-    - - 0.93641
-      - 0.0020799
-    - - 1.04397
-      - 0.0017555
-    - - 1.15327
-      - 0.0014806
-    - - 1.26053
-      - 0.0012821
-    - - 1.36983
-      - 0.0011601
+    - [0.09277, 0.0107653]
+    - [0.12698, 0.0097322]
+    - [0.17424, 0.0089244]
+    - [0.2328, 0.0078651]
+    - [0.30934, 0.0065052]
+    - [0.40066, 0.0055955]
+    - [0.50329, 0.0045918]
+    - [0.61229, 0.0038852]
+    - [0.71985, 0.0032594]
+    - [0.82741, 0.0025527]
+    - [0.93641, 0.0020799]
+    - [1.04397, 0.0017555]
+    - [1.15327, 0.0014806]
+    - [1.26053, 0.0012821]
+    - [1.36983, 0.0011601]
   temperature: *id001
   pressure: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

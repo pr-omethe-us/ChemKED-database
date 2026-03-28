@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -37,14 +38,7 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 0.03
-  evaluated-standard-deviation: &id002
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: generic uncertainty
-    value:
-    - 0.2 unitless
-  ignition-type: &id003
+  ignition-type: &id002
     target: CO;O;
     type: max
 datapoints:
@@ -52,35 +46,48 @@ datapoints:
   - 1815 K
   ignition-delay:
   - 20 us
+  - evaluated-standard-deviation: '0.2'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   pressure:
   - 4.289 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - temperature:
   - 1875 K
   ignition-delay:
   - 20 us
+  - evaluated-standard-deviation: '0.2'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   pressure:
   - 4.523 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - temperature:
   - 2180 K
   ignition-delay:
   - 6 us
+  - evaluated-standard-deviation: '0.2'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   pressure:
   - 4.687 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - temperature:
   - 2180 K
   ignition-delay:
   - 5 us
+  - evaluated-standard-deviation: '0.2'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   pressure:
   - 4.723 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
+...

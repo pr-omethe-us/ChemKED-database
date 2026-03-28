@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -19,20 +20,25 @@ apparatus:
   institution: ''
   facility: ''
 common-properties:
-  equivalence-ratio: 0.6
-  pressure: &id001
+  equivalence-ratio: &id001
+  - 0.6 dimensionless
+  pressure: &id002
   - 10 atm
-  reactor-volume: &id002
+  reactor-volume: &id003
   - 30 cm3
-  residence-time: &id003
+  residence-time: &id004
   - 1000 ms
-  composition: &id004
+  composition: &id005
     kind: mole fraction
     species:
     - species-name: CH3OH
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
       - 0.008
+      - evaluated-standard-deviation: 0.000297
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -41,51 +47,14 @@ common-properties:
       InChI: 1S/H2O/h1H2
       amount:
       - 0.0008
+      - evaluated-standard-deviation: 0.00117
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
       - 0.9712
-  evaluated-standard-deviation: &id005
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.00117 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CH3OH
-    InChI: 1S/CH4O/c1-2/h2H,1H3
-    value:
-    - 0.000297 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CH2O
-    InChI: 1S/CH2O/c1-2/h1H2
-    value:
-    - 7.68e-05 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.000586 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO2
-    InChI: 1S/CO2/c2-1-3
-    value:
-    - 0.000163 mole fraction
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -112,12 +81,11 @@ datapoints:
       - 0.00075188
   temperature:
   - 720 K
-  equivalence-ratio: 0.6
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  equivalence-ratio: *id001
+  pressure: *id002
+  reactor-volume: *id003
+  residence-time: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -143,12 +111,11 @@ datapoints:
       - 0.00078947
   temperature:
   - 750 K
-  equivalence-ratio: 0.6
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  equivalence-ratio: *id001
+  pressure: *id002
+  reactor-volume: *id003
+  residence-time: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -174,12 +141,11 @@ datapoints:
       - 0.001015
   temperature:
   - 780 K
-  equivalence-ratio: 0.6
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  equivalence-ratio: *id001
+  pressure: *id002
+  reactor-volume: *id003
+  residence-time: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -205,12 +171,11 @@ datapoints:
       - 0.0065038
   temperature:
   - 810 K
-  equivalence-ratio: 0.6
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  equivalence-ratio: *id001
+  pressure: *id002
+  reactor-volume: *id003
+  residence-time: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -236,12 +201,11 @@ datapoints:
       - 0.011128
   temperature:
   - 840 K
-  equivalence-ratio: 0.6
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  equivalence-ratio: *id001
+  pressure: *id002
+  reactor-volume: *id003
+  residence-time: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -267,12 +231,11 @@ datapoints:
       - 0.013647
   temperature:
   - 870 K
-  equivalence-ratio: 0.6
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  equivalence-ratio: *id001
+  pressure: *id002
+  reactor-volume: *id003
+  residence-time: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -298,12 +261,11 @@ datapoints:
       - 0.014624
   temperature:
   - 900 K
-  equivalence-ratio: 0.6
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  equivalence-ratio: *id001
+  pressure: *id002
+  reactor-volume: *id003
+  residence-time: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -329,12 +291,11 @@ datapoints:
       - 0.014887
   temperature:
   - 930 K
-  equivalence-ratio: 0.6
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  equivalence-ratio: *id001
+  pressure: *id002
+  reactor-volume: *id003
+  residence-time: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -360,12 +321,11 @@ datapoints:
       - 0.015338
   temperature:
   - 960 K
-  equivalence-ratio: 0.6
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  equivalence-ratio: *id001
+  pressure: *id002
+  reactor-volume: *id003
+  residence-time: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -391,12 +351,11 @@ datapoints:
       - 0.015338
   temperature:
   - 990 K
-  equivalence-ratio: 0.6
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  equivalence-ratio: *id001
+  pressure: *id002
+  reactor-volume: *id003
+  residence-time: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -422,12 +381,11 @@ datapoints:
       - 0.015677
   temperature:
   - 1020 K
-  equivalence-ratio: 0.6
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  equivalence-ratio: *id001
+  pressure: *id002
+  reactor-volume: *id003
+  residence-time: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -453,9 +411,9 @@ datapoints:
       - 0.01609
   temperature:
   - 1050 K
-  equivalence-ratio: 0.6
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  equivalence-ratio: *id001
+  pressure: *id002
+  reactor-volume: *id003
+  residence-time: *id004
+  composition: *id005
+...

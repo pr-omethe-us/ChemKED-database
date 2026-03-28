@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -26,8 +27,9 @@ apparatus:
 common-properties:
   temperature: &id001
   - 333 K
-  equivalence-ratio: 1.0
-  composition: &id002
+  equivalence-ratio: &id002
+  - 1 dimensionless
+  composition: &id003
     kind: mole fraction
     species:
     - species-name: CH4
@@ -42,35 +44,38 @@ common-properties:
       InChI: 1S/O2/c1-2
       amount:
       - 0.1667
-  evaluated-standard-deviation: &id003
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and estimated uncertainty
-    value:
-    - 1 cm/s
 datapoints:
 - pressure:
   - 1 atm
   laminar-burning-velocity:
   - 68.69 cm/s
+  - evaluated-standard-deviation: 1 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
   temperature: *id001
-  equivalence-ratio: 1.0
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  equivalence-ratio: *id002
+  composition: *id003
 - pressure:
   - 3 atm
   laminar-burning-velocity:
   - 50.59 cm/s
+  - evaluated-standard-deviation: 1 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
   temperature: *id001
-  equivalence-ratio: 1.0
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  equivalence-ratio: *id002
+  composition: *id003
 - pressure:
   - 5 atm
   laminar-burning-velocity:
   - 42.28 cm/s
+  - evaluated-standard-deviation: 1 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
   temperature: *id001
-  equivalence-ratio: 1.0
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  equivalence-ratio: *id002
+  composition: *id003
+...

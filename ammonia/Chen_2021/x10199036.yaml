@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -37,14 +38,8 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 92.344
-  equivalence-ratio: 1.0
-  evaluated-standard-deviation: &id002
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.204791 unitless
+  equivalence-ratio: &id002
+  - 1 dimensionless
   ignition-type: &id003
     target: OH*
     type: baseline min intercept from d/dt
@@ -55,11 +50,12 @@ datapoints:
   - 1762.5 K
   ignition-delay:
   - 242.71 us
-  - uncertainty-type: relative
-    uncertainty: '0.2'
+  - evaluated-standard-deviation: '0.204791'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition: *id001
-  equivalence-ratio: 1.0
-  evaluated-standard-deviation: *id002
+  equivalence-ratio: *id002
   ignition-type: *id003
 - pressure:
   - 9.8 atm
@@ -67,11 +63,12 @@ datapoints:
   - 1787.3 K
   ignition-delay:
   - 245.28 us
-  - uncertainty-type: relative
-    uncertainty: '0.2'
+  - evaluated-standard-deviation: '0.204791'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition: *id001
-  equivalence-ratio: 1.0
-  evaluated-standard-deviation: *id002
+  equivalence-ratio: *id002
   ignition-type: *id003
 - pressure:
   - 10 atm
@@ -79,11 +76,12 @@ datapoints:
   - 1694.7 K
   ignition-delay:
   - 440.28 us
-  - uncertainty-type: relative
-    uncertainty: '0.2'
+  - evaluated-standard-deviation: '0.204791'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition: *id001
-  equivalence-ratio: 1.0
-  evaluated-standard-deviation: *id002
+  equivalence-ratio: *id002
   ignition-type: *id003
 - pressure:
   - 9.95 atm
@@ -91,11 +89,12 @@ datapoints:
   - 1594.4 K
   ignition-delay:
   - 922.12 us
-  - uncertainty-type: relative
-    uncertainty: '0.2'
+  - evaluated-standard-deviation: '0.204791'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition: *id001
-  equivalence-ratio: 1.0
-  evaluated-standard-deviation: *id002
+  equivalence-ratio: *id002
   ignition-type: *id003
 - pressure:
   - 10.41 atm
@@ -103,11 +102,12 @@ datapoints:
   - 1522.3 K
   ignition-delay:
   - 1353.68 us
-  - uncertainty-type: relative
-    uncertainty: '0.2'
+  - evaluated-standard-deviation: '0.204791'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition: *id001
-  equivalence-ratio: 1.0
-  evaluated-standard-deviation: *id002
+  equivalence-ratio: *id002
   ignition-type: *id003
 - pressure:
   - 10.28 atm
@@ -115,11 +115,12 @@ datapoints:
   - 1505 K
   ignition-delay:
   - 1421.51 us
-  - uncertainty-type: relative
-    uncertainty: '0.2'
+  - evaluated-standard-deviation: '0.204791'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition: *id001
-  equivalence-ratio: 1.0
-  evaluated-standard-deviation: *id002
+  equivalence-ratio: *id002
   ignition-type: *id003
 - pressure:
   - 10.38 atm
@@ -127,9 +128,11 @@ datapoints:
   - 1441 K
   ignition-delay:
   - 4667.31 us
-  - uncertainty-type: relative
-    uncertainty: '0.2'
+  - evaluated-standard-deviation: '0.204791'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   composition: *id001
-  equivalence-ratio: 1.0
-  evaluated-standard-deviation: *id002
+  equivalence-ratio: *id002
   ignition-type: *id003
+...

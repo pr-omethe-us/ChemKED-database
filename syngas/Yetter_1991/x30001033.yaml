@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -31,6 +32,10 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 4.8e-05
+      - evaluated-standard-deviation: 4.686e-07
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -43,15 +48,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.966952
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 4.686e-07 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -61,29 +57,18 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.099728
-      - 3.1325e-05
-    - - 0.11655
-      - 2.2679e-05
-    - - 0.13555
-      - 1.6732e-05
-    - - 0.154
-      - 1.2113e-05
-    - - 0.17572
-      - 9.0205e-06
-    - - 0.19526
-      - 6.9778e-06
-    - - 0.21644
-      - 5.246e-06
-    - - 0.23707
-      - 4.2146e-06
-    - - 0.25499
-      - 3.5172e-06
-    - - 0.27617
-      - 2.7989e-06
-    - - 0.29571
-      - 2.1447e-06
+    - [0.099728, 3.1325e-05]
+    - [0.11655, 2.2679e-05]
+    - [0.13555, 1.6732e-05]
+    - [0.154, 1.2113e-05]
+    - [0.17572, 9.0205e-06]
+    - [0.19526, 6.9778e-06]
+    - [0.21644, 5.246e-06]
+    - [0.23707, 4.2146e-06]
+    - [0.25499, 3.5172e-06]
+    - [0.27617, 2.7989e-06]
+    - [0.29571, 2.1447e-06]
   temperature: *id001
   pressure: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

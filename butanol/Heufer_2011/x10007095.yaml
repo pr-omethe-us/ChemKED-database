@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -40,14 +41,7 @@ common-properties:
       - 0.768735
   pressure-rise: &id002
   - 0.045 ms-1
-  evaluated-standard-deviation: &id003
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: statistical scatter
-    value:
-    - 0.16 unitless
-  ignition-type: &id004
+  ignition-type: &id003
     target: p;
     type: d/dt max
 datapoints:
@@ -55,49 +49,65 @@ datapoints:
   - 952 K
   ignition-delay:
   - 2.94 ms
+  - evaluated-standard-deviation: '0.16'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   pressure:
   - 10.8 bar
   composition: *id001
   pressure-rise: *id002
-  evaluated-standard-deviation: *id003
-  ignition-type: *id004
+  ignition-type: *id003
 - temperature:
   - 1006 K
   ignition-delay:
   - 1.1944 ms
+  - evaluated-standard-deviation: '0.16'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   pressure:
   - 14.9 bar
   composition: *id001
   pressure-rise: *id002
-  evaluated-standard-deviation: *id003
-  ignition-type: *id004
+  ignition-type: *id003
 - temperature:
   - 1054 K
   ignition-delay:
   - 0.896 ms
+  - evaluated-standard-deviation: '0.16'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   pressure:
   - 10.65 bar
   composition: *id001
   pressure-rise: *id002
-  evaluated-standard-deviation: *id003
-  ignition-type: *id004
+  ignition-type: *id003
 - temperature:
   - 1132 K
   ignition-delay:
   - 0.32 ms
+  - evaluated-standard-deviation: '0.16'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   pressure:
   - 10.6 bar
   composition: *id001
   pressure-rise: *id002
-  evaluated-standard-deviation: *id003
-  ignition-type: *id004
+  ignition-type: *id003
 - temperature:
   - 1232 K
   ignition-delay:
   - 0.0916 ms
+  - evaluated-standard-deviation: '0.16'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   pressure:
   - 10.6 bar
   composition: *id001
   pressure-rise: *id002
-  evaluated-standard-deviation: *id003
-  ignition-type: *id004
+  ignition-type: *id003
+...

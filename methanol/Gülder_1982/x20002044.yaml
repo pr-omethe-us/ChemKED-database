@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -20,8 +21,9 @@ apparatus:
 common-properties:
   temperature: &id001
   - 350 K
-  equivalence-ratio: 1.2
-  composition: &id002
+  equivalence-ratio: &id002
+  - 1.2 dimensionless
+  composition: &id003
     kind: mole fraction
     species:
     - species-name: CH3OH
@@ -36,51 +38,60 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.67769
-  evaluated-standard-deviation: &id003
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 7.39 cm/s
 datapoints:
 - pressure:
   - 1 bar
   laminar-burning-velocity:
   - 62.57 cm/s
+  - evaluated-standard-deviation: 7.39 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   temperature: *id001
-  equivalence-ratio: 1.2
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  equivalence-ratio: *id002
+  composition: *id003
 - pressure:
   - 2 bar
   laminar-burning-velocity:
   - 50.75 cm/s
+  - evaluated-standard-deviation: 7.39 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   temperature: *id001
-  equivalence-ratio: 1.2
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  equivalence-ratio: *id002
+  composition: *id003
 - pressure:
   - 4 bar
   laminar-burning-velocity:
   - 42.02 cm/s
+  - evaluated-standard-deviation: 7.39 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   temperature: *id001
-  equivalence-ratio: 1.2
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  equivalence-ratio: *id002
+  composition: *id003
 - pressure:
   - 5 bar
   laminar-burning-velocity:
   - 39.84 cm/s
+  - evaluated-standard-deviation: 7.39 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   temperature: *id001
-  equivalence-ratio: 1.2
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  equivalence-ratio: *id002
+  composition: *id003
 - pressure:
   - 8 bar
   laminar-burning-velocity:
   - 35.32 cm/s
+  - evaluated-standard-deviation: 7.39 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   temperature: *id001
-  equivalence-ratio: 1.2
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  equivalence-ratio: *id002
+  composition: *id003
+...

@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -26,7 +27,8 @@ apparatus:
   facility: ''
   mode: constant volume combustion chamber
 common-properties:
-  equivalence-ratio: 1.1
+  equivalence-ratio: &id001
+  - 1.1 dimensionless
 datapoints:
 - composition:
     kind: mole fraction
@@ -51,20 +53,15 @@ datapoints:
   - 475 K
   - uncertainty-type: absolute
     uncertainty: 2 K
+    uncertainty-sourcetype: reported
   pressure:
   - 6.96 bar
   laminar-burning-velocity:
   - 17.71 cm/s
   - uncertainty-type: absolute
     uncertainty: 2.94 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 1.532 cm/s
-  equivalence-ratio: 1.1
+    uncertainty-sourcetype: calculated
+  equivalence-ratio: *id001
 - composition:
     kind: mole fraction
     species:
@@ -88,20 +85,15 @@ datapoints:
   - 475 K
   - uncertainty-type: absolute
     uncertainty: 2 K
+    uncertainty-sourcetype: reported
   pressure:
   - 6.97 bar
   laminar-burning-velocity:
   - 13.55 cm/s
   - uncertainty-type: absolute
     uncertainty: 1.99 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 1.09 cm/s
-  equivalence-ratio: 1.1
+    uncertainty-sourcetype: calculated
+  equivalence-ratio: *id001
 - composition:
     kind: mole fraction
     species:
@@ -125,20 +117,15 @@ datapoints:
   - 473 K
   - uncertainty-type: absolute
     uncertainty: 2 K
+    uncertainty-sourcetype: reported
   pressure:
   - 6.97 bar
   laminar-burning-velocity:
   - 12.49 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.37 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.5 cm/s
-  equivalence-ratio: 1.1
+    uncertainty-sourcetype: calculated
+  equivalence-ratio: *id001
 - composition:
     kind: mole fraction
     species:
@@ -162,17 +149,13 @@ datapoints:
   - 468 K
   - uncertainty-type: absolute
     uncertainty: 2 K
+    uncertainty-sourcetype: reported
   pressure:
   - 6.95 bar
   laminar-burning-velocity:
   - 10.88 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.65 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.546 cm/s
-  equivalence-ratio: 1.1
+    uncertainty-sourcetype: calculated
+  equivalence-ratio: *id001
+...

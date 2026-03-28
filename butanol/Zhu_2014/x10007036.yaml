@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -35,14 +36,7 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.7768
-  evaluated-standard-deviation: &id002
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: statistical scatter
-    value:
-    - 0.13 unitless
-  ignition-type: &id003
+  ignition-type: &id002
     target: OHEX;
     type: baseline min intercept from d/dt
 datapoints:
@@ -50,26 +44,36 @@ datapoints:
   - 1093 K
   ignition-delay:
   - 418 us
+  - evaluated-standard-deviation: '0.13'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   pressure:
   - 19.8 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - temperature:
   - 1025 K
   ignition-delay:
   - 1103 us
+  - evaluated-standard-deviation: '0.13'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   pressure:
   - 20.7 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
 - temperature:
   - 966 K
   ignition-delay:
   - 2079 us
+  - evaluated-standard-deviation: '0.13'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   pressure:
   - 21.3 atm
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
+...

@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -27,13 +28,6 @@ common-properties:
   - 310 K
   pressure: &id002
   - 5 bar
-  evaluated-standard-deviation: &id003
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    value:
-    - 10.04 cm/s
 datapoints:
 - composition:
     kind: mole fraction
@@ -56,9 +50,12 @@ datapoints:
       - 0.34944
   laminar-burning-velocity:
   - 108.55 cm/s
+  - evaluated-standard-deviation: 10.04 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   temperature: *id001
   pressure: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -80,9 +77,12 @@ datapoints:
       - 0.31973
   laminar-burning-velocity:
   - 101.28 cm/s
+  - evaluated-standard-deviation: 10.04 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   temperature: *id001
   pressure: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -104,6 +104,10 @@ datapoints:
       - 0.29467
   laminar-burning-velocity:
   - 73.93 cm/s
+  - evaluated-standard-deviation: 10.04 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   temperature: *id001
   pressure: *id002
-  evaluated-standard-deviation: *id003
+...

@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -23,6 +24,7 @@ common-properties:
   - 105.25 kPa
   - uncertainty-type: absolute
     uncertainty: 2.25 kPa
+    uncertainty-sourcetype: calculated
   composition: &id002
     kind: mole fraction
     species:
@@ -32,45 +34,21 @@ common-properties:
       - 0.0008
       - uncertainty-type: relative
         uncertainty: 0.04
+        uncertainty-sourcetype: reported
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
       - 0.025
       - uncertainty-type: relative
         uncertainty: 0.04
+        uncertainty-sourcetype: reported
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
       - 0.9742
       - uncertainty-type: relative
         uncertainty: 0.04
-  evaluated-standard-deviation: &id003
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 5e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 5e-06 mole fraction
-  uncertainty:
-  - &id004
-    reference: initial composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.02 unitless
+        uncertainty-sourcetype: reported
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -81,17 +59,13 @@ datapoints:
       - 0.0
       - uncertainty-type: absolute
         uncertainty: 2.0e-06
+        uncertainty-sourcetype: reported
   residence-time:
   - 0.0707 s
   temperature:
   - 1033 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  uncertainty:
-  - *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -101,17 +75,13 @@ datapoints:
       - 0.0
       - uncertainty-type: absolute
         uncertainty: 2.0e-06
+        uncertainty-sourcetype: reported
   residence-time:
   - 0.0651 s
   temperature:
   - 1121 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  uncertainty:
-  - *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -121,17 +91,13 @@ datapoints:
       - 0.0
       - uncertainty-type: absolute
         uncertainty: 2.0e-06
+        uncertainty-sourcetype: reported
   residence-time:
   - 0.0628 s
   temperature:
   - 1162 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  uncertainty:
-  - *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -141,17 +107,13 @@ datapoints:
       - 0.0
       - uncertainty-type: absolute
         uncertainty: 2.0e-06
+        uncertainty-sourcetype: reported
   residence-time:
   - 0.0609 s
   temperature:
   - 1199 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  uncertainty:
-  - *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -161,17 +123,13 @@ datapoints:
       - 1.0e-06
       - uncertainty-type: absolute
         uncertainty: 2.0e-06
+        uncertainty-sourcetype: reported
   residence-time:
   - 0.059 s
   temperature:
   - 1238 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  uncertainty:
-  - *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -181,17 +139,13 @@ datapoints:
       - 0.0
       - uncertainty-type: absolute
         uncertainty: 2.0e-06
+        uncertainty-sourcetype: reported
   residence-time:
   - 0.0572 s
   temperature:
   - 1277 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  uncertainty:
-  - *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -201,17 +155,13 @@ datapoints:
       - 1.0e-06
       - uncertainty-type: absolute
         uncertainty: 2.0e-06
+        uncertainty-sourcetype: reported
   residence-time:
   - 0.0559 s
   temperature:
   - 1305 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  uncertainty:
-  - *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -221,17 +171,13 @@ datapoints:
       - 2.0e-06
       - uncertainty-type: absolute
         uncertainty: 2.0e-06
+        uncertainty-sourcetype: reported
   residence-time:
   - 0.0552 s
   temperature:
   - 1321 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  uncertainty:
-  - *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -241,17 +187,13 @@ datapoints:
       - 6.0e-06
       - uncertainty-type: absolute
         uncertainty: 2.0e-06
+        uncertainty-sourcetype: reported
   residence-time:
   - 0.0543 s
   temperature:
   - 1344 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  uncertainty:
-  - *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -261,14 +203,11 @@ datapoints:
       - 1.0e-05
       - uncertainty-type: absolute
         uncertainty: 2.0e-06
+        uncertainty-sourcetype: reported
   residence-time:
   - 0.0533 s
   temperature:
   - 1369 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  uncertainty:
-  - *id004
+...

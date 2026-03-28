@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -32,10 +33,18 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 0.00868
+      - evaluated-standard-deviation: 7.399e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
       - 0.00916
+      - evaluated-standard-deviation: 8.889e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
@@ -44,31 +53,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.97607
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 7.399e-05 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CO2
-    InChI: 1S/CO2/c2-1-3
-    value:
-    - 8.076e-05 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: O2
-    InChI: 1S/O2/c1-2
-    value:
-    - 8.889e-05 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -78,40 +62,23 @@ datapoints:
     time:
       units: ms
     values:
-    - - 19.2
-      - 0.0073992
-    - - 20.237
-      - 0.007012
-    - - 20.762
-      - 0.0066823
-    - - 23.368
-      - 0.0054348
-    - - 26.728
-      - 0.0043447
-    - - 30.844
-      - 0.0034118
-    - - 35.966
-      - 0.0026648
-    - - 40.827
-      - 0.0020754
-    - - 44.916
-      - 0.001644
-    - - 49.763
-      - 0.0013269
-    - - 54.859
-      - 0.00111
-    - - 58.683
-      - 0.00090788
-    - - 63.775
-      - 0.00076259
-    - - 68.356
-      - 0.00066048
-    - - 73.191
-      - 0.00057259
-    - - 77.772
-      - 0.00048481
-    - - 82.859
-      - 0.00043981
+    - [19.2, 0.0073992]
+    - [20.237, 0.007012]
+    - [20.762, 0.0066823]
+    - [23.368, 0.0054348]
+    - [26.728, 0.0043447]
+    - [30.844, 0.0034118]
+    - [35.966, 0.0026648]
+    - [40.827, 0.0020754]
+    - [44.916, 0.001644]
+    - [49.763, 0.0013269]
+    - [54.859, 0.00111]
+    - [58.683, 0.00090788]
+    - [63.775, 0.00076259]
+    - [68.356, 0.00066048]
+    - [73.191, 0.00057259]
+    - [77.772, 0.00048481]
+    - [82.859, 0.00043981]
   - species-name: CO2
     InChI: 1S/CO2/c2-1-3
     quantity:
@@ -119,40 +86,23 @@ datapoints:
     time:
       units: ms
     values:
-    - - 19.2
-      - 0.0013676
-    - - 20.237
-      - 0.001754
-    - - 20.762
-      - 0.0019974
-    - - 23.368
-      - 0.0031283
-    - - 26.728
-      - 0.004273
-    - - 30.844
-      - 0.0051883
-    - - 35.966
-      - 0.0061749
-    - - 40.827
-      - 0.0067605
-    - - 44.916
-      - 0.0070739
-    - - 49.763
-      - 0.0073299
-    - - 54.859
-      - 0.0076575
-    - - 58.683
-      - 0.0078135
-    - - 63.775
-      - 0.0078831
-    - - 68.356
-      - 0.0079959
-    - - 73.191
-      - 0.0080225
-    - - 77.772
-      - 0.0080638
-    - - 82.859
-      - 0.0080761
+    - [19.2, 0.0013676]
+    - [20.237, 0.001754]
+    - [20.762, 0.0019974]
+    - [23.368, 0.0031283]
+    - [26.728, 0.004273]
+    - [30.844, 0.0051883]
+    - [35.966, 0.0061749]
+    - [40.827, 0.0067605]
+    - [44.916, 0.0070739]
+    - [49.763, 0.0073299]
+    - [54.859, 0.0076575]
+    - [58.683, 0.0078135]
+    - [63.775, 0.0078831]
+    - [68.356, 0.0079959]
+    - [73.191, 0.0080225]
+    - [77.772, 0.0080638]
+    - [82.859, 0.0080761]
   - species-name: O2
     InChI: 1S/O2/c1-2
     quantity:
@@ -160,41 +110,24 @@ datapoints:
     time:
       units: ms
     values:
-    - - 19.2
-      - 0.0088892
-    - - 20.237
-      - 0.008502
-    - - 20.762
-      - 0.0083012
-    - - 23.368
-      - 0.0076842
-    - - 26.728
-      - 0.0071814
-    - - 30.844
-      - 0.0067214
-    - - 35.966
-      - 0.0062895
-    - - 40.827
-      - 0.0060156
-    - - 44.916
-      - 0.0057987
-    - - 49.763
-      - 0.0056535
-    - - 54.859
-      - 0.0055944
-    - - 58.683
-      - 0.0054781
-    - - 63.775
-      - 0.0054475
-    - - 68.356
-      - 0.0053884
-    - - 73.191
-      - 0.0053862
-    - - 77.772
-      - 0.0053273
-    - - 82.859
-      - 0.0052965
+    - [19.2, 0.0088892]
+    - [20.237, 0.008502]
+    - [20.762, 0.0083012]
+    - [23.368, 0.0076842]
+    - [26.728, 0.0071814]
+    - [30.844, 0.0067214]
+    - [35.966, 0.0062895]
+    - [40.827, 0.0060156]
+    - [44.916, 0.0057987]
+    - [49.763, 0.0056535]
+    - [54.859, 0.0055944]
+    - [58.683, 0.0054781]
+    - [63.775, 0.0054475]
+    - [68.356, 0.0053884]
+    - [73.191, 0.0053862]
+    - [77.772, 0.0053273]
+    - [82.859, 0.0052965]
   temperature: *id001
   pressure: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -40,23 +41,6 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.990519
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.000116 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.000205 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -66,27 +50,17 @@ datapoints:
     time:
       units: us
     values:
-    - - 251.2
-      - 3.039e-10
-    - - 303.6
-      - 8.921e-10
-    - - 347.5
-      - 1.39e-09
-    - - 392.0
-      - 1.876e-09
-    - - 437.7
-      - 2.244e-09
-    - - 487.3
-      - 2.544e-09
-    - - 578.0
-      - 2.929e-09
-    - - 673.3
-      - 3.302e-09
-    - - 772.0
-      - 3.682e-09
-    - - 818.8
-      - 3.891e-09
+    - [251.2, 3.039e-10]
+    - [303.6, 8.921e-10]
+    - [347.5, 1.39e-09]
+    - [392.0, 1.876e-09]
+    - [437.7, 2.244e-09]
+    - [487.3, 2.544e-09]
+    - [578.0, 2.929e-09]
+    - [673.3, 3.302e-09]
+    - [772.0, 3.682e-09]
+    - [818.8, 3.891e-09]
   temperature: *id001
   pressure: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

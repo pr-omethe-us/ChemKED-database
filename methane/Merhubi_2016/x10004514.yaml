@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -18,10 +19,11 @@ apparatus:
   facility: ''
   mode: reflected
 common-properties:
-  equivalence-ratio: 1.0
-  pressure-rise: &id001
+  equivalence-ratio: &id001
+  - 1 dimensionless
+  pressure-rise: &id002
   - 0.03 ms-1
-  composition: &id002
+  composition: &id003
     kind: mole percent
     species:
     - species-name: CH4
@@ -36,13 +38,6 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 94.0
-  evaluated-standard-deviation: &id003
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.162 unitless
   ignition-type: &id004
     target: pressure
     type: d/dt max
@@ -53,12 +48,16 @@ datapoints:
   - 1680 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 196 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 9.5 bar
@@ -66,12 +65,16 @@ datapoints:
   - 1561 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 480 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 9.6 bar
@@ -79,12 +82,16 @@ datapoints:
   - 1610 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 277 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 9.8 bar
@@ -92,12 +99,16 @@ datapoints:
   - 1541 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 502 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10 bar
@@ -105,12 +116,16 @@ datapoints:
   - 1683 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 154 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.5 bar
@@ -118,12 +133,16 @@ datapoints:
   - 1567 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 461 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.3 bar
@@ -131,12 +150,16 @@ datapoints:
   - 1554 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 446 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 9.7 bar
@@ -144,12 +167,16 @@ datapoints:
   - 1499 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 810 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.4 bar
@@ -157,12 +184,16 @@ datapoints:
   - 1513 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 511 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 9.9 bar
@@ -170,12 +201,16 @@ datapoints:
   - 1561 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 463 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 9.9 bar
@@ -183,12 +218,16 @@ datapoints:
   - 1471 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 700 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 9.9 bar
@@ -196,12 +235,16 @@ datapoints:
   - 1600 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 365 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 9.9 bar
@@ -209,12 +252,16 @@ datapoints:
   - 1617 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 366 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.3 bar
@@ -222,12 +269,16 @@ datapoints:
   - 1600 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 357 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.2 bar
@@ -235,12 +286,16 @@ datapoints:
   - 1657 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 228 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.2 bar
@@ -248,12 +303,16 @@ datapoints:
   - 1670 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 170 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.3 bar
@@ -261,12 +320,16 @@ datapoints:
   - 1741 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 86 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.3 bar
@@ -274,12 +337,16 @@ datapoints:
   - 1839 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 39 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.3 bar
@@ -287,12 +354,16 @@ datapoints:
   - 1814 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 53 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.3 bar
@@ -300,12 +371,16 @@ datapoints:
   - 1721 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 117 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10 bar
@@ -313,12 +388,16 @@ datapoints:
   - 1667 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 227 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.2 bar
@@ -326,12 +405,16 @@ datapoints:
   - 1548 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 568 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.7 bar
@@ -339,12 +422,16 @@ datapoints:
   - 1653 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 173 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.5 bar
@@ -352,12 +439,16 @@ datapoints:
   - 1807 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 47 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.3 bar
@@ -365,12 +456,16 @@ datapoints:
   - 1633 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 236 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.4 bar
@@ -378,12 +473,16 @@ datapoints:
   - 1600 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 301 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.3 bar
@@ -391,12 +490,16 @@ datapoints:
   - 1690 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 181 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - pressure:
   - 10.3 bar
@@ -404,10 +507,15 @@ datapoints:
   - 1677 K
   - uncertainty-type: relative
     uncertainty: '0.01'
+    uncertainty-sourcetype: reported
   ignition-delay:
   - 151 us
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+  - evaluated-standard-deviation: '0.162'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
+...

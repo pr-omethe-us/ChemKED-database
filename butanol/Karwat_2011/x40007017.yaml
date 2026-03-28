@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -39,14 +40,7 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.15638
-  evaluated-standard-deviation: &id002
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: generic uncertainty
-    value:
-    - 0.15 unitless
-  ignition-type: &id003
+  ignition-type: &id002
     target: p;
     type: d/dt max
 datapoints:
@@ -56,6 +50,10 @@ datapoints:
   - 294.42 K
   ignition-delay:
   - 49.56 ms
+  - evaluated-standard-deviation: '0.15'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   time-histories:
   - time:
       units: ms
@@ -65,44 +63,25 @@ datapoints:
       column: 1
     type: volume
     values:
-    - - 0.0
-      - 1.0
-    - - 2.6288
-      - 0.93194
-    - - 7.50786
-      - 0.7352
-    - - 9.94354
-      - 0.64824
-    - - 12.31676
-      - 0.57605
-    - - 14.77425
-      - 0.51383
-    - - 17.39544
-      - 0.45967
-    - - 20.86809
-      - 0.40213
-    - - 25.14964
-      - 0.31494
-    - - 27.53551
-      - 0.27428
-    - - 30.31615
-      - 0.23711
-    - - 33.84959
-      - 0.17358
-    - - 36.50496
-      - 0.13974
-    - - 37.9703
-      - 0.11589
-    - - 43.06025
-      - 0.0474
-    - - 44.23481
-      - 0.03485
-    - - 58.76476
-      - 0.03739
-    - - 94.48808
-      - 0.03963
-    - - 265.8622
-      - 0.03998
+    - [0.0, 1.0]
+    - [2.6288, 0.93194]
+    - [7.50786, 0.7352]
+    - [9.94354, 0.64824]
+    - [12.31676, 0.57605]
+    - [14.77425, 0.51383]
+    - [17.39544, 0.45967]
+    - [20.86809, 0.40213]
+    - [25.14964, 0.31494]
+    - [27.53551, 0.27428]
+    - [30.31615, 0.23711]
+    - [33.84959, 0.17358]
+    - [36.50496, 0.13974]
+    - [37.9703, 0.11589]
+    - [43.06025, 0.0474]
+    - [44.23481, 0.03485]
+    - [58.76476, 0.03739]
+    - [94.48808, 0.03963]
+    - [265.8622, 0.03998]
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
+...

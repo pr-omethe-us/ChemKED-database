@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -29,6 +30,10 @@ common-properties:
       InChI: 1S/H2/h1H
       amount:
       - 0.01
+      - evaluated-standard-deviation: 0.000442
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -37,27 +42,14 @@ common-properties:
       InChI: 1S/NO/c1-2
       amount:
       - 0.000109
+      - evaluated-standard-deviation: 3.0e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
       - 0.969491
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: H2
-    InChI: 1S/H2/h1H
-    value:
-    - 0.000442 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 3e-06 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: H2
@@ -67,44 +59,25 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.308
-      - 0.008837
-    - - 0.33
-      - 0.007983
-    - - 0.357
-      - 0.007381
-    - - 0.393
-      - 0.006577
-    - - 0.44
-      - 0.005749
-    - - 0.496
-      - 0.005222
-    - - 0.559
-      - 0.004444
-    - - 0.624
-      - 0.00364
-    - - 0.69
-      - 0.003013
-    - - 0.757
-      - 0.002159
-    - - 0.824
-      - 0.001556
-    - - 0.891
-      - 0.00108
-    - - 0.955
-      - 0.000753
-    - - 1.02
-      - 0.000502
-    - - 1.087
-      - 0.000402
-    - - 1.151
-      - 0.000326
-    - - 1.219
-      - 0.000251
-    - - 1.286
-      - 0.000176
-    - - 1.355
-      - 0.000151
+    - [0.308, 0.008837]
+    - [0.33, 0.007983]
+    - [0.357, 0.007381]
+    - [0.393, 0.006577]
+    - [0.44, 0.005749]
+    - [0.496, 0.005222]
+    - [0.559, 0.004444]
+    - [0.624, 0.00364]
+    - [0.69, 0.003013]
+    - [0.757, 0.002159]
+    - [0.824, 0.001556]
+    - [0.891, 0.00108]
+    - [0.955, 0.000753]
+    - [1.02, 0.000502]
+    - [1.087, 0.000402]
+    - [1.151, 0.000326]
+    - [1.219, 0.000251]
+    - [1.286, 0.000176]
+    - [1.355, 0.000151]
   - species-name: 'NO'
     InChI: 1S/NO/c1-2
     quantity:
@@ -112,45 +85,26 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.308
-      - 3.99e-05
-    - - 0.33
-      - 3.31e-05
-    - - 0.357
-      - 3.31e-05
-    - - 0.393
-      - 3.46e-05
-    - - 0.44
-      - 3.56e-05
-    - - 0.496
-      - 3.94e-05
-    - - 0.559
-      - 3.84e-05
-    - - 0.624
-      - 4.04e-05
-    - - 0.69
-      - 4.27e-05
-    - - 0.757
-      - 4.47e-05
-    - - 0.824
-      - 4.54e-05
-    - - 0.891
-      - 4.74e-05
-    - - 0.955
-      - 4.77e-05
-    - - 1.02
-      - 4.82e-05
-    - - 1.087
-      - 4.92e-05
-    - - 1.151
-      - 4.92e-05
-    - - 1.219
-      - 4.85e-05
-    - - 1.286
-      - 5.02e-05
-    - - 1.355
-      - 5.25e-05
+    - [0.308, 3.99e-05]
+    - [0.33, 3.31e-05]
+    - [0.357, 3.31e-05]
+    - [0.393, 3.46e-05]
+    - [0.44, 3.56e-05]
+    - [0.496, 3.94e-05]
+    - [0.559, 3.84e-05]
+    - [0.624, 4.04e-05]
+    - [0.69, 4.27e-05]
+    - [0.757, 4.47e-05]
+    - [0.824, 4.54e-05]
+    - [0.891, 4.74e-05]
+    - [0.955, 4.77e-05]
+    - [1.02, 4.82e-05]
+    - [1.087, 4.92e-05]
+    - [1.151, 4.92e-05]
+    - [1.219, 4.85e-05]
+    - [1.286, 5.02e-05]
+    - [1.355, 5.25e-05]
   pressure: *id001
   temperature: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

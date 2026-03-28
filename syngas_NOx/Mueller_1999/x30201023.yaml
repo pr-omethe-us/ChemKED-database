@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -26,6 +27,7 @@ common-properties:
   - 950 K
   - uncertainty-type: absolute
     uncertainty: 3 K
+    uncertainty-sourcetype: reported
   composition: &id003
     kind: mole percent
     species:
@@ -33,6 +35,10 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 0.53
+      - evaluated-standard-deviation: 0.025
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -45,35 +51,14 @@ common-properties:
       InChI: 1S/NO/c1-2
       amount:
       - 0.000107
+      - evaluated-standard-deviation: 5.0e-06
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
       - 0.982093
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.025 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 5e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 5e-06 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -83,36 +68,21 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.009
-      - 0.00473
-    - - 0.021
-      - 0.0045
-    - - 0.029
-      - 0.00442
-    - - 0.04
-      - 0.00435
-    - - 0.055
-      - 0.00417
-    - - 0.065
-      - 0.00401
-    - - 0.077
-      - 0.00392
-    - - 0.085
-      - 0.00373
-    - - 0.097
-      - 0.00358
-    - - 0.104
-      - 0.00342
-    - - 0.114
-      - 0.00328
-    - - 0.123
-      - 0.00313
-    - - 0.132
-      - 0.00298
-    - - 0.141
-      - 0.00282
-    - - 0.149
-      - 0.00262
+    - [0.009, 0.00473]
+    - [0.021, 0.0045]
+    - [0.029, 0.00442]
+    - [0.04, 0.00435]
+    - [0.055, 0.00417]
+    - [0.065, 0.00401]
+    - [0.077, 0.00392]
+    - [0.085, 0.00373]
+    - [0.097, 0.00358]
+    - [0.104, 0.00342]
+    - [0.114, 0.00328]
+    - [0.123, 0.00313]
+    - [0.132, 0.00298]
+    - [0.141, 0.00282]
+    - [0.149, 0.00262]
   - species-name: 'NO'
     InChI: 1S/NO/c1-2
     quantity:
@@ -120,36 +90,21 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.009
-      - 0.000103
-    - - 0.021
-      - 0.000102
-    - - 0.029
-      - 0.000102
-    - - 0.04
-      - 0.000102
-    - - 0.055
-      - 0.000102
-    - - 0.065
-      - 0.000102
-    - - 0.077
-      - 0.000103
-    - - 0.085
-      - 0.000103
-    - - 0.097
-      - 0.000103
-    - - 0.104
-      - 0.000103
-    - - 0.114
-      - 0.000103
-    - - 0.123
-      - 0.000103
-    - - 0.132
-      - 0.000103
-    - - 0.141
-      - 0.000103
-    - - 0.149
-      - 0.000103
+    - [0.009, 0.000103]
+    - [0.021, 0.000102]
+    - [0.029, 0.000102]
+    - [0.04, 0.000102]
+    - [0.055, 0.000102]
+    - [0.065, 0.000102]
+    - [0.077, 0.000103]
+    - [0.085, 0.000103]
+    - [0.097, 0.000103]
+    - [0.104, 0.000103]
+    - [0.114, 0.000103]
+    - [0.123, 0.000103]
+    - [0.132, 0.000103]
+    - [0.141, 0.000103]
+    - [0.149, 0.000103]
   - species-name: NO2
     InChI: 1S/NO2/c2-1-3
     quantity:
@@ -157,37 +112,22 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.009
-      - 4.0e-06
-    - - 0.021
-      - 5.0e-06
-    - - 0.029
-      - 5.0e-06
-    - - 0.04
-      - 5.0e-06
-    - - 0.055
-      - 5.0e-06
-    - - 0.065
-      - 5.0e-06
-    - - 0.077
-      - 5.0e-06
-    - - 0.085
-      - 5.0e-06
-    - - 0.097
-      - 5.0e-06
-    - - 0.104
-      - 5.0e-06
-    - - 0.114
-      - 5.0e-06
-    - - 0.123
-      - 4.0e-06
-    - - 0.132
-      - 4.0e-06
-    - - 0.141
-      - 4.0e-06
-    - - 0.149
-      - 4.0e-06
+    - [0.009, 4.0e-06]
+    - [0.021, 5.0e-06]
+    - [0.029, 5.0e-06]
+    - [0.04, 5.0e-06]
+    - [0.055, 5.0e-06]
+    - [0.065, 5.0e-06]
+    - [0.077, 5.0e-06]
+    - [0.085, 5.0e-06]
+    - [0.097, 5.0e-06]
+    - [0.104, 5.0e-06]
+    - [0.114, 5.0e-06]
+    - [0.123, 4.0e-06]
+    - [0.132, 4.0e-06]
+    - [0.141, 4.0e-06]
+    - [0.149, 4.0e-06]
   pressure: *id001
   temperature: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

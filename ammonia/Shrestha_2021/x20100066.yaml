@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -25,14 +26,7 @@ apparatus:
   institution: ''
   facility: ''
   mode: constant volume combustion chamber
-common-properties:
-  evaluated-standard-deviation: &id001
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.5 cm/s
+common-properties: {}
 datapoints:
 - composition:
     kind: mole fraction
@@ -57,11 +51,18 @@ datapoints:
   - 470 K
   - uncertainty-type: absolute
     uncertainty: 2 K
+    uncertainty-sourcetype: reported
   pressure:
   - 2.94 bar
-  equivalence-ratio: 1.1
+  equivalence-ratio:
+  - 1.1 dimensionless
   laminar-burning-velocity:
   - 31.48 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.55 cm/s
-  evaluated-standard-deviation: *id001
+    uncertainty-sourcetype: calculated
+    evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+...

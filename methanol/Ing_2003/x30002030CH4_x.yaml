@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -31,10 +32,18 @@ common-properties:
       InChI: 1S/CH4O/c1-2/h2H,1H3
       amount:
       - 0.0039
+      - evaluated-standard-deviation: 0.00039
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
     - species-name: CH4
       InChI: 1S/CH4/h1H4
       amount:
       - 0.0039
+      - evaluated-standard-deviation: 0.000399
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -43,63 +52,6 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.97855
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CH3OH
-    InChI: 1S/CH4O/c1-2/h2H,1H3
-    value:
-    - 0.00039 mole faction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CO2
-    InChI: 1S/CO2/c2-1-3
-    value:
-    - 3.79e-05 mole faction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.000483 mole faction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CH4
-    InChI: 1S/CH4/h1H4
-    value:
-    - 0.000399 mole faction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: CH2O
-    InChI: 1S/CH2O/c1-2/h1H2
-    value:
-    - 5.15e-05 mole faction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: C2H6
-    InChI: 1S/C2H6/c1-2/h1-2H3
-    value:
-    - 9.46e-07 mole faction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    species-name: C2H4
-    InChI: 1S/C2H4/c1-2/h1-2H2
-    value:
-    - 5.77e-07 mole faction
 datapoints:
 - concentration-profiles:
   - species-name: CH3OH
@@ -109,24 +61,15 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.6
-      - 0.003674
-    - - 0.8
-      - 0.003586
-    - - 1.0
-      - 0.003314
-    - - 1.2
-      - 0.002393
-    - - 1.3
-      - 0.002096
-    - - 1.4
-      - 0.001414
-    - - 1.5
-      - 0.001023
-    - - 1.7
-      - 0.0004104
-    - - 1.9
-      - 0.0002336
+    - [0.6, 0.003674]
+    - [0.8, 0.003586]
+    - [1.0, 0.003314]
+    - [1.2, 0.002393]
+    - [1.3, 0.002096]
+    - [1.4, 0.001414]
+    - [1.5, 0.001023]
+    - [1.7, 0.0004104]
+    - [1.9, 0.0002336]
   - species-name: CO2
     InChI: 1S/CO2/c2-1-3
     quantity:
@@ -134,24 +77,15 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.6
-      - -1.0
-    - - 0.8
-      - -1.0
-    - - 1.0
-      - 9.831e-06
-    - - 1.2
-      - 2.986e-05
-    - - 1.3
-      - 4.609e-05
-    - - 1.4
-      - 9.915e-05
-    - - 1.5
-      - 0.0001347
-    - - 1.7
-      - 0.0002861
-    - - 1.9
-      - 0.0003789
+    - [0.6, -1.0]
+    - [0.8, -1.0]
+    - [1.0, 9.831e-06]
+    - [1.2, 2.986e-05]
+    - [1.3, 4.609e-05]
+    - [1.4, 9.915e-05]
+    - [1.5, 0.0001347]
+    - [1.7, 0.0002861]
+    - [1.9, 0.0003789]
   - species-name: CO
     InChI: 1S/CO/c1-2
     quantity:
@@ -159,24 +93,15 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.6
-      - 0.0
-    - - 0.8
-      - 0.0
-    - - 1.0
-      - 0.0002146
-    - - 1.2
-      - 0.001035
-    - - 1.3
-      - 0.001604
-    - - 1.4
-      - 0.002816
-    - - 1.5
-      - 0.003226
-    - - 1.7
-      - 0.004602
-    - - 1.9
-      - 0.00483
+    - [0.6, 0.0]
+    - [0.8, 0.0]
+    - [1.0, 0.0002146]
+    - [1.2, 0.001035]
+    - [1.3, 0.001604]
+    - [1.4, 0.002816]
+    - [1.5, 0.003226]
+    - [1.7, 0.004602]
+    - [1.9, 0.00483]
   - species-name: CH4
     InChI: 1S/CH4/h1H4
     quantity:
@@ -184,24 +109,15 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.6
-      - 0.003984
-    - - 0.8
-      - 0.00399
-    - - 1.0
-      - 0.003813
-    - - 1.2
-      - 0.003504
-    - - 1.3
-      - 0.003371
-    - - 1.4
-      - 0.003037
-    - - 1.5
-      - 0.00291
-    - - 1.7
-      - 0.002348
-    - - 1.9
-      - 0.002134
+    - [0.6, 0.003984]
+    - [0.8, 0.00399]
+    - [1.0, 0.003813]
+    - [1.2, 0.003504]
+    - [1.3, 0.003371]
+    - [1.4, 0.003037]
+    - [1.5, 0.00291]
+    - [1.7, 0.002348]
+    - [1.9, 0.002134]
   - species-name: CH2O
     InChI: 1S/CH2O/c1-2/h1H2
     quantity:
@@ -209,24 +125,15 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.6
-      - 5.372e-05
-    - - 0.8
-      - 0.0001717
-    - - 1.0
-      - 0.000321
-    - - 1.2
-      - 0.0005148
-    - - 1.3
-      - 0.0005148
-    - - 1.4
-      - 0.0004197
-    - - 1.5
-      - 0.0003251
-    - - 1.7
-      - 0.0001531
-    - - 1.9
-      - 0.0001004
+    - [0.6, 5.372e-05]
+    - [0.8, 0.0001717]
+    - [1.0, 0.000321]
+    - [1.2, 0.0005148]
+    - [1.3, 0.0005148]
+    - [1.4, 0.0004197]
+    - [1.5, 0.0003251]
+    - [1.7, 0.0001531]
+    - [1.9, 0.0001004]
   - species-name: C2H6
     InChI: 1S/C2H6/c1-2/h1-2H3
     quantity:
@@ -234,24 +141,15 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.6
-      - -1.0
-    - - 0.8
-      - -1.0
-    - - 1.0
-      - -1.0
-    - - 1.2
-      - 2.264e-06
-    - - 1.3
-      - 3.076e-06
-    - - 1.4
-      - 4.342e-06
-    - - 1.5
-      - 5.259e-06
-    - - 1.7
-      - 7.713e-06
-    - - 1.9
-      - 9.462e-06
+    - [0.6, -1.0]
+    - [0.8, -1.0]
+    - [1.0, -1.0]
+    - [1.2, 2.264e-06]
+    - [1.3, 3.076e-06]
+    - [1.4, 4.342e-06]
+    - [1.5, 5.259e-06]
+    - [1.7, 7.713e-06]
+    - [1.9, 9.462e-06]
   - species-name: C2H4
     InChI: 1S/C2H4/c1-2/h1-2H2
     quantity:
@@ -259,25 +157,16 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.6
-      - -1.0
-    - - 0.8
-      - -1.0
-    - - 1.0
-      - -1.0
-    - - 1.2
-      - -1.0
-    - - 1.3
-      - -1.0
-    - - 1.4
-      - -1.0
-    - - 1.5
-      - -1.0
-    - - 1.7
-      - 2.179e-06
-    - - 1.9
-      - 2.886e-06
+    - [0.6, -1.0]
+    - [0.8, -1.0]
+    - [1.0, -1.0]
+    - [1.2, -1.0]
+    - [1.3, -1.0]
+    - [1.4, -1.0]
+    - [1.5, -1.0]
+    - [1.7, 2.179e-06]
+    - [1.9, 2.886e-06]
   pressure: *id001
   temperature: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

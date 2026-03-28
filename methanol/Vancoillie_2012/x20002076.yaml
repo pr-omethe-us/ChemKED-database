@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -26,13 +27,6 @@ common-properties:
   - 1 atm
   temperature: &id002
   - 348 K
-  evaluated-standard-deviation: &id003
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 2.1 cm/s
 datapoints:
 - composition:
     kind: mole fraction
@@ -55,10 +49,14 @@ datapoints:
       - 0.030718
   laminar-burning-velocity:
   - 23 cm/s
-  equivalence-ratio: 0.7
+  - evaluated-standard-deviation: 2.1 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio:
+  - 0.7 dimensionless
   pressure: *id001
   temperature: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -80,10 +78,14 @@ datapoints:
       - 0.034529
   laminar-burning-velocity:
   - 31.5 cm/s
-  equivalence-ratio: 0.8
+  - evaluated-standard-deviation: 2.1 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio:
+  - 0.8 dimensionless
   pressure: *id001
   temperature: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -105,10 +107,14 @@ datapoints:
       - 0.038216
   laminar-burning-velocity:
   - 39.2 cm/s
-  equivalence-ratio: 0.9
+  - evaluated-standard-deviation: 2.1 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio:
+  - 0.9 dimensionless
   pressure: *id001
   temperature: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -130,10 +136,14 @@ datapoints:
       - 0.041786
   laminar-burning-velocity:
   - 44.8 cm/s
-  equivalence-ratio: 1.0
+  - evaluated-standard-deviation: 2.1 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio:
+  - 1 dimensionless
   pressure: *id001
   temperature: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -155,7 +165,12 @@ datapoints:
       - 0.058055
   laminar-burning-velocity:
   - 34.4 cm/s
-  equivalence-ratio: 1.5
+  - evaluated-standard-deviation: 2.1 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio:
+  - 1.5 dimensionless
   pressure: *id001
   temperature: *id002
-  evaluated-standard-deviation: *id003
+...

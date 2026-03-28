@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -35,14 +36,7 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.95
-  evaluated-standard-deviation: &id003
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.236 unitless
-  ignition-type: &id004
+  ignition-type: &id003
     target: CO2
     type: baseline min intercept from d/dt
 datapoints:
@@ -50,39 +44,55 @@ datapoints:
   - 2000.73 K
   ignition-delay:
   - 318.55 us
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  ignition-type: *id004
+  ignition-type: *id003
 - temperature:
   - 1989.01 K
   ignition-delay:
   - 318.85 us
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  ignition-type: *id004
+  ignition-type: *id003
 - temperature:
   - 1996.32 K
   ignition-delay:
   - 371.01 us
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  ignition-type: *id004
+  ignition-type: *id003
 - temperature:
   - 1890.73 K
   ignition-delay:
   - 761.2 us
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  ignition-type: *id004
+  ignition-type: *id003
 - temperature:
   - 1869.91 K
   ignition-delay:
   - 724.91 us
+  - evaluated-standard-deviation: '0.236'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   pressure: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
-  ignition-type: *id004
+  ignition-type: *id003
+...

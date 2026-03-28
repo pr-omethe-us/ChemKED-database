@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -40,23 +41,6 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.990519
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.00107 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.000309 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -66,33 +50,20 @@ datapoints:
     time:
       units: us
     values:
-    - - 47.7
-      - 1.534e-09
-    - - 99.3
-      - 3.116e-09
-    - - 145.2
-      - 4.345e-09
-    - - 189.5
-      - 5.291e-09
-    - - 238.3
-      - 6.122e-09
-    - - 285.6
-      - 6.578e-09
-    - - 329.5
-      - 7.048e-09
-    - - 379.3
-      - 7.383e-09
-    - - 423.8
-      - 7.378e-09
-    - - 473.0
-      - 7.529e-09
-    - - 517.7
-      - 7.583e-09
-    - - 566.5
-      - 7.614e-09
-    - - 613.8
-      - 7.586e-09
+    - [47.7, 1.534e-09]
+    - [99.3, 3.116e-09]
+    - [145.2, 4.345e-09]
+    - [189.5, 5.291e-09]
+    - [238.3, 6.122e-09]
+    - [285.6, 6.578e-09]
+    - [329.5, 7.048e-09]
+    - [379.3, 7.383e-09]
+    - [423.8, 7.378e-09]
+    - [473.0, 7.529e-09]
+    - [517.7, 7.583e-09]
+    - [566.5, 7.614e-09]
+    - [613.8, 7.586e-09]
   temperature: *id001
   pressure: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

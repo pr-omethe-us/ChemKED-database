@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -21,14 +22,15 @@ apparatus:
   facility: ''
   mode: burner-stabilized
 common-properties:
-  equivalence-ratio: 1.0
+  equivalence-ratio: &id001
+  - 1 dimensionless
   temperature:
   - 300 K
-  pressure: &id001
+  pressure: &id002
   - 1 atm
-  flow-rate: &id002
+  flow-rate: &id003
   - 0.01 g cm-2 s-1
-  composition: &id003
+  composition: &id004
     kind: mole fraction
     species:
     - species-name: H2
@@ -47,15 +49,10 @@ common-properties:
       InChI: 1S/NO/c1-2
       amount:
       - 0.0002
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 1.9e-05 mole fraction
+      - evaluated-standard-deviation: 1.9e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -66,14 +63,16 @@ datapoints:
       - 0.000186
       - uncertainty-type: relative
         uncertainty: 0.08
+        uncertainty-sourcetype: calculated
   distance:
   - 5 mm
   temperature:
   - 1610 K
   - uncertainty-type: absolute
     uncertainty: 40 K
-  equivalence-ratio: 1.0
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+    uncertainty-sourcetype: digitized
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
+...

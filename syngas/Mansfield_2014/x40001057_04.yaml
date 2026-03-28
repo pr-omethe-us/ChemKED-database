@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -45,14 +46,7 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.049
-  evaluated-standard-deviation: &id002
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: statistical scatter
-    value:
-    - 0.12 unitless
-  ignition-type: &id003
+  ignition-type: &id002
     target: p;
     type: d/dt max
 datapoints:
@@ -62,6 +56,10 @@ datapoints:
   - 13.9 atm
   ignition-delay:
   - 9.7 ms
+  - evaluated-standard-deviation: '0.12'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   time-histories:
   - time:
       units: ms
@@ -71,54 +69,30 @@ datapoints:
       column: 1
     type: volume
     values:
-    - - 0.0
-      - 1.0
-    - - 0.2
-      - 1.0091846
-    - - 0.4
-      - 1.0156544
-    - - 0.6
-      - 1.0201872
-    - - 0.8
-      - 1.0233509
-    - - 1.0
-      - 1.025553
-    - - 1.2
-      - 1.027083
-    - - 1.4
-      - 1.0281447
-    - - 1.6
-      - 1.0288807
-    - - 1.8
-      - 1.0293907
-    - - 2.0
-      - 1.0297438
-    - - 2.2
-      - 1.0299883
-    - - 2.3
-      - 1.0300807
-    - - 3.3
-      - 1.0304653
-    - - 4.3
-      - 1.0305263
-    - - 5.3
-      - 1.030536
-    - - 6.3
-      - 1.0305375
-    - - 7.3
-      - 1.0305377
-    - - 8.3
-      - 1.0305378
-    - - 9.3
-      - 1.0305378
-    - - 10.3
-      - 1.0305378
-    - - 11.3
-      - 1.0305378
-    - - 12.3
-      - 1.0305378
-    - - 13.3
-      - 1.0305378
+    - [0.0, 1.0]
+    - [0.2, 1.0091846]
+    - [0.4, 1.0156544]
+    - [0.6, 1.0201872]
+    - [0.8, 1.0233509]
+    - [1.0, 1.025553]
+    - [1.2, 1.027083]
+    - [1.4, 1.0281447]
+    - [1.6, 1.0288807]
+    - [1.8, 1.0293907]
+    - [2.0, 1.0297438]
+    - [2.2, 1.0299883]
+    - [2.3, 1.0300807]
+    - [3.3, 1.0304653]
+    - [4.3, 1.0305263]
+    - [5.3, 1.030536]
+    - [6.3, 1.0305375]
+    - [7.3, 1.0305377]
+    - [8.3, 1.0305378]
+    - [9.3, 1.0305378]
+    - [10.3, 1.0305378]
+    - [11.3, 1.0305378]
+    - [12.3, 1.0305378]
+    - [13.3, 1.0305378]
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
+...

@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -39,14 +40,7 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.3487
-  evaluated-standard-deviation: &id002
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: generic uncertainty
-    value:
-    - 0.15 unitless
-  ignition-type: &id003
+  ignition-type: &id002
     target: p;
     type: d/dt max
 datapoints:
@@ -56,6 +50,10 @@ datapoints:
   - 295.94 K
   ignition-delay:
   - 6.62 ms
+  - evaluated-standard-deviation: '0.15'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   time-histories:
   - time:
       units: ms
@@ -65,42 +63,24 @@ datapoints:
       column: 1
     type: volume
     values:
-    - - 0.0
-      - 1.0
-    - - 3.83564
-      - 0.81645
-    - - 5.76745
-      - 0.72661
-    - - 7.64416
-      - 0.6506
-    - - 9.56926
-      - 0.58414
-    - - 11.60677
-      - 0.52519
-    - - 13.77457
-      - 0.47335
-    - - 16.09871
-      - 0.4279
-    - - 19.30371
-      - 0.37734
-    - - 23.52481
-      - 0.28869
-    - - 25.91825
-      - 0.24858
-    - - 28.81602
-      - 0.2131
-    - - 31.1798
-      - 0.16625
-    - - 32.27839
-      - 0.14831
-    - - 34.60451
-      - 0.11946
-    - - 37.65928
-      - 0.07356
-    - - 40.67864
-      - 0.03531
-    - - 57.26272
-      - 0.03663
+    - [0.0, 1.0]
+    - [3.83564, 0.81645]
+    - [5.76745, 0.72661]
+    - [7.64416, 0.6506]
+    - [9.56926, 0.58414]
+    - [11.60677, 0.52519]
+    - [13.77457, 0.47335]
+    - [16.09871, 0.4279]
+    - [19.30371, 0.37734]
+    - [23.52481, 0.28869]
+    - [25.91825, 0.24858]
+    - [28.81602, 0.2131]
+    - [31.1798, 0.16625]
+    - [32.27839, 0.14831]
+    - [34.60451, 0.11946]
+    - [37.65928, 0.07356]
+    - [40.67864, 0.03531]
+    - [57.26272, 0.03663]
   composition: *id001
-  evaluated-standard-deviation: *id002
-  ignition-type: *id003
+  ignition-type: *id002
+...

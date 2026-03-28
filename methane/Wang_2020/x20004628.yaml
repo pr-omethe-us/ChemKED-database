@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -28,13 +29,6 @@ common-properties:
   - 298 K
   pressure: &id002
   - 0.25 MPa
-  evaluated-standard-deviation: &id003
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    value:
-    - 0.5 cm/s
 datapoints:
 - composition:
     kind: mole fraction
@@ -53,9 +47,12 @@ datapoints:
       - 0.705128
   laminar-burning-velocity:
   - 25.5 cm/s
+  - evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   pressure: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -73,9 +70,12 @@ datapoints:
       - 0.690583
   laminar-burning-velocity:
   - 36.24 cm/s
+  - evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   pressure: *id002
-  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -93,6 +93,10 @@ datapoints:
       - 0.669856
   laminar-burning-velocity:
   - 23.92 cm/s
+  - evaluated-standard-deviation: 0.5 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   pressure: *id002
-  evaluated-standard-deviation: *id003
+...

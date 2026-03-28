@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -24,6 +25,7 @@ common-properties:
   - 393 K
   - uncertainty-type: absolute
     uncertainty: 2 K
+    uncertainty-sourcetype: reported
   composition: &id002
     kind: mole fraction
     species:
@@ -43,60 +45,75 @@ common-properties:
       InChI: 1S/H2O/h1H2
       amount:
       - 0.05
-  evaluated-standard-deviation: &id003
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: generic uncertainty
-    value:
-    - 2 cm/s
 datapoints:
 - pressure:
   - 2 atm
   laminar-burning-velocity:
   - 110.43 cm/s
+  - evaluated-standard-deviation: 2 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - pressure:
   - 4 atm
   laminar-burning-velocity:
   - 86.68 cm/s
+  - evaluated-standard-deviation: 2 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - pressure:
   - 5 atm
   laminar-burning-velocity:
   - 75.82 cm/s
+  - evaluated-standard-deviation: 2 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - pressure:
   - 6 atm
   laminar-burning-velocity:
   - 65.85 cm/s
+  - evaluated-standard-deviation: 2 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - pressure:
   - 7 atm
   laminar-burning-velocity:
   - 58.89 cm/s
+  - evaluated-standard-deviation: 2 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - pressure:
   - 8 atm
   laminar-burning-velocity:
   - 52.32 cm/s
+  - evaluated-standard-deviation: 2 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - pressure:
   - 10 atm
   laminar-burning-velocity:
   - 43.77 cm/s
+  - evaluated-standard-deviation: 2 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
+...

@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -24,10 +25,11 @@ apparatus:
   facility: ''
   mode: constant volume combustion chamber
 common-properties:
-  equivalence-ratio: 1.4
-  pressure: &id001
+  equivalence-ratio: &id001
+  - 1.4 dimensionless
+  pressure: &id002
   - 0.1 MPa
-  composition: &id002
+  composition: &id003
     kind: mole fraction
     species:
     - species-name: NH3
@@ -45,61 +47,38 @@ datapoints:
   - 75.1 cm/s
   - uncertainty-type: absolute
     uncertainty: 4 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 2.005 cm/s
-  equivalence-ratio: 1.4
-  pressure: *id001
-  composition: *id002
+    uncertainty-sourcetype: reported
+  equivalence-ratio: *id001
+  pressure: *id002
+  composition: *id003
 - temperature:
   - 333 K
   laminar-burning-velocity:
   - 81.4 cm/s
   - uncertainty-type: absolute
     uncertainty: 6 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 3 cm/s
-  equivalence-ratio: 1.4
-  pressure: *id001
-  composition: *id002
+    uncertainty-sourcetype: reported
+  equivalence-ratio: *id001
+  pressure: *id002
+  composition: *id003
 - temperature:
   - 363 K
   laminar-burning-velocity:
   - 89.6 cm/s
   - uncertainty-type: absolute
     uncertainty: 4.4 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 2.232 cm/s
-  equivalence-ratio: 1.4
-  pressure: *id001
-  composition: *id002
+    uncertainty-sourcetype: reported
+  equivalence-ratio: *id001
+  pressure: *id002
+  composition: *id003
 - temperature:
   - 393 K
   laminar-burning-velocity:
   - 97.6 cm/s
   - uncertainty-type: absolute
     uncertainty: 4.6 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 2.351 cm/s
-  equivalence-ratio: 1.4
-  pressure: *id001
-  composition: *id002
+    uncertainty-sourcetype: reported
+  equivalence-ratio: *id001
+  pressure: *id002
+  composition: *id003
+...

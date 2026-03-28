@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -29,6 +30,10 @@ common-properties:
       InChI: 1S/H2/h1H
       amount:
       - 0.0101
+      - evaluated-standard-deviation: 0.000498
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -41,15 +46,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.984695
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: H2
-    InChI: 1S/H2/h1H
-    value:
-    - 0.000498 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: H2
@@ -59,41 +55,24 @@ datapoints:
     time:
       units: s
     values:
-    - - 0.051
-      - 0.009291
-    - - 0.055
-      - 0.008752
-    - - 0.059
-      - 0.008225
-    - - 0.064
-      - 0.007648
-    - - 0.071
-      - 0.006958
-    - - 0.08
-      - 0.006318
-    - - 0.09
-      - 0.005666
-    - - 0.1
-      - 0.005089
-    - - 0.11
-      - 0.004662
-    - - 0.12
-      - 0.004311
-    - - 0.131
-      - 0.003961
-    - - 0.141
-      - 0.00361
-    - - 0.151
-      - 0.003284
-    - - 0.162
-      - 0.003008
-    - - 0.172
-      - 0.00282
-    - - 0.182
-      - 0.002708
-    - - 0.192
-      - 0.00252
+    - [0.051, 0.009291]
+    - [0.055, 0.008752]
+    - [0.059, 0.008225]
+    - [0.064, 0.007648]
+    - [0.071, 0.006958]
+    - [0.08, 0.006318]
+    - [0.09, 0.005666]
+    - [0.1, 0.005089]
+    - [0.11, 0.004662]
+    - [0.12, 0.004311]
+    - [0.131, 0.003961]
+    - [0.141, 0.00361]
+    - [0.151, 0.003284]
+    - [0.162, 0.003008]
+    - [0.172, 0.00282]
+    - [0.182, 0.002708]
+    - [0.192, 0.00252]
   pressure: *id001
   temperature: *id002
   composition: *id003
-  evaluated-standard-deviation: *id004
+...

@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -24,6 +25,7 @@ common-properties:
   - 393 K
   - uncertainty-type: absolute
     uncertainty: 2 K
+    uncertainty-sourcetype: reported
   composition: &id002
     kind: mole fraction
     species:
@@ -39,32 +41,35 @@ common-properties:
       InChI: 1S/He
       amount:
       - 0.826084
-  evaluated-standard-deviation: &id003
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    value:
-    - 3.64 cm/s
 datapoints:
 - pressure:
   - 1 atm
   laminar-burning-velocity:
   - 123.99 cm/s
+  - evaluated-standard-deviation: 3.64 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - pressure:
   - 6.1 atm
   laminar-burning-velocity:
   - 84.3 cm/s
+  - evaluated-standard-deviation: 3.64 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - pressure:
   - 10 atm
   laminar-burning-velocity:
   - 60.39 cm/s
+  - evaluated-standard-deviation: 3.64 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
+...

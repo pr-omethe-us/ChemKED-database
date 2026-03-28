@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -27,8 +28,9 @@ apparatus:
 common-properties:
   temperature: &id001
   - 360 K
-  equivalence-ratio: 1.0
-  composition: &id002
+  equivalence-ratio: &id002
+  - 1 dimensionless
+  composition: &id003
     kind: mole fraction
     species:
     - species-name: NH3
@@ -54,45 +56,28 @@ datapoints:
   - 17.7 cm/s
   - uncertainty-type: absolute
     uncertainty: 2.49 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 2.849 cm/s
+    uncertainty-sourcetype: digitized
   temperature: *id001
-  equivalence-ratio: 1.0
-  composition: *id002
+  equivalence-ratio: *id002
+  composition: *id003
 - pressure:
   - 0.3 MPa
   laminar-burning-velocity:
   - 10.5 cm/s
   - uncertainty-type: absolute
     uncertainty: 1.04 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 1.607 cm/s
+    uncertainty-sourcetype: digitized
   temperature: *id001
-  equivalence-ratio: 1.0
-  composition: *id002
+  equivalence-ratio: *id002
+  composition: *id003
 - pressure:
   - 0.5 MPa
   laminar-burning-velocity:
   - 8.8 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.51 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 1.299 cm/s
+    uncertainty-sourcetype: digitized
   temperature: *id001
-  equivalence-ratio: 1.0
-  composition: *id002
+  equivalence-ratio: *id002
+  composition: *id003
+...

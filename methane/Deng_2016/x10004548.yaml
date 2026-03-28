@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -19,10 +20,11 @@ apparatus:
   facility: ''
   mode: reflected
 common-properties:
-  equivalence-ratio: 1.0
-  pressure-rise: &id001
+  equivalence-ratio: &id001
+  - 1 dimensionless
+  pressure-rise: &id002
   - 0.04 ms-1
-  composition: &id002
+  composition: &id003
     kind: mole percent
     species:
     - species-name: CH4
@@ -37,13 +39,6 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 94.266
-  evaluated-standard-deviation: &id003
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.249 unitless
   ignition-type: &id004
     target: OH*
     type: baseline min intercept from d/dt
@@ -52,104 +47,140 @@ datapoints:
   - 1501.5 K
   - uncertainty-type: absolute
     uncertainty: 25 K
+    uncertainty-sourcetype: reported
   pressure:
   - 4.35 atm
   ignition-delay:
   - 2354 us
   - uncertainty-type: relative
     uncertainty: '0.2'
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+    uncertainty-sourcetype: reported
+    evaluated-standard-deviation: '0.249'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - temperature:
   - 1533.2 K
   - uncertainty-type: absolute
     uncertainty: 25 K
+    uncertainty-sourcetype: reported
   pressure:
   - 4.36 atm
   ignition-delay:
   - 1246 us
   - uncertainty-type: relative
     uncertainty: '0.2'
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+    uncertainty-sourcetype: reported
+    evaluated-standard-deviation: '0.249'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - temperature:
   - 1606.7 K
   - uncertainty-type: absolute
     uncertainty: 25 K
+    uncertainty-sourcetype: reported
   pressure:
   - 4.17 atm
   ignition-delay:
   - 728 us
   - uncertainty-type: relative
     uncertainty: '0.2'
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+    uncertainty-sourcetype: reported
+    evaluated-standard-deviation: '0.249'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - temperature:
   - 1696.9 K
   - uncertainty-type: absolute
     uncertainty: 25 K
+    uncertainty-sourcetype: reported
   pressure:
   - 4.48 atm
   ignition-delay:
   - 431 us
   - uncertainty-type: relative
     uncertainty: '0.2'
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+    uncertainty-sourcetype: reported
+    evaluated-standard-deviation: '0.249'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - temperature:
   - 1789.4 K
   - uncertainty-type: absolute
     uncertainty: 25 K
+    uncertainty-sourcetype: reported
   pressure:
   - 4.21 atm
   ignition-delay:
   - 197 us
   - uncertainty-type: relative
     uncertainty: '0.2'
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+    uncertainty-sourcetype: reported
+    evaluated-standard-deviation: '0.249'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - temperature:
   - 1833.5 K
   - uncertainty-type: absolute
     uncertainty: 25 K
+    uncertainty-sourcetype: reported
   pressure:
   - 4.28 atm
   ignition-delay:
   - 125 us
   - uncertainty-type: relative
     uncertainty: '0.2'
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+    uncertainty-sourcetype: reported
+    evaluated-standard-deviation: '0.249'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
 - temperature:
   - 1889.8 K
   - uncertainty-type: absolute
     uncertainty: 25 K
+    uncertainty-sourcetype: reported
   pressure:
   - 4.31 atm
   ignition-delay:
   - 93 us
   - uncertainty-type: relative
     uncertainty: '0.2'
-  equivalence-ratio: 1.0
-  pressure-rise: *id001
-  composition: *id002
-  evaluated-standard-deviation: *id003
+    uncertainty-sourcetype: reported
+    evaluated-standard-deviation: '0.249'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+  equivalence-ratio: *id001
+  pressure-rise: *id002
+  composition: *id003
   ignition-type: *id004
+...

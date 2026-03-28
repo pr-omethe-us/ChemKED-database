@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -18,8 +19,9 @@ apparatus:
   facility: ''
   mode: reflected
 common-properties:
-  equivalence-ratio: 2.0
-  composition: &id001
+  equivalence-ratio: &id001
+  - 2 dimensionless
+  composition: &id002
     kind: mole fraction
     species:
     - species-name: CH4
@@ -34,13 +36,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.6529
-  evaluated-standard-deviation: &id002
-  - reference: ignition delay
-    kind: relative
-    sourcetype: estimated
-    method: generic uncertainty
-    value:
-    - 0.1 unitless
   ignition-type: &id003
     target: CH*
     type: relative concentration
@@ -51,9 +46,12 @@ datapoints:
   - 1519 K
   ignition-delay:
   - 8 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 7.85 atm
@@ -61,9 +59,12 @@ datapoints:
   - 1442 K
   ignition-delay:
   - 13 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 7.95 atm
@@ -71,9 +72,12 @@ datapoints:
   - 1389 K
   ignition-delay:
   - 22 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 8.09 atm
@@ -81,9 +85,12 @@ datapoints:
   - 1323 K
   ignition-delay:
   - 55 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 7.38 atm
@@ -91,9 +98,12 @@ datapoints:
   - 1265 K
   ignition-delay:
   - 103 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 6.96 atm
@@ -101,9 +111,12 @@ datapoints:
   - 1230 K
   ignition-delay:
   - 182 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
 - pressure:
   - 6.67 atm
@@ -111,7 +124,11 @@ datapoints:
   - 1166 K
   ignition-delay:
   - 500 us
-  equivalence-ratio: 2.0
-  composition: *id001
-  evaluated-standard-deviation: *id002
+  - evaluated-standard-deviation: '0.1'
+    evaluated-standard-deviation-type: relative
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: generic uncertainty
+  equivalence-ratio: *id001
+  composition: *id002
   ignition-type: *id003
+...

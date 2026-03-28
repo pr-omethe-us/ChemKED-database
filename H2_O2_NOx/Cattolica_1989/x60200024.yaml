@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -20,14 +21,15 @@ apparatus:
   facility: ''
   mode: burner-stabilized
 common-properties:
-  equivalence-ratio: 1.37
+  equivalence-ratio: &id001
+  - 1.37 dimensionless
   temperature:
   - 293 K
-  pressure: &id001
+  pressure: &id002
   - 76 Torr
-  flow-rate: &id002
+  flow-rate: &id003
   - 0.0504 kg m-2 s-1
-  composition: &id003
+  composition: &id004
     kind: mole fraction
     species:
     - species-name: H2
@@ -46,15 +48,10 @@ common-properties:
       InChI: 1S/NO/c1-2
       amount:
       - 0.007743
-  evaluated-standard-deviation: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.001134 mole fraction
+      - evaluated-standard-deviation: 0.001134
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -67,11 +64,10 @@ datapoints:
   - 0.096 cm
   temperature:
   - 374 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -83,11 +79,10 @@ datapoints:
   - 0.205 cm
   temperature:
   - 457 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -99,11 +94,10 @@ datapoints:
   - 0.306 cm
   temperature:
   - 535 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -115,11 +109,10 @@ datapoints:
   - 0.401 cm
   temperature:
   - 608 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -131,11 +124,10 @@ datapoints:
   - 0.501 cm
   temperature:
   - 685 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -147,11 +139,10 @@ datapoints:
   - 0.606 cm
   temperature:
   - 765 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -163,11 +154,10 @@ datapoints:
   - 0.706 cm
   temperature:
   - 842 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -179,11 +169,10 @@ datapoints:
   - 0.802 cm
   temperature:
   - 916 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -195,11 +184,10 @@ datapoints:
   - 0.897 cm
   temperature:
   - 989 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -211,11 +199,10 @@ datapoints:
   - 1.002 cm
   temperature:
   - 1068 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -227,11 +214,10 @@ datapoints:
   - 1.106 cm
   temperature:
   - 1068 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -243,11 +229,10 @@ datapoints:
   - 1.202 cm
   temperature:
   - 1068 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -259,11 +244,10 @@ datapoints:
   - 1.302 cm
   temperature:
   - 1069 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -275,11 +259,10 @@ datapoints:
   - 1.402 cm
   temperature:
   - 1069 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -291,11 +274,10 @@ datapoints:
   - 1.502 cm
   temperature:
   - 1069 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -307,11 +289,10 @@ datapoints:
   - 1.606 cm
   temperature:
   - 1069 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -323,11 +304,10 @@ datapoints:
   - 1.702 cm
   temperature:
   - 1069 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -339,11 +319,10 @@ datapoints:
   - 1.797 cm
   temperature:
   - 1069 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -355,11 +334,10 @@ datapoints:
   - 1.902 cm
   temperature:
   - 1070 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -371,11 +349,10 @@ datapoints:
   - 1.997 cm
   temperature:
   - 1070 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -387,11 +364,10 @@ datapoints:
   - 2.102 cm
   temperature:
   - 1070 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -403,11 +379,10 @@ datapoints:
   - 2.193 cm
   temperature:
   - 1070 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -419,11 +394,10 @@ datapoints:
   - 2.297 cm
   temperature:
   - 1070 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -435,11 +409,10 @@ datapoints:
   - 2.393 cm
   temperature:
   - 1070 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -451,11 +424,10 @@ datapoints:
   - 2.497 cm
   temperature:
   - 1070 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -467,11 +439,10 @@ datapoints:
   - 2.593 cm
   temperature:
   - 1071 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -483,11 +454,10 @@ datapoints:
   - 2.698 cm
   temperature:
   - 1071 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -499,11 +469,10 @@ datapoints:
   - 2.802 cm
   temperature:
   - 1071 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -515,11 +484,10 @@ datapoints:
   - 2.902 cm
   temperature:
   - 1071 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -531,11 +499,10 @@ datapoints:
   - 3.002 cm
   temperature:
   - 1071 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -547,11 +514,10 @@ datapoints:
   - 3.102 cm
   temperature:
   - 1072 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -563,11 +529,10 @@ datapoints:
   - 3.202 cm
   temperature:
   - 1072 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -579,11 +544,10 @@ datapoints:
   - 3.302 cm
   temperature:
   - 1072 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -595,11 +559,10 @@ datapoints:
   - 3.402 cm
   temperature:
   - 1072 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -611,11 +574,10 @@ datapoints:
   - 3.507 cm
   temperature:
   - 1072 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -627,11 +589,10 @@ datapoints:
   - 3.607 cm
   temperature:
   - 1072 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -643,11 +604,10 @@ datapoints:
   - 3.702 cm
   temperature:
   - 1073 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -659,11 +619,10 @@ datapoints:
   - 3.802 cm
   temperature:
   - 1073 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -675,11 +634,10 @@ datapoints:
   - 3.902 cm
   temperature:
   - 1073 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -691,8 +649,8 @@ datapoints:
   - 4.002 cm
   temperature:
   - 1073 K
-  equivalence-ratio: 1.37
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
+  equivalence-ratio: *id001
+  pressure: *id002
+  flow-rate: *id003
+  composition: *id004
+...

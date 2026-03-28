@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -43,18 +44,16 @@ datapoints:
       InChI: 1S/N2/c1-2
       amount:
       - 0.632395
-  equivalence-ratio: 0.9
+  equivalence-ratio:
+  - 0.9 dimensionless
+  - uncertainty-type: absolute
+    uncertainty: '0.04'
+    uncertainty-sourcetype: reported
   laminar-burning-velocity:
   - 4.6 cm/s
   - uncertainty-type: absolute
     uncertainty: 1 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.635 cm/s
+    uncertainty-sourcetype: calculated
   temperature: *id001
   pressure: *id002
 - composition:
@@ -72,18 +71,16 @@ datapoints:
       InChI: 1S/N2/c1-2
       amount:
       - 0.618613
-  equivalence-ratio: 1.0
+  equivalence-ratio:
+  - 1 dimensionless
+  - uncertainty-type: absolute
+    uncertainty: '0.04'
+    uncertainty-sourcetype: reported
   laminar-burning-velocity:
   - 6.5 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.9 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.575 cm/s
+    uncertainty-sourcetype: calculated
   temperature: *id001
   pressure: *id002
 - composition:
@@ -101,17 +98,16 @@ datapoints:
       InChI: 1S/N2/c1-2
       amount:
       - 0.605419
-  equivalence-ratio: 1.1
+  equivalence-ratio:
+  - 1.1 dimensionless
+  - uncertainty-type: absolute
+    uncertainty: '0.04'
+    uncertainty-sourcetype: reported
   laminar-burning-velocity:
   - 7.5 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.8 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.566 cm/s
+    uncertainty-sourcetype: calculated
   temperature: *id001
   pressure: *id002
+...

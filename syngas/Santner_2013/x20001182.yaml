@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -24,6 +25,7 @@ common-properties:
   - 393 K
   - uncertainty-type: absolute
     uncertainty: 2 K
+    uncertainty-sourcetype: reported
   composition: &id002
     kind: mole fraction
     species:
@@ -47,39 +49,45 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 0.05939
-  evaluated-standard-deviation: &id003
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: statistical scatter
-    value:
-    - 7.19 cm/s
 datapoints:
 - pressure:
   - 1 atm
   laminar-burning-velocity:
   - 53.53 cm/s
+  - evaluated-standard-deviation: 7.19 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - pressure:
   - 2 atm
   laminar-burning-velocity:
   - 36.99 cm/s
+  - evaluated-standard-deviation: 7.19 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - pressure:
   - 4 atm
   laminar-burning-velocity:
   - 24.64 cm/s
+  - evaluated-standard-deviation: 7.19 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
 - pressure:
   - 6 atm
   laminar-burning-velocity:
   - 18.94 cm/s
+  - evaluated-standard-deviation: 7.19 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: statistical scatter
   temperature: *id001
   composition: *id002
-  evaluated-standard-deviation: *id003
+...

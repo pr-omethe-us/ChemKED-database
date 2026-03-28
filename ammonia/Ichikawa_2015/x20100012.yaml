@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -24,10 +25,11 @@ apparatus:
   facility: ''
   mode: constant volume combustion chamber
 common-properties:
-  equivalence-ratio: 1.0
-  temperature: &id001
+  equivalence-ratio: &id001
+  - 1 dimensionless
+  temperature: &id002
   - 298 K
-  pressure: &id002
+  pressure: &id003
   - 0.1 MPa
 datapoints:
 - composition:
@@ -53,16 +55,10 @@ datapoints:
   - 6.9 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.73 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.696 cm/s
-  equivalence-ratio: 1.0
-  temperature: *id001
-  pressure: *id002
+    uncertainty-sourcetype: digitized
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
 - composition:
     kind: mole fraction
     species:
@@ -86,16 +82,10 @@ datapoints:
   - 9.6 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.92 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 0.942 cm/s
-  equivalence-ratio: 1.0
-  temperature: *id001
-  pressure: *id002
+    uncertainty-sourcetype: digitized
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
 - composition:
     kind: mole fraction
     species:
@@ -119,16 +109,10 @@ datapoints:
   - 11.4 cm/s
   - uncertainty-type: absolute
     uncertainty: 1.34 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 1.184 cm/s
-  equivalence-ratio: 1.0
-  temperature: *id001
-  pressure: *id002
+    uncertainty-sourcetype: digitized
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
 - composition:
     kind: mole fraction
     species:
@@ -152,16 +136,10 @@ datapoints:
   - 11.9 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.28 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 1.03 cm/s
-  equivalence-ratio: 1.0
-  temperature: *id001
-  pressure: *id002
+    uncertainty-sourcetype: digitized
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
 - composition:
     kind: mole fraction
     species:
@@ -185,16 +163,10 @@ datapoints:
   - 13.8 cm/s
   - uncertainty-type: absolute
     uncertainty: 0.92 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 1.269 cm/s
-  equivalence-ratio: 1.0
-  temperature: *id001
-  pressure: *id002
+    uncertainty-sourcetype: digitized
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
 - composition:
     kind: mole fraction
     species:
@@ -218,16 +190,10 @@ datapoints:
   - 31.5 cm/s
   - uncertainty-type: absolute
     uncertainty: 1.35 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 2.784 cm/s
-  equivalence-ratio: 1.0
-  temperature: *id001
-  pressure: *id002
+    uncertainty-sourcetype: digitized
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
 - composition:
     kind: mole fraction
     species:
@@ -251,16 +217,10 @@ datapoints:
   - 63.7 cm/s
   - uncertainty-type: absolute
     uncertainty: 2.09 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 5.56 cm/s
-  equivalence-ratio: 1.0
-  temperature: *id001
-  pressure: *id002
+    uncertainty-sourcetype: digitized
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
 - composition:
     kind: mole fraction
     species:
@@ -284,16 +244,10 @@ datapoints:
   - 125.6 cm/s
   - uncertainty-type: absolute
     uncertainty: 2.98 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 10.869 cm/s
-  equivalence-ratio: 1.0
-  temperature: *id001
-  pressure: *id002
+    uncertainty-sourcetype: digitized
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
 - composition:
     kind: mole fraction
     species:
@@ -317,13 +271,8 @@ datapoints:
   - 210.8 cm/s
   - uncertainty-type: absolute
     uncertainty: 14.08 cm/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    value:
-    - 19.393 cm/s
-  equivalence-ratio: 1.0
-  temperature: *id001
-  pressure: *id002
+    uncertainty-sourcetype: digitized
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
+...

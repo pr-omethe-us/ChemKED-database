@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
@@ -26,8 +27,9 @@ apparatus:
 common-properties:
   pressure: &id001
   - 0.1 MPa
-  equivalence-ratio: 1.0
-  composition: &id002
+  equivalence-ratio: &id002
+  - 1 dimensionless
+  composition: &id003
     kind: mole fraction
     species:
     - species-name: CH4
@@ -47,55 +49,44 @@ datapoints:
   - 303.738 K
   laminar-burning-velocity:
   - 0.39322 m/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and estimated uncertainty
-    value:
-    - 2.24976544442 cm/s
+  - evaluated-standard-deviation: 2.24976544442 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
   pressure: *id001
-  equivalence-ratio: 1.0
-  composition: *id002
+  equivalence-ratio: *id002
+  composition: *id003
 - temperature:
   - 332.399 K
   laminar-burning-velocity:
   - 0.447458 m/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and estimated uncertainty
-    value:
-    - 2.49025337847 cm/s
+  - evaluated-standard-deviation: 2.49025337847 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
   pressure: *id001
-  equivalence-ratio: 1.0
-  composition: *id002
+  equivalence-ratio: *id002
+  composition: *id003
 - temperature:
   - 403.427 K
   laminar-burning-velocity:
   - 0.559322 m/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and estimated uncertainty
-    value:
-    - 3.00281914823 cm/s
+  - evaluated-standard-deviation: 3.00281914823 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
   pressure: *id001
-  equivalence-ratio: 1.0
-  composition: *id002
+  equivalence-ratio: *id002
+  composition: *id003
 - temperature:
   - 442.679 K
   laminar-burning-velocity:
   - 0.650847 m/s
-  evaluated-standard-deviation:
-  - reference: laminar burning velocity
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and estimated uncertainty
-    value:
-    - 3.43306579898 cm/s
+  - evaluated-standard-deviation: 3.43306579898 cm/s
+    evaluated-standard-deviation-type: absolute
+    evaluated-standard-deviation-sourcetype: estimated
+    evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
   pressure: *id001
-  equivalence-ratio: 1.0
-  composition: *id002
+  equivalence-ratio: *id002
+  composition: *id003
+...

@@ -1,3 +1,4 @@
+---
 file-authors:
 - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
     ELTE, Budapest, Hungary
@@ -21,24 +22,33 @@ apparatus:
   facility: ''
   mode: burner-stabilized
 common-properties:
-  equivalence-ratio: 1.19
-  temperature: &id001
+  equivalence-ratio: &id001
+  - 1.19 dimensionless
+  temperature: &id002
   - 300 K
-  pressure: &id002
+  pressure: &id003
   - 30 Torr
-  flow-rate: &id003
+  flow-rate: &id004
   - 40.34 g m-2 s-1
-  composition: &id004
+  composition: &id005
     kind: mole fraction
     species:
     - species-name: H2
       InChI: 1S/H2/h1H
       amount:
       - 0.258
+      - evaluated-standard-deviation: 0.083272013
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: CO
       InChI: 1S/CO/c1-2
       amount:
       - 0.082
+      - evaluated-standard-deviation: 0.069270809
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
@@ -47,47 +57,6 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.376
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.097757201 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 0.069270809 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: CO2
-    InChI: 1S/CO2/c2-1-3
-    value:
-    - 0.058639118 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2
-    InChI: 1S/H2/h1H
-    value:
-    - 0.083272013 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.050616507 unitless
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -96,22 +65,17 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.282
+      - evaluated-standard-deviation: 0.056228113
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   distance:
   - 0.01 cm
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.056228113 mole fraction
-  equivalence-ratio: 1.19
-  temperature: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
+  flow-rate: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -119,22 +83,17 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.271
+      - evaluated-standard-deviation: 0.056228113
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   distance:
   - 0.11 cm
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.056228113 mole fraction
-  equivalence-ratio: 1.19
-  temperature: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
+  flow-rate: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -142,22 +101,17 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.238
+      - evaluated-standard-deviation: 0.056228113
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   distance:
   - 0.21 cm
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.056228113 mole fraction
-  equivalence-ratio: 1.19
-  temperature: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
+  flow-rate: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -165,22 +119,17 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.211
+      - evaluated-standard-deviation: 0.056228113
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   distance:
   - 0.3 cm
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.056228113 mole fraction
-  equivalence-ratio: 1.19
-  temperature: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
+  flow-rate: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -188,22 +137,17 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.154
+      - evaluated-standard-deviation: 0.056228113
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   distance:
   - 0.41 cm
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.056228113 mole fraction
-  equivalence-ratio: 1.19
-  temperature: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
+  flow-rate: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -211,22 +155,17 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.104
+      - evaluated-standard-deviation: 0.056228113
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   distance:
   - 0.51 cm
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.056228113 mole fraction
-  equivalence-ratio: 1.19
-  temperature: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
+  flow-rate: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -234,22 +173,17 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.055
+      - evaluated-standard-deviation: 0.056228113
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   distance:
   - 0.6 cm
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.056228113 mole fraction
-  equivalence-ratio: 1.19
-  temperature: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
+  flow-rate: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -257,22 +191,17 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.02
+      - evaluated-standard-deviation: 0.056228113
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   distance:
   - 0.71 cm
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.056228113 mole fraction
-  equivalence-ratio: 1.19
-  temperature: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
+  flow-rate: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -280,22 +209,17 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.007
+      - evaluated-standard-deviation: 0.056228113
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   distance:
   - 0.81 cm
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.056228113 mole fraction
-  equivalence-ratio: 1.19
-  temperature: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
+  flow-rate: *id004
+  composition: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -303,19 +227,15 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
+      - evaluated-standard-deviation: 5.0e-05
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   distance:
   - 1.01 cm
-  evaluated-standard-deviation:
-  - reference: composition
-    kind: absolute
-    sourcetype: estimated
-    method: combined from scatter and reported uncertainty
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 5e-05 mole fraction
-  equivalence-ratio: 1.19
-  temperature: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  equivalence-ratio: *id001
+  temperature: *id002
+  pressure: *id003
+  flow-rate: *id004
+  composition: *id005
+...
