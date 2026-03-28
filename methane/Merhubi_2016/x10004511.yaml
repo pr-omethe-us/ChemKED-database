@@ -20,20 +20,20 @@ apparatus:
 common-properties:
   equivalence-ratio: 0.5
   composition: &id001
-    kind: mole fraction
+    kind: mole percent
     species:
     - species-name: CH4
       InChI: 1S/CH4/h1H4
       amount:
-      - 0.01
+      - 1.0
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
-      - 0.04
+      - 4.0
     - species-name: Ar
       InChI: 1S/Ar
       amount:
-      - 0.95
+      - 95.0
   ignition-type: &id002
     target: pressure
     type: d/dt max
@@ -75,7 +75,7 @@ datapoints:
   composition: *id001
   ignition-type: *id002
 - pressure:
-  - 10.0 bar
+  - 10 bar
   temperature:
   - 1800 K
   ignition-delay:
@@ -111,7 +111,7 @@ datapoints:
   composition: *id001
   ignition-type: *id002
 - pressure:
-  - 10.0 bar
+  - 10 bar
   temperature:
   - 1517 K
   ignition-delay:
@@ -138,7 +138,7 @@ datapoints:
   composition: *id001
   ignition-type: *id002
 - pressure:
-  - 11.0 bar
+  - 11 bar
   temperature:
   - 1549 K
   ignition-delay:

@@ -19,20 +19,20 @@ apparatus:
   mode: reflected shock
 common-properties:
   composition: &id001
-    kind: mole fraction
+    kind: mole percent
     species:
     - species-name: C2H4
       InChI: 1S/C2H4/c1-2/h1-2H2
       amount:
-      - 0.0625
+      - 6.25
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
-      - 0.1875
+      - 18.75
     - species-name: Ar
       InChI: 1S/Ar
       amount:
-      - 0.75
+      - 75.0
   ignition-type: &id002
     target: CH*;
     type: baseline min intercept from d/dt
@@ -40,7 +40,7 @@ datapoints:
 - temperature:
   - 1372 K
   pressure:
-  - 3.0 atm
+  - 3 atm
   ignition-delay:
   - 40 us
   composition: *id001
@@ -96,7 +96,7 @@ datapoints:
 - temperature:
   - 1092 K
   pressure:
-  - 2.0 atm
+  - 2 atm
   ignition-delay:
   - 1643 us
   composition: *id001
