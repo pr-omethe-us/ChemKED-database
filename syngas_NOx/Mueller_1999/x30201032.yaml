@@ -24,7 +24,14 @@ common-properties:
   - 10 atm
   temperature: &id002
   - 980 K
-  composition: &id003
+  uncertainty: &id003
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 3 K
+  composition: &id004
     kind: mole percent
     species:
     - species-name: CO
@@ -47,6 +54,23 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.982059
+  evaluated-standard-deviation: &id005
+  - reference: composition
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.025 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 5e-06 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -97,48 +121,50 @@ datapoints:
   - species-name: 'NO'
     InChI: 1S/NO/c1-2
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: s
     values:
     - - 0.064
-      - 15.0
+      - 1.5e-05
     - - 0.086
-      - 15.0
+      - 1.5e-05
     - - 0.117
-      - 16.0
+      - 1.6e-05
     - - 0.159
-      - 16.0
+      - 1.6e-05
     - - 0.21
-      - 17.0
+      - 1.7e-05
     - - 0.272
-      - 18.0
+      - 1.8e-05
     - - 0.343
-      - 18.0
+      - 1.8e-05
     - - 0.418
-      - 19.0
+      - 1.9e-05
     - - 0.492
-      - 19.0
+      - 1.9e-05
     - - 0.57
-      - 10.0
+      - 1.0e-05
     - - 0.645
-      - 20.0
+      - 2.0e-05
     - - 0.72
-      - 21.0
+      - 2.1e-05
     - - 0.796
-      - 22.0
+      - 2.2e-05
     - - 0.87
-      - 22.0
+      - 2.2e-05
     - - 0.946
-      - 22.0
+      - 2.2e-05
     - - 1.022
-      - 23.0
+      - 2.3e-05
     - - 1.098
-      - 23.0
+      - 2.3e-05
     - - 1.175
-      - 24.0
+      - 2.4e-05
     - - 1.252
-      - 24.0
+      - 2.4e-05
   pressure: *id001
   temperature: *id002
-  composition: *id003
+  uncertainty: *id003
+  composition: *id004
+  evaluated-standard-deviation: *id005

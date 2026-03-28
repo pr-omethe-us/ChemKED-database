@@ -39,7 +39,14 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.15638
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: generic uncertainty
+    value:
+    - 0.15 unitless
+  ignition-type: &id003
     target: p;
     type: d/dt max
 datapoints:
@@ -97,4 +104,5 @@ datapoints:
     - - 265.8622
       - 0.03998
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

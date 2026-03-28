@@ -24,6 +24,13 @@ common-properties:
   - 300 K
   pressure: &id002
   - 1 bar
+  evaluated-standard-deviation: &id003
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    value:
+    - 2 cm/s
 datapoints:
 - composition:
     kind: mole fraction
@@ -52,3 +59,4 @@ datapoints:
   - 49.203 cm/s
   temperature: *id001
   pressure: *id002
+  evaluated-standard-deviation: *id003

@@ -24,6 +24,13 @@ common-properties:
   - 358 K
   pressure: &id002
   - 12 bar
+  evaluated-standard-deviation: &id003
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 5.66 cm/s
 datapoints:
 - composition:
     kind: mole fraction
@@ -42,8 +49,16 @@ datapoints:
       - 0.754219
   laminar-burning-velocity:
   - 9.77 cm/s
+  uncertainty:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: digitized
+    bound: plusminus
+    value:
+    - 0.45 cm/s
   temperature: *id001
   pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -61,8 +76,16 @@ datapoints:
       - 0.749242
   laminar-burning-velocity:
   - 15.15 cm/s
+  uncertainty:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: digitized
+    bound: plusminus
+    value:
+    - 0.38 cm/s
   temperature: *id001
   pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -80,5 +103,13 @@ datapoints:
       - 0.74433
   laminar-burning-velocity:
   - 19.02 cm/s
+  uncertainty:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: digitized
+    bound: plusminus
+    value:
+    - 0.98 cm/s
   temperature: *id001
   pressure: *id002
+  evaluated-standard-deviation: *id003

@@ -38,7 +38,16 @@ common-properties:
       InChI: 1S/CO2/c2-1-3
       amount:
       - 0.5
-  ignition-type: &id003
+  pressure-rise: &id003
+  - 0.04 ms-1
+  evaluated-standard-deviation: &id004
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    value:
+    - 0.103 unitless
+  ignition-type: &id005
     target: CH*
     type: baseline min intercept from d/dt
 datapoints:
@@ -48,39 +57,51 @@ datapoints:
   - 80 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005
 - temperature:
   - 1956 K
   ignition-delay:
   - 93 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005
 - temperature:
   - 1938 K
   ignition-delay:
   - 105 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005
 - temperature:
   - 1852 K
   ignition-delay:
   - 173 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005
 - temperature:
   - 1771 K
   ignition-delay:
   - 308 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005
 - temperature:
   - 1702 K
   ignition-delay:
   - 473 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005

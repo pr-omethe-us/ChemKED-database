@@ -36,6 +36,20 @@ common-properties:
       - 0.2732558
   temperature: &id002
   - 298 K
+  uncertainty: &id003
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 3 K
+  evaluated-standard-deviation: &id004
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 7.5 cm/s
 datapoints:
 - pressure:
   - 1 atm
@@ -43,15 +57,21 @@ datapoints:
   - 1980 mm/s
   composition: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - pressure:
   - 2 atm
   laminar-burning-velocity:
   - 1870 mm/s
   composition: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - pressure:
   - 3 atm
   laminar-burning-velocity:
   - 1910 mm/s
   composition: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004

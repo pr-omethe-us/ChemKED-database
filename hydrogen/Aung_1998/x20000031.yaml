@@ -24,6 +24,20 @@ common-properties:
   - 4 atm
   temperature: &id002
   - 298 K
+  uncertainty: &id003
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 3 K
+  evaluated-standard-deviation: &id004
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 23.5 cm/s
 datapoints:
 - composition:
     kind: mole fraction
@@ -44,6 +58,8 @@ datapoints:
   - 460 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -63,6 +79,8 @@ datapoints:
   - 1300 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -82,6 +100,8 @@ datapoints:
   - 2850 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -101,6 +121,8 @@ datapoints:
   - 2790 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -120,6 +142,8 @@ datapoints:
   - 2660 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -139,6 +163,8 @@ datapoints:
   - 2020 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -158,6 +184,8 @@ datapoints:
   - 2000 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -177,3 +205,5 @@ datapoints:
   - 1560 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004

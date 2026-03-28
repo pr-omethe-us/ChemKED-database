@@ -49,6 +49,63 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.9782
+  evaluated-standard-deviation: &id005
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2O
+    InChI: 1S/H2O/h1H2
+    value:
+    - 0.00141 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CH3OH
+    InChI: 1S/CH4O/c1-2/h2H,1H3
+    value:
+    - 0.000351 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CH2O
+    InChI: 1S/CH2O/c1-2/h1H2
+    value:
+    - 0.000112 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.000209 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO2
+    InChI: 1S/CO2/c2-1-3
+    value:
+    - 0.000338 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 0.000105 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: NO2
+    InChI: 1S/NO2/c2-1-3
+    value:
+    - 2.34e-05 mole fraction
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -88,6 +145,7 @@ datapoints:
   reactor-volume: *id002
   residence-time: *id003
   composition: *id004
+  evaluated-standard-deviation: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -126,6 +184,7 @@ datapoints:
   reactor-volume: *id002
   residence-time: *id003
   composition: *id004
+  evaluated-standard-deviation: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -164,6 +223,7 @@ datapoints:
   reactor-volume: *id002
   residence-time: *id003
   composition: *id004
+  evaluated-standard-deviation: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -202,6 +262,7 @@ datapoints:
   reactor-volume: *id002
   residence-time: *id003
   composition: *id004
+  evaluated-standard-deviation: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -240,6 +301,7 @@ datapoints:
   reactor-volume: *id002
   residence-time: *id003
   composition: *id004
+  evaluated-standard-deviation: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -278,6 +340,7 @@ datapoints:
   reactor-volume: *id002
   residence-time: *id003
   composition: *id004
+  evaluated-standard-deviation: *id005
 - measured-composition:
     kind: mole fraction
     species:
@@ -316,3 +379,4 @@ datapoints:
   reactor-volume: *id002
   residence-time: *id003
   composition: *id004
+  evaluated-standard-deviation: *id005

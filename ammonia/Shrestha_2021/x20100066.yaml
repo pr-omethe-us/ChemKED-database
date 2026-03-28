@@ -25,7 +25,14 @@ apparatus:
   institution: ''
   facility: ''
   mode: constant volume combustion chamber
-common-properties: {}
+common-properties:
+  evaluated-standard-deviation: &id001
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    value:
+    - 0.5 cm/s
 datapoints:
 - composition:
     kind: mole fraction
@@ -53,3 +60,17 @@ datapoints:
   equivalence-ratio: 1.1
   laminar-burning-velocity:
   - 31.48 cm/s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 2 K
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    value:
+    - 0.55 cm/s
+  evaluated-standard-deviation: *id001

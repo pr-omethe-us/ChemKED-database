@@ -39,6 +39,15 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.964
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000368 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: H2
@@ -83,3 +92,4 @@ datapoints:
   temperature: *id001
   pressure: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

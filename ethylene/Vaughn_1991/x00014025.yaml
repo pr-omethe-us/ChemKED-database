@@ -26,6 +26,71 @@ common-properties:
   - 1 atm
   reactor-volume: &id003
   - 17.9651 cm3
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and estimated uncertainty
+    species-name: CH4
+    InChI: 1S/CH4/h1H4
+    value:
+    - 0.0002401 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and estimated uncertainty
+    species-name: C2H2
+    InChI: 1S/C2H2/c1-2/h1-2H
+    value:
+    - 0.001196 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and estimated uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.0001302 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and estimated uncertainty
+    species-name: CO2
+    InChI: 1S/CO2/c2-1-3
+    value:
+    - 0.0027247 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and estimated uncertainty
+    species-name: C2H6
+    InChI: 1S/C2H6/c1-2/h1-2H3
+    value:
+    - 1.31e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and estimated uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.0065693 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and estimated uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.0039149 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and estimated uncertainty
+    species-name: C2H4
+    InChI: 1S/C2H4/c1-2/h1-2H2
+    value:
+    - 8.9e-05 mole fraction
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -34,11 +99,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 2.8e-05
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.08366429
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.72390521
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.1924305
   residence-time:
   - 7.17198 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -46,11 +127,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 6.11e-05
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.08631216
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.72181339
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.19187445
   residence-time:
   - 7.32781 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -58,11 +155,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.000121
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.08934318
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.71941889
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.19123793
   residence-time:
   - 7.50752 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -70,11 +183,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.000207
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.09226302
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.71711221
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.19062477
   residence-time:
   - 7.47524 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -82,11 +211,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.000374
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.0950639
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.71489952
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.19003658
   residence-time:
   - 7.40701 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -94,11 +239,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00043
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.09554402
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.71452023
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18993576
   residence-time:
   - 7.39897 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -106,11 +267,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.000597
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.09785324
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.71269594
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18945082
   residence-time:
   - 7.37077 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -118,11 +295,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.000688
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.09910088
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.7117103
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18918881
   residence-time:
   - 7.37462 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -130,11 +323,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00105
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.10033375
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.71073634
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18892991
   residence-time:
   - 7.38654 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -142,11 +351,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.000869
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.10072509
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.71042718
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18884773
   residence-time:
   - 7.3905 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -154,11 +379,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00115
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.10195916
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.70945227
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18858858
   residence-time:
   - 7.41438 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -166,11 +407,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.000942
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.10359108
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.70816305
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18824587
   residence-time:
   - 7.42226 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -178,11 +435,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00153
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.10471407
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.70727588
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18801004
   residence-time:
   - 7.41414 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -190,11 +463,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00131
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.10633377
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.70599632
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18766991
   residence-time:
   - 7.38602 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -202,11 +491,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00196
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.10669589
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.70571025
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18759386
   residence-time:
   - 7.37398 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -214,11 +519,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00173
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.10906195
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.70384106
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18709699
   residence-time:
   - 7.29778 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -226,11 +547,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00248
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.11120821
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.70214552
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18664628
   residence-time:
   - 7.23758 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -238,11 +575,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00216
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.11177574
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.70169717
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18652709
   residence-time:
   - 7.22551 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -250,11 +603,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00273
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.11232766
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.70126115
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18641119
   residence-time:
   - 7.22146 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -262,11 +631,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00234
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.11457184
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.69948825
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18593991
   residence-time:
   - 7.22929 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -274,11 +659,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00265
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.1173482
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.69729492
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18535688
   residence-time:
   - 7.26903 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -286,11 +687,27 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00352
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.1189057
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.6960645
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.1850298
   residence-time:
   - 7.28887 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -298,8 +715,24 @@ datapoints:
       InChI: 1S/CH4/h1H4
       amount:
       - 0.00321
+  composition:
+    kind: mole fraction
+    species:
+    - species-name: C2H4
+      InChI: 1S/C2H4/c1-2/h1-2H2
+      amount:
+      - 0.12285226
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 0.69294671
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.18420103
   residence-time:
   - 7.31651 ms
   temperature: *id001
   pressure: *id002
   reactor-volume: *id003
+  evaluated-standard-deviation: *id004

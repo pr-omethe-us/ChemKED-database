@@ -36,6 +36,15 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.99
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    species-name: CH3OH
+    InChI: 1S/CH4O/c1-2/h2H,1H3
+    value:
+    - 0.00132 mole faction
 datapoints:
 - concentration-profiles:
   - species-name: CH3OH
@@ -110,3 +119,4 @@ datapoints:
   temperature: *id001
   pressure: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

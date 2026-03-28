@@ -39,38 +39,48 @@ common-properties:
       InChI: 1S/He
       amount:
       - 95.91
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 5e-06 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: NH3
     InChI: 1S/H3N/h1H3
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: ms
     values:
     - - 48.0
-      - 786.0
+      - 0.000786
     - - 99.0
-      - 716.0
+      - 0.000716
     - - 192.0
-      - 476.0
+      - 0.000476
     - - 295.0
-      - 277.0
+      - 0.000277
   - species-name: 'NO'
     InChI: 1S/NO/c1-2
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: ms
     values:
     - - 48.0
-      - 8.0
+      - 8.0e-06
     - - 99.0
-      - 9.0
+      - 9.0e-06
     - - 192.0
-      - 11.0
+      - 1.1e-05
     - - 295.0
-      - 13.0
+      - 1.3e-05
   pressure: *id001
   temperature: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

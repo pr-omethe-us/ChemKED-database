@@ -23,7 +23,14 @@ apparatus:
 common-properties:
   temperature: &id001
   - 298 K
-  pressure: &id002
+  uncertainty: &id002
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 3 K
+  pressure: &id003
   - 0.4 MPa
   equivalence-ratio: 1.2
 datapoints:
@@ -52,8 +59,16 @@ datapoints:
       - 0.5563
   laminar-burning-velocity:
   - 83.9331 cm/s
+  evaluated-standard-deviation:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and estimated uncertainty
+    value:
+    - 4.65427877792 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
   equivalence-ratio: 1.2
 - composition:
     kind: mole fraction
@@ -80,8 +95,16 @@ datapoints:
       - 0.5658
   laminar-burning-velocity:
   - 83.3473 cm/s
+  evaluated-standard-deviation:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and estimated uncertainty
+    value:
+    - 4.62788599652 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
   equivalence-ratio: 1.2
 - composition:
     kind: mole fraction
@@ -108,8 +131,16 @@ datapoints:
       - 0.5787
   laminar-burning-velocity:
   - 75.4393 cm/s
+  evaluated-standard-deviation:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and estimated uncertainty
+    value:
+    - 4.27529153565 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
   equivalence-ratio: 1.2
 - composition:
     kind: mole fraction
@@ -136,6 +167,14 @@ datapoints:
       - 0.5971
   laminar-burning-velocity:
   - 66.0669 cm/s
+  evaluated-standard-deviation:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and estimated uncertainty
+    value:
+    - 3.8681372704 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
   equivalence-ratio: 1.2

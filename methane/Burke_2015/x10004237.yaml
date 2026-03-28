@@ -35,7 +35,9 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.7505
-  ignition-type: &id003
+  pressure-rise: &id003
+  - 0.02 ms-1
+  ignition-type: &id004
     target: pressure
     type: baseline min intercept from d/dt
 datapoints:
@@ -43,34 +45,74 @@ datapoints:
   - 1639.7 K
   ignition-delay:
   - 82.784 us
+  evaluated-standard-deviation:
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and the uncertainty of conditions
+    value:
+    - 0.166 unitless
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  ignition-type: *id004
 - temperature:
   - 1564.9 K
   ignition-delay:
   - 219.67 us
+  evaluated-standard-deviation:
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and the uncertainty of conditions
+    value:
+    - 0.172 unitless
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  ignition-type: *id004
 - temperature:
   - 1517.2 K
   ignition-delay:
   - 379.86 us
+  evaluated-standard-deviation:
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and the uncertainty of conditions
+    value:
+    - 0.176 unitless
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  ignition-type: *id004
 - temperature:
   - 1469.6 K
   ignition-delay:
   - 641.46 us
+  evaluated-standard-deviation:
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and the uncertainty of conditions
+    value:
+    - 0.181 unitless
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  ignition-type: *id004
 - temperature:
   - 1418.5 K
   ignition-delay:
   - 1008.8 us
+  evaluated-standard-deviation:
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and the uncertainty of conditions
+    value:
+    - 0.187 unitless
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  ignition-type: *id004

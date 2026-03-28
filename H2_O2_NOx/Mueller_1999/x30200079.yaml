@@ -41,6 +41,23 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.969692
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000414 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 4e-06 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: H2
@@ -87,44 +104,45 @@ datapoints:
   - species-name: 'NO'
     InChI: 1S/NO/c1-2
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: s
     values:
     - - 0.124
-      - 71.5
+      - 7.15e-05
     - - 0.134
-      - 72.1
+      - 7.21e-05
     - - 0.144
-      - 72.6
+      - 7.26e-05
     - - 0.157
-      - 73.3
+      - 7.33e-05
     - - 0.175
-      - 73.6
+      - 7.36e-05
     - - 0.195
-      - 75.6
+      - 7.56e-05
     - - 0.218
-      - 76.3
+      - 7.63e-05
     - - 0.243
-      - 76.3
+      - 7.63e-05
     - - 0.267
-      - 80.3
+      - 8.03e-05
     - - 0.291
-      - 80.6
+      - 8.06e-05
     - - 0.316
-      - 82.6
+      - 8.26e-05
     - - 0.342
-      - 83.1
+      - 8.31e-05
     - - 0.365
-      - 84.6
+      - 8.46e-05
     - - 0.389
-      - 85.4
+      - 8.54e-05
     - - 0.414
-      - 85.9
+      - 8.59e-05
     - - 0.439
-      - 86.6
+      - 8.66e-05
     - - 0.464
-      - 86.4
+      - 8.64e-05
   pressure: *id001
   temperature: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

@@ -42,6 +42,39 @@ common-properties:
       InChI: 1S/Ne
       amount:
       - 0.986
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    species-name: CH3OH
+    InChI: 1S/CH4O/c1-2/h2H,1H3
+    value:
+    - 3.18e-09 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    species-name: CH2O
+    InChI: 1S/CH2O/c1-2/h1H2
+    value:
+    - 2.7e-10 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 1.24e-10 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    species-name: H2O
+    InChI: 1S/H2O/h1H2
+    value:
+    - 2.87e-10 mole faction
 datapoints:
 - concentration-profiles:
   - species-name: CH3OH
@@ -179,3 +212,4 @@ datapoints:
   temperature: *id001
   pressure: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

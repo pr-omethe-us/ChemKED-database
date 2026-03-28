@@ -53,7 +53,14 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.32645
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 0.16 unitless
+  ignition-type: &id003
     target: p;
     type: d/dt max
 datapoints:
@@ -273,7 +280,8 @@ datapoints:
     - - 0.427693
       - 0.1670404
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1201 mbar
   temperature:
@@ -281,7 +289,8 @@ datapoints:
   ignition-delay:
   - 58 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1201 mbar
   temperature:
@@ -289,7 +298,8 @@ datapoints:
   ignition-delay:
   - 83.5 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1198 mbar
   temperature:
@@ -297,7 +307,8 @@ datapoints:
   ignition-delay:
   - 53.9 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1199 mbar
   temperature:
@@ -305,7 +316,8 @@ datapoints:
   ignition-delay:
   - 42.5 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1201 mbar
   temperature:
@@ -313,7 +325,8 @@ datapoints:
   ignition-delay:
   - 53.8 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1200 mbar
   temperature:
@@ -321,7 +334,8 @@ datapoints:
   ignition-delay:
   - 22.3 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1202 mbar
   temperature:
@@ -329,7 +343,8 @@ datapoints:
   ignition-delay:
   - 19.7 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1200 mbar
   temperature:
@@ -337,7 +352,8 @@ datapoints:
   ignition-delay:
   - 12.16 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1200 mbar
   temperature:
@@ -345,4 +361,5 @@ datapoints:
   ignition-delay:
   - 12.58 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

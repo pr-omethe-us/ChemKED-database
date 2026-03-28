@@ -33,7 +33,14 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.97
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: generic uncertainty
+    value:
+    - 0.2 unitless
+  ignition-type: &id003
     target: CO;O;
     type: max
 datapoints:
@@ -44,7 +51,8 @@ datapoints:
   pressure:
   - 2.903 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1690 K
   ignition-delay:
@@ -52,7 +60,8 @@ datapoints:
   pressure:
   - 3.106 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1800 K
   ignition-delay:
@@ -60,7 +69,8 @@ datapoints:
   pressure:
   - 3.161 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1935 K
   ignition-delay:
@@ -68,7 +78,8 @@ datapoints:
   pressure:
   - 3.207 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2005 K
   ignition-delay:
@@ -76,7 +87,8 @@ datapoints:
   pressure:
   - 3.406 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2125 K
   ignition-delay:
@@ -84,4 +96,5 @@ datapoints:
   pressure:
   - 3.644 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

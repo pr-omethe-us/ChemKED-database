@@ -41,7 +41,14 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.21438
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 0.11 unitless
+  ignition-type: &id003
     target: p;
     type: d/dt max
 datapoints:
@@ -789,7 +796,8 @@ datapoints:
     - - 0.44041458
       - 0.12735565
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1025 mbar
   temperature:
@@ -797,7 +805,8 @@ datapoints:
   ignition-delay:
   - 106.4 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1025 mbar
   temperature:
@@ -805,7 +814,8 @@ datapoints:
   ignition-delay:
   - 37.75 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1025 mbar
   temperature:
@@ -813,7 +823,8 @@ datapoints:
   ignition-delay:
   - 37.32 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1025 mbar
   temperature:
@@ -821,7 +832,8 @@ datapoints:
   ignition-delay:
   - 13.31 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1025 mbar
   temperature:
@@ -829,7 +841,8 @@ datapoints:
   ignition-delay:
   - 13.47 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1025 mbar
   temperature:
@@ -837,7 +850,8 @@ datapoints:
   ignition-delay:
   - 5.751 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1025 mbar
   temperature:
@@ -845,4 +859,5 @@ datapoints:
   ignition-delay:
   - 5.595 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

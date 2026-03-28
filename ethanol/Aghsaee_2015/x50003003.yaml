@@ -45,6 +45,31 @@ common-properties:
   - 1540 K
   pressure: &id003
   - 1.52 bar
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: H2O
+    InChI: 1S/H2O/h1H2
+    value:
+    - 0.0028 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.0012 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: CO2
+    InChI: 1S/CO2/c2-1-3
+    value:
+    - 0.000731 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: H2O
@@ -1007,3 +1032,4 @@ datapoints:
   composition: *id001
   temperature: *id002
   pressure: *id003
+  evaluated-standard-deviation: *id004

@@ -43,6 +43,15 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.97329
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 9.058e-05 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -85,3 +94,4 @@ datapoints:
   temperature: *id001
   pressure: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

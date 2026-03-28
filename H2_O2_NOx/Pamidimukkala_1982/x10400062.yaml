@@ -34,7 +34,14 @@ common-properties:
       InChI: 1S/H2/h1H
       amount:
       - 0.0001
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: generic uncertainty
+    value:
+    - 0.1 unitless
+  ignition-type: &id003
     target: O
     type: max
 datapoints:
@@ -44,101 +51,205 @@ datapoints:
   - 1.46 atm
   ignition-delay:
   - 600 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2014 K
   pressure:
   - 1.61 atm
   ignition-delay:
   - 300 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2078 K
   pressure:
   - 1.55 atm
   ignition-delay:
   - 200 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2079 K
   pressure:
   - 1.58 atm
   ignition-delay:
   - 200 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2146 K
   pressure:
   - 1.58 atm
   ignition-delay:
   - 160 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2157 K
   pressure:
   - 1.61 atm
   ignition-delay:
   - 160 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2249 K
   pressure:
   - 1.28 atm
   ignition-delay:
   - 120 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2260 K
   pressure:
   - 1.54 atm
   ignition-delay:
   - 120 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2349 K
   pressure:
   - 1.4 atm
   ignition-delay:
   - 80 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2372 K
   pressure:
   - 1.47 atm
   ignition-delay:
   - 80 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2419 K
   pressure:
   - 1.48 atm
   ignition-delay:
   - 80 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2638 K
   pressure:
   - 1.75 atm
   ignition-delay:
   - 40 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2781 K
   pressure:
   - 1.27 atm
   ignition-delay:
   - 40 us
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

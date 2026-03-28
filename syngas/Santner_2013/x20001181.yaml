@@ -22,7 +22,14 @@ apparatus:
 common-properties:
   temperature: &id001
   - 393 K
-  composition: &id002
+  uncertainty: &id002
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 2 K
+  composition: &id003
     kind: mole fraction
     species:
     - species-name: O2
@@ -45,34 +52,51 @@ common-properties:
       InChI: 1S/CO/c1-2
       amount:
       - 0.0543
+  evaluated-standard-deviation: &id004
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 2.82 cm/s
 datapoints:
 - pressure:
   - 1 atm
   laminar-burning-velocity:
   - 67.24 cm/s
   temperature: *id001
-  composition: *id002
+  uncertainty: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - pressure:
   - 4 atm
   laminar-burning-velocity:
   - 38.2 cm/s
   temperature: *id001
-  composition: *id002
+  uncertainty: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - pressure:
   - 6 atm
   laminar-burning-velocity:
   - 29.54 cm/s
   temperature: *id001
-  composition: *id002
+  uncertainty: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - pressure:
   - 8 atm
   laminar-burning-velocity:
   - 23.74 cm/s
   temperature: *id001
-  composition: *id002
+  uncertainty: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - pressure:
   - 10 atm
   laminar-burning-velocity:
   - 20.77 cm/s
   temperature: *id001
-  composition: *id002
+  uncertainty: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004

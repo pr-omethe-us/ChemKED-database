@@ -46,12 +46,21 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.97903
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.03016607 unitless
 datapoints:
 - concentration-profiles:
   - species-name: CO
     InChI: 1S/CO/c1-2
     quantity:
-      units: percent
+      units: mole percent
     time:
       units: ms
     values:
@@ -97,3 +106,4 @@ datapoints:
   temperature: *id002
   equivalence-ratio: 0.93
   composition: *id003
+  evaluated-standard-deviation: *id004

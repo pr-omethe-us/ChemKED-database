@@ -22,7 +22,14 @@ apparatus:
 common-properties:
   temperature: &id001
   - 393 K
-  composition: &id002
+  uncertainty: &id002
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 2 K
+  composition: &id003
     kind: mole fraction
     species:
     - species-name: H2
@@ -37,22 +44,35 @@ common-properties:
       InChI: 1S/He
       amount:
       - 0.826084
+  evaluated-standard-deviation: &id004
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 3.64 cm/s
 datapoints:
 - pressure:
   - 1 atm
   laminar-burning-velocity:
   - 123.99 cm/s
   temperature: *id001
-  composition: *id002
+  uncertainty: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - pressure:
   - 6.1 atm
   laminar-burning-velocity:
   - 84.3 cm/s
   temperature: *id001
-  composition: *id002
+  uncertainty: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - pressure:
   - 10 atm
   laminar-burning-velocity:
   - 60.39 cm/s
   temperature: *id001
-  composition: *id002
+  uncertainty: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004

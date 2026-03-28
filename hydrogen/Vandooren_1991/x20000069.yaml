@@ -23,7 +23,9 @@ common-properties:
   - 575 K
   pressure: &id001
   - 4.75 kPa
-  composition: &id002
+  laminar-burning-velocity: &id002
+  - 131 cm/s
+  composition: &id003
     kind: mole fraction
     species:
     - species-name: H2
@@ -38,6 +40,55 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.5
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.02 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.02 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: H2O
+    InChI: 1S/H2O/h1H2
+    value:
+    - 0.02 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: H
+    InChI: 1S/H
+    value:
+    - 0.1 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: O
+    InChI: 1S/O
+    value:
+    - 0.1 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: OH
+    InChI: 1S/HO/h1H
+    value:
+    - 0.1 unitless
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -71,7 +122,9 @@ datapoints:
   temperature:
   - 713.97 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -104,7 +157,9 @@ datapoints:
   temperature:
   - 753.99 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -137,7 +192,9 @@ datapoints:
   temperature:
   - 819.12 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -170,7 +227,9 @@ datapoints:
   temperature:
   - 865.81 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -203,7 +262,9 @@ datapoints:
   temperature:
   - 915.38 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -236,7 +297,9 @@ datapoints:
   temperature:
   - 961.74 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -269,7 +332,9 @@ datapoints:
   temperature:
   - 1005.2 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -302,7 +367,9 @@ datapoints:
   temperature:
   - 1046.1 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -335,7 +402,9 @@ datapoints:
   temperature:
   - 1088.9 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -368,7 +437,9 @@ datapoints:
   temperature:
   - 1111.2 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -401,7 +472,9 @@ datapoints:
   temperature:
   - 1131.1 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -434,7 +507,9 @@ datapoints:
   temperature:
   - 1141.3 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -467,7 +542,9 @@ datapoints:
   temperature:
   - 1151.3 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -500,7 +577,9 @@ datapoints:
   temperature:
   - 1160.5 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -533,7 +612,9 @@ datapoints:
   temperature:
   - 1168.2 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -566,7 +647,9 @@ datapoints:
   temperature:
   - 1170.4 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -599,7 +682,9 @@ datapoints:
   temperature:
   - 1171.7 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -632,7 +717,9 @@ datapoints:
   temperature:
   - 1166.6 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -665,7 +752,9 @@ datapoints:
   temperature:
   - 1161.5 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -698,7 +787,9 @@ datapoints:
   temperature:
   - 1156.5 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -731,7 +822,9 @@ datapoints:
   temperature:
   - 1151.4 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -764,7 +857,9 @@ datapoints:
   temperature:
   - 1136.2 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -797,7 +892,9 @@ datapoints:
   temperature:
   - 1111.6 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -830,4 +927,6 @@ datapoints:
   temperature:
   - 1087.2 K
   pressure: *id001
-  composition: *id002
+  laminar-burning-velocity: *id002
+  composition: *id003
+  evaluated-standard-deviation: *id004

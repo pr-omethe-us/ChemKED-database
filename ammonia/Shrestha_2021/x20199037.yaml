@@ -28,6 +28,13 @@ apparatus:
 common-properties:
   temperature: &id001
   - 298 K
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 2 K
   pressure: &id002
   - 1 bar
 datapoints:
@@ -49,6 +56,20 @@ datapoints:
   equivalence-ratio: 0.8
   laminar-burning-velocity:
   - 12.15 cm/s
+  uncertainty:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.51 cm/s
+  evaluated-standard-deviation:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    value:
+    - 0.5 cm/s
   temperature: *id001
   pressure: *id002
 - composition:
@@ -69,6 +90,20 @@ datapoints:
   equivalence-ratio: 0.9
   laminar-burning-velocity:
   - 15.41 cm/s
+  uncertainty:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 1.02 cm/s
+  evaluated-standard-deviation:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    value:
+    - 0.558 cm/s
   temperature: *id001
   pressure: *id002
 - composition:
@@ -89,6 +124,20 @@ datapoints:
   equivalence-ratio: 1.0
   laminar-burning-velocity:
   - 18.16 cm/s
+  uncertainty:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 1.16 cm/s
+  evaluated-standard-deviation:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    value:
+    - 0.625 cm/s
   temperature: *id001
   pressure: *id002
 - composition:
@@ -109,6 +158,20 @@ datapoints:
   equivalence-ratio: 1.1
   laminar-burning-velocity:
   - 19.56 cm/s
+  uncertainty:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.41 cm/s
+  evaluated-standard-deviation:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    value:
+    - 0.5 cm/s
   temperature: *id001
   pressure: *id002
 - composition:
@@ -129,6 +192,20 @@ datapoints:
   equivalence-ratio: 1.2
   laminar-burning-velocity:
   - 19.05 cm/s
+  uncertainty:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 1.49 cm/s
+  evaluated-standard-deviation:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    value:
+    - 0.777 cm/s
   temperature: *id001
   pressure: *id002
 - composition:
@@ -149,5 +226,19 @@ datapoints:
   equivalence-ratio: 1.3
   laminar-burning-velocity:
   - 17.46 cm/s
+  uncertainty:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 1.85 cm/s
+  evaluated-standard-deviation:
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    value:
+    - 0.953 cm/s
   temperature: *id001
   pressure: *id002

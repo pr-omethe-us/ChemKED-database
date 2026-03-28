@@ -42,6 +42,47 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.981965
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000281 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: H2O
+    InChI: 1S/H2O/h1H2
+    value:
+    - 0.000518 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: NO2
+    InChI: 1S/NO2/c2-1-3
+    value:
+    - 2e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.00035 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: O2
@@ -182,93 +223,94 @@ datapoints:
   - species-name: NO2
     InChI: 1S/NO2/c2-1-3
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: s
     values:
     - - 0.311
-      - 32.5
+      - 3.25e-05
     - - 0.345
-      - 32.7
+      - 3.27e-05
     - - 0.393
-      - 32.2
+      - 3.22e-05
     - - 0.455
-      - 31.4
+      - 3.14e-05
     - - 0.533
-      - 31.5
+      - 3.15e-05
     - - 0.629
-      - 31.4
+      - 3.14e-05
     - - 0.736
-      - 30.7
+      - 3.07e-05
     - - 0.85
-      - 30.8
+      - 3.08e-05
     - - 0.964
-      - 29.8
+      - 2.98e-05
     - - 1.077
-      - 29.7
+      - 2.97e-05
     - - 1.192
-      - 28.9
+      - 2.89e-05
     - - 1.306
-      - 28.5
+      - 2.85e-05
     - - 1.418
-      - 27.4
+      - 2.74e-05
     - - 1.532
-      - 27.4
+      - 2.74e-05
     - - 1.646
-      - 27.0
+      - 2.7e-05
     - - 1.758
-      - 26.2
+      - 2.62e-05
     - - 1.872
-      - 26.1
+      - 2.61e-05
     - - 1.985
-      - 26.1
+      - 2.61e-05
     - - 2.101
-      - 25.7
+      - 2.57e-05
   - species-name: 'NO'
     InChI: 1S/NO/c1-2
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: s
     values:
     - - 0.311
-      - 3.3
+      - 3.3e-06
     - - 0.345
-      - 2.9
+      - 2.9e-06
     - - 0.393
-      - 3.0
+      - 3.0e-06
     - - 0.455
-      - 3.5
+      - 3.5e-06
     - - 0.533
-      - 3.5
+      - 3.5e-06
     - - 0.629
-      - 3.6
+      - 3.6e-06
     - - 0.736
-      - 4.3
+      - 4.3e-06
     - - 0.85
-      - 4.5
+      - 4.5e-06
     - - 0.964
-      - 4.9
+      - 4.9e-06
     - - 1.077
-      - 5.5
+      - 5.5e-06
     - - 1.192
-      - 5.9
+      - 5.9e-06
     - - 1.306
-      - 6.8
+      - 6.8e-06
     - - 1.418
-      - 7.7
+      - 7.7e-06
     - - 1.532
-      - 7.2
+      - 7.2e-06
     - - 1.646
-      - 7.3
+      - 7.3e-06
     - - 1.758
-      - 8.1
+      - 8.1e-06
     - - 1.872
-      - 8.6
+      - 8.6e-06
     - - 1.985
-      - 8.5
+      - 8.5e-06
     - - 2.101
-      - 9.1
+      - 9.1e-06
   pressure: *id001
   temperature: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

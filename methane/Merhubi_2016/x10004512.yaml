@@ -19,7 +19,9 @@ apparatus:
   mode: reflected
 common-properties:
   equivalence-ratio: 0.5
-  composition: &id001
+  pressure-rise: &id001
+  - 0.03 ms-1
+  composition: &id002
     kind: mole percent
     species:
     - species-name: CH4
@@ -34,7 +36,14 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 95.0
-  ignition-type: &id002
+  evaluated-standard-deviation: &id003
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    value:
+    - 0.168 unitless
+  ignition-type: &id004
     target: pressure
     type: d/dt max
 datapoints:
@@ -44,123 +53,249 @@ datapoints:
   - 1706 K
   ignition-delay:
   - 64 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 18 bar
   temperature:
   - 1589 K
   ignition-delay:
   - 240 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 19.3 bar
   temperature:
   - 1542 K
   ignition-delay:
   - 300 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 19.7 bar
   temperature:
   - 1562 K
   ignition-delay:
   - 300 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 19.8 bar
   temperature:
   - 1623 K
   ignition-delay:
   - 200 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 20.2 bar
   temperature:
   - 1428 K
   ignition-delay:
   - 918 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 20.3 bar
   temperature:
   - 1441 K
   ignition-delay:
   - 755 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 20.2 bar
   temperature:
   - 1463 K
   ignition-delay:
   - 723 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 20.1 bar
   temperature:
   - 1510 K
   ignition-delay:
   - 414 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 20.1 bar
   temperature:
   - 1474 K
   ignition-delay:
   - 630 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 20.8 bar
   temperature:
   - 1557 K
   ignition-delay:
   - 336 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 20.7 bar
   temperature:
   - 1487 K
   ignition-delay:
   - 565 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 18.5 bar
   temperature:
   - 1630 K
   ignition-delay:
   - 146 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 20 bar
   temperature:
   - 1457 K
   ignition-delay:
   - 692 us
+  uncertainty:
+  - reference: temperature
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.01 unitless
   equivalence-ratio: 0.5
-  composition: *id001
-  ignition-type: *id002
+  pressure-rise: *id001
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004

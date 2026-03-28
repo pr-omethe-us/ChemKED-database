@@ -41,6 +41,39 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.969468
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000499 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2.7e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: NO2
+    InChI: 1S/NO2/c2-1-3
+    value:
+    - 5e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: HONO
+    InChI: 1S/HNO2/c2-1-3/h(H,2,3)
+    value:
+    - 2e-06 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: H2
@@ -91,138 +124,139 @@ datapoints:
   - species-name: 'NO'
     InChI: 1S/NO/c1-2
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: s
     values:
     - - 0.425
-      - 531.0
+      - 0.000531
     - - 0.457
-      - 529.0
+      - 0.000529
     - - 0.499
-      - 533.0
+      - 0.000533
     - - 0.554
-      - 532.0
+      - 0.000532
     - - 0.624
-      - 529.0
+      - 0.000529
     - - 0.71
-      - 525.0
+      - 0.000525
     - - 0.808
-      - 521.0
+      - 0.000521
     - - 0.911
-      - 504.0
+      - 0.000504
     - - 1.015
-      - 494.0
+      - 0.000494
     - - 1.121
-      - 476.0
+      - 0.000476
     - - 1.224
-      - 462.0
+      - 0.000462
     - - 1.329
-      - 443.0
+      - 0.000443
     - - 1.432
-      - 437.0
+      - 0.000437
     - - 1.538
-      - 433.0
+      - 0.000433
     - - 1.641
-      - 432.0
+      - 0.000432
     - - 1.747
-      - 431.0
+      - 0.000431
     - - 1.853
-      - 432.0
+      - 0.000432
     - - 1.96
-      - 433.0
+      - 0.000433
     - - 2.067
-      - 429.0
+      - 0.000429
   - species-name: NO2
     InChI: 1S/NO2/c2-1-3
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: s
     values:
     - - 0.425
-      - 4.2
+      - 4.2e-06
     - - 0.457
-      - 4.4
+      - 4.4e-06
     - - 0.499
-      - 4.7
+      - 4.7e-06
     - - 0.554
-      - 6.6
+      - 6.6e-06
     - - 0.624
-      - 10.1
+      - 1.01e-05
     - - 0.71
-      - 13.8
+      - 1.38e-05
     - - 0.808
-      - 16.0
+      - 1.6e-05
     - - 0.911
-      - 32.3
+      - 3.23e-05
     - - 1.015
-      - 42.3
+      - 4.23e-05
     - - 1.121
-      - 57.0
+      - 5.7e-05
     - - 1.224
-      - 70.2
+      - 7.02e-05
     - - 1.329
-      - 91.1
+      - 9.11e-05
     - - 1.432
-      - 96.4
+      - 9.64e-05
     - - 1.538
-      - 100.2
+      - 0.0001002
     - - 1.641
-      - 99.3
+      - 9.93e-05
     - - 1.747
-      - 101.5
+      - 0.0001015
     - - 1.853
-      - 102.2
+      - 0.0001022
     - - 1.96
-      - 96.6
+      - 9.66e-05
     - - 2.067
-      - 95.7
+      - 9.57e-05
   - species-name: HONO
     InChI: 1S/HNO2/c2-1-3/h(H,2,3)
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: s
     values:
     - - 0.425
-      - 0.1
+      - 1.0e-07
     - - 0.457
-      - 0.1
+      - 1.0e-07
     - - 0.499
-      - 0.1
+      - 1.0e-07
     - - 0.554
-      - 0.2
+      - 2.0e-07
     - - 0.624
-      - 0.2
+      - 2.0e-07
     - - 0.71
-      - 0.3
+      - 3.0e-07
     - - 0.808
-      - 0.2
+      - 2.0e-07
     - - 0.911
-      - 0.7
+      - 7.0e-07
     - - 1.015
-      - 0.9
+      - 9.0e-07
     - - 1.121
-      - 1.4
+      - 1.4e-06
     - - 1.224
-      - 2.0
+      - 2.0e-06
     - - 1.329
-      - 3.1
+      - 3.1e-06
     - - 1.432
-      - 3.7
+      - 3.7e-06
     - - 1.538
-      - 4.1
+      - 4.1e-06
     - - 1.641
-      - 4.7
+      - 4.7e-06
     - - 1.747
-      - 6.2
+      - 6.2e-06
     - - 1.853
-      - 6.6
+      - 6.6e-06
     - - 1.96
-      - 7.4
+      - 7.4e-06
     - - 2.067
-      - 7.6
+      - 7.6e-06
   pressure: *id001
   temperature: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

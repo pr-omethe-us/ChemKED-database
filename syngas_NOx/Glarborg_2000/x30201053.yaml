@@ -48,6 +48,15 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 93.1919
+  evaluated-standard-deviation: &id003
+  - reference: composition
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 0.025 unitless
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -60,8 +69,24 @@ datapoints:
   - 1406 K
   residence-time:
   - 0.0768 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
+  - reference: composition
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 1e-05 mole fraction
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -73,8 +98,24 @@ datapoints:
   - 1453 K
   residence-time:
   - 0.0743 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
+  - reference: composition
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 1e-05 mole fraction
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -86,8 +127,24 @@ datapoints:
   - 1501 K
   residence-time:
   - 0.072 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
+  - reference: composition
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 1e-05 mole fraction
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -99,5 +156,21 @@ datapoints:
   - 1547 K
   residence-time:
   - 0.0698 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
+  - reference: composition
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 1e-05 mole fraction
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003

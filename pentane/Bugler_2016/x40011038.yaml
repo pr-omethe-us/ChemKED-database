@@ -41,7 +41,14 @@ common-properties:
       InChI: 1S/O2/c1-2
       amount:
       - 0.19952613
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: generic uncertainty
+    value:
+    - 0.1 unitless
+  ignition-type: &id003
     target: pressure
     type: d/dt max
 datapoints:
@@ -485,7 +492,8 @@ datapoints:
     - - 0.49995
       - 0.11997562
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 0.32673 atm
   temperature:
@@ -493,7 +501,8 @@ datapoints:
   ignition-delay:
   - 4280 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 0.32571 atm
   temperature:
@@ -501,7 +510,8 @@ datapoints:
   ignition-delay:
   - 5700 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 0.32466 atm
   temperature:
@@ -509,7 +519,8 @@ datapoints:
   ignition-delay:
   - 7760 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 0.32589 atm
   temperature:
@@ -517,7 +528,8 @@ datapoints:
   ignition-delay:
   - 9800 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 0.32551 atm
   temperature:
@@ -525,7 +537,8 @@ datapoints:
   ignition-delay:
   - 11800 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 0.32867 atm
   temperature:
@@ -533,7 +546,8 @@ datapoints:
   ignition-delay:
   - 12700 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 0.32818 atm
   temperature:
@@ -541,7 +555,8 @@ datapoints:
   ignition-delay:
   - 12600 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 0.34062 atm
   temperature:
@@ -549,7 +564,8 @@ datapoints:
   ignition-delay:
   - 10200 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 0.34051 atm
   temperature:
@@ -557,4 +573,5 @@ datapoints:
   ignition-delay:
   - 6520 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

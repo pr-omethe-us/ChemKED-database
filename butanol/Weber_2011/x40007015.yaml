@@ -35,7 +35,14 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.7632
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: generic uncertainty
+    value:
+    - 0.15 unitless
+  ignition-type: &id003
     target: p;
     type: d/dt max
 datapoints:
@@ -721,7 +728,8 @@ datapoints:
     - - 0.32299
       - 0.1364675
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 2.3427 bar
   temperature:
@@ -729,7 +737,8 @@ datapoints:
   ignition-delay:
   - 85.67 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1.9981 bar
   temperature:
@@ -737,7 +746,8 @@ datapoints:
   ignition-delay:
   - 49.49 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1.6334 bar
   temperature:
@@ -745,7 +755,8 @@ datapoints:
   ignition-delay:
   - 25.55 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 1.2575 bar
   temperature:
@@ -753,4 +764,5 @@ datapoints:
   ignition-delay:
   - 9.22 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

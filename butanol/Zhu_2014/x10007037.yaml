@@ -35,7 +35,14 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.7384
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 0.1 unitless
+  ignition-type: &id003
     target: OHEX;
     type: baseline min intercept from d/dt
 datapoints:
@@ -46,7 +53,8 @@ datapoints:
   pressure:
   - 15.1 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 902 K
   ignition-delay:
@@ -54,7 +62,8 @@ datapoints:
   pressure:
   - 20.3 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 875 K
   ignition-delay:
@@ -62,7 +71,8 @@ datapoints:
   pressure:
   - 21.1 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 802 K
   ignition-delay:
@@ -70,7 +80,8 @@ datapoints:
   pressure:
   - 17.3 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 778 K
   ignition-delay:
@@ -78,7 +89,8 @@ datapoints:
   pressure:
   - 18.1 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 749 K
   ignition-delay:
@@ -86,4 +98,5 @@ datapoints:
   pressure:
   - 18.6 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

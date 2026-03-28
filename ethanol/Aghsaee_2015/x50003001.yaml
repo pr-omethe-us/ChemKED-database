@@ -41,6 +41,47 @@ common-properties:
   - 1385 K
   pressure: &id003
   - 1.56 bar
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: H2O
+    InChI: 1S/H2O/h1H2
+    value:
+    - 0.00042 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: CH4
+    InChI: 1S/CH4/h1H4
+    value:
+    - 0.00013 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: CH3CHO
+    InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+    value:
+    - 0.000291 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: C2H4
+    InChI: 1S/C2H4/c1-2/h1-2H2
+    value:
+    - 0.000156 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: C2H5OH
+    InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+    value:
+    - 0.000374 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: H2O
@@ -1451,3 +1492,4 @@ datapoints:
   composition: *id001
   temperature: *id002
   pressure: *id003
+  evaluated-standard-deviation: *id004

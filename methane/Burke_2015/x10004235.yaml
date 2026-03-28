@@ -35,7 +35,9 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.76578
-  ignition-type: &id003
+  pressure-rise: &id003
+  - 0.02 ms-1
+  ignition-type: &id004
     target: pressure
     type: baseline min intercept from d/dt
 datapoints:
@@ -43,27 +45,59 @@ datapoints:
   - 1399.4 K
   ignition-delay:
   - 207.3 us
+  evaluated-standard-deviation:
+  - reference: ignition delay
+    kind: relative
+    sourcetype: reported
+    method: reported uncertainty
+    value:
+    - 0.106 unitless
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  ignition-type: *id004
 - temperature:
   - 1352.9 K
   ignition-delay:
   - 386.6 us
+  evaluated-standard-deviation:
+  - reference: ignition delay
+    kind: relative
+    sourcetype: reported
+    method: reported uncertainty
+    value:
+    - 0.113 unitless
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  ignition-type: *id004
 - temperature:
   - 1332.5 K
   ignition-delay:
   - 469.4 us
+  evaluated-standard-deviation:
+  - reference: ignition delay
+    kind: relative
+    sourcetype: reported
+    method: reported uncertainty
+    value:
+    - 0.116 unitless
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  ignition-type: *id004
 - temperature:
   - 1289.4 K
   ignition-delay:
   - 737.6 us
+  evaluated-standard-deviation:
+  - reference: ignition delay
+    kind: relative
+    sourcetype: reported
+    method: reported uncertainty
+    value:
+    - 0.124 unitless
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  ignition-type: *id004

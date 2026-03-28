@@ -39,6 +39,31 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.976765
+  evaluated-standard-deviation: &id003
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CH3OH
+    InChI: 1S/CH4O/c1-2/h2H,1H3
+    value:
+    - 2.88e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 4.55e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: NO2
+    InChI: 1S/NO2/c2-1-3
+    value:
+    - 6.15e-06 mole fraction
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -55,8 +80,16 @@ datapoints:
   - 824 K
   residence-time:
   - 0.37 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 5 K
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -72,8 +105,16 @@ datapoints:
   - 851 K
   residence-time:
   - 0.36 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 5 K
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -89,8 +130,16 @@ datapoints:
   - 879 K
   residence-time:
   - 0.35 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 5 K
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -106,8 +155,16 @@ datapoints:
   - 909 K
   residence-time:
   - 0.34 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 5 K
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -123,8 +180,16 @@ datapoints:
   - 950 K
   residence-time:
   - 0.32 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 5 K
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -140,8 +205,16 @@ datapoints:
   - 991 K
   residence-time:
   - 0.31 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 5 K
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -157,8 +230,16 @@ datapoints:
   - 1031 K
   residence-time:
   - 0.29 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 5 K
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -174,8 +255,16 @@ datapoints:
   - 1074 K
   residence-time:
   - 0.28 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 5 K
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -191,5 +280,13 @@ datapoints:
   - 1112 K
   residence-time:
   - 0.27 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 5 K
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003

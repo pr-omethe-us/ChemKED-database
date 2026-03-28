@@ -42,7 +42,21 @@ common-properties:
       amount:
       - 92.298
   equivalence-ratio: 1.0
-  ignition-type: &id002
+  uncertainty: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.2 unitless
+  evaluated-standard-deviation: &id003
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    value:
+    - 0.241688 unitless
+  ignition-type: &id004
     target: OH*
     type: baseline min intercept from d/dt
 datapoints:
@@ -54,7 +68,9 @@ datapoints:
   - 70.24 us
   composition: *id001
   equivalence-ratio: 1.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 10.35 atm
   temperature:
@@ -63,7 +79,9 @@ datapoints:
   - 114.88 us
   composition: *id001
   equivalence-ratio: 1.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 11.36 atm
   temperature:
@@ -72,7 +90,9 @@ datapoints:
   - 139.5 us
   composition: *id001
   equivalence-ratio: 1.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 10.09 atm
   temperature:
@@ -81,7 +101,9 @@ datapoints:
   - 343.56 us
   composition: *id001
   equivalence-ratio: 1.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 9.83 atm
   temperature:
@@ -90,7 +112,9 @@ datapoints:
   - 349.71 us
   composition: *id001
   equivalence-ratio: 1.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 9.25 atm
   temperature:
@@ -99,7 +123,9 @@ datapoints:
   - 410.12 us
   composition: *id001
   equivalence-ratio: 1.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 9.74 atm
   temperature:
@@ -108,7 +134,9 @@ datapoints:
   - 870 us
   composition: *id001
   equivalence-ratio: 1.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 9.33 atm
   temperature:
@@ -117,7 +145,9 @@ datapoints:
   - 962.13 us
   composition: *id001
   equivalence-ratio: 1.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 10.07 atm
   temperature:
@@ -126,7 +156,9 @@ datapoints:
   - 1011.35 us
   composition: *id001
   equivalence-ratio: 1.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 9.69 atm
   temperature:
@@ -135,7 +167,9 @@ datapoints:
   - 1149.1 us
   composition: *id001
   equivalence-ratio: 1.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 9.98 atm
   temperature:
@@ -144,7 +178,9 @@ datapoints:
   - 2688.86 us
   composition: *id001
   equivalence-ratio: 1.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - pressure:
   - 10.07 atm
   temperature:
@@ -153,4 +189,6 @@ datapoints:
   - 2608.76 us
   composition: *id001
   equivalence-ratio: 1.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004

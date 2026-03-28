@@ -42,6 +42,23 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.911523
+  evaluated-standard-deviation: &id003
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.000101 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: CO2
+    InChI: 1S/CO2/c2-1-3
+    value:
+    - 9.29e-05 mole faction
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -60,6 +77,7 @@ datapoints:
   - 0.080024 s
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -77,6 +95,7 @@ datapoints:
   - 0.077247 s
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -94,6 +113,7 @@ datapoints:
   - 0.0745 s
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -111,6 +131,7 @@ datapoints:
   - 0.072028 s
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -128,6 +149,7 @@ datapoints:
   - 0.069585 s
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -145,6 +167,7 @@ datapoints:
   - 0.067395 s
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -162,6 +185,7 @@ datapoints:
   - 0.065343 s
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -179,3 +203,4 @@ datapoints:
   - 0.063479 s
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003

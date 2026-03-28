@@ -23,8 +23,22 @@ apparatus:
 common-properties:
   temperature: &id001
   - 298 K
-  pressure: &id002
+  uncertainty: &id002
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 3 K
+  pressure: &id003
   - 2 atm
+  evaluated-standard-deviation: &id004
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 3.17 cm/s
 datapoints:
 - composition:
     kind: mole fraction
@@ -48,7 +62,9 @@ datapoints:
   laminar-burning-velocity:
   - 37.95 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -71,7 +87,9 @@ datapoints:
   laminar-burning-velocity:
   - 71.62 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -94,7 +112,9 @@ datapoints:
   laminar-burning-velocity:
   - 103.96 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -117,7 +137,9 @@ datapoints:
   laminar-burning-velocity:
   - 134.65 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -140,7 +162,9 @@ datapoints:
   laminar-burning-velocity:
   - 150.83 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -163,7 +187,9 @@ datapoints:
   laminar-burning-velocity:
   - 165.35 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -186,7 +212,9 @@ datapoints:
   laminar-burning-velocity:
   - 176.57 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -209,7 +237,9 @@ datapoints:
   laminar-burning-velocity:
   - 168.65 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -232,7 +262,9 @@ datapoints:
   laminar-burning-velocity:
   - 138.28 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -255,4 +287,6 @@ datapoints:
   laminar-burning-velocity:
   - 81.85 cm/s
   temperature: *id001
-  pressure: *id002
+  uncertainty: *id002
+  pressure: *id003
+  evaluated-standard-deviation: *id004

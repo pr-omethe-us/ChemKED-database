@@ -37,6 +37,15 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.999
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    species-name: CH2O
+    InChI: 1S/CH2O/c1-2/h1H2
+    value:
+    - 4.11e-05 mole faction
 datapoints:
 - concentration-profiles:
   - species-name: CH2O
@@ -65,3 +74,4 @@ datapoints:
   pressure: *id001
   temperature: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

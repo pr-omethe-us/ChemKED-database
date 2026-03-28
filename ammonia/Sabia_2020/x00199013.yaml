@@ -29,7 +29,11 @@ common-properties:
   residence-time: &id003
   - 0.21 s
   equivalence-ratio: 1.2
-  composition: &id004
+  global-heat-exchange-coefficient: &id004
+  - 35 cal/s/m2/K
+  exchange-area: &id005
+  - 113 cm2
+  composition: &id006
     kind: mole percent
     species:
     - species-name: NH3
@@ -44,6 +48,15 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 86.0
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 5e-06 mole fraction
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -62,11 +75,57 @@ datapoints:
       - 2.3e-05
   temperature:
   - 1012 K
+  environment-temperature:
+  - 1012 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 3.9e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002998 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -84,11 +143,57 @@ datapoints:
       - 2.4e-05
   temperature:
   - 1022 K
+  environment-temperature:
+  - 1022 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 4.3e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002996 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -106,11 +211,57 @@ datapoints:
       - 2.5e-05
   temperature:
   - 1024 K
+  environment-temperature:
+  - 1024 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 4.4e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002992 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -128,11 +279,57 @@ datapoints:
       - 3.5e-05
   temperature:
   - 1030 K
+  environment-temperature:
+  - 1030 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 5.9e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002976 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -150,11 +347,57 @@ datapoints:
       - 4.4e-05
   temperature:
   - 1064 K
+  environment-temperature:
+  - 1064 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 5.8e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002951 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -172,11 +415,57 @@ datapoints:
       - 4.8e-05
   temperature:
   - 1089 K
+  environment-temperature:
+  - 1089 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 9.7e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002886 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -194,11 +483,57 @@ datapoints:
       - 4.9e-05
   temperature:
   - 1108 K
+  environment-temperature:
+  - 1108 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000103 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002855 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -216,11 +551,57 @@ datapoints:
       - 4.7e-05
   temperature:
   - 1109 K
+  environment-temperature:
+  - 1109 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000103 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002853 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -238,11 +619,57 @@ datapoints:
       - 4.6e-05
   temperature:
   - 1125 K
+  environment-temperature:
+  - 1125 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000113 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002813 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -260,11 +687,57 @@ datapoints:
       - 4.3e-05
   temperature:
   - 1130 K
+  environment-temperature:
+  - 1130 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000108 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.00281 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -282,11 +755,57 @@ datapoints:
       - 3.7e-05
   temperature:
   - 1145 K
+  environment-temperature:
+  - 1145 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000108 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002778 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -304,11 +823,57 @@ datapoints:
       - 3.5e-05
   temperature:
   - 1146 K
+  environment-temperature:
+  - 1146 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000111 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002774 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -326,11 +891,57 @@ datapoints:
       - 3.0e-05
   temperature:
   - 1156 K
+  environment-temperature:
+  - 1156 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.00011 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002754 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -348,11 +959,57 @@ datapoints:
       - 2.9e-05
   temperature:
   - 1162 K
+  environment-temperature:
+  - 1162 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000107 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002757 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -370,11 +1027,57 @@ datapoints:
       - 2.8e-05
   temperature:
   - 1162 K
+  environment-temperature:
+  - 1162 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000105 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002722 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -392,11 +1095,57 @@ datapoints:
       - 2.2e-05
   temperature:
   - 1183 K
+  environment-temperature:
+  - 1183 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.0001 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002657 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -414,11 +1163,57 @@ datapoints:
       - 2.3e-05
   temperature:
   - 1184 K
+  environment-temperature:
+  - 1184 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000101 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002638 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -436,11 +1231,57 @@ datapoints:
       - 2.3e-05
   temperature:
   - 1197 K
+  environment-temperature:
+  - 1197 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000104 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002487 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -458,11 +1299,57 @@ datapoints:
       - 2.3e-05
   temperature:
   - 1198 K
+  environment-temperature:
+  - 1198 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000104 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002497 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -480,11 +1367,57 @@ datapoints:
       - 2.4e-05
   temperature:
   - 1215 K
+  environment-temperature:
+  - 1215 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000106 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002066 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -502,11 +1435,57 @@ datapoints:
       - 2.0e-05
   temperature:
   - 1221 K
+  environment-temperature:
+  - 1221 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 9.8e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.001967 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -524,11 +1503,57 @@ datapoints:
       - 2.2e-05
   temperature:
   - 1223 K
+  environment-temperature:
+  - 1223 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 9.8e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002109 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -546,11 +1571,57 @@ datapoints:
       - 2.0e-05
   temperature:
   - 1224 K
+  environment-temperature:
+  - 1224 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 9.4e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002235 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -568,11 +1639,57 @@ datapoints:
       - 2.0e-05
   temperature:
   - 1226 K
+  environment-temperature:
+  - 1226 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 9.4e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.002156 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -590,11 +1707,57 @@ datapoints:
       - 2.2e-05
   temperature:
   - 1228 K
+  environment-temperature:
+  - 1228 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000102 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.001988 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -612,11 +1775,57 @@ datapoints:
       - 2.2e-05
   temperature:
   - 1241 K
+  environment-temperature:
+  - 1241 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000277 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.000479 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -634,11 +1843,57 @@ datapoints:
       - 2.2e-05
   temperature:
   - 1245 K
+  environment-temperature:
+  - 1245 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.00037 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.000346 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -656,11 +1911,57 @@ datapoints:
       - 2.2e-05
   temperature:
   - 1247 K
+  environment-temperature:
+  - 1247 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000499 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.000244 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -678,11 +1979,57 @@ datapoints:
       - 2.2e-05
   temperature:
   - 1262 K
+  environment-temperature:
+  - 1262 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000497 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.000246 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -700,11 +2047,57 @@ datapoints:
       - 2.2e-05
   temperature:
   - 1263 K
+  environment-temperature:
+  - 1263 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000608 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.000228 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -722,11 +2115,57 @@ datapoints:
       - 2.1e-05
   temperature:
   - 1265 K
+  environment-temperature:
+  - 1265 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000594 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.000194 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -744,11 +2183,57 @@ datapoints:
       - 2.3e-05
   temperature:
   - 1288 K
+  environment-temperature:
+  - 1288 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000692 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.000153 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -766,11 +2251,57 @@ datapoints:
       - 2.4e-05
   temperature:
   - 1288 K
+  environment-temperature:
+  - 1288 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.000677 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.000159 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006
 - measured-composition:
     kind: mole fraction
     species:
@@ -788,8 +2319,54 @@ datapoints:
       - 2.3e-05
   temperature:
   - 1293 K
+  environment-temperature:
+  - 1293 K
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.03 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2e-06 mole fraction
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.00078 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.000119 mole fraction
   reactor-volume: *id001
   pressure: *id002
   residence-time: *id003
   equivalence-ratio: 1.2
-  composition: *id004
+  global-heat-exchange-coefficient: *id004
+  exchange-area: *id005
+  composition: *id006

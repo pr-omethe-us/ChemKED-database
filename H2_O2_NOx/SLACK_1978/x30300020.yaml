@@ -37,86 +37,104 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.99377
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 9e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: NO2
+    InChI: 1S/NO2/c2-1-3
+    value:
+    - 3.3e-05 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: 'NO'
     InChI: 1S/NO/c1-2
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: s
     values:
     - - 0.135
-      - 54.9
+      - 5.49e-05
     - - 0.139
-      - 58.4
+      - 5.84e-05
     - - 0.146
-      - 58.4
+      - 5.84e-05
     - - 0.155
-      - 61.8
+      - 6.18e-05
     - - 0.165
-      - 67.0
+      - 6.7e-05
     - - 0.177
-      - 73.8
+      - 7.38e-05
     - - 0.189
-      - 79.0
+      - 7.9e-05
     - - 0.201
-      - 87.6
+      - 8.76e-05
     - - 0.214
-      - 96.1
+      - 9.61e-05
     - - 0.226
-      - 108.2
+      - 0.0001082
     - - 0.239
-      - 121.9
+      - 0.0001219
     - - 0.252
-      - 128.8
+      - 0.0001288
     - - 0.264
-      - 139.1
+      - 0.0001391
     - - 0.277
-      - 151.1
+      - 0.0001511
     - - 0.289
-      - 166.5
+      - 0.0001665
     - - 0.302
-      - 183.7
+      - 0.0001837
   - species-name: NO2
     InChI: 1S/NO2/c2-1-3
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: s
     values:
     - - 0.135
-      - 669.5
+      - 0.0006695
     - - 0.139
-      - 667.8
+      - 0.0006678
     - - 0.146
-      - 666.1
+      - 0.0006661
     - - 0.155
-      - 660.9
+      - 0.0006609
     - - 0.165
-      - 654.1
+      - 0.0006541
     - - 0.177
-      - 647.2
+      - 0.0006472
     - - 0.189
-      - 640.3
+      - 0.0006403
     - - 0.201
-      - 631.8
+      - 0.0006318
     - - 0.214
-      - 619.7
+      - 0.0006197
     - - 0.226
-      - 623.2
+      - 0.0006232
     - - 0.239
-      - 614.6
+      - 0.0006146
     - - 0.252
-      - 606.0
+      - 0.000606
     - - 0.264
-      - 595.7
+      - 0.0005957
     - - 0.277
-      - 583.7
+      - 0.0005837
     - - 0.289
-      - 570.0
+      - 0.00057
     - - 0.302
-      - 552.8
+      - 0.0005528
   pressure: *id001
   temperature: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

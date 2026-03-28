@@ -44,7 +44,14 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.98
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 0.21 unitless
+  ignition-type: &id003
     target: OHEX;
     type: d/dt max
 datapoints:
@@ -55,7 +62,8 @@ datapoints:
   ignition-delay:
   - 54 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 11.8 atm
   temperature:
@@ -63,7 +71,8 @@ datapoints:
   ignition-delay:
   - 79 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 11.8 atm
   temperature:
@@ -71,7 +80,8 @@ datapoints:
   ignition-delay:
   - 96 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 12.2 atm
   temperature:
@@ -79,7 +89,8 @@ datapoints:
   ignition-delay:
   - 121 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 12.6 atm
   temperature:
@@ -87,7 +98,8 @@ datapoints:
   ignition-delay:
   - 230 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 13 atm
   temperature:
@@ -95,7 +107,8 @@ datapoints:
   ignition-delay:
   - 389 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 12.9 atm
   temperature:
@@ -103,7 +116,8 @@ datapoints:
   ignition-delay:
   - 1150 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 12.5 atm
   temperature:
@@ -111,4 +125,5 @@ datapoints:
   ignition-delay:
   - 1722 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

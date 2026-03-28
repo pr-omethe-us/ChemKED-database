@@ -44,6 +44,15 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.97635
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    species-name: OH
+    InChI: 1S/HO/h1H
+    value:
+    - 1.036e-06 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: OH
@@ -131,3 +140,4 @@ datapoints:
   temperature: *id001
   pressure: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

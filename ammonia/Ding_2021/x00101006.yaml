@@ -23,7 +23,7 @@ apparatus:
   institution: ''
   facility: ''
 common-properties:
-  composition: &id001
+  composition:
     kind: mole fraction
     species:
     - species-name: NH3
@@ -38,14 +38,23 @@ common-properties:
       InChI: 1S/H2/h1H
       amount:
       - 0.005
-  pressure: &id002
+  pressure: &id001
   - 1 atm
-  reactor-volume: &id003
+  reactor-volume: &id002
   - 65.45 cm3
-  temperature: &id004
+  temperature: &id003
   - 1300 K
-  residence-time: &id005
+  residence-time: &id004
   - 0.91 s
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: N2O
+    InChI: 1S/N2O/c1-2-3
+    value:
+    - 5e-06 mole fraction
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -70,11 +79,95 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 0.000198
-  composition: *id001
-  pressure: *id002
-  reactor-volume: *id003
-  temperature: *id004
-  residence-time: *id005
+  composition:
+    kind: mole percent
+    species:
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 1.4398
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 97.4602
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: N2O
+    InChI: 1S/N2O/c1-2-3
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 0.01 unitless
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.001333 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 1.1e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 5e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2.1e-05 mole fraction
+  pressure: *id001
+  reactor-volume: *id002
+  temperature: *id003
+  residence-time: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -98,11 +191,95 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 0.000196
-  composition: *id001
-  pressure: *id002
-  reactor-volume: *id003
-  temperature: *id004
-  residence-time: *id005
+  composition:
+    kind: mole percent
+    species:
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 1.0891
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 97.8109
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: N2O
+    InChI: 1S/N2O/c1-2-3
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 0.01 unitless
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.000961 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 1.3e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 5e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2.1e-05 mole fraction
+  pressure: *id001
+  reactor-volume: *id002
+  temperature: *id003
+  residence-time: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -126,11 +303,95 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 0.000162
-  composition: *id001
-  pressure: *id002
-  reactor-volume: *id003
-  temperature: *id004
-  residence-time: *id005
+  composition:
+    kind: mole percent
+    species:
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.9694
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 97.9306
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: N2O
+    InChI: 1S/N2O/c1-2-3
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 0.01 unitless
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.00061 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 1.3e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 5e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 1.7e-05 mole fraction
+  pressure: *id001
+  reactor-volume: *id002
+  temperature: *id003
+  residence-time: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -154,11 +415,95 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 0.000153
-  composition: *id001
-  pressure: *id002
-  reactor-volume: *id003
-  temperature: *id004
-  residence-time: *id005
+  composition:
+    kind: mole percent
+    species:
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.8084
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 98.0916
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: N2O
+    InChI: 1S/N2O/c1-2-3
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 0.01 unitless
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.000436 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 1.5e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 5e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 1.6e-05 mole fraction
+  pressure: *id001
+  reactor-volume: *id002
+  temperature: *id003
+  residence-time: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -182,11 +527,95 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 0.000131
-  composition: *id001
-  pressure: *id002
-  reactor-volume: *id003
-  temperature: *id004
-  residence-time: *id005
+  composition:
+    kind: mole percent
+    species:
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.6298
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 98.2702
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: N2O
+    InChI: 1S/N2O/c1-2-3
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 0.01 unitless
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 6.4e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 2.7e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 5e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 1.4e-05 mole fraction
+  pressure: *id001
+  reactor-volume: *id002
+  temperature: *id003
+  residence-time: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -210,11 +639,95 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 6.1e-05
-  composition: *id001
-  pressure: *id002
-  reactor-volume: *id003
-  temperature: *id004
-  residence-time: *id005
+  composition:
+    kind: mole percent
+    species:
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.48
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 98.42
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: N2O
+    InChI: 1S/N2O/c1-2-3
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 0.01 unitless
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 5e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.000178 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 1e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 6e-06 mole fraction
+  pressure: *id001
+  reactor-volume: *id002
+  temperature: *id003
+  residence-time: *id004
 - measured-composition:
     kind: mole fraction
     species:
@@ -238,8 +751,92 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 5.0e-05
-  composition: *id001
-  pressure: *id002
-  reactor-volume: *id003
-  temperature: *id004
-  residence-time: *id005
+  composition:
+    kind: mole percent
+    species:
+    - species-name: O2
+      InChI: 1S/O2/c1-2
+      amount:
+      - 0.4201
+    - species-name: N2
+      InChI: 1S/N2/c1-2
+      amount:
+      - 98.4799
+  uncertainty:
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: N2O
+    InChI: 1S/N2O/c1-2-3
+    value:
+    - 0.01 unitless
+  - reference: composition
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 0.01 unitless
+  evaluated-standard-deviation:
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 5e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.000213 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 3e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 5e-06 mole fraction
+  pressure: *id001
+  reactor-volume: *id002
+  temperature: *id003
+  residence-time: *id004

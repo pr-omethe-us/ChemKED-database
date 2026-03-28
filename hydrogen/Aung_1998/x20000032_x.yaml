@@ -24,6 +24,20 @@ common-properties:
   - 1 atm
   temperature: &id002
   - 298 K
+  uncertainty: &id003
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 3 K
+  evaluated-standard-deviation: &id004
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    value:
+    - 2 cm/s
 datapoints:
 - composition:
     kind: mole fraction
@@ -44,6 +58,8 @@ datapoints:
   - 160 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -63,6 +79,8 @@ datapoints:
   - 450 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -82,6 +100,8 @@ datapoints:
   - 770 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -101,6 +121,8 @@ datapoints:
   - 1000 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -120,6 +142,8 @@ datapoints:
   - 1140 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -139,6 +163,8 @@ datapoints:
   - 1160 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -158,6 +184,8 @@ datapoints:
   - 1140 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -177,6 +205,8 @@ datapoints:
   - 1120 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -196,6 +226,8 @@ datapoints:
   - 960 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004
 - composition:
     kind: mole fraction
     species:
@@ -215,3 +247,5 @@ datapoints:
   - 860 mm/s
   pressure: *id001
   temperature: *id002
+  uncertainty: *id003
+  evaluated-standard-deviation: *id004

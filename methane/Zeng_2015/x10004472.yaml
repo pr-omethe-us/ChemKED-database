@@ -34,7 +34,16 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.7506
-  ignition-type: &id003
+  pressure-rise: &id003
+  - 0.04 ms-1
+  evaluated-standard-deviation: &id004
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    value:
+    - 0.12 unitless
+  ignition-type: &id005
     target: CH*
     type: baseline min intercept from d/dt
 datapoints:
@@ -44,53 +53,69 @@ datapoints:
   - 29 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005
 - temperature:
   - 1688 K
   ignition-delay:
   - 68 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005
 - temperature:
   - 1678 K
   ignition-delay:
   - 78 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005
 - temperature:
   - 1591 K
   ignition-delay:
   - 135 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005
 - temperature:
   - 1534 K
   ignition-delay:
   - 247 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005
 - temperature:
   - 1468 K
   ignition-delay:
   - 464 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005
 - temperature:
   - 1448 K
   ignition-delay:
   - 602 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005
 - temperature:
   - 1407 K
   ignition-delay:
   - 811 us
   pressure: *id001
   composition: *id002
-  ignition-type: *id003
+  pressure-rise: *id003
+  evaluated-standard-deviation: *id004
+  ignition-type: *id005

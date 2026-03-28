@@ -34,7 +34,14 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.96
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 0.151 unitless
+  ignition-type: &id003
     target: O2
     type: baseline max intercept from d/dt
 datapoints:
@@ -45,7 +52,8 @@ datapoints:
   ignition-delay:
   - 648 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1925 K
   pressure:
@@ -53,7 +61,8 @@ datapoints:
   ignition-delay:
   - 431 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1950 K
   pressure:
@@ -61,7 +70,8 @@ datapoints:
   ignition-delay:
   - 330 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2045 K
   pressure:
@@ -69,7 +79,8 @@ datapoints:
   ignition-delay:
   - 270 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2145 K
   pressure:
@@ -77,7 +88,8 @@ datapoints:
   ignition-delay:
   - 186 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2230 K
   pressure:
@@ -85,7 +97,8 @@ datapoints:
   ignition-delay:
   - 110 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2280 K
   pressure:
@@ -93,7 +106,8 @@ datapoints:
   ignition-delay:
   - 87 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 2285 K
   pressure:
@@ -101,4 +115,5 @@ datapoints:
   ignition-delay:
   - 125 us
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

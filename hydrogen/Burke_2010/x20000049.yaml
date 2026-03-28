@@ -38,6 +38,13 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.5385
+  evaluated-standard-deviation: &id003
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 4 cm/s
 datapoints:
 - pressure:
   - 1 atm
@@ -45,9 +52,11 @@ datapoints:
   - 177.9 cm/s
   temperature: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - pressure:
   - 5 atm
   laminar-burning-velocity:
   - 164.6 cm/s
   temperature: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003

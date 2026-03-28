@@ -46,6 +46,31 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.976197
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    species-name: CH2O
+    InChI: 1S/CH2O/c1-2/h1H2
+    value:
+    - 9.85e-06 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 2.14e-06 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    species-name: H2O
+    InChI: 1S/H2O/h1H2
+    value:
+    - 0.000367 mole faction
 datapoints:
 - concentration-profiles:
   - species-name: CH2O
@@ -162,3 +187,4 @@ datapoints:
   pressure: *id001
   temperature: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

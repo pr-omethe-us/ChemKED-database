@@ -32,7 +32,14 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.66497
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: generic uncertainty
+    value:
+    - 0.1 unitless
+  ignition-type: &id003
     target: p;
     type: d/dt max
 datapoints:
@@ -740,7 +747,8 @@ datapoints:
     - - 1823.56
       - 7.756657
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 800 Torr
   temperature:
@@ -748,7 +756,8 @@ datapoints:
   ignition-delay:
   - 46.2 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 800 Torr
   temperature:
@@ -756,7 +765,8 @@ datapoints:
   ignition-delay:
   - 51.04 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 800 Torr
   temperature:
@@ -764,7 +774,8 @@ datapoints:
   ignition-delay:
   - 50.6 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 700 Torr
   temperature:
@@ -772,7 +783,8 @@ datapoints:
   ignition-delay:
   - 71.82 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 700 Torr
   temperature:
@@ -780,7 +792,8 @@ datapoints:
   ignition-delay:
   - 64.92 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 700 Torr
   temperature:
@@ -788,7 +801,8 @@ datapoints:
   ignition-delay:
   - 62.4 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 700 Torr
   temperature:
@@ -796,7 +810,8 @@ datapoints:
   ignition-delay:
   - 68.48 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 700 Torr
   temperature:
@@ -804,7 +819,8 @@ datapoints:
   ignition-delay:
   - 63.44 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 600 Torr
   temperature:
@@ -812,7 +828,8 @@ datapoints:
   ignition-delay:
   - 89.44 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 600 Torr
   temperature:
@@ -820,7 +837,8 @@ datapoints:
   ignition-delay:
   - 99.72 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 600 Torr
   temperature:
@@ -828,7 +846,8 @@ datapoints:
   ignition-delay:
   - 94.32 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 600 Torr
   temperature:
@@ -836,7 +855,8 @@ datapoints:
   ignition-delay:
   - 98.44 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 600 Torr
   temperature:
@@ -844,7 +864,8 @@ datapoints:
   ignition-delay:
   - 89.81 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - pressure:
   - 600 Torr
   temperature:
@@ -852,4 +873,5 @@ datapoints:
   ignition-delay:
   - 100.09 ms
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

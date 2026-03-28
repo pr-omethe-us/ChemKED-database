@@ -26,6 +26,13 @@ common-properties:
   - 5 atm
   temperature: &id002
   - 298 K
+  evaluated-standard-deviation: &id003
+  - reference: laminar burning velocity
+    kind: absolute
+    sourcetype: estimated
+    method: generic uncertainty
+    value:
+    - 0.5 cm/s
 datapoints:
 - composition:
     kind: mole fraction
@@ -50,6 +57,7 @@ datapoints:
   - 4.70963 cm/s
   pressure: *id001
   temperature: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -73,6 +81,7 @@ datapoints:
   - 5.54348 cm/s
   pressure: *id001
   temperature: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -96,6 +105,7 @@ datapoints:
   - 9.56832 cm/s
   pressure: *id001
   temperature: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -119,3 +129,4 @@ datapoints:
   - 13.4441 cm/s
   pressure: *id001
   temperature: *id002
+  evaluated-standard-deviation: *id003

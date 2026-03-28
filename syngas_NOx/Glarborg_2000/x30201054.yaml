@@ -48,6 +48,23 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 91.41
+  evaluated-standard-deviation: &id003
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 5e-06 mole fraction
+  - reference: composition
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 0.029154759 unitless
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -64,8 +81,32 @@ datapoints:
   - 1473 K
   residence-time:
   - 0.1901 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
+  - reference: composition
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 1e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2.7e-05 mole fraction
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -81,8 +122,32 @@ datapoints:
   - 1573 K
   residence-time:
   - 0.178 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
+  - reference: composition
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 1e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2.7e-05 mole fraction
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -98,8 +163,32 @@ datapoints:
   - 1673 K
   residence-time:
   - 0.1674 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
+  - reference: composition
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 1e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2.7e-05 mole fraction
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -115,5 +204,29 @@ datapoints:
   - 1773 K
   residence-time:
   - 0.1579 s
+  uncertainty:
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 20 K
+  - reference: composition
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 1e-05 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: calculated
+    bound: plusminus
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 2.7e-05 mole fraction
   pressure: *id001
   composition: *id002
+  evaluated-standard-deviation: *id003

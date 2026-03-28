@@ -24,7 +24,14 @@ common-properties:
   - 3 atm
   temperature: &id002
   - 954 K
-  composition: &id003
+  uncertainty: &id003
+  - reference: temperature
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 3 K
+  composition: &id004
     kind: mole percent
     species:
     - species-name: CO
@@ -47,6 +54,31 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.982493
+  evaluated-standard-deviation: &id005
+  - reference: composition
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.025 unitless
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: 'NO'
+    InChI: 1S/NO/c1-2
+    value:
+    - 5e-06 mole fraction
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: NO2
+    InChI: 1S/NO2/c2-1-3
+    value:
+    - 5e-06 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: CO
@@ -95,89 +127,91 @@ datapoints:
   - species-name: 'NO'
     InChI: 1S/NO/c1-2
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: s
     values:
     - - 0.023
-      - 98.0
+      - 9.8e-05
     - - 0.035
-      - 98.0
+      - 9.8e-05
     - - 0.046
-      - 98.0
+      - 9.8e-05
     - - 0.063
-      - 98.0
+      - 9.8e-05
     - - 0.08
-      - 98.0
+      - 9.8e-05
     - - 0.103
-      - 99.0
+      - 9.9e-05
     - - 0.126
-      - 99.0
+      - 9.9e-05
     - - 0.15
-      - 99.0
+      - 9.9e-05
     - - 0.175
-      - 99.0
+      - 9.9e-05
     - - 0.198
-      - 99.0
+      - 9.9e-05
     - - 0.222
-      - 99.0
+      - 9.9e-05
     - - 0.248
-      - 99.0
+      - 9.9e-05
     - - 0.27
-      - 99.0
+      - 9.9e-05
     - - 0.293
-      - 100.0
+      - 0.0001
     - - 0.317
-      - 99.0
+      - 9.9e-05
     - - 0.34
-      - 99.0
+      - 9.9e-05
     - - 0.365
-      - 100.0
+      - 0.0001
     - - 0.389
-      - 100.0
+      - 0.0001
   - species-name: NO2
     InChI: 1S/NO2/c2-1-3
     quantity:
-      units: ppm
+      units: mole fraction
     time:
       units: s
     values:
     - - 0.023
-      - 9.0
+      - 9.0e-06
     - - 0.035
-      - 9.0
+      - 9.0e-06
     - - 0.046
-      - 9.0
+      - 9.0e-06
     - - 0.063
-      - 9.0
+      - 9.0e-06
     - - 0.08
-      - 9.0
+      - 9.0e-06
     - - 0.103
-      - 8.0
+      - 8.0e-06
     - - 0.126
-      - 9.0
+      - 9.0e-06
     - - 0.15
-      - 8.0
+      - 8.0e-06
     - - 0.175
-      - 9.0
+      - 9.0e-06
     - - 0.198
-      - 9.0
+      - 9.0e-06
     - - 0.222
-      - 9.0
+      - 9.0e-06
     - - 0.248
-      - 8.0
+      - 8.0e-06
     - - 0.27
-      - 8.0
+      - 8.0e-06
     - - 0.293
-      - 8.0
+      - 8.0e-06
     - - 0.317
-      - 8.0
+      - 8.0e-06
     - - 0.34
-      - 8.0
+      - 8.0e-06
     - - 0.365
-      - 8.0
+      - 8.0e-06
     - - 0.389
-      - 7.0
+      - 7.0e-06
   pressure: *id001
   temperature: *id002
-  composition: *id003
+  uncertainty: *id003
+  composition: *id004
+  evaluated-standard-deviation: *id005

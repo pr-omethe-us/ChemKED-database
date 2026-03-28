@@ -33,7 +33,14 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.978
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: generic uncertainty
+    value:
+    - 0.1 unitless
+  ignition-type: &id003
     target: CH4
     type: baseline max intercept from d/dt
 datapoints:
@@ -44,7 +51,8 @@ datapoints:
   pressure:
   - 245.96 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1562.9 K
   ignition-delay:
@@ -52,7 +60,8 @@ datapoints:
   pressure:
   - 230.84 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1541.7 K
   ignition-delay:
@@ -60,7 +69,8 @@ datapoints:
   pressure:
   - 227.7 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1465.4 K
   ignition-delay:
@@ -68,7 +78,8 @@ datapoints:
   pressure:
   - 216.43 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1447.7 K
   ignition-delay:
@@ -76,4 +87,5 @@ datapoints:
   pressure:
   - 213.82 atm
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

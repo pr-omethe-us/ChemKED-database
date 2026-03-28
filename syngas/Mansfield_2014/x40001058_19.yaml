@@ -41,7 +41,14 @@ common-properties:
       InChI: 1S/CO2/c2-1-3
       amount:
       - 0.017
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 0.12 unitless
+  ignition-type: &id003
     target: p;
     type: d/dt max
 datapoints:
@@ -115,4 +122,5 @@ datapoints:
     - - 26.0
       - 1.0047767
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003

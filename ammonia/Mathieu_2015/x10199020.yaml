@@ -36,7 +36,21 @@ common-properties:
       amount:
       - 0.99
   equivalence-ratio: 2.0
-  ignition-type: &id002
+  uncertainty: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: reported
+    bound: plusminus
+    value:
+    - 0.1 unitless
+  evaluated-standard-deviation: &id003
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    value:
+    - 0.07612 unitless
+  ignition-type: &id004
     target: OH*
     type: baseline min intercept from d/dt
 datapoints:
@@ -48,7 +62,9 @@ datapoints:
   - 11.3 atm
   composition: *id001
   equivalence-ratio: 2.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - temperature:
   - 1729 K
   ignition-delay:
@@ -57,7 +73,9 @@ datapoints:
   - 11 atm
   composition: *id001
   equivalence-ratio: 2.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - temperature:
   - 1750 K
   ignition-delay:
@@ -66,7 +84,9 @@ datapoints:
   - 10.7 atm
   composition: *id001
   equivalence-ratio: 2.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - temperature:
   - 1812 K
   ignition-delay:
@@ -75,7 +95,9 @@ datapoints:
   - 10.7 atm
   composition: *id001
   equivalence-ratio: 2.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - temperature:
   - 1890 K
   ignition-delay:
@@ -84,7 +106,9 @@ datapoints:
   - 10.5 atm
   composition: *id001
   equivalence-ratio: 2.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - temperature:
   - 1961 K
   ignition-delay:
@@ -93,7 +117,9 @@ datapoints:
   - 10.9 atm
   composition: *id001
   equivalence-ratio: 2.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - temperature:
   - 1962 K
   ignition-delay:
@@ -102,7 +128,9 @@ datapoints:
   - 10.5 atm
   composition: *id001
   equivalence-ratio: 2.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - temperature:
   - 2038 K
   ignition-delay:
@@ -111,4 +139,6 @@ datapoints:
   - 10.1 atm
   composition: *id001
   equivalence-ratio: 2.0
-  ignition-type: *id002
+  uncertainty: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004

@@ -33,6 +33,71 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.98128
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: O2
+    InChI: 1S/O2/c1-2
+    value:
+    - 0.0015 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: H2
+    InChI: 1S/H2/h1H
+    value:
+    - 1.73e-05 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: H2O
+    InChI: 1S/H2O/h1H2
+    value:
+    - 0.000684 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 0.000335 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: CO2
+    InChI: 1S/CO2/c2-1-3
+    value:
+    - 3.92e-05 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: CH2O
+    InChI: 1S/CH2O/c1-2/h1H2
+    value:
+    - 5.22e-05 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: CH3OH
+    InChI: 1S/CH4O/c1-2/h2H,1H3
+    value:
+    - 0.000336 mole faction
+  - reference: composition
+    kind: absolute
+    sourcetype: reported
+    method: reported uncertainty
+    species-name: HCOOH
+    InChI: 1S/CH2O2/c2-1-3/h1H,(H,2,3)
+    value:
+    - 2.43e-05 mole faction
 datapoints:
 - concentration-profiles:
   - species-name: CH3OH
@@ -382,3 +447,4 @@ datapoints:
   pressure: *id001
   temperature: *id002
   composition: *id003
+  evaluated-standard-deviation: *id004

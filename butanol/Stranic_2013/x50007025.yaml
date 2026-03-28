@@ -35,6 +35,15 @@ common-properties:
   - 1449 K
   pressure: &id003
   - 1.8 atm
+  evaluated-standard-deviation: &id004
+  - reference: composition
+    kind: absolute
+    sourcetype: estimated
+    method: combined from scatter and reported uncertainty
+    species-name: OH
+    InChI: 1S/HO/h1H
+    value:
+    - 1.65e-06 mole fraction
 datapoints:
 - concentration-profiles:
   - species-name: OH
@@ -2257,3 +2266,4 @@ datapoints:
   composition: *id001
   temperature: *id002
   pressure: *id003
+  evaluated-standard-deviation: *id004

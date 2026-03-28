@@ -39,7 +39,14 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.935
-  ignition-type: &id002
+  evaluated-standard-deviation: &id002
+  - reference: ignition delay
+    kind: relative
+    sourcetype: estimated
+    method: statistical scatter
+    value:
+    - 0.1 unitless
+  ignition-type: &id003
     target: OHEX;
     type: baseline min intercept from d/dt
 datapoints:
@@ -50,7 +57,8 @@ datapoints:
   pressure:
   - 1.12 bar
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1361 K
   ignition-delay:
@@ -58,7 +66,8 @@ datapoints:
   pressure:
   - 1.36 bar
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1404 K
   ignition-delay:
@@ -66,7 +75,8 @@ datapoints:
   pressure:
   - 1.31 bar
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1443 K
   ignition-delay:
@@ -74,7 +84,8 @@ datapoints:
   pressure:
   - 1.33 bar
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1482 K
   ignition-delay:
@@ -82,7 +93,8 @@ datapoints:
   pressure:
   - 1.36 bar
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1498 K
   ignition-delay:
@@ -90,7 +102,8 @@ datapoints:
   pressure:
   - 1.34 bar
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1525 K
   ignition-delay:
@@ -98,7 +111,8 @@ datapoints:
   pressure:
   - 1.28 bar
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
 - temperature:
   - 1574 K
   ignition-delay:
@@ -106,4 +120,5 @@ datapoints:
   pressure:
   - 1.28 bar
   composition: *id001
-  ignition-type: *id002
+  evaluated-standard-deviation: *id002
+  ignition-type: *id003
