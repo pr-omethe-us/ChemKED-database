@@ -25,13 +25,8 @@ common-properties:
   equivalence-ratio: 1.67
   temperature: &id001
   - 298 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 3 K
+  - uncertainty-type: absolute
+    uncertainty: 3 K
   pressure: &id002
   - 1 atm
   evaluated-standard-deviation: &id003
@@ -63,13 +58,8 @@ datapoints:
       - 0.506047
   laminar-burning-velocity:
   - 20.6 cm/s
-  uncertainty:
-  - reference: laminar burning velocity
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 0.1 unitless
+  - uncertainty-type: relative
+    uncertainty: '0.1'
   equivalence-ratio: 1.67
   temperature: *id001
   pressure: *id002

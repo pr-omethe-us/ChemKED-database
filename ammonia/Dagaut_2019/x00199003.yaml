@@ -22,8 +22,12 @@ common-properties:
   - 27.5 cm3
   pressure: &id002
   - 1 atm
+  - uncertainty-type: absolute
+    uncertainty: 0.1 atm
   residence-time: &id003
   - 100 ms
+  - uncertainty-type: relative
+    uncertainty: '0.05'
   composition: &id004
     kind: mole fraction
     species:
@@ -31,51 +35,20 @@ common-properties:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.001
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
       - 0.0125
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
       - 98.65
-  uncertainty:
-  - reference: pressure
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 0.1 atm
-  - reference: residence time
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 0.05 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: O2
-    InChI: 1S/O2/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2
-    InChI: 1S/N2/c1-2
-    value:
-    - 0.1 unitless
+      - uncertainty-type: relative
+        uncertainty: 0.1
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -101,71 +74,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.000962
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 5.0e-06
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1101 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -202,71 +140,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.0011
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 9.0e-06
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1125 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -303,71 +206,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.00114
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 1.1e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1149 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -404,71 +272,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.00113
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 1.4e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1174 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -505,71 +338,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.00115
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 1.9e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1200 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -606,71 +404,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.00108
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 2.3e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1226 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -707,71 +470,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.00109
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 2.3e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1248 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -808,71 +536,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.00109
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 3.0e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1273 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -909,71 +602,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.00102
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 0.0
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 3.0e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1298 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -1010,71 +668,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.000751
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.000205
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 1.0e-06
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 3.4e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 3.0e-06
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1325 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -1111,71 +734,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 9.6e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.00145
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 2.0e-06
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 5.9e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 1.9e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1351 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -1212,71 +800,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 7.6e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.00154
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 2.0e-06
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 6.6e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 2.4e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1373 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -1313,71 +866,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 5.7e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.00157
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 2.0e-06
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 8.9e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 2.4e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1400 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -1414,71 +932,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 4.5e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.00157
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 2.0e-06
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.000108
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 2.3e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1426 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -1515,71 +998,36 @@ datapoints:
       InChI: 1S/H3N/h1H3
       amount:
       - 3.7e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: H2O
       InChI: 1S/H2O/h1H2
       amount:
       - 0.00161
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: NO2
       InChI: 1S/NO2/c2-1-3
       amount:
       - 2.0e-06
+      - uncertainty-type: absolute
+        uncertainty: 2.0e-06
     - species-name: 'NO'
       InChI: 1S/NO/c1-2
       amount:
       - 0.000134
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: N2O
       InChI: 1S/N2O/c1-2-3
       amount:
       - 1.9e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
   temperature:
   - 1452 K
-  uncertainty:
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 4 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: NO2
-    InChI: 1S/NO2/c2-1-3
-    value:
-    - 2e-06 mole fraction
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.1 unitless
+  - uncertainty-type: absolute
+    uncertainty: 4 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute

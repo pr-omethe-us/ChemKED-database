@@ -64,25 +64,14 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 0.000184
+      - uncertainty-type: relative
+        uncertainty: 0.08
   distance:
   - 5 mm
   temperature:
   - 1529 K
-  uncertainty:
-  - reference: composition
-    kind: relative
-    sourcetype: calculated
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.08 unitless
-  - reference: temperature
-    kind: absolute
-    sourcetype: digitized
-    bound: plusminus
-    value:
-    - 40 K
+  - uncertainty-type: absolute
+    uncertainty: 40 K
   equivalence-ratio: 0.8
   pressure: *id001
   flow-rate: *id002

@@ -22,14 +22,9 @@ apparatus:
 common-properties:
   pressure: &id001
   - 221 kPa
-  uncertainty: &id002
-  - reference: pressure
-    kind: absolute
-    sourcetype: calculated
-    bound: plusminus
-    value:
-    - 12 kPa
-  composition: &id003
+  - uncertainty-type: absolute
+    uncertainty: 12 kPa
+  composition: &id002
     kind: mole fraction
     species:
     - species-name: H2
@@ -44,14 +39,14 @@ common-properties:
       InChI: 1S/Ar
       amount:
       - 0.99
-  evaluated-standard-deviation: &id004
+  evaluated-standard-deviation: &id003
   - reference: ignition delay
     kind: relative
     sourcetype: estimated
     method: generic uncertainty
     value:
     - 0.1 unitless
-  ignition-type: &id005
+  ignition-type: &id004
     target: OHEX;
     type: relative concentration
 datapoints:
@@ -60,43 +55,38 @@ datapoints:
   ignition-delay:
   - 471.54 us
   pressure: *id001
-  uncertainty: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
-  ignition-type: *id005
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - temperature:
   - 1164.97 K
   ignition-delay:
   - 448.03 us
   pressure: *id001
-  uncertainty: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
-  ignition-type: *id005
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - temperature:
   - 1264.2 K
   ignition-delay:
   - 291.57 us
   pressure: *id001
-  uncertainty: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
-  ignition-type: *id005
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - temperature:
   - 1332.57 K
   ignition-delay:
   - 205.93 us
   pressure: *id001
-  uncertainty: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
-  ignition-type: *id005
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004
 - temperature:
   - 1519.18 K
   ignition-delay:
   - 88.11 us
   pressure: *id001
-  uncertainty: *id002
-  composition: *id003
-  evaluated-standard-deviation: *id004
-  ignition-type: *id005
+  composition: *id002
+  evaluated-standard-deviation: *id003
+  ignition-type: *id004

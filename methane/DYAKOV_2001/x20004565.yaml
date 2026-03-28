@@ -25,22 +25,13 @@ apparatus:
 common-properties:
   temperature: &id001
   - 298 K
-  uncertainty: &id002
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 2 K
-  - reference: pressure
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 100 Pa
-  pressure: &id003
+  - uncertainty-type: absolute
+    uncertainty: 2 K
+  pressure: &id002
   - 1 bar
-  evaluated-standard-deviation: &id004
+  - uncertainty-type: absolute
+    uncertainty: 100 Pa
+  evaluated-standard-deviation: &id003
   - reference: laminar burning velocity
     kind: absolute
     sourcetype: estimated
@@ -66,9 +57,8 @@ datapoints:
   laminar-burning-velocity:
   - 14.98 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -87,9 +77,8 @@ datapoints:
   laminar-burning-velocity:
   - 19.77 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -108,9 +97,8 @@ datapoints:
   laminar-burning-velocity:
   - 24.13 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -129,9 +117,8 @@ datapoints:
   laminar-burning-velocity:
   - 28.06 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -150,9 +137,8 @@ datapoints:
   laminar-burning-velocity:
   - 31.6 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -171,9 +157,8 @@ datapoints:
   laminar-burning-velocity:
   - 34.38 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -192,9 +177,8 @@ datapoints:
   laminar-burning-velocity:
   - 36.47 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -213,9 +197,8 @@ datapoints:
   laminar-burning-velocity:
   - 36.97 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -234,9 +217,8 @@ datapoints:
   laminar-burning-velocity:
   - 37.69 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -255,9 +237,8 @@ datapoints:
   laminar-burning-velocity:
   - 37.85 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -276,9 +257,8 @@ datapoints:
   laminar-burning-velocity:
   - 36.68 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -297,9 +277,8 @@ datapoints:
   laminar-burning-velocity:
   - 34.55 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -318,9 +297,8 @@ datapoints:
   laminar-burning-velocity:
   - 31 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -339,9 +317,8 @@ datapoints:
   laminar-burning-velocity:
   - 26.67 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -360,9 +337,8 @@ datapoints:
   laminar-burning-velocity:
   - 22.15 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -381,9 +357,8 @@ datapoints:
   laminar-burning-velocity:
   - 16.77 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003
 - composition:
     kind: mole fraction
     species:
@@ -402,6 +377,5 @@ datapoints:
   laminar-burning-velocity:
   - 10.82 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
-  evaluated-standard-deviation: *id004
+  pressure: *id002
+  evaluated-standard-deviation: *id003

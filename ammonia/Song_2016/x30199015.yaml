@@ -40,6 +40,8 @@ common-properties:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.000789
+      - uncertainty-type: relative
+        uncertainty: 0.06
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -48,23 +50,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.958511
-  uncertainty: &id007
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: N2O
-    InChI: 1S/N2O/c1-2-3
-    value:
-    - 0.06 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.06 unitless
 datapoints:
 - measured-composition:
     kind: mole fraction
@@ -73,6 +58,8 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 7.8e-05
+      - uncertainty-type: relative
+        uncertainty: 0.06
   temperature:
   - 826 K
   evaluated-standard-deviation:
@@ -90,7 +77,6 @@ datapoints:
   reactor-diameter: *id004
   pressure: *id005
   composition: *id006
-  uncertainty: *id007
 - measured-composition:
     kind: mole fraction
     species:
@@ -98,6 +84,8 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.000176
+      - uncertainty-type: relative
+        uncertainty: 0.06
   temperature:
   - 852 K
   evaluated-standard-deviation:
@@ -115,7 +103,6 @@ datapoints:
   reactor-diameter: *id004
   pressure: *id005
   composition: *id006
-  uncertainty: *id007
 - measured-composition:
     kind: mole fraction
     species:
@@ -123,6 +110,8 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.000167
+      - uncertainty-type: relative
+        uncertainty: 0.06
   temperature:
   - 876 K
   evaluated-standard-deviation:
@@ -140,7 +129,6 @@ datapoints:
   reactor-diameter: *id004
   pressure: *id005
   composition: *id006
-  uncertainty: *id007
 - measured-composition:
     kind: mole fraction
     species:
@@ -148,6 +136,8 @@ datapoints:
       InChI: 1S/N2O/c1-2-3
       amount:
       - 0.000165
+      - uncertainty-type: relative
+        uncertainty: 0.06
   temperature:
   - 902 K
   evaluated-standard-deviation:
@@ -165,4 +155,3 @@ datapoints:
   reactor-diameter: *id004
   pressure: *id005
   composition: *id006
-  uncertainty: *id007

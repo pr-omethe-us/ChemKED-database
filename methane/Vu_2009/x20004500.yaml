@@ -23,14 +23,9 @@ apparatus:
 common-properties:
   temperature: &id001
   - 298 K
-  uncertainty: &id002
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 3 K
-  pressure: &id003
+  - uncertainty-type: absolute
+    uncertainty: 3 K
+  pressure: &id002
   - 0.1 MPa
   equivalence-ratio: 0.8
 datapoints:
@@ -67,8 +62,7 @@ datapoints:
     value:
     - 5.87858340504 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
+  pressure: *id002
   equivalence-ratio: 0.8
 - composition:
     kind: mole fraction
@@ -103,8 +97,7 @@ datapoints:
     value:
     - 5.7095318777 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
+  pressure: *id002
   equivalence-ratio: 0.8
 - composition:
     kind: mole fraction
@@ -139,8 +132,7 @@ datapoints:
     value:
     - 5.33078611862 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
+  pressure: *id002
   equivalence-ratio: 0.8
 - composition:
     kind: mole fraction
@@ -175,6 +167,5 @@ datapoints:
     value:
     - 4.73323564832 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
+  pressure: *id002
   equivalence-ratio: 0.8

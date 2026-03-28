@@ -24,14 +24,9 @@ common-properties:
   - 3 atm
   temperature: &id002
   - 950 K
-  uncertainty: &id003
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 3 K
-  composition: &id004
+  - uncertainty-type: absolute
+    uncertainty: 3 K
+  composition: &id003
     kind: mole percent
     species:
     - species-name: CO
@@ -54,7 +49,7 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.982346
-  evaluated-standard-deviation: &id005
+  evaluated-standard-deviation: &id004
   - reference: composition
     kind: relative
     sourcetype: estimated
@@ -112,6 +107,5 @@ datapoints:
       - 0.002861
   pressure: *id001
   temperature: *id002
-  uncertainty: *id003
-  composition: *id004
-  evaluated-standard-deviation: *id005
+  composition: *id003
+  evaluated-standard-deviation: *id004

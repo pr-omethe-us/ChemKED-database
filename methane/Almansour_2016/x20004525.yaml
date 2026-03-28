@@ -24,21 +24,12 @@ apparatus:
 common-properties:
   temperature: &id001
   - 295 K
-  uncertainty: &id002
-  - reference: temperature
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 0.0148 unitless
-  - reference: pressure
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 0.0004 unitless
-  pressure: &id003
+  - uncertainty-type: relative
+    uncertainty: '0.0148'
+  pressure: &id002
   - 1 atm
+  - uncertainty-type: relative
+    uncertainty: '0.0004'
 datapoints:
 - composition:
     kind: mole fraction
@@ -66,8 +57,7 @@ datapoints:
     value:
     - 0.873065503118 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
+  pressure: *id002
 - composition:
     kind: mole fraction
     species:
@@ -94,8 +84,7 @@ datapoints:
     value:
     - 0.955168833792 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
+  pressure: *id002
 - composition:
     kind: mole fraction
     species:
@@ -122,8 +111,7 @@ datapoints:
     value:
     - 1.00401952592 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
+  pressure: *id002
 - composition:
     kind: mole fraction
     species:
@@ -150,8 +138,7 @@ datapoints:
     value:
     - 0.995806499744 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
+  pressure: *id002
 - composition:
     kind: mole fraction
     species:
@@ -178,8 +165,7 @@ datapoints:
     value:
     - 0.923219584765 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
+  pressure: *id002
 - composition:
     kind: mole fraction
     species:
@@ -206,5 +192,4 @@ datapoints:
     value:
     - 0.864320332025 cm/s
   temperature: *id001
-  uncertainty: *id002
-  pressure: *id003
+  pressure: *id002

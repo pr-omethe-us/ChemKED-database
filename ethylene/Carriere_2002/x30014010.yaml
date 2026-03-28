@@ -23,6 +23,8 @@ apparatus:
 common-properties:
   temperature: &id001
   - 850 K
+  - uncertainty-type: absolute
+    uncertainty: 3 K
   pressure: &id002
   - 10 atm
   composition: &id003
@@ -32,70 +34,19 @@ common-properties:
       InChI: 1S/C2H4/c1-2/h1-2H2
       amount:
       - 0.007
+      - uncertainty-type: absolute
+        uncertainty: 1.0e-05
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
       - 0.0084
+      - uncertainty-type: absolute
+        uncertainty: 0.0001
     - species-name: N2
       InChI: 1S/N2/c1-2
       amount:
       - 0.9846
-  uncertainty: &id004
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: O2
-    InChI: 1S/O2/c1-2
-    value:
-    - 0.0001 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: CO
-    InChI: 1S/CO/c1-2
-    value:
-    - 5e-05 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: CO2
-    InChI: 1S/CO2/c2-1-3
-    value:
-    - 5e-05 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: H2O
-    InChI: 1S/H2O/h1H2
-    value:
-    - 0.0001 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: CH2O
-    InChI: 1S/CH2O/c1-2/h1H2
-    value:
-    - 5e-06 mole fraction
-  - reference: composition
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    species-name: C2H4
-    InChI: 1S/C2H4/c1-2/h1-2H2
-    value:
-    - 1e-05 mole fraction
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 3 K
-  evaluated-standard-deviation: &id005
+  evaluated-standard-deviation: &id004
   - reference: composition
     kind: absolute
     sourcetype: estimated
@@ -140,6 +91,43 @@ common-properties:
     kind: absolute
     sourcetype: estimated
     method: combined from scatter and estimated uncertainty
+    species-name: CH2O
+    InChI: 1S/CH2O/c1-2/h1H2
+    value:
+    - 5e-06 mole fraction
+  uncertainty:
+  - &id005
+    reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: CO
+    InChI: 1S/CO/c1-2
+    value:
+    - 5e-05 mole fraction
+  - &id006
+    reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: CO2
+    InChI: 1S/CO2/c2-1-3
+    value:
+    - 5e-05 mole fraction
+  - &id007
+    reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
+    species-name: H2O
+    InChI: 1S/H2O/h1H2
+    value:
+    - 0.0001 mole fraction
+  - &id008
+    reference: composition
+    kind: absolute
+    sourcetype: reported
+    bound: plusminus
     species-name: CH2O
     InChI: 1S/CH2O/c1-2/h1H2
     value:
@@ -419,5 +407,9 @@ datapoints:
   temperature: *id001
   pressure: *id002
   composition: *id003
-  uncertainty: *id004
-  evaluated-standard-deviation: *id005
+  evaluated-standard-deviation: *id004
+  uncertainty:
+  - *id005
+  - *id006
+  - *id007
+  - *id008

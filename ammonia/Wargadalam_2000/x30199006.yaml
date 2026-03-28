@@ -30,6 +30,8 @@ common-properties:
       InChI: 1S/H3N/h1H3
       amount:
       - 0.000242
+      - uncertainty-type: relative
+        uncertainty: 0.1
     - species-name: O2
       InChI: 1S/O2/c1-2
       amount:
@@ -38,29 +40,6 @@ common-properties:
       InChI: 1S/N2/c1-2
       amount:
       - 0.899758
-  uncertainty: &id003
-  - reference: temperature
-    kind: absolute
-    sourcetype: reported
-    bound: plusminus
-    value:
-    - 8 K
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: NH3
-    InChI: 1S/H3N/h1H3
-    value:
-    - 0.1 unitless
-  - reference: composition
-    kind: relative
-    sourcetype: reported
-    bound: plusminus
-    species-name: 'NO'
-    InChI: 1S/NO/c1-2
-    value:
-    - 0.1 unitless
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -82,10 +61,14 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   residence-time:
   - 0.388 s
   temperature:
   - 873 K
+  - uncertainty-type: absolute
+    uncertainty: 8 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -97,7 +80,6 @@ datapoints:
     - 1.2e-05 mole fraction
   pressure: *id001
   composition: *id002
-  uncertainty: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -109,10 +91,14 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   residence-time:
   - 0.367 s
   temperature:
   - 924 K
+  - uncertainty-type: absolute
+    uncertainty: 8 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -124,7 +110,6 @@ datapoints:
     - 1.2e-05 mole fraction
   pressure: *id001
   composition: *id002
-  uncertainty: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -136,10 +121,14 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   residence-time:
   - 0.348 s
   temperature:
   - 974 K
+  - uncertainty-type: absolute
+    uncertainty: 8 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -151,7 +140,6 @@ datapoints:
     - 1.2e-05 mole fraction
   pressure: *id001
   composition: *id002
-  uncertainty: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -163,10 +151,14 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   residence-time:
   - 0.331 s
   temperature:
   - 1024 K
+  - uncertainty-type: absolute
+    uncertainty: 8 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -178,7 +170,6 @@ datapoints:
     - 1.2e-05 mole fraction
   pressure: *id001
   composition: *id002
-  uncertainty: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -190,10 +181,14 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 0.0
+      - uncertainty-type: relative
+        uncertainty: 0.1
   residence-time:
   - 0.316 s
   temperature:
   - 1074 K
+  - uncertainty-type: absolute
+    uncertainty: 8 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -205,7 +200,6 @@ datapoints:
     - 1.2e-05 mole fraction
   pressure: *id001
   composition: *id002
-  uncertainty: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -217,10 +211,14 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 5.0e-06
+      - uncertainty-type: relative
+        uncertainty: 0.1
   residence-time:
   - 0.302 s
   temperature:
   - 1124 K
+  - uncertainty-type: absolute
+    uncertainty: 8 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -232,7 +230,6 @@ datapoints:
     - 1.2e-05 mole fraction
   pressure: *id001
   composition: *id002
-  uncertainty: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -244,10 +241,14 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 1.0e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
   residence-time:
   - 0.289 s
   temperature:
   - 1174 K
+  - uncertainty-type: absolute
+    uncertainty: 8 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -259,7 +260,6 @@ datapoints:
     - 1e-05 mole fraction
   pressure: *id001
   composition: *id002
-  uncertainty: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -271,10 +271,14 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 2.3e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
   residence-time:
   - 0.277 s
   temperature:
   - 1224 K
+  - uncertainty-type: absolute
+    uncertainty: 8 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -286,7 +290,6 @@ datapoints:
     - 5e-06 mole fraction
   pressure: *id001
   composition: *id002
-  uncertainty: *id003
 - measured-composition:
     kind: mole fraction
     species:
@@ -298,10 +301,14 @@ datapoints:
       InChI: 1S/NO/c1-2
       amount:
       - 5.0e-05
+      - uncertainty-type: relative
+        uncertainty: 0.1
   residence-time:
   - 0.266 s
   temperature:
   - 1274 K
+  - uncertainty-type: absolute
+    uncertainty: 8 K
   evaluated-standard-deviation:
   - reference: composition
     kind: absolute
@@ -313,4 +320,3 @@ datapoints:
     - 5e-06 mole fraction
   pressure: *id001
   composition: *id002
-  uncertainty: *id003
