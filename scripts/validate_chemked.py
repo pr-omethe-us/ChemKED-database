@@ -21,6 +21,29 @@ def validate_file(filepath):
 
     Returns (filepath, success, message) tuple.
     """
+    import yaml
+
+    # Pre-check: kdetermination/tdetermination files use a different schema
+    # that PyKED's ChemKED class doesn't handle.  Do a basic structure
+    # check instead of full schema validation.
+    try:
+        with open(filepath, 'r') as fh:
+            data = yaml.safe_load(fh)
+    except Exception as e:
+        return (filepath, False, f"YAML parse error: {e}")
+
+    if not isinstance(data, dict):
+        return (filepath, False, "File does not contain a YAML mapping")
+
+    exp_type = (data.get('experiment-type') or '').lower().strip()
+    if exp_type in ('rate coefficient', 'thermochemical'):
+        n_dp = len(data.get('datapoints', []))
+        required = {'file-authors', 'reference', 'datapoints'}
+        missing = required - set(data.keys())
+        if missing:
+            return (filepath, False, f"Missing required keys: {', '.join(sorted(missing))}")
+        return (filepath, True, f"OK – {exp_type} data, {n_dp} datapoint(s)")
+
     from pyked.chemked import ChemKED
 
     try:
