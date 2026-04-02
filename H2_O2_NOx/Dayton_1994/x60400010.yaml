@@ -1,1192 +1,1668 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/0010-2180(94)90137-6
   authors:
-  - name: David C. Dayton
-  - name: Cynthia M. Faust
-  - name: William R. Anderson
-  - name: Rosario C. Sausa
+    - name: David C. Dayton
+    - name: Cynthia M. Faust
+    - name: William R. Anderson
+    - name: Rosario C. Sausa
   journal: Combustion and Flame
   year: 1994
   volume: 99
-  pages: 323--330
+  pages: 323-330
   detail: Converted from ReSpecTh XML file x60400010.xml
+file-type: experiment
 experiment-type: burner stabilized flame speciation measurement
 apparatus:
   kind: flame
   institution: ''
   facility: ''
   mode: burner-stabilized
+comments:
+  - The inlet gas temperature is reported in the article R. C. Sausa et al., Combust.
+    Flame 94 (1993) 407-425 with all the experimental conditions.
+  - 'The flow rate (F) was calculated by the following data and formula: F[slm] =
+    4.6 slm, M_average = 31.37 g/mol, d = 6 cm, A = (d/2)^2*PI; F[kg m-2 s-1] = const
+    * F[slm] * M_average / A . Where const = 6,905*10^-4 based on http://www.dgflo.com/unitsofflow.pdf
+    and the ideal gas law with values given above.'
+  - The standard temperature in this definition is 70 ?F (294.26 K). If I used the
+    value of 298.15 K the difference would be 1.3%.
+  - The experimental temperature was estimated with linear interpolation based on
+    Figure 1.
 common-properties:
   equivalence-ratio: &id001
-  - 0.64 dimensionless
+    - 0.64 dimensionless
   temperature:
-  - 300 K
+    - 300 K
   pressure: &id002
-  - 20 Torr
+    - 20 Torr
   flow-rate: &id003
-  - 0.03524 kg m-2 s-1
+    - 0.03524 kg m-2 s-1
   composition: &id004
     kind: mole fraction
     species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.2717
-      - evaluated-standard-deviation: 0.02629
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.4239
-      - evaluated-standard-deviation: 0.04303
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.3043
-      - evaluated-standard-deviation: 0.0311
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.2717
+          - evaluated-standard-deviation: 0.02629
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.4239
+          - evaluated-standard-deviation: 0.04303
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.3043
+          - evaluated-standard-deviation: 0.0311
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.4163
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.2629
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.3067
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0067
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0056
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.0004
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00102
-  distance:
-  - 0.991 mm
-  temperature:
-  - 605 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.4303
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.2308
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.3033
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0129
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0129
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00011
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00148
-  distance:
-  - 1.618 mm
-  temperature:
-  - 814 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.4095
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.2342
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.3077
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.019
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.028
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00011
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00182
-  distance:
-  - 2.255 mm
-  temperature:
-  - 1035 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.4106
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.2409
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.311
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0162
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0224
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00063
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00205
-  distance:
-  - 2.923 mm
-  temperature:
-  - 1242 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.4078
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.2078
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.3065
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0313
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0347
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00153
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00273
-  distance:
-  - 3.537 mm
-  temperature:
-  - 1406 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.4094
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.1836
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.3087
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0336
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0544
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00108
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00341
-  distance:
-  - 4.173 mm
-  temperature:
-  - 1555 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.3931
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.1762
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.3008
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0459
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0673
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00267
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00432
-  distance:
-  - 4.819 mm
-  temperature:
-  - 1690 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.388
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.1274
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.3064
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0661
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0936
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00284
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00511
-  distance:
-  - 5.437 mm
-  temperature:
-  - 1806 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.3605
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.1268
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.3086
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0824
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.1138
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00426
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00636
-  distance:
-  - 6.079 mm
-  temperature:
-  - 1909 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.3425
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.1043
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2928
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.111
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.1307
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00557
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00784
-  distance:
-  - 6.715 mm
-  temperature:
-  - 1994 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.3043
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0885
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.286
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.1436
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.1526
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00676
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00989
-  distance:
-  - 7.357 mm
-  temperature:
-  - 2055 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.2554
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0683
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2905
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.1812
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.1879
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00943
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.01227
-  distance:
-  - 7.989 mm
-  temperature:
-  - 2103 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.1969
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.061
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2972
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.2126
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2166
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.01188
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.01557
-  distance:
-  - 8.626 mm
-  temperature:
-  - 2130 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.1396
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.039
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2769
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.266
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2379
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.01551
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.01989
-  distance:
-  - 9.263 mm
-  temperature:
-  - 2155 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.0626
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0278
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2769
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.3126
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2654
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.02295
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.02693
-  distance:
-  - 10.524 mm
-  temperature:
-  - 2169 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.0288
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0232
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2655
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.3446
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2625
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.0275
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03125
-  distance:
-  - 11.789 mm
-  temperature:
-  - 2165 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.0153
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0383
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2812
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.353
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2513
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03017
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03216
-  distance:
-  - 13.057 mm
-  temperature:
-  - 2152 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.008
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0226
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2766
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.3602
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2602
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03125
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03375
-  distance:
-  - 14.317 mm
-  temperature:
-  - 2136 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.0051
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0192
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2878
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.3484
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2798
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03011
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03318
-  distance:
-  - 15.576 mm
-  temperature:
-  - 2115 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.0023
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0298
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2753
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.3568
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2658
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03341
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03307
-  distance:
-  - 16.849 mm
-  temperature:
-  - 2098 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.0022
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0219
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2842
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.3573
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2635
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03415
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03398
-  distance:
-  - 18.122 mm
-  temperature:
-  - 2081 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.0011
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0241
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2797
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.3499
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2679
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03432
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03455
-  distance:
-  - 19.39 mm
-  temperature:
-  - 2069 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.001
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0263
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2863
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.3696
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2628
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03517
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03409
-  distance:
-  - 20.636 mm
-  temperature:
-  - 2039 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.001
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0279
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.284
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.36
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2605
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03523
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03386
-  distance:
-  - 21.913 mm
-  temperature:
-  - 2028 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.0009
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0285
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2817
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.3543
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2594
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03864
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03432
-  distance:
-  - 23.191 mm
-  temperature:
-  - 2018 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.0009
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0239
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2849
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.3531
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2689
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03608
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03352
-  distance:
-  - 24.454 mm
-  temperature:
-  - 2007 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.0008
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.021
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2881
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.366
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2632
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03773
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03341
-  distance:
-  - 27.645 mm
-  temperature:
-  - 1980 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.0007
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0271
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2845
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.3451
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2793
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03886
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03341
-  distance:
-  - 30.818 mm
-  temperature:
-  - 1957 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.0006
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0169
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.2888
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.3658
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2601
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.03977
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.03477
-  distance:
-  - 33.996 mm
-  temperature:
-  - 1928 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.4163
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.2629
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.3067
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0067
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0056
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.0004
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00102
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.991 mm
+    temperature:
+      - 605 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.4303
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.2308
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.3033
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0129
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0129
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00011
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00148
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.618 mm
+    temperature:
+      - 814 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.4095
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.2342
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.3077
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.019
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.028
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00011
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00182
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.255 mm
+    temperature:
+      - 1035 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.4106
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.2409
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.311
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0162
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0224
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00063
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00205
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.923 mm
+    temperature:
+      - 1242 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.4078
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.2078
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.3065
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0313
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0347
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00153
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00273
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 3.537 mm
+    temperature:
+      - 1406 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.4094
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.1836
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.3087
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0336
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0544
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00108
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00341
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 4.173 mm
+    temperature:
+      - 1555 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.3931
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.1762
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.3008
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0459
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0673
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00267
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00432
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 4.819 mm
+    temperature:
+      - 1690 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.388
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.1274
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.3064
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0661
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0936
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00284
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00511
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 5.437 mm
+    temperature:
+      - 1806 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.3605
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.1268
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.3086
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0824
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.1138
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00426
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00636
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 6.079 mm
+    temperature:
+      - 1909 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.3425
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.1043
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2928
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.111
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.1307
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00557
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00784
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 6.715 mm
+    temperature:
+      - 1994 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.3043
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0885
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.286
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.1436
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.1526
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00676
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00989
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 7.357 mm
+    temperature:
+      - 2055 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.2554
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0683
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2905
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.1812
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.1879
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00943
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.01227
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 7.989 mm
+    temperature:
+      - 2103 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.1969
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.061
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2972
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.2126
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2166
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.01188
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.01557
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 8.626 mm
+    temperature:
+      - 2130 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.1396
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.039
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2769
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.266
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2379
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.01551
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.01989
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 9.263 mm
+    temperature:
+      - 2155 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.0626
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0278
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2769
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.3126
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2654
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.02295
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.02693
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 10.524 mm
+    temperature:
+      - 2169 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.0288
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0232
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2655
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.3446
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2625
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.0275
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03125
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 11.789 mm
+    temperature:
+      - 2165 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.0153
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0383
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2812
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.353
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2513
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03017
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03216
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 13.057 mm
+    temperature:
+      - 2152 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.008
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0226
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2766
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.3602
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2602
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03125
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03375
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 14.317 mm
+    temperature:
+      - 2136 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.0051
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0192
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2878
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.3484
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2798
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03011
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03318
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 15.576 mm
+    temperature:
+      - 2115 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.0023
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0298
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2753
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.3568
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2658
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03341
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03307
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 16.849 mm
+    temperature:
+      - 2098 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.0022
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0219
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2842
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.3573
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2635
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03415
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03398
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 18.122 mm
+    temperature:
+      - 2081 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.0011
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0241
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2797
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.3499
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2679
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03432
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03455
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 19.39 mm
+    temperature:
+      - 2069 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.001
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0263
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2863
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.3696
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2628
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03517
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03409
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 20.636 mm
+    temperature:
+      - 2039 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.001
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0279
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.284
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.36
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2605
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03523
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03386
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 21.913 mm
+    temperature:
+      - 2028 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.0009
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0285
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2817
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.3543
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2594
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03864
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03432
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 23.191 mm
+    temperature:
+      - 2018 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.0009
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0239
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2849
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.3531
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2689
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03608
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03352
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 24.454 mm
+    temperature:
+      - 2007 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.0008
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.021
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2881
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.366
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2632
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03773
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03341
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 27.645 mm
+    temperature:
+      - 1980 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.0007
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0271
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2845
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.3451
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2793
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03886
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03341
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 30.818 mm
+    temperature:
+      - 1957 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.0006
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0169
+        - species-name: Ar
+          InChI: 1S/Ar
+          amount:
+            - 0.2888
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.3658
+            - evaluated-standard-deviation: 0.03696
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2601
+            - evaluated-standard-deviation: 0.02798
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.03977
+            - evaluated-standard-deviation: 0.003977
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.03477
+            - evaluated-standard-deviation: 0.003477
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 33.996 mm
+    temperature:
+      - 1928 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
 ...

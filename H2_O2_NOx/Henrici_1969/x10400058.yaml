@@ -1,165 +1,169 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1063/1.1671195
   authors:
-  - name: H Henrici
-  - name: S H Bauer
+    - name: H Henrici
+    - name: S H Bauer
   journal: J Chem Phys
   year: 1969
   volume: 50
   pages: '1333'
   detail: Converted from ReSpecTh XML file x10400058.xml
+file-type: experiment
 experiment-type: ignition delay
 apparatus:
   kind: shock tube
   institution: ''
   facility: ''
   mode: incident shock
+comments:
+  - The pressure data is not reported in the article, however it can be found in y:\Projects\NitrogenChemData\NOx_with_syngas\Zhang_CombustFlame_2017\Model
+    predictions. We use this pressure here, however it might not be true...
 common-properties:
   composition: &id001
     kind: mole fraction
     species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.02
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.97
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.01
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.02
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.97
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.01
   pressure: &id002
-  - 1.29 atm
+    - 1.29 atm
   ignition-type: &id003
     target: OH
     type: relative concentration
 datapoints:
-- temperature:
-  - 2431 K
-  ignition-delay:
-  - 19 us
-  - evaluated-standard-deviation: '0.35'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  pressure: *id002
-  ignition-type: *id003
-- temperature:
-  - 2354 K
-  ignition-delay:
-  - 10.2 us
-  - evaluated-standard-deviation: '0.35'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  pressure: *id002
-  ignition-type: *id003
-- temperature:
-  - 2373 K
-  ignition-delay:
-  - 13.3 us
-  - evaluated-standard-deviation: '0.35'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  pressure: *id002
-  ignition-type: *id003
-- temperature:
-  - 2077 K
-  ignition-delay:
-  - 16.2 us
-  - evaluated-standard-deviation: '0.35'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  pressure: *id002
-  ignition-type: *id003
-- temperature:
-  - 2081 K
-  ignition-delay:
-  - 24.9 us
-  - evaluated-standard-deviation: '0.35'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  pressure: *id002
-  ignition-type: *id003
-- temperature:
-  - 1922 K
-  ignition-delay:
-  - 14.3 us
-  - evaluated-standard-deviation: '0.35'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  pressure: *id002
-  ignition-type: *id003
-- temperature:
-  - 1830 K
-  ignition-delay:
-  - 35 us
-  - evaluated-standard-deviation: '0.35'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  pressure: *id002
-  ignition-type: *id003
-- temperature:
-  - 1865 K
-  ignition-delay:
-  - 36 us
-  - evaluated-standard-deviation: '0.35'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  pressure: *id002
-  ignition-type: *id003
-- temperature:
-  - 1794 K
-  ignition-delay:
-  - 20 us
-  - evaluated-standard-deviation: '0.35'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  pressure: *id002
-  ignition-type: *id003
-- temperature:
-  - 1952 K
-  ignition-delay:
-  - 17 us
-  - evaluated-standard-deviation: '0.35'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  pressure: *id002
-  ignition-type: *id003
-- temperature:
-  - 1612 K
-  ignition-delay:
-  - 23.5 us
-  - evaluated-standard-deviation: '0.35'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  pressure: *id002
-  ignition-type: *id003
+  - temperature:
+      - 2431 K
+    ignition-delay:
+      - 19 us
+      - evaluated-standard-deviation: '0.35'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    ignition-type: *id003
+  - temperature:
+      - 2354 K
+    ignition-delay:
+      - 10.2 us
+      - evaluated-standard-deviation: '0.35'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    ignition-type: *id003
+  - temperature:
+      - 2373 K
+    ignition-delay:
+      - 13.3 us
+      - evaluated-standard-deviation: '0.35'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    ignition-type: *id003
+  - temperature:
+      - 2077 K
+    ignition-delay:
+      - 16.2 us
+      - evaluated-standard-deviation: '0.35'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    ignition-type: *id003
+  - temperature:
+      - 2081 K
+    ignition-delay:
+      - 24.9 us
+      - evaluated-standard-deviation: '0.35'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    ignition-type: *id003
+  - temperature:
+      - 1922 K
+    ignition-delay:
+      - 14.3 us
+      - evaluated-standard-deviation: '0.35'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    ignition-type: *id003
+  - temperature:
+      - 1830 K
+    ignition-delay:
+      - 35 us
+      - evaluated-standard-deviation: '0.35'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    ignition-type: *id003
+  - temperature:
+      - 1865 K
+    ignition-delay:
+      - 36 us
+      - evaluated-standard-deviation: '0.35'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    ignition-type: *id003
+  - temperature:
+      - 1794 K
+    ignition-delay:
+      - 20 us
+      - evaluated-standard-deviation: '0.35'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    ignition-type: *id003
+  - temperature:
+      - 1952 K
+    ignition-delay:
+      - 17 us
+      - evaluated-standard-deviation: '0.35'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    ignition-type: *id003
+  - temperature:
+      - 1612 K
+    ignition-delay:
+      - 23.5 us
+      - evaluated-standard-deviation: '0.35'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    ignition-type: *id003
 ...

@@ -1,446 +1,463 @@
 ---
 file-authors:
-- name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
-    ELTE, Budapest, Hungary
+  - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1080/00102209508951936
   authors:
-  - name: P. Glarborg
-  - name: D. Kubel
-  - name: P. G. Kristensen
-  - name: J. Hansen
-  - name: K. Dam-Johansen
+    - name: P. Glarborg
+    - name: D. Kubel
+    - name: P. G. Kristensen
+    - name: J. Hansen
+    - name: K. Dam-Johansen
   journal: Combustion Science and Technology
   year: 1995
   volume: 110–111
-  pages: 461–485
+  pages: 461-485
   detail: Converted from ReSpecTh XML file x30201019.xml
+file-type: experiment
 experiment-type: outlet concentration measurement
 apparatus:
   kind: flow reactor
   institution: ''
   facility: ''
+comments:
+  - The uncertainty of xCO and xNO was ± 3 %, but not less than 5 ppm.
 common-properties:
   pressure: &id001
-  - 1.05 atm
+    - 1.05 atm
   composition: &id002
     kind: mole fraction
     species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.000474
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.000108
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 4.2
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 9.3
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.864418
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.000474
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.000108
+          - evaluated-standard-deviation: 5.0e-06
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 4.2
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 9.3
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.864418
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.000387
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.000387
+            - uncertainty-type: absolute
+              uncertainty: 1.2e-05
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 0.025279182
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 7.0e-05
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 883 K
       - uncertainty-type: absolute
-        uncertainty: 1.2e-05
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 0.025279182
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 7.0e-05
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 883 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.27286 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.000323
+    residence-time:
+      - 0.27286 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.000323
+            - uncertainty-type: absolute
+              uncertainty: 1.0e-05
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 0.025279182
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 7.2e-05
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 910 K
       - uncertainty-type: absolute
-        uncertainty: 1.0e-05
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 0.025279182
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 7.2e-05
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 910 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.26481 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.000254
+    residence-time:
+      - 0.26481 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.000254
+            - uncertainty-type: absolute
+              uncertainty: 8.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 0.025279182
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 7.2e-05
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 936 K
       - uncertainty-type: absolute
-        uncertainty: 8.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 0.025279182
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 7.2e-05
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 936 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.25745 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.000176
+    residence-time:
+      - 0.25745 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.000176
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 7.8e-05
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 963 K
       - uncertainty-type: absolute
-        uncertainty: 5.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 7.8e-05
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 963 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.25032 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.000118
+    residence-time:
+      - 0.25032 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.000118
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 8.3e-05
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 990 K
       - uncertainty-type: absolute
-        uncertainty: 5.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 8.3e-05
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 990 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.24353 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 6.5e-05
+    residence-time:
+      - 0.24353 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 6.5e-05
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 8.8e-05
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 1016 K
       - uncertainty-type: absolute
-        uncertainty: 5.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 8.8e-05
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 1016 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.23725 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 3.4e-05
+    residence-time:
+      - 0.23725 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 3.4e-05
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 9.4e-05
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 1041 K
       - uncertainty-type: absolute
-        uncertainty: 5.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 9.4e-05
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 1041 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.23152 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 1.7e-05
+    residence-time:
+      - 0.23152 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 1.7e-05
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 9.9e-05
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 1067 K
       - uncertainty-type: absolute
-        uncertainty: 5.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 9.9e-05
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 1067 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.22583 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 9.0e-06
+    residence-time:
+      - 0.22583 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 9.0e-06
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.000103
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 1093 K
       - uncertainty-type: absolute
-        uncertainty: 5.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.000103
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 1093 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.2205 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 5.0e-06
+    residence-time:
+      - 0.2205 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 5.0e-06
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.000104
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 1120 K
       - uncertainty-type: absolute
-        uncertainty: 5.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.000104
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 1120 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.21522 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 3.0e-06
+    residence-time:
+      - 0.21522 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 3.0e-06
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.000107
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 1146 K
       - uncertainty-type: absolute
-        uncertainty: 5.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.000107
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 1146 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.21022 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 1.0e-06
+    residence-time:
+      - 0.21022 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 1.0e-06
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.000108
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 1174 K
       - uncertainty-type: absolute
-        uncertainty: 5.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.000108
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 1174 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.20537 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 1.0e-06
+    residence-time:
+      - 0.20537 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 1.0e-06
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.000109
+            - uncertainty-type: absolute
+              uncertainty: 5.0e-06
+              uncertainty-sourcetype: reported
+    temperature:
+      - 1199 K
       - uncertainty-type: absolute
-        uncertainty: 5.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.000109
-      - uncertainty-type: absolute
-        uncertainty: 5.0e-06
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-  temperature:
-  - 1199 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.20102 s
-  pressure: *id001
-  composition: *id002
+    residence-time:
+      - 0.20102 s
+    pressure: *id001
+    composition: *id002
 ...

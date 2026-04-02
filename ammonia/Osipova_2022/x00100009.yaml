@@ -1,1008 +1,1103 @@
 ---
 file-authors:
-- name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
-    ELTE, Budapest, Hungary
+  - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/j.fuel.2021.122202
   authors:
-  - name: Ksenia N. Osipova
-  - name: Xiaoyuan Zhang
-  - name: S. Mani Sarathy
-  - name: Oleg P. Korobeinichev
-  - name: Andrey G. Shmakov
+    - name: Ksenia N. Osipova
+    - name: Xiaoyuan Zhang
+    - name: S. Mani Sarathy
+    - name: Oleg P. Korobeinichev
+    - name: Andrey G. Shmakov
   journal: Fuel
   year: 2022
   volume: 310
   pages: '122202'
   detail: Converted from ReSpecTh XML file x00100009.xml
+file-type: experiment
 experiment-type: jet stirred reactor measurement
 apparatus:
   kind: stirred reactor (quartz)
   institution: ''
   facility: ''
+comments:
+  - The composition vs. temperature data were obtained through personal communication
+    from the authors in tabulated form.
+  - The composition was calculated assuming phi = (0.75 * x_NH3 + 0.5 * x_H2) / x_O2.
 common-properties:
   reactor-volume: &id001
-  - 76 cm3
+    - 76 cm3
   pressure: &id002
-  - 1 atm
+    - 1 atm
   residence-time: &id003
-  - 1 s
+    - 1 s
   equivalence-ratio: &id004
-  - 0.6 dimensionless
+    - 0.6 dimensionless
   composition: &id005
     kind: mole fraction
     species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.002
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000857
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.003214
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.993929
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        amount:
+          - 0.002
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.000857
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.003214
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.993929
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000857
-      - evaluated-standard-deviation: 2.7e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.002
-      - evaluated-standard-deviation: 0.00011
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.003243
-      - evaluated-standard-deviation: 8.4e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 800 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000857
-      - evaluated-standard-deviation: 2.7e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.002
-      - evaluated-standard-deviation: 0.00011
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.003271
-      - evaluated-standard-deviation: 8.5e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 830 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000857
-      - evaluated-standard-deviation: 2.7e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.001982
-      - evaluated-standard-deviation: 0.000109
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.003239
-      - evaluated-standard-deviation: 8.4e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 860 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000856
-      - evaluated-standard-deviation: 2.7e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.001965
-      - evaluated-standard-deviation: 0.000108
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.003214
-      - evaluated-standard-deviation: 8.3e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 890 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000771
-      - evaluated-standard-deviation: 2.4e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.001988
-      - evaluated-standard-deviation: 0.00011
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.003182
-      - evaluated-standard-deviation: 8.2e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 920 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000686
-      - evaluated-standard-deviation: 2.2e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.001908
-      - evaluated-standard-deviation: 0.000105
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0003
-      - evaluated-standard-deviation: 2.0e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 2.5e-05
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.003067
-      - evaluated-standard-deviation: 7.9e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 950 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000619
-      - evaluated-standard-deviation: 2.0e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.00179
-      - evaluated-standard-deviation: 9.9e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.000444
-      - evaluated-standard-deviation: 2.9e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 5.0e-05
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.002935
-      - evaluated-standard-deviation: 7.6e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 980 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000536
-      - evaluated-standard-deviation: 1.7e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.001684
-      - evaluated-standard-deviation: 9.3e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.000587
-      - evaluated-standard-deviation: 3.8e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 7.7e-05
-      - evaluated-standard-deviation: 6.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.002838
-      - evaluated-standard-deviation: 7.3e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1010 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000454
-      - evaluated-standard-deviation: 1.4e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.001577
-      - evaluated-standard-deviation: 8.7e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0011
-      - evaluated-standard-deviation: 7.2e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000158
-      - evaluated-standard-deviation: 1.2e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00266
-      - evaluated-standard-deviation: 6.9e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1040 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000362
-      - evaluated-standard-deviation: 1.1e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.0013
-      - evaluated-standard-deviation: 7.2e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.001633
-      - evaluated-standard-deviation: 0.000107
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.00024
-      - evaluated-standard-deviation: 1.8e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.002429
-      - evaluated-standard-deviation: 6.3e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1070 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000269
-      - evaluated-standard-deviation: 9.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.001099
-      - evaluated-standard-deviation: 6.1e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.002166
-      - evaluated-standard-deviation: 0.000142
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000477
-      - evaluated-standard-deviation: 3.5e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.002112
-      - evaluated-standard-deviation: 5.5e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1100 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.00014
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000623
-      - evaluated-standard-deviation: 3.4e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.002721
-      - evaluated-standard-deviation: 0.000178
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000697
-      - evaluated-standard-deviation: 5.1e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.001688
-      - evaluated-standard-deviation: 4.4e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1130 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 1.0e-05
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 3.0e-05
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.003276
-      - evaluated-standard-deviation: 0.000215
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000937
-      - evaluated-standard-deviation: 6.9e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.001207
-      - evaluated-standard-deviation: 3.1e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1160 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 3.9e-05
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0035
-      - evaluated-standard-deviation: 0.000229
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000934
-      - evaluated-standard-deviation: 6.9e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.001115
-      - evaluated-standard-deviation: 2.9e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1190 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 1.9e-05
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0037
-      - evaluated-standard-deviation: 0.000243
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000928
-      - evaluated-standard-deviation: 6.8e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00115
-      - evaluated-standard-deviation: 3.0e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1220 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.00378
-      - evaluated-standard-deviation: 0.000248
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000922
-      - evaluated-standard-deviation: 6.8e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.001186
-      - evaluated-standard-deviation: 3.1e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1250 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.003803
-      - evaluated-standard-deviation: 0.000249
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000934
-      - evaluated-standard-deviation: 6.9e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.001161
-      - evaluated-standard-deviation: 3.0e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1280 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.0
-      - evaluated-standard-deviation: 5.0e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.003826
-      - evaluated-standard-deviation: 0.000251
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000934
-      - evaluated-standard-deviation: 6.9e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.001113
-      - evaluated-standard-deviation: 2.9e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1300 K
-  - uncertainty-type: absolute
-    uncertainty: 2 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  equivalence-ratio: *id004
-  composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000857
+            - evaluated-standard-deviation: 2.7e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.002
+            - evaluated-standard-deviation: 0.00011
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.003243
+            - evaluated-standard-deviation: 8.4e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 800 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000857
+            - evaluated-standard-deviation: 2.7e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.002
+            - evaluated-standard-deviation: 0.00011
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.003271
+            - evaluated-standard-deviation: 8.5e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 830 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000857
+            - evaluated-standard-deviation: 2.7e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.001982
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.003239
+            - evaluated-standard-deviation: 8.4e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 860 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000856
+            - evaluated-standard-deviation: 2.7e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.001965
+            - evaluated-standard-deviation: 0.000108
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.003214
+            - evaluated-standard-deviation: 8.3e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 890 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000771
+            - evaluated-standard-deviation: 2.4e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.001988
+            - evaluated-standard-deviation: 0.00011
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.003182
+            - evaluated-standard-deviation: 8.2e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 920 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000686
+            - evaluated-standard-deviation: 2.2e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.001908
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0003
+            - evaluated-standard-deviation: 2.0e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 2.5e-05
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.003067
+            - evaluated-standard-deviation: 7.9e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 950 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000619
+            - evaluated-standard-deviation: 2.0e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.00179
+            - evaluated-standard-deviation: 9.9e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.000444
+            - evaluated-standard-deviation: 2.9e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 5.0e-05
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.002935
+            - evaluated-standard-deviation: 7.6e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 980 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000536
+            - evaluated-standard-deviation: 1.7e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.001684
+            - evaluated-standard-deviation: 9.3e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.000587
+            - evaluated-standard-deviation: 3.8e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 7.7e-05
+            - evaluated-standard-deviation: 6.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.002838
+            - evaluated-standard-deviation: 7.3e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1010 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000454
+            - evaluated-standard-deviation: 1.4e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.001577
+            - evaluated-standard-deviation: 8.7e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0011
+            - evaluated-standard-deviation: 7.2e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000158
+            - evaluated-standard-deviation: 1.2e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00266
+            - evaluated-standard-deviation: 6.9e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1040 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000362
+            - evaluated-standard-deviation: 1.1e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.0013
+            - evaluated-standard-deviation: 7.2e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.001633
+            - evaluated-standard-deviation: 0.000107
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.00024
+            - evaluated-standard-deviation: 1.8e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.002429
+            - evaluated-standard-deviation: 6.3e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1070 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000269
+            - evaluated-standard-deviation: 9.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.001099
+            - evaluated-standard-deviation: 6.1e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.002166
+            - evaluated-standard-deviation: 0.000142
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000477
+            - evaluated-standard-deviation: 3.5e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.002112
+            - evaluated-standard-deviation: 5.5e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1100 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.00014
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000623
+            - evaluated-standard-deviation: 3.4e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.002721
+            - evaluated-standard-deviation: 0.000178
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000697
+            - evaluated-standard-deviation: 5.1e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.001688
+            - evaluated-standard-deviation: 4.4e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1130 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 1.0e-05
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 3.0e-05
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.003276
+            - evaluated-standard-deviation: 0.000215
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000937
+            - evaluated-standard-deviation: 6.9e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.001207
+            - evaluated-standard-deviation: 3.1e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1160 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 3.9e-05
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0035
+            - evaluated-standard-deviation: 0.000229
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000934
+            - evaluated-standard-deviation: 6.9e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.001115
+            - evaluated-standard-deviation: 2.9e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1190 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 1.9e-05
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0037
+            - evaluated-standard-deviation: 0.000243
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000928
+            - evaluated-standard-deviation: 6.8e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00115
+            - evaluated-standard-deviation: 3.0e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1220 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.00378
+            - evaluated-standard-deviation: 0.000248
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000922
+            - evaluated-standard-deviation: 6.8e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.001186
+            - evaluated-standard-deviation: 3.1e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1250 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.003803
+            - evaluated-standard-deviation: 0.000249
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000934
+            - evaluated-standard-deviation: 6.9e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.001161
+            - evaluated-standard-deviation: 3.0e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1280 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.003826
+            - evaluated-standard-deviation: 0.000251
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000934
+            - evaluated-standard-deviation: 6.9e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.001113
+            - evaluated-standard-deviation: 2.9e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1300 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
 ...

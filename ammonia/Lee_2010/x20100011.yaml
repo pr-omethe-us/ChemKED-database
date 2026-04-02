@@ -1,67 +1,72 @@
 ---
 file-authors:
-- name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
-    ELTE, Budapest, Hungary
+  - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/j.ijhydene.2009.11.071
   authors:
-  - name: J.H. Lee
-  - name: J.H. Kim
-  - name: J.H. Park
-  - name: O.C. Kwon
+    - name: J.H. Lee
+    - name: J.H. Kim
+    - name: J.H. Park
+    - name: O.C. Kwon
   journal: International Journal of Hydrogen Energy
   year: 2010
   volume: 35
-  pages: 1054–1064
+  pages: 1054-1064
   detail: Converted from ReSpecTh XML file x20100011.xml
+file-type: experiment
 experiment-type: laminar burning velocity measurement
 apparatus:
   kind: outwardly propagating spherical flame
   institution: ''
   facility: ''
   mode: constant volume combustion chamber
+comments:
+  - 'The calculation of the compositions of the initial gas mixtures was based on
+    two assumptions: 1) x_O2 = (0.5 x_H2 + 0.75 x_NH3) / phi; 2) air = 79% N2 + 21%
+    O2.'
 common-properties:
   equivalence-ratio: &id001
-  - 1.67 dimensionless
+    - 1.67 dimensionless
   temperature: &id002
-  - 298 K
-  - uncertainty-type: absolute
-    uncertainty: 3 K
-    uncertainty-sourcetype: reported
+    - 298 K
+    - uncertainty-type: absolute
+      uncertainty: 3 K
+      uncertainty-sourcetype: reported
   pressure: &id003
-  - 1 atm
+    - 1 atm
 datapoints:
-- composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.179717
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.179717
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.134519
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.506047
-  laminar-burning-velocity:
-  - 20.6 cm/s
-  - uncertainty-type: relative
-    uncertainty: '0.1'
-    uncertainty-sourcetype: reported
-    evaluated-standard-deviation: 1.457 cm/s
-    evaluated-standard-deviation-type: absolute
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  equivalence-ratio: *id001
-  temperature: *id002
-  pressure: *id003
+  - composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.179717
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.179717
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.134519
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.506047
+    laminar-burning-velocity:
+      - 20.6 cm/s
+      - uncertainty-type: relative
+        uncertainty: '0.1'
+        uncertainty-sourcetype: reported
+        evaluated-standard-deviation: 1.457 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    equivalence-ratio: *id001
+    temperature: *id002
+    pressure: *id003
 ...

@@ -1,336 +1,429 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/0010-2180(77)90022-0
   authors:
-  - name: V P Balakhnine
-  - name: J Vandooren
-  - name: P J Van Tiggelen
+    - name: V P Balakhnine
+    - name: J Vandooren
+    - name: P J Van Tiggelen
   journal: Combust Flame
   year: 1977
   volume: 28
   pages: '165'
   detail: Converted from ReSpecTh XML file x60400037.xml
+file-type: experiment
 experiment-type: burner stabilized flame speciation measurement
 apparatus:
   kind: flame
   institution: ''
   facility: ''
   mode: burner-stabilized
+comments:
+  - The inlet gas temperature is assumed to be room temperature (300 K) based on the
+    reported temperature profiles, experimental setup and other work of the authors
+    but any clear reference cannot be find for that
+  - The experimental temperature profile was estimated with linear interpolation based
+    on Fig. 2. top axis.
+  - The flow rate (F) was calculated as the product of the gas velocity and density.
+    (F = v * rho = v * p * M_ave / R / T)
 common-properties:
   temperature:
-  - 300 K
+    - 300 K
   pressure: &id001
-  - 40 torr
+    - 40 torr
   flow-rate: &id002
-  - 0.01845 kg m-2 s-1
+    - 0.01845 kg m-2 s-1
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.314
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.686
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.314
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.686
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0887
-  distance:
-  - 0.2218 cm
-  temperature:
-  - 300 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.116
-  distance:
-  - 0.3094 cm
-  temperature:
-  - 495 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.1566
-  distance:
-  - 0.4047 cm
-  temperature:
-  - 734 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.1997
-  distance:
-  - 0.5079 cm
-  temperature:
-  - 992 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2422
-  distance:
-  - 0.6111 cm
-  temperature:
-  - 1250 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2713
-  distance:
-  - 0.7067 cm
-  temperature:
-  - 1481 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2828
-  distance:
-  - 0.8027 cm
-  temperature:
-  - 1699 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.284
-  distance:
-  - 0.8989 cm
-  temperature:
-  - 1832 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2828
-  distance:
-  - 1.0032 cm
-  temperature:
-  - 1897 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.279
-  distance:
-  - 1.1076 cm
-  temperature:
-  - 1918 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2759
-  distance:
-  - 1.204 cm
-  temperature:
-  - 1935 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2715
-  distance:
-  - 1.4047 cm
-  temperature:
-  - 1968 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2671
-  distance:
-  - 1.6053 cm
-  temperature:
-  - 1967 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.264
-  distance:
-  - 1.806 cm
-  temperature:
-  - 1947 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2602
-  distance:
-  - 2.0067 cm
-  temperature:
-  - 1927 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2603
-  distance:
-  - 2.2072 cm
-  temperature:
-  - 1907 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2578
-  distance:
-  - 2.3998 cm
-  temperature:
-  - 1887 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2546
-  distance:
-  - 2.6085 cm
-  temperature:
-  - 1866 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2534
-  distance:
-  - 2.8011 cm
-  temperature:
-  - 1847 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2522
-  distance:
-  - 3.0017 cm
-  temperature:
-  - 1827 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.2498
-  distance:
-  - 3.4029 cm
-  temperature:
-  - 1786 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.0887
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.2218 cm
+    temperature:
+      - 300 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.116
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.3094 cm
+    temperature:
+      - 495 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.1566
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.4047 cm
+    temperature:
+      - 734 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.1997
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.5079 cm
+    temperature:
+      - 992 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2422
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.6111 cm
+    temperature:
+      - 1250 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2713
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.7067 cm
+    temperature:
+      - 1481 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2828
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.8027 cm
+    temperature:
+      - 1699 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.284
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.8989 cm
+    temperature:
+      - 1832 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2828
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.0032 cm
+    temperature:
+      - 1897 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.279
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.1076 cm
+    temperature:
+      - 1918 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2759
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.204 cm
+    temperature:
+      - 1935 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2715
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.4047 cm
+    temperature:
+      - 1968 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2671
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.6053 cm
+    temperature:
+      - 1967 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.264
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.806 cm
+    temperature:
+      - 1947 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2602
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.0067 cm
+    temperature:
+      - 1927 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2603
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.2072 cm
+    temperature:
+      - 1907 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2578
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.3998 cm
+    temperature:
+      - 1887 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2546
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.6085 cm
+    temperature:
+      - 1866 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2534
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.8011 cm
+    temperature:
+      - 1847 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2522
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 3.0017 cm
+    temperature:
+      - 1827 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.2498
+            - evaluated-standard-deviation: 0.0852
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 3.4029 cm
+    temperature:
+      - 1786 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
 ...

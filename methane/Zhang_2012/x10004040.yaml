@@ -1,17 +1,22 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/j.combustflame.2011.09.010
   authors:
-  - name: Y., Huang, Z., Wei, L., Zhang, J., Law, C.K. Zhang
+    - name: Y. Zhang
+    - name: Z. Huang
+    - name: L. Wei
+    - name: J. Zhang
+    - name: C.K. Law
   journal: Combust Flame
   year: 2012
   volume: 159
-  pages: 918--931
+  pages: 918-931
   detail: Converted from ReSpecTh XML file x10004040.xml
+file-type: experiment
 experiment-type: ignition delay
 apparatus:
   kind: shock tube
@@ -19,143 +24,143 @@ apparatus:
   facility: ''
 common-properties:
   pressure: &id001
-  - 2000000 Pa
+    - 2000000 Pa
   composition: &id002
     kind: mole fraction
     species:
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.00998
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.0399
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.95012
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.00998
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0399
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.95012
   pressure-rise: &id003
-  - 0.04 ms-1
+    - 0.04 1/ms
   ignition-type: &id004
     target: OHEX;
-    type: baseline min intercept from d/dt
+    type: d/dt min extrapolated
 datapoints:
-- temperature:
-  - 1728 K
-  ignition-delay:
-  - 63.4483 us
-  - evaluated-standard-deviation: '0.282'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and the uncertainty
-      of conditions
-  pressure: *id001
-  composition: *id002
-  pressure-rise: *id003
-  ignition-type: *id004
-- temperature:
-  - 1589 K
-  ignition-delay:
-  - 205.5465 us
-  - evaluated-standard-deviation: '0.301'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and the uncertainty
-      of conditions
-  pressure: *id001
-  composition: *id002
-  pressure-rise: *id003
-  ignition-type: *id004
-- temperature:
-  - 1526 K
-  ignition-delay:
-  - 373.7576 us
-  - evaluated-standard-deviation: '0.313'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and the uncertainty
-      of conditions
-  pressure: *id001
-  composition: *id002
-  pressure-rise: *id003
-  ignition-type: *id004
-- temperature:
-  - 1491 K
-  ignition-delay:
-  - 632.0916 us
-  - evaluated-standard-deviation: '0.32'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and the uncertainty
-      of conditions
-  pressure: *id001
-  composition: *id002
-  pressure-rise: *id003
-  ignition-type: *id004
-- temperature:
-  - 1458 K
-  ignition-delay:
-  - 756.3974 us
-  - evaluated-standard-deviation: '0.327'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and the uncertainty
-      of conditions
-  pressure: *id001
-  composition: *id002
-  pressure-rise: *id003
-  ignition-type: *id004
-- temperature:
-  - 1453 K
-  ignition-delay:
-  - 1050.703 us
-  - evaluated-standard-deviation: '0.329'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and the uncertainty
-      of conditions
-  pressure: *id001
-  composition: *id002
-  pressure-rise: *id003
-  ignition-type: *id004
-- temperature:
-  - 1418 K
-  ignition-delay:
-  - 1138.78 us
-  - evaluated-standard-deviation: '0.337'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and the uncertainty
-      of conditions
-  pressure: *id001
-  composition: *id002
-  pressure-rise: *id003
-  ignition-type: *id004
-- temperature:
-  - 1323 K
-  ignition-delay:
-  - 2855.157 us
-  - evaluated-standard-deviation: '0.366'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and the uncertainty
-      of conditions
-  pressure: *id001
-  composition: *id002
-  pressure-rise: *id003
-  ignition-type: *id004
-- temperature:
-  - 1283 K
-  ignition-delay:
-  - 3321.85 us
-  - evaluated-standard-deviation: '0.38'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and the uncertainty
-      of conditions
-  pressure: *id001
-  composition: *id002
-  pressure-rise: *id003
-  ignition-type: *id004
+  - temperature:
+      - 1728 K
+    ignition-delay:
+      - 63.4483 us
+      - evaluated-standard-deviation: '0.282'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and the uncertainty
+          of conditions
+    pressure: *id001
+    composition: *id002
+    pressure-rise: *id003
+    ignition-type: *id004
+  - temperature:
+      - 1589 K
+    ignition-delay:
+      - 205.5465 us
+      - evaluated-standard-deviation: '0.301'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and the uncertainty
+          of conditions
+    pressure: *id001
+    composition: *id002
+    pressure-rise: *id003
+    ignition-type: *id004
+  - temperature:
+      - 1526 K
+    ignition-delay:
+      - 373.7576 us
+      - evaluated-standard-deviation: '0.313'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and the uncertainty
+          of conditions
+    pressure: *id001
+    composition: *id002
+    pressure-rise: *id003
+    ignition-type: *id004
+  - temperature:
+      - 1491 K
+    ignition-delay:
+      - 632.0916 us
+      - evaluated-standard-deviation: '0.32'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and the uncertainty
+          of conditions
+    pressure: *id001
+    composition: *id002
+    pressure-rise: *id003
+    ignition-type: *id004
+  - temperature:
+      - 1458 K
+    ignition-delay:
+      - 756.3974 us
+      - evaluated-standard-deviation: '0.327'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and the uncertainty
+          of conditions
+    pressure: *id001
+    composition: *id002
+    pressure-rise: *id003
+    ignition-type: *id004
+  - temperature:
+      - 1453 K
+    ignition-delay:
+      - 1050.703 us
+      - evaluated-standard-deviation: '0.329'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and the uncertainty
+          of conditions
+    pressure: *id001
+    composition: *id002
+    pressure-rise: *id003
+    ignition-type: *id004
+  - temperature:
+      - 1418 K
+    ignition-delay:
+      - 1138.78 us
+      - evaluated-standard-deviation: '0.337'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and the uncertainty
+          of conditions
+    pressure: *id001
+    composition: *id002
+    pressure-rise: *id003
+    ignition-type: *id004
+  - temperature:
+      - 1323 K
+    ignition-delay:
+      - 2855.157 us
+      - evaluated-standard-deviation: '0.366'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and the uncertainty
+          of conditions
+    pressure: *id001
+    composition: *id002
+    pressure-rise: *id003
+    ignition-type: *id004
+  - temperature:
+      - 1283 K
+    ignition-delay:
+      - 3321.85 us
+      - evaluated-standard-deviation: '0.38'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and the uncertainty
+          of conditions
+    pressure: *id001
+    composition: *id002
+    pressure-rise: *id003
+    ignition-type: *id004
 ...

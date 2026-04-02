@@ -1,19 +1,20 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.2514/2.5394
   authors:
-  - name: E L Petersen
-  - name: D F Davidson
-  - name: R K Hanson
+    - name: E L Petersen
+    - name: D F Davidson
+    - name: R K Hanson
   journal: J Propul Power
   year: 1999
   volume: 15
-  pages: 82--91
+  pages: 82-91
   detail: Converted from ReSpecTh XML file x10004346.xml
+file-type: experiment
 experiment-type: ignition delay
 apparatus:
   kind: shock tube
@@ -23,44 +24,44 @@ common-properties:
   composition: &id001
     kind: mole fraction
     species:
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.5
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.1667
-    - species-name: He
-      InChI: 1S/He
-      amount:
-      - 0.3333
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.5
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.1667
+      - species-name: He
+        InChI: 1S/He
+        amount:
+          - 0.3333
   ignition-type: &id002
     target: CH*
-    type: baseline min intercept from d/dt
+    type: d/dt min extrapolated
 datapoints:
-- temperature:
-  - 1456 K
-  ignition-delay:
-  - 82 us
-  - evaluated-standard-deviation: '0.122'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: reported
-    evaluated-standard-deviation-method: reported uncertainty
-  pressure:
-  - 57.2 atm
-  composition: *id001
-  ignition-type: *id002
-- temperature:
-  - 1547 K
-  ignition-delay:
-  - 58 us
-  - evaluated-standard-deviation: '0.172'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: reported
-    evaluated-standard-deviation-method: reported uncertainty
-  pressure:
-  - 51.2 atm
-  composition: *id001
-  ignition-type: *id002
+  - temperature:
+      - 1456 K
+    ignition-delay:
+      - 82 us
+      - evaluated-standard-deviation: '0.122'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: reported
+        evaluated-standard-deviation-method: reported uncertainty
+    pressure:
+      - 57.2 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1547 K
+    ignition-delay:
+      - 58 us
+      - evaluated-standard-deviation: '0.172'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: reported
+        evaluated-standard-deviation-method: reported uncertainty
+    pressure:
+      - 51.2 atm
+    composition: *id001
+    ignition-type: *id002
 ...

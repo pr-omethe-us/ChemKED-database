@@ -1,23 +1,24 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/j.combustflame.2015.07.032
   authors:
-  - name: A M Dmitriev
-  - name: D A Knyazkov
-  - name: T A Bolshova
-  - name: A G Tereshchenko
-  - name: A A Paletsky
-  - name: A G Shmakov
-  - name: O P Korobeinichev
+    - name: A M Dmitriev
+    - name: D A Knyazkov
+    - name: T A Bolshova
+    - name: A G Tereshchenko
+    - name: A A Paletsky
+    - name: A G Shmakov
+    - name: O P Korobeinichev
   journal: Combust Flame
   year: 2015
   volume: 162
-  pages: 3946--3959
+  pages: 3946-3959
   detail: Converted from ReSpecTh XML file x20004537.xml
+file-type: experiment
 experiment-type: laminar burning velocity measurement
 apparatus:
   kind: flame
@@ -26,56 +27,56 @@ apparatus:
   mode: premixed
 common-properties:
   temperature: &id001
-  - 333 K
+    - 333 K
   equivalence-ratio: &id002
-  - 1 dimensionless
+    - 1 dimensionless
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.0833
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.75
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.1667
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.0833
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.75
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.1667
 datapoints:
-- pressure:
-  - 1 atm
-  laminar-burning-velocity:
-  - 68.69 cm/s
-  - evaluated-standard-deviation: 1 cm/s
-    evaluated-standard-deviation-type: absolute
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
-  temperature: *id001
-  equivalence-ratio: *id002
-  composition: *id003
-- pressure:
-  - 3 atm
-  laminar-burning-velocity:
-  - 50.59 cm/s
-  - evaluated-standard-deviation: 1 cm/s
-    evaluated-standard-deviation-type: absolute
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
-  temperature: *id001
-  equivalence-ratio: *id002
-  composition: *id003
-- pressure:
-  - 5 atm
-  laminar-burning-velocity:
-  - 42.28 cm/s
-  - evaluated-standard-deviation: 1 cm/s
-    evaluated-standard-deviation-type: absolute
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
-  temperature: *id001
-  equivalence-ratio: *id002
-  composition: *id003
+  - pressure:
+      - 1 atm
+    laminar-burning-velocity:
+      - 68.69 cm/s
+      - evaluated-standard-deviation: 1 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
+    temperature: *id001
+    equivalence-ratio: *id002
+    composition: *id003
+  - pressure:
+      - 3 atm
+    laminar-burning-velocity:
+      - 50.59 cm/s
+      - evaluated-standard-deviation: 1 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
+    temperature: *id001
+    equivalence-ratio: *id002
+    composition: *id003
+  - pressure:
+      - 5 atm
+    laminar-burning-velocity:
+      - 42.28 cm/s
+      - evaluated-standard-deviation: 1 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
+    temperature: *id001
+    equivalence-ratio: *id002
+    composition: *id003
 ...

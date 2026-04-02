@@ -1,228 +1,269 @@
 ---
 file-authors:
-- name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
-    ELTE, Budapest, Hungary
+  - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1002/aic.690390811
   authors:
-  - name: Tore Hulgaard
-  - name: Kim Dam‐Johansen
+    - name: Tore Hulgaard
+    - name: Kim Dam‐Johansen
   journal: American Institute of Chemical Engineers
   year: 1993
   volume: 39
-  pages: 1342–1354
+  pages: 1342-1354
   detail: Converted from ReSpecTh XML file x30401001.xml
+file-type: experiment
 experiment-type: outlet concentration measurement
 apparatus:
   kind: flow reactor
   institution: ''
   facility: ''
+comments:
+  - The uncertainty of xNO and xN2O was ± 1 %, but not less than 2 ppm.
+  - 'About pressure: "The reactor pressure was about 5 kPa higher than atmospheric
+    pressure which varied between 98.0 and 102.5 kPa."'
 common-properties:
   pressure: &id001
-  - 105.25 kPa
-  - uncertainty-type: absolute
-    uncertainty: 2.25 kPa
-    uncertainty-sourcetype: estimated
+    - 105.25 kPa
+    - uncertainty-type: absolute
+      uncertainty: 2.25 kPa
+      uncertainty-sourcetype: estimated
   composition: &id002
     kind: mole fraction
     species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.00176
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.000193
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 2.5
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.973047
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.00176
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.000193
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 2.5
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.973047
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 1.0e-06
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 1.0e-06
+            - uncertainty-type: absolute
+              uncertainty: 2.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.00019
+            - uncertainty-type: absolute
+              uncertainty: 2.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 0.057249859
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1071 K
       - uncertainty-type: absolute
-        uncertainty: 2.0e-06
-        uncertainty-sourcetype: calculated
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.00019
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.06352 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 2.0e-06
+            - uncertainty-type: absolute
+              uncertainty: 2.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.000178
+            - uncertainty-type: absolute
+              uncertainty: 2.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 0.057249859
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1169 K
       - uncertainty-type: absolute
-        uncertainty: 2.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 0.057249859
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1071 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.06352 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 2.0e-06
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.05815 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 3.0e-06
+            - uncertainty-type: absolute
+              uncertainty: 2.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.000158
+            - uncertainty-type: absolute
+              uncertainty: 2.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 1.0e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1219 K
       - uncertainty-type: absolute
-        uncertainty: 2.0e-06
-        uncertainty-sourcetype: calculated
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.000178
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.0558 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 4.0e-06
+            - uncertainty-type: absolute
+              uncertainty: 2.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.000128
+            - uncertainty-type: absolute
+              uncertainty: 2.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 1.0e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1269 K
       - uncertainty-type: absolute
-        uncertainty: 2.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 0.057249859
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1169 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.05815 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 3.0e-06
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.05359 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 5.0e-06
+            - uncertainty-type: absolute
+              uncertainty: 2.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 8.0e-05
+            - uncertainty-type: absolute
+              uncertainty: 2.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 1.0e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1316 K
       - uncertainty-type: absolute
-        uncertainty: 2.0e-06
-        uncertainty-sourcetype: calculated
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.000158
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.05166 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 6.0e-06
+            - uncertainty-type: absolute
+              uncertainty: 2.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 5.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 3.9e-05
+            - uncertainty-type: absolute
+              uncertainty: 2.0e-06
+              uncertainty-sourcetype: calculated
+              evaluated-standard-deviation: 1.0e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1369 K
       - uncertainty-type: absolute
-        uncertainty: 2.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 1.0e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1219 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.0558 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 4.0e-06
-      - uncertainty-type: absolute
-        uncertainty: 2.0e-06
-        uncertainty-sourcetype: calculated
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.000128
-      - uncertainty-type: absolute
-        uncertainty: 2.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 1.0e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1269 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.05359 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 5.0e-06
-      - uncertainty-type: absolute
-        uncertainty: 2.0e-06
-        uncertainty-sourcetype: calculated
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 8.0e-05
-      - uncertainty-type: absolute
-        uncertainty: 2.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 1.0e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1316 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.05166 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 6.0e-06
-      - uncertainty-type: absolute
-        uncertainty: 2.0e-06
-        uncertainty-sourcetype: calculated
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 3.9e-05
-      - uncertainty-type: absolute
-        uncertainty: 2.0e-06
-        uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 1.0e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1369 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.04966 s
-  pressure: *id001
-  composition: *id002
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.04966 s
+    pressure: *id001
+    composition: *id002
 ...

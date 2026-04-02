@@ -1,17 +1,19 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/j.fuel.2017.06.005
   authors:
-  - name: K. Zhang, A. Dhongde, L. Virnich, H. Sankhla, H. Curran, A. Heufer A. Ramalingam
+    - name: K. Zhang, A. Dhongde, L. Virnich, H. Sankhla, H. Curran, A. Heufer A.
+        Ramalingam
   journal: Fuel
   year: 2017
   volume: 206
-  pages: 325–-333
+  pages: 325--333
   detail: Converted from ReSpecTh XML file x40004027.xml
+file-type: experiment
 experiment-type: ignition delay
 apparatus:
   kind: rapid compression machine
@@ -21,73 +23,73 @@ common-properties:
   composition: &id001
     kind: mole fraction
     species:
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.052367
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.198995
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.243297
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.505341
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.052367
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.198995
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.243297
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.505341
   ignition-type: &id002
     target: p;
     type: d/dt max
 datapoints:
-- pressure:
-  - 3.148 atm
-  temperature:
-  - 296.96 K
-  ignition-delay:
-  - 9.61 ms
-  - evaluated-standard-deviation: '0.109'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  time-histories:
-  - time:
-      units: s
-      column: 0
-    quantity:
-      units: cm3
-      column: 1
-    type: volume
-    values:
-    - [0.0, 1.0]
-    - [0.00264006, 0.862949]
-    - [0.00389051, 0.7735286]
-    - [0.00559578, 0.6419525]
-    - [0.00708603, 0.5261587]
-    - [0.00800585, 0.4560298]
-    - [0.00825038, 0.4334097]
-    - [0.00927113, 0.3551058]
-    - [0.01086449, 0.238982]
-    - [0.01206078, 0.1559334]
-    - [0.0144357, 0.0822969]
-    - [0.01507367, 0.08013048]
-    - [0.01575055, 0.07961571]
-    - [0.01740149, 0.0807242]
-    - [0.01969737, 0.0820498]
-    - [0.02202973, 0.08316029]
-    - [0.02528528, 0.08433125]
-    - [0.02983831, 0.08575664]
-    - [0.03421137, 0.08690655]
-    - [0.04034667, 0.08823906]
-    - [0.04595858, 0.08927601]
-    - [0.05422513, 0.09059868]
-    - [0.06493413, 0.09202305]
-    - [0.07537453, 0.09322063]
-    - [0.08853783, 0.09455639]
-    - [0.1075816, 0.09621466]
-    - [0.1296234, 0.0978724]
-    - [0.148145, 0.0991593]
-  composition: *id001
-  ignition-type: *id002
+  - pressure:
+      - 3.148 atm
+    temperature:
+      - 296.96 K
+    ignition-delay:
+      - 9.61 ms
+      - evaluated-standard-deviation: '0.109'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    time-histories:
+      - time:
+          units: s
+          column: 0
+        quantity:
+          units: cm3
+          column: 1
+        type: volume
+        values:
+          - [0.0, 1.0]
+          - [0.00264006, 0.862949]
+          - [0.00389051, 0.7735286]
+          - [0.00559578, 0.6419525]
+          - [0.00708603, 0.5261587]
+          - [0.00800585, 0.4560298]
+          - [0.00825038, 0.4334097]
+          - [0.00927113, 0.3551058]
+          - [0.01086449, 0.238982]
+          - [0.01206078, 0.1559334]
+          - [0.0144357, 0.0822969]
+          - [0.01507367, 0.08013048]
+          - [0.01575055, 0.07961571]
+          - [0.01740149, 0.0807242]
+          - [0.01969737, 0.0820498]
+          - [0.02202973, 0.08316029]
+          - [0.02528528, 0.08433125]
+          - [0.02983831, 0.08575664]
+          - [0.03421137, 0.08690655]
+          - [0.04034667, 0.08823906]
+          - [0.04595858, 0.08927601]
+          - [0.05422513, 0.09059868]
+          - [0.06493413, 0.09202305]
+          - [0.07537453, 0.09322063]
+          - [0.08853783, 0.09455639]
+          - [0.1075816, 0.09621466]
+          - [0.1296234, 0.0978724]
+          - [0.148145, 0.0991593]
+    composition: *id001
+    ignition-type: *id002
 ...

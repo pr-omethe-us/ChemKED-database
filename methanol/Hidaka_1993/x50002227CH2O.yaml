@@ -1,22 +1,23 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1002/kin.550250409
   authors:
-  - name: Yoshiaki Hidaka
-  - name: Takashi Taniguchi
-  - name: Takashi Kamesawa
-  - name: Hiromitsu Masaoka
-  - name: Koji Inami
-  - name: Hiroyuki Kawano
+    - name: Yoshiaki Hidaka
+    - name: Takashi Taniguchi
+    - name: Takashi Kamesawa
+    - name: Hiromitsu Masaoka
+    - name: Koji Inami
+    - name: Hiroyuki Kawano
   journal: Int J Chem Kinet
   year: 1993
   volume: 25
-  pages: 305--322
+  pages: 305-322
   detail: Converted from ReSpecTh XML file x50002227CH2O.xml
+file-type: experiment
 experiment-type: concentration time profile measurement
 apparatus:
   kind: shock tube
@@ -24,53 +25,53 @@ apparatus:
   facility: ''
 common-properties:
   pressure: &id001
-  - 2 atm
+    - 2 atm
   temperature: &id002
-  - 1414 K
+    - 1414 K
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 0.01
-      - evaluated-standard-deviation: 0.0005
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.01
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.98
+      - species-name: CH2O
+        InChI: 1S/CH2O/c1-2/h1H2
+        amount:
+          - 0.01
+          - evaluated-standard-deviation: 0.0005
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: generic uncertainty
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.01
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.98
 datapoints:
-- concentration-profiles:
-  - species-name: CH2O
-    InChI: 1S/CH2O/c1-2/h1H2
-    quantity:
-      units: mole fraction
-    time:
-      units: us
-    values:
-    - [0.0, 0.01]
-    - [25.0, 0.01]
-    - [50.0, 0.0099471]
-    - [75.0, 0.0099762]
-    - [100.0, 0.0099079]
-    - [125.0, 0.0096178]
-    - [150.0, 0.0090775]
-    - [175.0, 0.0082347]
-    - [200.0, 0.0065661]
-    - [225.0, 0.0047271]
-    - [250.0, 0.0032775]
-    - [275.0, 0.0022333]
-    - [300.0, 0.0010682]
-    - [325.0, 0.0004615]
-    - [350.0, 8.82e-05]
-  pressure: *id001
-  temperature: *id002
-  composition: *id003
+  - concentration-profiles:
+      - species-name: CH2O
+        InChI: 1S/CH2O/c1-2/h1H2
+        quantity:
+          units: mole fraction
+        time:
+          units: us
+        values:
+          - [0.0, 0.01]
+          - [25.0, 0.01]
+          - [50.0, 0.0099471]
+          - [75.0, 0.0099762]
+          - [100.0, 0.0099079]
+          - [125.0, 0.0096178]
+          - [150.0, 0.0090775]
+          - [175.0, 0.0082347]
+          - [200.0, 0.0065661]
+          - [225.0, 0.0047271]
+          - [250.0, 0.0032775]
+          - [275.0, 0.0022333]
+          - [300.0, 0.0010682]
+          - [325.0, 0.0004615]
+          - [350.0, 8.82e-05]
+    pressure: *id001
+    temperature: *id002
+    composition: *id003
 ...

@@ -1,20 +1,21 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/0010-2180(90)90067-2
   authors:
-  - name: Richard K Lyon
-  - name: Jerald A Cole
-  - name: John C Kramlich
-  - name: Shi L Chen
+    - name: Richard K Lyon
+    - name: Jerald A Cole
+    - name: John C Kramlich
+    - name: Shi L Chen
   journal: Combustion and Flame
   year: 1990
   volume: 81
-  pages: 30--39
+  pages: 30-39
   detail: Converted from ReSpecTh XML file x30202027.xml
+file-type: experiment
 experiment-type: outlet concentration measurement
 apparatus:
   kind: flow reactor
@@ -23,115 +24,116 @@ apparatus:
   mode: laminar
 common-properties:
   pressure: &id001
-  - 1 atm
+    - 1 atm
   residence-time: &id002
-  - 0.1 s
+    - 0.1 s
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.0004
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.05
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.000215
-      - evaluated-standard-deviation: 2.08e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: HE
-      InChI: 1S/He
-      amount:
-      - 0.949385
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.0004
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.05
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.000215
+          - evaluated-standard-deviation: 2.08e-05
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: HE
+        InChI: 1S/He
+        amount:
+          - 0.949385
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.0002126
-  temperature:
-  - 468 K
-  pressure: *id001
-  residence-time: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.0001925
-  temperature:
-  - 822 K
-  pressure: *id001
-  residence-time: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.0001031
-  temperature:
-  - 874 K
-  pressure: *id001
-  residence-time: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 1.562e-05
-  temperature:
-  - 923 K
-  pressure: *id001
-  residence-time: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 1.093e-05
-  temperature:
-  - 1024 K
-  pressure: *id001
-  residence-time: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 3.388e-05
-  temperature:
-  - 1123 K
-  pressure: *id001
-  residence-time: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 8.356e-05
-  temperature:
-  - 1175 K
-  pressure: *id001
-  residence-time: *id002
-  composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.0002126
+    temperature:
+      - 468 K
+    pressure: *id001
+    residence-time: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.0001925
+    temperature:
+      - 822 K
+    pressure: *id001
+    residence-time: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.0001031
+    temperature:
+      - 874 K
+    pressure: *id001
+    residence-time: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 1.562e-05
+    temperature:
+      - 923 K
+    pressure: *id001
+    residence-time: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 1.093e-05
+    temperature:
+      - 1024 K
+    pressure: *id001
+    residence-time: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 3.388e-05
+    temperature:
+      - 1123 K
+    pressure: *id001
+    residence-time: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 8.356e-05
+    temperature:
+      - 1175 K
+    pressure: *id001
+    residence-time: *id002
+    composition: *id003
 ...

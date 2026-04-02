@@ -1,217 +1,274 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/S0082-0784(81)80044-6
   authors:
-  - name: D.J. Seery
-  - name: M.F. Zabielski
+    - name: D.J. Seery
+    - name: M.F. Zabielski
   journal: Symposium (International) on Combustion
   year: 1981
   volume: 18
-  pages: 397--404
+  pages: 397-404
   detail: Converted from ReSpecTh XML file x60200038.xml
+file-type: experiment
 experiment-type: burner stabilized flame speciation measurement
 apparatus:
   kind: flame
   institution: ''
   facility: ''
   mode: burner-stabilized
+comments:
+  - The inlet gas temperature is assumed to be room temperature (300 K) based on the
+    reported temperature profiles, experimental setup and other work of the authors
+    but any clear reference cannot be find for that
+  - The temperature profile is estimated based on Fig. 2. squere with interpolation
+    and extrapolation.
+  - The flow rate (F) was calculated as the product of the gas velocity and density.
+    (F = v * rho = v * p * M_ave / R / T)
 common-properties:
   temperature:
-  - 300 K
+    - 300 K
   pressure: &id001
-  - 76 torr
+    - 76 torr
   flow-rate: &id002
-  - 0.04986 kg m-2 s-1
+    - 0.04986 kg m-2 s-1
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.466
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.134
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.397
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.0037
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.466
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.134
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.397
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.0037
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 8.0e-05
-  distance:
-  - 1.47 mm
-  temperature:
-  - 646 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000672
-  distance:
-  - 1.98 mm
-  temperature:
-  - 927 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000533
-  distance:
-  - 3.31 mm
-  temperature:
-  - 1496 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000581
-  distance:
-  - 4.47 mm
-  temperature:
-  - 1891 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000688
-  distance:
-  - 4.51 mm
-  temperature:
-  - 1896 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000779
-  distance:
-  - 6.46 mm
-  temperature:
-  - 1934 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000689
-  distance:
-  - 11.43 mm
-  temperature:
-  - 1877 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.00069
-  distance:
-  - 16.65 mm
-  temperature:
-  - 1830 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000717
-  distance:
-  - 21.61 mm
-  temperature:
-  - 1792 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000659
-  distance:
-  - 26.78 mm
-  temperature:
-  - 1753 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.000638
-  distance:
-  - 31.8 mm
-  temperature:
-  - 1720 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.00106
-  distance:
-  - 36.9 mm
-  temperature:
-  - 1686 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 8.0e-05
+            - evaluated-standard-deviation: 0.000187
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.47 mm
+    temperature:
+      - 646 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000672
+            - evaluated-standard-deviation: 0.000187
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.98 mm
+    temperature:
+      - 927 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000533
+            - evaluated-standard-deviation: 0.000187
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 3.31 mm
+    temperature:
+      - 1496 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000581
+            - evaluated-standard-deviation: 0.000187
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 4.47 mm
+    temperature:
+      - 1891 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000688
+            - evaluated-standard-deviation: 0.000187
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 4.51 mm
+    temperature:
+      - 1896 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000779
+            - evaluated-standard-deviation: 0.000187
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 6.46 mm
+    temperature:
+      - 1934 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000689
+            - evaluated-standard-deviation: 0.000187
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 11.43 mm
+    temperature:
+      - 1877 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.00069
+            - evaluated-standard-deviation: 0.000187
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 16.65 mm
+    temperature:
+      - 1830 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000717
+            - evaluated-standard-deviation: 0.000187
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 21.61 mm
+    temperature:
+      - 1792 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000659
+            - evaluated-standard-deviation: 0.000187
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 26.78 mm
+    temperature:
+      - 1753 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.000638
+            - evaluated-standard-deviation: 0.000187
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 31.8 mm
+    temperature:
+      - 1720 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.00106
+            - evaluated-standard-deviation: 0.000187
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 36.9 mm
+    temperature:
+      - 1686 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
 ...

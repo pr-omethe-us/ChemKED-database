@@ -1,326 +1,335 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/0010-2180(77)90022-0
   authors:
-  - name: V P Balakhnine
-  - name: J Vandooren
-  - name: P J Van Tiggelen
+    - name: V P Balakhnine
+    - name: J Vandooren
+    - name: P J Van Tiggelen
   journal: Combust Flame
   year: 1977
   volume: 28
   pages: '165'
   detail: Converted from ReSpecTh XML file x60400035.xml
+file-type: experiment
 experiment-type: burner stabilized flame speciation measurement
 apparatus:
   kind: flame
   institution: ''
   facility: ''
   mode: burner-stabilized
+comments:
+  - The inlet gas temperature is assumed to be room temperature (300 K) based on the
+    reported temperature profiles, experimental setup and other work of the authors
+    but any clear reference cannot be find for that
+  - The experimental temperature profile was estimated with linear interpolation based
+    on Fig. 2. top axis.
+  - The flow rate (F) was calculated as the product of the gas velocity and density.
+    (F = v * rho = v * p * M_ave / R / T)
 common-properties:
   temperature:
-  - 300 K
+    - 300 K
   pressure: &id001
-  - 40 torr
+    - 40 torr
   flow-rate: &id002
-  - 0.01845 kg m-2 s-1
+    - 0.01845 kg m-2 s-1
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.314
-      - evaluated-standard-deviation: 0.04533
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.686
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.314
+          - evaluated-standard-deviation: 0.04533
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.686
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.1511
-  distance:
-  - 0.2245 cm
-  temperature:
-  - 300 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.1176
-  distance:
-  - 0.2984 cm
-  temperature:
-  - 468 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.08684
-  distance:
-  - 0.4042 cm
-  temperature:
-  - 733 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.05421
-  distance:
-  - 0.5102 cm
-  temperature:
-  - 997 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.03014
-  distance:
-  - 0.5996 cm
-  temperature:
-  - 1221 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.01527
-  distance:
-  - 0.7047 cm
-  temperature:
-  - 1476 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.006722
-  distance:
-  - 0.8014 cm
-  temperature:
-  - 1696 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.002615
-  distance:
-  - 0.9059 cm
-  temperature:
-  - 1837 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.001676
-  distance:
-  - 1.0102 cm
-  temperature:
-  - 1901 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.001054
-  distance:
-  - 1.1146 cm
-  temperature:
-  - 1919 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.001064
-  distance:
-  - 1.2028 cm
-  temperature:
-  - 1935 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0007698
-  distance:
-  - 1.4034 cm
-  temperature:
-  - 1968 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0007925
-  distance:
-  - 1.604 cm
-  temperature:
-  - 1967 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0008152
-  distance:
-  - 1.8045 cm
-  temperature:
-  - 1947 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0008379
-  distance:
-  - 2.0051 cm
-  temperature:
-  - 1927 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0008606
-  distance:
-  - 2.2057 cm
-  temperature:
-  - 1907 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0008833
-  distance:
-  - 2.4063 cm
-  temperature:
-  - 1887 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0009287
-  distance:
-  - 2.8074 cm
-  temperature:
-  - 1846 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0009523
-  distance:
-  - 3.016 cm
-  temperature:
-  - 1825 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0003631
-  distance:
-  - 3.4092 cm
-  temperature:
-  - 1785 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.1511
+    distance:
+      - 0.2245 cm
+    temperature:
+      - 300 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.1176
+    distance:
+      - 0.2984 cm
+    temperature:
+      - 468 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.08684
+    distance:
+      - 0.4042 cm
+    temperature:
+      - 733 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.05421
+    distance:
+      - 0.5102 cm
+    temperature:
+      - 997 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.03014
+    distance:
+      - 0.5996 cm
+    temperature:
+      - 1221 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.01527
+    distance:
+      - 0.7047 cm
+    temperature:
+      - 1476 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.006722
+    distance:
+      - 0.8014 cm
+    temperature:
+      - 1696 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.002615
+    distance:
+      - 0.9059 cm
+    temperature:
+      - 1837 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.001676
+    distance:
+      - 1.0102 cm
+    temperature:
+      - 1901 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.001054
+    distance:
+      - 1.1146 cm
+    temperature:
+      - 1919 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.001064
+    distance:
+      - 1.2028 cm
+    temperature:
+      - 1935 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0007698
+    distance:
+      - 1.4034 cm
+    temperature:
+      - 1968 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0007925
+    distance:
+      - 1.604 cm
+    temperature:
+      - 1967 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0008152
+    distance:
+      - 1.8045 cm
+    temperature:
+      - 1947 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0008379
+    distance:
+      - 2.0051 cm
+    temperature:
+      - 1927 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0008606
+    distance:
+      - 2.2057 cm
+    temperature:
+      - 1907 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0008833
+    distance:
+      - 2.4063 cm
+    temperature:
+      - 1887 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0009287
+    distance:
+      - 2.8074 cm
+    temperature:
+      - 1846 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0009523
+    distance:
+      - 3.016 cm
+    temperature:
+      - 1825 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0003631
+    distance:
+      - 3.4092 cm
+    temperature:
+      - 1785 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
 ...

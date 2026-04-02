@@ -1,326 +1,345 @@
 ---
 file-authors:
-- name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
-    ELTE, Budapest, Hungary
+  - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1039/C9RE00429G
   authors:
-  - name: Alessandro Stagni
-  - name: Carlo Cavallotti
-  - name: Suphaporn Arunthanayothin
-  - name: Yu Song
-  - name: Olivier Herbinet
-  - name: Frédérique Battin-Leclerc
-  - name: Tiziano Faravelli
+    - name: Alessandro Stagni
+    - name: Carlo Cavallotti
+    - name: Suphaporn Arunthanayothin
+    - name: Yu Song
+    - name: Olivier Herbinet
+    - name: Frédérique Battin-Leclerc
+    - name: Tiziano Faravelli
   journal: Reaction Chemistry & Engineering
   year: 2020
   volume: 5
-  pages: 696–711
+  pages: 696-711
   detail: Converted from ReSpecTh XML file x00199000.xml
+file-type: experiment
 experiment-type: jet stirred reactor measurement
 apparatus:
   kind: stirred reactor (fused silica)
   institution: ''
   facility: ''
+comments:
+  - 'The volume of the jet stirred reactor was published e. g. in Y. Song, L. Marrodán,
+    N. Vin, O. Herbinet, E. Assaf, C. Fittschen, A. Stagni, T. Faravelli, M. U. Alzueta,
+    F. Battin-Leclerc, The sensitizing effects of NO2 and NO on methane low temperature
+    oxidation in a jet stirred reactor, Proc. Combust. Inst. 37 (2019) 667–675. (URL:
+    https://doi.org/10.1016/j.proci.2018.06.115)'
 common-properties:
   reactor-volume: &id001
-  - 85 cm3
+    - 85 cm3
   pressure: &id002
-  - 800 torr
+    - 800 torr
   residence-time: &id003
-  - 1.5 s
+    - 1.5 s
   composition: &id004
     kind: mole percent
     species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.0005
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 2.0
-    - species-name: He
-      InChI: 1S/He
-      amount:
-      - 97.95
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        amount:
+          - 0.0005
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 2.0
+      - species-name: He
+        InChI: 1S/He
+        amount:
+          - 97.95
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000504
-      - uncertainty-type: relative
-        uncertainty: 0.1
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000504
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 2.6e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 500 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 2.6e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 500 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000501
-      - uncertainty-type: relative
-        uncertainty: 0.1
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000501
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 2.6e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 600 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 2.6e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 600 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000497
-      - uncertainty-type: relative
-        uncertainty: 0.1
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000497
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 2.5e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 700 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 2.5e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 700 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000497
-      - uncertainty-type: relative
-        uncertainty: 0.1
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000497
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 2.5e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 750 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 2.5e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 750 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000498
-      - uncertainty-type: relative
-        uncertainty: 0.1
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000498
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 2.5e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 800 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 2.5e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 800 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000502
-      - uncertainty-type: relative
-        uncertainty: 0.1
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000502
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 2.6e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 900 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 2.6e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 900 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000507
-      - uncertainty-type: relative
-        uncertainty: 0.1
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000507
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 2.6e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 950 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 2.6e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 950 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000495
-      - uncertainty-type: relative
-        uncertainty: 0.1
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000495
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 2.5e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1000 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 2.5e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1000 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000491
-      - uncertainty-type: relative
-        uncertainty: 0.1
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000491
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 2.5e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1050 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 2.5e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1050 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000493
-      - uncertainty-type: relative
-        uncertainty: 0.1
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000493
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 2.5e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1100 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 2.5e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1100 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000439
-      - uncertainty-type: relative
-        uncertainty: 0.1
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000439
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 2.2e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1150 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 2.2e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1150 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.000274
-      - uncertainty-type: relative
-        uncertainty: 0.1
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.000274
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 1.4e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1200 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.4e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-  temperature:
-  - 1200 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  reactor-volume: *id001
-  pressure: *id002
-  residence-time: *id003
-  composition: *id004
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
 ...

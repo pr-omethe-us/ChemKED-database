@@ -1,18 +1,19 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/0010-2180(84)90074-9
   authors:
-  - name: B.E. Milton
-  - name: J.C. Keck
+    - name: B.E. Milton
+    - name: J.C. Keck
   journal: Combustion and Flame
   year: 1984
   volume: 58
-  pages: 13--22
+  pages: 13-22
   detail: Converted from ReSpecTh XML file x20004237.xml
+file-type: experiment
 experiment-type: laminar burning velocity measurement
 apparatus:
   kind: flame
@@ -21,41 +22,41 @@ apparatus:
   mode: premixed
 common-properties:
   temperature: &id001
-  - 485 K
+    - 485 K
   composition: &id002
     kind: mole fraction
     species:
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.09589
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.19178
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.71233
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.09589
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.19178
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.71233
 datapoints:
-- pressure:
-  - 3 atm
-  laminar-burning-velocity:
-  - 73 cm/s
-  - evaluated-standard-deviation: 0.73 cm/s
-    evaluated-standard-deviation-type: absolute
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: generic uncertainty
-  temperature: *id001
-  composition: *id002
-- pressure:
-  - 6 atm
-  laminar-burning-velocity:
-  - 46 cm/s
-  - evaluated-standard-deviation: 0.5 cm/s
-    evaluated-standard-deviation-type: absolute
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: generic uncertainty
-  temperature: *id001
-  composition: *id002
+  - pressure:
+      - 3 atm
+    laminar-burning-velocity:
+      - 73 cm/s
+      - evaluated-standard-deviation: 0.73 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    temperature: *id001
+    composition: *id002
+  - pressure:
+      - 6 atm
+    laminar-burning-velocity:
+      - 46 cm/s
+      - evaluated-standard-deviation: 0.5 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    temperature: *id001
+    composition: *id002
 ...

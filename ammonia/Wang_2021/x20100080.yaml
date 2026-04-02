@@ -1,83 +1,87 @@
 ---
 file-authors:
-- name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
-    ELTE, Budapest, Hungary
+  - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/j.ijhydene.2021.07.063
   authors:
-  - name: Ning Wang
-  - name: Shuai Huang
-  - name: Zhifei Zhang
-  - name: Tie Li
-  - name: Ping Yi
-  - name: Dawei Wu
-  - name: Gen Chen
+    - name: Ning Wang
+    - name: Shuai Huang
+    - name: Zhifei Zhang
+    - name: Tie Li
+    - name: Ping Yi
+    - name: Dawei Wu
+    - name: Gen Chen
   journal: International Journal of Hydrogen Energy
   year: 2021
   volume: 46
-  pages: 31879–31893
+  pages: 31879-31893
   detail: Converted from ReSpecTh XML file x20100080.xml
+file-type: experiment
 experiment-type: laminar burning velocity measurement
 apparatus:
   kind: outwardly propagating spherical flame
   institution: ''
   facility: ''
   mode: constant volume combustion chamber
+comments:
+  - The composition of air is assumed to be 79% N2 and 21% O2, and the equivalence
+    ratio was assumed to be phi = (0.5 * x_H2 + 0.75 * x_NH3) / x_O2.
 common-properties:
   temperature: &id001
-  - 360 K
+    - 360 K
   equivalence-ratio: &id002
-  - 1 dimensionless
+    - 1 dimensionless
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 0.202139
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.02246
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.162834
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.612567
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        amount:
+          - 0.202139
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.02246
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.162834
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.612567
 datapoints:
-- pressure:
-  - 0.1 MPa
-  laminar-burning-velocity:
-  - 12.5 cm/s
-  - uncertainty-type: absolute
-    uncertainty: 2.42 cm/s
-    uncertainty-sourcetype: digitized
-  temperature: *id001
-  equivalence-ratio: *id002
-  composition: *id003
-- pressure:
-  - 0.3 MPa
-  laminar-burning-velocity:
-  - 7.8 cm/s
-  - uncertainty-type: absolute
-    uncertainty: 0.49 cm/s
-    uncertainty-sourcetype: digitized
-  temperature: *id001
-  equivalence-ratio: *id002
-  composition: *id003
-- pressure:
-  - 0.5 MPa
-  laminar-burning-velocity:
-  - 5.8 cm/s
-  - uncertainty-type: absolute
-    uncertainty: 0.63 cm/s
-    uncertainty-sourcetype: digitized
-  temperature: *id001
-  equivalence-ratio: *id002
-  composition: *id003
+  - pressure:
+      - 0.1 MPa
+    laminar-burning-velocity:
+      - 12.5 cm/s
+      - uncertainty-type: absolute
+        uncertainty: 2.42 cm/s
+        uncertainty-sourcetype: digitized
+    temperature: *id001
+    equivalence-ratio: *id002
+    composition: *id003
+  - pressure:
+      - 0.3 MPa
+    laminar-burning-velocity:
+      - 7.8 cm/s
+      - uncertainty-type: absolute
+        uncertainty: 0.49 cm/s
+        uncertainty-sourcetype: digitized
+    temperature: *id001
+    equivalence-ratio: *id002
+    composition: *id003
+  - pressure:
+      - 0.5 MPa
+    laminar-burning-velocity:
+      - 5.8 cm/s
+      - uncertainty-type: absolute
+        uncertainty: 0.63 cm/s
+        uncertainty-sourcetype: digitized
+    temperature: *id001
+    equivalence-ratio: *id002
+    composition: *id003
 ...

@@ -1,641 +1,653 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/S0082-0784(89)80127-4
   authors:
-  - name: R.J. Cattolica
-  - name: J.A. Cavolowsky
-  - name: T.G. Mataga
+    - name: R.J. Cattolica
+    - name: J.A. Cavolowsky
+    - name: T.G. Mataga
   journal: Symposium (International) on Combustion
   year: 1989
   volume: 22
-  pages: 1165--1173
+  pages: 1165-1173
   detail: Converted from ReSpecTh XML file x60200023.xml
+file-type: experiment
 experiment-type: burner stabilized flame speciation measurement
 apparatus:
   kind: flame
   institution: ''
   facility: ''
   mode: burner-stabilized
+comments:
+  - The inlet gas temperature is assumed to be normal temperature (293 K).
+  - The temperature profile was estimated with linear interpolation based on TABLE
+    II
+  - 'The flow rate (F) was calculated by the following data and formula: F[liter/min]
+    = 8.86 l/min, M_average = 23.25 g/mol, d = 6 cm, A = (d/2)^2*PI; F[kg m-2 s-1]
+    = const * F[liter/min] * M_average / A . Where const = 6,929*10^-4 (= p/R/T/6E4)'
+  - The temperature in this definition (NTP) is 20 °C (293.15 K) and the pressure
+    is 1 atm.
+  - The concentration profiles are converted from molecule/cm3 to mole fractions with
+    the ideal gas law to avoid simulation difficulties
 common-properties:
   equivalence-ratio: &id001
-  - 1.37 dimensionless
+    - 1.37 dimensionless
   temperature:
-  - 293 K
+    - 293 K
   pressure: &id002
-  - 76 Torr
+    - 76 Torr
   flow-rate: &id003
-  - 0.05048 kg m-2 s-1
+    - 0.05048 kg m-2 s-1
   composition: &id004
     kind: mole fraction
     species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.4074
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.1479
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.4405
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.004183
-      - evaluated-standard-deviation: 0.000603
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.4074
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.1479
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.4405
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.004183
+          - evaluated-standard-deviation: 0.000603
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00346
-  distance:
-  - 0.205 cm
-  temperature:
-  - 457 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00357
-  distance:
-  - 0.301 cm
-  temperature:
-  - 531 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.003859
-  distance:
-  - 0.406 cm
-  temperature:
-  - 612 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.004149
-  distance:
-  - 0.506 cm
-  temperature:
-  - 689 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.004721
-  distance:
-  - 0.606 cm
-  temperature:
-  - 765 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005024
-  distance:
-  - 0.701 cm
-  temperature:
-  - 838 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005343
-  distance:
-  - 0.802 cm
-  temperature:
-  - 916 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005676
-  distance:
-  - 0.897 cm
-  temperature:
-  - 989 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.006032
-  distance:
-  - 0.997 cm
-  temperature:
-  - 1066 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005943
-  distance:
-  - 1.097 cm
-  temperature:
-  - 1068 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005741
-  distance:
-  - 1.202 cm
-  temperature:
-  - 1068 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005775
-  distance:
-  - 1.302 cm
-  temperature:
-  - 1069 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005804
-  distance:
-  - 1.406 cm
-  temperature:
-  - 1069 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005631
-  distance:
-  - 1.502 cm
-  temperature:
-  - 1069 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005574
-  distance:
-  - 1.602 cm
-  temperature:
-  - 1069 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005516
-  distance:
-  - 1.697 cm
-  temperature:
-  - 1069 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005386
-  distance:
-  - 1.797 cm
-  temperature:
-  - 1069 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005416
-  distance:
-  - 1.897 cm
-  temperature:
-  - 1069 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005391
-  distance:
-  - 1.997 cm
-  temperature:
-  - 1070 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00532
-  distance:
-  - 2.097 cm
-  temperature:
-  - 1070 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005305
-  distance:
-  - 2.193 cm
-  temperature:
-  - 1070 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005362
-  distance:
-  - 2.297 cm
-  temperature:
-  - 1070 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00532
-  distance:
-  - 2.393 cm
-  temperature:
-  - 1070 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005305
-  distance:
-  - 2.497 cm
-  temperature:
-  - 1070 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005166
-  distance:
-  - 2.598 cm
-  temperature:
-  - 1071 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005367
-  distance:
-  - 2.702 cm
-  temperature:
-  - 1071 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00518
-  distance:
-  - 2.802 cm
-  temperature:
-  - 1071 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005122
-  distance:
-  - 2.902 cm
-  temperature:
-  - 1071 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00518
-  distance:
-  - 3.002 cm
-  temperature:
-  - 1071 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005098
-  distance:
-  - 3.102 cm
-  temperature:
-  - 1072 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005401
-  distance:
-  - 3.197 cm
-  temperature:
-  - 1072 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005215
-  distance:
-  - 3.302 cm
-  temperature:
-  - 1072 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005345
-  distance:
-  - 3.402 cm
-  temperature:
-  - 1072 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005272
-  distance:
-  - 3.507 cm
-  temperature:
-  - 1072 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005228
-  distance:
-  - 3.602 cm
-  temperature:
-  - 1072 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005161
-  distance:
-  - 3.707 cm
-  temperature:
-  - 1073 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005146
-  distance:
-  - 3.807 cm
-  temperature:
-  - 1073 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.005335
-  distance:
-  - 3.902 cm
-  temperature:
-  - 1073 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00535
-  distance:
-  - 4.002 cm
-  temperature:
-  - 1073 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00346
+    distance:
+      - 0.205 cm
+    temperature:
+      - 457 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00357
+    distance:
+      - 0.301 cm
+    temperature:
+      - 531 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.003859
+    distance:
+      - 0.406 cm
+    temperature:
+      - 612 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.004149
+    distance:
+      - 0.506 cm
+    temperature:
+      - 689 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.004721
+    distance:
+      - 0.606 cm
+    temperature:
+      - 765 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005024
+    distance:
+      - 0.701 cm
+    temperature:
+      - 838 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005343
+    distance:
+      - 0.802 cm
+    temperature:
+      - 916 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005676
+    distance:
+      - 0.897 cm
+    temperature:
+      - 989 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.006032
+    distance:
+      - 0.997 cm
+    temperature:
+      - 1066 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005943
+    distance:
+      - 1.097 cm
+    temperature:
+      - 1068 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005741
+    distance:
+      - 1.202 cm
+    temperature:
+      - 1068 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005775
+    distance:
+      - 1.302 cm
+    temperature:
+      - 1069 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005804
+    distance:
+      - 1.406 cm
+    temperature:
+      - 1069 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005631
+    distance:
+      - 1.502 cm
+    temperature:
+      - 1069 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005574
+    distance:
+      - 1.602 cm
+    temperature:
+      - 1069 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005516
+    distance:
+      - 1.697 cm
+    temperature:
+      - 1069 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005386
+    distance:
+      - 1.797 cm
+    temperature:
+      - 1069 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005416
+    distance:
+      - 1.897 cm
+    temperature:
+      - 1069 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005391
+    distance:
+      - 1.997 cm
+    temperature:
+      - 1070 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00532
+    distance:
+      - 2.097 cm
+    temperature:
+      - 1070 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005305
+    distance:
+      - 2.193 cm
+    temperature:
+      - 1070 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005362
+    distance:
+      - 2.297 cm
+    temperature:
+      - 1070 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00532
+    distance:
+      - 2.393 cm
+    temperature:
+      - 1070 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005305
+    distance:
+      - 2.497 cm
+    temperature:
+      - 1070 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005166
+    distance:
+      - 2.598 cm
+    temperature:
+      - 1071 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005367
+    distance:
+      - 2.702 cm
+    temperature:
+      - 1071 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00518
+    distance:
+      - 2.802 cm
+    temperature:
+      - 1071 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005122
+    distance:
+      - 2.902 cm
+    temperature:
+      - 1071 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00518
+    distance:
+      - 3.002 cm
+    temperature:
+      - 1071 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005098
+    distance:
+      - 3.102 cm
+    temperature:
+      - 1072 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005401
+    distance:
+      - 3.197 cm
+    temperature:
+      - 1072 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005215
+    distance:
+      - 3.302 cm
+    temperature:
+      - 1072 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005345
+    distance:
+      - 3.402 cm
+    temperature:
+      - 1072 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005272
+    distance:
+      - 3.507 cm
+    temperature:
+      - 1072 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005228
+    distance:
+      - 3.602 cm
+    temperature:
+      - 1072 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005161
+    distance:
+      - 3.707 cm
+    temperature:
+      - 1073 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005146
+    distance:
+      - 3.807 cm
+    temperature:
+      - 1073 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.005335
+    distance:
+      - 3.902 cm
+    temperature:
+      - 1073 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.00535
+    distance:
+      - 4.002 cm
+    temperature:
+      - 1073 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
 ...

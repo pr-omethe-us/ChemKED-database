@@ -1,18 +1,19 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   authors:
-  - name: M A Mueller
-  - name: R A Yetter
-  - name: F L Dryer
+    - name: M A Mueller
+    - name: R A Yetter
+    - name: F L Dryer
   journal: Int J Chem Kinet
   year: 1999
   volume: 31
-  pages: 705--724
+  pages: 705-724
   detail: Converted from ReSpecTh XML file x30200087.xml
+file-type: experiment
 experiment-type: concentration time profile measurement
 apparatus:
   kind: flow reactor
@@ -20,61 +21,61 @@ apparatus:
   facility: ''
 common-properties:
   pressure: &id001
-  - 1 atm
+    - 1 atm
   temperature: &id002
-  - 806 K
+    - 806 K
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0099
-      - evaluated-standard-deviation: 0.000484
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.0051
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00011
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.98489
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.0099
+          - evaluated-standard-deviation: 0.000484
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0051
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.00011
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.98489
 datapoints:
-- concentration-profiles:
-  - species-name: H2
-    InChI: 1S/H2/h1H
-    quantity:
-      units: mole fraction
-    time:
-      units: s
-    values:
-    - [0.063, 0.009407]
-    - [0.067, 0.009379]
-    - [0.071, 0.009205]
-    - [0.077, 0.008944]
-    - [0.084, 0.008713]
-    - [0.093, 0.00854]
-    - [0.103, 0.008251]
-    - [0.114, 0.007962]
-    - [0.124, 0.007673]
-    - [0.135, 0.007413]
-    - [0.146, 0.007066]
-    - [0.156, 0.00666]
-    - [0.167, 0.006283]
-    - [0.177, 0.005907]
-    - [0.187, 0.005618]
-    - [0.198, 0.005358]
-    - [0.209, 0.005069]
-    - [0.219, 0.004721]
-    - [0.23, 0.004374]
-  pressure: *id001
-  temperature: *id002
-  composition: *id003
+  - concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        time:
+          units: s
+        values:
+          - [0.063, 0.009407]
+          - [0.067, 0.009379]
+          - [0.071, 0.009205]
+          - [0.077, 0.008944]
+          - [0.084, 0.008713]
+          - [0.093, 0.00854]
+          - [0.103, 0.008251]
+          - [0.114, 0.007962]
+          - [0.124, 0.007673]
+          - [0.135, 0.007413]
+          - [0.146, 0.007066]
+          - [0.156, 0.00666]
+          - [0.167, 0.006283]
+          - [0.177, 0.005907]
+          - [0.187, 0.005618]
+          - [0.198, 0.005358]
+          - [0.209, 0.005069]
+          - [0.219, 0.004721]
+          - [0.23, 0.004374]
+    pressure: *id001
+    temperature: *id002
+    composition: *id003
 ...

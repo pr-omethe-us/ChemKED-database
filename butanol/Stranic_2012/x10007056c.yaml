@@ -1,22 +1,23 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/j.combustflame.2011.08.014
   authors:
-  - name: Ivo Stranic
-  - name: Deanna P Chase
-  - name: Joseph T Harmon
-  - name: Sheng Yang
-  - name: David F Davidson
-  - name: Ronald K Hanson
+    - name: Ivo Stranic
+    - name: Deanna P Chase
+    - name: Joseph T Harmon
+    - name: Sheng Yang
+    - name: David F Davidson
+    - name: Ronald K Hanson
   journal: Combust Flame
   year: 2012
   volume: 159
-  pages: 516--527
+  pages: 516-527
   detail: Converted from ReSpecTh XML file x10007056c.xml
+file-type: experiment
 experiment-type: ignition delay
 apparatus:
   kind: shock tube
@@ -27,68 +28,68 @@ common-properties:
   composition: &id001
     kind: mole fraction
     species:
-    - species-name: tC4H9OH
-      InChI: 1S/C4H10O/c1-4(2,3)5/h5H,1-3H3
-      amount:
-      - 0.006667
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.04
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.953333
+      - species-name: tC4H9OH
+        InChI: 1S/C4H10O/c1-4(2,3)5/h5H,1-3H3
+        amount:
+          - 0.006667
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.04
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.953333
   ignition-type: &id002
     target: OH*;
-    type: baseline min intercept from d/dt
+    type: d/dt min extrapolated
 datapoints:
-- temperature:
-  - 1317 K
-  ignition-delay:
-  - 0.545 ms
-  - evaluated-standard-deviation: '0.1'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  pressure:
-  - 18.52 atm
-  composition: *id001
-  ignition-type: *id002
-- temperature:
-  - 1388 K
-  ignition-delay:
-  - 0.252 ms
-  - evaluated-standard-deviation: '0.1'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  pressure:
-  - 17.2 atm
-  composition: *id001
-  ignition-type: *id002
-- temperature:
-  - 1464 K
-  ignition-delay:
-  - 0.111 ms
-  - evaluated-standard-deviation: '0.1'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  pressure:
-  - 16.79 atm
-  composition: *id001
-  ignition-type: *id002
-- temperature:
-  - 1533 K
-  ignition-delay:
-  - 0.052 ms
-  - evaluated-standard-deviation: '0.1'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  pressure:
-  - 17.29 atm
-  composition: *id001
-  ignition-type: *id002
+  - temperature:
+      - 1317 K
+    ignition-delay:
+      - 0.545 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 18.52 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1388 K
+    ignition-delay:
+      - 0.252 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 17.2 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1464 K
+    ignition-delay:
+      - 0.111 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 16.79 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1533 K
+    ignition-delay:
+      - 0.052 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 17.29 atm
+    composition: *id001
+    ignition-type: *id002
 ...

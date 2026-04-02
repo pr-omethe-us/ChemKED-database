@@ -1,19 +1,20 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1023/A:1026186231905
   authors:
-  - name: V P Zhukov
-  - name: V A Sechenov
-  - name: A Yu Starikovskii
+    - name: V P Zhukov
+    - name: V A Sechenov
+    - name: A Yu Starikovskii
   journal: Combust Explos Shock Waves
   year: 2003
   volume: 39
-  pages: 487--495
+  pages: 487-495
   detail: Converted from ReSpecTh XML file x10004193.xml
+file-type: experiment
 experiment-type: ignition delay
 apparatus:
   kind: shock tube
@@ -23,53 +24,53 @@ common-properties:
   composition: &id001
     kind: mole fraction
     species:
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.0499
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.1994
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.7507
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.0499
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.1994
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.7507
   ignition-type: &id002
     target: OH*
     type: d/dt max
 datapoints:
-- temperature:
-  - 1580 K
-  ignition-delay:
-  - 49 us
-  - uncertainty-type: absolute
-    uncertainty: 4 us
-    uncertainty-sourcetype: reported
-  pressure:
-  - 29 atm
-  composition: *id001
-  ignition-type: *id002
-- temperature:
-  - 1351 K
-  ignition-delay:
-  - 225 us
-  - uncertainty-type: absolute
-    uncertainty: 16 us
-    uncertainty-sourcetype: reported
-  pressure:
-  - 32 atm
-  composition: *id001
-  ignition-type: *id002
-- temperature:
-  - 1467 K
-  ignition-delay:
-  - 108 us
-  - uncertainty-type: absolute
-    uncertainty: 5 us
-    uncertainty-sourcetype: reported
-  pressure:
-  - 30 atm
-  composition: *id001
-  ignition-type: *id002
+  - temperature:
+      - 1580 K
+    ignition-delay:
+      - 49 us
+      - uncertainty-type: absolute
+        uncertainty: 4 us
+        uncertainty-sourcetype: reported
+    pressure:
+      - 29 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1351 K
+    ignition-delay:
+      - 225 us
+      - uncertainty-type: absolute
+        uncertainty: 16 us
+        uncertainty-sourcetype: reported
+    pressure:
+      - 32 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1467 K
+    ignition-delay:
+      - 108 us
+      - uncertainty-type: absolute
+        uncertainty: 5 us
+        uncertainty-sourcetype: reported
+    pressure:
+      - 30 atm
+    composition: *id001
+    ignition-type: *id002
 ...

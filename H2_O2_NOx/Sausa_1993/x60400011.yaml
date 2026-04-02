@@ -1,318 +1,324 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/0010-2180(93)90123-K
   authors:
-  - name: R C Sausa
-  - name: W R Anderson
-  - name: D C Dayton
-  - name: C M Faust
-  - name: S L Howard
+    - name: R C Sausa
+    - name: W R Anderson
+    - name: D C Dayton
+    - name: C M Faust
+    - name: S L Howard
   journal: Combust Flame
   year: 1993
   volume: 94
-  pages: 407--425
+  pages: 407-425
   detail: Converted from ReSpecTh XML file x60400011.xml
+file-type: experiment
 experiment-type: burner stabilized flame speciation measurement
 apparatus:
   kind: flame
   institution: ''
   facility: ''
   mode: burner-stabilized
+comments:
+  - The experimental temperature was estimated with linear interpolation based on
+    Fig. 2.
+  - The concentration profiles are converted from mol/cm3 to mole fractions with the
+    ideal gas law to avoid simulation difficulties
 common-properties:
   temperature:
-  - 300 K
+    - 300 K
   pressure: &id001
-  - 20 Torr
+    - 20 Torr
   flow-rate: &id002
-  - 0.00341 g cm-2 s-1
+    - 0.00341 g cm-2 s-1
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.2667
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.2667
-      - evaluated-standard-deviation: 0.03975
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.4666
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.2667
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.2667
+          - evaluated-standard-deviation: 0.03975
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.4666
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.3919
-  distance:
-  - 1.516 mm
-  temperature:
-  - 813 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.3975
-  distance:
-  - 2.183 mm
-  temperature:
-  - 1057 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.3707
-  distance:
-  - 2.8 mm
-  temperature:
-  - 1227 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.3583
-  distance:
-  - 3.415 mm
-  temperature:
-  - 1397 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.3274
-  distance:
-  - 4.076 mm
-  temperature:
-  - 1515 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.2971
-  distance:
-  - 4.691 mm
-  temperature:
-  - 1642 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.2512
-  distance:
-  - 5.352 mm
-  temperature:
-  - 1744 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.2045
-  distance:
-  - 6.013 mm
-  temperature:
-  - 1834 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.1497
-  distance:
-  - 6.627 mm
-  temperature:
-  - 1915 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.106
-  distance:
-  - 7.241 mm
-  temperature:
-  - 1978 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.06956
-  distance:
-  - 7.854 mm
-  temperature:
-  - 2030 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.04554
-  distance:
-  - 8.513 mm
-  temperature:
-  - 2074 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.02948
-  distance:
-  - 9.125 mm
-  temperature:
-  - 2098 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.01857
-  distance:
-  - 9.784 mm
-  temperature:
-  - 2114 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.009307
-  distance:
-  - 11.008 mm
-  temperature:
-  - 2120 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.00186
-  distance:
-  - 12.937 mm
-  temperature:
-  - 2118 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.001854
-  distance:
-  - 14.207 mm
-  temperature:
-  - 2111 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.003687
-  distance:
-  - 15.43 mm
-  temperature:
-  - 2099 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.001821
-  distance:
-  - 17.97 mm
-  temperature:
-  - 2073 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.3919
+    distance:
+      - 1.516 mm
+    temperature:
+      - 813 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.3975
+    distance:
+      - 2.183 mm
+    temperature:
+      - 1057 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.3707
+    distance:
+      - 2.8 mm
+    temperature:
+      - 1227 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.3583
+    distance:
+      - 3.415 mm
+    temperature:
+      - 1397 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.3274
+    distance:
+      - 4.076 mm
+    temperature:
+      - 1515 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.2971
+    distance:
+      - 4.691 mm
+    temperature:
+      - 1642 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.2512
+    distance:
+      - 5.352 mm
+    temperature:
+      - 1744 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.2045
+    distance:
+      - 6.013 mm
+    temperature:
+      - 1834 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.1497
+    distance:
+      - 6.627 mm
+    temperature:
+      - 1915 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.106
+    distance:
+      - 7.241 mm
+    temperature:
+      - 1978 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.06956
+    distance:
+      - 7.854 mm
+    temperature:
+      - 2030 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.04554
+    distance:
+      - 8.513 mm
+    temperature:
+      - 2074 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.02948
+    distance:
+      - 9.125 mm
+    temperature:
+      - 2098 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.01857
+    distance:
+      - 9.784 mm
+    temperature:
+      - 2114 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.009307
+    distance:
+      - 11.008 mm
+    temperature:
+      - 2120 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.00186
+    distance:
+      - 12.937 mm
+    temperature:
+      - 2118 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.001854
+    distance:
+      - 14.207 mm
+    temperature:
+      - 2111 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.003687
+    distance:
+      - 15.43 mm
+    temperature:
+      - 2099 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 0.001821
+    distance:
+      - 17.97 mm
+    temperature:
+      - 2073 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
 ...

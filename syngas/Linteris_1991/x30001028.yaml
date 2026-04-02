@@ -1,20 +1,21 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/0010-2180(91)90063-H
   authors:
-  - name: G T Linteris
-  - name: R A Yetter
-  - name: K Brezinsky
-  - name: F L Dryer
+    - name: G T Linteris
+    - name: R A Yetter
+    - name: K Brezinsky
+    - name: F L Dryer
   journal: Combust Flame
   year: 1991
   volume: 86
-  pages: 162--170
+  pages: 162-170
   detail: Converted from ReSpecTh XML file x30001028.xml
+file-type: experiment
 experiment-type: concentration time profile measurement
 apparatus:
   kind: flow reactor
@@ -23,75 +24,75 @@ apparatus:
   mode: turbulent
 common-properties:
   temperature: &id001
-  - 1115 K
+    - 1115 K
   pressure: &id002
-  - 1 atm
+    - 1 atm
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.00849
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00923
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.006
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.97628
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.00849
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.00923
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.006
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.97628
 datapoints:
-- concentration-profiles:
-  - species-name: OH
-    InChI: 1S/H2O/h1H2/p-1
-    quantity:
-      units: mole fraction
-    time:
-      units: ms
-    values:
-    - [18.2, 5.2277e-05]
-    - [18.52, 4.9406e-05]
-    - [18.52, 5.1386e-05]
-    - [18.54, 4.8713e-05]
-    - [18.54, 5.0e-05]
-    - [24.0, 4.5446e-05]
-    - [24.0, 4.6238e-05]
-    - [31.17, 3.297e-05]
-    - [31.17, 3.3861e-05]
-    - [38.34, 2.7525e-05]
-    - [38.4, 2.8218e-05]
-    - [38.4, 3.0693e-05]
-    - [45.1, 2.7525e-05]
-    - [59.41, 1.5743e-05]
-    - [59.41, 1.6634e-05]
-  - species-name: CO
-    InChI: 1S/CO/c1-2
-    quantity:
-      units: mole fraction
-    time:
-      units: ms
-    values:
-    - [18.2, 0.0022935]
-    - [18.52, 0.0021956]
-    - [18.52, 0.0021956]
-    - [18.54, 0.0021899]
-    - [18.54, 0.0021899]
-    - [24.0, 0.0012088]
-    - [24.0, 0.0012088]
-    - [31.17, 0.00077355]
-    - [31.17, 0.00077355]
-    - [38.34, 0.00051698]
-    - [38.4, 0.00051524]
-    - [38.4, 0.00051524]
-    - [45.1, 0.00035694]
-    - [59.41, 0.00019732]
-    - [59.41, 0.00019732]
-  temperature: *id001
-  pressure: *id002
-  composition: *id003
+  - concentration-profiles:
+      - species-name: OH
+        InChI: 1S/H2O/h1H2/p-1
+        quantity:
+          units: mole fraction
+        time:
+          units: ms
+        values:
+          - [18.2, 5.2277e-05]
+          - [18.52, 4.9406e-05]
+          - [18.52, 5.1386e-05]
+          - [18.54, 4.8713e-05]
+          - [18.54, 5.0e-05]
+          - [24.0, 4.5446e-05]
+          - [24.0, 4.6238e-05]
+          - [31.17, 3.297e-05]
+          - [31.17, 3.3861e-05]
+          - [38.34, 2.7525e-05]
+          - [38.4, 2.8218e-05]
+          - [38.4, 3.0693e-05]
+          - [45.1, 2.7525e-05]
+          - [59.41, 1.5743e-05]
+          - [59.41, 1.6634e-05]
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        time:
+          units: ms
+        values:
+          - [18.2, 0.0022935]
+          - [18.52, 0.0021956]
+          - [18.52, 0.0021956]
+          - [18.54, 0.0021899]
+          - [18.54, 0.0021899]
+          - [24.0, 0.0012088]
+          - [24.0, 0.0012088]
+          - [31.17, 0.00077355]
+          - [31.17, 0.00077355]
+          - [38.34, 0.00051698]
+          - [38.4, 0.00051524]
+          - [38.4, 0.00051524]
+          - [45.1, 0.00035694]
+          - [59.41, 0.00019732]
+          - [59.41, 0.00019732]
+    temperature: *id001
+    pressure: *id002
+    composition: *id003
 ...

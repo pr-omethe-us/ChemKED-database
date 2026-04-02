@@ -1,20 +1,21 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1002/(SICI)1097-4601(1999)31:2%3C113::AID-KIN5%3E3.0.CO;2-0
   authors:
-  - name: M A Mueller
-  - name: T J Kim
-  - name: R A Yetter
-  - name: F L Dryer
+    - name: M A Mueller
+    - name: T J Kim
+    - name: R A Yetter
+    - name: F L Dryer
   journal: Int J Chem Kinet
   year: 1999
   volume: 31
-  pages: 113--125
+  pages: 113-125
   detail: Converted from ReSpecTh XML file x30000011.xml
+file-type: experiment
 experiment-type: concentration time profile measurement
 apparatus:
   kind: flow reactor
@@ -22,71 +23,71 @@ apparatus:
   facility: ''
 common-properties:
   temperature: &id001
-  - 935 K
+    - 935 K
   pressure: &id002
-  - 2.55 atm
+    - 2.55 atm
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0101
-      - evaluated-standard-deviation: 0.00454
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.0052
-      - evaluated-standard-deviation: 0.00223
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.9847
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.0101
+          - evaluated-standard-deviation: 0.00454
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0052
+          - evaluated-standard-deviation: 0.00223
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.9847
 datapoints:
-- concentration-profiles:
-  - species-name: H2
-    InChI: 1S/H2/h1H
-    quantity:
-      units: mole fraction
-    time:
-      units: s
-    values:
-    - [0.01409, 0.0097225]
-    - [0.01945, 0.0095529]
-    - [0.02621, 4.59e-05]
-    - [0.03478, 0.0]
-    - [0.04593, 0.0]
-  - species-name: H2O
-    InChI: 1S/H2O/h1H2
-    quantity:
-      units: mole fraction
-    time:
-      units: s
-    values:
-    - [0.01409, 1.91443e-06]
-    - [0.01945, 0.0002594]
-    - [0.02621, 0.0100762]
-    - [0.03478, 0.0101358]
-    - [0.04593, 0.0101763]
-  - species-name: O2
-    InChI: 1S/O2/c1-2
-    quantity:
-      units: mole fraction
-    time:
-      units: s
-    values:
-    - [0.01409, 0.0049392]
-    - [0.01945, 0.004881]
-    - [0.02621, 0.0002248]
-    - [0.03478, 0.0001721]
-    - [0.04593, 0.000124]
-  temperature: *id001
-  pressure: *id002
-  composition: *id003
+  - concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        time:
+          units: s
+        values:
+          - [0.01409, 0.0097225]
+          - [0.01945, 0.0095529]
+          - [0.02621, 4.59e-05]
+          - [0.03478, 0.0]
+          - [0.04593, 0.0]
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        quantity:
+          units: mole fraction
+        time:
+          units: s
+        values:
+          - [0.01409, 1.91443e-06]
+          - [0.01945, 0.0002594]
+          - [0.02621, 0.0100762]
+          - [0.03478, 0.0101358]
+          - [0.04593, 0.0101763]
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        quantity:
+          units: mole fraction
+        time:
+          units: s
+        values:
+          - [0.01409, 0.0049392]
+          - [0.01945, 0.004881]
+          - [0.02621, 0.0002248]
+          - [0.03478, 0.0001721]
+          - [0.04593, 0.000124]
+    temperature: *id001
+    pressure: *id002
+    composition: *id003
 ...

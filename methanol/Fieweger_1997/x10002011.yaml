@@ -1,19 +1,20 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/S0010-2180(97)00049-7
   authors:
-  - name: K Fieweger
-  - name: R Blumenthal
-  - name: G Adomeit
+    - name: K Fieweger
+    - name: R Blumenthal
+    - name: G Adomeit
   journal: Combust Flame
   year: 1997
   volume: 109
-  pages: 599--619
+  pages: 599-619
   detail: Converted from ReSpecTh XML file x10002011.xml
+file-type: experiment
 experiment-type: ignition delay
 apparatus:
   kind: shock tube
@@ -22,68 +23,68 @@ apparatus:
   mode: reflected shock
 common-properties:
   pressure: &id001
-  - 40 bar
+    - 40 bar
   composition: &id002
     kind: mole fraction
     species:
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.12285
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.18428
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.69287
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.12285
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.18428
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.69287
   ignition-type: &id003
     target: p;
     type: d/dt max
 datapoints:
-- temperature:
-  - 1105 K
-  ignition-delay:
-  - 82 us
-  - evaluated-standard-deviation: '0.2'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  pressure: *id001
-  composition: *id002
-  ignition-type: *id003
-- temperature:
-  - 1010 K
-  ignition-delay:
-  - 504 us
-  - evaluated-standard-deviation: '0.2'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  pressure: *id001
-  composition: *id002
-  ignition-type: *id003
-- temperature:
-  - 903 K
-  ignition-delay:
-  - 1932 us
-  - evaluated-standard-deviation: '0.2'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  pressure: *id001
-  composition: *id002
-  ignition-type: *id003
-- temperature:
-  - 818 K
-  ignition-delay:
-  - 2856 us
-  - evaluated-standard-deviation: '0.2'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  pressure: *id001
-  composition: *id002
-  ignition-type: *id003
+  - temperature:
+      - 1105 K
+    ignition-delay:
+      - 82 us
+      - evaluated-standard-deviation: '0.2'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure: *id001
+    composition: *id002
+    ignition-type: *id003
+  - temperature:
+      - 1010 K
+    ignition-delay:
+      - 504 us
+      - evaluated-standard-deviation: '0.2'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure: *id001
+    composition: *id002
+    ignition-type: *id003
+  - temperature:
+      - 903 K
+    ignition-delay:
+      - 1932 us
+      - evaluated-standard-deviation: '0.2'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure: *id001
+    composition: *id002
+    ignition-type: *id003
+  - temperature:
+      - 818 K
+    ignition-delay:
+      - 2856 us
+      - evaluated-standard-deviation: '0.2'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure: *id001
+    composition: *id002
+    ignition-type: *id003
 ...

@@ -1,336 +1,429 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/0010-2180(77)90022-0
   authors:
-  - name: V P Balakhnine
-  - name: J Vandooren
-  - name: P J Van Tiggelen
+    - name: V P Balakhnine
+    - name: J Vandooren
+    - name: P J Van Tiggelen
   journal: Combust Flame
   year: 1977
   volume: 28
   pages: '165'
   detail: Converted from ReSpecTh XML file x60400036.xml
+file-type: experiment
 experiment-type: burner stabilized flame speciation measurement
 apparatus:
   kind: flame
   institution: ''
   facility: ''
   mode: burner-stabilized
+comments:
+  - The inlet gas temperature is assumed to be room temperature (300 K) based on the
+    reported temperature profiles, experimental setup and other work of the authors
+    but any clear reference cannot be find for that
+  - The experimental temperature profile was estimated with linear interpolation based
+    on Fig. 2. top axis.
+  - The flow rate (F) was calculated as the product of the gas velocity and density.
+    (F = v * rho = v * p * M_ave / R / T)
 common-properties:
   temperature:
-  - 300 K
+    - 300 K
   pressure: &id001
-  - 40 torr
+    - 40 torr
   flow-rate: &id002
-  - 0.01845 kg m-2 s-1
+    - 0.01845 kg m-2 s-1
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.314
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 0.686
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.314
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.686
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0001744
-  distance:
-  - 0.4072 cm
-  temperature:
-  - 740 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0005487
-  distance:
-  - 0.5085 cm
-  temperature:
-  - 993 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0007706
-  distance:
-  - 0.603 cm
-  temperature:
-  - 1229 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.000933
-  distance:
-  - 0.706 cm
-  temperature:
-  - 1479 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0009984
-  distance:
-  - 0.8017 cm
-  temperature:
-  - 1697 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.001006
-  distance:
-  - 0.914 cm
-  temperature:
-  - 1842 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.001007
-  distance:
-  - 1.0103 cm
-  temperature:
-  - 1901 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.001001
-  distance:
-  - 1.1066 cm
-  temperature:
-  - 1918 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0009928
-  distance:
-  - 1.211 cm
-  temperature:
-  - 1936 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.000977
-  distance:
-  - 1.3154 cm
-  temperature:
-  - 1954 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0009494
-  distance:
-  - 1.4119 cm
-  temperature:
-  - 1969 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.000904
-  distance:
-  - 1.6128 cm
-  temperature:
-  - 1967 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0008348
-  distance:
-  - 1.8139 cm
-  temperature:
-  - 1946 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0007478
-  distance:
-  - 2.0072 cm
-  temperature:
-  - 1927 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0006569
-  distance:
-  - 2.2005 cm
-  temperature:
-  - 1907 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0005857
-  distance:
-  - 2.4096 cm
-  temperature:
-  - 1886 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0005027
-  distance:
-  - 2.6109 cm
-  temperature:
-  - 1866 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0004612
-  distance:
-  - 2.8038 cm
-  temperature:
-  - 1846 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0003762
-  distance:
-  - 3.005 cm
-  temperature:
-  - 1826 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0003407
-  distance:
-  - 3.2059 cm
-  temperature:
-  - 1806 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: O
-      InChI: 1S/O
-      amount:
-      - 0.0002736
-  distance:
-  - 3.407 cm
-  temperature:
-  - 1786 K
-  pressure: *id001
-  flow-rate: *id002
-  composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0001744
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.4072 cm
+    temperature:
+      - 740 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0005487
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.5085 cm
+    temperature:
+      - 993 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0007706
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.603 cm
+    temperature:
+      - 1229 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.000933
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.706 cm
+    temperature:
+      - 1479 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0009984
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.8017 cm
+    temperature:
+      - 1697 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.001006
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 0.914 cm
+    temperature:
+      - 1842 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.001007
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.0103 cm
+    temperature:
+      - 1901 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.001001
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.1066 cm
+    temperature:
+      - 1918 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0009928
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.211 cm
+    temperature:
+      - 1936 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.000977
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.3154 cm
+    temperature:
+      - 1954 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0009494
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.4119 cm
+    temperature:
+      - 1969 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.000904
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.6128 cm
+    temperature:
+      - 1967 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0008348
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.8139 cm
+    temperature:
+      - 1946 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0007478
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.0072 cm
+    temperature:
+      - 1927 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0006569
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.2005 cm
+    temperature:
+      - 1907 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0005857
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.4096 cm
+    temperature:
+      - 1886 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0005027
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.6109 cm
+    temperature:
+      - 1866 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0004612
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.8038 cm
+    temperature:
+      - 1846 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0003762
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 3.005 cm
+    temperature:
+      - 1826 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0003407
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 3.2059 cm
+    temperature:
+      - 1806 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O
+          InChI: 1S/O
+          amount:
+            - 0.0002736
+            - evaluated-standard-deviation: 0.000302
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 3.407 cm
+    temperature:
+      - 1786 K
+    pressure: *id001
+    flow-rate: *id002
+    composition: *id003
 ...

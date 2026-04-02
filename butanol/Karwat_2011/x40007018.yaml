@@ -1,20 +1,21 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1021/jp200905n
   authors:
-  - name: D M A Karwat
-  - name: S W Wagnon
-  - name: P D Teini
-  - name: M S Wooldridge
+    - name: D M A Karwat
+    - name: S W Wagnon
+    - name: P D Teini
+    - name: M S Wooldridge
   journal: J Phys Chem A
   year: 2011
   volume: 115
-  pages: 4909--4921
+  pages: 4909-4921
   detail: Converted from ReSpecTh XML file x40007018.xml
+file-type: experiment
 experiment-type: ignition delay
 apparatus:
   kind: rapid compression machine
@@ -24,66 +25,66 @@ common-properties:
   composition: &id001
     kind: mole fraction
     species:
-    - species-name: nC4H9OH
-      InChI: 1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3
-      amount:
-      - 0.0245
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.14758
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.54046
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.28746
+      - species-name: nC4H9OH
+        InChI: 1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3
+        amount:
+          - 0.0245
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.14758
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.54046
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.28746
   ignition-type: &id002
     target: p;
     type: d/dt max
 datapoints:
-- pressure:
-  - 0.03684 atm
-  temperature:
-  - 295.1 K
-  ignition-delay:
-  - 15.12 ms
-  - evaluated-standard-deviation: '0.15'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: generic uncertainty
-  time-histories:
-  - time:
-      units: ms
-      column: 0
-    quantity:
-      units: cm3
-      column: 1
-    type: volume
-    values:
-    - [0.0, 1.0]
-    - [1.13946, 0.97582]
-    - [2.53166, 0.92607]
-    - [6.71132, 0.75989]
-    - [8.76046, 0.68535]
-    - [10.72082, 0.62205]
-    - [12.72269, 0.5658]
-    - [14.81195, 0.51552]
-    - [17.0193, 0.47061]
-    - [20.08554, 0.4185]
-    - [24.49255, 0.32725]
-    - [26.89088, 0.28517]
-    - [29.73997, 0.24523]
-    - [32.40385, 0.19498]
-    - [33.74964, 0.17376]
-    - [35.35288, 0.15402]
-    - [36.78127, 0.12943]
-    - [41.83433, 0.05765]
-    - [43.66472, 0.03583]
-    - [56.02219, 0.03917]
-    - [97.1073, 0.0401]
-  composition: *id001
-  ignition-type: *id002
+  - pressure:
+      - 0.03684 atm
+    temperature:
+      - 295.1 K
+    ignition-delay:
+      - 15.12 ms
+      - evaluated-standard-deviation: '0.15'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    time-histories:
+      - time:
+          units: ms
+          column: 0
+        quantity:
+          units: cm3
+          column: 1
+        type: volume
+        values:
+          - [0.0, 1.0]
+          - [1.13946, 0.97582]
+          - [2.53166, 0.92607]
+          - [6.71132, 0.75989]
+          - [8.76046, 0.68535]
+          - [10.72082, 0.62205]
+          - [12.72269, 0.5658]
+          - [14.81195, 0.51552]
+          - [17.0193, 0.47061]
+          - [20.08554, 0.4185]
+          - [24.49255, 0.32725]
+          - [26.89088, 0.28517]
+          - [29.73997, 0.24523]
+          - [32.40385, 0.19498]
+          - [33.74964, 0.17376]
+          - [35.35288, 0.15402]
+          - [36.78127, 0.12943]
+          - [41.83433, 0.05765]
+          - [43.66472, 0.03583]
+          - [56.02219, 0.03917]
+          - [97.1073, 0.0401]
+    composition: *id001
+    ignition-type: *id002
 ...

@@ -1,19 +1,20 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/S0082-0784(06)80708-3
   authors:
-  - name: T J Kim
-  - name: R A Yetter
-  - name: F L Dryer
+    - name: T J Kim
+    - name: R A Yetter
+    - name: F L Dryer
   journal: Symp (Int) Combust
   year: 1994
   volume: 25
-  pages: 759--766
+  pages: 759-766
   detail: Converted from ReSpecTh XML file x30001008.xml
+file-type: experiment
 experiment-type: concentration time profile measurement
 apparatus:
   kind: flow reactor
@@ -22,60 +23,60 @@ apparatus:
   mode: turbulent
 common-properties:
   temperature: &id001
-  - 1040 K
+    - 1040 K
   pressure: &id002
-  - 9.6 atm
+    - 9.6 atm
   composition: &id003
     kind: mole fraction
     species:
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.01
-      - evaluated-standard-deviation: 0.0001
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.005
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.0065
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.9785
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.01
+          - evaluated-standard-deviation: 0.0001
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: generic uncertainty
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.005
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.0065
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.9785
 datapoints:
-- concentration-profiles:
-  - species-name: CO
-    InChI: 1S/CO/c1-2
-    quantity:
-      units: mole fraction
-    time:
-      units: s
-    values:
-    - [0.0, 0.01]
-    - [0.060344, 0.0096936]
-    - [0.078808, 0.0095672]
-    - [0.10465, 0.0093682]
-    - [0.14158, 0.0091152]
-    - [0.18468, 0.0088808]
-    - [0.24132, 0.008556]
-    - [0.30291, 0.0083044]
-    - [0.3682, 0.0080347]
-    - [0.43593, 0.0076741]
-    - [0.50121, 0.0074227]
-    - [0.57021, 0.0072078]
-    - [0.63671, 0.0068472]
-    - [0.70446, 0.0065959]
-    - [0.77098, 0.0063081]
-    - [0.8375, 0.0060567]
-    - [0.90527, 0.0058783]
-    - [0.97301, 0.0055541]
-  temperature: *id001
-  pressure: *id002
-  composition: *id003
+  - concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        time:
+          units: s
+        values:
+          - [0.0, 0.01]
+          - [0.060344, 0.0096936]
+          - [0.078808, 0.0095672]
+          - [0.10465, 0.0093682]
+          - [0.14158, 0.0091152]
+          - [0.18468, 0.0088808]
+          - [0.24132, 0.008556]
+          - [0.30291, 0.0083044]
+          - [0.3682, 0.0080347]
+          - [0.43593, 0.0076741]
+          - [0.50121, 0.0074227]
+          - [0.57021, 0.0072078]
+          - [0.63671, 0.0068472]
+          - [0.70446, 0.0065959]
+          - [0.77098, 0.0063081]
+          - [0.8375, 0.0060567]
+          - [0.90527, 0.0058783]
+          - [0.97301, 0.0055541]
+    temperature: *id001
+    pressure: *id002
+    composition: *id003
 ...

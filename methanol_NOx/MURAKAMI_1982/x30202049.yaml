@@ -1,176 +1,183 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.3775/jie.61.276
   authors:
-  - name: Nobuyuki KOJIMA, Minoru HASHIGUCHI Nobuaki MURAKAMI
+    - name: Nobuyuki KOJIMA, Minoru HASHIGUCHI Nobuaki MURAKAMI
   journal: J. Fuel Soc. Japan
   year: 1982
   volume: 61
-  pages: 276--284
+  pages: 276-284
   detail: Converted from ReSpecTh XML file x30202049.xml
+file-type: experiment
 experiment-type: outlet concentration measurement
 apparatus:
   kind: flow reactor
   institution: ''
   facility: ''
   mode: laminar
+comments:
+  - 'Residence time was calculated with linear interpolation based on the following
+    reported sentence:'
+  - The reaction time in the figure is the value at 600 °C, which is 1.13 times and
+    0.90 times the reported value at 500 °C and 700 °C, respectively
 common-properties:
   pressure: &id001
-  - 1 atm
+    - 1 atm
   composition: &id002
     kind: mole fraction
     species:
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.000177
-      - evaluated-standard-deviation: 8.3e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.017
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.000133
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.98269
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.000177
+          - evaluated-standard-deviation: 8.3e-06
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.017
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.000133
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.98269
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.0001476
-  temperature:
-  - 746 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.47 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.0001005
-  temperature:
-  - 813 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.43 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 6.59e-05
-  temperature:
-  - 877 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.4 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 4.398e-05
-  temperature:
-  - 945 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.37 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 3.078e-05
-  temperature:
-  - 991 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.35 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 2.603e-05
-  temperature:
-  - 1029 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.34 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 1.735e-05
-  temperature:
-  - 1069 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.32 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 2.624e-06
-  temperature:
-  - 1107 K
-  - uncertainty-type: absolute
-    uncertainty: 5 K
-    uncertainty-sourcetype: reported
-  residence-time:
-  - 0.31 s
-  pressure: *id001
-  composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 0.0001476
+    temperature:
+      - 746 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.47 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 0.0001005
+    temperature:
+      - 813 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.43 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 6.59e-05
+    temperature:
+      - 877 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.4 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 4.398e-05
+    temperature:
+      - 945 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.37 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 3.078e-05
+    temperature:
+      - 991 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.35 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 2.603e-05
+    temperature:
+      - 1029 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.34 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 1.735e-05
+    temperature:
+      - 1069 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.32 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 2.624e-06
+    temperature:
+      - 1107 K
+      - uncertainty-type: absolute
+        uncertainty: 5 K
+        uncertainty-sourcetype: reported
+    residence-time:
+      - 0.31 s
+    pressure: *id001
+    composition: *id002
 ...

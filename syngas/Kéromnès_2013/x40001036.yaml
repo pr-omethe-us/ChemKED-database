@@ -1,270 +1,275 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/j.combustflame.2013.01.001
   authors:
-  - name: Alan Kéromnès
-  - name: Wayne K Metcalfe
-  - name: Karl A Heufer
-  - name: Nicola Donohoe
-  - name: Apurba K Das
-  - name: Chih-Jen Sung
-  - name: Jürgen Herzler
-  - name: Clemens Naumann
-  - name: Peter Griebel
-  - name: Olivier Mathieu
-  - name: Michael C Krejci
-  - name: Eric L Petersen
-  - name: William J Pitz
-  - name: Henry J Curran
+    - name: Alan Kéromnès
+    - name: Wayne K Metcalfe
+    - name: Karl A Heufer
+    - name: Nicola Donohoe
+    - name: Apurba K Das
+    - name: Chih-Jen Sung
+    - name: Jürgen Herzler
+    - name: Clemens Naumann
+    - name: Peter Griebel
+    - name: Olivier Mathieu
+    - name: Michael C Krejci
+    - name: Eric L Petersen
+    - name: William J Pitz
+    - name: Henry J Curran
   journal: Combust Flame
   year: 2013
   volume: 160
-  pages: 995--1011
+  pages: 995-1011
   detail: Converted from ReSpecTh XML file x40001036.xml
+file-type: experiment
 experiment-type: ignition delay
 apparatus:
   kind: rapid compression machine
   institution: ''
   facility: ''
+comments:
+  - There is discrepancy in initial composition between supplementary material and
+    this file, as the sum of initial composition mole fraction does not equal to 1,
+    this file chose calculated result.
 common-properties:
   composition: &id001
     kind: mole fraction
     species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.14752
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.02603
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.17355
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.32645
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.32645
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.14752
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.02603
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.17355
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.32645
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.32645
   ignition-type: &id002
     target: p;
     type: d/dt max
 datapoints:
-- pressure:
-  - 1152 mbar
-  temperature:
-  - 352 K
-  ignition-delay:
-  - 29 ms
-  - evaluated-standard-deviation: '0.23'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  time-histories:
-  - time:
-      units: s
-      column: 0
-    quantity:
-      units: cm3
-      column: 1
-    type: volume
-    values:
-    - [0.0, 1.0]
-    - [1.0e-06, 0.9784093]
-    - [0.00101018, 0.9738628]
-    - [0.00257399, 0.9143098]
-    - [0.00305795, 0.893043]
-    - [0.00405665, 0.8424096]
-    - [0.00455425, 0.8079241]
-    - [0.00555675, 0.7428957]
-    - [0.00581136, 0.7251775]
-    - [0.00605191, 0.7154125]
-    - [0.00630764, 0.6937374]
-    - [0.00655188, 0.6780154]
-    - [0.00704571, 0.6422809]
-    - [0.00730172, 0.6212113]
-    - [0.00754358, 0.609253]
-    - [0.00779979, 0.5855487]
-    - [0.00804576, 0.5681815]
-    - [0.00829715, 0.5496995]
-    - [0.0090379, 0.4962849]
-    - [0.00954035, 0.4590877]
-    - [0.00978994, 0.4404529]
-    - [0.01003879, 0.422534]
-    - [0.01028518, 0.4054616]
-    - [0.0105338, 0.3871515]
-    - [0.01078491, 0.3682]
-    - [0.0110331, 0.3508295]
-    - [0.01128313, 0.3321052]
-    - [0.01153311, 0.3132324]
-    - [0.0117785, 0.2959299]
-    - [0.01203001, 0.2773808]
-    - [0.01227691, 0.2595124]
-    - [0.01252633, 0.2416295]
-    - [0.0127748, 0.2243829]
-    - [0.0130243, 0.2065213]
-    - [0.01327468, 0.1885943]
-    - [0.01352539, 0.1721493]
-    - [0.0140217, 0.1490292]
-    - [0.01427252, 0.1393864]
-    - [0.01452163, 0.1300617]
-    - [0.01477261, 0.1211129]
-    - [0.01502209, 0.1141845]
-    - [0.01527435, 0.1102558]
-    - [0.01553862, 0.1082593]
-    - [0.01579786, 0.1069605]
-    - [0.01604882, 0.1061881]
-    - [0.01632213, 0.105538]
-    - [0.01658019, 0.1052692]
-    - [0.01735526, 0.1051168]
-    - [0.01853803, 0.1056553]
-    - [0.01950642, 0.1064582]
-    - [0.0200461, 0.1070072]
-    - [0.02273829, 0.1083513]
-    - [0.02426637, 0.1099]
-    - [0.02522272, 0.1108538]
-    - [0.02629631, 0.1116713]
-    - [0.02854001, 0.1125305]
-    - [0.0295101, 0.1130402]
-    - [0.0322896, 0.1150742]
-    - [0.0356763, 0.1161186]
-    - [0.0384805, 0.1176766]
-    - [0.0387632, 0.1178399]
-    - [0.0409882, 0.1184017]
-    - [0.0429797, 0.119078]
-    - [0.0450313, 0.1200516]
-    - [0.0494696, 0.121285]
-    - [0.0512728, 0.1220933]
-    - [0.054484, 0.1229036]
-    - [0.0579696, 0.1240273]
-    - [0.0659601, 0.1263016]
-    - [0.0759213, 0.1288951]
-    - [0.0860155, 0.1312855]
-    - [0.1008476, 0.1343733]
-    - [0.1133043, 0.1366017]
-    - [0.1137758, 0.1368032]
-    - [0.1140318, 0.1367609]
-    - [0.1290868, 0.1391791]
-    - [0.1422265, 0.1410072]
-    - [0.1585052, 0.1430325]
-    - [0.1787835, 0.1451717]
-    - [0.2065827, 0.1478901]
-    - [0.2288179, 0.1499608]
-    - [0.2519961, 0.1520487]
-    - [0.2751374, 0.1540538]
-    - [0.2897269, 0.1554425]
-    - [0.290199, 0.1551793]
-    - [0.2907399, 0.1554322]
-    - [0.3225808, 0.1582226]
-    - [0.3598686, 0.1614125]
-    - [0.3900865, 0.164068]
-    - [0.4230015, 0.1669951]
-    - [0.4267275, 0.1671764]
-    - [0.4271933, 0.1673381]
-  composition: *id001
-  ignition-type: *id002
-- pressure:
-  - 1156 mbar
-  temperature:
-  - 352 K
-  ignition-delay:
-  - 26.98 ms
-  - evaluated-standard-deviation: '0.23'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  ignition-type: *id002
-- pressure:
-  - 1154 mbar
-  temperature:
-  - 352 K
-  ignition-delay:
-  - 26.56 ms
-  - evaluated-standard-deviation: '0.23'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  ignition-type: *id002
-- pressure:
-  - 1157 mbar
-  temperature:
-  - 358 K
-  ignition-delay:
-  - 21.27 ms
-  - evaluated-standard-deviation: '0.23'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  ignition-type: *id002
-- pressure:
-  - 1164 mbar
-  temperature:
-  - 358 K
-  ignition-delay:
-  - 15.6 ms
-  - evaluated-standard-deviation: '0.23'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  ignition-type: *id002
-- pressure:
-  - 1164 mbar
-  temperature:
-  - 358 K
-  ignition-delay:
-  - 15.7 ms
-  - evaluated-standard-deviation: '0.23'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  ignition-type: *id002
-- pressure:
-  - 1168 mbar
-  temperature:
-  - 363 K
-  ignition-delay:
-  - 11 ms
-  - evaluated-standard-deviation: '0.23'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  ignition-type: *id002
-- pressure:
-  - 1165 mbar
-  temperature:
-  - 363 K
-  ignition-delay:
-  - 8.06 ms
-  - evaluated-standard-deviation: '0.23'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  ignition-type: *id002
-- pressure:
-  - 1168 mbar
-  temperature:
-  - 363 K
-  ignition-delay:
-  - 7.45 ms
-  - evaluated-standard-deviation: '0.23'
-    evaluated-standard-deviation-type: relative
-    evaluated-standard-deviation-sourcetype: estimated
-    evaluated-standard-deviation-method: statistical scatter
-  composition: *id001
-  ignition-type: *id002
+  - pressure:
+      - 1152 mbar
+    temperature:
+      - 352 K
+    ignition-delay:
+      - 29 ms
+      - evaluated-standard-deviation: '0.23'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    time-histories:
+      - time:
+          units: s
+          column: 0
+        quantity:
+          units: cm3
+          column: 1
+        type: volume
+        values:
+          - [0.0, 1.0]
+          - [1.0e-06, 0.9784093]
+          - [0.00101018, 0.9738628]
+          - [0.00257399, 0.9143098]
+          - [0.00305795, 0.893043]
+          - [0.00405665, 0.8424096]
+          - [0.00455425, 0.8079241]
+          - [0.00555675, 0.7428957]
+          - [0.00581136, 0.7251775]
+          - [0.00605191, 0.7154125]
+          - [0.00630764, 0.6937374]
+          - [0.00655188, 0.6780154]
+          - [0.00704571, 0.6422809]
+          - [0.00730172, 0.6212113]
+          - [0.00754358, 0.609253]
+          - [0.00779979, 0.5855487]
+          - [0.00804576, 0.5681815]
+          - [0.00829715, 0.5496995]
+          - [0.0090379, 0.4962849]
+          - [0.00954035, 0.4590877]
+          - [0.00978994, 0.4404529]
+          - [0.01003879, 0.422534]
+          - [0.01028518, 0.4054616]
+          - [0.0105338, 0.3871515]
+          - [0.01078491, 0.3682]
+          - [0.0110331, 0.3508295]
+          - [0.01128313, 0.3321052]
+          - [0.01153311, 0.3132324]
+          - [0.0117785, 0.2959299]
+          - [0.01203001, 0.2773808]
+          - [0.01227691, 0.2595124]
+          - [0.01252633, 0.2416295]
+          - [0.0127748, 0.2243829]
+          - [0.0130243, 0.2065213]
+          - [0.01327468, 0.1885943]
+          - [0.01352539, 0.1721493]
+          - [0.0140217, 0.1490292]
+          - [0.01427252, 0.1393864]
+          - [0.01452163, 0.1300617]
+          - [0.01477261, 0.1211129]
+          - [0.01502209, 0.1141845]
+          - [0.01527435, 0.1102558]
+          - [0.01553862, 0.1082593]
+          - [0.01579786, 0.1069605]
+          - [0.01604882, 0.1061881]
+          - [0.01632213, 0.105538]
+          - [0.01658019, 0.1052692]
+          - [0.01735526, 0.1051168]
+          - [0.01853803, 0.1056553]
+          - [0.01950642, 0.1064582]
+          - [0.0200461, 0.1070072]
+          - [0.02273829, 0.1083513]
+          - [0.02426637, 0.1099]
+          - [0.02522272, 0.1108538]
+          - [0.02629631, 0.1116713]
+          - [0.02854001, 0.1125305]
+          - [0.0295101, 0.1130402]
+          - [0.0322896, 0.1150742]
+          - [0.0356763, 0.1161186]
+          - [0.0384805, 0.1176766]
+          - [0.0387632, 0.1178399]
+          - [0.0409882, 0.1184017]
+          - [0.0429797, 0.119078]
+          - [0.0450313, 0.1200516]
+          - [0.0494696, 0.121285]
+          - [0.0512728, 0.1220933]
+          - [0.054484, 0.1229036]
+          - [0.0579696, 0.1240273]
+          - [0.0659601, 0.1263016]
+          - [0.0759213, 0.1288951]
+          - [0.0860155, 0.1312855]
+          - [0.1008476, 0.1343733]
+          - [0.1133043, 0.1366017]
+          - [0.1137758, 0.1368032]
+          - [0.1140318, 0.1367609]
+          - [0.1290868, 0.1391791]
+          - [0.1422265, 0.1410072]
+          - [0.1585052, 0.1430325]
+          - [0.1787835, 0.1451717]
+          - [0.2065827, 0.1478901]
+          - [0.2288179, 0.1499608]
+          - [0.2519961, 0.1520487]
+          - [0.2751374, 0.1540538]
+          - [0.2897269, 0.1554425]
+          - [0.290199, 0.1551793]
+          - [0.2907399, 0.1554322]
+          - [0.3225808, 0.1582226]
+          - [0.3598686, 0.1614125]
+          - [0.3900865, 0.164068]
+          - [0.4230015, 0.1669951]
+          - [0.4267275, 0.1671764]
+          - [0.4271933, 0.1673381]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 1156 mbar
+    temperature:
+      - 352 K
+    ignition-delay:
+      - 26.98 ms
+      - evaluated-standard-deviation: '0.23'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 1154 mbar
+    temperature:
+      - 352 K
+    ignition-delay:
+      - 26.56 ms
+      - evaluated-standard-deviation: '0.23'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 1157 mbar
+    temperature:
+      - 358 K
+    ignition-delay:
+      - 21.27 ms
+      - evaluated-standard-deviation: '0.23'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 1164 mbar
+    temperature:
+      - 358 K
+    ignition-delay:
+      - 15.6 ms
+      - evaluated-standard-deviation: '0.23'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 1164 mbar
+    temperature:
+      - 358 K
+    ignition-delay:
+      - 15.7 ms
+      - evaluated-standard-deviation: '0.23'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 1168 mbar
+    temperature:
+      - 363 K
+    ignition-delay:
+      - 11 ms
+      - evaluated-standard-deviation: '0.23'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 1165 mbar
+    temperature:
+      - 363 K
+    ignition-delay:
+      - 8.06 ms
+      - evaluated-standard-deviation: '0.23'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 1168 mbar
+    temperature:
+      - 363 K
+    ignition-delay:
+      - 7.45 ms
+      - evaluated-standard-deviation: '0.23'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    ignition-type: *id002
 ...

@@ -1,20 +1,21 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/j.combustflame.2010.12.008
   authors:
-  - name: N Leplat
-  - name: P Dagaut
-  - name: C Togbé
-  - name: J Vandooren
+    - name: N Leplat
+    - name: P Dagaut
+    - name: C Togbé
+    - name: J Vandooren
   journal: Combust Flame
   year: 2011
   volume: 158
-  pages: 705--725
+  pages: 705-725
   detail: Converted from ReSpecTh XML file x00003004.xml
+file-type: experiment
 experiment-type: jet stirred reactor measurement
 apparatus:
   kind: stirred reactor
@@ -22,774 +23,1294 @@ apparatus:
   facility: ''
 common-properties:
   pressure: &id001
-  - 1 atm
+    - 1 atm
   reactor-volume: &id002
-  - 30 cm3
+    - 30 cm3
   residence-time: &id003
-  - 0.07 s
+    - 0.07 s
   composition: &id004
     kind: mole fraction
     species:
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 0.002
-      - evaluated-standard-deviation: 8.39e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.003
-      - evaluated-standard-deviation: 0.000363
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.995
+      - species-name: C2H5OH
+        InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+        amount:
+          - 0.002
+          - evaluated-standard-deviation: 8.39e-05
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.003
+          - evaluated-standard-deviation: 0.000363
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.995
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.000106
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 1.25e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 2.1e-06
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 6.0e-07
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 4.86e-07
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 1.53e-06
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 2.07e-06
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 0.0
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 4.8e-05
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 0.00192
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 6.9e-06
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00264
-  temperature:
-  - 890 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.000134
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 1.72e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 3.8e-06
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 2.6e-06
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 1.36e-06
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 2.18e-07
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 5.98e-06
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 0.0
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 8.28e-05
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 0.00189
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 3.55e-06
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00259
-  temperature:
-  - 920 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.000215
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 2.6e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 1.16e-05
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 1.06e-05
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 7.48e-06
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 1.32e-07
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 2.28e-05
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 4.49e-07
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 0.000143
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 0.00164
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 1.94e-05
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.0026
-  temperature:
-  - 951 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.000379
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 3.9e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 5.7e-05
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 3.5e-05
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 1.84e-05
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 2.95e-07
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 4.51e-05
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 2.21e-06
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 0.000235
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 0.00164
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 5.17e-05
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00349
-  temperature:
-  - 980 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.00051
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 5.0e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.000122
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 5.67e-05
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 4.65e-05
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 6.37e-07
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 9.3e-05
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 7.67e-06
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 0.000276
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 0.0014
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000154
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00218
-  temperature:
-  - 1010 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.000628
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 5.45e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.000199
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 7.48e-05
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 8.07e-05
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 9.78e-07
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 0.000147
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 1.51e-05
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 0.000328
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 0.00124
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000274
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00274
-  temperature:
-  - 1040 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.000771
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 5.46e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.000309
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 9.29e-05
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.000116
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 1.72e-06
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 0.000216
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 2.48e-05
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 0.000381
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 0.00115
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000393
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.0026
-  temperature:
-  - 1070 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.000896
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 4.43e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.000461
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 0.000103
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.000173
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 2.79e-06
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 0.000327
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 4.01e-05
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 0.000324
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 0.000915
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000613
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00183
-  temperature:
-  - 1100 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.00107
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 3.62e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.00067
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 0.000106
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.000268
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 8.36e-06
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 0.0005
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 6.58e-05
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 0.000293
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 0.000599
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.000938
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00169
-  temperature:
-  - 1130 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.00123
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 3.7e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.000894
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 9.48e-05
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.000331
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 1.78e-05
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 0.000603
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 8.1e-05
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 0.000217
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 0.000364
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.00122
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00138
-  temperature:
-  - 1160 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.00155
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 5.51e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.00135
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 7.64e-05
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.000434
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 4.64e-05
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 0.000716
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 9.58e-05
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 0.000121
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 0.000185
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.00176
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00124
-  temperature:
-  - 1190 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.00212
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 0.000169
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.00225
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 2.14e-05
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.000407
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 0.00013
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 0.000485
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 5.51e-05
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 0.0
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 2.05e-05
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.00253
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.000638
-  temperature:
-  - 1220 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2O
-      InChI: 1S/H2O/h1H2
-      amount:
-      - 0.00288
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 0.000358
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.00288
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 7.4e-06
-    - species-name: CH4
-      InChI: 1S/CH4/h1H4
-      amount:
-      - 0.000238
-    - species-name: C2H2
-      InChI: 1S/C2H2/c1-2/h1-2H
-      amount:
-      - 0.000184
-    - species-name: C2H4
-      InChI: 1S/C2H4/c1-2/h1-2H2
-      amount:
-      - 0.000195
-    - species-name: C2H6
-      InChI: 1S/C2H6/c1-2/h1-2H3
-      amount:
-      - 1.72e-05
-    - species-name: CH3CHO
-      InChI: 1S/C2H4O/c1-2-3/h2H,1H3
-      amount:
-      - 0.0
-    - species-name: C2H5OH
-      InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-      amount:
-      - 4.8e-06
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.00246
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.00062
-  temperature:
-  - 1250 K
-  pressure: *id001
-  reactor-volume: *id002
-  residence-time: *id003
-  composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.000106
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 1.25e-05
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 2.1e-06
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 6.0e-07
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 4.86e-07
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 1.53e-06
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 2.07e-06
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 4.8e-05
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 0.00192
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 6.9e-06
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00264
+    temperature:
+      - 890 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.000134
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 1.72e-05
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 3.8e-06
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 2.6e-06
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 1.36e-06
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 2.18e-07
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 5.98e-06
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 8.28e-05
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 0.00189
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 3.55e-06
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00259
+    temperature:
+      - 920 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.000215
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 2.6e-05
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 1.16e-05
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 1.06e-05
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 7.48e-06
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 1.32e-07
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 2.28e-05
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 4.49e-07
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 0.000143
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 0.00164
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 1.94e-05
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.0026
+    temperature:
+      - 951 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.000379
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 3.9e-05
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 5.7e-05
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 3.5e-05
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 1.84e-05
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 2.95e-07
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 4.51e-05
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 2.21e-06
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 0.000235
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 0.00164
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 5.17e-05
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00349
+    temperature:
+      - 980 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.00051
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 5.0e-05
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.000122
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 5.67e-05
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 4.65e-05
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 6.37e-07
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 9.3e-05
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 7.67e-06
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 0.000276
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 0.0014
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000154
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00218
+    temperature:
+      - 1010 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.000628
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 5.45e-05
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.000199
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 7.48e-05
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 8.07e-05
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 9.78e-07
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 0.000147
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 1.51e-05
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 0.000328
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 0.00124
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000274
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00274
+    temperature:
+      - 1040 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.000771
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 5.46e-05
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.000309
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 9.29e-05
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 0.000116
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 1.72e-06
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 0.000216
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 2.48e-05
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 0.000381
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 0.00115
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000393
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.0026
+    temperature:
+      - 1070 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.000896
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 4.43e-05
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.000461
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 0.000103
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 0.000173
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 2.79e-06
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 0.000327
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 4.01e-05
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 0.000324
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 0.000915
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000613
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00183
+    temperature:
+      - 1100 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.00107
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 3.62e-05
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.00067
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 0.000106
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 0.000268
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 8.36e-06
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 0.0005
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 6.58e-05
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 0.000293
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 0.000599
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000938
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00169
+    temperature:
+      - 1130 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.00123
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 3.7e-05
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.000894
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 9.48e-05
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 0.000331
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 1.78e-05
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 0.000603
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 8.1e-05
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 0.000217
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 0.000364
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.00122
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00138
+    temperature:
+      - 1160 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.00155
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 5.51e-05
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.00135
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 7.64e-05
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 0.000434
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 4.64e-05
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 0.000716
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 9.58e-05
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 0.000121
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 0.000185
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.00176
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00124
+    temperature:
+      - 1190 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.00212
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 0.000169
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.00225
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 2.14e-05
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 0.000407
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 0.00013
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 0.000485
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 5.51e-05
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 2.05e-05
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.00253
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.000638
+    temperature:
+      - 1220 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2O
+          InChI: 1S/H2O/h1H2
+          amount:
+            - 0.00288
+            - evaluated-standard-deviation: 0.000109
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 0.000358
+            - evaluated-standard-deviation: 3.79e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.00288
+            - evaluated-standard-deviation: 0.0001
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 7.4e-06
+            - evaluated-standard-deviation: 9.8e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 0.000238
+            - evaluated-standard-deviation: 5.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H2
+          InChI: 1S/C2H2/c1-2/h1-2H
+          amount:
+            - 0.000184
+            - evaluated-standard-deviation: 1.23e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H4
+          InChI: 1S/C2H4/c1-2/h1-2H2
+          amount:
+            - 0.000195
+            - evaluated-standard-deviation: 0.000105
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H6
+          InChI: 1S/C2H6/c1-2/h1-2H3
+          amount:
+            - 1.72e-05
+            - evaluated-standard-deviation: 1.37e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: CH3CHO
+          InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 2.17e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 4.8e-06
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.00246
+            - evaluated-standard-deviation: 0.000156
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00062
+    temperature:
+      - 1250 K
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
 ...

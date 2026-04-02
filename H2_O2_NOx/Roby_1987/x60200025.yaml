@@ -1,163 +1,234 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   doi: 10.1016/0010-2180(87)90163-5
   authors:
-  - name: R.J. Roby
-  - name: C.T. Bowman
+    - name: R.J. Roby
+    - name: C.T. Bowman
   journal: Combustion and Flame
   year: 1987
   volume: 70
-  pages: 119--123
+  pages: 119-123
   detail: Converted from ReSpecTh XML file x60200025.xml
+file-type: experiment
 experiment-type: burner stabilized flame speciation measurement
 apparatus:
   kind: flame
   institution: ''
   facility: ''
   mode: burner-stabilized
+comments:
+  - The inlet gas temperature was not reported. The estimation (950 K) was based on
+    a similar flame reported by R. J. Martin et al., Combust. Flame. 80 (1990) 238-255.
+  - 'Details of the estimation: In the flame by Roby T_max = 1600 K, same in the flame
+    by Martin wich has 970 K burner surface temperature. This Roby article also says
+    the levels of additives (NO) produced temperature perturbations of less than 30
+    K.'
+  - 'The flow rate (F) was calculated by the following data and formula: M_average
+    = 0.02929 kg/mol, l_meas = 0.01 m, t = 0.005 s, p = 101325 Pa, R = 8.314 Pa m^3
+    mol^-1 K^-1, T = 1520 K; F[kg m-2 s-1] = M_average * l_meas * p / t / R / T.'
+  - 'Details of the estimation: Species and temperature measurements were made at
+    positions from 1.0 mm to 10.0 mm above the burner surface, corresponding to reaction
+    times from 0.5 ms to 5.0 ms. Over this range of positions, temperatures decreased
+    from 1601K to 1498K. (from paper)'
+  - 'I assumed the flame reaches 10 mm above the burner in 5 ms and the mean temperature
+    in this volume is 1520 K. (Based on the reported and estimated data: 950 K at
+    0 mm, 1600 K at 1 mm, 1500 K at 10 mm.)'
+  - 'The temperature profile is estimated with linear interpolation based on the main
+    text: Species and temperature measurements were made at positions from 1.0 mm
+    to 10.0 mm above the burner surface, corresponding to reaction times from 0.5
+    ms to 5.0 ms. Over this range of positions, temperatures decreased from 1601K
+    to 1498K. (from paper)'
 common-properties:
   equivalence-ratio: &id001
-  - 1.6 dimensionless
+    - 1.6 dimensionless
   temperature:
-  - 950 K
+    - 950 K
   pressure: &id002
-  - 1 atm
+    - 1 atm
   flow-rate: &id003
-  - 0.47 kg m-2 s-1
+    - 0.47 kg m-2 s-1
   composition: &id004
     kind: mole fraction
     species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.2624
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.0819
-    - species-name: Ar
-      InChI: 1S/Ar
-      amount:
-      - 0.654
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.00175
-      - evaluated-standard-deviation: 0.000131
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.2624
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0819
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.654
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.00175
+          - evaluated-standard-deviation: 0.000131
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 8.897e-05
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.001309
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0002824
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 9.633e-06
-  distance:
-  - 1.018 mm
-  temperature:
-  - 1601 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 6.359e-05
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.001303
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0002573
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 1.469e-05
-  distance:
-  - 2.01 mm
-  temperature:
-  - 1589 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 2.387e-05
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.001263
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0002782
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 8.259e-06
-  distance:
-  - 5.028 mm
-  temperature:
-  - 1555 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: NH3
-      InChI: 1S/H3N/h1H3
-      amount:
-      - 1.084e-05
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.001251
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.0002582
-    - species-name: N2O
-      InChI: 1S/N2O/c1-2-3
-      amount:
-      - 5.16e-06
-  distance:
-  - 10.03 mm
-  temperature:
-  - 1498 K
-  equivalence-ratio: *id001
-  pressure: *id002
-  flow-rate: *id003
-  composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 8.897e-05
+            - evaluated-standard-deviation: 9.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.001309
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0002824
+            - evaluated-standard-deviation: 2.8e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 9.633e-06
+            - evaluated-standard-deviation: 3.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 1.018 mm
+    temperature:
+      - 1601 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 6.359e-05
+            - evaluated-standard-deviation: 9.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.001303
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0002573
+            - evaluated-standard-deviation: 2.8e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 1.469e-05
+            - evaluated-standard-deviation: 3.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 2.01 mm
+    temperature:
+      - 1589 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 2.387e-05
+            - evaluated-standard-deviation: 9.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.001263
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0002782
+            - evaluated-standard-deviation: 2.8e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 8.259e-06
+            - evaluated-standard-deviation: 3.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 5.028 mm
+    temperature:
+      - 1555 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 1.084e-05
+            - evaluated-standard-deviation: 9.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.001251
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.0002582
+            - evaluated-standard-deviation: 2.8e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+        - species-name: N2O
+          InChI: 1S/N2O/c1-2-3
+          amount:
+            - 5.16e-06
+            - evaluated-standard-deviation: 3.0e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: statistical scatter
+    distance:
+      - 10.03 mm
+    temperature:
+      - 1498 K
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
 ...

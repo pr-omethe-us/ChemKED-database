@@ -1,532 +1,864 @@
 ---
 file-authors:
-- name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
 file-version: 0
 chemked-version: 0.4.1
 reference:
   authors:
-  - name: M. Jazbec et al.
+    - name: M. Jazbec et al.
   journal: 'Proceedings of the 5th Asia-Pacific Conference on Combustion: The University
     of Adelaide, Adelaide, Australia, 17-20 July, 2005'
   year: 2005
-  pages: 245--248
+  pages: 245-248
   detail: Converted from ReSpecTh XML file x30202013.xml
+file-type: experiment
 experiment-type: outlet concentration measurement
 apparatus:
   kind: flow reactor
   institution: ''
   facility: ''
   mode: laminar
+comments:
+  - 'The residence times were estimated with interrpolation based on the following
+    reported data: The reaction was studied in the temperature range of 573-1023 K
+    (with residence times of 2.3-4.2 s)'
 common-properties:
   pressure: &id001
-  - 1 atm
+    - 1 atm
   composition: &id002
     kind: mole fraction
     species:
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.00045
-      - evaluated-standard-deviation: 2.08e-05
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: O2
-      InChI: 1S/O2/c1-2
-      amount:
-      - 0.001
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 0.0001
-      - evaluated-standard-deviation: 5.1e-06
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
-    - species-name: N2
-      InChI: 1S/N2/c1-2
-      amount:
-      - 0.99845
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.00045
+          - evaluated-standard-deviation: 2.08e-05
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.001
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.0001
+          - evaluated-standard-deviation: 5.1e-06
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.99845
 datapoints:
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.0
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.0004
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 1.932e-06
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 9.082e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 0.0
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 4.808e-07
-  temperature:
-  - 573 K
-  residence-time:
-  - 4.2 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 0.0
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.0
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.0003853
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 6.763e-06
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 8.599e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 0.0
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 4.808e-07
-  temperature:
-  - 773 K
-  residence-time:
-  - 3.35 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 1.449e-06
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 1.887e-05
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.000312
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 2.899e-05
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 6.329e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 4.386e-06
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 5.721e-05
-  temperature:
-  - 823 K
-  residence-time:
-  - 3.15 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 5.797e-06
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.0001075
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.0002073
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 3.285e-05
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 5.942e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 1.316e-05
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 6.827e-05
-  temperature:
-  - 843 K
-  residence-time:
-  - 3.06 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 1.159e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.0002038
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.0001026
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 1.014e-05
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 8.164e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 3.509e-05
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 1.01e-05
-  temperature:
-  - 863 K
-  residence-time:
-  - 2.97 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 1.449e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.0002189
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 8.796e-05
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 1.256e-05
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 7.971e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 3.728e-05
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 4.808e-07
-  temperature:
-  - 873 K
-  residence-time:
-  - 2.93 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 1.884e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.0002321
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 7.539e-05
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 5.797e-06
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 8.599e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 3.947e-05
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 4.808e-07
-  temperature:
-  - 887 K
-  residence-time:
-  - 2.87 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 3.188e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.0002528
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 5.236e-05
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 3.865e-06
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 8.792e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 4.167e-05
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 0.0
-  temperature:
-  - 923 K
-  residence-time:
-  - 2.72 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 3.478e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.0002679
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 2.513e-05
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 1.932e-06
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 9.034e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 5.921e-05
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 0.0
-  temperature:
-  - 933 K
-  residence-time:
-  - 2.68 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 2.609e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.0002642
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.0
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 1.449e-06
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 9.034e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 8.553e-05
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 4.808e-07
-  temperature:
-  - 943 K
-  residence-time:
-  - 2.64 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 1.594e-05
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.0002453
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.0
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 1.449e-06
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 9.034e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 0.0001272
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 4.808e-07
-  temperature:
-  - 973 K
-  residence-time:
-  - 2.51 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 4.348e-06
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.0002189
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.0
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 1.932e-06
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 8.986e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 0.0001689
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 4.808e-07
-  temperature:
-  - 992 K
-  residence-time:
-  - 2.43 s
-  pressure: *id001
-  composition: *id002
-- measured-composition:
-    kind: mole fraction
-    species:
-    - species-name: H2
-      InChI: 1S/H2/h1H
-      amount:
-      - 1.449e-06
-    - species-name: CO
-      InChI: 1S/CO/c1-2
-      amount:
-      - 0.0001962
-    - species-name: CH3OH
-      InChI: 1S/CH4O/c1-2/h2H,1H3
-      amount:
-      - 0.0
-    - species-name: NO2
-      InChI: 1S/NO2/c2-1-3
-      amount:
-      - 9.662e-07
-    - species-name: 'NO'
-      InChI: 1S/NO/c1-2
-      amount:
-      - 9.082e-05
-    - species-name: CO2
-      InChI: 1S/CO2/c2-1-3
-      amount:
-      - 0.0001952
-    - species-name: CH2O
-      InChI: 1S/CH2O/c1-2/h1H2
-      amount:
-      - 4.808e-07
-  temperature:
-  - 1023 K
-  residence-time:
-  - 2.3 s
-  pressure: *id001
-  composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 0.0004
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 1.932e-06
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 9.082e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 4.808e-07
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 573 K
+    residence-time:
+      - 4.2 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 0.0003853
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 6.763e-06
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 8.599e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 4.808e-07
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 773 K
+    residence-time:
+      - 3.35 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 1.449e-06
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 1.887e-05
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 0.000312
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 2.899e-05
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 6.329e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 4.386e-06
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 5.721e-05
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 823 K
+    residence-time:
+      - 3.15 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 5.797e-06
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.0001075
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 0.0002073
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 3.285e-05
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 5.942e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 1.316e-05
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 6.827e-05
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 843 K
+    residence-time:
+      - 3.06 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 1.159e-05
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.0002038
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 0.0001026
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 1.014e-05
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 8.164e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 3.509e-05
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 1.01e-05
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 863 K
+    residence-time:
+      - 2.97 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 1.449e-05
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.0002189
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 8.796e-05
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 1.256e-05
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 7.971e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 3.728e-05
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 4.808e-07
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 873 K
+    residence-time:
+      - 2.93 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 1.884e-05
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.0002321
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 7.539e-05
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 5.797e-06
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 8.599e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 3.947e-05
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 4.808e-07
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 887 K
+    residence-time:
+      - 2.87 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 3.188e-05
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.0002528
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 5.236e-05
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 3.865e-06
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 8.792e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 4.167e-05
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 923 K
+    residence-time:
+      - 2.72 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 3.478e-05
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.0002679
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 2.513e-05
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 1.932e-06
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 9.034e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 5.921e-05
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 0.0
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 933 K
+    residence-time:
+      - 2.68 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 2.609e-05
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.0002642
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 0.0
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 1.449e-06
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 9.034e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 8.553e-05
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 4.808e-07
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 943 K
+    residence-time:
+      - 2.64 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 1.594e-05
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.0002453
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 0.0
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 1.449e-06
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 9.034e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 0.0001272
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 4.808e-07
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 973 K
+    residence-time:
+      - 2.51 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 4.348e-06
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.0002189
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 0.0
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 1.932e-06
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 8.986e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 0.0001689
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 4.808e-07
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 992 K
+    residence-time:
+      - 2.43 s
+    pressure: *id001
+    composition: *id002
+  - measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 1.449e-06
+            - evaluated-standard-deviation: 2.42e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.0001962
+            - evaluated-standard-deviation: 1.28e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 0.0
+        - species-name: NO2
+          InChI: 1S/NO2/c2-1-3
+          amount:
+            - 9.662e-07
+            - evaluated-standard-deviation: 3.17e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 9.082e-05
+        - species-name: CO2
+          InChI: 1S/CO2/c2-1-3
+          amount:
+            - 0.0001952
+            - evaluated-standard-deviation: 1.33e-05
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: CH2O
+          InChI: 1S/CH2O/c1-2/h1H2
+          amount:
+            - 4.808e-07
+            - evaluated-standard-deviation: 6.15e-06
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+    temperature:
+      - 1023 K
+    residence-time:
+      - 2.3 s
+    pressure: *id001
+    composition: *id002
 ...
