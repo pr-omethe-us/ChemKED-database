@@ -15,7 +15,6 @@ reference:
   volume: 77
   pages: 109-117
   detail: Converted from ReSpecTh XML file x60200007.xml
-file-type: experiment
 experiment-type: burner stabilized flame speciation measurement
 apparatus:
   kind: flame
@@ -52,7 +51,7 @@ common-properties:
   pressure: &id002
     - 1 atm
   flow-rate: &id003
-    - 0.01 g cm-2 s-1
+    - 0.01 g * cm**-2 * s**-1
   composition: &id004
     kind: mole fraction
     species:
@@ -87,6 +86,10 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.08
               uncertainty-sourcetype: calculated
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.999838
     distance:
       - 5 mm
     temperature:
