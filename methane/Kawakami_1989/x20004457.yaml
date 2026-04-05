@@ -1,0 +1,72 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/S0082-0784(89)80172-9
+  authors:
+    - name: T. Kawakami
+    - name: S. Okajima
+    - name: K. Iinuma
+  journal: Symposium (International) on Combustion
+  year: 1989
+  volume: 22
+  pages: 1609-1613
+  detail: Converted from ReSpecTh XML file x20004457.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: flame
+  institution: ''
+  facility: ''
+  mode: premixed
+common-properties:
+  temperature: &id001
+    - 298 K
+  composition: &id002
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.059266228
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.197554092
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.74317968
+datapoints:
+  - pressure:
+      - 99378.8 Pa
+    laminar-burning-velocity:
+      - 8.6995 cm/s
+      - evaluated-standard-deviation: 1.20550974307 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
+    temperature: *id001
+    composition: *id002
+  - pressure:
+      - 199885 Pa
+    laminar-burning-velocity:
+      - 5.3333 cm/s
+      - evaluated-standard-deviation: 1.15549154572 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
+    temperature: *id001
+    composition: *id002
+  - pressure:
+      - 399073 Pa
+    laminar-burning-velocity:
+      - 2.8415 cm/s
+      - evaluated-standard-deviation: 1.13324127865 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
+    temperature: *id001
+    composition: *id002
+...

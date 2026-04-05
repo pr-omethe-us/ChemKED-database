@@ -1,0 +1,91 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1007/BF00749026
+  authors:
+    - name: V. S. Babkin
+    - name: L. S. Kozachenko
+  journal: Combustion, Explosion and Shock Waves
+  year: 1966
+  volume: 2
+  pages: 46-52
+  detail: Converted from ReSpecTh XML file x20004272.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: flame
+  institution: ''
+  facility: ''
+  mode: premixed
+common-properties:
+  temperature: &id001
+    - 373 K
+  composition: &id002
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.08
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.1932
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.7268
+datapoints:
+  - pressure:
+      - 1.015968 atm
+    laminar-burning-velocity:
+      - 35.34598 cm/s
+      - evaluated-standard-deviation: 2.24270672933 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
+    temperature: *id001
+    composition: *id002
+  - pressure:
+      - 2.553995 atm
+    laminar-burning-velocity:
+      - 28.15399 cm/s
+      - evaluated-standard-deviation: 1.97180262722 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
+    temperature: *id001
+    composition: *id002
+  - pressure:
+      - 8.16714 atm
+    laminar-burning-velocity:
+      - 20.10203 cm/s
+      - evaluated-standard-deviation: 1.70781051165 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
+    temperature: *id001
+    composition: *id002
+  - pressure:
+      - 23.47902 atm
+    laminar-burning-velocity:
+      - 10.11859 cm/s
+      - evaluated-standard-deviation: 1.47049392293 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
+    temperature: *id001
+    composition: *id002
+  - pressure:
+      - 71.86212 atm
+    laminar-burning-velocity:
+      - 5.197805 cm/s
+      - evaluated-standard-deviation: 1.4049664268 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and estimated uncertainty
+    temperature: *id001
+    composition: *id002
+...
