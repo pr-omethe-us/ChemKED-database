@@ -21,7 +21,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock
+  mode:
+    - reflected shock
 common-properties:
   equivalence-ratio: &id001
     - 0.5 dimensionless
@@ -40,6 +41,11 @@ common-properties:
         InChI: 1S/N2/c1-2
         amount:
           - 0.7506
+  ignition-delay:
+    - evaluated-standard-deviation: '0.108'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
   ignition-type: &id003
     target: pressure
     type: relative concentration
@@ -51,10 +57,6 @@ datapoints:
       - 1430 K
     ignition-delay:
       - 8 us
-      - evaluated-standard-deviation: '0.108'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     equivalence-ratio: *id001
     composition: *id002
     ignition-type: *id003
@@ -64,10 +66,6 @@ datapoints:
       - 1375.5 K
     ignition-delay:
       - 14 us
-      - evaluated-standard-deviation: '0.108'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     equivalence-ratio: *id001
     composition: *id002
     ignition-type: *id003
@@ -77,10 +75,6 @@ datapoints:
       - 1325 K
     ignition-delay:
       - 26.5 us
-      - evaluated-standard-deviation: '0.108'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     equivalence-ratio: *id001
     composition: *id002
     ignition-type: *id003
@@ -90,10 +84,6 @@ datapoints:
       - 1264 K
     ignition-delay:
       - 62 us
-      - evaluated-standard-deviation: '0.108'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     equivalence-ratio: *id001
     composition: *id002
     ignition-type: *id003
@@ -103,10 +93,6 @@ datapoints:
       - 1223 K
     ignition-delay:
       - 192 us
-      - evaluated-standard-deviation: '0.108'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     equivalence-ratio: *id001
     composition: *id002
     ignition-type: *id003
@@ -116,10 +102,6 @@ datapoints:
       - 1180 K
     ignition-delay:
       - 597 us
-      - evaluated-standard-deviation: '0.108'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     equivalence-ratio: *id001
     composition: *id002
     ignition-type: *id003
@@ -129,10 +111,6 @@ datapoints:
       - 1167.5 K
     ignition-delay:
       - 1079 us
-      - evaluated-standard-deviation: '0.108'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     equivalence-ratio: *id001
     composition: *id002
     ignition-type: *id003

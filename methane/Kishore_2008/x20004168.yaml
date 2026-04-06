@@ -20,12 +20,19 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
 common-properties:
   pressure: &id001
     - 1 bar
   temperature: &id002
     - 307 K
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 0.5 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -48,10 +55,6 @@ datapoints:
             - 0.1049697
     laminar-burning-velocity:
       - 11.05022 cm/s
-      - evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     temperature: *id002
   - composition:
@@ -75,10 +78,6 @@ datapoints:
             - 0.1156202
     laminar-burning-velocity:
       - 13.70125 cm/s
-      - evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     temperature: *id002
   - composition:
@@ -102,10 +101,6 @@ datapoints:
             - 0.1257296
     laminar-burning-velocity:
       - 14.65715 cm/s
-      - evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     temperature: *id002
   - composition:
@@ -129,10 +124,6 @@ datapoints:
             - 0.1355144
     laminar-burning-velocity:
       - 13.99439 cm/s
-      - evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     temperature: *id002
   - composition:
@@ -156,10 +147,6 @@ datapoints:
             - 0.1448193
     laminar-burning-velocity:
       - 10.83355 cm/s
-      - evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     temperature: *id002
 ...

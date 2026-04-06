@@ -20,7 +20,9 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
 common-properties:
   temperature: &id001
     - 295 K
@@ -39,55 +41,40 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.6471
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 2 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
 datapoints:
   - pressure:
       - 1 atm
     laminar-burning-velocity:
       - 99.5 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     composition: *id002
   - pressure:
       - 5 atm
     laminar-burning-velocity:
       - 71.3 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     composition: *id002
   - pressure:
       - 10 atm
     laminar-burning-velocity:
       - 46 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     composition: *id002
   - pressure:
       - 15 atm
     laminar-burning-velocity:
       - 28.7 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     composition: *id002
   - pressure:
       - 20 atm
     laminar-burning-velocity:
       - 19.6 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     composition: *id002
 ...

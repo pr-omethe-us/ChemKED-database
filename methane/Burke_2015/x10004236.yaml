@@ -46,6 +46,11 @@ common-properties:
           - 0.76578
   pressure-rise: &id003
     - 0.02 1/ms
+  ignition-delay:
+    - evaluated-standard-deviation: '0.1'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
   ignition-type: &id004
     target: pressure
     type: d/dt min extrapolated
@@ -54,10 +59,6 @@ datapoints:
       - 1316.6 K
     ignition-delay:
       - 569.64 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     pressure-rise: *id003
@@ -66,10 +67,6 @@ datapoints:
       - 1258.8 K
     ignition-delay:
       - 955.43 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     pressure-rise: *id003
@@ -78,10 +75,6 @@ datapoints:
       - 1224.8 K
     ignition-delay:
       - 1348.3 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     pressure-rise: *id003
@@ -90,10 +83,6 @@ datapoints:
       - 1193.1 K
     ignition-delay:
       - 1569.4 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     pressure-rise: *id003

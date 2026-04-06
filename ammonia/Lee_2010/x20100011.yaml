@@ -21,7 +21,12 @@ apparatus:
   kind: outwardly propagating spherical flame
   institution: ''
   facility: ''
-  mode: constant volume combustion chamber
+  mode:
+    - constant volume combustion chamber
+    - premixed
+    - laminar
+    - unstretched
+    - 'extrapolation method to zero stretch: LS'
 comments:
   - 'The calculation of the compositions of the initial gas mixtures was based on
     two assumptions: 1) x_O2 = (0.5 x_H2 + 0.75 x_NH3) / phi; 2) air = 79% N2 + 21%
@@ -36,6 +41,11 @@ common-properties:
       uncertainty-sourcetype: reported
   pressure: &id003
     - 1 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 1.457 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -61,10 +71,6 @@ datapoints:
       - uncertainty-type: relative
         uncertainty: '0.1'
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.457 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio: *id001
     temperature: *id002
     pressure: *id003

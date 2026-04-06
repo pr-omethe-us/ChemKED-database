@@ -22,7 +22,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock
+  mode:
+    - reflected shock
 common-properties:
   composition: &id001
     kind: mole fraction
@@ -39,6 +40,11 @@ common-properties:
         InChI: 1S/N2/c1-2
         amount:
           - 0.6929
+  ignition-delay:
+    - evaluated-standard-deviation: '0.196'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   ignition-type: &id002
     target: pressure
     type: d/dt min extrapolated
@@ -49,10 +55,6 @@ datapoints:
       - 1042 K
     ignition-delay:
       - 986 us
-      - evaluated-standard-deviation: '0.196'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -61,10 +63,6 @@ datapoints:
       - 1139 K
     ignition-delay:
       - 344 us
-      - evaluated-standard-deviation: '0.196'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -73,10 +71,6 @@ datapoints:
       - 1171 K
     ignition-delay:
       - 247 us
-      - evaluated-standard-deviation: '0.196'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -85,10 +79,6 @@ datapoints:
       - 1237 K
     ignition-delay:
       - 105 us
-      - evaluated-standard-deviation: '0.196'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -97,10 +87,6 @@ datapoints:
       - 1280 K
     ignition-delay:
       - 54 us
-      - evaluated-standard-deviation: '0.196'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
     ignition-type: *id002
 ...

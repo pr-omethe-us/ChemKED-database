@@ -23,7 +23,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock
+  mode:
+    - reflected shock
 common-properties:
   composition: &id001
     kind: mole fraction
@@ -40,6 +41,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.965
+  ignition-delay:
+    - evaluated-standard-deviation: '0.1'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
   ignition-type: &id002
     target: OHEX
     type: d/dt min extrapolated
@@ -48,10 +54,6 @@ datapoints:
       - 1426 K
     ignition-delay:
       - 628 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 1.35 bar
     composition: *id001
@@ -60,10 +62,6 @@ datapoints:
       - 1513 K
     ignition-delay:
       - 273 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 1.31 bar
     composition: *id001
@@ -72,10 +70,6 @@ datapoints:
       - 1561 K
     ignition-delay:
       - 214 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 1.27 bar
     composition: *id001
@@ -84,10 +78,6 @@ datapoints:
       - 1650 K
     ignition-delay:
       - 134 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 1.21 bar
     composition: *id001

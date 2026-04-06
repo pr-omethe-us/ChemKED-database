@@ -33,6 +33,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.5519
+  ignition-delay:
+    - evaluated-standard-deviation: '0.118'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
   ignition-type: &id002
     target: pressure
     type: d/dt max
@@ -43,10 +48,6 @@ datapoints:
       - 362.55 K
     ignition-delay:
       - 101.5 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     time-histories:
       - time:
           units: ms
@@ -174,6 +175,15 @@ datapoints:
           - [1679.08, 10.40533]
           - [1760.08, 10.30477]
           - [1843.08, 10.20746]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 800 Torr
+    temperature:
+      - 362.75 K
+    ignition-delay:
+      - 85.64 ms
+    time-histories:
       - time:
           units: ms
           column: 0
@@ -300,6 +310,15 @@ datapoints:
           - [1671.6, 9.068575]
           - [1752.6, 8.97775]
           - [1835.6, 8.899901]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 800 Torr
+    temperature:
+      - 362.85 K
+    ignition-delay:
+      - 79.96 ms
+    time-histories:
       - time:
           units: ms
           column: 0
@@ -431,37 +450,9 @@ datapoints:
   - pressure:
       - 800 Torr
     temperature:
-      - 362.75 K
-    ignition-delay:
-      - 85.64 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
-    composition: *id001
-    ignition-type: *id002
-  - pressure:
-      - 800 Torr
-    temperature:
-      - 362.85 K
-    ignition-delay:
-      - 79.96 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
-    composition: *id001
-    ignition-type: *id002
-  - pressure:
-      - 800 Torr
-    temperature:
       - 363.15 K
     ignition-delay:
       - 76.37 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -470,10 +461,6 @@ datapoints:
       - 363.35 K
     ignition-delay:
       - 74.54 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -482,10 +469,6 @@ datapoints:
       - 363.55 K
     ignition-delay:
       - 69.38 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -494,10 +477,6 @@ datapoints:
       - 363.85 K
     ignition-delay:
       - 70.38 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -506,10 +485,6 @@ datapoints:
       - 364.15 K
     ignition-delay:
       - 68 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -518,10 +493,6 @@ datapoints:
       - 364.45 K
     ignition-delay:
       - 65.96 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -530,10 +501,6 @@ datapoints:
       - 364.85 K
     ignition-delay:
       - 64.36 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -542,10 +509,6 @@ datapoints:
       - 365.15 K
     ignition-delay:
       - 63.38 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -554,10 +517,6 @@ datapoints:
       - 365.15 K
     ignition-delay:
       - 69.66 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -566,10 +525,6 @@ datapoints:
       - 364.45 K
     ignition-delay:
       - 117.27 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -578,10 +533,6 @@ datapoints:
       - 363.05 K
     ignition-delay:
       - 130.72 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -590,10 +541,6 @@ datapoints:
       - 363.05 K
     ignition-delay:
       - 114.77 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -602,10 +549,6 @@ datapoints:
       - 363.15 K
     ignition-delay:
       - 107.68 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -614,10 +557,6 @@ datapoints:
       - 363.35 K
     ignition-delay:
       - 106.8 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -626,10 +565,6 @@ datapoints:
       - 363.55 K
     ignition-delay:
       - 101.06 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -638,10 +573,6 @@ datapoints:
       - 363.75 K
     ignition-delay:
       - 154.5 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -650,10 +581,6 @@ datapoints:
       - 363.95 K
     ignition-delay:
       - 146.9 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -662,10 +589,6 @@ datapoints:
       - 364.25 K
     ignition-delay:
       - 145.2 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -674,10 +597,6 @@ datapoints:
       - 364.55 K
     ignition-delay:
       - 140.2 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -686,10 +605,6 @@ datapoints:
       - 364.75 K
     ignition-delay:
       - 135.2 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -698,10 +613,6 @@ datapoints:
       - 365.05 K
     ignition-delay:
       - 136.55 ms
-      - evaluated-standard-deviation: '0.118'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
 ...

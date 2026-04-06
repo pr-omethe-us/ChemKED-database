@@ -22,7 +22,10 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - OPF
 comments:
   - Sl values reported in the paper were corrected by multiplication with factor 1.055
     in accordance with the recommendations of Alekseev et al., Combust. Sci. Technol.
@@ -32,6 +35,11 @@ common-properties:
     - 338 K
   pressure: &id002
     - 1 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 1 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -53,10 +61,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.5 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio:
       - 0.7 dimensionless
     temperature: *id001
@@ -81,10 +85,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.6 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio:
       - 0.8 dimensionless
     temperature: *id001
@@ -109,10 +109,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.7 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio:
       - 0.9 dimensionless
     temperature: *id001
@@ -137,10 +133,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.8 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio:
       - 1 dimensionless
     temperature: *id001
@@ -165,10 +157,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.7 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio:
       - 1.1 dimensionless
     temperature: *id001
@@ -193,10 +181,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.8 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio:
       - 1.2 dimensionless
     temperature: *id001
@@ -221,10 +205,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.9 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio:
       - 1.3 dimensionless
     temperature: *id001
@@ -249,10 +229,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.9 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio:
       - 1.4 dimensionless
     temperature: *id001
@@ -277,10 +253,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.1 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio:
       - 1.5 dimensionless
     temperature: *id001

@@ -21,7 +21,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock
+  mode:
+    - reflected shock
 common-properties:
   composition: &id001
     kind: mole fraction
@@ -42,6 +43,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.295
+  ignition-delay:
+    - evaluated-standard-deviation: '0.242'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   ignition-type: &id002
     target: OHEX
     type: max
@@ -50,10 +56,6 @@ datapoints:
       - 1750 K
     ignition-delay:
       - 504 us
-      - evaluated-standard-deviation: '0.242'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure:
       - 0.944 atm
     composition: *id001
@@ -62,10 +64,6 @@ datapoints:
       - 1797 K
     ignition-delay:
       - 309 us
-      - evaluated-standard-deviation: '0.242'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure:
       - 0.866 atm
     composition: *id001
@@ -74,10 +72,6 @@ datapoints:
       - 1920 K
     ignition-delay:
       - 172.5 us
-      - evaluated-standard-deviation: '0.242'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure:
       - 0.833 atm
     composition: *id001

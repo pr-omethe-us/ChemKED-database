@@ -19,7 +19,10 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - HFM
 comments:
   - The number of experimental points and the pressure value in this file are different
     from one of figure in original paper, but existing data are from author (maybe
@@ -29,6 +32,11 @@ common-properties:
     - 298 K
   pressure: &id002
     - 0.955 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 2 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -51,10 +59,6 @@ datapoints:
             - 0.737467
     laminar-burning-velocity:
       - 23.06 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -78,10 +82,6 @@ datapoints:
             - 0.737456
     laminar-burning-velocity:
       - 25.16 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -105,10 +105,6 @@ datapoints:
             - 0.737456
     laminar-burning-velocity:
       - 30.27 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -132,10 +128,6 @@ datapoints:
             - 0.737456
     laminar-burning-velocity:
       - 32.23 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     pressure: *id002
 ...

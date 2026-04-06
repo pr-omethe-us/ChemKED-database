@@ -11,20 +11,28 @@ reference:
     - name: H. Pitsch
   journal: Fuel
   year: 2014
+  volume: 117
   pages: 340-350
   detail: Converted from ReSpecTh XML file x20002088.xml
-  volume: 117
 experiment-type: laminar burning velocity measurement
 apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - OPF
 common-properties:
   temperature: &id001
     - 373 K
   pressure: &id002
     - 10 bar
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 1.37 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -46,10 +54,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.5 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 1.37 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.712 dimensionless
     temperature: *id001
@@ -74,10 +78,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.59 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 1.37 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.816 dimensionless
     temperature: *id001
@@ -102,10 +102,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.5 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 1.37 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.918 dimensionless
     temperature: *id001
@@ -130,10 +126,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.68 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 1.37 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.016 dimensionless
     temperature: *id001
@@ -158,10 +150,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.13 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 1.37 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.124 dimensionless
     temperature: *id001
@@ -186,10 +174,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.36 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 1.37 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.221 dimensionless
     temperature: *id001
@@ -214,10 +198,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.13 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 1.37 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.326 dimensionless
     temperature: *id001

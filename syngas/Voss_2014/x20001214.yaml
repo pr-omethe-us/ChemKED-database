@@ -19,13 +19,21 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - HFM
 comments:
   - The pressure value in this file are different from one in original paper, but
     existing data are from author (maybe original data records are more accurate).
 common-properties:
   temperature: &id001
     - 298 K
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 2 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -50,10 +58,6 @@ datapoints:
       - 0.943 atm
     laminar-burning-velocity:
       - 10.78 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -78,10 +82,6 @@ datapoints:
       - 0.943 atm
     laminar-burning-velocity:
       - 14.83 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -106,10 +106,6 @@ datapoints:
       - 0.943 atm
     laminar-burning-velocity:
       - 19.76 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -134,10 +130,6 @@ datapoints:
       - 0.943 atm
     laminar-burning-velocity:
       - 24.68 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -162,10 +154,6 @@ datapoints:
       - 0.955 atm
     laminar-burning-velocity:
       - 30.27 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -190,10 +178,6 @@ datapoints:
       - 0.942 atm
     laminar-burning-velocity:
       - 33.31 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -218,10 +202,6 @@ datapoints:
       - 0.955 atm
     laminar-burning-velocity:
       - 37.18 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -246,10 +226,6 @@ datapoints:
       - 0.955 atm
     laminar-burning-velocity:
       - 38.71 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -274,10 +250,6 @@ datapoints:
       - 0.955 atm
     laminar-burning-velocity:
       - 38.59 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -302,9 +274,5 @@ datapoints:
       - 0.955 atm
     laminar-burning-velocity:
       - 36.94 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
 ...

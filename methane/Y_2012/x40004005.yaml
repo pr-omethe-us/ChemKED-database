@@ -33,6 +33,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.47101
+  ignition-delay:
+    - evaluated-standard-deviation: '0.125'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
   ignition-type: &id002
     target: pressure
     type: d/dt max
@@ -43,10 +48,6 @@ datapoints:
       - 364.65 K
     ignition-delay:
       - 215.1 ms
-      - evaluated-standard-deviation: '0.125'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     time-histories:
       - time:
           units: ms
@@ -180,10 +181,6 @@ datapoints:
       - 363.55 K
     ignition-delay:
       - 231.6 ms
-      - evaluated-standard-deviation: '0.125'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -192,10 +189,6 @@ datapoints:
       - 363.15 K
     ignition-delay:
       - 228.4 ms
-      - evaluated-standard-deviation: '0.125'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -204,10 +197,6 @@ datapoints:
       - 363.05 K
     ignition-delay:
       - 213.1 ms
-      - evaluated-standard-deviation: '0.125'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -216,10 +205,6 @@ datapoints:
       - 363.05 K
     ignition-delay:
       - 200.2 ms
-      - evaluated-standard-deviation: '0.125'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     ignition-type: *id002
 ...

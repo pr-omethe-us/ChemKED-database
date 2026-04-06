@@ -23,7 +23,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock
+  mode:
+    - reflected shock
 common-properties:
   composition: &id001
     kind: mole fraction
@@ -40,6 +41,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.98
+  ignition-delay:
+    - evaluated-standard-deviation: '0.1'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
   ignition-type: &id002
     target: CHEX
     type: d/dt min extrapolated
@@ -48,10 +54,6 @@ datapoints:
       - 1344 K
     ignition-delay:
       - 478 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 9.84 atm
     composition: *id001
@@ -60,10 +62,6 @@ datapoints:
       - 1410 K
     ignition-delay:
       - 272 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 10 atm
     composition: *id001
@@ -72,10 +70,6 @@ datapoints:
       - 1468 K
     ignition-delay:
       - 155 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 10.02 atm
     composition: *id001
@@ -84,10 +78,6 @@ datapoints:
       - 1537 K
     ignition-delay:
       - 93 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 10.04 atm
     composition: *id001

@@ -38,6 +38,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.8
+  ignition-delay:
+    - evaluated-standard-deviation: '0.3'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
   ignition-type: &id003
     target: pressure
     type: d/dt min extrapolated
@@ -46,10 +51,6 @@ datapoints:
       - 1885.62 K
     ignition-delay:
       - 479.81 us
-      - evaluated-standard-deviation: '0.3'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -57,10 +58,6 @@ datapoints:
       - 1635.73 K
     ignition-delay:
       - 1435.7 us
-      - evaluated-standard-deviation: '0.3'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -68,10 +65,6 @@ datapoints:
       - 1630.6 K
     ignition-delay:
       - 3773.4 us
-      - evaluated-standard-deviation: '0.3'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003

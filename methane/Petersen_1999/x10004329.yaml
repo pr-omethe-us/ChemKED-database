@@ -35,6 +35,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.6667
+  ignition-delay:
+    - evaluated-standard-deviation: '0.1'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
   ignition-type: &id002
     target: CHEX
     type: d/dt min extrapolated
@@ -43,10 +48,6 @@ datapoints:
       - 1149 K
     ignition-delay:
       - 537 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure:
       - 113 atm
     composition: *id001

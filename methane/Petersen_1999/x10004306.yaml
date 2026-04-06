@@ -37,6 +37,11 @@ common-properties:
         InChI: 1S/He
         amount:
           - 0.333
+  ignition-delay:
+    - evaluated-standard-deviation: '0.1'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
   ignition-type: &id003
     target: pressure
     type: d/dt min extrapolated
@@ -45,10 +50,6 @@ datapoints:
       - 1292 K
     ignition-delay:
       - 218.4 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -56,10 +57,6 @@ datapoints:
       - 1204.7 K
     ignition-delay:
       - 314 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -67,10 +64,6 @@ datapoints:
       - 1130.3 K
     ignition-delay:
       - 332 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     ignition-type: *id003

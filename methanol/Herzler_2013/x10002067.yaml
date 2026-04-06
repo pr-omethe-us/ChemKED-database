@@ -16,7 +16,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock
+  mode:
+    - reflected shock
 comments:
   - VTIM calculated at mean temperature (1308 K) was used
 common-properties:
@@ -35,6 +36,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.939434
+  ignition-delay:
+    - evaluated-standard-deviation: '0.1'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
   ignition-type: &id002
     target: CHEX
     type: max
@@ -45,10 +51,6 @@ datapoints:
       - 4.06 bar
     ignition-delay:
       - 7633 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     time-histories:
       - time:
           units: s
@@ -186,10 +188,6 @@ datapoints:
       - 4.13 bar
     ignition-delay:
       - 5465 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - temperature:
@@ -198,10 +196,6 @@ datapoints:
       - 4.36 bar
     ignition-delay:
       - 3196 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - temperature:
@@ -210,10 +204,6 @@ datapoints:
       - 4.39 bar
     ignition-delay:
       - 1490 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - temperature:
@@ -222,10 +212,6 @@ datapoints:
       - 4.12 bar
     ignition-delay:
       - 730 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - temperature:
@@ -234,10 +220,6 @@ datapoints:
       - 4.63 bar
     ignition-delay:
       - 391 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - temperature:
@@ -246,10 +228,6 @@ datapoints:
       - 4.33 bar
     ignition-delay:
       - 231 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - temperature:
@@ -258,10 +236,6 @@ datapoints:
       - 4.98 bar
     ignition-delay:
       - 173 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - temperature:
@@ -270,10 +244,6 @@ datapoints:
       - 4.14 bar
     ignition-delay:
       - 134 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - temperature:
@@ -282,10 +252,6 @@ datapoints:
       - 4.26 bar
     ignition-delay:
       - 52 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - temperature:
@@ -294,10 +260,6 @@ datapoints:
       - 4.22 bar
     ignition-delay:
       - 31 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
 ...

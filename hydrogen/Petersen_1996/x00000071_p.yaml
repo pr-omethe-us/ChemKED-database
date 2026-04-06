@@ -21,7 +21,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock
+  mode:
+    - reflected shock
 comments:
   - Current referenceDOI is just for sorting purposes in ReSpecTh Database.
 common-properties:
@@ -42,6 +43,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.9925
+  ignition-delay:
+    - evaluated-standard-deviation: '0.1'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
   ignition-type: &id003
     target: OH
     type: d/dt max
@@ -50,10 +56,6 @@ datapoints:
       - 1715 K
     ignition-delay:
       - 6 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -61,10 +63,6 @@ datapoints:
       - 1704 K
     ignition-delay:
       - 6 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -72,10 +70,6 @@ datapoints:
       - 1701 K
     ignition-delay:
       - 5.5 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -83,10 +77,6 @@ datapoints:
       - 1706 K
     ignition-delay:
       - 5.5 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -94,10 +84,6 @@ datapoints:
       - 1712 K
     ignition-delay:
       - 6 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -105,10 +91,6 @@ datapoints:
       - 1715 K
     ignition-delay:
       - 5.5 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     pressure: *id001
     composition: *id002
     ignition-type: *id003

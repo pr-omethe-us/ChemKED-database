@@ -20,10 +20,18 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - HFM
 common-properties:
   temperature: &id001
     - 298 K
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 1.11 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - composition:
       kind: mole fraction
@@ -45,10 +53,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.73 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 0.953 bar
     temperature: *id001
@@ -72,10 +76,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.62 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 0.951 bar
     temperature: *id001
@@ -99,10 +99,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.8 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 0.945 bar
     temperature: *id001
@@ -126,10 +122,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.85 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 0.946 bar
     temperature: *id001
@@ -153,10 +145,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.87 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 0.953 bar
     temperature: *id001

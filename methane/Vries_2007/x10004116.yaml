@@ -38,6 +38,11 @@ common-properties:
         InChI: 1S/H2/h1H
         amount:
           - 0.0384
+  ignition-delay:
+    - evaluated-standard-deviation: '0.15'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
   ignition-type: &id002
     target: CHEX
     type: d/dt min extrapolated
@@ -46,10 +51,6 @@ datapoints:
       - 803 K
     ignition-delay:
       - 7700 us
-      - evaluated-standard-deviation: '0.15'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 20.1 atm
     composition: *id001

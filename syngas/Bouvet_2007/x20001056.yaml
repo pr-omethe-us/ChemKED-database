@@ -18,12 +18,20 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: cylindrical
+  mode:
+    - cylindrical
+    - premixed
+    - laminar
 common-properties:
   temperature: &id001
     - 298 K
   pressure: &id002
     - 1 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 2 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -46,10 +54,6 @@ datapoints:
             - 0.631
     laminar-burning-velocity:
       - 20.8475 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -73,10 +77,6 @@ datapoints:
             - 0.6208
     laminar-burning-velocity:
       - 24.7458 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -100,10 +100,6 @@ datapoints:
             - 0.6133
     laminar-burning-velocity:
       - 27.7966 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -127,10 +123,6 @@ datapoints:
             - 0.6087
     laminar-burning-velocity:
       - 30.678 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     pressure: *id002
 ...

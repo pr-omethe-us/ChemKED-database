@@ -10,7 +10,7 @@ reference:
   detail: Converted from ReSpecTh XML file x10004509.xml
 experiment-type: ignition delay
 apparatus:
-  kind: ''
+  kind: shock tube
   institution: ''
   facility: ''
 common-properties:
@@ -29,6 +29,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.996998
+  ignition-delay:
+    - evaluated-standard-deviation: '0.1'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
   ignition-type: &id002
     target: OH
     type: relative concentration
@@ -40,10 +45,6 @@ datapoints:
       - 1.063 atm
     ignition-delay:
       - 287 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - temperature:
@@ -52,10 +53,6 @@ datapoints:
       - 1.098 atm
     ignition-delay:
       - 305 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - temperature:
@@ -64,10 +61,6 @@ datapoints:
       - 1.081 atm
     ignition-delay:
       - 195 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
 ...

@@ -22,12 +22,20 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - OPF
 common-properties:
   pressure: &id001
     - 1 bar
   temperature: &id002
     - 358 K
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 7.56 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -49,10 +57,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.41 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 7.56 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.7 dimensionless
       - uncertainty-type: absolute
@@ -80,10 +84,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2.25 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 7.56 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.8 dimensionless
       - uncertainty-type: absolute
@@ -111,10 +111,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2.41 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 7.56 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.9 dimensionless
       - uncertainty-type: absolute
@@ -142,10 +138,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2.75 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 7.56 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1 dimensionless
       - uncertainty-type: absolute
@@ -173,10 +165,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2.83 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 7.56 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.1 dimensionless
       - uncertainty-type: absolute
@@ -204,10 +192,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2.75 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 7.56 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.2 dimensionless
       - uncertainty-type: absolute
@@ -235,10 +219,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2.33 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 7.56 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.3 dimensionless
       - uncertainty-type: absolute
@@ -266,10 +246,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.75 cm/s
         uncertainty-sourcetype: digitized
-        evaluated-standard-deviation: 7.56 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.4 dimensionless
       - uncertainty-type: absolute

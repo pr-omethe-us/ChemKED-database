@@ -25,7 +25,12 @@ apparatus:
   kind: outwardly propagating spherical flame
   institution: ''
   facility: ''
-  mode: constant volume combustion chamber
+  mode:
+    - constant volume combustion chamber
+    - premixed
+    - laminar
+    - unstretched
+    - 'extrapolation method to zero stretch: NQ'
 comments:
   - 'The overall relative uncertainties were calculated from the two uncertainty factors
     reported in the Supp. Mat. for each data point: Su(overall. %) = sqrt(Su(stat,
@@ -38,6 +43,11 @@ comments:
 common-properties:
   equivalence-ratio: &id001
     - 1.1 dimensionless
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 3.319 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -70,9 +80,5 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 6.64 cm/s
         uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 3.319 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio: *id001
 ...

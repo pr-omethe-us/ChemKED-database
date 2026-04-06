@@ -19,7 +19,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock wave
+  mode:
+    - reflected shock wave
 common-properties:
   pressure: &id001
     - 2.75 atm
@@ -38,6 +39,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.985
+  ignition-delay:
+    - evaluated-standard-deviation: '0.11'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
   ignition-type: &id003
     target: N2O
     type: d/dt max extrapolated
@@ -46,10 +52,6 @@ datapoints:
       - 1827 K
     ignition-delay:
       - 23 us
-      - evaluated-standard-deviation: '0.11'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -57,10 +59,6 @@ datapoints:
       - 1774 K
     ignition-delay:
       - 29 us
-      - evaluated-standard-deviation: '0.11'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -68,10 +66,6 @@ datapoints:
       - 1735 K
     ignition-delay:
       - 31 us
-      - evaluated-standard-deviation: '0.11'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -79,10 +73,6 @@ datapoints:
       - 1670 K
     ignition-delay:
       - 47 us
-      - evaluated-standard-deviation: '0.11'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -90,10 +80,6 @@ datapoints:
       - 1613 K
     ignition-delay:
       - 89 us
-      - evaluated-standard-deviation: '0.11'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -101,10 +87,6 @@ datapoints:
       - 1600 K
     ignition-delay:
       - 95 us
-      - evaluated-standard-deviation: '0.11'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -112,10 +94,6 @@ datapoints:
       - 1561 K
     ignition-delay:
       - 121 us
-      - evaluated-standard-deviation: '0.11'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -123,10 +101,6 @@ datapoints:
       - 1556 K
     ignition-delay:
       - 142 us
-      - evaluated-standard-deviation: '0.11'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -134,10 +108,6 @@ datapoints:
       - 1495 K
     ignition-delay:
       - 252 us
-      - evaluated-standard-deviation: '0.11'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003

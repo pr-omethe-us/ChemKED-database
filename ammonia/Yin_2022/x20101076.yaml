@@ -23,7 +23,8 @@ apparatus:
   kind: outwardly propagating spherical flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
 comments:
   - The numerical Sl-d_Sl data were obtained through personal communication with the
     corresponding author.
@@ -34,6 +35,11 @@ common-properties:
     - 1 atm
   temperature: &id002
     - 298 K
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 0.5 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -65,10 +71,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.054 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure: *id001
     temperature: *id002
   - composition:
@@ -101,10 +103,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.054 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure: *id001
     temperature: *id002
   - composition:
@@ -137,10 +135,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.754 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure: *id001
     temperature: *id002
 ...

@@ -17,7 +17,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock
+  mode:
+    - reflected shock
 common-properties:
   pressure: &id001
     - 1 atm
@@ -36,6 +37,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.955
+  ignition-delay:
+    - evaluated-standard-deviation: '0.14'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
   ignition-type: &id003
     target: OH*
     type: d/dt max
@@ -44,10 +50,6 @@ datapoints:
       - 1511 K
     ignition-delay:
       - 120.2 us
-      - evaluated-standard-deviation: '0.14'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -55,10 +57,6 @@ datapoints:
       - 1305 K
     ignition-delay:
       - 201.9 us
-      - evaluated-standard-deviation: '0.14'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -66,10 +64,6 @@ datapoints:
       - 1225 K
     ignition-delay:
       - 274.5 us
-      - evaluated-standard-deviation: '0.14'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003
@@ -77,10 +71,6 @@ datapoints:
       - 1111 K
     ignition-delay:
       - 571.8 us
-      - evaluated-standard-deviation: '0.14'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
     ignition-type: *id003

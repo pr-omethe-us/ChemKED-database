@@ -21,12 +21,20 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - HFM
 common-properties:
   temperature: &id001
     - 373 K
   pressure: &id002
     - 1 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 1.47 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - composition:
       kind: mole fraction
@@ -45,10 +53,6 @@ datapoints:
             - 0.772172
     laminar-burning-velocity:
       - 33.6 cm/s
-      - evaluated-standard-deviation: 1.47 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -68,10 +72,6 @@ datapoints:
             - 0.769555
     laminar-burning-velocity:
       - 41.12 cm/s
-      - evaluated-standard-deviation: 1.47 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -91,10 +91,6 @@ datapoints:
             - 0.766956
     laminar-burning-velocity:
       - 48.11 cm/s
-      - evaluated-standard-deviation: 1.47 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -114,10 +110,6 @@ datapoints:
             - 0.764374
     laminar-burning-velocity:
       - 51.61 cm/s
-      - evaluated-standard-deviation: 1.47 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -137,10 +129,6 @@ datapoints:
             - 0.76181
     laminar-burning-velocity:
       - 52.48 cm/s
-      - evaluated-standard-deviation: 1.47 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -160,10 +148,6 @@ datapoints:
             - 0.759263
     laminar-burning-velocity:
       - 51.43 cm/s
-      - evaluated-standard-deviation: 1.47 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -183,10 +167,6 @@ datapoints:
             - 0.756733
     laminar-burning-velocity:
       - 45.31 cm/s
-      - evaluated-standard-deviation: 1.47 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -206,10 +186,6 @@ datapoints:
             - 0.754219
     laminar-burning-velocity:
       - 32.2 cm/s
-      - evaluated-standard-deviation: 1.47 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -229,10 +205,6 @@ datapoints:
             - 0.751722
     laminar-burning-velocity:
       - 23.64 cm/s
-      - evaluated-standard-deviation: 1.47 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
 ...

@@ -23,7 +23,10 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - OPF
 common-properties:
   composition: &id001
     kind: mole fraction
@@ -44,6 +47,11 @@ common-properties:
         InChI: 1S/He
         amount:
           - 0.721664
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 3.69312465943325 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
 datapoints:
   - pressure:
       - 15.48 atm
@@ -54,10 +62,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 15.61 atm
@@ -68,10 +72,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 15.67 atm
@@ -82,10 +82,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 15.77 atm
@@ -96,10 +92,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 15.88 atm
@@ -110,10 +102,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 16 atm
@@ -124,10 +112,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 16.13 atm
@@ -138,10 +122,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 16.25 atm
@@ -152,10 +132,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 16.38 atm
@@ -166,10 +142,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 16.48 atm
@@ -180,10 +152,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 16.59 atm
@@ -194,10 +162,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 16.71 atm
@@ -208,10 +172,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 16.84 atm
@@ -222,10 +182,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 16.98 atm
@@ -236,10 +192,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 17.07 atm
@@ -250,10 +202,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 17.21 atm
@@ -264,10 +212,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 17.34 atm
@@ -278,10 +222,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 17.47 atm
@@ -292,10 +232,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 17.61 atm
@@ -306,10 +242,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 17.78 atm
@@ -320,10 +252,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 17.9 atm
@@ -334,10 +262,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 18.03 atm
@@ -348,10 +272,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 18.18 atm
@@ -362,10 +282,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 18.32 atm
@@ -376,10 +292,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 18.45 atm
@@ -390,10 +302,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 18.59 atm
@@ -404,10 +312,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 18.74 atm
@@ -418,10 +322,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 18.89 atm
@@ -432,10 +332,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 19.03 atm
@@ -446,10 +342,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 19.18 atm
@@ -460,10 +352,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 19.32 atm
@@ -474,10 +362,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 19.47 atm
@@ -488,10 +372,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 19.62 atm
@@ -502,10 +382,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 19.76 atm
@@ -516,10 +392,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 19.93 atm
@@ -530,10 +402,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 20.1 atm
@@ -544,10 +412,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 20.24 atm
@@ -558,10 +422,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 20.41 atm
@@ -572,10 +432,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 20.58 atm
@@ -586,10 +442,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 20.72 atm
@@ -600,10 +452,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 20.89 atm
@@ -614,10 +462,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 21.08 atm
@@ -628,10 +472,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 21.23 atm
@@ -642,10 +482,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 21.41 atm
@@ -656,10 +492,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 21.58 atm
@@ -670,10 +502,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 21.77 atm
@@ -684,10 +512,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 21.92 atm
@@ -698,10 +522,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 22.1 atm
@@ -712,10 +532,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 22.29 atm
@@ -726,10 +542,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 22.48 atm
@@ -740,10 +552,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 22.67 atm
@@ -754,10 +562,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 22.86 atm
@@ -768,10 +572,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 23.04 atm
@@ -782,10 +582,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 23.23 atm
@@ -796,10 +592,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 23.4 atm
@@ -810,10 +602,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 23.61 atm
@@ -824,10 +612,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 23.82 atm
@@ -838,10 +622,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 24 atm
@@ -852,10 +632,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 24.21 atm
@@ -866,10 +642,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 24.42 atm
@@ -880,10 +652,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 24.63 atm
@@ -894,10 +662,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 24.84 atm
@@ -908,10 +672,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 25.05 atm
@@ -922,10 +682,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 25.26 atm
@@ -936,10 +692,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 25.49 atm
@@ -950,10 +702,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 25.7 atm
@@ -964,10 +712,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 25.93 atm
@@ -978,10 +722,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 26.14 atm
@@ -992,10 +732,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 26.39 atm
@@ -1006,10 +742,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 26.62 atm
@@ -1020,10 +752,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 26.85 atm
@@ -1034,10 +762,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 27.08 atm
@@ -1048,10 +772,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 27.31 atm
@@ -1062,10 +782,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 27.56 atm
@@ -1076,10 +792,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 27.81 atm
@@ -1090,10 +802,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 28.06 atm
@@ -1104,10 +812,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 28.29 atm
@@ -1118,10 +822,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 28.56 atm
@@ -1132,10 +832,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 28.83 atm
@@ -1146,10 +842,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
   - pressure:
       - 29.08 atm
@@ -1160,9 +852,5 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 3.69 cm/s
         uncertainty-sourcetype: estimated
-        evaluated-standard-deviation: 3.69312465943 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     composition: *id001
 ...

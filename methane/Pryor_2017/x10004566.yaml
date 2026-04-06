@@ -21,7 +21,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock
+  mode:
+    - reflected shock
 common-properties:
   composition: &id001
     kind: mole fraction
@@ -38,6 +39,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.895
+  ignition-delay:
+    - evaluated-standard-deviation: '0.2'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   ignition-type: &id002
     target: pressure
     type: d/dt min extrapolated
@@ -46,10 +52,6 @@ datapoints:
       - 1672 K
     ignition-delay:
       - 1003 us
-      - evaluated-standard-deviation: '0.2'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure:
       - 0.78 atm
     composition: *id001
@@ -58,10 +60,6 @@ datapoints:
       - 1687 K
     ignition-delay:
       - 897.5 us
-      - evaluated-standard-deviation: '0.2'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure:
       - 0.756 atm
     composition: *id001
@@ -70,10 +68,6 @@ datapoints:
       - 1749 K
     ignition-delay:
       - 645.5 us
-      - evaluated-standard-deviation: '0.2'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure:
       - 0.625 atm
     composition: *id001
@@ -82,10 +76,6 @@ datapoints:
       - 1770 K
     ignition-delay:
       - 477 us
-      - evaluated-standard-deviation: '0.2'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure:
       - 0.737 atm
     composition: *id001

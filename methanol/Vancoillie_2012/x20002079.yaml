@@ -21,12 +21,20 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - HFM
 common-properties:
   pressure: &id001
     - 1 atm
   temperature: &id002
     - 338 K
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 2.02 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -49,10 +57,6 @@ datapoints:
             - 0.052546
     laminar-burning-velocity:
       - 18.3 cm/s
-      - evaluated-standard-deviation: 2.02 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.7 dimensionless
     pressure: *id001
@@ -78,10 +82,6 @@ datapoints:
             - 0.0589
     laminar-burning-velocity:
       - 25.5 cm/s
-      - evaluated-standard-deviation: 2.02 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.8 dimensionless
     pressure: *id001
@@ -107,10 +107,6 @@ datapoints:
             - 0.065015
     laminar-burning-velocity:
       - 31.7 cm/s
-      - evaluated-standard-deviation: 2.02 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.9 dimensionless
     pressure: *id001
@@ -136,10 +132,6 @@ datapoints:
             - 0.070903
     laminar-burning-velocity:
       - 36.3 cm/s
-      - evaluated-standard-deviation: 2.02 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1 dimensionless
     pressure: *id001
@@ -165,10 +157,6 @@ datapoints:
             - 0.076578
     laminar-burning-velocity:
       - 38.6 cm/s
-      - evaluated-standard-deviation: 2.02 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.1 dimensionless
     pressure: *id001
@@ -194,10 +182,6 @@ datapoints:
             - 0.082051
     laminar-burning-velocity:
       - 39 cm/s
-      - evaluated-standard-deviation: 2.02 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.2 dimensionless
     pressure: *id001
@@ -223,10 +207,6 @@ datapoints:
             - 0.087332
     laminar-burning-velocity:
       - 35.9 cm/s
-      - evaluated-standard-deviation: 2.02 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.3 dimensionless
     pressure: *id001
@@ -252,10 +232,6 @@ datapoints:
             - 0.092431
     laminar-burning-velocity:
       - 30.3 cm/s
-      - evaluated-standard-deviation: 2.02 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.4 dimensionless
     pressure: *id001
@@ -281,10 +257,6 @@ datapoints:
             - 0.097357
     laminar-burning-velocity:
       - 24.2 cm/s
-      - evaluated-standard-deviation: 2.02 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.5 dimensionless
     pressure: *id001

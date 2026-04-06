@@ -42,15 +42,31 @@ common-properties:
     - 35 cal/s/m2/K
   exchange-area: &id007
     - 113 cm2
-  composition:
-    kind: mole percent
-    species:
-      - species-name: N2
-        InChI: 1S/N2/c1-2
-        amount:
-          - 86.0
 datapoints:
-  - measured-composition:
+  - composition:
+      kind: mole percent
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 6.2222
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 7.7778
+            - uncertainty-type: relative
+              uncertainty: 0.03
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 0.001882
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -85,7 +101,21 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.923678
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: &id008
+      kind: mole percent
+      species:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -99,19 +129,16 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.03
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001882
+              evaluated-standard-deviation: 0.001878
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -146,7 +173,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.923987
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -160,19 +195,16 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.03
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001878
+              evaluated-standard-deviation: 0.001877
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -207,25 +239,6 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.923998
-    composition:
-      kind: mole percent
-      species:
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
-          amount:
-            - 6.2222
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 7.7778
-            - uncertainty-type: relative
-              uncertainty: 0.03
-              uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001877
-              evaluated-standard-deviation-type: absolute
-              evaluated-standard-deviation-sourcetype: estimated
-              evaluated-standard-deviation-method: combined from scatter and reported
-                uncertainty
     reactor-volume: *id001
     pressure: *id002
     residence-time: *id003
@@ -233,7 +246,31 @@ datapoints:
     environment-temperature: *id005
     global-heat-exchange-coefficient: *id006
     exchange-area: *id007
-  - measured-composition:
+    _partial_cp_composition: *id008
+  - composition:
+      kind: mole percent
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 6.7586
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 7.2414
+            - uncertainty-type: relative
+              uncertainty: 0.03
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 0.001751
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -268,7 +305,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.929029
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -282,19 +327,16 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.03
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001751
+              evaluated-standard-deviation: 0.001748
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -329,7 +371,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.929198
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -348,14 +398,11 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -390,25 +437,6 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.92918
-    composition:
-      kind: mole percent
-      species:
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
-          amount:
-            - 6.7586
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 7.2414
-            - uncertainty-type: relative
-              uncertainty: 0.03
-              uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001748
-              evaluated-standard-deviation-type: absolute
-              evaluated-standard-deviation-sourcetype: estimated
-              evaluated-standard-deviation-method: combined from scatter and reported
-                uncertainty
     reactor-volume: *id001
     pressure: *id002
     residence-time: *id003
@@ -416,7 +444,31 @@ datapoints:
     environment-temperature: *id005
     global-heat-exchange-coefficient: *id006
     exchange-area: *id007
-  - measured-composition:
+    _partial_cp_composition: *id008
+  - composition:
+      kind: mole percent
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 7.2258
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 6.7742
+            - uncertainty-type: relative
+              uncertainty: 0.03
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 0.001617
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -451,7 +503,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.934355
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -470,14 +530,11 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -512,7 +569,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.934405
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -526,19 +591,16 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.03
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001617
+              evaluated-standard-deviation: 0.001614
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -573,25 +635,6 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.934545
-    composition:
-      kind: mole percent
-      species:
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
-          amount:
-            - 7.2258
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 6.7742
-            - uncertainty-type: relative
-              uncertainty: 0.03
-              uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001614
-              evaluated-standard-deviation-type: absolute
-              evaluated-standard-deviation-sourcetype: estimated
-              evaluated-standard-deviation-method: combined from scatter and reported
-                uncertainty
     reactor-volume: *id001
     pressure: *id002
     residence-time: *id003
@@ -599,7 +642,31 @@ datapoints:
     environment-temperature: *id005
     global-heat-exchange-coefficient: *id006
     exchange-area: *id007
-  - measured-composition:
+    _partial_cp_composition: *id008
+  - composition:
+      kind: mole percent
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 7.6364
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 6.3636
+            - uncertainty-type: relative
+              uncertainty: 0.03
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 0.001527
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -634,7 +701,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.937638
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -648,19 +723,16 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.03
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001527
+              evaluated-standard-deviation: 0.001515
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -695,7 +767,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.938205
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -714,14 +794,11 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -756,25 +833,6 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.938228
-    composition:
-      kind: mole percent
-      species:
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
-          amount:
-            - 7.6364
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 6.3636
-            - uncertainty-type: relative
-              uncertainty: 0.03
-              uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001515
-              evaluated-standard-deviation-type: absolute
-              evaluated-standard-deviation-sourcetype: estimated
-              evaluated-standard-deviation-method: combined from scatter and reported
-                uncertainty
     reactor-volume: *id001
     pressure: *id002
     residence-time: *id003
@@ -782,7 +840,31 @@ datapoints:
     environment-temperature: *id005
     global-heat-exchange-coefficient: *id006
     exchange-area: *id007
-  - measured-composition:
+    _partial_cp_composition: *id008
+  - composition:
+      kind: mole percent
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 8.0
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 6.0
+            - uncertainty-type: relative
+              uncertainty: 0.03
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 0.001442
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -817,7 +899,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.941135
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -831,19 +921,16 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.03
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001442
+              evaluated-standard-deviation: 0.001443
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -878,7 +965,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.941171
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -892,19 +987,16 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.03
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001443
+              evaluated-standard-deviation: 0.00143
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -939,25 +1031,6 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.941681
-    composition:
-      kind: mole percent
-      species:
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
-          amount:
-            - 8.0
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 6.0
-            - uncertainty-type: relative
-              uncertainty: 0.03
-              uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.00143
-              evaluated-standard-deviation-type: absolute
-              evaluated-standard-deviation-sourcetype: estimated
-              evaluated-standard-deviation-method: combined from scatter and reported
-                uncertainty
     reactor-volume: *id001
     pressure: *id002
     residence-time: *id003
@@ -965,7 +1038,31 @@ datapoints:
     environment-temperature: *id005
     global-heat-exchange-coefficient: *id006
     exchange-area: *id007
-  - measured-composition:
+    _partial_cp_composition: *id008
+  - composition:
+      kind: mole percent
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 8.3243
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 5.6757
+            - uncertainty-type: relative
+              uncertainty: 0.03
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 0.001364
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -1000,7 +1097,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.944163
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -1019,14 +1124,11 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -1061,7 +1163,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.944251
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -1080,14 +1190,11 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -1122,25 +1229,6 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.94425
-    composition:
-      kind: mole percent
-      species:
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
-          amount:
-            - 8.3243
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 5.6757
-            - uncertainty-type: relative
-              uncertainty: 0.03
-              uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001364
-              evaluated-standard-deviation-type: absolute
-              evaluated-standard-deviation-sourcetype: estimated
-              evaluated-standard-deviation-method: combined from scatter and reported
-                uncertainty
     reactor-volume: *id001
     pressure: *id002
     residence-time: *id003
@@ -1148,7 +1236,31 @@ datapoints:
     environment-temperature: *id005
     global-heat-exchange-coefficient: *id006
     exchange-area: *id007
-  - measured-composition:
+    _partial_cp_composition: *id008
+  - composition:
+      kind: mole percent
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 8.6154
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 5.3846
+            - uncertainty-type: relative
+              uncertainty: 0.03
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 0.001295
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -1183,7 +1295,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.946971
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -1197,19 +1317,16 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.03
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001295
+              evaluated-standard-deviation: 0.001296
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -1244,7 +1361,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.946976
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -1258,19 +1383,16 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.03
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001296
+              evaluated-standard-deviation: 0.001295
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -1305,25 +1427,6 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.947057
-    composition:
-      kind: mole percent
-      species:
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
-          amount:
-            - 8.6154
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 5.3846
-            - uncertainty-type: relative
-              uncertainty: 0.03
-              uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001295
-              evaluated-standard-deviation-type: absolute
-              evaluated-standard-deviation-sourcetype: estimated
-              evaluated-standard-deviation-method: combined from scatter and reported
-                uncertainty
     reactor-volume: *id001
     pressure: *id002
     residence-time: *id003
@@ -1331,7 +1434,31 @@ datapoints:
     environment-temperature: *id005
     global-heat-exchange-coefficient: *id006
     exchange-area: *id007
-  - measured-composition:
+    _partial_cp_composition: *id008
+  - composition:
+      kind: mole percent
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 8.878
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 5.122
+            - uncertainty-type: relative
+              uncertainty: 0.03
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 0.001229
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -1366,7 +1493,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.949565
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -1380,19 +1515,16 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.03
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001229
+              evaluated-standard-deviation: 0.001232
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -1427,7 +1559,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.949493
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -1441,19 +1581,16 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.03
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001232
+              evaluated-standard-deviation: 0.001231
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -1488,25 +1625,6 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.949591
-    composition:
-      kind: mole percent
-      species:
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
-          amount:
-            - 8.878
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 5.122
-            - uncertainty-type: relative
-              uncertainty: 0.03
-              uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001231
-              evaluated-standard-deviation-type: absolute
-              evaluated-standard-deviation-sourcetype: estimated
-              evaluated-standard-deviation-method: combined from scatter and reported
-                uncertainty
     reactor-volume: *id001
     pressure: *id002
     residence-time: *id003
@@ -1514,7 +1632,31 @@ datapoints:
     environment-temperature: *id005
     global-heat-exchange-coefficient: *id006
     exchange-area: *id007
-  - measured-composition:
+    _partial_cp_composition: *id008
+  - composition:
+      kind: mole percent
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 9.1163
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 4.8837
+            - uncertainty-type: relative
+              uncertainty: 0.03
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 0.00117
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -1549,7 +1691,15 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.951816
-    composition:
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    _partial_cp_composition: *id008
+  - composition:
       kind: mole percent
       species:
         - species-name: NH3
@@ -1563,19 +1713,16 @@ datapoints:
             - uncertainty-type: relative
               uncertainty: 0.03
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.00117
+              evaluated-standard-deviation: 0.001163
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    reactor-volume: *id001
-    pressure: *id002
-    residence-time: *id003
-    temperature: *id004
-    environment-temperature: *id005
-    global-heat-exchange-coefficient: *id006
-    exchange-area: *id007
-  - measured-composition:
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 86.0
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: H2
@@ -1610,25 +1757,6 @@ datapoints:
           InChI: 1S/N2/c1-2
           amount:
             - 0.952223
-    composition:
-      kind: mole percent
-      species:
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
-          amount:
-            - 9.1163
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 4.8837
-            - uncertainty-type: relative
-              uncertainty: 0.03
-              uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001163
-              evaluated-standard-deviation-type: absolute
-              evaluated-standard-deviation-sourcetype: estimated
-              evaluated-standard-deviation-method: combined from scatter and reported
-                uncertainty
     reactor-volume: *id001
     pressure: *id002
     residence-time: *id003
@@ -1636,4 +1764,5 @@ datapoints:
     environment-temperature: *id005
     global-heat-exchange-coefficient: *id006
     exchange-area: *id007
+    _partial_cp_composition: *id008
 ...

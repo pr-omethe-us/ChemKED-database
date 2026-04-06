@@ -20,12 +20,20 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - OPF
 common-properties:
   temperature: &id001
     - 428 K
   pressure: &id002
     - 1 bar
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 1 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - composition:
       kind: mole fraction
@@ -47,10 +55,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.47 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -73,10 +77,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.7 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -99,10 +99,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.93 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -125,10 +121,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.25 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -151,10 +143,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2.83 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -177,10 +165,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2.15 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -203,10 +187,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2.04 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -229,10 +209,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2.27 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
 ...

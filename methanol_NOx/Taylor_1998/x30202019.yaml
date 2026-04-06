@@ -17,7 +17,8 @@ apparatus:
   kind: flow reactor
   institution: ''
   facility: ''
-  mode: laminar
+  mode:
+    - laminar
 common-properties:
   pressure: &id001
     - 1.4 atm
@@ -32,7 +33,34 @@ common-properties:
   equivalence-ratio: &id003
     - 1.1 dimensionless
 datapoints:
-  - measured-composition:
+  - composition:
+      kind: mole fraction
+      species:
+        - species-name: CH3OH
+          InChI: 1S/CH4O/c1-2/h2H,1H3
+          amount:
+            - 0.00062
+            - uncertainty-type: relative
+              uncertainty: 0.1
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 0.00016
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.000845
+        - species-name: 'NO'
+          InChI: 1S/NO/c1-2
+          amount:
+            - 0.0
+        - species-name: HE
+          InChI: 1S/He
+          amount:
+            - 0.998535
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: CH3OH
@@ -63,7 +91,16 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    composition:
+        - species-name: HE
+          InChI: 1S/He
+          amount:
+            - 0.99937999
+    temperature:
+      - 923 K
+    pressure: *id001
+    residence-time: *id002
+    equivalence-ratio: *id003
+  - composition:
       kind: mole fraction
       species:
         - species-name: CH3OH
@@ -85,17 +122,12 @@ datapoints:
         - species-name: 'NO'
           InChI: 1S/NO/c1-2
           amount:
-            - 0.0
+            - 0.000205
         - species-name: HE
           InChI: 1S/He
           amount:
-            - 0.998535
-    temperature:
-      - 923 K
-    pressure: *id001
-    residence-time: *id002
-    equivalence-ratio: *id003
-  - measured-composition:
+            - 0.99833
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: CH3OH
@@ -126,7 +158,16 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    composition:
+        - species-name: HE
+          InChI: 1S/He
+          amount:
+            - 0.99938089
+    temperature:
+      - 923 K
+    pressure: *id001
+    residence-time: *id002
+    equivalence-ratio: *id003
+  - composition:
       kind: mole fraction
       species:
         - species-name: CH3OH
@@ -148,17 +189,12 @@ datapoints:
         - species-name: 'NO'
           InChI: 1S/NO/c1-2
           amount:
-            - 0.000205
+            - 0.00041
         - species-name: HE
           InChI: 1S/He
           amount:
-            - 0.99833
-    temperature:
-      - 923 K
-    pressure: *id001
-    residence-time: *id002
-    equivalence-ratio: *id003
-  - measured-composition:
+            - 0.998125
+    measured-composition:
       kind: mole fraction
       species:
         - species-name: CH3OH
@@ -189,33 +225,10 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-    composition:
-      kind: mole fraction
-      species:
-        - species-name: CH3OH
-          InChI: 1S/CH4O/c1-2/h2H,1H3
-          amount:
-            - 0.00062
-            - uncertainty-type: relative
-              uncertainty: 0.1
-              uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.00016
-              evaluated-standard-deviation-type: absolute
-              evaluated-standard-deviation-sourcetype: estimated
-              evaluated-standard-deviation-method: combined from scatter and reported
-                uncertainty
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 0.000845
-        - species-name: 'NO'
-          InChI: 1S/NO/c1-2
-          amount:
-            - 0.00041
         - species-name: HE
           InChI: 1S/He
           amount:
-            - 0.998125
+            - 0.99937995
     temperature:
       - 923 K
     pressure: *id001

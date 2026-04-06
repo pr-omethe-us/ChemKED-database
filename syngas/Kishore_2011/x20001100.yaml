@@ -19,7 +19,9 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
 comments:
   - The experimental uncertainty is ±0.7 cm/s for most of data except at the extremes
     of equivalence ratio, where it is ±0.9 cm/s.
@@ -28,6 +30,11 @@ common-properties:
     - 300 K
   pressure: &id002
     - 1 bar
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 2 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -54,10 +61,6 @@ datapoints:
             - 0.1436
     laminar-burning-velocity:
       - 49.203 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     pressure: *id002
 ...

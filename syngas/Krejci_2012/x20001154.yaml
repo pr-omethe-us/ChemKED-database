@@ -24,7 +24,9 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
 comments:
   - Article described in Version 1.0 is inexistent, which is "M. C. Krejci; A. J.
     Vissotski; S. Ravi; W. K. Metcalfe; A. Keromnes; H. J. Curran; E. L. Petersen,
@@ -33,6 +35,11 @@ comments:
 common-properties:
   pressure: &id001
     - 10 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 4.11 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - composition:
       kind: mole fraction
@@ -61,10 +68,6 @@ datapoints:
       - 373 K
     laminar-burning-velocity:
       - 46.6 cm/s
-      - evaluated-standard-deviation: 4.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
   - composition:
       kind: mole fraction
@@ -93,10 +96,6 @@ datapoints:
       - 373 K
     laminar-burning-velocity:
       - 100.3 cm/s
-      - evaluated-standard-deviation: 4.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
   - composition:
       kind: mole fraction
@@ -125,10 +124,6 @@ datapoints:
       - 372 K
     laminar-burning-velocity:
       - 148.7 cm/s
-      - evaluated-standard-deviation: 4.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
   - composition:
       kind: mole fraction
@@ -157,10 +152,6 @@ datapoints:
       - 373 K
     laminar-burning-velocity:
       - 198.5 cm/s
-      - evaluated-standard-deviation: 4.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
   - composition:
       kind: mole fraction
@@ -189,10 +180,6 @@ datapoints:
       - 373 K
     laminar-burning-velocity:
       - 185.6 cm/s
-      - evaluated-standard-deviation: 4.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
   - composition:
       kind: mole fraction
@@ -221,10 +208,6 @@ datapoints:
       - 374 K
     laminar-burning-velocity:
       - 167.5 cm/s
-      - evaluated-standard-deviation: 4.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
   - composition:
       kind: mole fraction
@@ -253,10 +236,6 @@ datapoints:
       - 373 K
     laminar-burning-velocity:
       - 169.5 cm/s
-      - evaluated-standard-deviation: 4.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
   - composition:
       kind: mole fraction
@@ -285,10 +264,6 @@ datapoints:
       - 373 K
     laminar-burning-velocity:
       - 169.1 cm/s
-      - evaluated-standard-deviation: 4.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
   - composition:
       kind: mole fraction
@@ -317,10 +292,6 @@ datapoints:
       - 373 K
     laminar-burning-velocity:
       - 168.6 cm/s
-      - evaluated-standard-deviation: 4.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
   - composition:
       kind: mole fraction
@@ -349,10 +320,6 @@ datapoints:
       - 373 K
     laminar-burning-velocity:
       - 170.9 cm/s
-      - evaluated-standard-deviation: 4.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
   - composition:
       kind: mole fraction
@@ -381,10 +348,6 @@ datapoints:
       - 374 K
     laminar-burning-velocity:
       - 114.6 cm/s
-      - evaluated-standard-deviation: 4.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
   - composition:
       kind: mole fraction
@@ -413,9 +376,5 @@ datapoints:
       - 373 K
     laminar-burning-velocity:
       - 83.2 cm/s
-      - evaluated-standard-deviation: 4.11 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
 ...

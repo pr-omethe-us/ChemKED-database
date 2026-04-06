@@ -20,7 +20,10 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - HFM
 comments:
   - d_Sl values were updated in accordance with the recommendations of Alekseev et
     al., Combust. Sci. Technol. 188 (2016), 853-894, Table 3
@@ -29,6 +32,11 @@ common-properties:
     - 338 K
   pressure: &id002
     - 1 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 1.46 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - composition:
       kind: mole fraction
@@ -50,10 +58,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2.7 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.46 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -76,10 +80,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.46 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -102,10 +102,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.46 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -128,10 +124,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.46 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -154,10 +146,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.46 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -180,10 +168,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.46 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -206,10 +190,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.46 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -232,10 +212,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.46 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -258,10 +234,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.46 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -284,10 +256,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.46 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
 ...

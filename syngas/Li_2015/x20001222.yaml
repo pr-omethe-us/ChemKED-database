@@ -20,7 +20,10 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - OPF
 common-properties:
   temperature: &id001
     - 353 K
@@ -39,6 +42,11 @@ common-properties:
         InChI: 1S/CO2/c2-1-3
         amount:
           - 0.3575
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 3.38 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - pressure:
       - 5 atm
@@ -47,10 +55,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 7.7 cm/s
         uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 3.38 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     composition: *id002
   - pressure:
@@ -60,10 +64,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 2.8 cm/s
         uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 3.38 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     composition: *id002
   - pressure:
@@ -73,10 +73,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.7 cm/s
         uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 3.38 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     composition: *id002
   - pressure:
@@ -86,10 +82,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.3 cm/s
         uncertainty-sourcetype: calculated
-        evaluated-standard-deviation: 3.38 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     composition: *id002
 ...

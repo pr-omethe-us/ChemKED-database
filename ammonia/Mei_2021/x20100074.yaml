@@ -22,7 +22,12 @@ apparatus:
   kind: outwardly propagating spherical flame
   institution: ''
   facility: ''
-  mode: constant volume combustion chamber
+  mode:
+    - constant volume combustion chamber
+    - premixed
+    - laminar
+    - unstretched
+    - 'extrapolation method to zero stretch: NQ'
 comments:
   - The composition of air was reported to be 79% N2 and 21% O2.
 common-properties:
@@ -30,6 +35,11 @@ common-properties:
     - 298 K
   pressure: &id002
     - 5 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 0.5 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -57,10 +67,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.76 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -89,10 +95,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.71 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -121,10 +123,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.68 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -153,10 +151,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.66 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     temperature: *id001
     pressure: *id002
 ...

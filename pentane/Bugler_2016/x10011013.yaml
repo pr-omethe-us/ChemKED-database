@@ -25,7 +25,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock
+  mode:
+    - reflected shock
 common-properties:
   equivalence-ratio: &id001
     - 0.5 dimensionless
@@ -44,6 +45,11 @@ common-properties:
         InChI: 1S/N2/c1-2
         amount:
           - 0.779765577
+  ignition-delay:
+    - evaluated-standard-deviation: '0.1'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
   ignition-type: &id003
     target: pressure
     type: d/dt max
@@ -54,10 +60,6 @@ datapoints:
       - 1125 K
     ignition-delay:
       - 1293 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio: *id001
     composition: *id002
     ignition-type: *id003
@@ -67,10 +69,6 @@ datapoints:
       - 1149 K
     ignition-delay:
       - 946 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio: *id001
     composition: *id002
     ignition-type: *id003
@@ -80,10 +78,6 @@ datapoints:
       - 1198 K
     ignition-delay:
       - 460 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio: *id001
     composition: *id002
     ignition-type: *id003
@@ -93,10 +87,6 @@ datapoints:
       - 1263 K
     ignition-delay:
       - 206 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio: *id001
     composition: *id002
     ignition-type: *id003
@@ -106,10 +96,6 @@ datapoints:
       - 1274 K
     ignition-delay:
       - 164 us
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     equivalence-ratio: *id001
     composition: *id002
     ignition-type: *id003

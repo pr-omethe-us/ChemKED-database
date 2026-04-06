@@ -19,7 +19,10 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - HFM
 comments:
   - The uncertainty data of laminar burning velocity are from Table 1. Ethanol in
     Appendix B of file 'FinalReport_MSc_Meuwissen_2009_Eindhoven.pdf'. The S1 data
@@ -29,6 +32,11 @@ common-properties:
     - 328 K
   pressure: &id002
     - 1 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 1.24 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - composition:
       kind: mole fraction
@@ -50,10 +58,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.69 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.24 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -76,10 +80,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.72 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.24 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -102,10 +102,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.72 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.24 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -128,10 +124,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.73 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.24 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -154,10 +146,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.73 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.24 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
 ...

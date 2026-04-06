@@ -21,7 +21,10 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - HFM
 comments:
   - Sl values reported in the paper were corrected by multiplication with factor 1.055
     in accordance with the recommendations of Alekseev et al., Combust. Sci. Technol.
@@ -31,6 +34,11 @@ common-properties:
     - 308 K
   pressure: &id002
     - 1 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 1.14 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -52,10 +60,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.32 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.14 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.9 dimensionless
       - uncertainty-type: absolute
@@ -83,10 +87,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.24 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.14 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1 dimensionless
       - uncertainty-type: absolute
@@ -114,10 +114,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.12 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.14 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.1 dimensionless
       - uncertainty-type: absolute
@@ -145,10 +141,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.99 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.14 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.2 dimensionless
       - uncertainty-type: absolute
@@ -176,10 +168,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.03 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.14 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.3 dimensionless
       - uncertainty-type: absolute
@@ -207,10 +195,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.01 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.14 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.4 dimensionless
       - uncertainty-type: absolute
@@ -238,10 +222,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 1.23 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.14 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1.5 dimensionless
       - uncertainty-type: absolute

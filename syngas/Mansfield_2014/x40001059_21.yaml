@@ -46,6 +46,11 @@ common-properties:
           - 0.047
   pressure-rise: &id002
     - 0.5 1/ms
+  ignition-delay:
+    - evaluated-standard-deviation: '0.12'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
   ignition-type: &id003
     target: pressure
     type: d/dt max
@@ -56,10 +61,6 @@ datapoints:
       - 4.4 atm
     ignition-delay:
       - 4.5 ms
-      - evaluated-standard-deviation: '0.12'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     composition: *id001
     pressure-rise: *id002
     ignition-type: *id003

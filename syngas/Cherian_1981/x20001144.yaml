@@ -20,12 +20,19 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
 common-properties:
   temperature: &id001
     - 298 K
   pressure: &id002
     - 1 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 4.86 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - composition:
       kind: mole fraction
@@ -48,10 +55,6 @@ datapoints:
             - 0.5134
     laminar-burning-velocity:
       - 86.6 cm/s
-      - evaluated-standard-deviation: 4.86 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -75,10 +78,6 @@ datapoints:
             - 0.4739
     laminar-burning-velocity:
       - 102 cm/s
-      - evaluated-standard-deviation: 4.86 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -102,10 +101,6 @@ datapoints:
             - 0.4345
     laminar-burning-velocity:
       - 107.1 cm/s
-      - evaluated-standard-deviation: 4.86 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -129,10 +124,6 @@ datapoints:
             - 0.395
     laminar-burning-velocity:
       - 115.4 cm/s
-      - evaluated-standard-deviation: 4.86 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -156,10 +147,6 @@ datapoints:
             - 0.3555
     laminar-burning-velocity:
       - 111.4 cm/s
-      - evaluated-standard-deviation: 4.86 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -183,10 +170,6 @@ datapoints:
             - 0.316
     laminar-burning-velocity:
       - 91.3 cm/s
-      - evaluated-standard-deviation: 4.86 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -210,10 +193,6 @@ datapoints:
             - 0.2765
     laminar-burning-velocity:
       - 62.7 cm/s
-      - evaluated-standard-deviation: 4.86 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
 ...

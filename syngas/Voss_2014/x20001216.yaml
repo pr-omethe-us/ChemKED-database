@@ -19,7 +19,10 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - HFM
 comments:
   - The number of experimental points and the pressure value in this file are different
     from one of figure in original paper, but existing data are from author (maybe
@@ -27,6 +30,11 @@ comments:
 common-properties:
   temperature: &id001
     - 298 K
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 2 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -51,10 +59,6 @@ datapoints:
       - 0.952 atm
     laminar-burning-velocity:
       - 66.75 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -79,10 +83,6 @@ datapoints:
       - 0.952 atm
     laminar-burning-velocity:
       - 53.4 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -107,10 +107,6 @@ datapoints:
       - 0.955 atm
     laminar-burning-velocity:
       - 41.07 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -135,10 +131,6 @@ datapoints:
       - 0.955 atm
     laminar-burning-velocity:
       - 41.59 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -163,10 +155,6 @@ datapoints:
       - 0.942 atm
     laminar-burning-velocity:
       - 29.25 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -191,10 +179,6 @@ datapoints:
       - 0.942 atm
     laminar-burning-velocity:
       - 29.26 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -219,10 +203,6 @@ datapoints:
       - 0.942 atm
     laminar-burning-velocity:
       - 29.7 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -247,10 +227,6 @@ datapoints:
       - 0.955 atm
     laminar-burning-velocity:
       - 19.58 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
   - composition:
       kind: mole fraction
@@ -275,9 +251,5 @@ datapoints:
       - 0.955 atm
     laminar-burning-velocity:
       - 9.64 cm/s
-      - evaluated-standard-deviation: 2 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
 ...

@@ -22,12 +22,19 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
 common-properties:
   temperature: &id001
     - 310 K
   pressure: &id002
     - 5 bar
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 10.04 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - composition:
       kind: mole fraction
@@ -50,10 +57,6 @@ datapoints:
             - 0.34944
     laminar-burning-velocity:
       - 108.55 cm/s
-      - evaluated-standard-deviation: 10.04 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -77,10 +80,6 @@ datapoints:
             - 0.31973
     laminar-burning-velocity:
       - 101.28 cm/s
-      - evaluated-standard-deviation: 10.04 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -104,10 +103,6 @@ datapoints:
             - 0.29467
     laminar-burning-velocity:
       - 73.93 cm/s
-      - evaluated-standard-deviation: 10.04 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
 ...

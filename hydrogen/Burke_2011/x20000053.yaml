@@ -19,7 +19,9 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
 common-properties:
   temperature: &id001
     - 295 K
@@ -38,43 +40,32 @@ common-properties:
         InChI: 1S/He
         amount:
           - 0.7144
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 2.16 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - laminar-burning-velocity:
       - 55.4 cm/s
-      - evaluated-standard-deviation: 2.16 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 1 atm
     temperature: *id001
     composition: *id002
   - laminar-burning-velocity:
       - 34 cm/s
-      - evaluated-standard-deviation: 2.16 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 2.5 atm
     temperature: *id001
     composition: *id002
   - laminar-burning-velocity:
       - 17.3 cm/s
-      - evaluated-standard-deviation: 2.16 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 5 atm
     temperature: *id001
     composition: *id002
   - laminar-burning-velocity:
       - 5.9 cm/s
-      - evaluated-standard-deviation: 2.16 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 10 atm
     temperature: *id001

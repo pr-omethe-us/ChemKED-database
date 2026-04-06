@@ -24,7 +24,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock
+  mode:
+    - reflected shock
 common-properties:
   pressure-rise: &id001
     - 0.04 1/ms
@@ -43,6 +44,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.9429
+  ignition-delay:
+    - evaluated-standard-deviation: '0.225'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
   ignition-type: &id003
     target: OHEX
     type: d/dt min extrapolated
@@ -59,10 +65,6 @@ datapoints:
       - uncertainty-type: relative
         uncertainty: '0.2'
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: '0.225'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure-rise: *id001
     composition: *id002
     ignition-type: *id003
@@ -78,10 +80,6 @@ datapoints:
       - uncertainty-type: relative
         uncertainty: '0.2'
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: '0.225'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure-rise: *id001
     composition: *id002
     ignition-type: *id003
@@ -97,10 +95,6 @@ datapoints:
       - uncertainty-type: relative
         uncertainty: '0.2'
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: '0.225'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure-rise: *id001
     composition: *id002
     ignition-type: *id003
@@ -116,10 +110,6 @@ datapoints:
       - uncertainty-type: relative
         uncertainty: '0.2'
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: '0.225'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure-rise: *id001
     composition: *id002
     ignition-type: *id003
@@ -135,10 +125,6 @@ datapoints:
       - uncertainty-type: relative
         uncertainty: '0.2'
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: '0.225'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure-rise: *id001
     composition: *id002
     ignition-type: *id003
@@ -154,10 +140,6 @@ datapoints:
       - uncertainty-type: relative
         uncertainty: '0.2'
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: '0.225'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure-rise: *id001
     composition: *id002
     ignition-type: *id003
@@ -173,10 +155,6 @@ datapoints:
       - uncertainty-type: relative
         uncertainty: '0.2'
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: '0.225'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     pressure-rise: *id001
     composition: *id002
     ignition-type: *id003

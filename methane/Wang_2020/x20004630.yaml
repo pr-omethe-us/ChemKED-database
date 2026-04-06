@@ -23,7 +23,10 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - HFM
 comments:
   - CH4, O2, and N2 mole fractions were calculated using the equivalence ration and
     O2/(O2+N2) ratio. The reported uncertainty of laminar burning velocity was deleted
@@ -34,6 +37,11 @@ common-properties:
     - 298 K
   pressure: &id002
     - 0.35 MPa
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 0.5 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -52,10 +60,6 @@ datapoints:
             - 0.705128
     laminar-burning-velocity:
       - 22.38 cm/s
-      - evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -75,10 +79,6 @@ datapoints:
             - 0.690583
     laminar-burning-velocity:
       - 30.36 cm/s
-      - evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -98,10 +98,6 @@ datapoints:
             - 0.669856
     laminar-burning-velocity:
       - 19.72 cm/s
-      - evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     temperature: *id001
     pressure: *id002
 ...

@@ -19,7 +19,10 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: spherical
+  mode:
+    - spherical
+    - premixed
+    - laminar
 comments:
   - There are 5 experimental points in Fig. 2(b), but this file just collected 3 points.
 common-properties:
@@ -47,35 +50,28 @@ common-properties:
         InChI: 1S/CO/c1-2
         amount:
           - 0.05175
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 12.22 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - pressure:
       - 1 atm
     laminar-burning-velocity:
       - 72.86 cm/s
-      - evaluated-standard-deviation: 12.22 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     composition: *id002
   - pressure:
       - 6 atm
     laminar-burning-velocity:
       - 35.84 cm/s
-      - evaluated-standard-deviation: 12.22 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     composition: *id002
   - pressure:
       - 10 atm
     laminar-burning-velocity:
       - 28.27 cm/s
-      - evaluated-standard-deviation: 12.22 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     composition: *id002
 ...

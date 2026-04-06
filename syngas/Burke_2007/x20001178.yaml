@@ -16,12 +16,19 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
 common-properties:
   temperature: &id001
     - 298 K
   pressure: &id002
     - 20 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 2.28 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - composition:
       kind: mole fraction
@@ -44,10 +51,6 @@ datapoints:
             - 0.72917
     laminar-burning-velocity:
       - 38.29 cm/s
-      - evaluated-standard-deviation: 2.28 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -71,10 +74,6 @@ datapoints:
             - 0.7
     laminar-burning-velocity:
       - 57.75 cm/s
-      - evaluated-standard-deviation: 2.28 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -98,10 +97,6 @@ datapoints:
             - 0.67308
     laminar-burning-velocity:
       - 71.01 cm/s
-      - evaluated-standard-deviation: 2.28 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -125,10 +120,6 @@ datapoints:
             - 0.64815
     laminar-burning-velocity:
       - 77.21 cm/s
-      - evaluated-standard-deviation: 2.28 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -152,10 +143,6 @@ datapoints:
             - 0.625
     laminar-burning-velocity:
       - 81.24 cm/s
-      - evaluated-standard-deviation: 2.28 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -179,10 +166,6 @@ datapoints:
             - 0.60345
     laminar-burning-velocity:
       - 80.74 cm/s
-      - evaluated-standard-deviation: 2.28 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -206,10 +189,6 @@ datapoints:
             - 0.57377
     laminar-burning-velocity:
       - 75.2 cm/s
-      - evaluated-standard-deviation: 2.28 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -233,10 +212,6 @@ datapoints:
             - 0.53846
     laminar-burning-velocity:
       - 52.89 cm/s
-      - evaluated-standard-deviation: 2.28 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
   - composition:
@@ -260,10 +235,6 @@ datapoints:
             - 0.5
     laminar-burning-velocity:
       - 30.4 cm/s
-      - evaluated-standard-deviation: 2.28 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     temperature: *id001
     pressure: *id002
 ...

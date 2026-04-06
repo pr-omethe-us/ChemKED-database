@@ -22,7 +22,8 @@ apparatus:
   kind: shock tube
   institution: ''
   facility: ''
-  mode: reflected shock
+  mode:
+    - reflected shock
 common-properties:
   composition: &id001
     kind: mole fraction
@@ -39,6 +40,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.953333
+  ignition-delay:
+    - evaluated-standard-deviation: '0.1'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
   ignition-type: &id002
     target: OH*
     type: d/dt min extrapolated
@@ -47,10 +53,6 @@ datapoints:
       - 1199 K
     ignition-delay:
       - 1.382 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 3.18 atm
     composition: *id001
@@ -59,10 +61,6 @@ datapoints:
       - 1217 K
     ignition-delay:
       - 1.133 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 3.15 atm
     composition: *id001
@@ -71,10 +69,6 @@ datapoints:
       - 1247 K
     ignition-delay:
       - 0.832 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 3.19 atm
     composition: *id001
@@ -83,10 +77,6 @@ datapoints:
       - 1291 K
     ignition-delay:
       - 0.506 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 3.05 atm
     composition: *id001
@@ -95,10 +85,6 @@ datapoints:
       - 1336 K
     ignition-delay:
       - 0.312 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 2.78 atm
     composition: *id001
@@ -107,10 +93,6 @@ datapoints:
       - 1374 K
     ignition-delay:
       - 0.213 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 2.97 atm
     composition: *id001
@@ -119,10 +101,6 @@ datapoints:
       - 1425 K
     ignition-delay:
       - 0.128 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure:
       - 2.88 atm
     composition: *id001

@@ -21,28 +21,9 @@ apparatus:
   institution: ''
   facility: ''
 common-properties:
-  composition: &id001
-    kind: mol/cm3
-    species:
-      - species-name: Ne
-        InChI: 1S/Ne
-        amount:
-          - 1.0e-05
-      - species-name: C2H5OH
-        InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
-        amount:
-          - 1.6e-07
-          - evaluated-standard-deviation: 0.0104
-            evaluated-standard-deviation-type: absolute
-            evaluated-standard-deviation-sourcetype: estimated
-            evaluated-standard-deviation-method: statistical scatter
-      - species-name: Kr
-        InChI: 1S/Kr
-        amount:
-          - 1.1e-08
-  temperature: &id002
+  temperature: &id001
     - 1340 K
-  pressure: &id003
+  pressure: &id002
     - 1.2 bar
 datapoints:
   - concentration-profiles:
@@ -941,7 +922,21 @@ datapoints:
           - [0.001448, 1.87501e-08]
           - [0.001456, 2.1639e-08]
           - [0.001464, 1.68469e-08]
-    composition: *id001
-    temperature: *id002
-    pressure: *id003
+    _partial_cp_composition:
+      kind: mol/cm3
+      species:
+        - species-name: Ne
+          InChI: 1S/Ne
+          amount:
+            - 1.0e-05
+        - species-name: C2H5OH
+          InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+          amount:
+            - 1.6e-07
+        - species-name: Kr
+          InChI: 1S/Kr
+          amount:
+            - 1.1e-08
+    temperature: *id001
+    pressure: *id002
 ...

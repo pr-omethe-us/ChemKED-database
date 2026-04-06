@@ -25,7 +25,12 @@ apparatus:
   kind: outwardly propagating spherical flame
   institution: ''
   facility: ''
-  mode: constant volume combustion chamber
+  mode:
+    - constant volume combustion chamber
+    - premixed
+    - laminar
+    - unstretched
+    - 'extrapolation method to zero stretch: NQ'
 comments:
   - The experimental uncertainties contain only a statistical term published in the
     Supp. Mat. They refer to the 95% confidence intervals.
@@ -37,6 +42,11 @@ common-properties:
       uncertainty-sourcetype: reported
   pressure: &id002
     - 1 bar
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 0.5 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -60,10 +70,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.47 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -88,10 +94,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.56 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     temperature: *id001
     pressure: *id002
   - composition:
@@ -116,10 +118,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.27 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 0.5 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     temperature: *id001
     pressure: *id002
 ...

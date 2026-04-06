@@ -22,12 +22,20 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - HFM
 common-properties:
   temperature: &id001
     - 298 K
   pressure: &id002
     - 1 atm
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 1.33 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: combined from scatter and reported uncertainty
 datapoints:
   - composition:
       kind: mole fraction
@@ -49,10 +57,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.1 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.33 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.7 dimensionless
     temperature: *id001
@@ -77,10 +81,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.2 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.33 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.8 dimensionless
     temperature: *id001
@@ -105,10 +105,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.33 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 0.9 dimensionless
     temperature: *id001
@@ -133,10 +129,6 @@ datapoints:
       - uncertainty-type: absolute
         uncertainty: 0.2 cm/s
         uncertainty-sourcetype: reported
-        evaluated-standard-deviation: 1.33 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
     equivalence-ratio:
       - 1 dimensionless
     temperature: *id001

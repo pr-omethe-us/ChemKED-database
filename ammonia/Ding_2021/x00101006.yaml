@@ -28,21 +28,6 @@ comments:
   - The reactor volume was calculated based on the reported JSR diameter (d = 50 mm).
     The radius is r = 25 mm = 2.5 cm, so the volume is V = 4*r^3*pi/3 = 65.450 cm^3.
 common-properties:
-  composition:
-    kind: mole fraction
-    species:
-      - species-name: NH3
-        InChI: 1S/H3N/h1H3
-        amount:
-          - 0.001
-      - species-name: CO
-        InChI: 1S/CO/c1-2
-        amount:
-          - 0.005
-      - species-name: H2
-        InChI: 1S/H2/h1H
-        amount:
-          - 0.005
   pressure: &id001
     - 1 atm
   reactor-volume: &id002
@@ -52,17 +37,33 @@ common-properties:
   residence-time: &id004
     - 0.91 s
 datapoints:
-  - measured-composition:
+  - composition:
       kind: mole fraction
       species:
         - species-name: O2
           InChI: 1S/O2/c1-2
           amount:
-            - 0.762
+            - 0.014398
+            - uncertainty-type: relative
+              uncertainty: 0.01
+              uncertainty-sourcetype: reported
+              evaluated-standard-deviation: 0.001333
+              evaluated-standard-deviation-type: absolute
+              evaluated-standard-deviation-sourcetype: estimated
+              evaluated-standard-deviation-method: combined from scatter and reported
+                uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.974602
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.001
         - species-name: CO
           InChI: 1S/CO/c1-2
           amount:
-            - 3.5e-05
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -74,7 +75,7 @@ datapoints:
         - species-name: H2
           InChI: 1S/H2/h1H
           amount:
-            - 0.0
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -83,6 +84,21 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
+    measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00762
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 3.5e-05
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0
         - species-name: N2O
           InChI: 1S/N2O/c1-2-3
           amount:
@@ -107,21 +123,40 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.992137
+    _partial_cp_composition: &id005
+      kind: mole fraction
+      species:
         - species-name: NH3
           InChI: 1S/H3N/h1H3
           amount:
-            - 0.237757
-    composition:
-      kind: mole percent
+            - 0.001
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.005
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.005
+    pressure: *id001
+    reactor-volume: *id002
+    temperature: *id003
+    residence-time: *id004
+  - composition:
+      kind: mole fraction
       species:
         - species-name: O2
           InChI: 1S/O2/c1-2
           amount:
-            - 1.4398
+            - 0.010891
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.001333
+              evaluated-standard-deviation: 0.000961
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
@@ -129,22 +164,15 @@ datapoints:
         - species-name: N2
           InChI: 1S/N2/c1-2
           amount:
-            - 97.4602
-    pressure: *id001
-    reactor-volume: *id002
-    temperature: *id003
-    residence-time: *id004
-  - measured-composition:
-      kind: mole fraction
-      species:
-        - species-name: O2
-          InChI: 1S/O2/c1-2
+            - 0.978109
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
           amount:
-            - 0.5494
+            - 0.001
         - species-name: CO
           InChI: 1S/CO/c1-2
           amount:
-            - 4.3e-05
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -156,7 +184,7 @@ datapoints:
         - species-name: H2
           InChI: 1S/H2/h1H
           amount:
-            - 0.0
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -165,6 +193,21 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
+    measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.005494
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 4.3e-05
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0
         - species-name: N2O
           InChI: 1S/N2O/c1-2-3
           amount:
@@ -189,21 +232,26 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
+        - species-name: N2
+          InChI: 1S/N2/c1-2
           amount:
-            - 0.450352
-    composition:
-      kind: mole percent
+            - 0.994258
+    _partial_cp_composition: *id005
+    pressure: *id001
+    reactor-volume: *id002
+    temperature: *id003
+    residence-time: *id004
+  - composition:
+      kind: mole fraction
       species:
         - species-name: O2
           InChI: 1S/O2/c1-2
           amount:
-            - 1.0891
+            - 0.009694
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.000961
+              evaluated-standard-deviation: 0.00061
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
@@ -211,22 +259,15 @@ datapoints:
         - species-name: N2
           InChI: 1S/N2/c1-2
           amount:
-            - 97.8109
-    pressure: *id001
-    reactor-volume: *id002
-    temperature: *id003
-    residence-time: *id004
-  - measured-composition:
-      kind: mole fraction
-      species:
-        - species-name: O2
-          InChI: 1S/O2/c1-2
+            - 0.979306
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
           amount:
-            - 0.349
+            - 0.001
         - species-name: CO
           InChI: 1S/CO/c1-2
           amount:
-            - 4.3e-05
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -238,7 +279,7 @@ datapoints:
         - species-name: H2
           InChI: 1S/H2/h1H
           amount:
-            - 0.0
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -247,6 +288,21 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
+    measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.00349
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 4.3e-05
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0
         - species-name: N2O
           InChI: 1S/N2O/c1-2-3
           amount:
@@ -271,21 +327,26 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
+        - species-name: N2
+          InChI: 1S/N2/c1-2
           amount:
-            - 0.650786
-    composition:
-      kind: mole percent
+            - 0.996296
+    _partial_cp_composition: *id005
+    pressure: *id001
+    reactor-volume: *id002
+    temperature: *id003
+    residence-time: *id004
+  - composition:
+      kind: mole fraction
       species:
         - species-name: O2
           InChI: 1S/O2/c1-2
           amount:
-            - 0.9694
+            - 0.008084
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.00061
+              evaluated-standard-deviation: 0.000436
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
@@ -293,22 +354,15 @@ datapoints:
         - species-name: N2
           InChI: 1S/N2/c1-2
           amount:
-            - 97.9306
-    pressure: *id001
-    reactor-volume: *id002
-    temperature: *id003
-    residence-time: *id004
-  - measured-composition:
-      kind: mole fraction
-      species:
-        - species-name: O2
-          InChI: 1S/O2/c1-2
+            - 0.980916
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
           amount:
-            - 0.2491
+            - 0.001
         - species-name: CO
           InChI: 1S/CO/c1-2
           amount:
-            - 5.0e-05
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -320,7 +374,7 @@ datapoints:
         - species-name: H2
           InChI: 1S/H2/h1H
           amount:
-            - 0.0
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -329,6 +383,21 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
+    measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.002491
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 5.0e-05
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.0
         - species-name: N2O
           InChI: 1S/N2O/c1-2-3
           amount:
@@ -353,21 +422,26 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
+        - species-name: N2
+          InChI: 1S/N2/c1-2
           amount:
-            - 0.750687
-    composition:
-      kind: mole percent
+            - 0.997296
+    _partial_cp_composition: *id005
+    pressure: *id001
+    reactor-volume: *id002
+    temperature: *id003
+    residence-time: *id004
+  - composition:
+      kind: mole fraction
       species:
         - species-name: O2
           InChI: 1S/O2/c1-2
           amount:
-            - 0.8084
+            - 0.006298
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 0.000436
+              evaluated-standard-deviation: 6.4e-05
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
@@ -375,22 +449,15 @@ datapoints:
         - species-name: N2
           InChI: 1S/N2/c1-2
           amount:
-            - 98.0916
-    pressure: *id001
-    reactor-volume: *id002
-    temperature: *id003
-    residence-time: *id004
-  - measured-composition:
-      kind: mole fraction
-      species:
-        - species-name: O2
-          InChI: 1S/O2/c1-2
+            - 0.982702
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
           amount:
-            - 0.0366
+            - 0.001
         - species-name: CO
           InChI: 1S/CO/c1-2
           amount:
-            - 8.8e-05
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -402,7 +469,7 @@ datapoints:
         - species-name: H2
           InChI: 1S/H2/h1H
           amount:
-            - 0.0001
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -411,6 +478,21 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
+    measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.000366
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 8.8e-05
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 1.0e-06
         - species-name: N2O
           InChI: 1S/N2O/c1-2-3
           amount:
@@ -435,21 +517,26 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
+        - species-name: N2
+          InChI: 1S/N2/c1-2
           amount:
-            - 0.963071
-    composition:
-      kind: mole percent
+            - 0.999404
+    _partial_cp_composition: *id005
+    pressure: *id001
+    reactor-volume: *id002
+    temperature: *id003
+    residence-time: *id004
+  - composition:
+      kind: mole fraction
       species:
         - species-name: O2
           InChI: 1S/O2/c1-2
           amount:
-            - 0.6298
+            - 0.0048
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 6.4e-05
+              evaluated-standard-deviation: 5.0e-06
               evaluated-standard-deviation-type: absolute
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
@@ -457,22 +544,15 @@ datapoints:
         - species-name: N2
           InChI: 1S/N2/c1-2
           amount:
-            - 98.2702
-    pressure: *id001
-    reactor-volume: *id002
-    temperature: *id003
-    residence-time: *id004
-  - measured-composition:
-      kind: mole fraction
-      species:
-        - species-name: O2
-          InChI: 1S/O2/c1-2
+            - 0.9842
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
           amount:
-            - 0.0
+            - 0.001
         - species-name: CO
           InChI: 1S/CO/c1-2
           amount:
-            - 0.000579
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -484,7 +564,7 @@ datapoints:
         - species-name: H2
           InChI: 1S/H2/h1H
           amount:
-            - 0.0391
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -493,6 +573,21 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
+    measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.0
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.000579
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.000391
         - species-name: N2O
           InChI: 1S/N2O/c1-2-3
           amount:
@@ -517,17 +612,22 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
+        - species-name: N2
+          InChI: 1S/N2/c1-2
           amount:
-            - 0.960253
-    composition:
-      kind: mole percent
+            - 0.998962
+    _partial_cp_composition: *id005
+    pressure: *id001
+    reactor-volume: *id002
+    temperature: *id003
+    residence-time: *id004
+  - composition:
+      kind: mole fraction
       species:
         - species-name: O2
           InChI: 1S/O2/c1-2
           amount:
-            - 0.48
+            - 0.004201
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -539,22 +639,15 @@ datapoints:
         - species-name: N2
           InChI: 1S/N2/c1-2
           amount:
-            - 98.42
-    pressure: *id001
-    reactor-volume: *id002
-    temperature: *id003
-    residence-time: *id004
-  - measured-composition:
-      kind: mole fraction
-      species:
-        - species-name: O2
-          InChI: 1S/O2/c1-2
+            - 0.984799
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
           amount:
-            - 0.0
+            - 0.001
         - species-name: CO
           InChI: 1S/CO/c1-2
           amount:
-            - 0.000693
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -566,7 +659,7 @@ datapoints:
         - species-name: H2
           InChI: 1S/H2/h1H
           amount:
-            - 0.1191
+            - 0.005
             - uncertainty-type: relative
               uncertainty: 0.01
               uncertainty-sourcetype: reported
@@ -575,6 +668,21 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
+    measured-composition:
+      kind: mole fraction
+      species:
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.0
+        - species-name: CO
+          InChI: 1S/CO/c1-2
+          amount:
+            - 0.000693
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.001191
         - species-name: N2O
           InChI: 1S/N2O/c1-2-3
           amount:
@@ -599,29 +707,11 @@ datapoints:
               evaluated-standard-deviation-sourcetype: estimated
               evaluated-standard-deviation-method: combined from scatter and reported
                 uncertainty
-        - species-name: NH3
-          InChI: 1S/H3N/h1H3
-          amount:
-            - 0.88015
-    composition:
-      kind: mole percent
-      species:
-        - species-name: O2
-          InChI: 1S/O2/c1-2
-          amount:
-            - 0.4201
-            - uncertainty-type: relative
-              uncertainty: 0.01
-              uncertainty-sourcetype: reported
-              evaluated-standard-deviation: 5.0e-06
-              evaluated-standard-deviation-type: absolute
-              evaluated-standard-deviation-sourcetype: estimated
-              evaluated-standard-deviation-method: combined from scatter and reported
-                uncertainty
         - species-name: N2
           InChI: 1S/N2/c1-2
           amount:
-            - 98.4799
+            - 0.998059
+    _partial_cp_composition: *id005
     pressure: *id001
     reactor-volume: *id002
     temperature: *id003

@@ -33,6 +33,11 @@ common-properties:
         InChI: 1S/Ar
         amount:
           - 0.73592
+  ignition-delay:
+    - evaluated-standard-deviation: '0.1'
+      evaluated-standard-deviation-type: relative
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: generic uncertainty
   ignition-type: &id002
     target: pressure
     type: d/dt max
@@ -43,10 +48,6 @@ datapoints:
       - 363.35 K
     ignition-delay:
       - 21.31 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     time-histories:
       - time:
           units: ms
@@ -172,6 +173,15 @@ datapoints:
           - [1670.52, 10.15231]
           - [1751.52, 10.06149]
           - [1834.52, 9.964176]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 800 Torr
+    temperature:
+      - 362.85 K
+    ignition-delay:
+      - 21.56 ms
+    time-histories:
       - time:
           units: ms
           column: 0
@@ -296,6 +306,15 @@ datapoints:
           - [1659.84, 9.496913]
           - [1740.84, 9.414198]
           - [1823.84, 9.32986]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 800 Torr
+    temperature:
+      - 362.65 K
+    ignition-delay:
+      - 21.08 ms
+    time-histories:
       - time:
           units: ms
           column: 0
@@ -420,6 +439,15 @@ datapoints:
           - [1657.76, 8.828538]
           - [1738.76, 8.753932]
           - [1821.76, 8.68257]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 750 Torr
+    temperature:
+      - 362.65 K
+    ignition-delay:
+      - 24.28 ms
+    time-histories:
       - time:
           units: ms
           column: 0
@@ -544,6 +572,15 @@ datapoints:
           - [1654.72, 8.171516]
           - [1735.72, 8.09691]
           - [1818.72, 8.025547]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 750 Torr
+    temperature:
+      - 362.75 K
+    ignition-delay:
+      - 23.56 ms
+    time-histories:
       - time:
           units: ms
           column: 0
@@ -668,6 +705,15 @@ datapoints:
           - [1656.72, 7.387988]
           - [1737.72, 7.3296]
           - [1820.72, 7.264725]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 750 Torr
+    temperature:
+      - 362.95 K
+    ignition-delay:
+      - 23 ms
+    time-histories:
       - time:
           units: ms
           column: 0
@@ -792,6 +838,15 @@ datapoints:
           - [1657.32, 6.912615]
           - [1738.32, 6.867203]
           - [1821.32, 6.805572]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 750 Torr
+    temperature:
+      - 363.25 K
+    ignition-delay:
+      - 22.68 ms
+    time-histories:
       - time:
           units: ms
           column: 0
@@ -916,6 +971,15 @@ datapoints:
           - [1659.4, 6.213424]
           - [1740.4, 6.171256]
           - [1823.4, 6.135575]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 700 Torr
+    temperature:
+      - 363.35 K
+    ignition-delay:
+      - 26.36 ms
+    time-histories:
       - time:
           units: ms
           column: 0
@@ -1040,6 +1104,15 @@ datapoints:
           - [1659.68, 5.48504]
           - [1740.68, 5.449359]
           - [1823.68, 5.413678]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 700 Torr
+    temperature:
+      - 363.55 K
+    ignition-delay:
+      - 26.17 ms
+    time-histories:
       - time:
           units: ms
           column: 0
@@ -1167,111 +1240,11 @@ datapoints:
     composition: *id001
     ignition-type: *id002
   - pressure:
-      - 800 Torr
-    temperature:
-      - 362.85 K
-    ignition-delay:
-      - 21.56 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
-    composition: *id001
-    ignition-type: *id002
-  - pressure:
-      - 800 Torr
-    temperature:
-      - 362.65 K
-    ignition-delay:
-      - 21.08 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
-    composition: *id001
-    ignition-type: *id002
-  - pressure:
-      - 750 Torr
-    temperature:
-      - 362.65 K
-    ignition-delay:
-      - 24.28 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
-    composition: *id001
-    ignition-type: *id002
-  - pressure:
-      - 750 Torr
-    temperature:
-      - 362.75 K
-    ignition-delay:
-      - 23.56 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
-    composition: *id001
-    ignition-type: *id002
-  - pressure:
-      - 750 Torr
-    temperature:
-      - 362.95 K
-    ignition-delay:
-      - 23 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
-    composition: *id001
-    ignition-type: *id002
-  - pressure:
-      - 750 Torr
-    temperature:
-      - 363.25 K
-    ignition-delay:
-      - 22.68 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
-    composition: *id001
-    ignition-type: *id002
-  - pressure:
-      - 700 Torr
-    temperature:
-      - 363.35 K
-    ignition-delay:
-      - 26.36 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
-    composition: *id001
-    ignition-type: *id002
-  - pressure:
-      - 700 Torr
-    temperature:
-      - 363.55 K
-    ignition-delay:
-      - 26.17 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
-    composition: *id001
-    ignition-type: *id002
-  - pressure:
       - 700 Torr
     temperature:
       - 363.75 K
     ignition-delay:
       - 25.52 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1280,10 +1253,6 @@ datapoints:
       - 363.95 K
     ignition-delay:
       - 30.68 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1292,10 +1261,6 @@ datapoints:
       - 364.25 K
     ignition-delay:
       - 30.82 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1304,10 +1269,6 @@ datapoints:
       - 364.45 K
     ignition-delay:
       - 30.18 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1316,10 +1277,6 @@ datapoints:
       - 364.55 K
     ignition-delay:
       - 36.61 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1328,10 +1285,6 @@ datapoints:
       - 364.75 K
     ignition-delay:
       - 36.2 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1340,10 +1293,6 @@ datapoints:
       - 364.85 K
     ignition-delay:
       - 36.6 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1352,10 +1301,6 @@ datapoints:
       - 364.55 K
     ignition-delay:
       - 48.98 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1364,10 +1309,6 @@ datapoints:
       - 363.75 K
     ignition-delay:
       - 52.52 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1376,10 +1317,6 @@ datapoints:
       - 363.05 K
     ignition-delay:
       - 52.8 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1388,10 +1325,6 @@ datapoints:
       - 362.65 K
     ignition-delay:
       - 52.27 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1400,10 +1333,6 @@ datapoints:
       - 362.55 K
     ignition-delay:
       - 65.93 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1412,10 +1341,6 @@ datapoints:
       - 362.65 K
     ignition-delay:
       - 64.6 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1424,10 +1349,6 @@ datapoints:
       - 362.75 K
     ignition-delay:
       - 63.1 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1436,10 +1357,6 @@ datapoints:
       - 362.85 K
     ignition-delay:
       - 62.12 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1448,10 +1365,6 @@ datapoints:
       - 363.05 K
     ignition-delay:
       - 60.98 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1460,10 +1373,6 @@ datapoints:
       - 363.25 K
     ignition-delay:
       - 60.46 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1472,10 +1381,6 @@ datapoints:
       - 363.45 K
     ignition-delay:
       - 59.3 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1484,10 +1389,6 @@ datapoints:
       - 363.65 K
     ignition-delay:
       - 58.64 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1496,10 +1397,6 @@ datapoints:
       - 363.85 K
     ignition-delay:
       - 58.24 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1508,10 +1405,6 @@ datapoints:
       - 363.96 K
     ignition-delay:
       - 57.76 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1520,10 +1413,6 @@ datapoints:
       - 364.15 K
     ignition-delay:
       - 57.4 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1532,10 +1421,6 @@ datapoints:
       - 364.45 K
     ignition-delay:
       - 56.8 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1544,10 +1429,6 @@ datapoints:
       - 364.55 K
     ignition-delay:
       - 56.7 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1556,10 +1437,6 @@ datapoints:
       - 364.65 K
     ignition-delay:
       - 59.68 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1568,10 +1445,6 @@ datapoints:
       - 364.05 K
     ignition-delay:
       - 65.8 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1580,10 +1453,6 @@ datapoints:
       - 363.25 K
     ignition-delay:
       - 92.69 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1592,10 +1461,6 @@ datapoints:
       - 362.85 K
     ignition-delay:
       - 92.14 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1604,10 +1469,6 @@ datapoints:
       - 362.65 K
     ignition-delay:
       - 90.5 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1616,10 +1477,6 @@ datapoints:
       - 362.45 K
     ignition-delay:
       - 88.08 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1628,10 +1485,6 @@ datapoints:
       - 362.55 K
     ignition-delay:
       - 86.4 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1640,10 +1493,6 @@ datapoints:
       - 362.75 K
     ignition-delay:
       - 84.8 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1652,10 +1501,6 @@ datapoints:
       - 362.85 K
     ignition-delay:
       - 83.28 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1664,10 +1509,6 @@ datapoints:
       - 363.05 K
     ignition-delay:
       - 81.18 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1676,10 +1517,6 @@ datapoints:
       - 363.25 K
     ignition-delay:
       - 79.8 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1688,10 +1525,6 @@ datapoints:
       - 363.45 K
     ignition-delay:
       - 78.78 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1700,10 +1533,6 @@ datapoints:
       - 363.75 K
     ignition-delay:
       - 77.6 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1712,10 +1541,6 @@ datapoints:
       - 364.05 K
     ignition-delay:
       - 76.28 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1724,10 +1549,6 @@ datapoints:
       - 364.25 K
     ignition-delay:
       - 76.28 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1736,10 +1557,6 @@ datapoints:
       - 364.55 K
     ignition-delay:
       - 74.98 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1748,10 +1565,6 @@ datapoints:
       - 364.85 K
     ignition-delay:
       - 107.5 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1760,10 +1573,6 @@ datapoints:
       - 364.45 K
     ignition-delay:
       - 121.6 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1772,10 +1581,6 @@ datapoints:
       - 363.46 K
     ignition-delay:
       - 137.6 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1784,10 +1589,6 @@ datapoints:
       - 362.85 K
     ignition-delay:
       - 140.36 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1796,10 +1597,6 @@ datapoints:
       - 362.45 K
     ignition-delay:
       - 138.28 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1808,10 +1605,6 @@ datapoints:
       - 362.35 K
     ignition-delay:
       - 133.76 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1820,10 +1613,6 @@ datapoints:
       - 362.45 K
     ignition-delay:
       - 129.4 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
   - pressure:
@@ -1832,10 +1621,6 @@ datapoints:
       - 362.45 K
     ignition-delay:
       - 123.5 ms
-      - evaluated-standard-deviation: '0.1'
-        evaluated-standard-deviation-type: relative
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: generic uncertainty
     composition: *id001
     ignition-type: *id002
 ...

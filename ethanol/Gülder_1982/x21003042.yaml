@@ -17,7 +17,10 @@ apparatus:
   kind: flame
   institution: ''
   facility: ''
-  mode: premixed
+  mode:
+    - premixed
+    - laminar
+    - OPF
 common-properties:
   pressure: &id001
     - 4 bar
@@ -36,35 +39,28 @@ common-properties:
         InChI: 1S/N2/c1-2
         amount:
           - 0.739483
+  laminar-burning-velocity:
+    - evaluated-standard-deviation: 7.39 cm/s
+      evaluated-standard-deviation-type: absolute
+      evaluated-standard-deviation-sourcetype: estimated
+      evaluated-standard-deviation-method: statistical scatter
 datapoints:
   - temperature:
       - 350 K
     laminar-burning-velocity:
       - 46.59 cm/s
-      - evaluated-standard-deviation: 7.39 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
   - temperature:
       - 400 K
     laminar-burning-velocity:
       - 57.07 cm/s
-      - evaluated-standard-deviation: 7.39 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
   - temperature:
       - 500 K
     laminar-burning-velocity:
       - 85.22 cm/s
-      - evaluated-standard-deviation: 7.39 cm/s
-        evaluated-standard-deviation-type: absolute
-        evaluated-standard-deviation-sourcetype: estimated
-        evaluated-standard-deviation-method: statistical scatter
     pressure: *id001
     composition: *id002
 ...
