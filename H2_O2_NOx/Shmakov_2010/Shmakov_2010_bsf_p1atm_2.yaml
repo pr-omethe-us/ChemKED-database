@@ -1,0 +1,184 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.combustflame.2009.10.008
+  authors:
+    - name: A.G. Shmakov
+    - name: O.P. Korobeinichev
+    - name: I.V. Rybitskaya
+    - name: A.A. Chernov
+    - name: D.A. Knyazkov
+    - name: T.A. Bolshova
+    - name: A.A. Konnov
+  journal: Combustion and Flame
+  year: 2010
+  volume: 157
+  pages: 556-565
+  detail: Converted from ReSpecTh XML file x60200002.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: burner stabilized flame
+  institution: ''
+  facility: ''
+comments:
+  - The temperature profile is estimated based on Fig. 2. with interpolation and extrapolation.
+  - The flow rate (F) was calculated as the product of the gas velocity. (F = v *
+    rho = v * p * M_ave / R / T)
+common-properties:
+  temperature: &id001
+    - 308 K
+  pressure: &id002
+    - 1 atm
+  flow-rate: &id003
+    - 0.3117 kg * m**-2 * s**-1
+  composition: &id004
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.164
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.1745
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.6605
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.001
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: distance
+        units: mm
+        primary: true
+    concentration-profiles:
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.1138
+            - 0.000944
+          - - 0.2276
+            - 0.000958
+          - - 0.4098
+            - 0.001005
+          - - 0.5919
+            - 0.001045
+          - - 0.7967
+            - 0.001076
+          - - 1.0016
+            - 0.001097
+          - - 1.2065
+            - 0.001097
+          - - 1.4342
+            - 0.001093
+          - - 1.8894
+            - 0.001097
+          - - 2.0033
+            - 0.001074
+          - - 2.5041
+            - 0.001057
+          - - 3.0959
+            - 0.001052
+          - - 3.5968
+            - 0.001064
+          - - 4.0065
+            - 0.00105
+          - - 5.0081
+            - 0.001048
+          - - 6.0098
+            - 0.001057
+          - - 6.9886
+            - 0.001062
+          - - 7.9902
+            - 0.001043
+          - - 9.0146
+            - 0.001048
+          - - 9.9935
+            - 0.001048
+          - - 10.9951
+            - 0.00105
+          - - 12.0195
+            - 0.001064
+          - - 12.9984
+            - 0.001059
+          - - 14.0
+            - 0.001055
+          - - 15.0016
+            - 0.001052
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.00010999999999999999
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: distance
+          units: mm
+        quantity:
+          units: K
+        values:
+          - - 0.1138
+            - 600.0
+          - - 0.2276
+            - 834.0
+          - - 0.4098
+            - 1104.0
+          - - 0.5919
+            - 1292.0
+          - - 0.7967
+            - 1405.0
+          - - 1.0016
+            - 1444.0
+          - - 1.2065
+            - 1456.0
+          - - 1.4342
+            - 1464.0
+          - - 1.8894
+            - 1464.0
+          - - 2.0033
+            - 1464.0
+          - - 2.5041
+            - 1464.0
+          - - 3.0959
+            - 1464.0
+          - - 3.5968
+            - 1464.0
+          - - 4.0065
+            - 1464.0
+          - - 5.0081
+            - 1455.0
+          - - 6.0098
+            - 1445.0
+          - - 6.9886
+            - 1435.0
+          - - 7.9902
+            - 1425.0
+          - - 9.0146
+            - 1414.0
+          - - 9.9935
+            - 1404.0
+          - - 10.9951
+            - 1394.0
+          - - 12.0195
+            - 1384.0
+          - - 12.9984
+            - 1374.0
+          - - 14.0
+            - 1364.0
+          - - 15.0016
+            - 1354.0
+    temperature: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+...

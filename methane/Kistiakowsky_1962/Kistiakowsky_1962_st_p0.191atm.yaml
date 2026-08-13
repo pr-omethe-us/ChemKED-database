@@ -1,0 +1,65 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1063/1.1701256
+  authors:
+    - name: G. B. Kistiakowsky
+    - name: L. Willard Richards
+  journal: The Journal of Chemical Physics
+  year: 1962
+  volume: 36
+  pages: 1707-1714
+  detail: Converted from ReSpecTh XML file x10004265.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.0336
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0164
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.95
+  ignition-type: &id002
+    target: CHEX
+    type: d/dt min extrapolated
+datapoints:
+  - temperature:
+      - 2547.1 K
+    ignition-delay:
+      - 39.35 us
+      - evaluated-standard-deviation: '0.4'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 0.1994 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 2326 K
+    ignition-delay:
+      - 238.7 us
+      - evaluated-standard-deviation: '0.4'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 0.1821 atm
+    composition: *id001
+    ignition-type: *id002
+...

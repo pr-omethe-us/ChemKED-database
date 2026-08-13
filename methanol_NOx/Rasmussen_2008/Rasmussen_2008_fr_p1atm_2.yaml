@@ -1,0 +1,327 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1002/kin.20323
+  authors:
+    - name: Christian Lund Rasmussen
+    - name: Karin Hedebo Wassard
+    - name: Kim Dam‐Johansen
+    - name: Peter Glarborg
+  journal: International Journal of Chemical Kinetics
+  year: 2008
+  volume: 40
+  pages: 423-441
+  detail: Converted from ReSpecTh XML file x30202002.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+comments:
+  - These data are reported on Fig. 1. as well, but Figs. 6. and 7. are clearer for
+    digitization.
+  - The NO concentrations were averaged from data of Fig. 1. and Fig. 7.
+  - The first four zero CO2 and CO concentrations were not measured but assumed based
+    on the fact that the reaction initiated around 900 K.
+common-properties:
+  pressure: &id001
+    - 1 atm
+  composition: &id002
+    species:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.000495
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.045
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.003
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.000562
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.950943
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: CO2
+        InChI: 1S/CO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 661.0
+            - 0.1406
+            - 0.0
+            - 5.0e-06
+          - - 699.0
+            - 0.1331
+            - 0.0
+            - 5.0e-06
+          - - 735.0
+            - 0.1265
+            - 0.0
+            - 5.0e-06
+          - - 772.0
+            - 0.1204
+            - 0.0
+            - 5.0e-06
+          - - 811.0
+            - 0.1147
+            - 0.0
+            - 5.0e-06
+          - - 848.0
+            - 0.1097
+            - 0.0
+            - 5.0e-06
+          - - 885.0
+            - 0.1051
+            - 8.881e-07
+            - 5.0e-06
+          - - 922.0
+            - 0.1009
+            - 1.066e-05
+            - 5.0e-06
+          - - 958.0
+            - 0.0971
+            - 2.131e-05
+            - 5.0e-06
+          - - 995.0
+            - 0.0935
+            - 3.197e-05
+            - 5.0e-06
+          - - 1030.0
+            - 0.0903
+            - 4.263e-05
+            - 5.0e-06
+          - - 1067.0
+            - 0.0872
+            - 6.039e-05
+            - 5.0e-06
+          - - 1103.0
+            - 0.0843
+            - 0.0001581
+            - 5.0e-06
+          - - 1140.0
+            - 0.0816
+            - 0.0003313
+            - 9.94e-06
+          - - 1177.0
+            - 0.079
+            - 0.0003757
+            - 1.13e-05
+          - - 1212.0
+            - 0.0767
+            - 0.0004076
+            - 1.22e-05
+          - - 1248.0
+            - 0.0745
+            - 0.0004334
+            - 1.3e-05
+          - - 1284.0
+            - 0.0725
+            - 0.0004476
+            - 1.34e-05
+          - - 1320.0
+            - 0.0705
+            - 0.0004872
+            - 1.46e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 8.17e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 661.0
+            - 0.1406
+            - 0.0
+            - 5.0e-06
+          - - 699.0
+            - 0.1331
+            - 0.0
+            - 5.0e-06
+          - - 735.0
+            - 0.1265
+            - 0.0
+            - 5.0e-06
+          - - 772.0
+            - 0.1204
+            - 0.0
+            - 5.0e-06
+          - - 811.0
+            - 0.1147
+            - 0.0
+            - 5.0e-06
+          - - 848.0
+            - 0.1097
+            - 8.881e-07
+            - 5.0e-06
+          - - 885.0
+            - 0.1051
+            - 4.796e-05
+            - 5.0e-06
+          - - 922.0
+            - 0.1009
+            - 0.0002185
+            - 6.55e-06
+          - - 958.0
+            - 0.0971
+            - 0.0003108
+            - 9.33e-06
+          - - 995.0
+            - 0.0935
+            - 0.000365
+            - 1.1e-05
+          - - 1030.0
+            - 0.0903
+            - 0.0004041
+            - 1.21e-05
+          - - 1067.0
+            - 0.0872
+            - 0.0004139
+            - 1.24e-05
+          - - 1103.0
+            - 0.0843
+            - 0.0003313
+            - 9.94e-06
+          - - 1140.0
+            - 0.0816
+            - 0.0001528
+            - 5.0e-06
+          - - 1177.0
+            - 0.079
+            - 0.0001066
+            - 5.0e-06
+          - - 1212.0
+            - 0.0767
+            - 7.815e-05
+            - 5.0e-06
+          - - 1248.0
+            - 0.0745
+            - 5.861e-05
+            - 5.0e-06
+          - - 1284.0
+            - 0.0725
+            - 4.263e-05
+            - 5.0e-06
+          - - 1320.0
+            - 0.0705
+            - 6.047e-06
+            - 5.0e-06
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 1.98e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 661.0
+            - 0.1406
+            - 0.0005453
+            - 1.64e-05
+          - - 699.0
+            - 0.1331
+            - 0.0005511
+            - 1.65e-05
+          - - 735.0
+            - 0.1265
+            - 0.000552
+            - 1.66e-05
+          - - 772.0
+            - 0.1204
+            - 0.000552
+            - 1.66e-05
+          - - 811.0
+            - 0.1147
+            - 0.0005466
+            - 1.64e-05
+          - - 848.0
+            - 0.1097
+            - 0.0005347
+            - 1.6e-05
+          - - 885.0
+            - 0.1051
+            - 0.0004189
+            - 1.26e-05
+          - - 922.0
+            - 0.1009
+            - 0.0002059
+            - 6.18e-06
+          - - 958.0
+            - 0.0971
+            - 0.0001503
+            - 5.0e-06
+          - - 995.0
+            - 0.0935
+            - 0.0001596
+            - 5.0e-06
+          - - 1030.0
+            - 0.0903
+            - 0.0002178
+            - 6.53e-06
+          - - 1067.0
+            - 0.0872
+            - 0.000333
+            - 9.99e-06
+          - - 1103.0
+            - 0.0843
+            - 0.0005362
+            - 1.61e-05
+          - - 1140.0
+            - 0.0816
+            - 0.0005476
+            - 1.64e-05
+          - - 1177.0
+            - 0.079
+            - 0.0005511
+            - 1.65e-05
+          - - 1212.0
+            - 0.0767
+            - 0.0005517
+            - 1.66e-05
+          - - 1248.0
+            - 0.0745
+            - 0.0005511
+            - 1.65e-05
+          - - 1284.0
+            - 0.0725
+            - 0.0005516
+            - 1.65e-05
+          - - 1320.0
+            - 0.0705
+            - 0.0005552
+            - 1.67e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 3.48e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    pressure: *id001
+    composition: *id002
+...

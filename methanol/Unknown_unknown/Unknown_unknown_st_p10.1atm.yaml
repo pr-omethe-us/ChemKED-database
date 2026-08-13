@@ -1,0 +1,94 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  detail: U. Burke (2012), unpublished data from NUI Galway, Case No. 2 Converted
+    from ReSpecTh XML file x10002019.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.2187
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.164
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.6173
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+  - temperature:
+      - 1061.4 K
+    ignition-delay:
+      - 276 us
+      - evaluated-standard-deviation: '0.15'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 9.16 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 989.6 K
+    ignition-delay:
+      - 1279 us
+      - evaluated-standard-deviation: '0.15'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 9.58 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1125.1 K
+    ignition-delay:
+      - 169 us
+      - evaluated-standard-deviation: '0.15'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 10.65 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1270.8 K
+    ignition-delay:
+      - 38 us
+      - evaluated-standard-deviation: '0.15'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 10.4 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1204.4 K
+    ignition-delay:
+      - 77 us
+      - evaluated-standard-deviation: '0.15'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 10.48 atm
+    composition: *id001
+    ignition-type: *id002
+...

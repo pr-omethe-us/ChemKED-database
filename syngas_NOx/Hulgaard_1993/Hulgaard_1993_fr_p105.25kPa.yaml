@@ -1,0 +1,123 @@
+---
+file-authors:
+  - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1002/aic.690390811
+  authors:
+    - name: Tore Hulgaard
+    - name: Kim Dam‐Johansen
+  journal: AIChE Journal
+  year: 1993
+  volume: 39
+  pages: 1342-1354
+  detail: Converted from ReSpecTh XML file x30401000.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+comments:
+  - The uncertainty of xNO and xN2O was ± 1 %, but not less than 2 ppm.
+  - 'About pressure: "The reactor pressure was about 5 kPa higher than atmospheric
+    pressure which varied between 98.0 and 102.5 kPa."'
+common-properties:
+  pressure: &id001
+    - 105.25 kPa
+    - uncertainty-type: absolute
+      uncertainty: 2.25 kPa
+      uncertainty-sourcetype: estimated
+  composition: &id002
+    species:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.0018
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.000198
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.998002
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 1071.0
+            - 0.06539
+            - 0.0
+          - - 1169.0
+            - 0.05988
+            - 1.0e-06
+          - - 1218.0
+            - 0.05746
+            - 2.0e-06
+          - - 1269.0
+            - 0.05517
+            - 1.0e-06
+          - - 1317.0
+            - 0.05316
+            - 2.0e-06
+          - - 1367.0
+            - 0.05119
+            - 4.0e-06
+        uncertainty:
+          - uncertainty-type: absolute
+            uncertainty: 2.0e-06
+            uncertainty-sourcetype: calculated
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 5.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 1071.0
+            - 0.06539
+            - 0.000195
+            - 8.3424271e-08
+          - - 1169.0
+            - 0.05988
+            - 0.000183
+            - 8.3424271e-08
+          - - 1218.0
+            - 0.05746
+            - 0.000165
+            - 8.3424271e-08
+          - - 1269.0
+            - 0.05517
+            - 0.00013199999999999998
+            - 8.3424271e-08
+          - - 1317.0
+            - 0.05316
+            - 9.099999999999999e-05
+            - 1.0000000000000001e-11
+          - - 1367.0
+            - 0.05119
+            - 3.7999999999999995e-05
+            - 1.0000000000000001e-11
+        uncertainty:
+          - uncertainty-type: absolute
+            uncertainty: 2.0e-06
+            uncertainty-sourcetype: calculated
+    pressure: *id001
+    composition: *id002
+...

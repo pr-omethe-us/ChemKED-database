@@ -1,0 +1,298 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.combustflame.2017.09.031
+  authors:
+    - name: Changpeng Liu
+    - name: Heping Song
+    - name: Peng Zhang
+    - name: Zhi Wang
+    - name: Margaret S Wooldridge
+    - name: Xin He
+    - name: Guotao Suo
+  journal: Combustion and Flame
+  year: 2018
+  volume: 188
+  pages: 150-161
+  detail: Converted from ReSpecTh XML file x40004065.xml
+experiment-type: ignition delay
+apparatus:
+  kind: rapid compression machine
+  institution: ''
+  facility: ''
+comments:
+  - The initial temperature and pressure were deduced backward from the nominal Tc
+    and Pc showed in original article, the averaged adjustment amount of initial temeperature
+    and pressure are 3.20% and 9.07%, the gaps between nominal Tc / Pc and calculated
+    Tc / Pc (GRI_III mech) are within 1.33K / 0.06bar
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.136116
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.0
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.0
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.181488
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.682396
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+  - pressure:
+      - 0.5882 bar
+    temperature:
+      - 273.89 K
+    ignition-delay:
+      - 129 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    time-histories:
+      - time:
+          units: ms
+          column: 0
+        quantity:
+          units: cm3
+          column: 1
+        type: volume
+        values:
+          - [0.0, 1.0]
+          - [3.573806, 0.9997525]
+          - [5.599001, 0.9980772]
+          - [8.701155, 0.9819569]
+          - [10.02903, 0.9680446]
+          - [10.97439, 0.960546]
+          - [13.04665, 0.9270709]
+          - [14.8079, 0.8952139]
+          - [18.28029, 0.8207206]
+          - [23.57149, 0.6761089]
+          - [28.00042, 0.5211087]
+          - [29.05952, 0.4800554]
+          - [30.45615, 0.4287455]
+          - [33.95549, 0.2878415]
+          - [37.94307, 0.1194432]
+          - [38.68973, 0.1036471]
+          - [40.3, 0.09374471]
+          - [40.67086, 0.09416577]
+          - [41.20985, 0.09382838]
+          - [41.40532, 0.09401208]
+          - [41.51369, 0.09396479]
+          - [42.10003, 0.09428652]
+          - [43.74344, 0.09545275]
+          - [44.22221, 0.09564356]
+          - [47.15487, 0.09720718]
+          - [47.48496, 0.0973086]
+          - [53.02609, 0.09987626]
+          - [56.8388, 0.1012661]
+          - [59.96426, 0.102132]
+          - [64.37675, 0.1032692]
+          - [72.98603, 0.1050026]
+          - [82.04447, 0.1064757]
+          - [83.38252, 0.1066608]
+          - [95.12263, 0.1082048]
+          - [99.21582, 0.1086723]
+          - [102.2099, 0.1090899]
+          - [126.8745, 0.1116213]
+          - [129.1746, 0.1117738]
+          - [141.9416, 0.1129219]
+          - [174.5959, 0.115411]
+          - [213.9975, 0.117964]
+          - [250.0, 0.120049]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 0.6155 bar
+    temperature:
+      - 276.67 K
+    ignition-delay:
+      - 105.9 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    time-histories:
+      - time:
+          units: ms
+          column: 0
+        quantity:
+          units: cm3
+          column: 1
+        type: volume
+        values:
+          - [0.0, 1.0]
+          - [4.904658, 0.9993589]
+          - [7.028167, 0.993904]
+          - [11.04939, 0.9586048]
+          - [16.6092, 0.8531523]
+          - [21.00263, 0.7461483]
+          - [21.15374, 0.7408125]
+          - [22.00021, 0.710945]
+          - [22.86809, 0.6890225]
+          - [25.09831, 0.6177347]
+          - [27.60759, 0.5265598]
+          - [30.595, 0.4127055]
+          - [33.84879, 0.2807247]
+          - [35.45867, 0.212396]
+          - [37.85442, 0.1098877]
+          - [38.73304, 0.09266038]
+          - [40.4, 0.08523311]
+          - [41.35477, 0.08553723]
+          - [41.60163, 0.08600293]
+          - [42.02157, 0.08612228]
+          - [42.30647, 0.08635607]
+          - [42.39493, 0.08653717]
+          - [43.49987, 0.08747841]
+          - [46.20205, 0.0890122]
+          - [47.2, 0.08949623]
+          - [52.80938, 0.0917992]
+          - [56.87606, 0.09308083]
+          - [64.34786, 0.09490997]
+          - [66.979, 0.09538738]
+          - [70.2039, 0.09610448]
+          - [77.30716, 0.09743207]
+          - [79.87792, 0.0978124]
+          - [84.62619, 0.09863782]
+          - [85.9767, 0.09877781]
+          - [103.5951, 0.1010959]
+          - [108.0164, 0.1016099]
+          - [112.4501, 0.1019183]
+          - [123.5426, 0.1032396]
+          - [129.6414, 0.1037069]
+          - [146.8627, 0.1052958]
+          - [173.3656, 0.1073859]
+          - [208.7586, 0.1097629]
+          - [250.0, 0.1121951]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 0.6041 bar
+    temperature:
+      - 301.56 K
+    ignition-delay:
+      - 38.9 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    time-histories:
+      - time:
+          units: ms
+          column: 0
+        quantity:
+          units: cm3
+          column: 1
+        type: volume
+        values:
+          - [0.0, 1.0]
+          - [8.584064, 0.9885238]
+          - [10.01525, 0.9640111]
+          - [10.93166, 0.9638888]
+          - [17.17186, 0.8412948]
+          - [22.93369, 0.6914922]
+          - [27.74616, 0.5246111]
+          - [33.0422, 0.3115442]
+          - [37.85667, 0.1028214]
+          - [38.36156, 0.09069233]
+          - [38.65021, 0.08638906]
+          - [38.80973, 0.08458529]
+          - [39.078, 0.08282299]
+          - [39.52399, 0.07878227]
+          - [39.69289, 0.07805616]
+          - [39.86029, 0.07691637]
+          - [41.2, 0.07618566]
+          - [47.05105, 0.0799233]
+          - [47.98883, 0.0803244]
+          - [48.06474, 0.08032286]
+          - [49.25702, 0.08093731]
+          - [53.09689, 0.08255417]
+          - [54.18318, 0.08296289]
+          - [55.41051, 0.08335901]
+          - [60.07808, 0.08463086]
+          - [60.83042, 0.0847883]
+          - [64.1426, 0.08562036]
+          - [64.9693, 0.08582775]
+          - [66.84416, 0.08617689]
+          - [66.8463, 0.08616451]
+          - [73.15815, 0.08748817]
+          - [82.23528, 0.08909038]
+          - [93.87385, 0.09078256]
+          - [101.049, 0.09173098]
+          - [103.5402, 0.09216804]
+          - [113.2755, 0.09310751]
+          - [125.0783, 0.09456932]
+          - [128.4483, 0.0947599]
+          - [145.9122, 0.09657067]
+          - [178.9647, 0.09934246]
+          - [202.1217, 0.1009668]
+          - [210.3301, 0.10157]
+          - [250.0, 0.1040603]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 0.6077 bar
+    temperature:
+      - 303.13 K
+    ignition-delay:
+      - 38 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 0.5374 bar
+    temperature:
+      - 302.28 K
+    ignition-delay:
+      - 25.2 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 0.5463 bar
+    temperature:
+      - 302.57 K
+    ignition-delay:
+      - 23.7 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 0.4544 bar
+    temperature:
+      - 293.8 K
+    ignition-delay:
+      - 20.4 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    composition: *id001
+    ignition-type: *id002
+...

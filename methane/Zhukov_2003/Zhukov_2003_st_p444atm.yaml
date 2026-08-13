@@ -1,0 +1,86 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1023/A:1026186231905
+  authors:
+    - name: V. P. Zhukov
+    - name: V. A. Sechenov
+    - name: A. Yu. Starikovskii
+  journal: Combustion, Explosion and Shock Waves
+  year: 2003
+  volume: 39
+  pages: 487-495
+  detail: Converted from ReSpecTh XML file x10004196.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.0499
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.1994
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.7507
+  ignition-type: &id002
+    target: OHEX
+    type: d/dt max
+datapoints:
+  - temperature:
+      - 1239 K
+    ignition-delay:
+      - 63 us
+      - uncertainty-type: absolute
+        uncertainty: 6 us
+        uncertainty-sourcetype: reported
+    pressure:
+      - 451 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1379 K
+    ignition-delay:
+      - 22 us
+      - uncertainty-type: absolute
+        uncertainty: 3 us
+        uncertainty-sourcetype: reported
+    pressure:
+      - 477 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1353 K
+    ignition-delay:
+      - 26 us
+      - uncertainty-type: absolute
+        uncertainty: 4 us
+        uncertainty-sourcetype: reported
+    pressure:
+      - 395 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1196 K
+    ignition-delay:
+      - 75 us
+      - uncertainty-type: absolute
+        uncertainty: 6 us
+        uncertainty-sourcetype: reported
+    pressure:
+      - 451 atm
+    composition: *id001
+    ignition-type: *id002
+...

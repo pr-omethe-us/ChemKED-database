@@ -1,0 +1,159 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1007/BF01998452
+  authors:
+    - name: A. A. Paletskii
+    - name: L. V. Kuibida
+    - name: T. A. Bolshova
+    - name: O. P. Korobeinichev
+    - name: R. M. Fristrom
+  journal: Combustion, Explosion and Shock Waves
+  year: 1996
+  volume: 32
+  pages: 245-250
+  detail: Converted from ReSpecTh XML file x20000075burn.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: burner stabilized flame
+  institution: ''
+  facility: ''
+common-properties:
+  temperature: &id001
+    - 363 K
+  pressure: &id002
+    - 10 atm
+  flow-rate: &id003
+    - 0.135 g * cm**-2 * s**-1
+  composition: &id004
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.1
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.05
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.85
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: distance
+        units: mm
+        primary: true
+    concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0
+            - 0.99905
+          - - 0.1
+            - 0.69803
+          - - 0.2
+            - 0.45477
+          - - 0.3
+            - 0.21332
+          - - 0.4
+            - 0.0916
+          - - 0.5
+            - 0.04599
+          - - 0.6
+            - 0.01571
+          - - 0.7
+            - 0.00229
+          - - 0.8
+            - 0.0
+          - - 0.9
+            - 0.0
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0
+            - 0.00421
+          - - 0.1
+            - 0.01522
+          - - 0.2
+            - 0.02793
+          - - 0.3
+            - 0.05333
+          - - 0.4
+            - 0.07068
+          - - 0.5
+            - 0.07775
+          - - 0.6
+            - 0.08256
+          - - 0.7
+            - 0.08567
+          - - 0.8
+            - 0.08698
+          - - 0.9
+            - 0.08517
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0
+            - 0.50964
+          - - 0.1
+            - 0.4758
+          - - 0.2
+            - 0.35583
+          - - 0.3
+            - 0.23587
+          - - 0.4
+            - 0.13787
+          - - 0.5
+            - 0.07544
+          - - 0.6
+            - 0.04191
+          - - 0.7
+            - 0.03036
+          - - 0.8
+            - 0.01702
+          - - 0.9
+            - 0.01031
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: distance
+          units: mm
+        quantity:
+          units: K
+        values:
+          - - 0.0
+            - 370.4746
+          - - 0.1
+            - 523.8963
+          - - 0.2
+            - 776.6556
+          - - 0.3
+            - 1004.581
+          - - 0.4
+            - 1231.126
+          - - 0.5
+            - 1313.355
+          - - 0.6
+            - 1336.534
+          - - 0.7
+            - 1348.951
+          - - 0.8
+            - 1355.022
+          - - 0.9
+            - 1351.987
+    temperature: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+...

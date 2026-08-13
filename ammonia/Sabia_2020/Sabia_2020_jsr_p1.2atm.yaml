@@ -1,0 +1,472 @@
+---
+file-authors:
+  - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.fuel.2020.118054
+  authors:
+    - name: Pino Sabia
+    - name: Maria Virginia Manna
+    - name: Antonio Cavaliere
+    - name: Raffaele Ragucci
+    - name: Mara de Joannon
+  journal: Fuel
+  year: 2020
+  volume: 276
+  pages: '118054'
+  detail: Converted from ReSpecTh XML file x00199014.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+comments:
+  - The composition vs. temperature data were obtained through personal communication
+    from the authors in tabulated form.
+  - Through personal communication, the authors recommended that the inlet temperature
+    and the environment temperature should be set to the same value.
+common-properties:
+  reactor-volume: &id001
+    - 113 cm3
+  pressure: &id002
+    - 1.2 atm
+  residence-time: &id003
+    - 0.21 s
+  temperature: &id004
+    - 1100 K
+  environment-temperature: &id005
+    - 1100 K
+  global-heat-exchange-coefficient: &id006
+    - 35 cal/s/m2/K
+  exchange-area: &id007
+    - 113 cm2
+  composition: &id008
+    species:
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 86.0
+    kind: mole percent
+datapoints:
+  - independent-variables:
+      - name: equivalence-ratio
+        units: dimensionless
+        primary: true
+      - name: initial-composition
+        units: percent
+        primary: false
+        species-name: NH3
+        InChI: 1S/H3N/h1H3
+      - name: initial-composition
+        units: percent
+        primary: false
+        species-name: O2
+        InChI: 1S/O2/c1-2
+    concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 0.000989
+            - 5.1e-05
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 0.000856
+            - 4.4e-05
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 0.000861
+            - 4.4e-05
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 0.000893
+            - 4.6e-05
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 0.000851
+            - 4.3e-05
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 0.00085
+            - 4.3e-05
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 0.000943
+            - 4.8e-05
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 0.000881
+            - 4.5e-05
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 0.00086
+            - 4.4e-05
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 0.001245
+            - 6.4e-05
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 0.001171
+            - 6.0e-05
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 0.001134
+            - 5.8e-05
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 0.001139
+            - 5.8e-05
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 0.001088
+            - 5.6e-05
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 0.001067
+            - 5.5e-05
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 0.001227
+            - 6.3e-05
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 0.001143
+            - 5.8e-05
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 0.001144
+            - 5.8e-05
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 0.001203
+            - 6.1e-05
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 0.001154
+            - 5.9e-05
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 0.001124
+            - 5.7e-05
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 0.001235
+            - 6.3e-05
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 0.001178
+            - 6.0e-05
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 0.001155
+            - 5.9e-05
+          - - 1.4
+            - 9.1163
+            - 4.8837
+            - 0.001334
+            - 6.8e-05
+          - - 1.4
+            - 9.1163
+            - 4.8837
+            - 0.00123
+            - 6.3e-05
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.03
+            uncertainty-sourcetype: reported
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 0.075276
+            - 0.001882
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 0.0751
+            - 0.001878
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 0.075087
+            - 0.001877
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 0.07003
+            - 0.001751
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 0.069906
+            - 0.001748
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 0.069926
+            - 0.001748
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 0.06466
+            - 0.001617
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 0.064676
+            - 0.001617
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 0.064558
+            - 0.001614
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 0.061077
+            - 0.001527
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 0.060585
+            - 0.001515
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 0.060602
+            - 0.001515
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 0.057688
+            - 0.001442
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 0.057704
+            - 0.001443
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 0.057215
+            - 0.00143
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 0.054573
+            - 0.001364
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 0.054569
+            - 0.001364
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 0.05457
+            - 0.001364
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 0.051788
+            - 0.001295
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 0.051833
+            - 0.001296
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 0.051782
+            - 0.001295
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 0.049166
+            - 0.001229
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 0.049295
+            - 0.001232
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 0.049221
+            - 0.001231
+          - - 1.4
+            - 9.1163
+            - 4.8837
+            - 0.046817
+            - 0.00117
+          - - 1.4
+            - 9.1163
+            - 4.8837
+            - 0.046515
+            - 0.001163
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.03
+            uncertainty-sourcetype: reported
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 5.7e-05
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 5.7e-05
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 5.4e-05
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 4.8e-05
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 4.5e-05
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 4.4e-05
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 4.2e-05
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 3.8e-05
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 3.7e-05
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 4.0e-05
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 3.9e-05
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 3.6e-05
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 3.8e-05
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 3.7e-05
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 3.7e-05
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 3.7e-05
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 3.7e-05
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 3.6e-05
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 3.8e-05
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 3.7e-05
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 3.7e-05
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 3.4e-05
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 3.4e-05
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 3.3e-05
+          - - 1.4
+            - 9.1163
+            - 4.8837
+            - 3.3e-05
+          - - 1.4
+            - 9.1163
+            - 4.8837
+            - 3.2e-05
+        uncertainty:
+          - uncertainty-type: absolute
+            uncertainty: 2.0
+            uncertainty-sourcetype: reported
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 5.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    composition: *id008
+...

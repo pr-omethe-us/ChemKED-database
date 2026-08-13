@@ -1,0 +1,150 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/0010-2180(86)90071-4
+  authors:
+    - name: John A. Vanderhoff
+    - name: Steven W. Bunte
+    - name: Anthony J. Kotlar
+    - name: Richard A. Beyer
+  journal: Combustion and Flame
+  year: 1986
+  volume: 65
+  pages: 45-51
+  detail: Converted from ReSpecTh XML file x60400026.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: burner stabilized flame
+  institution: ''
+  facility: ''
+comments:
+  - The inlet gas temperature is assumed to be 300 K instead of 1700 K due to similar
+    flames and the utility of the simulations. (At positions closest to the burner
+    surface the flame temperature is in excess of 1700 K - from paper)
+  - 'The flow rate (F) was calculated by the following data and formula: F[l/min]
+    = 40 l/min, M_average = 0.03402 kg/mol, d = 0.06 m, A = (d/2)^2*PI; F[kg m-2 s-1]
+    = const * F[l/min] * M_average / A . Where const = 6,903*10^-4 (=p/R/T/6E4)'
+  - The standard temperature in this definition is 70 °F (294.26 K). If I used the
+    value of 298.15 K the difference would be 1.3%.
+  - The experimental temperature was estimated with linear interpolation based on
+    Fig. 2. (a) squere
+common-properties:
+  equivalence-ratio: &id001
+    - 0.89 dimensionless
+  temperature: &id002
+    - 300 K
+  pressure: &id003
+    - 1 atm
+  flow-rate: &id004
+    - 0.3322 kg * m**-2 * s**-1
+  composition: &id005
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.1766
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.1984
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.625
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: distance
+        units: mm
+        primary: true
+    concentration-profiles:
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.31
+            - 0.4399
+          - - 0.333
+            - 0.5003
+          - - 0.548
+            - 0.5044
+          - - 0.738
+            - 0.5275
+          - - 0.857
+            - 0.5527
+          - - 1.095
+            - 0.5366
+          - - 1.286
+            - 0.5054
+          - - 1.476
+            - 0.5265
+          - - 1.786
+            - 0.5195
+          - - 2.31
+            - 0.5054
+          - - 3.357
+            - 0.5023
+          - - 4.286
+            - 0.5235
+          - - 6.333
+            - 0.5044
+          - - 8.381
+            - 0.5154
+          - - 10.31
+            - 0.5164
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.1
+            uncertainty-sourcetype: reported
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.05527
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: distance
+          units: mm
+        quantity:
+          units: K
+        values:
+          - - 0.31
+            - 1818.0
+          - - 0.333
+            - 1832.0
+          - - 0.548
+            - 1888.0
+          - - 0.738
+            - 1902.0
+          - - 0.857
+            - 1911.0
+          - - 1.095
+            - 1913.0
+          - - 1.286
+            - 1920.0
+          - - 1.476
+            - 1922.0
+          - - 1.786
+            - 1928.0
+          - - 2.31
+            - 1933.0
+          - - 3.357
+            - 1921.0
+          - - 4.286
+            - 1915.0
+          - - 6.333
+            - 1887.0
+          - - 8.381
+            - 1850.0
+          - - 10.31
+            - 1818.0
+    equivalence-ratio: *id001
+    temperature: *id002
+    pressure: *id003
+    flow-rate: *id004
+    composition: *id005
+...

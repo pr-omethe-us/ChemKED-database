@@ -1,0 +1,100 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1007/s00340-003-1250-3
+  authors:
+    - name: A.V. Sepman
+    - name: V.M. van Essen
+    - name: A.V. Mokhov
+    - name: H.B. Levinsky
+  journal: Applied Physics B
+  year: 2003
+  volume: 77
+  pages: 109-117
+  detail: Converted from ReSpecTh XML file x60200013.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: burner stabilized flame
+  institution: ''
+  facility: ''
+comments:
+  - The inlet gas temperature (room temperature) is assumed to be 300 K.
+  - 'The initial composition was estimated based on the following:'
+  - 1. The phi values were reported. (phi = [H2] / 2[O2])
+  - 2. "The NO mole fraction added to the unburned mixtures was nominally 200 ppm."
+    (from paper) ([NO] = 0.0002)
+  - 3. The N2 had tow different sources. One is air diluent ([N2]_air) and the otherone
+    is neat N2 ([N2]_neat) . "The ratio of N2 to fuel in the mixtures did not exceed
+    0.2" (from paper) So I assumed that [N2]_neat = 0.2. Moreover [N2] = [N2]_neat
+    + [N2]_air.
+  - '4. I rejected to use the following: "supposing that air is composed of 20.95%
+    O2 and 70.95% N2" (from paper). I assumed the following air composition: [N2]_air
+    / [O2] = 0.8 / 0.2 = 4.'
+  - 5. [NO] + [H2] + [O2] + [N2]_air + [N2]_neat = 1. Five variable, five equations.
+  - 'The experimental NO is reported on Fig. 7. in relative values. (X_NO^meas / X_NO^add)
+    I assumed X_NO^add = 229 ppm due to the following: "When corrected for the change
+    in the number of moles, this results in a mole fraction of 229 ppm in the hot
+    gases." (from paper)'
+  - On Fig. 7. the temperatures are obviously identifiable with the phi and mass flow
+    values.
+  - The uncertainty of the measured [NO] was calculated as the 95% confidence intervall
+    of the measured data on fig 7. with the highest scatter (rombus, high T)
+common-properties:
+  equivalence-ratio: &id001
+    - 1.0 dimensionless
+  temperature:
+    - 300 K
+  pressure: &id002
+    - 1 atm
+  flow-rate: &id003
+    - 0.01 g * cm**-2 * s**-1
+  composition: &id004
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.2285
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.1143
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.657
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.0002
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: distance
+        units: mm
+        primary: true
+    temperature:
+      - 1610 K
+    concentration-profiles:
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 5.0
+            - 0.000186
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.08
+            uncertainty-sourcetype: calculated
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 1.8999999999999998e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    equivalence-ratio: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+...

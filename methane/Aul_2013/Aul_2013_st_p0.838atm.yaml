@@ -1,0 +1,116 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.combustflame.2013.01.019
+  authors:
+    - name: Christopher J. Aul
+    - name: Wayne K. Metcalfe
+    - name: Sinéad M. Burke
+    - name: Henry J. Curran
+    - name: Eric L. Petersen
+  journal: Combustion and Flame
+  year: 2013
+  volume: 160
+  pages: 1153-1167
+  detail: Converted from ReSpecTh XML file x10004031.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.05
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.2
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.75
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+  - temperature:
+      - 1802 K
+    pressure:
+      - 0.76 atm
+    ignition-delay:
+      - 152 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1731 K
+    pressure:
+      - 0.82 atm
+    ignition-delay:
+      - 224 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1684 K
+    pressure:
+      - 0.85 atm
+    ignition-delay:
+      - 304 us
+      - evaluated-standard-deviation: '0.101'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1635 K
+    pressure:
+      - 0.88 atm
+    ignition-delay:
+      - 400 us
+      - evaluated-standard-deviation: '0.104'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1628 K
+    pressure:
+      - 0.85 atm
+    ignition-delay:
+      - 486 us
+      - evaluated-standard-deviation: '0.105'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1543 K
+    pressure:
+      - 0.87 atm
+    ignition-delay:
+      - 876 us
+      - evaluated-standard-deviation: '0.111'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    composition: *id001
+    ignition-type: *id002
+...

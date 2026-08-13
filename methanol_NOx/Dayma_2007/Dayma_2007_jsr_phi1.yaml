@@ -1,0 +1,331 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.proci.2006.07.143
+  authors:
+    - name: Guillaume Dayma
+    - name: Kamal Hadj Ali
+    - name: Philippe Dagaut
+  journal: Proceedings of the Combustion Institute
+  year: 2007
+  volume: 31
+  pages: 411-418
+  detail: Converted from ReSpecTh XML file x00202005.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+comments:
+  - This xml file is the updated ReSpecTh 2.2 version of x00002005.xml by C. Olm
+  - Carbon balance was checked for every sample and found good (100 +- 5%). The mole
+    fractions of NO and NO2 were determined to within +- 5-25 ppm, depending on the
+    initial concentrations.
+  - 'The volume of the reactor was estimated based on the reported 40 mm diameter
+    in the following paper: P. Dagaut et al., J. Phys. E: Instrum. 19 (1985) 207-209'
+common-properties:
+  equivalence-ratio: &id001
+    - 1 dimensionless
+  pressure: &id002
+    - 10 atm
+  reactor-volume: &id003
+    - 30 cm3
+  residence-time: &id004
+    - 800 ms
+  composition: &id005
+    species:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.0025
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.00375
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.0007
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.00025
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.9928
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 750.0
+            - 0.0025056
+          - - 780.0
+            - 0.0021348
+          - - 810.0
+            - 0.0015281
+          - - 840.0
+            - 0.00076405
+          - - 870.0
+            - 0.00062921
+          - - 900.0
+            - 0.00064045
+          - - 930.0
+            - 0.00061798
+          - - 960.0
+            - 0.00053933
+          - - 990.0
+            - 0.00046067
+          - - 1020.0
+            - 0.00041573
+          - - 1050.0
+            - 0.00020225
+          - - 1080.0
+            - 6.7416e-05
+          - - 1110.0
+            - 2.2472e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000165
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 750.0
+            - 3.3708e-05
+          - - 780.0
+            - 0.0001573
+          - - 810.0
+            - 0.00061798
+          - - 840.0
+            - 0.0011011
+          - - 870.0
+            - 0.0011348
+          - - 900.0
+            - 0.0010674
+          - - 930.0
+            - 0.0010225
+          - - 960.0
+            - 0.001
+          - - 990.0
+            - 0.001
+          - - 1020.0
+            - 0.0008764
+          - - 1050.0
+            - 0.0008427
+          - - 1080.0
+            - 0.00089888
+          - - 1110.0
+            - 0.00079775
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000112
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: CO2
+        InChI: 1S/CO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 750.0
+            - 2.2472e-05
+          - - 780.0
+            - 4.4944e-05
+          - - 810.0
+            - 0.00014607
+          - - 840.0
+            - 0.00039326
+          - - 870.0
+            - 0.00064045
+          - - 900.0
+            - 0.00076405
+          - - 930.0
+            - 0.00085393
+          - - 960.0
+            - 0.00098876
+          - - 990.0
+            - 0.0011573
+          - - 1020.0
+            - 0.001382
+          - - 1050.0
+            - 0.0016067
+          - - 1080.0
+            - 0.0017191
+          - - 1110.0
+            - 0.0018652
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 7.38e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: CH2O
+        InChI: 1S/CH2O/c1-2/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 750.0
+            - 7.8652e-05
+          - - 780.0
+            - 0.00019101
+          - - 810.0
+            - 0.00023596
+          - - 840.0
+            - 0.00011236
+          - - 870.0
+            - 6.7416e-05
+          - - 900.0
+            - 6.7416e-05
+          - - 930.0
+            - 6.7416e-05
+          - - 960.0
+            - 7.8652e-05
+          - - 990.0
+            - 7.8652e-05
+          - - 1020.0
+            - 0.00010112
+          - - 1050.0
+            - 7.8652e-05
+          - - 1080.0
+            - 4.4944e-05
+          - - 1110.0
+            - 0.0
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 9.57e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 750.0
+            - 0.00085393
+          - - 780.0
+            - 0.0012697
+          - - 810.0
+            - 0.0024045
+          - - 840.0
+            - 0.0037753
+          - - 870.0
+            - 0.0041685
+          - - 900.0
+            - 0.0043034
+          - - 930.0
+            - 0.0043596
+          - - 960.0
+            - 0.0046292
+          - - 990.0
+            - 0.0049101
+          - - 1020.0
+            - 0.005
+          - - 1050.0
+            - 0.0053146
+          - - 1080.0
+            - 0.0055955
+          - - 1110.0
+            - 0.0056405
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.00041
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 750.0
+            - 0.00012383
+          - - 780.0
+            - 9.3433e-05
+          - - 810.0
+            - 7.7111e-05
+          - - 840.0
+            - 0.00010638
+          - - 870.0
+            - 0.00015366
+          - - 900.0
+            - 0.00017899
+          - - 930.0
+            - 0.00019418
+          - - 960.0
+            - 0.0002122
+          - - 990.0
+            - 0.00025328
+          - - 1020.0
+            - 0.00022964
+          - - 1050.0
+            - 0.00026398
+          - - 1080.0
+            - 0.00025272
+          - - 1110.0
+            - 0.00024203
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 2.02e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: NO2
+        InChI: 1S/NO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 750.0
+            - 9.6248e-05
+          - - 780.0
+            - 0.00012889
+          - - 810.0
+            - 0.00014015
+          - - 840.0
+            - 0.00011145
+          - - 870.0
+            - 7.6548e-05
+          - - 900.0
+            - 5.7974e-05
+          - - 930.0
+            - 4.7842e-05
+          - - 960.0
+            - 3.9963e-05
+          - - 990.0
+            - 3.0394e-05
+          - - 1020.0
+            - 2.2514e-05
+          - - 1050.0
+            - 7.8799e-06
+          - - 1080.0
+            - 2.8143e-06
+          - - 1110.0
+            - 1.1257e-06
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 1.56e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    equivalence-ratio: *id001
+    pressure: *id002
+    reactor-volume: *id003
+    residence-time: *id004
+    composition: *id005
+...

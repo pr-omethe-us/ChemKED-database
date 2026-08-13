@@ -1,0 +1,195 @@
+---
+file-authors:
+  - name: P. Wang and T. Nagy
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.combustflame.2015.09.014
+  authors:
+    - name: John Bugler
+    - name: Brandon Marks
+    - name: Olivier Mathieu
+    - name: Rachel Archuleta
+    - name: Alejandro Camou
+    - name: Claire Grégoire
+    - name: Karl A. Heufer
+    - name: Eric L. Petersen
+    - name: Henry J. Curran
+  journal: Combustion and Flame
+  year: 2016
+  volume: 163
+  pages: 138-156
+  detail: Converted from ReSpecTh XML file x40011016.xml
+experiment-type: ignition delay
+apparatus:
+  kind: rapid compression machine
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: AR
+        InChI: 1S/Ar
+        amount:
+          - 2.5910092e-12
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 2.5910092e-10
+      - species-name: HE
+        InChI: 1S/He
+        amount:
+          - 2.5910092e-12
+      - species-name: IC5H12
+        InChI: 1S/C5H12/c1-4-5(2)3/h5H,4H2,1-3H3
+        amount:
+          - 0.012955046
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.77976422
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.20728074
+  ignition-type: &id002
+    target: pressure
+    type: d/dt second max
+datapoints:
+  - pressure:
+      - 0.35076 atm
+    temperature:
+      - 295 K
+    ignition-delay:
+      - 67800 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    time-histories:
+      - time:
+          units: s
+          column: 0
+        quantity:
+          units: cm3
+          column: 1
+        type: volume
+        values:
+          - [0.0, 1.0]
+          - [0.0741117935, 1.0]
+          - [0.081960985, 0.24276763]
+          - [0.082513394, 0.19736455]
+          - [0.082814188, 0.17381482]
+          - [0.08311314, 0.14950331]
+          - [0.08394546, 0.097801525]
+          - [0.084550982, 0.087010847]
+          - [0.084779874, 0.085474551]
+          - [0.086328045, 0.089848554]
+          - [0.088838683, 0.094031204]
+          - [0.10240499, 0.10019827]
+          - [0.13065775, 0.1050738]
+          - [0.18581902, 0.11006252]
+          - [0.27567177, 0.11523111]
+          - [0.39605096, 0.12109317]
+          - [0.49977707, 0.1255759]
+          - [0.49995, 0.1256974]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 0.3553 atm
+    temperature:
+      - 308 K
+    ignition-delay:
+      - 20900 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    time-histories:
+      - time:
+          units: s
+          column: 0
+        quantity:
+          units: cm3
+          column: 1
+        type: volume
+        values:
+          - [0.0, 1.0]
+          - [0.071363146, 1.0]
+          - [0.0778795573, 0.615634222]
+          - [0.082205476, 0.22658737]
+          - [0.082405505, 0.21024134]
+          - [0.082655728, 0.19050126]
+          - [0.082904021, 0.17035239]
+          - [0.083152434, 0.14972965]
+          - [0.083403302, 0.13041662]
+          - [0.083850171, 0.1030953]
+          - [0.084053632, 0.096906938]
+          - [0.084662975, 0.086619724]
+          - [0.084857886, 0.085444842]
+          - [0.08540543, 0.088453826]
+          - [0.08763154, 0.093538562]
+          - [0.089237026, 0.095372741]
+          - [0.094077703, 0.097884852]
+          - [0.095232677, 0.099233921]
+          - [0.099645646, 0.099951525]
+          - [0.1009931, 0.10066539]
+          - [0.1013325, 0.1014278]
+          - [0.11681193, 0.10464905]
+          - [0.13925887, 0.10747267]
+          - [0.16108772, 0.10954792]
+          - [0.18610643, 0.11141954]
+          - [0.22288312, 0.11381873]
+          - [0.29099449, 0.11742481]
+          - [0.36693213, 0.12115895]
+          - [0.42721918, 0.12390162]
+          - [0.42877137, 0.12472482]
+          - [0.43015416, 0.12407432]
+          - [0.49734123, 0.12694794]
+          - [0.49757634, 0.1265977]
+          - [0.49995, 0.12669086]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 0.36156 atm
+    temperature:
+      - 323 K
+    ignition-delay:
+      - 15300 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    time-histories:
+      - time:
+          units: s
+          column: 0
+        quantity:
+          units: cm3
+          column: 1
+        type: volume
+        values:
+          - [0.0, 1.0]
+          - [0.068733123, 1.0]
+          - [0.0761538784, 0.791051129]
+          - [0.08211534, 0.25126612]
+          - [0.082515464, 0.21730325]
+          - [0.08296165, 0.17883784]
+          - [0.083315615, 0.15060824]
+          - [0.084046425, 0.10143003]
+          - [0.084439249, 0.092253302]
+          - [0.08485703, 0.087264378]
+          - [0.086629719, 0.091915075]
+          - [0.088967749, 0.095676288]
+          - [0.095397131, 0.099309638]
+          - [0.10414331, 0.10272502]
+          - [0.13016656, 0.1072798]
+          - [0.16417279, 0.11060869]
+          - [0.21355286, 0.11423828]
+          - [0.34596017, 0.12129117]
+          - [0.48702057, 0.12777374]
+          - [0.49995, 0.12796103]
+    composition: *id001
+    ignition-type: *id002
+...

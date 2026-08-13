@@ -1,0 +1,97 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.combustflame.2014.03.001
+  authors:
+    - name: Andrew B. Mansfield
+    - name: Margaret S. Wooldridge
+  journal: Combustion and Flame
+  year: 2014
+  volume: 161
+  pages: 2242-2251
+  detail: Converted from ReSpecTh XML file x40001058_19.xml
+experiment-type: ignition delay
+apparatus:
+  kind: rapid compression machine
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.017
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.025
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.209
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.732
+      - species-name: CO2
+        InChI: 1S/CO2/c2-1-3
+        amount:
+          - 0.017
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+  - temperature:
+      - 1039 K
+    pressure:
+      - 10.9 atm
+    ignition-delay:
+      - 14 ms
+      - evaluated-standard-deviation: '0.12'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    time-histories:
+      - time:
+          units: ms
+          column: 0
+        quantity:
+          units: cm3
+          column: 1
+        type: volume
+        values:
+          - [0.0, 1.0]
+          - [1.0, 1.0034797]
+          - [2.0, 1.0044255]
+          - [3.0, 1.0046817]
+          - [4.0, 1.004751]
+          - [5.0, 1.0047697]
+          - [6.0, 1.0047748]
+          - [7.0, 1.0047761]
+          - [8.0, 1.0047765]
+          - [9.0, 1.0047766]
+          - [10.0, 1.0047766]
+          - [11.0, 1.0047767]
+          - [12.0, 1.0047767]
+          - [13.0, 1.0047767]
+          - [14.0, 1.0047767]
+          - [15.0, 1.0047767]
+          - [16.0, 1.0047767]
+          - [17.0, 1.0047767]
+          - [18.0, 1.0047767]
+          - [19.0, 1.0047767]
+          - [20.0, 1.0047767]
+          - [21.0, 1.0047767]
+          - [22.0, 1.0047767]
+          - [23.0, 1.0047767]
+          - [24.0, 1.0047767]
+          - [25.0, 1.0047767]
+          - [26.0, 1.0047767]
+    composition: *id001
+    ignition-type: *id002
+...

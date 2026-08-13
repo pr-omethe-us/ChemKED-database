@@ -1,0 +1,78 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.2514/2.5394
+  authors:
+    - name: Eric L. Petersen
+    - name: David F. Davidson
+    - name: Ronald K. Hanson
+  journal: Journal of Propulsion and Power
+  year: 1999
+  volume: 15
+  pages: 82-91
+  detail: Converted from ReSpecTh XML file x10004347.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.5
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.1667
+      - species-name: He
+        InChI: 1S/He
+        amount:
+          - 0.3333
+  ignition-type: &id002
+    target: pressure
+    type: d/dt min extrapolated
+datapoints:
+  - temperature:
+      - 1324 K
+    ignition-delay:
+      - 185 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    pressure:
+      - 79 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1367 K
+    ignition-delay:
+      - 135 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    pressure:
+      - 72.8 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1395 K
+    ignition-delay:
+      - 111 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    pressure:
+      - 68.4 atm
+    composition: *id001
+    ignition-type: *id002
+...

@@ -1,0 +1,193 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: TODO
+  authors:
+    - name: Boettner Jean-claude, Dagaut Philippe
+    - name: Cathonnet Michel
+  journal: International Journal of Chemical Kinetics
+  year: 1990
+  volume: 22
+  pages: 641-664
+  detail: Converted from ReSpecTh XML file x00014022.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+comments:
+  - Experimental error (5%) is identical with that in Dagaut_2005 article
+common-properties:
+  temperature: &id001
+    - 1018 K
+  pressure: &id002
+    - 5 atm
+  composition: &id003
+    species:
+      - species-name: C2H4
+        InChI: 1S/C2H4/c1-2/h1-2H2
+        amount:
+          - 0.0015
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0045
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.994
+    kind: mole fraction
+  reactor-volume: &id004
+    - 33493.33333 mm3
+datapoints:
+  - independent-variables:
+      - name: residence-time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.3
+            - 0.0012749999999999999
+          - - 0.4
+            - 0.0013162199999999999
+          - - 0.5
+            - 0.00138558
+          - - 0.8
+            - 0.00157958
+          - - 1.0
+            - 0.0015563399999999998
+          - - 1.2
+            - 0.00149791
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 7.9e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+      - species-name: C2H4
+        InChI: 1S/C2H4/c1-2/h1-2H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.3
+            - 0.0006623239999999999
+          - - 0.4
+            - 0.0005943869999999999
+          - - 0.5
+            - 0.0005651409999999999
+          - - 0.8
+            - 0.000421127
+          - - 1.0
+            - 0.000433099
+          - - 1.2
+            - 0.000434528
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 3.31e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+      - species-name: CO2
+        InChI: 1S/CO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.3
+            - 0.00027499999999999996
+          - - 0.4
+            - 0.000288007
+          - - 0.5
+            - 0.00034683100000000003
+          - - 0.8
+            - 0.000498592
+          - - 1.0
+            - 0.000538753
+          - - 1.2
+            - 0.000582394
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 2.91e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.3
+            - 7.041609999999999e-05
+          - - 0.4
+            - 7.63523e-05
+          - - 0.5
+            - 7.760209999999999e-05
+          - - 0.8
+            - 8.135049999999999e-05
+          - - 1.0
+            - 7.60386e-05
+          - - 1.2
+            - 7.25496e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 4.1e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+      - species-name: C2H6
+        InChI: 1S/C2H6/c1-2/h1-2H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.3
+            - 1.2864e-05
+          - - 0.4
+            - 1.54148e-05
+          - - 0.5
+            - 1.5102099999999999e-05
+          - - 0.8
+            - 1.36432e-05
+          - - 1.0
+            - 1.24979e-05
+          - - 1.2
+            - 1.2134e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 8.0e-07
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+      - species-name: C2H2
+        InChI: 1S/C2H2/c1-2/h1-2H
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.3
+            - 6.093135e-06
+          - - 0.4
+            - 5.780429999999999e-06
+          - - 0.5
+            - 5.728141e-06
+          - - 0.8
+            - 6.87336e-06
+          - - 1.0
+            - 6.769808e-06
+          - - 1.2
+            - 6.404815e-06
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 3.0e-07
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+    temperature: *id001
+    pressure: *id002
+    composition: *id003
+    reactor-volume: *id004
+...

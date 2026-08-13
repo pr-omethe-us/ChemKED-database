@@ -1,0 +1,87 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/0010-2180(81)90142-5
+  authors:
+    - name: Takao Tsuboi
+    - name: Kazunobu Hashimoto
+  journal: Combustion and Flame
+  year: 1981
+  volume: 42
+  pages: 61-76
+  detail: Converted from ReSpecTh XML file x10002046.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  temperature: &id001
+    - 1500 K
+  composition: &id002
+    kind: mole fraction
+    species:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.0001
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.00075
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.99915
+  ignition-type: &id003
+    target: CH3OH
+    type: d/dt max extrapolated
+datapoints:
+  - pressure:
+      - 2.023 atm
+    ignition-delay:
+      - 455 us
+      - evaluated-standard-deviation: '0.2'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    temperature: *id001
+    composition: *id002
+    ignition-type: *id003
+  - pressure:
+      - 3.391 atm
+    ignition-delay:
+      - 259 us
+      - evaluated-standard-deviation: '0.2'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    temperature: *id001
+    composition: *id002
+    ignition-type: *id003
+  - pressure:
+      - 8.23 atm
+    ignition-delay:
+      - 88 us
+      - evaluated-standard-deviation: '0.2'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    temperature: *id001
+    composition: *id002
+    ignition-type: *id003
+  - pressure:
+      - 16.601 atm
+    ignition-delay:
+      - 43 us
+      - evaluated-standard-deviation: '0.2'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    temperature: *id001
+    composition: *id002
+    ignition-type: *id003
+...

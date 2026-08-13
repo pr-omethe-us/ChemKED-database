@@ -1,0 +1,79 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.combustflame.2015.03.024
+  authors:
+    - name: Olivier Mathieu
+    - name: John M. Pemelton
+    - name: Gilles Bourque
+    - name: Eric L. Petersen
+  journal: Combustion and Flame
+  year: 2015
+  volume: 162
+  pages: 3053-3070
+  detail: Converted from ReSpecTh XML file x10004588.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.095064
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.189137
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.715799
+  ignition-type: &id002
+    target: pressure
+    type: d/dt min extrapolated
+datapoints:
+  - temperature:
+      - 1348 K
+    ignition-delay:
+      - 333 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    pressure:
+      - 41.4 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1331 K
+    ignition-delay:
+      - 371 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    pressure:
+      - 42.5 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1308 K
+    ignition-delay:
+      - 467 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    pressure:
+      - 44.2 atm
+    composition: *id001
+    ignition-type: *id002
+...

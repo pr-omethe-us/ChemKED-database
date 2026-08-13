@@ -1,0 +1,115 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1007/s001930100108
+  authors:
+    - name: N. Lamoureux
+    - name: C.-E. Paillard
+    - name: V. Vaslier
+  journal: Shock Waves
+  year: 2002
+  volume: 11
+  pages: 309-322
+  detail: Converted from ReSpecTh XML file x10004023.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.01
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.02
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.97
+  ignition-type: &id002
+    target: OH
+    type: relative concentration
+    amount: 0.1
+datapoints:
+  - temperature:
+      - 1749 K
+    pressure:
+      - 1779000 Pa
+    ignition-delay:
+      - 84 us
+      - evaluated-standard-deviation: '0.33'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1771 K
+    pressure:
+      - 602000 Pa
+    ignition-delay:
+      - 138 us
+      - evaluated-standard-deviation: '0.33'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1686 K
+    pressure:
+      - 1532000 Pa
+    ignition-delay:
+      - 111 us
+      - evaluated-standard-deviation: '0.33'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1641 K
+    pressure:
+      - 1142000 Pa
+    ignition-delay:
+      - 213 us
+      - evaluated-standard-deviation: '0.33'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1734 K
+    pressure:
+      - 947000 Pa
+    ignition-delay:
+      - 138 us
+      - evaluated-standard-deviation: '0.33'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1870 K
+    pressure:
+      - 477000 Pa
+    ignition-delay:
+      - 64 us
+      - evaluated-standard-deviation: '0.33'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    composition: *id001
+    ignition-type: *id002
+...

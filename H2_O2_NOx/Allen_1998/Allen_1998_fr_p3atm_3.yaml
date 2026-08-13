@@ -1,0 +1,205 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/s0010-2180(97)00128-4
+  authors:
+    - name: M Allen
+  journal: Combustion and Flame
+  year: 1998
+  volume: 112
+  pages: 302-311
+  detail: Converted from ReSpecTh XML file x30400003.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 3 atm
+  temperature: &id002
+    - 995 K
+  composition: &id003
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.0053
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.0116
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        amount:
+          - 0.0008
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.9823
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.22
+            - 0.01067
+          - - 0.244
+            - 0.01025
+          - - 0.269
+            - 0.00989
+          - - 0.294
+            - 0.00972
+          - - 0.319
+            - 0.00972
+          - - 0.345
+            - 0.00944
+          - - 0.37
+            - 0.00921
+          - - 0.395
+            - 0.00905
+          - - 0.42
+            - 0.00899
+          - - 0.446
+            - 0.00873
+          - - 0.471
+            - 0.00848
+          - - 0.497
+            - 0.00829
+          - - 0.523
+            - 0.00806
+          - - 0.548
+            - 0.00792
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000534
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.22
+            - 0.00419
+          - - 0.244
+            - 0.00399
+          - - 0.269
+            - 0.00382
+          - - 0.294
+            - 0.00365
+          - - 0.319
+            - 0.00354
+          - - 0.345
+            - 0.00317
+          - - 0.37
+            - 0.00303
+          - - 0.395
+            - 0.00289
+          - - 0.42
+            - 0.00283
+          - - 0.446
+            - 0.00253
+          - - 0.471
+            - 0.00241
+          - - 0.497
+            - 0.00222
+          - - 0.523
+            - 0.00202
+          - - 0.548
+            - 0.00191
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.00020999999999999998
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.22
+            - 0.00126
+          - - 0.244
+            - 0.00151
+          - - 0.269
+            - 0.00165
+          - - 0.294
+            - 0.00181
+          - - 0.319
+            - 0.0019
+          - - 0.345
+            - 0.00217
+          - - 0.37
+            - 0.00237
+          - - 0.395
+            - 0.0025
+          - - 0.42
+            - 0.00272
+          - - 0.446
+            - 0.00286
+          - - 0.471
+            - 0.00303
+          - - 0.497
+            - 0.00322
+          - - 0.523
+            - 0.00344
+          - - 0.548
+            - 0.0036
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.00035999999999999997
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.22
+            - 0.000734
+          - - 0.244
+            - 0.00076
+          - - 0.269
+            - 0.000758
+          - - 0.294
+            - 0.000728
+          - - 0.319
+            - 0.000782
+          - - 0.345
+            - 0.000808
+          - - 0.37
+            - 0.000806
+          - - 0.395
+            - 0.000804
+          - - 0.42
+            - 0.00083
+          - - 0.446
+            - 0.0008
+          - - 0.471
+            - 0.000742
+          - - 0.497
+            - 0.000768
+          - - 0.523
+            - 0.000766
+          - - 0.548
+            - 0.000736
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 4.2e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    pressure: *id001
+    temperature: *id002
+    composition: *id003
+...

@@ -1,0 +1,246 @@
+---
+file-authors:
+  - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1021/acs.energyfuels.1c00647
+  authors:
+    - name: Cuijiao Ding
+    - name: Pengfei Li
+    - name: Kai Wang
+    - name: Guodong Shi
+    - name: Feifei Wang
+    - name: Zhaohui Liu
+  journal: Energy &amp; Fuels
+  year: 2021
+  volume: 35
+  pages: 11445-11456
+  detail: Converted from ReSpecTh XML file x00101004.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+comments:
+  - The pressure was not reported, so 1 atm is assumed.
+  - The reactor volume was calculated based on the reported JSR diameter (d = 50 mm).
+    The radius is r = 25 mm = 2.5 cm, so the volume is V = 4*r^3*pi/3 = 65.450 cm^3.
+common-properties:
+  composition: &id001
+    species:
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        amount:
+          - 0.001
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.005
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.005
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.005
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.9840000000000001
+    kind: mole fraction
+  pressure: &id002
+    - 1 atm
+  reactor-volume: &id003
+    - 65.45 cm3
+  equivalence-ratio: &id004
+    - 1.25 dimensionless
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        quantity:
+          units: mole percent
+        values:
+          - - 900.0
+            - 1.309
+            - 0.2194
+            - 5.6e-05
+          - - 950.0
+            - 1.24
+            - 0.1179
+            - 3.0e-05
+          - - 1000.0
+            - 1.178
+            - 0.0594
+            - 1.5e-05
+          - - 1100.0
+            - 1.071
+            - 0.0001
+            - 5.0e-06
+          - - 1200.0
+            - 0.982
+            - 0.0009
+            - 5.0e-06
+          - - 1300.0
+            - 0.906
+            - 0.0001
+            - 5.0e-06
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.01
+            uncertainty-sourcetype: reported
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 900.0
+            - 1.309
+            - 0.0038689999999999996
+            - 1.52e-09
+          - - 950.0
+            - 1.24
+            - 0.00241
+            - 9.47e-10
+          - - 1000.0
+            - 1.178
+            - 0.000968
+            - 3.8e-10
+          - - 1100.0
+            - 1.071
+            - 0.00039099999999999996
+            - 1.5399999999999999e-10
+          - - 1200.0
+            - 0.982
+            - 0.0007779999999999999
+            - 3.06e-10
+          - - 1300.0
+            - 0.906
+            - 0.000588
+            - 2.31e-10
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.01
+            uncertainty-sourcetype: reported
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole percent
+        values:
+          - - 900.0
+            - 1.309
+            - 0.2374
+            - 0.000329
+          - - 950.0
+            - 1.24
+            - 0.0963
+            - 0.000134
+          - - 1000.0
+            - 1.178
+            - 0.043
+            - 6.0e-05
+          - - 1100.0
+            - 1.071
+            - 0.0168
+            - 2.3e-05
+          - - 1200.0
+            - 0.982
+            - 0.0176
+            - 2.4e-05
+          - - 1300.0
+            - 0.906
+            - 0.0159
+            - 2.2e-05
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.01
+            uncertainty-sourcetype: reported
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 900.0
+            - 1.309
+            - 9.999999999999999e-06
+            - 5.0000000000000005e-12
+          - - 950.0
+            - 1.24
+            - 1.1e-05
+            - 5.0000000000000005e-12
+          - - 1000.0
+            - 1.178
+            - 2.6e-05
+            - 6.999999999999999e-12
+          - - 1100.0
+            - 1.071
+            - 2.8e-05
+            - 6.999999999999999e-12
+          - - 1200.0
+            - 0.982
+            - 3.7e-05
+            - 9.0e-12
+          - - 1300.0
+            - 0.906
+            - 5.9999999999999995e-05
+            - 1.5e-11
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.01
+            uncertainty-sourcetype: reported
+    composition: *id001
+    pressure: *id002
+    reactor-volume: *id003
+    equivalence-ratio: *id004
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 900.0
+            - 1.309
+            - 7.0e-06
+          - - 950.0
+            - 1.24
+            - 1.9999999999999998e-05
+          - - 1000.0
+            - 1.178
+            - 9.999999999999999e-06
+          - - 1100.0
+            - 1.071
+            - 7.0e-06
+          - - 1200.0
+            - 0.982
+            - 4.9999999999999996e-06
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.01
+            uncertainty-sourcetype: reported
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 5.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    composition: *id001
+    pressure: *id002
+    reactor-volume: *id003
+    equivalence-ratio: *id004
+...

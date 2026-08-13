@@ -1,0 +1,209 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.proci.2010.06.042
+  authors:
+    - name: O.A. Powell
+    - name: P. Papas
+    - name: C.B. Dreyer
+  journal: Proceedings of the Combustion Institute
+  year: 2011
+  volume: 33
+  pages: 1053-1062
+  detail: Converted from ReSpecTh XML file x60400001.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: burner stabilized flame
+  institution: ''
+  facility: ''
+comments:
+  - A normalized [NO] profile was digitized and then it was multiplied with the concetration
+    value (in ppm) given at the distence above the burner of 4.50 mm. This value is
+    (5520/0.986788), because there was no peak value given in Table 1.
+  - 'Inlet temperature was estimated based on the following: The initial inlet gas
+    temperature was measured to be in the range of 295-300 K for the conditions studied.
+    (from paper)'
+  - The temperature profile during the experiment was estimated with linear interpolation
+    based on Fig 1.
+  - The digitized uncertainty data are left out from the xml because the reported
+    uncertainty is 20% and the digitized data are too small.
+common-properties:
+  equivalence-ratio: &id001
+    - 0.95 dimensionless
+  temperature: &id002
+    - 298 K
+  pressure: &id003
+    - 0.81 atm
+  flow-rate: &id004
+    - 0.01066 g * cm**-2 * s**-1
+  composition: &id005
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.1812
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.1908
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.628
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: distance
+        units: mm
+        primary: true
+    concentration-profiles:
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.1967
+            - 0.000895
+          - - 0.3002
+            - 0.000971
+          - - 0.3934
+            - 0.001193
+          - - 0.4969
+            - 0.0014069999999999998
+          - - 0.6004
+            - 0.001674
+          - - 0.7039
+            - 0.0018809999999999999
+          - - 0.8075
+            - 0.002118
+          - - 0.9006
+            - 0.002317
+          - - 0.9938
+            - 0.0025919999999999997
+          - - 1.118
+            - 0.002806
+          - - 1.2112
+            - 0.003028
+          - - 1.294
+            - 0.0032259999999999997
+          - - 1.3975
+            - 0.003418
+          - - 1.6977
+            - 0.003914
+          - - 1.9462
+            - 0.00419
+          - - 2.1946
+            - 0.00445
+          - - 2.4534
+            - 0.004648
+          - - 2.7019
+            - 0.00487
+          - - 2.9503
+            - 0.0050609999999999995
+          - - 3.1988
+            - 0.005137999999999999
+          - - 3.6957
+            - 0.00539
+          - - 4.2029
+            - 0.005588999999999999
+          - - 4.3892
+            - 0.00552
+          - - 4.6998
+            - 0.00552
+          - - 5.1967
+            - 0.005558
+          - - 5.6936
+            - 0.005558
+          - - 6.2008
+            - 0.005528
+          - - 6.6977
+            - 0.00552
+          - - 7.1946
+            - 0.005482
+          - - 8.1988
+            - 0.005535
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.2
+            uncertainty-sourcetype: reported
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.0011179999999999999
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: distance
+          units: mm
+        quantity:
+          units: K
+        values:
+          - - 0.1967
+            - 682.0
+          - - 0.3002
+            - 818.0
+          - - 0.3934
+            - 953.0
+          - - 0.4969
+            - 1086.0
+          - - 0.6004
+            - 1193.0
+          - - 0.7039
+            - 1244.0
+          - - 0.8075
+            - 1292.0
+          - - 0.9006
+            - 1323.0
+          - - 0.9938
+            - 1354.0
+          - - 1.118
+            - 1391.0
+          - - 1.2112
+            - 1403.0
+          - - 1.294
+            - 1424.0
+          - - 1.3975
+            - 1435.0
+          - - 1.6977
+            - 1480.0
+          - - 1.9462
+            - 1506.0
+          - - 2.1946
+            - 1525.0
+          - - 2.4534
+            - 1543.0
+          - - 2.7019
+            - 1568.0
+          - - 2.9503
+            - 1601.0
+          - - 3.1988
+            - 1601.0
+          - - 3.6957
+            - 1594.0
+          - - 4.2029
+            - 1586.0
+          - - 4.3892
+            - 1585.0
+          - - 4.6998
+            - 1584.0
+          - - 5.1967
+            - 1582.0
+          - - 5.6936
+            - 1579.0
+          - - 6.2008
+            - 1576.0
+          - - 6.6977
+            - 1575.0
+          - - 7.1946
+            - 1574.0
+          - - 8.1988
+            - 1572.0
+    equivalence-ratio: *id001
+    temperature: *id002
+    pressure: *id003
+    flow-rate: *id004
+    composition: *id005
+...

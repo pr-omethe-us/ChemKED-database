@@ -1,0 +1,139 @@
+---
+file-authors:
+  - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.jhazmat.2018.09.073
+  authors:
+    - name: Qingming Liu
+    - name: Xu Chen
+    - name: Jinxiang Huang
+    - name: Yang Shen
+    - name: Yunming Zhang
+    - name: Ziwei Liu
+  journal: Journal of Hazardous Materials
+  year: 2019
+  volume: 363
+  pages: 187-196
+  detail: Converted from ReSpecTh XML file x20199010.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: outwardly propagating spherical flame
+  institution: ''
+  facility: ''
+comments:
+  - phi = 0.75 * x_NH3 / x_O2 is assumed.
+common-properties:
+  temperature: &id001
+    - 298 K
+  pressure: &id002
+    - 1.6 atm
+datapoints:
+  - composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.4
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.6
+    equivalence-ratio:
+      - 0.5 dimensionless
+    laminar-burning-velocity:
+      - 76.1 cm/s
+      - evaluated-standard-deviation: 7.025 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    temperature: *id001
+    pressure: *id002
+  - composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.5
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.5
+    equivalence-ratio:
+      - 0.75 dimensionless
+    laminar-burning-velocity:
+      - 99.5 cm/s
+      - evaluated-standard-deviation: 9.186 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    temperature: *id001
+    pressure: *id002
+  - composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.571429
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.428571
+    equivalence-ratio:
+      - 1 dimensionless
+    laminar-burning-velocity:
+      - 102.3 cm/s
+      - evaluated-standard-deviation: 9.444 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    temperature: *id001
+    pressure: *id002
+  - composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.634146
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.365854
+    equivalence-ratio:
+      - 1.3 dimensionless
+    laminar-burning-velocity:
+      - 74.2 cm/s
+      - evaluated-standard-deviation: 6.85 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    temperature: *id001
+    pressure: *id002
+  - composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.7
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.3
+    equivalence-ratio:
+      - 1.75 dimensionless
+    laminar-burning-velocity:
+      - 41.2 cm/s
+      - evaluated-standard-deviation: 3.803 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    temperature: *id001
+    pressure: *id002
+...

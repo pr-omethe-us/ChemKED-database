@@ -1,0 +1,121 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1021/ef800832q
+  authors:
+    - name: T. Le Cong
+    - name: P. Dagaut
+  journal: Energy &amp; Fuels
+  year: 2009
+  volume: 23
+  pages: 725-734
+  detail: Converted from ReSpecTh XML file g00000004psr_x.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+common-properties:
+  reactor-volume: &id001
+    - 30 cm3
+  pressure: &id002
+    - 10 atm
+  residence-time: &id003
+    - 1000 ms
+  composition: &id004
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.0093
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.05
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.9407
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 820.0
+            - 0.00927
+          - - 850.0
+            - 0.00932
+          - - 880.0
+            - 0.00831
+          - - 910.0
+            - 0.006
+          - - 940.0
+            - 0.00431
+          - - 970.0
+            - 0.0034
+          - - 1000.0
+            - 0.00284
+          - - 1030.0
+            - 0.00222
+          - - 1060.0
+            - 0.00155
+          - - 1090.0
+            - 0.000614
+          - - 1120.0
+            - 0.000276
+          - - 1150.0
+            - 0.000112
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.00064
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 820.0
+            - 0.00166
+          - - 850.0
+            - 0.00172
+          - - 880.0
+            - 0.00263
+          - - 910.0
+            - 0.00492
+          - - 940.0
+            - 0.0067
+          - - 970.0
+            - 0.00795
+          - - 1000.0
+            - 0.00857
+          - - 1030.0
+            - 0.00907
+          - - 1060.0
+            - 0.00968
+          - - 1090.0
+            - 0.01057
+          - - 1120.0
+            - 0.01068
+          - - 1150.0
+            - 0.01076
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.00026
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+...

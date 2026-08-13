@@ -1,0 +1,86 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1002/kin.550250409
+  authors:
+    - name: Yoshiaki Hidaka
+    - name: Takashi Taniguchi
+    - name: Takashi Kamesawa
+    - name: Hiromitsu Masaoka
+    - name: Koji Inami
+    - name: Hiroyuki Kawano
+  journal: International Journal of Chemical Kinetics
+  year: 1993
+  volume: 25
+  pages: 305-322
+  detail: Converted from ReSpecTh XML file x50002210pyrCH2O.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 2.00 atm
+  temperature: &id002
+    - 1724 K
+  composition: &id003
+    species:
+      - species-name: CH2O
+        InChI: 1S/CH2O/c1-2/h1H2
+        amount:
+          - 0.01
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.99
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: time
+        units: us
+        primary: true
+    concentration-profiles:
+      - species-name: CH2O
+        InChI: 1S/CH2O/c1-2/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0
+            - 0.01
+          - - 25.0
+            - 0.0086275
+          - - 50.0
+            - 0.0057145
+          - - 75.0
+            - 0.0033989
+          - - 100.0
+            - 0.0026934
+          - - 125.0
+            - 0.001578
+          - - 150.0
+            - 0.0013878
+          - - 175.0
+            - 0.0010247
+          - - 200.0
+            - 0.0006617
+          - - 225.0
+            - 0.0006413
+          - - 250.0
+            - 0.0001759
+          - - 275.0
+            - 3.84e-05
+          - - 300.0
+            - 0.0005826
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.0005
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: generic uncertainty
+    pressure: *id001
+    temperature: *id002
+    composition: *id003
+...

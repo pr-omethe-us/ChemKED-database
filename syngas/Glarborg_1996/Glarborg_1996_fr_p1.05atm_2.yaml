@@ -1,0 +1,124 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1002/(SICI)1097-4601(1996)28:10%3C773::AID-KIN8%3E3.0.CO;2-K
+  authors:
+    - name: Peter Glarborg
+    - name: Dorte Kubel
+    - name: Kim Dam-Johansen
+    - name: Hong-Ming Chiang
+    - name: Joseph W. Bozzelli
+  journal: International Journal of Chemical Kinetics
+  year: 1996
+  volume: 28
+  pages: 773-790
+  detail: Converted from ReSpecTh XML file x30001015.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 1.05 atm
+  composition: &id002
+    species:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.000474
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.042
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.093
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.864526
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: residence-time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.27319
+            - 0.00047457
+          - - 0.2651
+            - 0.00047421
+          - - 0.25766
+            - 0.00047386
+          - - 0.25045
+            - 0.00046666
+          - - 0.24381
+            - 0.00045377
+          - - 0.23783
+            - 0.00038271
+          - - 0.23167
+            - 0.00025574
+          - - 0.22582
+            - 5.69e-05
+          - - 0.22041
+            - 9.7831e-06
+          - - 0.21524
+            - 3.7305e-06
+          - - 0.21044
+            - 3.3906e-06
+          - - 0.20548
+            - 7.4164e-07
+          - - 0.20099
+            - 3.9248e-07
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 2.144e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: time
+          units: s
+        quantity:
+          units: K
+        values:
+          - - 0.27319
+            - 882.2
+          - - 0.2651
+            - 909.1
+          - - 0.25766
+            - 935.3
+          - - 0.25045
+            - 962.3
+          - - 0.24381
+            - 988.5
+          - - 0.23783
+            - 1013.4
+          - - 0.23167
+            - 1040.3
+          - - 0.22582
+            - 1067.2
+          - - 0.22041
+            - 1093.4
+          - - 0.21524
+            - 1119.7
+          - - 0.21044
+            - 1145.2
+          - - 0.20548
+            - 1172.8
+          - - 0.20099
+            - 1199.1
+    pressure: *id001
+    composition: *id002
+...

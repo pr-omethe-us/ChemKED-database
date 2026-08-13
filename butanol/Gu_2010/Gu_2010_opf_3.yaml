@@ -1,0 +1,82 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.combustflame.2010.07.003
+  authors:
+    - name: Xiaolei Gu
+    - name: Zuohua Huang
+    - name: Si Wu
+    - name: Qianqian Li
+  journal: Combustion and Flame
+  year: 2010
+  volume: 157
+  pages: 2318-2325
+  detail: Converted from ReSpecTh XML file x21007012.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: outwardly propagating spherical flame
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: TC4H9OH
+        InChI: 1S/C4H10O/c1-4(2,3)5/h5H,1-3H3
+        amount:
+          - 0.033661
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.201965
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.764374
+  temperature: &id002
+    - 428 K
+datapoints:
+  - pressure:
+      - 1 bar
+    laminar-burning-velocity:
+      - 48.57 cm/s
+      - evaluated-standard-deviation: 1.61 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    temperature: *id002
+  - pressure:
+      - 2.5 bar
+    laminar-burning-velocity:
+      - 45 cm/s
+      - evaluated-standard-deviation: 1.61 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    temperature: *id002
+  - pressure:
+      - 5 bar
+    laminar-burning-velocity:
+      - 35.24 cm/s
+      - evaluated-standard-deviation: 1.61 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    temperature: *id002
+  - pressure:
+      - 7.5 bar
+    laminar-burning-velocity:
+      - 31.03 cm/s
+      - evaluated-standard-deviation: 1.61 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    temperature: *id002
+...

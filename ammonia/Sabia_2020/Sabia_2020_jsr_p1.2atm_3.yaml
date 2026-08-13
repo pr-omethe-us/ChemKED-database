@@ -1,0 +1,363 @@
+---
+file-authors:
+  - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.fuel.2020.118054
+  authors:
+    - name: Pino Sabia
+    - name: Maria Virginia Manna
+    - name: Antonio Cavaliere
+    - name: Raffaele Ragucci
+    - name: Mara de Joannon
+  journal: Fuel
+  year: 2020
+  volume: 276
+  pages: '118054'
+  detail: Converted from ReSpecTh XML file x00199016.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+comments:
+  - The composition vs. temperature data were obtained through personal communication
+    from the authors in tabulated form.
+  - The value of the fixed temperature is erroneous in the in the text of the paper
+    (1290 K, Section 3.2). The correct value can be found in the legend of Figure
+    2 (1270 K).
+  - Through personal communication, the authors recommended that the inlet temperature
+    and the environment temperature should be set to the same value.
+common-properties:
+  reactor-volume: &id001
+    - 113 cm3
+  pressure: &id002
+    - 1.2 atm
+  residence-time: &id003
+    - 0.21 s
+  temperature: &id004
+    - 1270 K
+  environment-temperature: &id005
+    - 1270 K
+  global-heat-exchange-coefficient: &id006
+    - 35 cal/s/m2/K
+  exchange-area: &id007
+    - 113 cm2
+  composition: &id008
+    species:
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 86.0
+    kind: mole percent
+datapoints:
+  - independent-variables:
+      - name: equivalence-ratio
+        units: dimensionless
+        primary: true
+      - name: initial-composition
+        units: percent
+        primary: false
+        species-name: NH3
+        InChI: 1S/H3N/h1H3
+      - name: initial-composition
+        units: percent
+        primary: false
+        species-name: O2
+        InChI: 1S/O2/c1-2
+    concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 7.9e-05
+            - 1.2e-05
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 0.000124
+            - 1.8e-05
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 0.000141
+            - 2.1e-05
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 0.00019
+            - 2.8e-05
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 0.000244
+            - 3.6e-05
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 0.0003
+            - 4.5e-05
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 0.00059
+            - 8.8e-05
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 0.000648
+            - 9.7e-05
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 0.003
+            - 0.000447
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 0.002702
+            - 0.000402
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 0.005051
+            - 0.000752
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 0.004733
+            - 0.000705
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 0.007551
+            - 0.001125
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 0.007209
+            - 0.001074
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 0.008507
+            - 0.001267
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 0.008242
+            - 0.001228
+          - - 1.4
+            - 9.1163
+            - 4.8837
+            - 0.008665
+            - 0.001291
+          - - 1.4
+            - 9.1163
+            - 4.8837
+            - 0.008315
+            - 0.001239
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.03
+            uncertainty-sourcetype: reported
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 0.032815
+            - 0.003388
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 0.033615
+            - 0.003471
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 0.02326
+            - 0.002402
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 0.024041
+            - 0.002482
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 0.014717
+            - 0.00152
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 0.015455
+            - 0.001596
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 0.007844
+            - 0.00081
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 0.008434
+            - 0.000871
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 0.003245
+            - 0.000335
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 0.004271
+            - 0.000441
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 0.003395
+            - 0.000351
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 0.004438
+            - 0.000458
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 0.003422
+            - 0.000353
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 0.003699
+            - 0.000382
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 0.003686
+            - 0.000381
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 0.004261
+            - 0.00044
+          - - 1.4
+            - 9.1163
+            - 4.8837
+            - 0.004159
+            - 0.000429
+          - - 1.4
+            - 9.1163
+            - 4.8837
+            - 0.004503
+            - 0.000465
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.03
+            uncertainty-sourcetype: reported
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 9.4e-05
+          - - 0.6
+            - 6.2222
+            - 7.7778
+            - 9.7e-05
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 0.000101
+          - - 0.7
+            - 6.7586
+            - 7.2414
+            - 9.8e-05
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 8.4e-05
+          - - 0.8
+            - 7.2258
+            - 6.7742
+            - 8.0e-05
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 6.2e-05
+          - - 0.9
+            - 7.6364
+            - 6.3636
+            - 5.9e-05
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 4.2e-05
+          - - 1.0
+            - 8.0
+            - 6.0
+            - 3.8e-05
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 2.8e-05
+          - - 1.1
+            - 8.3243
+            - 5.6757
+            - 2.7e-05
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 2.3e-05
+          - - 1.2
+            - 8.6154
+            - 5.3846
+            - 2.4e-05
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 2.0e-05
+          - - 1.3
+            - 8.878
+            - 5.122
+            - 2.2e-05
+          - - 1.4
+            - 9.1163
+            - 4.8837
+            - 1.9e-05
+          - - 1.4
+            - 9.1163
+            - 4.8837
+            - 2.1e-05
+        uncertainty:
+          - uncertainty-type: absolute
+            uncertainty: 2.0
+            uncertainty-sourcetype: reported
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 5.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    temperature: *id004
+    environment-temperature: *id005
+    global-heat-exchange-coefficient: *id006
+    exchange-area: *id007
+    composition: *id008
+...
