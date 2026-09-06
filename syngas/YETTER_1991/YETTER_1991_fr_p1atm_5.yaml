@@ -1,0 +1,87 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1080/00102209108951760
+  authors:
+    - name: R. A. YETTER
+    - name: F. L. DRYER
+    - name: H. RABITZ
+  journal: Combustion Science and Technology
+  year: 1991
+  volume: 79
+  pages: 129-140
+  detail: Converted from ReSpecTh XML file x30001033.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  temperature: &id001
+    - 1138 K
+  pressure: &id002
+    - 1 atm
+  composition: &id003
+    species:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 4.8e-05
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.019
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.014
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.966952
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.099728
+            - 3.1325e-05
+          - - 0.11655
+            - 2.2679e-05
+          - - 0.13555
+            - 1.6732e-05
+          - - 0.154
+            - 1.2113e-05
+          - - 0.17572
+            - 9.0205e-06
+          - - 0.19526
+            - 6.9778e-06
+          - - 0.21644
+            - 5.246e-06
+          - - 0.23707
+            - 4.2146e-06
+          - - 0.25499
+            - 3.5172e-06
+          - - 0.27617
+            - 2.7989e-06
+          - - 0.29571
+            - 2.1447e-06
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 4.686e-07
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: generic uncertainty
+    temperature: *id001
+    pressure: *id002
+    composition: *id003
+...

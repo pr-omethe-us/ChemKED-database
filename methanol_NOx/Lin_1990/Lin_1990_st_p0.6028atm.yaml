@@ -1,0 +1,141 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1002/kin.550220504
+  authors:
+    - name: Chin‐Yu Lin
+    - name: Hung‐Tai Wang
+    - name: M. C. Lin
+    - name: C. F. Melius
+  journal: International Journal of Chemical Kinetics
+  year: 1990
+  volume: 22
+  pages: 455-482
+  detail: Converted from ReSpecTh XML file x50312001.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+comments:
+  - The initial composition was estimated because originally 1,3,5-trioxane (C3H6O3)
+    was used as fuel to avoid absorption of the formaldehyde monomer to the shock
+    tube wall.
+  - Original initial composition was C3H6O3:NO2:Ar=0.001:0.003:0.996
+common-properties:
+  temperature: &id001
+    - 1355 K
+  pressure: &id002
+    - 0.6028 atm
+  composition: &id003
+    species:
+      - species-name: CH2O
+        InChI: 1S/CH2O/c1-2/h1H2
+        amount:
+          - 0.002994
+      - species-name: NO2
+        InChI: 1S/NO2/c2-1-3
+        amount:
+          - 0.002994
+      - species-name: AR
+        InChI: 1S/Ar
+        amount:
+          - 0.994012
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: time
+        units: us
+        primary: true
+    concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mol/cm3
+        values:
+          - - 97.3
+            - 1.809e-09
+          - - 157.3
+            - 3.411e-09
+          - - 200.8
+            - 4.341e-09
+          - - 258.7
+            - 5.84e-09
+          - - 308.3
+            - 6.873e-09
+          - - 360.1
+            - 7.752e-09
+          - - 416.1
+            - 8.734e-09
+          - - 513.6
+            - 9.819e-09
+          - - 615.3
+            - 1.065e-08
+          - - 712.9
+            - 1.116e-08
+          - - 816.8
+            - 1.142e-08
+          - - 922.7
+            - 1.158e-08
+          - - 1026.7
+            - 1.163e-08
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000414
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    temperature: *id001
+    pressure: *id002
+    composition: *id003
+  - independent-variables:
+      - name: time
+        units: us
+        primary: true
+    concentration-profiles:
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mol/cm3
+        values:
+          - - 47.6
+            - 9.302e-10
+          - - 97.1
+            - 2.842e-09
+          - - 155.0
+            - 4.289e-09
+          - - 200.5
+            - 5.685e-09
+          - - 256.4
+            - 6.615e-09
+          - - 308.2
+            - 7.649e-09
+          - - 355.8
+            - 8.372e-09
+          - - 397.3
+            - 8.992e-09
+          - - 459.6
+            - 9.457e-09
+          - - 563.4
+            - 1.023e-08
+          - - 663.1
+            - 1.059e-08
+          - - 771.1
+            - 1.085e-08
+          - - 870.9
+            - 1.111e-08
+          - - 976.9
+            - 1.116e-08
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000402
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    temperature: *id001
+    pressure: *id002
+    composition: *id003
+...

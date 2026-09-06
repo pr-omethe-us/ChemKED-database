@@ -1,0 +1,228 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1080/00102207908946902
+  authors:
+    - name: CHARLES K. WESTBROOK
+    - name: FREDERICK L. DRYER
+  journal: Combustion Science and Technology
+  year: 1979
+  volume: 20
+  pages: 125-140
+  detail: Converted from ReSpecTh XML file x30002045_x.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 1 atm
+  temperature: &id002
+    - 1028 K
+  composition: &id003
+    species:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.0095
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0095
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.981
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0028
+            - 0.00699574
+          - - 0.0132
+            - 0.00659535
+          - - 0.0237
+            - 0.00590268
+          - - 0.0348
+            - 0.00497279
+          - - 0.0457
+            - 0.00396962
+          - - 0.0561
+            - 0.0031127
+          - - 0.0666
+            - 0.00251144
+          - - 0.0775
+            - 0.00196494
+          - - 0.0881
+            - 0.00147327
+          - - 0.0985
+            - 0.0010728
+          - - 0.1089
+            - 0.000873494
+          - - 0.1192
+            - 0.000637533
+          - - 0.1298
+            - 0.000474503
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.0007
+            evaluated-standard-deviation-sourcetype: reported
+            evaluated-standard-deviation-method: reported uncertainty
+      - species-name: CO2
+        InChI: 1S/CO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0028
+            - 0.000168298
+          - - 0.0132
+            - 0.000190081
+          - - 0.0237
+            - 0.000230211
+          - - 0.0348
+            - 0.00028929
+          - - 0.0457
+            - 0.000254831
+          - - 0.0561
+            - 0.000314167
+          - - 0.0666
+            - 0.000372386
+          - - 0.0775
+            - 0.000449982
+          - - 0.0881
+            - 0.000527063
+          - - 0.0985
+            - 0.000567451
+          - - 0.1089
+            - 0.000607495
+          - - 0.1192
+            - 0.000685092
+          - - 0.1298
+            - 0.000762345
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 7.62e-05
+            evaluated-standard-deviation-sourcetype: reported
+            evaluated-standard-deviation-method: reported uncertainty
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0028
+            - 0.00107973
+          - - 0.0132
+            - 0.0013432
+          - - 0.0237
+            - 0.00173698
+          - - 0.0348
+            - 0.00244704
+          - - 0.0457
+            - 0.0033614
+          - - 0.0561
+            - 0.00403442
+          - - 0.0666
+            - 0.00478134
+          - - 0.0775
+            - 0.00549156
+          - - 0.0881
+            - 0.00612694
+          - - 0.0985
+            - 0.00672554
+          - - 0.1089
+            - 0.00715636
+          - - 0.1192
+            - 0.00764282
+          - - 0.1298
+            - 0.00790621
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000791
+            evaluated-standard-deviation-sourcetype: reported
+            evaluated-standard-deviation-method: reported uncertainty
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0028
+            - 0.000513205
+          - - 0.0132
+            - 0.00065452
+          - - 0.0237
+            - 0.000889203
+          - - 0.0348
+            - 0.00109591
+          - - 0.0457
+            - 0.00138645
+          - - 0.0561
+            - 0.00173285
+          - - 0.0666
+            - 0.00204209
+          - - 0.0775
+            - 0.0023325
+          - - 0.0881
+            - 0.00257638
+          - - 0.0985
+            - 0.00280182
+          - - 0.1089
+            - 0.00298039
+          - - 0.1192
+            - 0.00312175
+          - - 0.1298
+            - 0.00328162
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000328
+            evaluated-standard-deviation-sourcetype: reported
+            evaluated-standard-deviation-method: reported uncertainty
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: time
+          units: s
+        quantity:
+          units: K
+        values:
+          - - 0.0028
+            - 1029.46
+          - - 0.0132
+            - 1033.03
+          - - 0.0237
+            - 1038.38
+          - - 0.0348
+            - 1044.14
+          - - 0.0457
+            - 1050.18
+          - - 0.0561
+            - 1056.63
+          - - 0.0666
+            - 1062.12
+          - - 0.0775
+            - 1067.89
+          - - 0.0881
+            - 1072.42
+          - - 0.0985
+            - 1076.27
+          - - 0.1089
+            - 1078.74
+          - - 0.1192
+            - 1079.58
+          - - 0.1298
+            - 1079.72
+    pressure: *id001
+    temperature: *id002
+    composition: *id003
+...

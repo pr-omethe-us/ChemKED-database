@@ -1,0 +1,153 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1080/00102200600793171
+  authors:
+    - name: GUILLAUME DAYMA
+    - name: PHILIPPE DAGAUT
+  journal: Combustion Science and Technology
+  year: 2006
+  volume: 178
+  pages: 1999-2024
+  detail: Converted from ReSpecTh XML file x00300001.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.01
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.005
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.98493
+      - species-name: NO2
+        InChI: 1S/NO2/c2-1-3
+        amount:
+          - 7.0e-05
+    kind: mole fraction
+  pressure: &id002
+    - 1 atm
+  residence-time: &id003
+    - 0.24 s
+  reactor-volume: &id004
+    - 29.5 cm3
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 700.0
+            - 0.01
+          - - 730.0
+            - 0.00961
+          - - 790.0
+            - 0.00915
+          - - 850.0
+            - 0.00524
+          - - 910.0
+            - 0.00178
+          - - 970.0
+            - 0.000849
+          - - 1030.0
+            - 0.000296
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.001004
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 700.0
+            - 0.000432
+          - - 730.0
+            - 0.000322
+          - - 790.0
+            - 0.000676
+          - - 850.0
+            - 0.00329
+          - - 910.0
+            - 0.00734
+          - - 970.0
+            - 0.00789
+          - - 1030.0
+            - 0.00779
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000789
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 700.0
+            - 2.0e-06
+          - - 730.0
+            - 5.7e-05
+          - - 790.0
+            - 6.1e-05
+          - - 850.0
+            - 6.0e-05
+          - - 910.0
+            - 5.7e-05
+          - - 970.0
+            - 4.8e-05
+          - - 1030.0
+            - 4.4e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 6.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: NO2
+        InChI: 1S/NO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 700.0
+            - 7.4e-05
+          - - 730.0
+            - 6.0e-06
+          - - 790.0
+            - 5.0e-06
+          - - 850.0
+            - 5.0e-06
+          - - 910.0
+            - 4.0e-06
+          - - 970.0
+            - 4.0e-06
+          - - 1030.0
+            - 4.0e-06
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 7.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    residence-time: *id003
+    reactor-volume: *id004
+...

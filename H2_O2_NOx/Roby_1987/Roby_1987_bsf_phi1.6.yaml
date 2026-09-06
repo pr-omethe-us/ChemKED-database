@@ -1,0 +1,170 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/0010-2180(87)90163-5
+  authors:
+    - name: R.J. Roby
+    - name: C.T. Bowman
+  journal: Combustion and Flame
+  year: 1987
+  volume: 70
+  pages: 119-123
+  detail: Converted from ReSpecTh XML file x60200025.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: burner stabilized flame
+  institution: ''
+  facility: ''
+comments:
+  - The inlet gas temperature was not reported. The estimation (950 K) was based on
+    a similar flame reported by R. J. Martin et al., Combust. Flame. 80 (1990) 238-255.
+  - 'Details of the estimation: In the flame by Roby T_max = 1600 K, same in the flame
+    by Martin wich has 970 K burner surface temperature. This Roby article also says
+    the levels of additives (NO) produced temperature perturbations of less than 30
+    K.'
+  - 'The flow rate (F) was calculated by the following data and formula: M_average
+    = 0.02929 kg/mol, l_meas = 0.01 m, t = 0.005 s, p = 101325 Pa, R = 8.314 Pa m^3
+    mol^-1 K^-1, T = 1520 K; F[kg m-2 s-1] = M_average * l_meas * p / t / R / T.'
+  - 'Details of the estimation: Species and temperature measurements were made at
+    positions from 1.0 mm to 10.0 mm above the burner surface, corresponding to reaction
+    times from 0.5 ms to 5.0 ms. Over this range of positions, temperatures decreased
+    from 1601K to 1498K. (from paper)'
+  - 'I assumed the flame reaches 10 mm above the burner in 5 ms and the mean temperature
+    in this volume is 1520 K. (Based on the reported and estimated data: 950 K at
+    0 mm, 1600 K at 1 mm, 1500 K at 10 mm.)'
+  - 'The temperature profile is estimated with linear interpolation based on the main
+    text: Species and temperature measurements were made at positions from 1.0 mm
+    to 10.0 mm above the burner surface, corresponding to reaction times from 0.5
+    ms to 5.0 ms. Over this range of positions, temperatures decreased from 1601K
+    to 1498K. (from paper)'
+common-properties:
+  equivalence-ratio: &id001
+    - 1.6 dimensionless
+  temperature: &id002
+    - 950 K
+  pressure: &id003
+    - 1 atm
+  flow-rate: &id004
+    - 0.47 kg * m**-2 * s**-1
+  composition: &id005
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.2624
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0819
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.654
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.0017499999999999998
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: distance
+        units: mm
+        primary: true
+    concentration-profiles:
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 1.018
+            - 8.897e-05
+          - - 2.01
+            - 6.359e-05
+          - - 5.028
+            - 2.387e-05
+          - - 10.03
+            - 1.084e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 9.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 1.018
+            - 0.0013089999999999998
+          - - 2.01
+            - 0.001303
+          - - 5.028
+            - 0.001263
+          - - 10.03
+            - 0.001251
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.00013099999999999999
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 1.018
+            - 0.0002824
+          - - 2.01
+            - 0.0002573
+          - - 5.028
+            - 0.0002782
+          - - 10.03
+            - 0.0002582
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 2.8e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 1.018
+            - 9.632999999999999e-06
+          - - 2.01
+            - 1.4689999999999998e-05
+          - - 5.028
+            - 8.259e-06
+          - - 10.03
+            - 5.16e-06
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 3.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: distance
+          units: mm
+        quantity:
+          units: K
+        values:
+          - - 1.018
+            - 1601.0
+          - - 2.01
+            - 1589.0
+          - - 5.028
+            - 1555.0
+          - - 10.03
+            - 1498.0
+    equivalence-ratio: *id001
+    temperature: *id002
+    pressure: *id003
+    flow-rate: *id004
+    composition: *id005
+...

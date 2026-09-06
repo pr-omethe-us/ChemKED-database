@@ -1,0 +1,95 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1080/00102209108951760
+  authors:
+    - name: R. A. YETTER
+    - name: F. L. DRYER
+    - name: H. RABITZ
+  journal: Combustion Science and Technology
+  year: 1991
+  volume: 79
+  pages: 129-140
+  detail: Converted from ReSpecTh XML file x30001035.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  temperature: &id001
+    - 1117 K
+  pressure: &id002
+    - 1 atm
+  composition: &id003
+    species:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.0093
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0192
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.014
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.9575
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.098723
+            - 0.00061002
+          - - 0.11459
+            - 0.0002297
+          - - 0.13316
+            - 9.7557e-05
+          - - 0.15278
+            - 4.9421e-05
+          - - 0.17238
+            - 2.8248e-05
+          - - 0.19195
+            - 1.9441e-05
+          - - 0.21151
+            - 1.4146e-05
+          - - 0.23106
+            - 1.0782e-05
+          - - 0.25007
+            - 8.5299e-06
+          - - 0.26961
+            - 7.003e-06
+          - - 0.28807
+            - 6.0233e-06
+          - - 0.30652
+            - 5.1807e-06
+          - - 0.32551
+            - 4.4557e-06
+          - - 0.34395
+            - 4.1664e-06
+          - - 0.36293
+            - 3.8596e-06
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 1.413e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    temperature: *id001
+    pressure: *id002
+    composition: *id003
+...

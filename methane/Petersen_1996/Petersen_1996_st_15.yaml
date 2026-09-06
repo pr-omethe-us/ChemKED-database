@@ -1,0 +1,80 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/s0082-0784(96)80289-x
+  authors:
+    - name: Eric L. Petersen
+    - name: Michael Röhrig
+    - name: David F. Davidson
+    - name: Ronald K. Hanson
+    - name: Craig T. Bowman
+  journal: Symposium (International) on Combustion
+  year: 1996
+  volume: 26
+  pages: 799-806
+  detail: Converted from ReSpecTh XML file x10004379.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.034
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.067
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.899
+  ignition-type: &id002
+    target: pressure
+    type: d/dt min extrapolated
+datapoints:
+  - temperature:
+      - 1535 K
+    ignition-delay:
+      - 113 us
+      - evaluated-standard-deviation: '0.232'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: from uncertainty of experimental conditions
+    pressure:
+      - 61.9 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1633 K
+    ignition-delay:
+      - 51 us
+      - evaluated-standard-deviation: '0.205'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: from uncertainty of experimental conditions
+    pressure:
+      - 31.7 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1496 K
+    ignition-delay:
+      - 229 us
+      - evaluated-standard-deviation: '0.245'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: from uncertainty of experimental conditions
+    pressure:
+      - 34.4 atm
+    composition: *id001
+    ignition-type: *id002
+...

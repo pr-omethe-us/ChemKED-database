@@ -1,0 +1,97 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/S0082-0784(06)80708-3
+  authors:
+    - name: Tae J. Kim
+    - name: Richard A. Yetter
+    - name: Frederick L. Dryer
+  journal: Symposium (International) on Combustion
+  year: 1994
+  volume: 25
+  pages: 759-766
+  detail: Converted from ReSpecTh XML file x30001012_x.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  temperature: &id001
+    - 1052 K
+  pressure: &id002
+    - 6.5 atm
+  composition: &id003
+    species:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.01
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.005
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.0065
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.9785
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0
+            - 0.01
+          - - 0.070446
+            - 0.0092895
+          - - 0.092642
+            - 0.0089974
+          - - 0.12352
+            - 0.0086664
+          - - 0.16212
+            - 0.0082771
+          - - 0.20458
+            - 0.008005
+          - - 0.24898
+            - 0.0077134
+          - - 0.29337
+            - 0.0074023
+          - - 0.33872
+            - 0.0071302
+          - - 0.38311
+            - 0.0068191
+          - - 0.42847
+            - 0.00643
+          - - 0.47382
+            - 0.0061384
+          - - 0.51822
+            - 0.0057883
+          - - 0.56357
+            - 0.0054381
+          - - 0.60796
+            - 0.0051661
+          - - 0.65235
+            - 0.0048745
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.0001
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: generic uncertainty
+    temperature: *id001
+    pressure: *id002
+    composition: *id003
+...

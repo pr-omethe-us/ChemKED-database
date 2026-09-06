@@ -1,0 +1,175 @@
+---
+file-authors:
+  - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1039/C9RE00429G
+  authors:
+    - name: Alessandro Stagni
+    - name: Carlo Cavallotti
+    - name: Suphaporn Arunthanayothin
+    - name: Yu Song
+    - name: Olivier Herbinet
+    - name: Frédérique Battin-Leclerc
+    - name: Tiziano Faravelli
+  journal: Reaction Chemistry &amp; Engineering
+  year: 2020
+  volume: 5
+  pages: 696-711
+  detail: Converted from ReSpecTh XML file x00199000.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+comments:
+  - 'The volume of the jet stirred reactor was published e. g. in Y. Song, L. Marrodán,
+    N. Vin, O. Herbinet, E. Assaf, C. Fittschen, A. Stagni, T. Faravelli, M. U. Alzueta,
+    F. Battin-Leclerc, The sensitizing effects of NO2 and NO on methane low temperature
+    oxidation in a jet stirred reactor, Proc. Combust. Inst. 37 (2019) 667–675. (URL:
+    https://doi.org/10.1016/j.proci.2018.06.115)'
+common-properties:
+  reactor-volume: &id001
+    - 85 cm3
+  pressure: &id002
+    - 800 torr
+  residence-time: &id003
+    - 1.5 s
+  composition: &id004
+    species:
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        amount:
+          - 0.0005
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.02
+      - species-name: He
+        InChI: 1S/He
+        amount:
+          - 0.9795
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 500.0
+            - 0.000504
+            - 2.5999999999999997e-11
+          - - 600.0
+            - 0.0005009999999999999
+            - 2.5999999999999997e-11
+          - - 700.0
+            - 0.0004969999999999999
+            - 2.5e-11
+          - - 750.0
+            - 0.0004969999999999999
+            - 2.5e-11
+          - - 800.0
+            - 0.000498
+            - 2.5e-11
+          - - 900.0
+            - 0.000502
+            - 2.5999999999999997e-11
+          - - 950.0
+            - 0.000507
+            - 2.5999999999999997e-11
+          - - 1000.0
+            - 0.000495
+            - 2.5e-11
+          - - 1050.0
+            - 0.000491
+            - 2.5e-11
+          - - 1100.0
+            - 0.000493
+            - 2.5e-11
+          - - 1150.0
+            - 0.000439
+            - 2.1999999999999998e-11
+          - - 1200.0
+            - 0.000274
+            - 1.3999999999999999e-11
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.1
+            uncertainty-sourcetype: reported
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 950.0
+            - 0.0
+          - - 1000.0
+            - 0.0
+          - - 1100.0
+            - 1.0e-06
+          - - 1125.0
+            - 2.0e-06
+          - - 1150.0
+            - 2.0e-06
+          - - 1175.0
+            - 2.0e-06
+          - - 1200.0
+            - 3.0e-06
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.05
+            uncertainty-sourcetype: reported
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 5.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: NO2
+        InChI: 1S/NO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 950.0
+            - 0.0
+          - - 1000.0
+            - 0.0
+          - - 1100.0
+            - 0.0
+          - - 1125.0
+            - 0.0
+          - - 1150.0
+            - 0.0
+          - - 1175.0
+            - 0.0
+          - - 1200.0
+            - 0.0
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.1
+            uncertainty-sourcetype: reported
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 5.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+...

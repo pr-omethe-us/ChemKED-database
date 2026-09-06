@@ -1,0 +1,160 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/0010-2180(77)90022-0
+  authors:
+    - name: V.P. Balakhnine
+    - name: J. Vandooren
+    - name: P.J. Van Tiggelen
+  journal: Combustion and Flame
+  year: 1977
+  volume: 28
+  pages: 165-173
+  detail: Converted from ReSpecTh XML file x60400036.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: burner stabilized flame
+  institution: ''
+  facility: ''
+comments:
+  - The inlet gas temperature is assumed to be room temperature (300 K) based on the
+    reported temperature profiles, experimental setup and other work of the authors
+    but any clear reference cannot be find for that
+  - The experimental temperature profile was estimated with linear interpolation based
+    on Fig. 2. top axis.
+  - The flow rate (F) was calculated as the product of the gas velocity and density.
+    (F = v * rho = v * p * M_ave / R / T)
+common-properties:
+  temperature: &id001
+    - 300 K
+  pressure: &id002
+    - 40 torr
+  flow-rate: &id003
+    - 0.01845 kg * m**-2 * s**-1
+  composition: &id004
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.314
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.686
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: distance
+        units: cm
+        primary: true
+    concentration-profiles:
+      - species-name: O
+        InChI: 1S/O
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.4072
+            - 0.0001744
+          - - 0.5085
+            - 0.0005487
+          - - 0.603
+            - 0.0007706
+          - - 0.706
+            - 0.000933
+          - - 0.8017
+            - 0.0009984
+          - - 0.914
+            - 0.001006
+          - - 1.0103
+            - 0.001007
+          - - 1.1066
+            - 0.001001
+          - - 1.211
+            - 0.0009928
+          - - 1.3154
+            - 0.000977
+          - - 1.4119
+            - 0.0009494
+          - - 1.6128
+            - 0.000904
+          - - 1.8139
+            - 0.0008348
+          - - 2.0072
+            - 0.0007478
+          - - 2.2005
+            - 0.0006569
+          - - 2.4096
+            - 0.0005857
+          - - 2.6109
+            - 0.0005027
+          - - 2.8038
+            - 0.0004612
+          - - 3.005
+            - 0.0003762
+          - - 3.2059
+            - 0.0003407
+          - - 3.407
+            - 0.0002736
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.00030199999999999997
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: distance
+          units: cm
+        quantity:
+          units: K
+        values:
+          - - 0.4072
+            - 740.0
+          - - 0.5085
+            - 993.0
+          - - 0.603
+            - 1229.0
+          - - 0.706
+            - 1479.0
+          - - 0.8017
+            - 1697.0
+          - - 0.914
+            - 1842.0
+          - - 1.0103
+            - 1901.0
+          - - 1.1066
+            - 1918.0
+          - - 1.211
+            - 1936.0
+          - - 1.3154
+            - 1954.0
+          - - 1.4119
+            - 1969.0
+          - - 1.6128
+            - 1967.0
+          - - 1.8139
+            - 1946.0
+          - - 2.0072
+            - 1927.0
+          - - 2.2005
+            - 1907.0
+          - - 2.4096
+            - 1886.0
+          - - 2.6109
+            - 1866.0
+          - - 2.8038
+            - 1846.0
+          - - 3.005
+            - 1826.0
+          - - 3.2059
+            - 1806.0
+          - - 3.407
+            - 1786.0
+    temperature: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+...

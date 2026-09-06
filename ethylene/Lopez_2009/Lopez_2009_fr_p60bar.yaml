@@ -1,0 +1,312 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.proci.2008.06.188
+  authors:
+    - name: Jorge Gimenez Lopez
+    - name: Christian Lund Rasmussen
+    - name: Maria U. Alzueta
+    - name: Yide Gao
+    - name: Paul Marshall
+    - name: Peter Glarborg
+  journal: Proceedings of the Combustion Institute
+  year: 2009
+  volume: 32
+  pages: 367-375
+  detail: Converted from ReSpecTh XML file x30014006.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+comments:
+  - Tau = 8892/T
+common-properties:
+  pressure: &id001
+    - 60 bar
+  composition: &id002
+    species:
+      - species-name: C2H4
+        InChI: 1S/C2H4/c1-2/h1-2H2
+        amount:
+          - 0.001
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0005549999999999999
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.9984449999999999
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: C2H4
+        InChI: 1S/C2H4/c1-2/h1-2H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 600.0
+            - 14.82
+            - 0.000997895
+          - - 625.0
+            - 14.2272
+            - 0.000997895
+          - - 650.0
+            - 13.68
+            - 0.000997895
+          - - 675.0
+            - 13.17333333
+            - 0.000997895
+          - - 700.0
+            - 12.70285714
+            - 0.0009936839999999999
+          - - 725.0
+            - 12.26482759
+            - 0.000989474
+          - - 750.0
+            - 11.856
+            - 0.0008968419999999999
+          - - 775.0
+            - 11.47354839
+            - 0.000602105
+          - - 800.0
+            - 11.115
+            - 0.000597895
+          - - 825.0
+            - 10.77818182
+            - 0.0005936839999999999
+          - - 850.0
+            - 10.46117647
+            - 0.000585263
+          - - 875.0
+            - 10.16228571
+            - 0.000585263
+          - - 900.0
+            - 9.88
+            - 0.000581053
+        uncertainty:
+          - evaluated-standard-deviation-type: relative
+            evaluated-standard-deviation: 0.072
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 600.0
+            - 14.82
+            - 0.000553846
+          - - 625.0
+            - 14.2272
+            - 0.000555944
+          - - 650.0
+            - 13.68
+            - 0.0005496499999999999
+          - - 675.0
+            - 13.17333333
+            - 0.000555944
+          - - 700.0
+            - 12.70285714
+            - 0.0005496499999999999
+          - - 725.0
+            - 12.26482759
+            - 0.000545455
+          - - 750.0
+            - 11.856
+            - 0.000440559
+          - - 775.0
+            - 11.47354839
+            - 2.3076899999999996e-05
+          - - 800.0
+            - 11.115
+            - 1.25874e-05
+          - - 825.0
+            - 10.77818182
+            - 1.67832e-05
+          - - 850.0
+            - 10.46117647
+            - 2.0978999999999997e-05
+          - - 875.0
+            - 10.16228571
+            - 1.25874e-05
+          - - 900.0
+            - 9.88
+            - 1.67832e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: relative
+            evaluated-standard-deviation: 0.329
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 600.0
+            - 14.82
+            - 2.44755e-06
+          - - 625.0
+            - 14.2272
+            - 2.44755e-06
+          - - 650.0
+            - 13.68
+            - 2.44755e-06
+          - - 675.0
+            - 13.17333333
+            - 2.44755e-06
+          - - 700.0
+            - 12.70285714
+            - 2.44755e-06
+          - - 725.0
+            - 12.26482759
+            - 2.44755e-06
+          - - 750.0
+            - 11.856
+            - 5.13986e-05
+          - - 775.0
+            - 11.47354839
+            - 0.000484615
+          - - 800.0
+            - 11.115
+            - 0.000499301
+          - - 825.0
+            - 10.77818182
+            - 0.000511538
+          - - 850.0
+            - 10.46117647
+            - 0.0005237759999999999
+          - - 875.0
+            - 10.16228571
+            - 0.000531119
+          - - 900.0
+            - 9.88
+            - 0.000540909
+        uncertainty:
+          - evaluated-standard-deviation-type: relative
+            evaluated-standard-deviation: 0.03
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+    pressure: *id001
+    composition: *id002
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: C2H6
+        InChI: 1S/C2H6/c1-2/h1-2H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 750.0
+            - 11.856
+            - 4.21053e-06
+          - - 775.0
+            - 11.47354839
+            - 8.42105e-06
+          - - 800.0
+            - 11.115
+            - 1.26316e-05
+          - - 825.0
+            - 10.77818182
+            - 1.68421e-05
+          - - 850.0
+            - 10.46117647
+            - 2.1052600000000002e-05
+          - - 875.0
+            - 10.16228571
+            - 2.1052600000000002e-05
+          - - 900.0
+            - 9.88
+            - 2.1052600000000002e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: relative
+            evaluated-standard-deviation: 0.052
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        quantity:
+          units: mole fraction
+        values:
+          - - 750.0
+            - 11.856
+            - 4.1958e-06
+          - - 775.0
+            - 11.47354839
+            - 2.0978999999999997e-05
+          - - 800.0
+            - 11.115
+            - 2.72727e-05
+          - - 825.0
+            - 10.77818182
+            - 3.35664e-05
+          - - 850.0
+            - 10.46117647
+            - 3.7762199999999996e-05
+          - - 875.0
+            - 10.16228571
+            - 4.1957999999999994e-05
+          - - 900.0
+            - 9.88
+            - 4.82517e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: relative
+            evaluated-standard-deviation: 0.111
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+      - species-name: CO2
+        InChI: 1S/CO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 750.0
+            - 11.856
+            - 2.44755e-06
+          - - 775.0
+            - 11.47354839
+            - 2.69231e-05
+          - - 800.0
+            - 11.115
+            - 2.93706e-05
+          - - 825.0
+            - 10.77818182
+            - 2.93706e-05
+          - - 850.0
+            - 10.46117647
+            - 3.42657e-05
+          - - 875.0
+            - 10.16228571
+            - 2.93706e-05
+          - - 900.0
+            - 9.88
+            - 2.44755e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: relative
+            evaluated-standard-deviation: 0.212
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+    pressure: *id001
+    composition: *id002
+...

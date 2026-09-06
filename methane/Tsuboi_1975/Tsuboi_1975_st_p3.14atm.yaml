@@ -1,0 +1,77 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/s0082-0784(75)80355-9
+  authors:
+    - name: T. Tsuboi
+    - name: H.Gg. Wagner
+  journal: Symposium (International) on Combustion
+  year: 1975
+  volume: 15
+  pages: 883-890
+  detail: Converted from ReSpecTh XML file x10004161.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.0005
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.005
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.9945
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+  - temperature:
+      - 1694.1 K
+    ignition-delay:
+      - 10.68 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    pressure:
+      - 3.197 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1578.7 K
+    ignition-delay:
+      - 27.57 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    pressure:
+      - 2.979 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1724.3 K
+    ignition-delay:
+      - 7.262 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    pressure:
+      - 3.254 atm
+    composition: *id001
+    ignition-type: *id002
+...

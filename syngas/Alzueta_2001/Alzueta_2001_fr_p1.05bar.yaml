@@ -1,0 +1,110 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/S0010-2180(01)00325-X
+  authors:
+    - name: Maria U Alzueta
+    - name: Rafael Bilbao
+    - name: Peter Glarborg
+  journal: Combustion and Flame
+  year: 2001
+  volume: 127
+  pages: 2234-2251
+  detail: Converted from ReSpecTh XML file x30001016.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 1.05 bar
+  composition: &id002
+    species:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.0001
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.096
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.005
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.8989
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: residence-time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.16493
+            - 3.0328e-06
+          - - 0.17351
+            - 8.145e-06
+          - - 0.18145
+            - 1.4075e-05
+          - - 0.18605
+            - 3.8158e-05
+          - - 0.1899
+            - 6.3868e-05
+          - - 0.19392
+            - 7.225e-05
+          - - 0.19918
+            - 9.904e-05
+          - - 0.20589
+            - 0.0001
+          - - 0.21092
+            - 0.0001
+          - - 0.22176
+            - 0.0001
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 9.406e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: time
+          units: s
+        quantity:
+          units: K
+        values:
+          - - 0.16493
+            - 1200.5
+          - - 0.17351
+            - 1141.2
+          - - 0.18145
+            - 1091.2
+          - - 0.18605
+            - 1064.2
+          - - 0.1899
+            - 1042.7
+          - - 0.19392
+            - 1021.1
+          - - 0.19918
+            - 994.1
+          - - 0.20589
+            - 961.7
+          - - 0.21092
+            - 938.7
+          - - 0.22176
+            - 892.8
+    pressure: *id001
+    composition: *id002
+...

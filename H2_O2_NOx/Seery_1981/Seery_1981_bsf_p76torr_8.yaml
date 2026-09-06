@@ -1,0 +1,147 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/S0082-0784(81)80044-6
+  authors:
+    - name: D.J. Seery
+    - name: M.F. Zabielski
+  journal: Symposium (International) on Combustion
+  year: 1981
+  volume: 18
+  pages: 397-404
+  detail: Converted from ReSpecTh XML file x60200033.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: burner stabilized flame
+  institution: ''
+  facility: ''
+comments:
+  - The inlet gas temperature is assumed to be room temperature (300 K) based on the
+    reported temperature profiles, experimental setup and other work of the authors
+    but any clear reference cannot be find for that
+  - The temperature profile is estimated based on Fig. 2. squere with interpolation
+    and extrapolation.
+  - The flow rate (F) was calculated as the product of the gas velocity and density.
+    (F = v * rho = v * p * M_ave / R / T)
+common-properties:
+  temperature: &id001
+    - 300 K
+  pressure: &id002
+    - 76 torr
+  flow-rate: &id003
+    - 0.04908 kg * m**-2 * s**-1
+  composition: &id004
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.379
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.155
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.458
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.008
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: distance
+        units: mm
+        primary: true
+    concentration-profiles:
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0
+            - 0.007976
+          - - 1.38
+            - 0.007475
+          - - 5.7
+            - 0.005789
+          - - 6.24
+            - 0.005934
+          - - 7.1
+            - 0.005923
+          - - 7.47
+            - 0.005999
+          - - 8.12
+            - 0.005934
+          - - 8.39
+            - 0.005994
+          - - 8.81
+            - 0.005902
+          - - 10.31
+            - 0.005864
+          - - 11.39
+            - 0.006031
+          - - 16.74
+            - 0.005277
+          - - 21.51
+            - 0.005148
+          - - 26.98
+            - 0.005121
+          - - 32.13
+            - 0.005056
+          - - 37.01
+            - 0.004954
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000798
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: distance
+          units: mm
+        quantity:
+          units: K
+        values:
+          - - 0.0
+            - 300.0
+          - - 1.38
+            - 592.0
+          - - 5.7
+            - 1934.0
+          - - 6.24
+            - 1935.0
+          - - 7.1
+            - 1928.0
+          - - 7.47
+            - 1923.0
+          - - 8.12
+            - 1916.0
+          - - 8.39
+            - 1913.0
+          - - 8.81
+            - 1908.0
+          - - 10.31
+            - 1890.0
+          - - 11.39
+            - 1878.0
+          - - 16.74
+            - 1829.0
+          - - 21.51
+            - 1793.0
+          - - 26.98
+            - 1752.0
+          - - 32.13
+            - 1718.0
+          - - 37.01
+            - 1685.0
+    temperature: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+...

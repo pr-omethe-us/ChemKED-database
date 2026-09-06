@@ -1,0 +1,102 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  authors:
+    - name: M A Mueller
+    - name: R A Yetter
+    - name: F L Dryer
+  journal: Int J Chem Kinet
+  year: 1999
+  volume: 31
+  pages: 705-724
+  detail: Converted from ReSpecTh XML file x30200093.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 1.0 atm
+  temperature: &id002
+    - 828 K
+  composition: &id003
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.0098
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.005
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 2.4e-05
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.985176
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.101
+            - 0.00957
+          - - 0.104
+            - 0.009394
+          - - 0.108
+            - 0.009231
+          - - 0.114
+            - 0.008968
+          - - 0.121
+            - 0.008742
+          - - 0.129
+            - 0.008479
+          - - 0.139
+            - 0.008254
+          - - 0.15
+            - 0.008091
+          - - 0.16
+            - 0.007828
+          - - 0.17
+            - 0.00759
+          - - 0.181
+            - 0.007176
+          - - 0.191
+            - 0.006675
+          - - 0.202
+            - 0.00601
+          - - 0.213
+            - 0.00517
+          - - 0.223
+            - 0.004179
+          - - 0.233
+            - 0.00315
+          - - 0.244
+            - 0.002435
+          - - 0.253
+            - 0.001218
+          - - 0.264
+            - 0.00093
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000498
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    pressure: *id001
+    temperature: *id002
+    composition: *id003
+...

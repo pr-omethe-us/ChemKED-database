@@ -1,0 +1,102 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1002/kin.550250409
+  authors:
+    - name: Yoshiaki Hidaka
+    - name: Takashi Taniguchi
+    - name: Takashi Kamesawa
+    - name: Hiromitsu Masaoka
+    - name: Koji Inami
+    - name: Hiroyuki Kawano
+  journal: International Journal of Chemical Kinetics
+  year: 1993
+  volume: 25
+  pages: 305-322
+  detail: Converted from ReSpecTh XML file x50002223CH2O.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 2.00 atm
+  temperature: &id002
+    - 1398 K
+  composition: &id003
+    species:
+      - species-name: CH2O
+        InChI: 1S/CH2O/c1-2/h1H2
+        amount:
+          - 0.04
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.01
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.95
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: time
+        units: us
+        primary: true
+    concentration-profiles:
+      - species-name: CH2O
+        InChI: 1S/CH2O/c1-2/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0
+            - 0.04
+          - - 10.0
+            - 0.039732
+          - - 20.0
+            - 0.039613
+          - - 30.0
+            - 0.039218
+          - - 40.0
+            - 0.03909
+          - - 50.0
+            - 0.038415
+          - - 60.0
+            - 0.035302
+          - - 70.0
+            - 0.029542
+          - - 80.0
+            - 0.023445
+          - - 90.0
+            - 0.017406
+          - - 100.0
+            - 0.012935
+          - - 110.0
+            - 0.0091484
+          - - 120.0
+            - 0.006442
+          - - 130.0
+            - 0.0041412
+          - - 140.0
+            - 0.0032696
+          - - 150.0
+            - 0.0020604
+          - - 160.0
+            - 0.0014556
+          - - 170.0
+            - 0.0007228
+          - - 180.0
+            - 4.8e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.002
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: generic uncertainty
+    pressure: *id001
+    temperature: *id002
+    composition: *id003
+...
