@@ -1,0 +1,154 @@
+---
+file-authors:
+  - name: Ivette Alonso Garcia
+    ORCID: 0009-0007-4064-7836
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.1016/j.heliyon.2024.e34204 
+  authors:
+    - name: Ziwen Zhao
+    - name: Yeteng Wang
+    - name: Jinchao Zhang
+    - name: Junhu Liang
+    - name: Yang Zhang
+    - name: Fengqi Zhao
+    - name: Quan-De Wang
+  journal: Heliyon - A Cell Press journal 
+  year: 2024
+  volume: 10
+  pages: e34204
+  detail: This is an experimental and kinetic simulation study on the autoignition of methane at ultra-lean and lean conditions relevant to coalbed methane utilization.
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: School of Environmental and Safety Engineering, North University of China, Taiyuan, PR China
+common-properties:
+  composition: &comp
+    kind: mole fraction
+    species:
+      - species-name: methane
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.00522
+      - species-name: oxygen 
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.2089
+     - species-name: nitrogen
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.78588
+  ignition-type: &ign
+    target: pressure; OH*
+    type: d/dt max 
+datapoints:
+  - temperature:
+      - 1356.1 kelvin
+    ignition-delay:
+      - 760 us
+    pressure:
+      - 10.111 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.05
+  - temperature:
+      - 1403.5 kelvin
+    ignition-delay:
+      - 444 us
+    pressure:
+      - 10.045 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.05
+  - temperature:
+      - 1442 kelvin
+    ignition-delay:
+      - 304 us
+    pressure:
+      - 10.562 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.05
+  - temperature:
+      - 1477.2 kelvin
+    ignition-delay:
+      - 254 us
+    pressure:
+      - 9.96 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.05
+  - temperature:
+      - 1546.8 kelvin
+    ignition-delay:
+      - 158 us
+    pressure:
+      - 10.08 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.05
+  - temperature:
+      - 1621.1 kelvin
+    ignition-delay:
+      - 97 us
+    pressure:
+      - 10.237 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.05
+  - temperature:
+      - 1682.2 kelvin
+    ignition-delay:
+      - 72 us
+    pressure:
+      - 10.22 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.05
+  - temperature:
+      - 1755.6 kelvin
+    ignition-delay:
+      - 53 us
+    pressure:
+      - 10.055 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.05
+  - temperature:
+      - 1601 kelvin
+    ignition-delay:
+      - 220 us
+    pressure:
+      - 1.959 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.05
+  - temperature:
+      - 1691 kelvin
+    ignition-delay:
+      - 153 us
+    pressure:
+      - 1.981 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.05
+ - temperature:
+      - 1759.7 kelvin
+    ignition-delay:
+      - 112 us
+    pressure:
+      - 2.019 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.05
+  - temperature:
+      - 1842.1 kelvin
+    ignition-delay:
+      - 71 us
+    pressure:
+      - 1.986 bar
+    composition: *comp
+    ignition-type: *ign
+    equivalence-ratio: 0.05
+....
