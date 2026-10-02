@@ -1,0 +1,119 @@
+---
+file-authors:
+  - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1021/ef990186r
+  authors:
+    - name: P. Glarborg
+    - name: P. G. Kristensen
+    - name: K. Dam-Johansen
+    - name: M. U. Alzueta
+    - name: A. Millera
+    - name: R. Bilbao
+  journal: Energy &amp; Fuels
+  year: 2000
+  volume: 14
+  pages: 828-838
+  detail: Converted from ReSpecTh XML file x30201054.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+comments:
+  - Pressure was not reported in the article, it is known by personal communication
+    with M. U. Alzueta. xCO, xNO was measured with an accuracy of ± 3 % but at least
+    ± 10 ppm.
+common-properties:
+  pressure: &id001
+    - 1 atm
+  composition: &id002
+    species:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.005
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.0009
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.02
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.06
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.9141
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 1473.0
+            - 0.1901
+            - 0.0
+          - - 1573.0
+            - 0.178
+            - 0.0
+          - - 1673.0
+            - 0.1674
+            - 0.0
+          - - 1773.0
+            - 0.1579
+            - 0.0
+        uncertainty:
+          - uncertainty-type: absolute
+            uncertainty: 9.999999999999999e-06
+            uncertainty-sourcetype: calculated
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 5.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 1473.0
+            - 0.1901
+            - 0.000896
+          - - 1573.0
+            - 0.178
+            - 0.000896
+          - - 1673.0
+            - 0.1674
+            - 0.000896
+          - - 1773.0
+            - 0.1579
+            - 0.000896
+        uncertainty:
+          - uncertainty-type: absolute
+            uncertainty: 2.7e-05
+            uncertainty-sourcetype: calculated
+            evaluated-standard-deviation-type: relative
+            evaluated-standard-deviation: 0.029154759
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    pressure: *id001
+    composition: *id002
+...

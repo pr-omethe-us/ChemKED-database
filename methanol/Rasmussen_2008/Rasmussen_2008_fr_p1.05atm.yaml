@@ -1,0 +1,160 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1002/kin.20323
+  authors:
+    - name: Christian Lund Rasmussen
+    - name: Karin Hedebo Wassard
+    - name: Kim Dam‐Johansen
+    - name: Peter Glarborg
+  journal: International Journal of Chemical Kinetics
+  year: 2008
+  volume: 40
+  pages: 423-441
+  detail: Converted from ReSpecTh XML file x30002009.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 1.05 atm
+  composition: &id002
+    species:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.000578
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.011
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.007
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.98142
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 798.4
+            - 0.102705
+            - 0.0
+          - - 836.8
+            - 0.097992
+            - 0.0
+          - - 873.6
+            - 0.093864
+            - 0.0
+          - - 911.2
+            - 0.089991
+            - 0.0
+          - - 949.6
+            - 0.086352
+            - 0.0
+          - - 986.8
+            - 0.083097
+            - 2.222e-05
+          - - 1022.8
+            - 0.080172
+            - 5.556e-05
+          - - 1059.6
+            - 0.077388
+            - 0.0001136
+          - - 1096.4
+            - 0.07479
+            - 0.0002568
+          - - 1134.0
+            - 0.07231
+            - 0.0001123
+          - - 1171.2
+            - 0.070014
+            - 6.049e-05
+          - - 1207.6
+            - 0.067903
+            - 3.951e-05
+          - - 1243.6
+            - 0.065938
+            - 2.593e-05
+          - - 1281.2
+            - 0.064002
+            - 1.975e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 4.93e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: CO2
+        InChI: 1S/CO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 798.4
+            - 0.102705
+            - 0.0
+          - - 836.8
+            - 0.097992
+            - 0.0
+          - - 873.6
+            - 0.093864
+            - 0.0
+          - - 911.2
+            - 0.089991
+            - 0.0
+          - - 949.6
+            - 0.086352
+            - 0.0
+          - - 986.8
+            - 0.083097
+            - 0.0
+          - - 1022.8
+            - 0.080172
+            - 3.704e-06
+          - - 1059.6
+            - 0.077388
+            - 4.938e-06
+          - - 1096.4
+            - 0.07479
+            - 6.173e-06
+          - - 1134.0
+            - 0.07231
+            - 0.000479
+          - - 1171.2
+            - 0.070014
+            - 0.0005235
+          - - 1207.6
+            - 0.067903
+            - 0.0005444
+          - - 1243.6
+            - 0.065938
+            - 0.0005556
+          - - 1281.2
+            - 0.064002
+            - 0.0005605
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000117
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    pressure: *id001
+    composition: *id002
+...

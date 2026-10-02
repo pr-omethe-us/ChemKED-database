@@ -1,0 +1,77 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/s0010-2180(98)00111-4
+  authors:
+    - name: E.L. Petersen
+    - name: D.F. Davidson
+    - name: R.K. Hanson
+  journal: Combustion and Flame
+  year: 1999
+  volume: 117
+  pages: 272-290
+  detail: Converted from ReSpecTh XML file x10004300.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 260 atm
+  composition: &id002
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.2
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.133
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.667
+  ignition-type: &id003
+    target: pressure
+    type: d/dt min extrapolated
+datapoints:
+  - temperature:
+      - 1302 K
+    ignition-delay:
+      - 53.55 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    pressure: *id001
+    composition: *id002
+    ignition-type: *id003
+  - temperature:
+      - 1240.4 K
+    ignition-delay:
+      - 74.62 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    pressure: *id001
+    composition: *id002
+    ignition-type: *id003
+  - temperature:
+      - 1176.6 K
+    ignition-delay:
+      - 98.06 us
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    pressure: *id001
+    composition: *id002
+    ignition-type: *id003
+...

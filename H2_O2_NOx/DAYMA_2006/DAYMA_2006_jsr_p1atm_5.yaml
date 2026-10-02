@@ -1,0 +1,185 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1080/00102200600793171
+  authors:
+    - name: GUILLAUME DAYMA
+    - name: PHILIPPE DAGAUT
+  journal: Combustion Science and Technology
+  year: 2006
+  volume: 178
+  pages: 1999-2024
+  detail: Converted from ReSpecTh XML file x00200008.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.01
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.003333
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.986432
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.000235
+    kind: mole fraction
+  pressure: &id002
+    - 1 atm
+  residence-time: &id003
+    - 0.24 s
+  reactor-volume: &id004
+    - 29.5 cm3
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 730.0
+            - 0.00976
+          - - 790.0
+            - 0.00921
+          - - 820.0
+            - 0.00809
+          - - 850.0
+            - 0.00683
+          - - 880.0
+            - 0.00577
+          - - 910.0
+            - 0.00487
+          - - 940.0
+            - 0.00405
+          - - 970.0
+            - 0.0035
+          - - 1000.0
+            - 0.00291
+          - - 1030.0
+            - 0.00253
+          - - 1090.0
+            - 0.0022
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000976
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 730.0
+            - 0.000402
+          - - 790.0
+            - 0.000312
+          - - 820.0
+            - 0.000532
+          - - 850.0
+            - 0.00161
+          - - 880.0
+            - 0.00255
+          - - 910.0
+            - 0.00344
+          - - 940.0
+            - 0.00412
+          - - 970.0
+            - 0.00454
+          - - 1000.0
+            - 0.00483
+          - - 1030.0
+            - 0.00487
+          - - 1090.0
+            - 0.00504
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000504
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 730.0
+            - 0.000238
+          - - 790.0
+            - 0.000234
+          - - 820.0
+            - 0.000236
+          - - 850.0
+            - 0.000235
+          - - 880.0
+            - 0.000235
+          - - 910.0
+            - 0.000231
+          - - 940.0
+            - 0.000226
+          - - 970.0
+            - 0.000217
+          - - 1000.0
+            - 0.000208
+          - - 1030.0
+            - 0.000195
+          - - 1090.0
+            - 0.000184
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 2.4e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: NO2
+        InChI: 1S/NO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 730.0
+            - 3.0e-06
+          - - 790.0
+            - 3.5e-06
+          - - 820.0
+            - 5.0e-06
+          - - 850.0
+            - 4.3e-06
+          - - 880.0
+            - 4.4e-06
+          - - 910.0
+            - 4.3e-06
+          - - 940.0
+            - 4.4e-06
+          - - 970.0
+            - 4.3e-06
+          - - 1000.0
+            - 4.3e-06
+          - - 1030.0
+            - 4.2e-06
+          - - 1090.0
+            - 4.4e-06
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 1.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    composition: *id001
+    pressure: *id002
+    residence-time: *id003
+    reactor-volume: *id004
+...

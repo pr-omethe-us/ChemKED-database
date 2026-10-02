@@ -1,0 +1,179 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/S0010-2180(98)00012-1
+  authors:
+    - name: D.T Venizelos
+    - name: R.C Sausa
+  journal: Combustion and Flame
+  year: 1998
+  volume: 115
+  pages: 313-326
+  detail: Converted from ReSpecTh XML file x60400005.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: burner stabilized flame
+  institution: ''
+  facility: ''
+comments:
+  - The inlet gas temperature was estimated with linear fitting of preheat region
+    of the temperature profile. The chosen temperature is the intercept of this line.
+  - 'The flow rate (F) was calculated by the following data and formula: F[slm] =
+    3.90 slm, M_average = 27.73 g/mol, d = 6 cm, A = (d/2)^2*PI; F[kg m-2 s-1] = const
+    * F[slm] * M_average / A . Where const = 6,905*10^-4 based on http://www.dgflo.com/unitsofflow.pdf
+    and the ideal gas law with values given above.'
+  - The standard temperature in this definition is 70 ?F (294.26 K). If I used the
+    value of 298.15 K the difference would be 1.3%.
+  - The O2 profile was reported as O2/Ar. To get the O2 concentration in ppm the digitized
+    data was multiplied with the inlet Ar mole fraction which assume constant Ar mole
+    fraction in the flame.
+  - The experimental temperature was estimated with linear interpolation based on
+    Figure 2. thermocouple data (neat flame).
+common-properties:
+  equivalence-ratio: &id001
+    - 1.00 dimensionless
+  temperature: &id002
+    - 689 K
+  pressure: &id003
+    - 30 torr
+  flow-rate: &id004
+    - 0.02641 kg * m**-2 * s**-1
+  composition: &id005
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.3615
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.3667
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.2718
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: distance
+        units: mm
+        primary: true
+    concentration-profiles:
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.484
+            - 0.0007729999999999999
+          - - 0.991
+            - 0.000927
+          - - 1.498
+            - 0.001104
+          - - 2.005
+            - 0.001276
+          - - 2.486
+            - 0.0015639999999999999
+          - - 2.994
+            - 0.0018219999999999998
+          - - 3.475
+            - 0.0020729999999999998
+          - - 3.982
+            - 0.002281
+          - - 4.49
+            - 0.0026
+          - - 4.997
+            - 0.002735
+          - - 5.477
+            - 0.002931
+          - - 5.984
+            - 0.003047
+          - - 6.464
+            - 0.003078
+          - - 6.997
+            - 0.0031999999999999997
+          - - 7.477
+            - 0.003292
+          - - 7.983
+            - 0.003365
+          - - 8.463
+            - 0.003407
+          - - 10.461
+            - 0.003578
+          - - 12.459
+            - 0.003668
+          - - 14.457
+            - 0.003777
+          - - 16.455
+            - 0.003799
+          - - 18.452
+            - 0.003816
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.1
+            uncertainty-sourcetype: reported
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.00038199999999999996
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: distance
+          units: mm
+        quantity:
+          units: K
+        values:
+          - - 0.484
+            - 803.0
+          - - 0.991
+            - 1013.0
+          - - 1.498
+            - 1254.0
+          - - 2.005
+            - 1484.0
+          - - 2.486
+            - 1629.0
+          - - 2.994
+            - 1782.0
+          - - 3.475
+            - 1880.0
+          - - 3.982
+            - 1952.0
+          - - 4.49
+            - 1996.0
+          - - 4.997
+            - 2019.0
+          - - 5.477
+            - 2031.0
+          - - 5.984
+            - 2030.0
+          - - 6.464
+            - 2029.0
+          - - 6.997
+            - 2029.0
+          - - 7.477
+            - 2029.0
+          - - 7.983
+            - 2029.0
+          - - 8.463
+            - 2030.0
+          - - 10.461
+            - 2031.0
+          - - 12.459
+            - 2023.0
+          - - 14.457
+            - 2022.0
+          - - 16.455
+            - 2014.0
+          - - 18.452
+            - 2009.0
+    equivalence-ratio: *id001
+    temperature: *id002
+    pressure: *id003
+    flow-rate: *id004
+    composition: *id005
+...

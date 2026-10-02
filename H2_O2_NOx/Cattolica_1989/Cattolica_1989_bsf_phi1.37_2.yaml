@@ -1,0 +1,250 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/S0082-0784(89)80127-4
+  authors:
+    - name: R.J. Cattolica
+    - name: J.A. Cavolowsky
+    - name: T.G. Mataga
+  journal: Symposium (International) on Combustion
+  year: 1989
+  volume: 22
+  pages: 1165-1173
+  detail: Converted from ReSpecTh XML file x60200024.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: burner stabilized flame
+  institution: ''
+  facility: ''
+comments:
+  - The inlet gas temperature is assumed to be normal temperature (293 K).
+  - The temperature profile was estimated with linear interpolation based on TABLE
+    II
+  - 'The flow rate (F) was calculated by the following data and formula: F[liter/min]
+    = 8.86 l/min, M_average = 23.21 g/mol, d = 6 cm, A = (d/2)^2*PI; F[kg m-2 s-1]
+    = const * F[liter/min] * M_average / A . Where const = 6,929*10^-4 (= p/R/T/6E4)'
+  - The temperature in this definition (NTP) is 20 °C (293.15 K) and the pressure
+    is 1 atm.
+  - The concentration profiles are converted from molecule/cm3 to mole fractions with
+    the ideal gas law to avoid simulation difficulties
+common-properties:
+  equivalence-ratio: &id001
+    - 1.37 dimensionless
+  temperature: &id002
+    - 293 K
+  pressure: &id003
+    - 76 torr
+  flow-rate: &id004
+    - 0.05040 kg * m**-2 * s**-1
+  composition: &id005
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.4074
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.1479
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.437
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.007743
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: distance
+        units: cm
+        primary: true
+    concentration-profiles:
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.096
+            - 0.006023
+          - - 0.205
+            - 0.006003
+          - - 0.306
+            - 0.006347
+          - - 0.401
+            - 0.006971
+          - - 0.501
+            - 0.007905
+          - - 0.606
+            - 0.008581
+          - - 0.706
+            - 0.009066
+          - - 0.802
+            - 0.009977
+          - - 0.897
+            - 0.0105
+          - - 1.002
+            - 0.01134
+          - - 1.106
+            - 0.01073
+          - - 1.202
+            - 0.01078
+          - - 1.302
+            - 0.0106
+          - - 1.402
+            - 0.01058
+          - - 1.502
+            - 0.01066
+          - - 1.606
+            - 0.01015
+          - - 1.702
+            - 0.01036
+          - - 1.797
+            - 0.01026
+          - - 1.902
+            - 0.01021
+          - - 1.997
+            - 0.01035
+          - - 2.102
+            - 0.01032
+          - - 2.193
+            - 0.01013
+          - - 2.297
+            - 0.009761
+          - - 2.393
+            - 0.009628
+          - - 2.497
+            - 0.009708
+          - - 2.593
+            - 0.009236
+          - - 2.698
+            - 0.009609
+          - - 2.802
+            - 0.00985
+          - - 2.902
+            - 0.009529
+          - - 3.002
+            - 0.009423
+          - - 3.102
+            - 0.009859
+          - - 3.202
+            - 0.009592
+          - - 3.302
+            - 0.009379
+          - - 3.402
+            - 0.009726
+          - - 3.507
+            - 0.009459
+          - - 3.607
+            - 0.009779
+          - - 3.702
+            - 0.009388
+          - - 3.802
+            - 0.009681
+          - - 3.902
+            - 0.009521
+          - - 4.002
+            - 0.009468
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.001134
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: distance
+          units: cm
+        quantity:
+          units: K
+        values:
+          - - 0.096
+            - 374.0
+          - - 0.205
+            - 457.0
+          - - 0.306
+            - 535.0
+          - - 0.401
+            - 608.0
+          - - 0.501
+            - 685.0
+          - - 0.606
+            - 765.0
+          - - 0.706
+            - 842.0
+          - - 0.802
+            - 916.0
+          - - 0.897
+            - 989.0
+          - - 1.002
+            - 1068.0
+          - - 1.106
+            - 1068.0
+          - - 1.202
+            - 1068.0
+          - - 1.302
+            - 1069.0
+          - - 1.402
+            - 1069.0
+          - - 1.502
+            - 1069.0
+          - - 1.606
+            - 1069.0
+          - - 1.702
+            - 1069.0
+          - - 1.797
+            - 1069.0
+          - - 1.902
+            - 1070.0
+          - - 1.997
+            - 1070.0
+          - - 2.102
+            - 1070.0
+          - - 2.193
+            - 1070.0
+          - - 2.297
+            - 1070.0
+          - - 2.393
+            - 1070.0
+          - - 2.497
+            - 1070.0
+          - - 2.593
+            - 1071.0
+          - - 2.698
+            - 1071.0
+          - - 2.802
+            - 1071.0
+          - - 2.902
+            - 1071.0
+          - - 3.002
+            - 1071.0
+          - - 3.102
+            - 1072.0
+          - - 3.202
+            - 1072.0
+          - - 3.302
+            - 1072.0
+          - - 3.402
+            - 1072.0
+          - - 3.507
+            - 1072.0
+          - - 3.607
+            - 1072.0
+          - - 3.702
+            - 1073.0
+          - - 3.802
+            - 1073.0
+          - - 3.902
+            - 1073.0
+          - - 4.002
+            - 1073.0
+    equivalence-ratio: *id001
+    temperature: *id002
+    pressure: *id003
+    flow-rate: *id004
+    composition: *id005
+...

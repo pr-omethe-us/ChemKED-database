@@ -1,0 +1,126 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.proci.2014.05.101
+  authors:
+    - name: Hamid Hashemi
+    - name: Jakob M. Christensen
+    - name: Sander Gersen
+    - name: Peter Glarborg
+  journal: Proceedings of the Combustion Institute
+  year: 2015
+  volume: 35
+  pages: 553-560
+  detail: Converted from ReSpecTh XML file x30000027.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 50 bar
+  composition: &id002
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.00952
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.00039
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.99009
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 702.45
+            - 7.964
+            - 0.00953
+          - - 723.15
+            - 7.804
+            - 0.00951
+          - - 748.15
+            - 7.623
+            - 0.0095
+          - - 774.55
+            - 7.445
+            - 0.00938
+          - - 798.15
+            - 7.146
+            - 0.00889
+          - - 823.15
+            - 6.846
+            - 0.00873
+          - - 847.95
+            - 6.566
+            - 0.00872
+          - - 873.15
+            - 6.451
+            - 0.00872
+          - - 899.35
+            - 6.339
+            - 0.00874
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000151
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 702.45
+            - 7.964
+            - 0.000395
+          - - 723.15
+            - 7.804
+            - 0.000378
+          - - 748.15
+            - 7.623
+            - 0.000375
+          - - 774.55
+            - 7.445
+            - 0.000319
+          - - 798.15
+            - 7.146
+            - 9.6e-05
+          - - 823.15
+            - 6.846
+            - 3.7e-05
+          - - 847.95
+            - 6.566
+            - 2.9e-05
+          - - 873.15
+            - 6.451
+            - 3.0e-05
+          - - 899.35
+            - 6.339
+            - 1.5e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 9.56e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    pressure: *id001
+    composition: *id002
+...

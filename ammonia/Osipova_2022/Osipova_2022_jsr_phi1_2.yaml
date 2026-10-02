@@ -1,0 +1,380 @@
+---
+file-authors:
+  - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.fuel.2021.122202
+  authors:
+    - name: Ksenia N. Osipova
+    - name: Xiaoyuan Zhang
+    - name: S. Mani Sarathy
+    - name: Oleg P. Korobeinichev
+    - name: Andrey G. Shmakov
+  journal: Fuel
+  year: 2022
+  volume: 310
+  pages: '122202'
+  detail: Converted from ReSpecTh XML file x00199020.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+comments:
+  - The composition vs. temperature data were obtained through personal communication
+    from the authors in tabulated form.
+  - The composition was calculated assuming phi = 0.75 * x_NH3 / x_O2.
+common-properties:
+  reactor-volume: &id001
+    - 76 cm3
+  pressure: &id002
+    - 1 atm
+  residence-time: &id003
+    - 1 s
+  equivalence-ratio: &id004
+    - 1 dimensionless
+  composition: &id005
+    species:
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        amount:
+          - 0.002
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0015
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.9965
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 900.0
+            - 0.002
+            - 0.000177
+          - - 930.0
+            - 0.002
+            - 0.000177
+          - - 960.0
+            - 0.002
+            - 0.000177
+          - - 990.0
+            - 0.002
+            - 0.000177
+          - - 1020.0
+            - 0.002
+            - 0.000177
+          - - 1050.0
+            - 0.002
+            - 0.000177
+          - - 1080.0
+            - 0.002006
+            - 0.000178
+          - - 1110.0
+            - 0.002013
+            - 0.000179
+          - - 1140.0
+            - 0.002
+            - 0.000177
+          - - 1160.0
+            - 0.001932
+            - 0.000171
+          - - 1170.0
+            - 0.001864
+            - 0.000165
+          - - 1180.0
+            - 0.001882
+            - 0.000167
+          - - 1190.0
+            - 0.0019
+            - 0.000169
+          - - 1200.0
+            - 0.001843
+            - 0.000164
+          - - 1210.0
+            - 0.001786
+            - 0.000158
+          - - 1220.0
+            - 0.001641
+            - 0.000146
+          - - 1230.0
+            - 0.001495
+            - 0.000133
+          - - 1240.0
+            - 0.001267
+            - 0.000112
+          - - 1250.0
+            - 0.001108
+            - 9.8e-05
+          - - 1260.0
+            - 0.001013
+            - 9.0e-05
+          - - 1270.0
+            - 0.000642
+            - 5.7e-05
+          - - 1280.0
+            - 0.00042
+            - 3.7e-05
+          - - 1290.0
+            - 0.000379
+            - 3.4e-05
+          - - 1300.0
+            - 0.000339
+            - 3.0e-05
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 900.0
+            - 0.0015
+            - 5.3e-05
+          - - 930.0
+            - 0.0015
+            - 5.3e-05
+          - - 960.0
+            - 0.0015
+            - 5.3e-05
+          - - 990.0
+            - 0.001528
+            - 5.4e-05
+          - - 1020.0
+            - 0.001526
+            - 5.4e-05
+          - - 1050.0
+            - 0.001492
+            - 5.3e-05
+          - - 1080.0
+            - 0.001518
+            - 5.4e-05
+          - - 1110.0
+            - 0.001507
+            - 5.3e-05
+          - - 1140.0
+            - 0.00149
+            - 5.3e-05
+          - - 1160.0
+            - 0.001466
+            - 5.2e-05
+          - - 1170.0
+            - 0.001425
+            - 5.0e-05
+          - - 1180.0
+            - 0.001379
+            - 4.9e-05
+          - - 1190.0
+            - 0.001406
+            - 5.0e-05
+          - - 1200.0
+            - 0.001366
+            - 4.8e-05
+          - - 1210.0
+            - 0.001301
+            - 4.6e-05
+          - - 1220.0
+            - 0.001217
+            - 4.3e-05
+          - - 1230.0
+            - 0.001176
+            - 4.2e-05
+          - - 1240.0
+            - 0.001111
+            - 3.9e-05
+          - - 1250.0
+            - 0.000928
+            - 3.3e-05
+          - - 1260.0
+            - 0.000827
+            - 2.9e-05
+          - - 1270.0
+            - 0.000682
+            - 2.4e-05
+          - - 1280.0
+            - 0.000578
+            - 2.0e-05
+          - - 1290.0
+            - 0.000462
+            - 1.6e-05
+          - - 1300.0
+            - 0.000334
+            - 1.2e-05
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 900.0
+            - 0.0
+            - 5.0e-06
+          - - 930.0
+            - 0.0
+            - 5.0e-06
+          - - 960.0
+            - 0.0
+            - 5.0e-06
+          - - 990.0
+            - 0.0
+            - 5.0e-06
+          - - 1020.0
+            - 0.0
+            - 5.0e-06
+          - - 1050.0
+            - 0.0
+            - 5.0e-06
+          - - 1080.0
+            - 0.0
+            - 5.0e-06
+          - - 1110.0
+            - 0.0
+            - 5.0e-06
+          - - 1140.0
+            - 0.0
+            - 5.0e-06
+          - - 1160.0
+            - 0.0
+            - 5.0e-06
+          - - 1170.0
+            - 0.0
+            - 5.0e-06
+          - - 1180.0
+            - 0.0
+            - 5.0e-06
+          - - 1190.0
+            - 0.0
+            - 5.0e-06
+          - - 1200.0
+            - 1.5e-05
+            - 5.0e-06
+          - - 1210.0
+            - 0.0003
+            - 2.2e-05
+          - - 1220.0
+            - 0.0005
+            - 3.7e-05
+          - - 1240.0
+            - 0.00095
+            - 7.0e-05
+          - - 1250.0
+            - 0.0014
+            - 0.000103
+          - - 1270.0
+            - 0.001797
+            - 0.000133
+          - - 1280.0
+            - 0.002195
+            - 0.000162
+          - - 1290.0
+            - 0.002274
+            - 0.000168
+          - - 1300.0
+            - 0.002354
+            - 0.000174
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 900.0
+            - 0.0
+            - 5.0e-06
+          - - 930.0
+            - 0.0
+            - 5.0e-06
+          - - 960.0
+            - 0.0
+            - 5.0e-06
+          - - 990.0
+            - 0.0
+            - 5.0e-06
+          - - 1020.0
+            - 0.0
+            - 5.0e-06
+          - - 1050.0
+            - 0.0
+            - 5.0e-06
+          - - 1080.0
+            - 0.0
+            - 5.0e-06
+          - - 1110.0
+            - 0.0
+            - 5.0e-06
+          - - 1140.0
+            - 0.0
+            - 5.0e-06
+          - - 1160.0
+            - 1.0e-05
+            - 5.0e-06
+          - - 1170.0
+            - 3.5e-05
+            - 6.0e-06
+          - - 1180.0
+            - 6.0e-05
+            - 1.0e-05
+          - - 1190.0
+            - 8.0e-05
+            - 1.3e-05
+          - - 1200.0
+            - 0.0001
+            - 1.6e-05
+          - - 1220.0
+            - 0.000275
+            - 4.4e-05
+          - - 1230.0
+            - 0.000449
+            - 7.1e-05
+          - - 1240.0
+            - 0.000514
+            - 8.2e-05
+          - - 1250.0
+            - 0.000579
+            - 9.2e-05
+          - - 1270.0
+            - 0.000648
+            - 0.000103
+          - - 1280.0
+            - 0.000717
+            - 0.000114
+          - - 1290.0
+            - 0.000863
+            - 0.000137
+          - - 1300.0
+            - 0.000907
+            - 0.000144
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+...

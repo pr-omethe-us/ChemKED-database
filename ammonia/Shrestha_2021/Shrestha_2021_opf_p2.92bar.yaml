@@ -1,0 +1,76 @@
+---
+file-authors:
+  - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.proci.2020.06.197
+  authors:
+    - name: Krishna Prasad Shrestha
+    - name: Charles Lhuillier
+    - name: Amanda Alves Barbosa
+    - name: Pierre Brequigny
+    - name: Francesco Contino
+    - name: Christine Mounaïm-Rousselle
+    - name: Lars Seidel
+    - name: Fabian Mauss
+  journal: Proceedings of the Combustion Institute
+  year: 2021
+  volume: 38
+  pages: 2163-2174
+  detail: Converted from ReSpecTh XML file x20100065.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: outwardly propagating spherical flame
+  institution: ''
+  facility: ''
+comments:
+  - 'The overall relative uncertainties were calculated from the two uncertainty factors
+    reported in the Supp. Mat. for each data point: Su(overall. %) = sqrt(Su(stat,
+    %)^2 + Su(moy, %)^2). Then, the absolute overall uncertainties were calculated
+    as Su (cm/s) * Su(overall, %) / 100. These uncertainties refer to 95% confidence
+    intervals.'
+  - The reported composition of air was 79.1% N2 and 20.9% O2.
+  - The nominal temperature and pressure for these measurements are 473 K and 3 bar,
+    respectively.
+common-properties: {}
+datapoints:
+  - composition:
+      kind: mole fraction
+      species:
+        - species-name: NH3
+          InChI: 1S/H3N/h1H3
+          amount:
+            - 0.197785
+        - species-name: H2
+          InChI: 1S/H2/h1H
+          amount:
+            - 0.049446
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.157329
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.59544
+    temperature:
+      - 470 K
+      - uncertainty-type: absolute
+        uncertainty: 2 K
+        uncertainty-sourcetype: reported
+    pressure:
+      - 2.92 bar
+    equivalence-ratio:
+      - 1.1 dimensionless
+    laminar-burning-velocity:
+      - 24.5 cm/s
+      - uncertainty-type: absolute
+        uncertainty: 0.87 cm/s
+        uncertainty-sourcetype: calculated
+        evaluated-standard-deviation: 0.5 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+...

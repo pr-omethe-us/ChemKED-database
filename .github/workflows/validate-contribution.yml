@@ -1,0 +1,144 @@
+name: Validate Contribution
+
+on:
+  pull_request:
+    branches: [main, master]
+    types: [opened, synchronize, ready_for_review]
+    paths:
+      - "**/*.yaml"
+      - "**/*.yml"
+
+concurrency:
+  group: validate-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  # -------------------------------------------------------------------
+  # 1. Detect which ChemKED YAML files were added or modified
+  # -------------------------------------------------------------------
+  detect-changes:
+    name: Detect Changed Files
+    runs-on: ubuntu-latest
+    outputs:
+      yaml_files: ${{ steps.changed.outputs.yaml_files }}
+      has_changes: ${{ steps.changed.outputs.has_changes }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find changed YAML files
+        id: changed
+        run: |
+          FILES=$(git diff --name-only --diff-filter=ACMR \
+            ${{ github.event.pull_request.base.sha }} \
+            ${{ github.event.pull_request.head.sha }} \
+            -- '*.yaml' '*.yml' \
+            | grep -v '^\.' \
+            | grep -v 'environment' \
+            | grep -v '.github/' \
+            | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          echo "yaml_files=$FILES" >> "$GITHUB_OUTPUT"
+          if [ "$FILES" = "[]" ] || [ -z "$FILES" ]; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  # -------------------------------------------------------------------
+  # 2. Validate each ChemKED file against the PyKED schema
+  # -------------------------------------------------------------------
+  pyked-validation:
+    name: PyKED Schema Validation
+    needs: detect-changes
+    if: needs.detect-changes.outputs.has_changes == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install PyKED
+        run: |
+          pip install pyked pyyaml cerberus pint habanero
+
+      - name: Run PyKED schema validation
+        env:
+          CHANGED_FILES: ${{ needs.detect-changes.outputs.yaml_files }}
+        run: python scripts/validate_chemked.py
+
+  # -------------------------------------------------------------------
+  # 3. Check ORCID metadata in file-authors
+  # -------------------------------------------------------------------
+  orcid-check:
+    name: ORCID Metadata Check
+    needs: detect-changes
+    if: needs.detect-changes.outputs.has_changes == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml requests
+
+      - name: Check ORCID in file-authors
+        env:
+          CHANGED_FILES: ${{ needs.detect-changes.outputs.yaml_files }}
+        run: python scripts/check_orcid.py
+
+  # -------------------------------------------------------------------
+  # 4. (Optional) PyTeCK simulation smoke-test
+  #    Only runs when the PR has the 'run-pyteck' label
+  # -------------------------------------------------------------------
+  pyteck-validation:
+    name: PyTeCK Simulation Validation
+    needs: detect-changes
+    if: >-
+      needs.detect-changes.outputs.has_changes == 'true'
+      && contains(github.event.pull_request.labels.*.name, 'run-pyteck')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Cantera & PyTeCK
+        run: |
+          pip install cantera pyteck pyked pyyaml numpy scipy
+
+      - name: Run PyTeCK simulation validation
+        env:
+          CHANGED_FILES: ${{ needs.detect-changes.outputs.yaml_files }}
+        run: python scripts/validate_pyteck.py
+
+  # -------------------------------------------------------------------
+  # 5. Summary status check (always runs, gates merge)
+  # -------------------------------------------------------------------
+  validation-summary:
+    name: Validation Summary
+    needs: [detect-changes, pyked-validation, orcid-check]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check results
+        run: |
+          if [ "${{ needs.pyked-validation.result }}" = "failure" ]; then
+            echo "::error::PyKED schema validation failed"
+            exit 1
+          fi
+          if [ "${{ needs.orcid-check.result }}" = "failure" ]; then
+            echo "::error::ORCID check failed"
+            exit 1
+          fi
+          echo "All validations passed ✓"

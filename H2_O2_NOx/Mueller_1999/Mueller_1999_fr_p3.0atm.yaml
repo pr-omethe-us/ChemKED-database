@@ -1,0 +1,142 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  authors:
+    - name: M A Mueller
+    - name: R A Yetter
+    - name: F L Dryer
+  journal: Int J Chem Kinet
+  year: 1999
+  volume: 31
+  pages: 705-724
+  detail: Converted from ReSpecTh XML file x30200079.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 3.0 atm
+  temperature: &id002
+    - 808 K
+  composition: &id003
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.01
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0202
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.000108
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.969692
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.124
+            - 0.008286
+          - - 0.134
+            - 0.00791
+          - - 0.144
+            - 0.007458
+          - - 0.157
+            - 0.006881
+          - - 0.175
+            - 0.006052
+          - - 0.195
+            - 0.004697
+          - - 0.218
+            - 0.003969
+          - - 0.243
+            - 0.003242
+          - - 0.267
+            - 0.002489
+          - - 0.291
+            - 0.001886
+          - - 0.316
+            - 0.001335
+          - - 0.342
+            - 0.001084
+          - - 0.365
+            - 0.000808
+          - - 0.389
+            - 0.000582
+          - - 0.414
+            - 0.000507
+          - - 0.439
+            - 0.000382
+          - - 0.464
+            - 0.000307
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000414
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.124
+            - 7.15e-05
+          - - 0.134
+            - 7.209999999999999e-05
+          - - 0.144
+            - 7.259999999999999e-05
+          - - 0.157
+            - 7.329999999999999e-05
+          - - 0.175
+            - 7.359999999999999e-05
+          - - 0.195
+            - 7.56e-05
+          - - 0.218
+            - 7.63e-05
+          - - 0.243
+            - 7.63e-05
+          - - 0.267
+            - 8.03e-05
+          - - 0.291
+            - 8.06e-05
+          - - 0.316
+            - 8.259999999999999e-05
+          - - 0.342
+            - 8.309999999999999e-05
+          - - 0.365
+            - 8.46e-05
+          - - 0.389
+            - 8.54e-05
+          - - 0.414
+            - 8.59e-05
+          - - 0.439
+            - 8.659999999999999e-05
+          - - 0.464
+            - 8.64e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 4.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    pressure: *id001
+    temperature: *id002
+    composition: *id003
+...

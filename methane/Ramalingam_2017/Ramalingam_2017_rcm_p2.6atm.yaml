@@ -1,0 +1,116 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.fuel.2017.06.005
+  authors:
+    - name: Ajoy Ramalingam
+    - name: Kuiwen Zhang
+    - name: Avnish Dhongde
+    - name: Lukas Virnich
+    - name: Harsh Sankhla
+    - name: Henry Curran
+    - name: Alexander Heufer
+  journal: Fuel
+  year: 2017
+  volume: 206
+  pages: 325-333
+  detail: Converted from ReSpecTh XML file x40004012.xml
+experiment-type: ignition delay
+apparatus:
+  kind: rapid compression machine
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        amount:
+          - 0.047381
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.179928
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.262895
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.509796
+  ignition-type: &id002
+    target: pressure
+    type: d/dt max
+datapoints:
+  - pressure:
+      - 2.605 atm
+    temperature:
+      - 296.4 K
+    ignition-delay:
+      - 13.02 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    time-histories:
+      - time:
+          units: s
+          column: 0
+        quantity:
+          units: cm3
+          column: 1
+        type: volume
+        values:
+          - [0.0, 1.0]
+          - [0.00220348, 0.8713221]
+          - [0.00255967, 0.8522223]
+          - [0.00410948, 0.7348317]
+          - [0.0061948, 0.5840686]
+          - [0.00819008, 0.4350942]
+          - [0.00963522, 0.3271606]
+          - [0.01066999, 0.2529554]
+          - [0.01186034, 0.1724205]
+          - [0.01271529, 0.1209479]
+          - [0.01306082, 0.1056052]
+          - [0.01352619, 0.09360071]
+          - [0.01570265, 0.0808003]
+          - [0.01653495, 0.08155256]
+          - [0.01890153, 0.08311224]
+          - [0.02104323, 0.08428188]
+          - [0.02314302, 0.08522281]
+          - [0.02537956, 0.08607196]
+          - [0.02896482, 0.08729412]
+          - [0.0314105, 0.08800517]
+          - [0.03510745, 0.08896661]
+          - [0.04157075, 0.09037161]
+          - [0.04697495, 0.09136618]
+          - [0.05457545, 0.09262894]
+          - [0.06497615, 0.0940939]
+          - [0.07629145, 0.09547295]
+          - [0.08796795, 0.0967329]
+          - [0.1012621, 0.0980222]
+          - [0.1193756, 0.09957806]
+          - [0.1398977, 0.1011938]
+          - [0.1615104, 0.1027763]
+          - [0.1796618, 0.1040462]
+          - [0.1923498, 0.104913]
+    composition: *id001
+    ignition-type: *id002
+  - pressure:
+      - 2.605 atm
+    temperature:
+      - 296.4 K
+    ignition-delay:
+      - 12.88 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    composition: *id001
+    ignition-type: *id002
+...

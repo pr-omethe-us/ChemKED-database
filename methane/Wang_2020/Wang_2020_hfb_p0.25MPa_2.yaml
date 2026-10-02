@@ -1,0 +1,106 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.fuel.2019.116152
+  authors:
+    - name: Shixing Wang
+    - name: Zhihua Wang
+    - name: Yong He
+    - name: Xinlu Han
+    - name: Zhiwei Sun
+    - name: Yanqun Zhu
+    - name: Mario Costa
+  journal: Fuel
+  year: 2020
+  volume: 259
+  pages: '116152'
+  detail: Converted from ReSpecTh XML file x20004619.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: heat flux burner
+  institution: ''
+  facility: ''
+comments:
+  - CH4, O2, and N2 mole fractions were calculated using the equivalence ration and
+    O2/(O2+N2) ratio. The reported uncertainty of laminar burning velocity was deleted
+    from this version as the Optima++ could not revognize it, the version of the xml
+    file including full info is available in CommonSpace.
+common-properties:
+  temperature: &id001
+    - 298 K
+  pressure: &id002
+    - 0.25 MPa
+datapoints:
+  - composition:
+      kind: mole fraction
+      species:
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 0.077491
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.193727
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.728782
+    laminar-burning-velocity:
+      - 15.5 cm/s
+      - evaluated-standard-deviation: 0.5 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    temperature: *id001
+    pressure: *id002
+  - composition:
+      kind: mole fraction
+      species:
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 0.095023
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.190045
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.714932
+    laminar-burning-velocity:
+      - 24.68 cm/s
+      - evaluated-standard-deviation: 0.5 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    temperature: *id001
+    pressure: *id002
+  - composition:
+      kind: mole fraction
+      species:
+        - species-name: CH4
+          InChI: 1S/CH4/h1H4
+          amount:
+            - 0.120106
+        - species-name: O2
+          InChI: 1S/O2/c1-2
+          amount:
+            - 0.184778
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.695117
+    laminar-burning-velocity:
+      - 14.85 cm/s
+      - evaluated-standard-deviation: 0.5 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: generic uncertainty
+    temperature: *id001
+    pressure: *id002
+...

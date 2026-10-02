@@ -1,0 +1,190 @@
+---
+file-authors:
+  - name: András Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.combustflame.2021.111653
+  authors:
+    - name: Xiaoyuan Zhang
+    - name: Shamjad P. Moosakutty
+    - name: Rajitha P. Rajan
+    - name: Mourad Younes
+    - name: S. Mani Sarathy
+  journal: Combustion and Flame
+  year: 2021
+  volume: 234
+  pages: '111653'
+  detail: Converted from ReSpecTh XML file x00100005.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+common-properties:
+  reactor-volume: &id001
+    - 76 cm3
+  pressure: &id002
+    - 1 atm
+  residence-time: &id003
+    - 1 s
+  equivalence-ratio: &id004
+    - 1.0 dimensionless
+  composition: &id005
+    species:
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        amount:
+          - 0.0014
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.0006
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0020499999999999997
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.99595
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 900.0
+            - 0.0
+            - 5.0e-06
+          - - 950.0
+            - 0.0
+            - 5.0e-06
+          - - 1010.0
+            - 0.000105
+            - 1.4e-05
+          - - 1040.0
+            - 0.000395
+            - 5.2e-05
+          - - 1070.0
+            - 0.000671
+            - 8.8e-05
+          - - 1120.0
+            - 0.00135
+            - 0.000177
+          - - 1170.0
+            - 0.0022
+            - 0.000289
+          - - 1220.0
+            - 0.00245
+            - 0.000322
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.1
+            uncertainty-sourcetype: reported
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 900.0
+            - 0.00126
+            - 6.3e-05
+          - - 950.0
+            - 0.001309
+            - 6.6e-05
+          - - 1010.0
+            - 0.001259
+            - 6.3e-05
+          - - 1040.0
+            - 0.001185
+            - 5.9e-05
+          - - 1070.0
+            - 0.00107
+            - 5.4e-05
+          - - 1120.0
+            - 0.000734
+            - 3.7e-05
+          - - 1170.0
+            - 0.000166
+            - 8.0e-06
+          - - 1220.0
+            - 2.4e-05
+            - 5.0e-06
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.1
+            uncertainty-sourcetype: reported
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 900.0
+            - 0.0
+          - - 950.0
+            - 0.0
+          - - 1010.0
+            - 2.0e-06
+          - - 1040.0
+            - 2.0e-06
+          - - 1070.0
+            - 3.0e-06
+          - - 1120.0
+            - 4.0e-06
+          - - 1170.0
+            - 6.0e-06
+          - - 1220.0
+            - 2.2e-05
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.1
+            uncertainty-sourcetype: reported
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 5.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 900.0
+            - 0.0
+          - - 950.0
+            - 0.0
+          - - 1010.0
+            - 2.0e-06
+          - - 1040.0
+            - 2.0e-06
+          - - 1070.0
+            - 4.0e-06
+          - - 1120.0
+            - 8.0e-06
+          - - 1170.0
+            - 2.0e-05
+          - - 1220.0
+            - 2.7e-05
+        uncertainty:
+          - uncertainty-type: relative
+            uncertainty: 0.1
+            uncertainty-sourcetype: reported
+            evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 5.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    equivalence-ratio: *id004
+    composition: *id005
+...

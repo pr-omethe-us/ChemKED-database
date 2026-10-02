@@ -1,0 +1,151 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1002/aic.690390811
+  authors:
+    - name: Tore Hulgaard
+    - name: Kim Dam‐Johansen
+  journal: AIChE Journal
+  year: 1993
+  volume: 39
+  pages: 1342-1354
+  detail: Converted from ReSpecTh XML file x30400005.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 1.04 atm
+  composition: &id002
+    species:
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.000215
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.04
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.00039999999999999996
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.959385
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: residence-time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0673
+            - 0.000215
+          - - 0.0639
+            - 0.000214
+          - - 0.0607
+            - 0.00020999999999999998
+          - - 0.058
+            - 0.000206
+          - - 0.0565
+            - 0.000203
+          - - 0.055
+            - 0.000197
+          - - 0.0536
+            - 0.000187
+          - - 0.0524
+            - 0.00017199999999999998
+          - - 0.0512
+            - 0.000146
+          - - 0.0501
+            - 0.00011399999999999999
+          - - 0.049
+            - 7.9e-05
+          - - 0.0476
+            - 3.4e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 1.1e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.0673
+            - 9.0e-07
+          - - 0.0639
+            - 8.0e-07
+          - - 0.0607
+            - 1.2e-06
+          - - 0.058
+            - 1.0e-06
+          - - 0.0565
+            - 1.3e-06
+          - - 0.055
+            - 1.5e-06
+          - - 0.0536
+            - 2.1e-06
+          - - 0.0524
+            - 3.2e-06
+          - - 0.0512
+            - 4.0e-06
+          - - 0.0501
+            - 4.8e-06
+          - - 0.049
+            - 5.0999999999999995e-06
+          - - 0.0476
+            - 5.5e-06
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 2.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: time
+          units: s
+        quantity:
+          units: K
+        values:
+          - - 0.0673
+            - 965.0
+          - - 0.0639
+            - 1018.0
+          - - 0.0607
+            - 1070.0
+          - - 0.058
+            - 1121.0
+          - - 0.0565
+            - 1150.0
+          - - 0.055
+            - 1183.0
+          - - 0.0536
+            - 1212.0
+          - - 0.0524
+            - 1239.0
+          - - 0.0512
+            - 1270.0
+          - - 0.0501
+            - 1298.0
+          - - 0.049
+            - 1326.0
+          - - 0.0476
+            - 1366.0
+    pressure: *id001
+    composition: *id002
+...

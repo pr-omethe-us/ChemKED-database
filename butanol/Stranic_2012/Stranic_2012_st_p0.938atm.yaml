@@ -1,0 +1,93 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.combustflame.2011.08.014
+  authors:
+    - name: Ivo Stranic
+    - name: Deanna P. Chase
+    - name: Joseph T. Harmon
+    - name: Sheng Yang
+    - name: David F. Davidson
+    - name: Ronald K. Hanson
+  journal: Combustion and Flame
+  year: 2012
+  volume: 159
+  pages: 516-527
+  detail: Converted from ReSpecTh XML file x10007046.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: nC4H9OH
+        InChI: 1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3
+        amount:
+          - 0.0075
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.045
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.9475
+  ignition-type: &id002
+    target: OH*
+    type: d/dt min extrapolated
+datapoints:
+  - temperature:
+      - 1230 K
+    ignition-delay:
+      - 1.56 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 0.95 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1312 K
+    ignition-delay:
+      - 0.653 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 0.96 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1388 K
+    ignition-delay:
+      - 0.293 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 0.93 atm
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1534 K
+    ignition-delay:
+      - 0.09 ms
+      - evaluated-standard-deviation: '0.1'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    pressure:
+      - 0.91 atm
+    composition: *id001
+    ignition-type: *id002
+...

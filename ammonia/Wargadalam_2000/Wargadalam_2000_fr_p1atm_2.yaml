@@ -1,0 +1,156 @@
+---
+file-authors:
+  - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/S0010-2180(99)00107-8
+  authors:
+    - name: V.J. Wargadalam
+    - name: G. Löffler
+    - name: F. Winter
+    - name: H. Hofbauer
+  journal: Combustion and Flame
+  year: 2000
+  volume: 120
+  pages: 465-478
+  detail: Converted from ReSpecTh XML file x30101006.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+comments:
+  - For the measured species, the maximum uncertainty was reported to be +/-10%. In
+    the absence of further information, +/-10% is considered as the experimental error
+    (2sigma).
+common-properties:
+  pressure: &id001
+    - 1 atm
+  composition: &id002
+    species:
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        amount:
+          - 0.00025
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.00125
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.1
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.8985
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: residence-time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.388
+            - 0.00025
+            - 1.8e-11
+          - - 0.367
+            - 0.00025
+            - 1.8e-11
+          - - 0.348
+            - 0.00025
+            - 1.8e-11
+          - - 0.331
+            - 0.00025
+            - 1.8e-11
+          - - 0.316
+            - 0.000227
+            - 1.6e-11
+          - - 0.302
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 0.289
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 0.277
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 0.266
+            - 0.0
+            - 5.0000000000000005e-12
+        uncertainty:
+          - uncertainty-type: absolute
+            uncertainty: 0.1
+            uncertainty-sourcetype: reported
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.388
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 0.367
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 0.348
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 0.331
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 0.316
+            - 6.0e-06
+            - 5.0000000000000005e-12
+          - - 0.302
+            - 9.499999999999999e-05
+            - 5.0000000000000005e-12
+          - - 0.289
+            - 0.000117
+            - 6.999999999999999e-12
+          - - 0.277
+            - 0.000133
+            - 6.999999999999999e-12
+          - - 0.266
+            - 0.000139
+            - 8.0e-12
+        uncertainty:
+          - uncertainty-type: absolute
+            uncertainty: 0.1
+            uncertainty-sourcetype: reported
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: time
+          units: s
+        quantity:
+          units: K
+        values:
+          - - 0.388
+            - 873.0
+          - - 0.367
+            - 924.0
+          - - 0.348
+            - 974.0
+          - - 0.331
+            - 1024.0
+          - - 0.316
+            - 1074.0
+          - - 0.302
+            - 1124.0
+          - - 0.289
+            - 1173.0
+          - - 0.277
+            - 1224.0
+          - - 0.266
+            - 1273.0
+    pressure: *id001
+    composition: *id002
+...

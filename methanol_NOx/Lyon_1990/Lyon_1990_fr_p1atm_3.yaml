@@ -1,0 +1,85 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/0010-2180(90)90067-2
+  authors:
+    - name: Richard K. Lyon
+    - name: Jerald A. Cole
+    - name: John C. Kramlich
+    - name: Shi L. Chen
+  journal: Combustion and Flame
+  year: 1990
+  volume: 81
+  pages: 30-39
+  detail: Converted from ReSpecTh XML file x30202028.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 1 atm
+  residence-time: &id002
+    - 0.048 s
+  composition: &id003
+    species:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.0004
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.05
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.000215
+      - species-name: HE
+        InChI: 1S/He
+        amount:
+          - 0.949385
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 974.0
+            - 5.517e-05
+          - - 1024.0
+            - 2.843e-05
+          - - 1073.0
+            - 2.425e-05
+          - - 1074.0
+            - 1.826e-05
+          - - 1123.0
+            - 1.776e-05
+          - - 1173.0
+            - 2.97e-05
+          - - 1221.0
+            - 6.787e-05
+          - - 1274.0
+            - 0.0001024
+          - - 1325.0
+            - 0.0001792
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 6.31e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    pressure: *id001
+    residence-time: *id002
+    composition: *id003
+...

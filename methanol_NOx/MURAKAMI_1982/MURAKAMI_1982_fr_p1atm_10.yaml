@@ -1,0 +1,171 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.3775/jie.61.276
+  authors:
+    - name: Nobuaki MURAKAMI
+    - name: Nobuyuki KOJIMA
+    - name: Minoru HASHIGUCHI
+  journal: Journal of the Fuel Society of Japan
+  year: 1982
+  volume: 61
+  pages: 276-284
+  detail: Converted from ReSpecTh XML file x30202039.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+comments:
+  - 'Residence time was calculated with linear interpolation based on the following
+    reported sentence:'
+  - The reaction time in the figure is the value at 600 °C, which is 1.13 times and
+    0.90 times the reported value at 500 °C and 700 °C, respectively
+  - Initial O2 concentration is not reported but 2.3% is assumed due the erroneous
+    simulations with the absence of O2.
+common-properties:
+  pressure: &id001
+    - 1 atm
+  composition: &id002
+    species:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.000175
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.023
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.000145
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.97668
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 816.0
+            - 0.97
+            - 0.0001364
+          - - 846.0
+            - 0.93
+            - 9.659e-05
+          - - 877.0
+            - 0.9
+            - 3.76e-05
+          - - 907.0
+            - 0.87
+            - 1.395e-05
+          - - 948.0
+            - 0.83
+            - 1.491e-05
+          - - 985.0
+            - 0.8
+            - 3.706e-05
+          - - 1031.0
+            - 0.76
+            - 5.782e-05
+          - - 1067.0
+            - 0.73
+            - 8.11e-05
+          - - 1111.0
+            - 0.69
+            - 0.0001177
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 4.62e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: NO2
+        InChI: 1S/NO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 816.0
+            - 0.97
+            - 8.641e-06
+          - - 846.0
+            - 0.93
+            - 4.841e-05
+          - - 877.0
+            - 0.9
+            - 0.0001074
+          - - 907.0
+            - 0.87
+            - 0.0001311
+          - - 948.0
+            - 0.83
+            - 0.0001301
+          - - 985.0
+            - 0.8
+            - 0.0001079
+          - - 1031.0
+            - 0.76
+            - 8.718e-05
+          - - 1067.0
+            - 0.73
+            - 6.39e-05
+          - - 1111.0
+            - 0.69
+            - 2.731e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 8.56e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    pressure: *id001
+    composition: *id002
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 848.0
+            - 0.93
+            - 7.731e-05
+          - - 881.0
+            - 0.89
+            - 3.867e-05
+          - - 910.0
+            - 0.87
+            - 1.266e-05
+          - - 956.0
+            - 0.83
+            - 2.665e-07
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 3.74e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    pressure: *id001
+    composition: *id002
+...

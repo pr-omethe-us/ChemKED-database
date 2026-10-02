@@ -1,0 +1,243 @@
+---
+file-authors:
+  - name: Bence Horvath / Andras Szanthoffer (2021); ELTE Chemical Kinetic Laboratory
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1002/cjce.5450730311
+  authors:
+    - name: J. A. Caton
+    - name: J. K. Narney
+    - name: H. C. Cariappa
+    - name: W. R. Laster
+  journal: The Canadian Journal of Chemical Engineering
+  year: 1995
+  volume: 73
+  pages: 345-350
+  detail: Converted from ReSpecTh XML file x30199018.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+comments:
+  - The total flow through the reactor was maintained at 1200 mL (STP)/min for these
+    experiments. This constant mass flow rate resulted in different volumetric flow
+    rates at the different reactor temperatures. This resulted in a residence time
+    of 2.1 s for a reactor temperature of 1025 K for the base case conditions.
+common-properties:
+  composition: &id001
+    species:
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        amount:
+          - 0.00099
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.15
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.84901
+    kind: mole fraction
+  pressure: &id002
+    - 102000 Pa
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 798.0
+            - 2.696
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 849.0
+            - 2.536
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 899.0
+            - 2.393
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 924.0
+            - 2.329
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 948.0
+            - 2.27
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 973.0
+            - 2.212
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 998.0
+            - 2.157
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 1024.0
+            - 2.103
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 1048.0
+            - 2.053
+            - 0.0
+            - 5.0000000000000005e-12
+          - - 1074.0
+            - 2.004
+            - 1.2e-05
+            - 5.0000000000000005e-12
+          - - 1099.0
+            - 1.959
+            - 1.4e-05
+            - 5.0000000000000005e-12
+          - - 1125.0
+            - 1.914
+            - 2.4999999999999998e-05
+            - 5.0000000000000005e-12
+          - - 1149.0
+            - 1.873
+            - 3.5e-05
+            - 5.0000000000000005e-12
+          - - 1174.0
+            - 1.833
+            - 3.5e-05
+            - 5.0000000000000005e-12
+          - - 1200.0
+            - 1.794
+            - 4.2999999999999995e-05
+            - 6.0e-12
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 798.0
+            - 2.696
+            - 0.0
+          - - 849.0
+            - 2.536
+            - 0.0
+          - - 899.0
+            - 2.393
+            - 0.0
+          - - 924.0
+            - 2.329
+            - 0.0
+          - - 948.0
+            - 2.27
+            - 1.0e-06
+          - - 973.0
+            - 2.212
+            - 1.0e-06
+          - - 998.0
+            - 2.157
+            - 3.0e-06
+          - - 1024.0
+            - 2.103
+            - 4.9999999999999996e-06
+          - - 1048.0
+            - 2.053
+            - 9.0e-06
+          - - 1074.0
+            - 2.004
+            - 1.6e-05
+          - - 1099.0
+            - 1.959
+            - 2.9e-05
+          - - 1125.0
+            - 1.914
+            - 3.7999999999999995e-05
+          - - 1149.0
+            - 1.873
+            - 3.2e-05
+          - - 1174.0
+            - 1.833
+            - 2.4999999999999998e-05
+          - - 1200.0
+            - 1.794
+            - 1.8e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 5.0e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: NH3
+        InChI: 1S/H3N/h1H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 798.0
+            - 2.696
+            - 0.00098
+            - 4.9e-11
+          - - 849.0
+            - 2.536
+            - 0.000986
+            - 5.0e-11
+          - - 899.0
+            - 2.393
+            - 0.000985
+            - 5.0e-11
+          - - 924.0
+            - 2.329
+            - 0.000971
+            - 4.9e-11
+          - - 948.0
+            - 2.27
+            - 0.0009429999999999999
+            - 4.8e-11
+          - - 973.0
+            - 2.212
+            - 0.000926
+            - 4.699999999999999e-11
+          - - 998.0
+            - 2.157
+            - 0.000886
+            - 4.5e-11
+          - - 1024.0
+            - 2.103
+            - 0.000846
+            - 4.3e-11
+          - - 1048.0
+            - 2.053
+            - 0.000762
+            - 3.8e-11
+          - - 1074.0
+            - 2.004
+            - 0.000598
+            - 3.0e-11
+          - - 1099.0
+            - 1.959
+            - 0.00035299999999999996
+            - 1.8e-11
+          - - 1125.0
+            - 1.914
+            - 7.099999999999999e-05
+            - 5.0000000000000005e-12
+          - - 1149.0
+            - 1.873
+            - 1.2e-05
+            - 5.0000000000000005e-12
+          - - 1174.0
+            - 1.833
+            - 9.0e-06
+            - 5.0000000000000005e-12
+          - - 1200.0
+            - 1.794
+            - 3.0e-06
+            - 5.0000000000000005e-12
+    composition: *id001
+    pressure: *id002
+...

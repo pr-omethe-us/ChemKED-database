@@ -1,0 +1,134 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/S0010-2180(01)00325-X
+  authors:
+    - name: Maria U Alzueta
+    - name: Rafael Bilbao
+    - name: Peter Glarborg
+  journal: Combustion and Flame
+  year: 2001
+  volume: 127
+  pages: 2234-2251
+  detail: Converted from ReSpecTh XML file x30001021_x.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 1.05 bar
+  composition: &id002
+    species:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.00011
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.000118
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.005
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.994772
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: residence-time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.13385
+            - 8.3057e-05
+          - - 0.13948
+            - 9.3855e-05
+          - - 0.14417
+            - 9.5996e-05
+          - - 0.14707
+            - 9.896e-05
+          - - 0.14994
+            - 0.00010111
+          - - 0.15374
+            - 0.00010191
+          - - 0.15755
+            - 0.00010297
+          - - 0.16192
+            - 0.00010404
+          - - 0.16467
+            - 0.00010673
+          - - 0.18374
+            - 0.00010829
+          - - 0.18608
+            - 0.00010937
+          - - 0.19608
+            - 0.00010988
+          - - 0.2015
+            - 0.00010986
+          - - 0.20693
+            - 0.00011
+          - - 0.21235
+            - 0.00011
+          - - 0.22037
+            - 0.00011
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 1.1e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: generic uncertainty
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: time
+          units: s
+        quantity:
+          units: K
+        values:
+          - - 0.13385
+            - 1479.2
+          - - 0.13948
+            - 1419.5
+          - - 0.14417
+            - 1373.4
+          - - 0.14707
+            - 1346.3
+          - - 0.14994
+            - 1320.5
+          - - 0.15374
+            - 1287.9
+          - - 0.15755
+            - 1256.7
+          - - 0.16192
+            - 1222.8
+          - - 0.16467
+            - 1202.4
+          - - 0.18374
+            - 1077.6
+          - - 0.18608
+            - 1064.0
+          - - 0.19608
+            - 1009.8
+          - - 0.2015
+            - 982.6
+          - - 0.20693
+            - 956.9
+          - - 0.21235
+            - 932.4
+          - - 0.22037
+            - 898.5
+    pressure: *id001
+    composition: *id002
+...

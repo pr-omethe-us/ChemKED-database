@@ -1,0 +1,427 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/0010-2180(93)90123-K
+  authors:
+    - name: R.C. Sausa
+    - name: W.R. Anderson
+    - name: D.C. Dayton
+    - name: C.M. Faust
+    - name: S.L. Howard
+  journal: Combustion and Flame
+  year: 1993
+  volume: 94
+  pages: 407-425
+  detail: Converted from ReSpecTh XML file x60400012.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: burner stabilized flame
+  institution: ''
+  facility: ''
+comments:
+  - The experimental temperature was estimated with linear interpolation based on
+    Fig. 2.
+  - The concentration profiles are converted from mol/cm3 to mole fractions with the
+    ideal gas law to avoid simulation difficulties
+common-properties:
+  temperature: &id001
+    - 300 K
+  pressure: &id002
+    - 20 torr
+  flow-rate: &id003
+    - 3.41E-3 g * cm**-2 * s**-1
+  composition: &id004
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.2667
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.2667
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.4666
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: distance
+        units: mm
+        primary: true
+    concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.842
+            - 0.2632
+          - - 1.061
+            - 0.2637
+          - - 1.66
+            - 0.2391
+          - - 2.077
+            - 0.2127
+          - - 2.32
+            - 0.2106
+          - - 2.62
+            - 0.2052
+          - - 2.997
+            - 0.1919
+          - - 3.358
+            - 0.1884
+          - - 3.719
+            - 0.1692
+          - - 4.174
+            - 0.1469
+          - - 4.707
+            - 0.1358
+          - - 4.911
+            - 0.1263
+          - - 5.225
+            - 0.1175
+          - - 5.507
+            - 0.1103
+          - - 6.04
+            - 0.0952
+          - - 6.589
+            - 0.0839
+          - - 7.153
+            - 0.07953
+          - - 7.576
+            - 0.0754
+          - - 8.062
+            - 0.07587
+          - - 8.611
+            - 0.06926
+          - - 9.033
+            - 0.06986
+          - - 9.488
+            - 0.06852
+          - - 10.616
+            - 0.06508
+          - - 11.039
+            - 0.06517
+          - - 11.54
+            - 0.06523
+          - - 12.073
+            - 0.06145
+          - - 12.637
+            - 0.05772
+          - - 13.201
+            - 0.05387
+          - - 14.063
+            - 0.05011
+          - - 14.956
+            - 0.05362
+          - - 15.975
+            - 0.04777
+          - - 17.104
+            - 0.04387
+          - - 17.982
+            - 0.0437
+          - - 20.02
+            - 0.03783
+          - - 22.026
+            - 0.03564
+          - - 24.048
+            - 0.02997
+          - - 25.961
+            - 0.02445
+          - - 27.952
+            - 0.0294
+          - - 30.006
+            - 0.02396
+          - - 32.076
+            - 0.02031
+          - - 33.957
+            - 0.02013
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.026369999999999998
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.842
+            - 0.05008
+          - - 1.061
+            - 0.05554
+          - - 1.66
+            - 0.06356
+          - - 2.077
+            - 0.07284
+          - - 2.32
+            - 0.07684
+          - - 2.62
+            - 0.08195
+          - - 2.997
+            - 0.08456
+          - - 3.358
+            - 0.09625
+          - - 3.719
+            - 0.1014
+          - - 4.174
+            - 0.1101
+          - - 4.707
+            - 0.118
+          - - 4.911
+            - 0.1199
+          - - 5.225
+            - 0.126
+          - - 5.507
+            - 0.133
+          - - 6.04
+            - 0.1425
+          - - 6.589
+            - 0.151
+          - - 7.153
+            - 0.163
+          - - 7.576
+            - 0.1707
+          - - 8.062
+            - 0.1855
+          - - 8.611
+            - 0.1927
+          - - 9.033
+            - 0.2054
+          - - 9.488
+            - 0.2093
+          - - 10.616
+            - 0.2312
+          - - 11.039
+            - 0.2384
+          - - 11.54
+            - 0.2448
+          - - 12.073
+            - 0.2501
+          - - 12.637
+            - 0.2607
+          - - 13.201
+            - 0.2681
+          - - 14.063
+            - 0.2759
+          - - 14.956
+            - 0.2804
+          - - 15.975
+            - 0.2885
+          - - 17.104
+            - 0.2924
+          - - 17.982
+            - 0.2944
+          - - 20.02
+            - 0.2996
+          - - 22.026
+            - 0.3071
+          - - 24.048
+            - 0.3096
+          - - 25.961
+            - 0.3125
+          - - 27.952
+            - 0.317
+          - - 30.006
+            - 0.3205
+          - - 32.076
+            - 0.3233
+          - - 33.957
+            - 0.3283
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.03283
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.842
+            - 0.04028
+          - - 1.061
+            - 0.04884
+          - - 1.66
+            - 0.05933
+          - - 2.077
+            - 0.06755
+          - - 2.32
+            - 0.07375
+          - - 2.62
+            - 0.07847
+          - - 2.997
+            - 0.0842
+          - - 3.358
+            - 0.0946
+          - - 3.719
+            - 0.09759
+          - - 4.174
+            - 0.1038
+          - - 4.707
+            - 0.1113
+          - - 4.911
+            - 0.1116
+          - - 5.225
+            - 0.1155
+          - - 5.507
+            - 0.1206
+          - - 6.04
+            - 0.1285
+          - - 6.589
+            - 0.1388
+          - - 7.153
+            - 0.1475
+          - - 7.576
+            - 0.152
+          - - 8.062
+            - 0.1602
+          - - 8.611
+            - 0.1665
+          - - 9.033
+            - 0.1729
+          - - 9.488
+            - 0.1778
+          - - 10.616
+            - 0.1927
+          - - 11.039
+            - 0.1986
+          - - 11.54
+            - 0.205
+          - - 12.073
+            - 0.2117
+          - - 12.637
+            - 0.2166
+          - - 13.201
+            - 0.2198
+          - - 14.063
+            - 0.2252
+          - - 14.956
+            - 0.2323
+          - - 15.975
+            - 0.2358
+          - - 17.104
+            - 0.2419
+          - - 17.982
+            - 0.2464
+          - - 20.02
+            - 0.2534
+          - - 22.026
+            - 0.2613
+          - - 24.048
+            - 0.2626
+          - - 25.961
+            - 0.2631
+          - - 27.952
+            - 0.264
+          - - 30.006
+            - 0.2635
+          - - 32.076
+            - 0.2635
+          - - 33.957
+            - 0.2645
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.026449999999999998
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: distance
+          units: mm
+        quantity:
+          units: K
+        values:
+          - - 0.842
+            - 643.0
+          - - 1.061
+            - 695.0
+          - - 1.66
+            - 848.0
+          - - 2.077
+            - 1003.0
+          - - 2.32
+            - 1090.0
+          - - 2.62
+            - 1186.0
+          - - 2.997
+            - 1278.0
+          - - 3.358
+            - 1393.0
+          - - 3.719
+            - 1449.0
+          - - 4.174
+            - 1535.0
+          - - 4.707
+            - 1645.0
+          - - 4.911
+            - 1672.0
+          - - 5.225
+            - 1715.0
+          - - 5.507
+            - 1768.0
+          - - 6.04
+            - 1837.0
+          - - 6.589
+            - 1911.0
+          - - 7.153
+            - 1968.0
+          - - 7.576
+            - 1997.0
+          - - 8.062
+            - 2057.0
+          - - 8.611
+            - 2076.0
+          - - 9.033
+            - 2094.0
+          - - 9.488
+            - 2109.0
+          - - 10.616
+            - 2117.0
+          - - 11.039
+            - 2120.0
+          - - 11.54
+            - 2122.0
+          - - 12.073
+            - 2120.0
+          - - 12.637
+            - 2120.0
+          - - 13.201
+            - 2115.0
+          - - 14.063
+            - 2113.0
+          - - 14.956
+            - 2105.0
+          - - 15.975
+            - 2092.0
+          - - 17.104
+            - 2081.0
+          - - 17.982
+            - 2073.0
+          - - 20.02
+            - 2051.0
+          - - 22.026
+            - 2029.0
+          - - 24.048
+            - 2007.0
+          - - 25.961
+            - 1988.0
+          - - 27.952
+            - 1969.0
+          - - 30.006
+            - 1948.0
+          - - 32.076
+            - 1927.0
+          - - 33.957
+            - 1910.0
+    temperature: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+...

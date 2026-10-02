@@ -1,0 +1,77 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.2514/2.5744
+  authors:
+    - name: Meredith B. Colket
+    - name: Louis J. Spadaccini
+  journal: Journal of Propulsion and Power
+  year: 2001
+  volume: 17
+  pages: 315-323
+  detail: Converted from ReSpecTh XML file x10014057.xml
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  composition: &id001
+    kind: mole fraction
+    species:
+      - species-name: C2H4
+        InChI: 1S/C2H4/c1-2/h1-2H2
+        amount:
+          - 0.007
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.021
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.972
+  ignition-type: &id002
+    target: OH
+    type: d/dt max
+datapoints:
+  - temperature:
+      - 1414 K
+    pressure:
+      - 7.09 atm
+    ignition-delay:
+      - 9.05e-05 s
+      - evaluated-standard-deviation: '0.111'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1346 K
+    pressure:
+      - 6.58 atm
+    ignition-delay:
+      - 0.000136 s
+      - evaluated-standard-deviation: '0.111'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    composition: *id001
+    ignition-type: *id002
+  - temperature:
+      - 1380 K
+    pressure:
+      - 7.64 atm
+    ignition-delay:
+      - 0.000102 s
+      - evaluated-standard-deviation: '0.111'
+        evaluated-standard-deviation-type: relative
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: combined from scatter and reported uncertainty
+    composition: *id001
+    ignition-type: *id002
+...

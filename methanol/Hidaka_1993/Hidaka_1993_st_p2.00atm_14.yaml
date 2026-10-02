@@ -1,0 +1,76 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1002/kin.550250409
+  authors:
+    - name: Yoshiaki Hidaka
+    - name: Takashi Taniguchi
+    - name: Takashi Kamesawa
+    - name: Hiromitsu Masaoka
+    - name: Koji Inami
+    - name: Hiroyuki Kawano
+  journal: International Journal of Chemical Kinetics
+  year: 1993
+  volume: 25
+  pages: 305-322
+  detail: Converted from ReSpecTh XML file x50002217pyrCH2O.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 2.00 atm
+  temperature: &id002
+    - 1780 K
+  composition: &id003
+    species:
+      - species-name: CH2O
+        InChI: 1S/CH2O/c1-2/h1H2
+        amount:
+          - 0.0001
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.9999
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: time
+        units: us
+        primary: true
+    concentration-profiles:
+      - species-name: CH2O
+        InChI: 1S/CH2O/c1-2/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 50.0
+            - 9.8744e-05
+          - - 100.0
+            - 9.4291e-05
+          - - 150.0
+            - 8.7734e-05
+          - - 200.0
+            - 7.9889e-05
+          - - 300.0
+            - 5.9269e-05
+          - - 400.0
+            - 4.4376e-05
+          - - 500.0
+            - 3.096e-05
+          - - 600.0
+            - 1.9333e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 4.94e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: generic uncertainty
+    pressure: *id001
+    temperature: *id002
+    composition: *id003
+...

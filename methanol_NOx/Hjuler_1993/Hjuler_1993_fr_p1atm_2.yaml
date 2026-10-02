@@ -1,0 +1,159 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1002/ep.670120411
+  authors:
+    - name: Klaus Hjuler
+    - name: Kim Dam‐Johansen
+  journal: Environmental Progress
+  year: 1993
+  volume: 12
+  pages: 300-305
+  detail: Converted from ReSpecTh XML file x30202025.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 1 atm
+  composition: &id002
+    species:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.00051
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.046
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.00058
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.95291
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 885.4
+            - 0.2462
+            - 0.0002842
+          - - 935.6
+            - 0.233
+            - 0.0003879
+          - - 986.1
+            - 0.2211
+            - 0.0004333
+          - - 1037.2
+            - 0.2102
+            - 0.0004263
+          - - 1086.4
+            - 0.2007
+            - 0.0002031
+          - - 1135.8
+            - 0.1919
+            - 0.0001404
+          - - 1186.0
+            - 0.1838
+            - 8.979e-05
+          - - 1233.3
+            - 0.1768
+            - 5.841e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 3.03e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: CO2
+        InChI: 1S/CO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 885.4
+            - 0.2462
+            - 2.528e-05
+          - - 935.6
+            - 0.233
+            - 4.795e-05
+          - - 986.1
+            - 0.2211
+            - 7.062e-05
+          - - 1037.2
+            - 0.2102
+            - 0.0001055
+          - - 1086.4
+            - 0.2007
+            - 0.0003304
+          - - 1135.8
+            - 0.1919
+            - 0.0003932
+          - - 1186.0
+            - 0.1838
+            - 0.000435
+          - - 1233.3
+            - 0.1768
+            - 0.0004586
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 3.78e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 885.4
+            - 0.2462
+            - 0.0001569
+          - - 935.6
+            - 0.233
+            - 7.051e-05
+          - - 986.1
+            - 0.2211
+            - 8.243e-05
+          - - 1037.2
+            - 0.2102
+            - 0.0002503
+          - - 1086.4
+            - 0.2007
+            - 0.0004946
+          - - 1135.8
+            - 0.1919
+            - 0.0005582
+          - - 1186.0
+            - 0.1838
+            - 0.0005711
+          - - 1233.3
+            - 0.1768
+            - 0.000577
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 2.86e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    pressure: *id001
+    composition: *id002
+...

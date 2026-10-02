@@ -1,0 +1,93 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.combustflame.2014.03.011
+  authors:
+    - name: María Abián
+    - name: Ángela Millera
+    - name: Rafael Bilbao
+    - name: María U. Alzueta
+  journal: Combustion and Flame
+  year: 2014
+  volume: 161
+  pages: 2288-2296
+  detail: Converted from ReSpecTh XML file x30014013.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+comments:
+  - tau = 195/T
+common-properties:
+  pressure: &id001
+    - 1 atm
+  composition: &id002
+    species:
+      - species-name: C2H4
+        InChI: 1S/C2H4/c1-2/h1-2H2
+        amount:
+          - 0.001
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.003
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.005
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.991
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: C2H4
+        InChI: 1S/C2H4/c1-2/h1-2H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 873.0
+            - 0.223367698
+            - 0.001
+          - - 923.0
+            - 0.211267606
+            - 0.00099907
+          - - 948.0
+            - 0.205696203
+            - 0.00099907
+          - - 973.0
+            - 0.2004111
+            - 0.0009617499999999999
+          - - 998.0
+            - 0.195390782
+            - 0.00084328
+          - - 1023.0
+            - 0.190615836
+            - 0.0006315299999999999
+          - - 1048.0
+            - 0.186068702
+            - 0.00040112
+          - - 1073.0
+            - 0.181733458
+            - 9.981e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: relative
+            evaluated-standard-deviation: 0.035
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and estimated
+              uncertainty
+    pressure: *id001
+    composition: *id002
+...

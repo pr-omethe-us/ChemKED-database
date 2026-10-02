@@ -1,0 +1,160 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/S0082-0784(96)80318-3
+  authors:
+    - name: R.C. Sausa
+    - name: G. Singh
+    - name: G.W. Lemire
+    - name: W.R. Anderson
+  journal: Symposium (International) on Combustion
+  year: 1996
+  volume: 26
+  pages: 1043-1052
+  detail: Converted from ReSpecTh XML file x60400008.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: burner stabilized flame
+  institution: ''
+  facility: ''
+comments:
+  - The inlet gas temperature is related to the zero point on the temperature profile
+    on Figure 1.
+  - 'The flow rate (F) was calculated by the following data and formula: F[slm] =
+    4.65 slm, M_average = 26.84 g/mol, d = 6 cm, A = (d/2)^2*PI; F[kg m-2 s-1] = const
+    * F[slm] * M_average / A . Where const = 6,905*10^-4 based on http://www.dgflo.com/unitsofflow.pdf
+    and the ideal gas law with values given above.'
+  - The standard temperature in this definition is 70 °F (294.26 K). If I used the
+    value of 298.15 K the difference would be 1.3%.
+  - The experimental temperature was estimated with linear interpolation based on
+    Figure 1.
+common-properties:
+  temperature: &id001
+    - 400 K
+  pressure: &id002
+    - 30 torr
+  flow-rate: &id003
+    - 0.03048 kg * m**-2 * s**-1
+  composition: &id004
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.3828
+      - species-name: N2O
+        InChI: 1S/N2O/c1-2-3
+        amount:
+          - 0.3527
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.2645
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: distance
+        units: mm
+        primary: true
+    concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.773
+            - 0.183
+          - - 1.313
+            - 0.1753
+          - - 1.781
+            - 0.1656
+          - - 2.297
+            - 0.1537
+          - - 2.789
+            - 0.1447
+          - - 3.305
+            - 0.128
+          - - 3.773
+            - 0.1217
+          - - 4.289
+            - 0.1106
+          - - 4.781
+            - 0.0987
+          - - 5.273
+            - 0.0917
+          - - 5.789
+            - 0.0861
+          - - 6.797
+            - 0.077
+          - - 7.781
+            - 0.0672
+          - - 8.789
+            - 0.0685
+          - - 9.797
+            - 0.0677
+          - - 10.781
+            - 0.0663
+          - - 11.789
+            - 0.0655
+          - - 12.797
+            - 0.0647
+          - - 13.805
+            - 0.0618
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.0183
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: distance
+          units: mm
+        quantity:
+          units: K
+        values:
+          - - 0.773
+            - 550.0
+          - - 1.313
+            - 683.0
+          - - 1.781
+            - 811.0
+          - - 2.297
+            - 963.0
+          - - 2.789
+            - 1108.0
+          - - 3.305
+            - 1268.0
+          - - 3.773
+            - 1405.0
+          - - 4.289
+            - 1536.0
+          - - 4.781
+            - 1639.0
+          - - 5.273
+            - 1727.0
+          - - 5.789
+            - 1794.0
+          - - 6.797
+            - 1886.0
+          - - 7.781
+            - 1930.0
+          - - 8.789
+            - 1944.0
+          - - 9.797
+            - 1929.0
+          - - 10.781
+            - 1901.0
+          - - 11.789
+            - 1876.0
+          - - 12.797
+            - 1848.0
+          - - 13.805
+            - 1825.0
+    temperature: *id001
+    pressure: *id002
+    flow-rate: *id003
+    composition: *id004
+...

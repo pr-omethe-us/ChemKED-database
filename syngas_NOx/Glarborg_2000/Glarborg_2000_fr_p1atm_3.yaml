@@ -1,0 +1,93 @@
+---
+file-authors:
+  - name: Andras Gy. Szanthoffer, Chemical Kinetics Laboratory, Institute of Chemistry,
+      ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1021/ef990186r
+  authors:
+    - name: P. Glarborg
+    - name: P. G. Kristensen
+    - name: K. Dam-Johansen
+    - name: M. U. Alzueta
+    - name: A. Millera
+    - name: R. Bilbao
+  journal: Energy &amp; Fuels
+  year: 2000
+  volume: 14
+  pages: 828-838
+  detail: Converted from ReSpecTh XML file x30201053.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+comments:
+  - Pressure was not reported in the article, it is known by personal communication
+    with M. U. Alzueta. xNO was measured with an accuracy of ± 3 % but at least ±
+    10 ppm.
+common-properties:
+  pressure: &id001
+    - 1 atm
+  composition: &id002
+    species:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.018600000000000002
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        amount:
+          - 0.000281
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0042
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.045
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.931919
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+      - name: residence-time
+        units: s
+        primary: false
+    concentration-profiles:
+      - species-name: 'NO'
+        InChI: 1S/NO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 1406.0
+            - 0.0768
+            - 0.00025299999999999997
+          - - 1453.0
+            - 0.0743
+            - 0.00023999999999999998
+          - - 1501.0
+            - 0.072
+            - 0.000224
+          - - 1547.0
+            - 0.0698
+            - 0.00019999999999999998
+        uncertainty:
+          - uncertainty-type: absolute
+            uncertainty: 9.999999999999999e-06
+            uncertainty-sourcetype: calculated
+            evaluated-standard-deviation-type: relative
+            evaluated-standard-deviation: 0.025
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: combined from scatter and reported
+              uncertainty
+    pressure: *id001
+    composition: *id002
+...

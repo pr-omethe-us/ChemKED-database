@@ -1,0 +1,113 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1021/ef800832q
+  authors:
+    - name: T. Le Cong
+    - name: P. Dagaut
+  journal: Energy &amp; Fuels
+  year: 2009
+  volume: 23
+  pages: 725-734
+  detail: Converted from ReSpecTh XML file g00000009psr.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+common-properties:
+  reactor-volume: &id001
+    - 30 cm3
+  pressure: &id002
+    - 1 atm
+  residence-time: &id003
+    - 120 ms
+  composition: &id004
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.0119
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.0025
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.8856
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.1
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 850.0
+            - 0.01193
+          - - 877.0
+            - 0.01183
+          - - 898.0
+            - 0.01061
+          - - 925.0
+            - 0.01193
+          - - 948.0
+            - 0.00853
+          - - 977.0
+            - 0.00757
+          - - 1000.0
+            - 0.00727
+          - - 1029.0
+            - 0.00719
+          - - 1049.0
+            - 0.00703
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.00042
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 850.0
+            - 0.0025
+          - - 877.0
+            - 0.00221
+          - - 898.0
+            - 0.00201
+          - - 925.0
+            - 0.00325
+          - - 948.0
+            - 0.000677
+          - - 977.0
+            - 0.000599
+          - - 1000.0
+            - 0.00022
+          - - 1029.0
+            - 8.2e-05
+          - - 1049.0
+            - 4.3e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.00045
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    reactor-volume: *id001
+    pressure: *id002
+    residence-time: *id003
+    composition: *id004
+...

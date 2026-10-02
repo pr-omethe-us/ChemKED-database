@@ -1,0 +1,199 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/0010-2180(92)90050-Y
+  authors:
+    - name: Peter H. Cribb
+    - name: John E. Dove
+    - name: Satoshi Yamazaki
+  journal: Combustion and Flame
+  year: 1992
+  volume: 88
+  pages: 169-185
+  detail: Converted from ReSpecTh XML file x50002003pyr.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: shock tube
+  institution: ''
+  facility: ''
+common-properties:
+  temperature: &id001
+    - 1800 K
+  pressure: &id002
+    - 400 torr
+  composition: &id003
+    species:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        amount:
+          - 0.002
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.01
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.002
+      - species-name: Ne
+        InChI: 1S/Ne
+        amount:
+          - 0.986
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: time
+        units: us
+        primary: true
+    concentration-profiles:
+      - species-name: CH3OH
+        InChI: 1S/CH4O/c1-2/h2H,1H3
+        quantity:
+          units: mol/cm3
+        values:
+          - - 10.0
+            - 6.36876e-09
+          - - 20.0
+            - 5.95968e-09
+          - - 30.0
+            - 5.55067e-09
+          - - 40.0
+            - 5.25267e-09
+          - - 50.0
+            - 4.97942e-09
+          - - 60.0
+            - 4.68152e-09
+          - - 70.0
+            - 4.46997e-09
+          - - 80.0
+            - 4.2708e-09
+          - - 90.0
+            - 4.05925e-09
+          - - 100.0
+            - 3.87243e-09
+          - - 110.0
+            - 3.77199e-09
+          - - 120.0
+            - 3.57282e-09
+          - - 130.0
+            - 3.3613e-09
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 3.18e-09
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: generic uncertainty
+      - species-name: CH2O
+        InChI: 1S/CH2O/c1-2/h1H2
+        quantity:
+          units: mol/cm3
+        values:
+          - - 10.0
+            - 1.4657e-10
+          - - 20.0
+            - 2.18973e-10
+          - - 30.0
+            - 2.53721e-10
+          - - 40.0
+            - 3.13871e-10
+          - - 50.0
+            - 3.61954e-10
+          - - 60.0
+            - 3.84665e-10
+          - - 70.0
+            - 4.32563e-10
+          - - 80.0
+            - 4.92682e-10
+          - - 90.0
+            - 5.40178e-10
+          - - 100.0
+            - 5.01779e-10
+          - - 110.0
+            - 4.1341e-10
+          - - 120.0
+            - 3.99301e-10
+          - - 130.0
+            - 3.8547e-10
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 2.7e-10
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: generic uncertainty
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mol/cm3
+        values:
+          - - 10.0
+            - 9.71874e-11
+          - - 20.0
+            - 1.07862e-10
+          - - 30.0
+            - 4.44321e-11
+          - - 40.0
+            - 1.29274e-10
+          - - 50.0
+            - 1.6464e-10
+          - - 60.0
+            - 2.24698e-10
+          - - 70.0
+            - 2.72502e-10
+          - - 80.0
+            - 3.56973e-10
+          - - 90.0
+            - 3.92432e-10
+          - - 100.0
+            - 5.02027e-10
+          - - 110.0
+            - 5.12763e-10
+          - - 120.0
+            - 5.60382e-10
+          - - 130.0
+            - 6.20131e-10
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 1.24e-10
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: generic uncertainty
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        quantity:
+          units: mol/cm3
+        values:
+          - - 10.0
+            - 2.97674e-11
+          - - 20.0
+            - 9.92248e-11
+          - - 30.0
+            - 1.9845e-10
+          - - 40.0
+            - 3.07597e-10
+          - - 50.0
+            - 4.34109e-10
+          - - 60.0
+            - 5.38295e-10
+          - - 70.0
+            - 6.4e-10
+          - - 80.0
+            - 7.2186e-10
+          - - 90.0
+            - 7.9876e-10
+          - - 100.0
+            - 8.60775e-10
+          - - 110.0
+            - 9.12868e-10
+          - - 120.0
+            - 9.40155e-10
+          - - 130.0
+            - 9.57519e-10
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 2.87e-10
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: generic uncertainty
+    temperature: *id001
+    pressure: *id002
+    composition: *id003
+...

@@ -1,0 +1,130 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/S0010-2180(01)00325-X
+  authors:
+    - name: Maria U Alzueta
+    - name: Rafael Bilbao
+    - name: Peter Glarborg
+  journal: Combustion and Flame
+  year: 2001
+  volume: 127
+  pages: 2234-2251
+  detail: Converted from ReSpecTh XML file x30001019.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: flow reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 1.05 bar
+  composition: &id002
+    species:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        amount:
+          - 0.000925
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.00026
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        amount:
+          - 0.02
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.978815
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: residence-time
+        units: s
+        primary: true
+    concentration-profiles:
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 0.15449
+            - 1.9286e-05
+          - - 0.1678
+            - 2.317e-05
+          - - 0.17557
+            - 4.7094e-05
+          - - 0.18296
+            - 7.1085e-05
+          - - 0.18618
+            - 9.2896e-05
+          - - 0.1888
+            - 0.0001343
+          - - 0.1925
+            - 0.0001732
+          - - 0.19351
+            - 0.00020003
+          - - 0.19454
+            - 0.00025375
+          - - 0.19635
+            - 0.00030009
+          - - 0.19797
+            - 0.00049309
+          - - 0.20266
+            - 0.00084724
+          - - 0.20693
+            - 0.00092036
+          - - 0.21166
+            - 0.000925
+          - - 0.22451
+            - 0.000925
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 7.816e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    auxiliary-profiles:
+      - type: temperature
+        independent:
+          name: time
+          units: s
+        quantity:
+          units: K
+        values:
+          - - 0.15449
+            - 1294.6
+          - - 0.1678
+            - 1191.9
+          - - 0.17557
+            - 1139.1
+          - - 0.18296
+            - 1093.2
+          - - 0.18618
+            - 1074.2
+          - - 0.1888
+            - 1059.3
+          - - 0.1925
+            - 1039.0
+          - - 0.19351
+            - 1033.6
+          - - 0.19454
+            - 1028.1
+          - - 0.19635
+            - 1018.6
+          - - 0.19797
+            - 1010.2
+          - - 0.20266
+            - 986.9
+          - - 0.20693
+            - 966.5
+          - - 0.21166
+            - 944.9
+          - - 0.22451
+            - 890.8
+    pressure: *id001
+    composition: *id002
+...

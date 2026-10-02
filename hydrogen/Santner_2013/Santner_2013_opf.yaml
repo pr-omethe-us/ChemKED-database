@@ -1,0 +1,74 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.proci.2012.06.065
+  authors:
+    - name: Jeffrey Santner
+    - name: Frederick L. Dryer
+    - name: Yiguang Ju
+  journal: Proceedings of the Combustion Institute
+  year: 2013
+  volume: 34
+  pages: 719-726
+  detail: Converted from ReSpecTh XML file x20000075.xml
+experiment-type: laminar burning velocity measurement
+apparatus:
+  kind: outwardly propagating spherical flame
+  institution: ''
+  facility: ''
+common-properties:
+  temperature: &id001
+    - 393 K
+    - uncertainty-type: absolute
+      uncertainty: 2 K
+      uncertainty-sourcetype: reported
+  composition: &id002
+    kind: mole fraction
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.109502
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.064414
+      - species-name: He
+        InChI: 1S/He
+        amount:
+          - 0.826084
+datapoints:
+  - pressure:
+      - 1 atm
+    laminar-burning-velocity:
+      - 123.99 cm/s
+      - evaluated-standard-deviation: 3.64 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    temperature: *id001
+    composition: *id002
+  - pressure:
+      - 6.1 atm
+    laminar-burning-velocity:
+      - 84.3 cm/s
+      - evaluated-standard-deviation: 3.64 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    temperature: *id001
+    composition: *id002
+  - pressure:
+      - 10 atm
+    laminar-burning-velocity:
+      - 60.39 cm/s
+      - evaluated-standard-deviation: 3.64 cm/s
+        evaluated-standard-deviation-type: absolute
+        evaluated-standard-deviation-sourcetype: estimated
+        evaluated-standard-deviation-method: statistical scatter
+    temperature: *id001
+    composition: *id002
+...

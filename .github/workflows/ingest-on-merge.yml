@@ -1,0 +1,54 @@
+# Fires when YAML files are merged into main/master.
+# Dispatches a chemked-ingest event to kineticmodelssite so the
+# self-hosted runner can pull the latest repo and sync the new
+# files into the Django database.
+
+name: Ingest Merged Data
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "**/*.yaml"
+      - "**/*.yml"
+
+jobs:
+  dispatch-ingest:
+    name: Dispatch DB Ingest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Find merged YAML files
+        id: changed
+        run: |
+          FILES=$(git diff-tree --no-commit-id -r --name-only --diff-filter=ACMR HEAD \
+            -- '*.yaml' '*.yml' \
+            | grep -v '^\.' \
+            | grep -v '.github/' \
+            | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          echo "files=$FILES" >> "$GITHUB_OUTPUT"
+          echo "Changed files: $FILES"
+
+      - name: Dispatch chemked-ingest to kineticmodelssite
+        if: steps.changed.outputs.files != '[]' && steps.changed.outputs.files != ''
+        env:
+          DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+          PYTECK_REPO_OWNER: ${{ vars.PYTECK_REPO_OWNER || github.repository_owner }}
+          PYTECK_REPO_NAME: ${{ vars.PYTECK_REPO_NAME || 'kineticmodelssite' }}
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: token $DISPATCH_TOKEN" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/$PYTECK_REPO_OWNER/$PYTECK_REPO_NAME/dispatches" \
+            -d '{
+              "event_type": "chemked-ingest",
+              "client_payload": {
+                "files": ${{ steps.changed.outputs.files }},
+                "commit_sha": "${{ github.sha }}",
+                "ref": "${{ github.ref }}"
+              }
+            }'

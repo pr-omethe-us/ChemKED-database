@@ -1,0 +1,385 @@
+---
+file-authors:
+  - name: Chemical Kinetics Laboratory, Institute of Chemistry, ELTE, Budapest, Hungary
+file-version: 0
+chemked-version: 0.5.0
+reference:
+  doi: 10.1016/j.combustflame.2010.12.008
+  authors:
+    - name: N. Leplat
+    - name: P. Dagaut
+    - name: C. Togbé
+    - name: J. Vandooren
+  journal: Combustion and Flame
+  year: 2011
+  volume: 158
+  pages: 705-725
+  detail: Converted from ReSpecTh XML file x00003006_x.xml
+experiment-type: speciation measurement
+apparatus:
+  kind: jet stirred reactor
+  institution: ''
+  facility: ''
+common-properties:
+  pressure: &id001
+    - 10 atm
+  reactor-volume: &id002
+    - 30 cm3
+  residence-time: &id003
+    - 0.7 s
+  composition: &id004
+    species:
+      - species-name: C2H5OH
+        InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+        amount:
+          - 0.002
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.01
+      - species-name: N2
+        InChI: 1S/N2/c1-2
+        amount:
+          - 0.988
+    kind: mole fraction
+datapoints:
+  - independent-variables:
+      - name: temperature
+        units: K
+        primary: true
+    concentration-profiles:
+      - species-name: H2O
+        InChI: 1S/H2O/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 801.0
+            - 0.000104
+          - - 830.0
+            - 0.0011
+          - - 861.0
+            - 0.00223
+          - - 889.0
+            - 0.00279
+          - - 918.0
+            - 0.00346
+          - - 950.0
+            - 0.00391
+          - - 980.0
+            - 0.00431
+          - - 1011.0
+            - 0.00473
+          - - 1039.0
+            - 0.00512
+          - - 1071.0
+            - 0.00541
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 8.86e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: CO2
+        InChI: 1S/CO2/c2-1-3
+        quantity:
+          units: mole fraction
+        values:
+          - - 801.0
+            - 0.0
+          - - 830.0
+            - 1.8e-05
+          - - 861.0
+            - 8.7e-05
+          - - 889.0
+            - 0.000179
+          - - 918.0
+            - 0.000326
+          - - 950.0
+            - 0.000474
+          - - 980.0
+            - 0.000677
+          - - 1011.0
+            - 0.000969
+          - - 1039.0
+            - 0.00132
+          - - 1071.0
+            - 0.00177
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 2.04e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: CO
+        InChI: 1S/CO/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 801.0
+            - 1.6e-05
+          - - 830.0
+            - 0.000551
+          - - 861.0
+            - 0.00126
+          - - 889.0
+            - 0.00162
+          - - 918.0
+            - 0.00198
+          - - 950.0
+            - 0.00211
+          - - 980.0
+            - 0.00223
+          - - 1011.0
+            - 0.00227
+          - - 1039.0
+            - 0.00217
+          - - 1071.0
+            - 0.00192
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 5.84e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: CH2O
+        InChI: 1S/CH2O/c1-2/h1H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 801.0
+            - 1.9e-05
+          - - 830.0
+            - 0.000132
+          - - 861.0
+            - 0.000134
+          - - 889.0
+            - 0.000103
+          - - 918.0
+            - 8.1e-05
+          - - 950.0
+            - 6.3e-05
+          - - 980.0
+            - 4.7e-05
+          - - 1011.0
+            - 3.4e-05
+          - - 1039.0
+            - 2.5e-05
+          - - 1071.0
+            - 2.0e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 2.97e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: CH4
+        InChI: 1S/CH4/h1H4
+        quantity:
+          units: mole fraction
+        values:
+          - - 801.0
+            - 5.0e-06
+          - - 830.0
+            - 9.69e-05
+          - - 861.0
+            - 0.000199
+          - - 889.0
+            - 0.000225
+          - - 918.0
+            - 0.000219
+          - - 950.0
+            - 0.000215
+          - - 980.0
+            - 0.000192
+          - - 1011.0
+            - 0.000147
+          - - 1039.0
+            - 0.000108
+          - - 1071.0
+            - 5.9e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 1.27e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: C2H4
+        InChI: 1S/C2H4/c1-2/h1-2H2
+        quantity:
+          units: mole fraction
+        values:
+          - - 801.0
+            - 1.01e-05
+          - - 830.0
+            - 0.000104
+          - - 861.0
+            - 0.000186
+          - - 889.0
+            - 0.000209
+          - - 918.0
+            - 0.000199
+          - - 950.0
+            - 0.000189
+          - - 980.0
+            - 0.000157
+          - - 1011.0
+            - 0.000111
+          - - 1039.0
+            - 7.08e-05
+          - - 1071.0
+            - 4.3e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 8.28e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: C2H6
+        InChI: 1S/C2H6/c1-2/h1-2H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 801.0
+            - 0.0
+          - - 830.0
+            - 7.21e-06
+          - - 861.0
+            - 1.84e-05
+          - - 889.0
+            - 2.1e-05
+          - - 918.0
+            - 1.89e-05
+          - - 950.0
+            - 1.7e-05
+          - - 980.0
+            - 1.33e-05
+          - - 1011.0
+            - 8.8e-06
+          - - 1039.0
+            - 5.41e-06
+          - - 1071.0
+            - 2.7e-06
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 1.18e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: CH3CHO
+        InChI: 1S/C2H4O/c1-2-3/h2H,1H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 801.0
+            - 0.000101
+          - - 830.0
+            - 0.000225
+          - - 861.0
+            - 0.000116
+          - - 889.0
+            - 3.4e-05
+          - - 918.0
+            - 0.0
+          - - 950.0
+            - 0.0
+          - - 980.0
+            - 0.0
+          - - 1011.0
+            - 0.0
+          - - 1039.0
+            - 0.0
+          - - 1071.0
+            - 0.0
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 3.56e-05
+            evaluated-standard-deviation-sourcetype: reported
+            evaluated-standard-deviation-method: reported uncertainty
+      - species-name: C2H5OH
+        InChI: 1S/C2H6O/c1-2-3/h3H,2H2,1H3
+        quantity:
+          units: mole fraction
+        values:
+          - - 801.0
+            - 0.00186
+          - - 830.0
+            - 0.0011
+          - - 861.0
+            - 0.000589
+          - - 889.0
+            - 0.000362
+          - - 918.0
+            - 0.000271
+          - - 950.0
+            - 0.000187
+          - - 980.0
+            - 0.000147
+          - - 1011.0
+            - 0.000109
+          - - 1039.0
+            - 7.1e-05
+          - - 1071.0
+            - 4.0e-05
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 6.71e-05
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        quantity:
+          units: mole fraction
+        values:
+          - - 801.0
+            - 0.0
+          - - 830.0
+            - 5.52e-05
+          - - 861.0
+            - 0.000116
+          - - 889.0
+            - 0.000153
+          - - 918.0
+            - 0.000167
+          - - 950.0
+            - 0.00019
+          - - 980.0
+            - 0.000203
+          - - 1011.0
+            - 0.000179
+          - - 1039.0
+            - 0.000157
+          - - 1071.0
+            - 0.000139
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 9.13e-06
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        quantity:
+          units: mole fraction
+        values:
+          - - 801.0
+            - 0.00909
+          - - 830.0
+            - 0.00803
+          - - 861.0
+            - 0.007
+          - - 889.0
+            - 0.0072
+          - - 918.0
+            - 0.00685
+          - - 950.0
+            - 0.00635
+          - - 980.0
+            - 0.0063
+          - - 1011.0
+            - 0.00627
+          - - 1039.0
+            - 0.00544
+          - - 1071.0
+            - 0.0
+        uncertainty:
+          - evaluated-standard-deviation-type: absolute
+            evaluated-standard-deviation: 0.000329
+            evaluated-standard-deviation-sourcetype: estimated
+            evaluated-standard-deviation-method: statistical scatter
+    pressure: *id001
+    reactor-volume: *id002
+    residence-time: *id003
+    composition: *id004
+...
