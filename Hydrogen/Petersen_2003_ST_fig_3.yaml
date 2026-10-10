@@ -1,0 +1,106 @@
+---
+file-authors:
+  - name: Maria Politi
+      ORCID: 0000-0002-5815-3371
+file-version: 0
+chemked-version: 0.4.1
+reference:
+  doi: 10.2514/6.2003-4493
+  authors: 
+    - name: E.L. Petersen
+    - name: D.M. Kalitan
+    - name: M.J.A. Rickard
+  journal: 39th AIAA/ASME/SAE/ASEE Joint Propulsion Conference and Exhibit
+  year: 2003
+  detail: Fig.3.-full circle [Converted from ReSpecTh XML file x10000017.xml]
+experiment-type: ignition delay
+apparatus:
+  kind: shock tube
+  institution: University of Florida
+  facility: stainless steel shock tube
+common-properties:
+  composition: &comp
+    kind: mole fraction
+    species:
+      - species-name: H2
+        InChI: 1S/H2/h1H
+        amount:
+          - 0.0103
+      - species-name: O2
+        InChI: 1S/O2/c1-2
+        amount:
+          - 0.005
+      - species-name: Ar
+        InChI: 1S/Ar
+        amount:
+          - 0.9847
+  pressure: &pres
+    - 1 atm 
+  ignition-type: &ign
+      target: OH*
+      type: d/dt max
+datapoints:
+  - temperature:
+      - 1545 K
+    ignition-delay:
+      - 207.8 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
+  - temperature:
+      - 1442 K
+    ignition-delay:
+      - 269 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
+  - temperature:
+      - 1433 K
+    ignition-delay:
+      - 247.9 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
+  - temperature:
+      - 1390 K
+    ignition-delay:
+      - 345.6 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
+  - temperature:
+      - 1312 K
+    ignition-delay:
+      - 444 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
+  - temperature:
+      - 1302 K
+    ignition-delay:
+      - 464.3 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
+  - temperature:
+      - 1270 K
+    ignition-delay:
+      - 601.1 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
+  - temperature:
+      - 1181 K
+    ignition-delay:
+      - 977.9 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
+  - temperature:
+      - 1753 K
+    ignition-delay:
+      - 92.9 us
+    composition: *comp
+    pressure: *pres
+    ignition-type: *ign 
+    
