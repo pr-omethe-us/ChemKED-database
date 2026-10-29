@@ -19,3 +19,9 @@ Thank you
 2.  Thank you for contributing your data to a centralized repository so that is may be easily and freely accessed.
 
 With enough like-minded researchers and contributors, we hope to leverage the enormous potentials of paradigmatic shifts in collaborative frameworks and open science.
+
+Contributors
+------------
+
+Full contributors list is in `CITATION.cff`, currently listed in order based on number of commits.
+Please submit a PR if you have submitted data but your name is not yet listed.
