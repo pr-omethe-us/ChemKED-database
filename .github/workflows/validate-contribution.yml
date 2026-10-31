@@ -13,10 +13,10 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  # PyKED that reads ChemKED 0.5.0 files (laminar burning velocity, speciation,
-  # ReSpecTh uncertainties). The PyPI release does not accept chemked-version
-  # 0.5.0, which the ReSpecTh conversions in this repository have.
-  PYKED: "pyked @ git+https://github.com/LekiaAnonim/PyKED@a9a25857717144468f720d04e2dc6ff29a0b8263"
+  # PyKED from main of pr-omethe-us/PyKED: it reads ChemKED 0.5.0 files (laminar
+  # burning velocity, speciation, ReSpecTh uncertainties). The PyPI release 0.5.0
+  # does not accept chemked-version 0.5.0, which the ReSpecTh conversions have.
+  PYKED: "pyked @ git+https://github.com/pr-omethe-us/PyKED@main"
 
 jobs:
   # -------------------------------------------------------------------
