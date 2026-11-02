@@ -12,9 +12,16 @@ concurrency:
   group: validate-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
+env:
+  # PyKED from main of pr-omethe-us/PyKED: it reads ChemKED 0.5.0 files (laminar
+  # burning velocity, speciation, ReSpecTh uncertainties). The PyPI release 0.5.0
+  # does not accept chemked-version 0.5.0, which the ReSpecTh conversions have.
+  PYKED: "pyked @ git+https://github.com/pr-omethe-us/PyKED@main"
+
 jobs:
   # -------------------------------------------------------------------
-  # 1. Detect which ChemKED YAML files were added or modified
+  # 1. Detect which ChemKED YAML files were added or modified. A file that
+  #    is only renamed or moved (same content) is not checked again.
   # -------------------------------------------------------------------
   detect-changes:
     name: Detect Changed Files
@@ -30,10 +37,13 @@ jobs:
       - name: Find changed YAML files
         id: changed
         run: |
-          FILES=$(git diff --name-only --diff-filter=ACMR \
+          # core.quotepath=false: accented paths (e.g. Togbé_2010) stay unquoted.
+          # R100 = renamed with the same content: skipped.
+          FILES=$(git -c core.quotepath=false diff -M -l0 --name-status --diff-filter=ACMR \
             ${{ github.event.pull_request.base.sha }} \
             ${{ github.event.pull_request.head.sha }} \
             -- '*.yaml' '*.yml' \
+            | awk -F'\t' '$1 != "R100" {print $NF}' \
             | grep -v '^\.' \
             | grep -v 'environment' \
             | grep -v '.github/' \
@@ -63,7 +73,7 @@ jobs:
 
       - name: Install PyKED
         run: |
-          pip install pyked pyyaml cerberus pint habanero
+          pip install "$PYKED" pyyaml cerberus pint habanero
 
       - name: Run PyKED schema validation
         env:
@@ -115,7 +125,8 @@ jobs:
 
       - name: Install Cantera & PyTeCK
         run: |
-          pip install cantera pyteck pyked pyyaml numpy scipy
+          pip install cantera pyteck pyyaml numpy scipy
+          pip install "$PYKED"
 
       - name: Run PyTeCK simulation validation
         env:
