@@ -19,12 +19,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: Find merged YAML files
         id: changed
+        env:
+          BEFORE: ${{ github.event.before }}
         run: |
-          FILES=$(git diff-tree --no-commit-id -r --name-only --diff-filter=ACMR HEAD \
+          # Compare with the commit before the push. "git diff-tree HEAD" lists
+          # nothing for a merge commit, and only the last commit of a push with
+          # several commits. Fall back to the first parent if "before" is unknown.
+          if ! git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            BEFORE=$(git rev-parse HEAD^1)
+          fi
+          FILES=$(git diff --name-only --diff-filter=ACMR "$BEFORE" HEAD \
             -- '*.yaml' '*.yml' \
             | grep -v '^\.' \
             | grep -v '.github/' \
@@ -38,17 +46,14 @@ jobs:
           DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
           PYTECK_REPO_OWNER: ${{ vars.PYTECK_REPO_OWNER || github.repository_owner }}
           PYTECK_REPO_NAME: ${{ vars.PYTECK_REPO_NAME || 'kineticmodelssite' }}
+          FILES: ${{ steps.changed.outputs.files }}
         run: |
-          curl -X POST \
+          jq -n --argjson files "$FILES" --arg sha "$GITHUB_SHA" --arg ref "$GITHUB_REF" \
+            '{event_type: "chemked-ingest",
+              client_payload: {files: $files, commit_sha: $sha, ref: $ref}}' > payload.json
+          curl --fail-with-body -sS -X POST \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: token $DISPATCH_TOKEN" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             "https://api.github.com/repos/$PYTECK_REPO_OWNER/$PYTECK_REPO_NAME/dispatches" \
-            -d '{
-              "event_type": "chemked-ingest",
-              "client_payload": {
-                "files": ${{ steps.changed.outputs.files }},
-                "commit_sha": "${{ github.sha }}",
-                "ref": "${{ github.ref }}"
-              }
-            }'
+            --data @payload.json
