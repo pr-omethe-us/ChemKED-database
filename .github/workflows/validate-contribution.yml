@@ -59,17 +59,21 @@ jobs:
   # 2. Validate each ChemKED file against the PyKED schema
   # -------------------------------------------------------------------
   pyked-validation:
-    name: PyKED Schema Validation
+    name: PyKED Schema Validation (Python ${{ matrix.python-version }})
     needs: detect-changes
     if: needs.detect-changes.outputs.has_changes == 'true'
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12", "3.13", "3.14"]
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: ${{ matrix.python-version }}
 
       - name: Install PyKED
         run: |
@@ -84,17 +88,21 @@ jobs:
   # 3. Check ORCID metadata in file-authors
   # -------------------------------------------------------------------
   orcid-check:
-    name: ORCID Metadata Check
+    name: ORCID Metadata Check (Python ${{ matrix.python-version }})
     needs: detect-changes
     if: needs.detect-changes.outputs.has_changes == 'true'
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12", "3.13", "3.14"]
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: ${{ matrix.python-version }}
 
       - name: Install dependencies
         run: pip install pyyaml requests
@@ -109,19 +117,23 @@ jobs:
   #    Only runs when the PR has the 'run-pyteck' label
   # -------------------------------------------------------------------
   pyteck-validation:
-    name: PyTeCK Simulation Validation
+    name: PyTeCK Simulation Validation (Python ${{ matrix.python-version }})
     needs: detect-changes
     if: >-
       needs.detect-changes.outputs.has_changes == 'true'
       && contains(github.event.pull_request.labels.*.name, 'run-pyteck')
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12", "3.13", "3.14"]
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: ${{ matrix.python-version }}
 
       - name: Install Cantera & PyTeCK
         run: |
